@@ -13,7 +13,7 @@
     <br />
     <font size="-1">[<i>11/Sep/2003</i>]</font>
     <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      <p>That's right, the long-awaited 1.2.9rc2 has finally be released.
+      <p>That's right, the long-awaited 1.2.9rc2 has finally been released.
       This testing release includes IPv6 support, which entailed a lot of
       changes to the code base.  Read the README.IPv6 file to see which
       configuration directives and modules may have been affected.
