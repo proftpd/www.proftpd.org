@@ -1,0 +1,73 @@
+<:
+# $Id$
+:>//
+<: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
+<: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
+<: $html_title = "MD5 sums and PGP signatures of release files" :>//
+<: $last_changed = "20/Feb/2001 - hamster" :>//
+
+#include "header.epl"
+
+	<TR>
+	  <TD>
+
+
+<DIV CLASS="headline">
+<: print "<B>$html_title</B>" unless !defined($html_title) :>//
+</DIV>
+
+<DIV CLASS="headline_small">
+MD5 Digest Hashes
+</DIV>
+
+<PRE>
+0b2b32cec7138cdc1ba4b2a99148bb93  proftpd-1.2.0rc3.tar.gz
+f1ce2bc06a3e0c30962a2e6c545260d1  proftpd-1.2.0rc3.tar.bz2
+</PRE>
+
+</TD>
+</TR>
+
+<TR>
+<TD>
+<DIV CLASS="headline_small">
+PGP Signatures
+</DIV>
+
+<B><FONT face="arial" color="#003399">proftpd-1.2.0rc3.tar.gz.asc</FONT></B><BR>
+<FONT size="-1">[<I>20/Feb/2001</I>]</FONT>
+<BLOCKQUOTE><font face="verdana,arial" size=-1>
+-----BEGIN PGP MESSAGE-----
+Version: 2.6.3ia
+
+iQCVAwUAOpIEEmFBiHYyDG+dAQGljQQAgfj4jvFFqAF0Mf/tyhcpc+b5XNklq5zb
+sd7Bt/Y4Byg3Ziyv7MxQEzxlLsrW2KsSjSyr1Y/iOE5iblw31JOJN8OOxHzndFza
+UHTY5JEB8+UPmAo8rKMLuCF+gYFvx3wMKC9NBCuCOM6H78AEkbyVYWYjAkHlv+cP
++hqjfZP1vps=
+=7/9j
+-----END PGP MESSAGE-----
+</font></BLOCKQUOTE>
+
+
+<B><FONT face="arial" color="#003399">proftpd-1.2.0rc3.tar.bz2.asc</FONT></B><BR>
+<FONT size="-1">[<I>20/Feb/2001</I>]</FONT>
+<BLOCKQUOTE><font face="verdana,arial" size=-1>
+-----BEGIN PGP MESSAGE-----
+Version: 2.6.3ia
+
+iQCVAwUAOpIEKWFBiHYyDG+dAQF7DQP+PcsXmGUVGyZLfm6yLGtVRDUxvW3ea/WJ
+HuAHRsUEORF3//ZaykoJIIIWFgDPNAJ87LDqYN5qif07mysgzoZde440ytNR2bTJ
+VTHxNm9rmSnPO6oRt/3xIugroUUrNT9zzBTe5m49AVoLZ0KJBVd8OzVCw/qvepVW
+xCjBiAgk42g=
+=1I/0
+-----END PGP MESSAGE-----
+</font></BLOCKQUOTE>
+
+
+
+
+	  </TD>
+	</TR>
+
+#include "footer.epl"
+
