@@ -17,8 +17,8 @@
     <div class="headline-small">MD5 Digest Hashes</div>
 
 <pre>
-100a374dfcaa4852cb767dc6afeb4277  <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.2.5.tar.bz2">proftpd-1.2.5.tar.bz2</a>
-71aaa61759aadef3a1300eb12250168d  <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.2.5.tar.gz">proftpd-1.2.5.tar.gz</a>
+17551a5281a86fbc7857e31a723d5599 <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.2.6.tar.bz2">proftpd-1.2.6.tar.bz2</a>
+6eaab6ba66937458fc60d024eae57d54 <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.2.6.tar.gz">proftpd-1.2.6.tar.gz</a>
 </pre>
 
   </td>
@@ -29,29 +29,27 @@
   <td>
     <br>
     <div class="headline-small">PGP Signatures</div>
-
-
-<b><font face="arial" color="#003399">proftpd-1.2.5.tar.bz2.asc</font></b>
+<b><font face="arial" color="#003399">proftpd-1.2.6.tar.bz2.asc</font></b>
 <br />
 <font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><pre>
 -----BEGIN PGP SIGNATURE-----
 Version: PGP 6.5.8
 
-iQA/AwUAPQLEo7eOiT+lEZdqEQIWEwCguCZmU+lEwvxK/X3/6wNWWeAZk7kAnAmc
-zKOAbKmHGVn9CC/QzwoN30Q/
-=YECg
+iQA/AwUAPXYohLeOiT+lEZdqEQJhgQCeJBL34ZpB8h7YI8M2qQRODoKY2uQAn0ew
+nQpCAhjqHPnB62MHzcBF56CB
+=8iqZ
 -----END PGP SIGNATURE-----
 </pre></font>
 
-<b><font face="arial" color="#003399">proftpd-1.2.4.tar.gz.asc</font></b>
+<b><font face="arial" color="#003399">proftpd-1.2.6.tar.gz.asc</font></b>
 <br />
 <font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><pre>
 -----BEGIN PGP SIGNATURE-----
 Version: PGP 6.5.8
 
-iQA/AwUAPQLEmreOiT+lEZdqEQJ+owCeNl9QBd/qXCVcz5Arw0jvNbA/EJYAn0aK
-DcL8LXP5EdFuWvhABGVWIsin
-=EDEx
+iQA/AwUAPXYoeLeOiT+lEZdqEQLj4ACcCV3JjVd2TWp8fzjkl+i3sWsQYV4An0GJ
+cXACE156O2u9mBYzujXmzx9d
+=mjgA
 -----END PGP SIGNATURE-----
 </pre></font>
 
