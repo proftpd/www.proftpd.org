@@ -1,7 +1,7 @@
 <: # $Id$ :>//
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
-<: $last_changed = "12/Dec/2002 - jwm" :>//
+<: $last_changed = "28/Dec/2002 - jwm" :>//
 
 #include "header.epl"
 
@@ -12,14 +12,19 @@
     <br />
     <font size="-1">[<i>28/Dec/2002</i>]</font>
     <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      1.2.8rc1 has just been released. This release includes numerous
-      new features, including:
-        <li>new contrib modules: mod_auth_file, mod_tls, mod_rewrite 
-        <li>new directives: AuthOrder, ListOptions, TransferRate
-        <li>new display variables: %i, %o, %t
-        <li>new log variables: %d, %D, %U
-        <li>RFC2389 support
-      RPMs should be available on the primary FTP site and mirrors soon.
+      <p>1.2.8rc1 has just been released. This release includes numerous new
+      features, including:</p>
+
+      <ul>
+        <li>New contrib modules: mod_auth_file, mod_tls, mod_rewrite</li>
+        <li>New directives: AuthOrder, ListOptions, TransferRate</li>
+        <li>New display variables: %i, %o, %t</li>
+        <li>New log variables: %d, %D, %U</li>
+        <li>RFC2389 support</li>
+      </ul>
+
+      <p>RPMs should be available on the primary FTP site and mirrors
+      soon.</p>
     </font></blockquote>
   </td>
 </tr>
@@ -89,8 +94,8 @@
     <br />
     <font size="-1">[<i>09/June/2002</i>]</font>
     <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-     The <a href="ROADMAP">roadmap</a> for development of ProFTPD 1.2.x is 
-     now available, this is a working document which changes regularly 
+     The <a href="ROADMAP">roadmap</a> for development of ProFTPD 1.2.x is
+     now available, this is a working document which changes regularly
      and sets out the planned course of action of the development team
      not necessarily what <em>will</em> happen.
     </font></blockquote>
