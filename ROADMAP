@@ -10,13 +10,13 @@ C = Committed
         #1925 - Clean up of Class code
         #1965 - Changing timing of handling of QUIT command
         #2013 - Track RFC2228 sessions in scoreboard
-        #2015 - Add AND, OR keywords to Allow/Deny User/Group directives
+C       #2015 - Add AND, OR keywords to Allow/Deny User/Group directives
         #2034 - Add support for a "graceful shutdown" signal
         #2048 - Add command-line option for configuring DefaultAddress
         #2052 - ProFTPD "ununsed parameters" cleanup
         #2062 - Enhance UserOwner/GroupOwner to take IDs as well as name
                 parameters
-        #2072 - Add Controls API
+C       #2072 - Add Controls API
 C       #2086 - Add limits for PORT, PASV
 C       #2098 - Add SetEnv, UnsetEnv directives
         #2105 - Remove *Authoritative directives
