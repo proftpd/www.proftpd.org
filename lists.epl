@@ -2,7 +2,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Mailing lists" :>//
-<: $last_changed = "04/Apr/2001 - jwm" :>//
+<: $last_changed = "07/Feb/2003 - Hamster" :>//
 
 #include "header.epl"
 
@@ -12,16 +12,15 @@
     <div class="headline">
       <: print "<b>$html_title</b>" unless !defined($html_title) :>//
     </div>
-    <p>There are a number of mailing lists for the ProFTPD Project covering the entire range of activites.</p>
+    <p>There are a number of mailing lists for the ProFTPD Project covering 
+	 the entire range of activites.</p>
   </td>
 </tr>
 
 <tr>
   <td>
-    <b><font face="arial" color="#003399">Hints on unsubscribing from the mailing lists</font></b><br />
-<!--    <font size="-1">[<i>proftpd-announce-request@proftpd.org</i>]</font>   -->
-
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"> 
+	<b><font face="arial" color="#003399">Hints on unsubscribing from the mailing lists</font></b><br />
+	<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"> 
 	Unsubscribing from the Sourceforge hosted lists is easy, simply follow these hints only two 
 	pieces of information must be known.
 	
