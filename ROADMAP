@@ -8,23 +8,22 @@ C = Committed
 
 C       #1696 - Include directive supports directories
 C       #1925 - Clean up of Class code
-        #1965 - Changing timing of handling of QUIT command
-        #2013 - Track RFC2228 sessions in scoreboard
 C       #2015 - Add AND, OR keywords to Allow/Deny User/Group directives
 C       #2034 - Add support for a "graceful shutdown" signal
 C       #2048 - Add ability to get configuration file values from environment
-        #2052 - ProFTPD "ununsed parameters" cleanup
-        #2062 - Enhance UserOwner/GroupOwner to take IDs as well as name
-                parameters
 C       #2072 - Add Controls API
 C       #2086 - Add limits for PORT, PASV
 C       #2098 - Add SetEnv, UnsetEnv directives
 C       #2105 - Remove *Authoritative directives
-	#2107 - Fix handling of $Libraries$ tag, --with-libraries option
 C	#2135 - Add ability to handle passphrase-protected server keys
 
 1.2.11
 
+        #1965 - Changing timing of handling of QUIT command
+        #2013 - Track RFC2228 sessions in scoreboard
+        #2052 - ProFTPD "ununsed parameters" cleanup
+        #2062 - Enhance UserOwner/GroupOwner to take IDs as well as name
+                parameters
 	#2071 - Add Variables API
 	#2331 - Proftpd does not honor POSIX ACLs
         #2389 - 64-bit compilation warnings
