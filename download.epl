@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Downloading and mirror sites" :>//
-<: $last_changed = "234/01/1900 - mark" :>//
+<: $last_changed = "242/01/1900 - mark" :>//
 
 #include "header.epl"
 
@@ -441,6 +441,41 @@ Maintained by: pyjamas<br />
 <a href="ftp://proftpd.rapid-server.com/">ftp://proftpd.rapid-server.com/</A><br />
 Location: Turkey (Ankara)<br />
 Maintained by: Alp Altunel<br />
+</p>
+<p>
+<a href="ftp://cnftp.bjpu.edu.cn/mirror/proftpd/">ftp://cnftp.bjpu.edu.cn/mirror/proftpd/</A><br />
+Location: China (BeiJing)<br />
+Maintained by: LiuKang<br />
+</p>
+<p>
+<a href="ftp://ftp.linux.se/pub/proftpd/">ftp://ftp.linux.se/pub/proftpd/</A><br />
+Location: Sweden (Stockholm)<br />
+Maintained by: Martin Friberg<br />
+</p>
+<p>
+<a href="ftp://proftpd.mirror.stop.hu/proftpd/">ftp://proftpd.mirror.stop.hu/proftpd/</A><br />
+Location: Hungary (Budapest)<br />
+Maintained by:  telnet Co. mirror admin<br />
+</p>
+<p>
+<a href="ftp://proftpd.in.freeos.com/pub/mirrors/proftpd.org/">ftp://proftpd.in.freeos.com/pub/mirrors/proftpd.org/</A><br />
+Location: India (Mumbai, Maharashtra)<br />
+Maintained by: Chandrashekhar Bhosle<br />
+</p>
+<p>
+<a href="ftp://ftp.infomex.pl/mirror/ftp.proftpd.org/">ftp://ftp.infomex.pl/mirror/ftp.proftpd.org/</A><br />
+Location: Poland (Zywiec)<br />
+Maintained by: Krzysztof Niescieronek<br />
+</p>
+<p>
+<a href="ftp://ftp.doc.cs.univ-paris8.fr/pub/proftpd/">ftp://ftp.doc.cs.univ-paris8.fr/pub/proftpd/</A><br />
+Location: France (Saint-Denis)<br />
+Maintained by: The Mirrors Master<br />
+</p>
+<p>
+<a href="ftp://mirrors.bigfatpipe.net/pub/proftpd/">ftp://mirrors.bigfatpipe.net/pub/proftpd/</A><br />
+Location: United states (     Portland, OR, USA)<br />
+Maintained by:             The BigFatPipe.Net Hostmaster Team<br />
 </p>
 </dl>
 
