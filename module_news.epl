@@ -29,6 +29,18 @@ More information available at http://www.proftpd.org/proftpd-devel-archive/full/
 -->
 
 	<ul>
+		<b><font face="arial" color="#003399">GSSAPI module</font></b>
+		<br />
+		<br /><font size="-1"><i>Maintainer: Markus Moeller</i></font>
+		<br /><font size="-1"><i><a href="http://ourworld.compuserve.com/homepages/Markus_Moeller/">http://ourworld.compuserve.com/homepages/Markus_Moeller/</a></i></font>
+
+		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+		mod_gss provides support for the GSSAPI security mechanism,
+		as described in RFC2228.
+		</blockquote>
+	</ul>
+
+	<ul>
 		<b><font face="arial" color="#003399">TDS SQL backend module</font></b>
 		<br />
 		<br /><font size="-1"><i>Maintainer: Patrick Muldoon</i></font>
