@@ -8,8 +8,8 @@
 
 #include "header.epl"
 
-	<TR>
-	  <TD>
+        <TR>
+          <TD>
 
 
 <DIV CLASS="headline">
@@ -45,8 +45,8 @@ EJ56rVH9
 -----END PGP PUBLIC KEY BLOCK-----
 </PRE>
 
-	  </TD>
-	</TR>
+          </TD>
+        </TR>
 
 #include "footer.epl"
 

@@ -8,8 +8,8 @@
 
 #include "header.epl"
 
-	<TR>
-	  <TD>
+        <TR>
+          <TD>
 
 
 <DIV CLASS="headline">
@@ -734,9 +734,9 @@ Issued: September 1998    Status: INFORMATIONAL
         </TR>
 
 -->
-	  
-	  </TD>
-	</TR>
+          
+          </TD>
+        </TR>
 
 #include "footer.epl"
 

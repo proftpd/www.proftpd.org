@@ -8,52 +8,52 @@
 
 #include "header.epl"
 
-	<TR>
-	  <TD>
+        <TR>
+          <TD>
 
 
 <DIV CLASS="headline">
 <: print "<B>$html_title</B>" unless !defined($html_title) :>//
 </DIV>
 
-	<P>
-		ProFTPD is known to compile and run on at least the
-		following platforms (if you have any that are not in
-		this list, please email <A
-		HREF="mailto:proftpd-devel@proftpd.org">the developers list</A>):
+        <P>
+                ProFTPD is known to compile and run on at least the
+                following platforms (if you have any that are not in
+                this list, please email <A
+                HREF="mailto:proftpd-devel@proftpd.org">the developers list</A>):
 
-		<BR>
-		<TABLE BORDER="0" ALIGN="center" WIDTH="75%">
-		<:
-		   my @platforms = (
-		      'AIX', 'Digital Unix', 'DG/UX', 'FreeBSD*',
-		      'HP/UX', 'IRIX*', 'Mac OS/X', 'Linux*', 'NetBSD',
-		      'OpenBSD', 'SCO', 'Solaris', 'SunOS', 'BSD/OS'
-		   );
-		   
-		   @platforms = sort(@platforms);
-		   
+                <BR>
+                <TABLE BORDER="0" ALIGN="center" WIDTH="75%">
+                <:
+                   my @platforms = (
+                      'AIX', 'Digital Unix', 'DG/UX', 'FreeBSD*',
+                      'HP/UX', 'IRIX*', 'Mac OS/X', 'Linux*', 'NetBSD',
+                      'OpenBSD', 'SCO', 'Solaris', 'SunOS', 'BSD/OS'
+                   );
+                   
+                   @platforms = sort(@platforms);
+                   
                    for(my $i = 0; $i <= $#platforms; $i++) {
                        print "<TR>\n";
 
                        print '     <TD>', $platforms[$i++], "</TD>\n";
                        print '     <TD>', $platforms[$i++], "</TD>\n";
                        print '     <TD>', $platforms[$i], "</TD>\n";
-		       print "</TR>\n\n";
+                       print "</TR>\n\n";
                    }
-		:>
-		</TABLE>
-		<BR>
+                :>
+                </TABLE>
+                <BR>
 
-		An asterisk(*) denotes a platform that the core
-		ProFTPD team has access to test on.  If you wish to
-		donate either hardware or network access please
-		contact <A
-		HREF="mailto:proftpd-devel@proftpd.org">the developers list</A>.
-	</P>
+                An asterisk(*) denotes a platform that the core
+                ProFTPD team has access to test on.  If you wish to
+                donate either hardware or network access please
+                contact <A
+                HREF="mailto:proftpd-devel@proftpd.org">the developers list</A>.
+        </P>
 
-	  </TD>
-	</TR>
+          </TD>
+        </TR>
 
 #include "footer.epl"
 

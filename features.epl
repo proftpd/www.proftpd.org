@@ -8,70 +8,70 @@
 
 #include "header.epl"
 
-	<TR>
-	  <TD>
+        <TR>
+          <TD>
 
 
 <DIV CLASS="headline">
 <: print "<B>$html_title</B>" unless !defined($html_title) :>//
 </DIV>
 
-	<P>
-		ProFTPD offers the following features (with many more
-		planned):
+        <P>
+                ProFTPD offers the following features (with many more
+                planned):
 
-		<UL>
-			<LI> Single main configuration file, with
-			     directives and directive groups which are
-			     completely intuitive to any administrator who
-			     has ever used the Apache web server.
+                <UL>
+                        <LI> Single main configuration file, with
+                             directives and directive groups which are
+                             completely intuitive to any administrator who
+                             has ever used the Apache web server.
 
-			<LI> Per directory ".ftpaccess" configuration
-			     similar to Apache's ".htaccess". 
+                        <LI> Per directory ".ftpaccess" configuration
+                             similar to Apache's ".htaccess". 
 
-			<LI> Easy to configure multiple virtual FTP
-			     servers and anonymous FTP services. 
+                        <LI> Easy to configure multiple virtual FTP
+                             servers and anonymous FTP services. 
 
-			<LI> Designed to run either as a stand-alone
-			     server or from inetd, depending on system
-			     load.
+                        <LI> Designed to run either as a stand-alone
+                             server or from inetd, depending on system
+                             load.
 
-			<LI> Anonymous FTP root directories do not
-			     require any specific directory structure,
-			     system binaries or other system files.
+                        <LI> Anonymous FTP root directories do not
+                             require any specific directory structure,
+                             system binaries or other system files.
 
-			<LI> No SITE EXEC command. In modern Internet
-			     environments, such commands are a
-			     security nightmare. ProFTPD does not
-			     execute any external programs at any
-			     time. The source is available (and must
-			     always be available) for administrators
-			     to audit.
+                        <LI> No SITE EXEC command. In modern Internet
+                             environments, such commands are a
+                             security nightmare. ProFTPD does not
+                             execute any external programs at any
+                             time. The source is available (and must
+                             always be available) for administrators
+                             to audit.
 
-			<LI> Hidden directories or files, based on
-			     unix style permissions, or user/group
-			     ownership.
+                        <LI> Hidden directories or files, based on
+                             unix style permissions, or user/group
+                             ownership.
 
-			<LI> Runs as a configurable non-privileged
-			     user in stand-alone mode in order to
-			     decrease chances of attacks which might
-			     exploit its "root"
-			     abilities. <STRONG>Note: This feature is
-			     dependent on the capabilities of the host
-			     Unix system.</STRONG>
+                        <LI> Runs as a configurable non-privileged
+                             user in stand-alone mode in order to
+                             decrease chances of attacks which might
+                             exploit its "root"
+                             abilities. <STRONG>Note: This feature is
+                             dependent on the capabilities of the host
+                             Unix system.</STRONG>
 
-			<LI> Logging and utmp/wtmp support. Logging is
-			     compatible with the wu-ftpd standard,
-			     with extended logging available.
+                        <LI> Logging and utmp/wtmp support. Logging is
+                             compatible with the wu-ftpd standard,
+                             with extended logging available.
 
-			<LI> Shadow password suite support, including
-			     support for expired accounts.
-		</UL>
-	</P>
+                        <LI> Shadow password suite support, including
+                             support for expired accounts.
+                </UL>
+        </P>
 
 
-	  </TD>
-	</TR>
+          </TD>
+        </TR>
 
 #include "footer.epl"
 

@@ -8,8 +8,8 @@
 
 #include "header.epl"
 
-	<TR>
-	  <TD>
+        <TR>
+          <TD>
 
 
 <DIV CLASS="headline">
@@ -27,8 +27,8 @@
       <LI><A HREF="configuration.html">List of configuration directives</A></LI>
       <LI>Frequently Asked Questions</LI>
       <UL>
-      	<LI><A HREF="http://pdd.sourceforge.net/faq/proftpdfaq.html">Hyperlinked version</A></LI>
-      	<LI><A HREF="http://pdd.sourceforge.net/faq/proftpdfaq-full.html">Single html file</A></LI>
+              <LI><A HREF="http://pdd.sourceforge.net/faq/proftpdfaq.html">Hyperlinked version</A></LI>
+              <LI><A HREF="http://pdd.sourceforge.net/faq/proftpdfaq-full.html">Single html file</A></LI>
       </UL>
 
       <LI><A HREF="http://pdd.sourceforge.net/userguide/linked/userguide.html">User Guide</A> (draft)</A></LI>
@@ -88,7 +88,7 @@ use and the shortcomings will be put up shortly.<P>
 <LI><A HREF="http://www.nihongo.org/snowhare/utilities/ftpweblog/">ftpweblog</A>
 </UL>
 
-	  </TD>
-	</TR>
+          </TD>
+        </TR>
 
 #include "footer.epl"

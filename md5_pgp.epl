@@ -8,8 +8,8 @@
 
 #include "header.epl"
 
-	<TR>
-	  <TD>
+        <TR>
+          <TD>
 
 
 <DIV CLASS="headline">
@@ -94,8 +94,8 @@ QWwTj3RQgGrpyqnieE0v1ibzmKswe3fHlDLEVKwrBK5Ydrz4YUGGAioyngnMTvep
 </font></pre></BLOCKQUOTE>
 
 
-	  </TD>
-	</TR>
+          </TD>
+        </TR>
 
 #include "footer.epl"
 

@@ -8,8 +8,8 @@
 
 #include "header.epl"
 
-	<TR>
-	  <TD>
+        <TR>
+          <TD>
 
 
 <DIV CLASS="headline">
@@ -20,9 +20,9 @@
 
 page content goes here....
 
-	  
-	  </TD>
-	</TR>
+          
+          </TD>
+        </TR>
 
 #include "footer.epl"
 

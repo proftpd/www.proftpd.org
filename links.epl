@@ -8,8 +8,8 @@
 
 #include "header.epl"
 
-	<TR>
-	  <TD>
+        <TR>
+          <TD>
 
 
 <DIV CLASS="headline">
@@ -20,9 +20,9 @@
 <LI><A HREF="http://rad.geology.washington.edu/~tj/proftpd/">http://rad.geology.washington.edu/~tj/proftpd/</A>
 </UL>
 
-	  
-	  </TD>
-	</TR>
+          
+          </TD>
+        </TR>
 
 #include "footer.epl"
 

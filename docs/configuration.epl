@@ -8,8 +8,8 @@
 
 #include "header.epl"
 
-	<TR>
-	  <TD>
+        <TR>
+          <TD>
 
 
 <DIV CLASS="headline">
@@ -18,9 +18,9 @@
 
 <div class="headlines">Notes</div>
     <ol>
-	<LI>This document is valid for 1.2.0-final only.
+        <LI>This document is valid for 1.2.0-final only.
 
-	<LI>SQL support was moved from three to a single module
+        <LI>SQL support was moved from three to a single module
     (mod_sql) after 1.2.0rc3
 
     </OL>
@@ -2134,10 +2134,10 @@ href="#Limit">&lt;Limit&gt;</a> block to completely ignore any hidden
 
   <p>Example:</p>
   <p><code>MaxClientsPerUser 1 &quot;Please do not abuse this facility
-	  you are already connected %m times from your host.&quot;</code></p>
+          you are already connected %m times from your host.&quot;</code></p>
   <p>Results in:</p>
   <p><code>530 Please do not abuse this facility you are already
-	  connected 1 times from your host.</code></p> 
+          connected 1 times from your host.</code></p> 
 
 
   <hr>
@@ -2589,7 +2589,7 @@ href="#Directory">&lt;Directory&gt;</a> sections. </p>
 <p><strong>Syntax:</strong> RatioFile <em>foo1 foo2 foo3</em><br>
   <strong>Default:</strong> None known<br>
   <strong>Context:</strong> &lt;Directory&gt;, &lt;Anonymous&gt;,
-	&lt;Limit&gt;, .ftpaccess<br>
+        &lt;Limit&gt;, .ftpaccess<br>
   <STRONG>Module:</STRONG> mod_ratio<BR>
   <strong>Compatibility:</strong> at least 1.2.0 and later</p>
 
@@ -2603,7 +2603,7 @@ href="#Directory">&lt;Directory&gt;</a> sections. </p>
 <p><strong>Syntax:</strong> Ratios <em>foo1 foo2 foo3</em><br>
   <strong>Default:</strong> None known<br>
   <strong>Context:</strong> &lt;Directory&gt;, &lt;Anonymous&gt;,
-	&lt;Limit&gt;, .ftpaccess<br>
+        &lt;Limit&gt;, .ftpaccess<br>
   <STRONG>Module:</STRONG> mod_ratio<BR>
   <strong>Compatibility:</strong> at least 1.2.0 and later</p>
 
@@ -2616,7 +2616,7 @@ href="#Directory">&lt;Directory&gt;</a> sections. </p>
 <p><strong>Syntax:</strong> RatioTempFile <em>foo1 foo2 foo3</em><br>
   <strong>Default:</strong> None known<br>
   <strong>Context:</strong> &lt;Directory&gt;, &lt;Anonymous&gt;,
-	&lt;Limit&gt;, .ftpaccess<br>
+        &lt;Limit&gt;, .ftpaccess<br>
   <STRONG>Module:</STRONG> mod_ratio<BR>
   <strong>Compatibility:</strong> at least 1.2.0 and later</p>
 
@@ -2665,7 +2665,7 @@ href="#Directory">&lt;Directory&gt;</a> sections. </p>
 <p><strong>Syntax:</strong> SaveRatios <em>foo1 foo2 foo3</em><br>
   <strong>Default:</strong> None known<br>
   <strong>Context:</strong> &lt;Directory&gt;, &lt;Anonymous&gt;,
-	&lt;Limit&gt;, .ftpaccess<br>
+        &lt;Limit&gt;, .ftpaccess<br>
   <STRONG>Module:</STRONG> mod_ratio<BR>
   <strong>Compatibility:</strong> at least 1.2.0 and later</p>
 
@@ -3330,7 +3330,7 @@ they are reported as the values of, respectively, 'SQLDefaultGID' and
 <p><strong>Syntax:</strong> SQLRatios <em>foo1 foo2 foo3</em><br>
   <strong>Default:</strong> None known<br>
   <strong>Context:</strong> &lt;Directory&gt;, &lt;Anonymous&gt;,
-	    &lt;Limit&gt;, .ftpaccess<br>
+            &lt;Limit&gt;, .ftpaccess<br>
   <strong>Module:</strong> mod_sql<BR>
   <strong>Compatibility:</strong> at least 1.2.0 and later</p>
 
@@ -3456,7 +3456,7 @@ they are reported as the values of, respectively, 'SQLDefaultGID' and
   <p><strong>Syntax:</strong> SyslogLevel <em>emerg|alert|crit|error|warn|notice|info|debug</em><br>
     <strong>Default:</strong> None<br>
     <strong>Context:</strong> server config, &lt;VirtualHost&gt;,
-	    &lt;Anonymous&gt;, &lt;Global&gt;<br>
+            &lt;Anonymous&gt;, &lt;Global&gt;<br>
     <STRONG>Module:</STRONG> mod_core<BR>
     <strong>Compatibility:</strong> Post 1.2.0rc2 CVS and later</p>
   
@@ -3735,8 +3735,8 @@ they are reported as the values of, respectively, 'SQLDefaultGID' and
   <STRONG>Module:</STRONG> mod_wrap<BR>
   <strong>Compatibility:</strong> 1.2.0 and later</p>
   <P>UseHostsAllowFile specifies the IPs, networks or name based masks
-	    to be allowed to connect to the server in the same format
-	    as the hosts.allow/deny files.</P>
+            to be allowed to connect to the server in the same format
+            as the hosts.allow/deny files.</P>
 
   <P><EM>Example:</EM> UseHostsAllowFile /etc/ftpd.allow</P>
 
@@ -3748,7 +3748,7 @@ they are reported as the values of, respectively, 'SQLDefaultGID' and
   <STRONG>Module:</STRONG> mod_wrap<BR>
   <strong>Compatibility:</strong> 1.2.0 and later</p>
   <P>Specifies the hosts.deny compatible deny file for IP based
-	    security checks. See <A HREF="#UseHostsAllowFile">UseHostsAllowFile</A></P> 
+            security checks. See <A HREF="#UseHostsAllowFile">UseHostsAllowFile</A></P> 
   <P><EM>Example:</EM> UseHostsDenyFile /etc/ftpd.deny</P>
 
   <hr>

@@ -7,8 +7,8 @@
 
 #include "header.epl"
 
-	<TR>
-	  <TD>
+        <TR>
+          <TD>
 
 <DIV CLASS="headline">
 <: print "<B>$html_title</B>" unless !defined($html_title) :>//
@@ -41,6 +41,6 @@
 <LI>Please email the <A HREF="mailto:core@proftpd.org">core developers</A> to be listed here if you wish to be listed as a frequent contributor to the project</LI>
 </UL>
 
-	  </TD>
-	</TR>
+          </TD>
+        </TR>
 #include "footer.epl"

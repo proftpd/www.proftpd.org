@@ -8,8 +8,8 @@
 
 #include "header.epl"
 
-	<TR>
-	  <TD>
+        <TR>
+          <TD>
 
 
 <DIV CLASS="headline">
@@ -17,42 +17,42 @@
 </DIV>
 
 
-	<P>
-		ProFTPD grew out of the desire to have a secure and
-		configurable FTP server, and out of a significant
-		admiration of the <A
-		HREF="http://www.apache.org">Apache</A> web
-		server. There are currently a very limited number of
-		FTP servers running on unix (or unix-like) hosts. The
-		most commonly used server is probably wu-ftpd. While
-		wu-ftpd provides excellent performance and is
-		generally a good product, it lacks numerous features
-		found in newer Win32 FTP servers, and has a poor
-		security history.  Many people, including the
-		developers who work on ProFTPD have spent a great deal
-		of time fixing bugs and hacking features into
-		wu-ftpd.  Unfortunately, it quickly became clear that
-		a complete redesign was necessary in order to
-		implement the configurability and features
-		desired. ProFTPD is not a hack based on any other
-		server, it's an independent source tree from the
-		ground up.  A number of well known and high traffic <A
-		HREF="/sites.html">sites</A> use ProFTPD.
-	</P>
+        <P>
+                ProFTPD grew out of the desire to have a secure and
+                configurable FTP server, and out of a significant
+                admiration of the <A
+                HREF="http://www.apache.org">Apache</A> web
+                server. There are currently a very limited number of
+                FTP servers running on unix (or unix-like) hosts. The
+                most commonly used server is probably wu-ftpd. While
+                wu-ftpd provides excellent performance and is
+                generally a good product, it lacks numerous features
+                found in newer Win32 FTP servers, and has a poor
+                security history.  Many people, including the
+                developers who work on ProFTPD have spent a great deal
+                of time fixing bugs and hacking features into
+                wu-ftpd.  Unfortunately, it quickly became clear that
+                a complete redesign was necessary in order to
+                implement the configurability and features
+                desired. ProFTPD is not a hack based on any other
+                server, it's an independent source tree from the
+                ground up.  A number of well known and high traffic <A
+                HREF="/sites.html">sites</A> use ProFTPD.
+        </P>
 
-	<P>
-		In addition to wu-ftpd there are a few of other FTP
-		servers available which are designed to be light-weight and
-		secure, at the expense of configurability. For
-		example, Troll FTP is an excellent FTP daemon which is
-		considerably more secure and less resource intensive
-		than wu-ftpd. Unfortunately, while it is quite
-		suitable for basic FTP services, it does not offer the
-		feature set required for more sophisticated FTP sites.
+        <P>
+                In addition to wu-ftpd there are a few of other FTP
+                servers available which are designed to be light-weight and
+                secure, at the expense of configurability. For
+                example, Troll FTP is an excellent FTP daemon which is
+                considerably more secure and less resource intensive
+                than wu-ftpd. Unfortunately, while it is quite
+                suitable for basic FTP services, it does not offer the
+                feature set required for more sophisticated FTP sites.
 
-	  
-	  </TD>
-	</TR>
+          
+          </TD>
+        </TR>
 
 #include "footer.epl"
 

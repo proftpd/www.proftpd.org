@@ -9,8 +9,8 @@
 
 #include "header.epl"
 
-	<TR>
-	  <TD>
+        <TR>
+          <TD>
 
 
 <DIV CLASS="headline">
@@ -156,7 +156,7 @@ in CVS.
 The AllowCHMOD directive has a bug in this version which results in its setting within the conf file only being honoured for the first use.  After which CHMOD commands are denied regardless.
 </P>
 
-	  </TD>
-	</TR>
+          </TD>
+        </TR>
 
 #include "footer.epl"

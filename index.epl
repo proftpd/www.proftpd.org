@@ -7,93 +7,93 @@
 
 #include "header.epl"
 
-	<TR>
-	  <TD>
+        <TR>
+          <TD>
 
         <TR>
-	  <TD>
-	    <B><FONT face="arial" color="#003399">Mirror site updated</FONT></B><BR>
+          <TD>
+            <B><FONT face="arial" color="#003399">Mirror site updated</FONT></B><BR>
             <FONT size="-1">[<I>29/Mar/2001</I>]</FONT>
-	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
+            <BLOCKQUOTE><font face="verdana,arial" size=-1>
 
-	    I've updated the download page to include a number of new mirror sites, a number of webmirrors are also now available, 
-	    the following countries now have their own local mirror sites.
+            I've updated the download page to include a number of new mirror sites, a number of webmirrors are also now available, 
+            the following countries now have their own local mirror sites.
 
-	    <A HREF="http://www.fi.proftpd.org">fi</A>
-	    <A HREF="http://www.nl.proftpd.org">nl</A>
-	    <A HREF="http://www.uk.proftpd.org">uk</A>
+            <A HREF="http://www.fi.proftpd.org">fi</A>
+            <A HREF="http://www.nl.proftpd.org">nl</A>
+            <A HREF="http://www.uk.proftpd.org">uk</A>
 
-	    </font></BLOCKQUOTE>
-	  </TD>
-	</TR>
-
-        <TR>
-	  <TD>
-	    <B><FONT face="arial" color="#003399">1.2.2rc1 test release is out</FONT></B><BR>
-            <FONT size="-1">[<I>25/Mar/2001</I>]</FONT>
-	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
-
-	    The first (and hopefully only) test release for 1.2.2 is
-	    now on ftp.proftpd.org (and should be on most mirrors by now).
-	    This release resolves a number of minor bugs with the
-	    1.2.1 release and addresses the recent security / DoS
-	    issue with 1.2.1 and earlier releases as discussed on <A
-	    HREF="http://www.securityfocus.com">bugtraq.</A>
-	    The announce can be found in the mailing list archives
-
-	    </font></BLOCKQUOTE>
-	  </TD>
-	</TR>
+            </font></BLOCKQUOTE>
+          </TD>
+        </TR>
 
         <TR>
-	  <TD>
-	    <B><FONT face="arial" color="#003399">New DNS entries for ftp mirrors is live</FONT></B><BR>
+          <TD>
+            <B><FONT face="arial" color="#003399">1.2.2rc1 test release is out</FONT></B><BR>
             <FONT size="-1">[<I>25/Mar/2001</I>]</FONT>
-	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
+            <BLOCKQUOTE><font face="verdana,arial" size=-1>
 
-	    All of the known mirrors are now reachable via
-	    ftp.&lt;isocountrycode&gt;.proftpd.org, not all countries
-	    have a local mirror however please use your closest
-	    geographic mirror to conserve bandwidth on the main
-	    site.  A full list of mirrors can be found on the <A
-	    href="/download.html">downloads</A> page.
+            The first (and hopefully only) test release for 1.2.2 is
+            now on ftp.proftpd.org (and should be on most mirrors by now).
+            This release resolves a number of minor bugs with the
+            1.2.1 release and addresses the recent security / DoS
+            issue with 1.2.1 and earlier releases as discussed on <A
+            HREF="http://www.securityfocus.com">bugtraq.</A>
+            The announce can be found in the mailing list archives
 
-	    </font></BLOCKQUOTE>
-	  </TD>
-	</TR>
+            </font></BLOCKQUOTE>
+          </TD>
+        </TR>
+
+        <TR>
+          <TD>
+            <B><FONT face="arial" color="#003399">New DNS entries for ftp mirrors is live</FONT></B><BR>
+            <FONT size="-1">[<I>25/Mar/2001</I>]</FONT>
+            <BLOCKQUOTE><font face="verdana,arial" size=-1>
+
+            All of the known mirrors are now reachable via
+            ftp.&lt;isocountrycode&gt;.proftpd.org, not all countries
+            have a local mirror however please use your closest
+            geographic mirror to conserve bandwidth on the main
+            site.  A full list of mirrors can be found on the <A
+            href="/download.html">downloads</A> page.
+
+            </font></BLOCKQUOTE>
+          </TD>
+        </TR>
 
 
 
-	<TR>
-	  <TD>
-	    <B><FONT face="arial" color="#003399">ProFTPD 1.2.1 released</FONT></B><BR>
+        <TR>
+          <TD>
+            <B><FONT face="arial" color="#003399">ProFTPD 1.2.1 released</FONT></B><BR>
             <FONT size="-1">[<I>01/Mar/2001</I>]</FONT>
-	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
-	    The ProFTPD development team have released 1.2.1 as a minor bugfix release to the 
-	    recent 1.2.0 release.  The full announce message is in the <A href="http://www.proftpd.org/proftpd-announce-archive/01-03/msg00000.html">mailing list archive</A>.
-	    </font></BLOCKQUOTE>
-	  </TD>
-	</TR>
+            <BLOCKQUOTE><font face="verdana,arial" size=-1>
+            The ProFTPD development team have released 1.2.1 as a minor bugfix release to the 
+            recent 1.2.0 release.  The full announce message is in the <A href="http://www.proftpd.org/proftpd-announce-archive/01-03/msg00000.html">mailing list archive</A>.
+            </font></BLOCKQUOTE>
+          </TD>
+        </TR>
 
-	<TR>
-	  <TD>
-	    <B><FONT face="arial" color="#003399">ProFTPD 1.2.0 released</FONT></B><BR>
+        <TR>
+          <TD>
+            <B><FONT face="arial" color="#003399">ProFTPD 1.2.0 released</FONT></B><BR>
             <FONT size="-1">[<I>26/Feb/2001</I>]</FONT>
-	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
-	    The ProFTPD development team are proud to release
-	    the 1.2.0 final release of their ftp server
-	    software.  The tarball is available from <A
-	    HREF="ftp://ftp.proftpd.org/distrib/">ftp://ftp.proftpd.org/distrib/</A>.
-	    Packaged versions are likely to appear over the next few
-	    days and these files will propogate to the mirror sites
-	    within about 24 to 48 hours.
-	    </font></BLOCKQUOTE>
-	  </TD>
-	</TR>
+            <BLOCKQUOTE><font face="verdana,arial" size=-1>
+            The ProFTPD development team are proud to release
+            the 1.2.0 final release of their ftp server
+            software.  The tarball is available from <A
+            HREF="ftp://ftp.proftpd.org/distrib/">ftp://ftp.proftpd.org/distrib/</A>.
+            Packaged versions are likely to appear over the next few
+            days and these files will propogate to the mirror sites
+            within about 24 to 48 hours.
+            </font></BLOCKQUOTE>
+          </TD>
+        </TR>
 
-	<TR>
-	  <TD>
-	  <P><A HREF="/old_news.html">Older news</A>
-	  </TD>
-	</TR>
+        <TR>
+          <TD>
+          <P><A HREF="/old_news.html">Older news</A>
+          </TD>
+        </TR>
 #include "footer.epl"

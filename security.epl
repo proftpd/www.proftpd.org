@@ -8,8 +8,8 @@
 
 #include "header.epl"
 
-	<TR>
-	  <TD>
+        <TR>
+          <TD>
 
 <DIV CLASS="headline">
 <: print "<B>$html_title</B>" unless !defined($html_title) :>//
@@ -53,7 +53,7 @@ than any other major FTP server in wide use today.  While this does
 not guarantee ProFTPD's security, we believe it is a testament to the
 robustness of the code, and the cleanliness of the code base.</P>
 
-	  </TD>
-	</TR>
+          </TD>
+        </TR>
 
 #include "footer.epl"

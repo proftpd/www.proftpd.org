@@ -8,8 +8,8 @@
 
 #include "header.epl"
 
-	<TR>
-	  <TD>
+        <TR>
+          <TD>
 
 <DIV CLASS="headline">
 <: print "<B>$html_title</B>" unless !defined($html_title) :>//
@@ -64,7 +64,7 @@ repository is fairly straight forward:</P>
   <P>That's it.  You can keep up to date by executing <CODE>cvs update
   -dP</CODE> periodically.</P>
 
-	  </TD>
-	</TR>
+          </TD>
+        </TR>
 
 #include "footer.epl"
