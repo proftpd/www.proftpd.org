@@ -14,11 +14,6 @@
     </div>
 
 <!--
-SQL authentication modules for MySQL and PostgreSQL (mod_sql, mod_sql_mysql, mod_sql_postgres)
-Andrew Houghton (aah@acm.org)
-http://www.lastditcheffort.org/aah/mod_sql.html
-
-Kerberos 5 support (mod_krb5pw)
 OS-based filesystem quota support (mod_fsquota)
 Chuck Seeger (seeger@cise.ufl.edu)
 
@@ -27,6 +22,18 @@ Akihiko YAMAMOTO (star@eos.hokudai.ac.jp)
 ftp://ftp.eos.hokudai.ac.jp/pub/pck/release/
 More information available at http://www.proftpd.org/proftpd-devel-archive/full/msg01630.html
 -->
+
+  <ul>
+    <b><font face="arial" color="#003399">SQL-based configuration module</font></b>
+    <br />
+    <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
+    <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/modules/mod_conf_sql.html">http://www.castaglia.org/proftpd/modules/mod_conf_sql.html</a></i></font>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      Support for storing <code>proftpd.conf</code> configuration data in
+      SQL tables.
+    </font></blockquote>
+  </ul>
 
   <ul>
     <b><font face="arial" color="#003399">PostgreSQL-Enabled RPMs</font></b>
@@ -48,6 +55,32 @@ More information available at http://www.proftpd.org/proftpd-devel-archive/full/
     <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
       mod_gss provides support for the GSSAPI security mechanism, as
       described in RFC2228.
+    </font></blockquote>
+  </ul>
+
+  <ul>
+    <b><font face="arial" color="#003399">Script-executing module</font></b>
+    <br />
+    <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
+    <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/modules/mod_exec.html">http://www.castaglia.org/proftpd/modules/mod_exec.html</a></font>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      Support for executing external scripts and commands, based on a variety
+      of conditions, during the course of an FTP session.
+    </font></blockquote>
+  </ul>
+
+  <ul>
+    <b><font face="arial" color="#003399">A different quota module</font></b>
+    <br />
+    <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
+    <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/modules/mod_quotatab.html">http://www.castaglia.org/proftpd/modules/mod_quotatab.html</a></font>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      The <code>mod_quotatab</code> implements FTP quotas in a manner different
+      from the now-deprecated <code>mod_quota</code> module.  Current versions
+      support reading quota limits from flat files, LDAP servers, or SQL
+      tables, and storing quota tallies in flat files or SQL tables.
     </font></blockquote>
   </ul>
 
@@ -89,19 +122,6 @@ More information available at http://www.proftpd.org/proftpd-devel-archive/full/
   </ul>
     
   <ul>
-    <b><font face="arial" color="#003399">TJ's enhancement patches</font></b>
-    <br />
-    <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
-    <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/">http://www.castaglia.org/proftpd/</a></font>
-
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      Lots of useful patches not included in the main source distribution,
-      including file size control, support for blocking .ftpaccess files and
-      more.
-    </font></blockquote>
-  </ul>
-
-  <ul>
     <b><font face="arial" color="#003399">mod_autorun (1.7)</font></b>
     <br />
     <br /><font size="-1"><i>Maintainer: Brett Morgan</i></font>
@@ -121,18 +141,6 @@ More information available at http://www.proftpd.org/proftpd-devel-archive/full/
     <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
       A ProFTPD module that limits FTP commands based on time of day
       and/or day of the week.
-    </font></blockquote>
-  </ul>
-
-  <ul>
-    <b><font face="arial" color="#003399">TLS patch</font></b>
-    <br />
-    <br /><font size="-1"><i>Maintainer: Peter 'Luna' Runestig</i></font>
-    <br /><font size="-1"><i><a href="ftp://ftp.runestig.com/pub/proftpd-tls/">ftp://ftp.runestig.com/pub/proftpd-tls/</a></font>
-
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      This patch implements the TLS extensions to the FTP protocol.  This
-      patch requires that OpenSSL be installed.
     </font></blockquote>
   </ul>
 
