@@ -16,7 +16,7 @@
 	          </table>
                   <table bgcolor="#ffffff" cellspacing=0 cellpadding=0 border=0 width="100%">
                     <tr>
-                      <td><font face="verdana,arial"size=-1>
+                      <td><font face="verdana,arial" size=-1>
                       <UL>
 			<li><a href="/">News Flashes</a>
 			<li><a href="/critbugs.html">Critical Bugs</a>
@@ -42,7 +42,7 @@
 		  </table>
                   <table bgcolor="#ffffff" cellspacing=0 cellpadding=0 border=0 width="100%">
                     <tr>
-                      <td><font face="verdana,arial"size=-1>
+                      <td><font face="verdana,arial" size=-1>
                       <UL>
                         <li><a href="/goals.html">What is ProFTPD?</a>
                         <li><A href="/features.html">Features</A>
@@ -71,7 +71,7 @@
 		  </table>
                   <table bgcolor="#ffffff" cellspacing=0 cellpadding=0 border=0 width="100%">
                     <tr>
-                      <td><font face="verdana,arial"size=-1>
+                      <td><font face="verdana,arial" size=-1>
                         <UL>
                         <li><a href="/docs/">Docs</a>
                         <li><a href="/docs/rfc.html">RFCs</A>
@@ -98,7 +98,7 @@
 		  </table>
                   <table bgcolor="#ffffff" cellspacing=0 cellpadding=0 border=0 width="100%">
                     <tr>
-                      <td><font face="verdana,arial"size=-1>
+                      <td><font face="verdana,arial" size=-1>
                         <UL>
                         <li><a href="/download.html">FTP download servers</A>
                         <LI><A HREF="/wwwmirror.html">Website mirrors</A>
@@ -126,7 +126,7 @@
                   </table>
                   <table bgcolor="#ffffff" cellspacing=0 cellpadding=0 border=0 width="100%">
                     <tr>
-                      <td><font face="verdana,arial"size=-1>
+                      <td><font face="verdana,arial" size=-1>
                         <UL>
                         <li><a href="/lists.html">Mailing Lists</A>
                         <LI><A HREF="http://www.proftpd.org/proftpd-announce-archive/">Announce Archive</A>
