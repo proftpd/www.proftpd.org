@@ -37,7 +37,11 @@ C       #1737 - Enhance file hiding via regular expressions
         #1482 - %U cookie to LogFormat
         #1515 - Enable mod_log to log into default log / syslog
         #1605 - MKD and RMD do not log filepaths
+        #1653 - Complete the FS API abstraction implementation
         #1705 - Add contrib module for time-of-day restrictions
+        #1743 - No magic cookie for number of files transferred
+        #1767 - Reporting problem with ftpwho (transfer rate)
+        #1788 - Add ability to configure auth module checking order
 
 1.2.9
         #1166 - custom wtmp log file
