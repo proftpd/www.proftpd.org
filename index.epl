@@ -8,6 +8,18 @@
 <table bgcolor="white">
 <tr>
   <td>
+    <b><font face="arial" color="#003399">1.2.7rc1 RPMS available</font></b>
+    <br />
+    <font size="-1">[<i>17/Oct/2002</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+	Devrim GUNDUZ has built a range of rpms for the 1.2.7rc1 release, these
+	are now on ftp.proftpd.org:/distrib/packages/.
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
     <b><font face="arial" color="#003399">1.2.7rc1 released</font></b>
     <br />
     <font size="-1">[<i>02/Oct/2002</i>]</font>
