@@ -2,7 +2,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Historic project news" :>//
-<: $last_changed = "09/June/2002 - hamster" :>//
+<: $last_changed = "12/Dec/2002 - jwm" :>//
 
 #include "header.epl"
 
@@ -12,6 +12,208 @@
     <div class="headline">
       <: print "<b>$html_title</b>" unless !defined($html_title) :>//
     </div>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">1.2.7rc3 released</font></b>
+    <br />
+    <font size="-1">[<i>15/Nov/2002</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      A stack of bug fixes, this release represents the latest release candidate for 1.2.7, both 
+	source and RPMs are available on ftp.proftpd.org, please test this release and report
+	your experiences to the development mailing list.
+    </font></blockquote>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      <em>Update:</em> RPMs have now been built by Devrim GUNDUZ and are 
+      now available from ftp.proftpd.org/distrib/packages/ they should 
+      be on all the mirror sites within 48 hours.
+    </font></blockquote>
+    
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      <li>%V and %L meta tags added
+      <li>BSD fixes
+      <li>New configure options (check ./configure --help)
+      <li>Bugfixes
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">1.2.7rc2 released</font></b>
+    <br />
+    <font size="-1">[<i>23/Oct/2002</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      The second release candidate for 1.2.7 has been released and is
+      available on the ftp mirror sites.
+    </font></blockquote>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      <em>Update:</em> RPMs have now been built by Devrim GUNDUZ and are 
+      now available from ftp.proftpd.org/distrib/packages/ they should 
+      be on all the mirror sites within 48 hours.
+    </font></blockquote>
+    
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      <li>%V and %L meta tags added
+      <li>BSD fixes
+      <li>New configure options (check ./configure --help)
+      <li>Bugfixes
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">1.2.7rc1 RPMS available</font></b>
+    <br />
+    <font size="-1">[<i>17/Oct/2002</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+	Devrim GUNDUZ has built a range of rpms for the 1.2.7rc1 release, these
+	are now on ftp.proftpd.org:/distrib/packages/.
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">1.2.7rc1 released</font></b>
+    <br />
+    <font size="-1">[<i>02/Oct/2002</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+	 <ul>
+	 <li>Better RFC2228 support
+	 <li>Changes to scoreboarding system
+	 <li>SITE CHGRP added
+	 <li>Timeout handling enhancements
+	 <li>Directives to limit up/download filesize.
+	 <li>Bug fixes
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">1.2.6 released</font></b>
+    <br />
+    <font size="-1">[<i>04/Sept/2002</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+	 <ul>
+	 <li>mod_quota removed due to lack of active maintenance
+	 <li>New version of mod_ldap (2.8.10)
+	 <li>New directives added: Define, &lt;IfDefine&gt;, &lt;IfModule&gt;, TimeoutSession
+	 <li>Directives removed: AllowChmod, ShowDotFiles
+	 <li>STOU support added
+	 <li>LFS support added
+	 <li>Cygwin support 
+	 <li>Fixed various minor bugs
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">1.2.6rc2 released</font></b>
+    <br />
+    <font size="-1">[<i>18/Aug/2002</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+    Fixes and features, get testing.
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">bugs.proftpd.org down</font></b>
+    <br />
+    <font size="-1">[<i>04/July/2002</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      The bugs database system will be offline until some urgent upgrades
+      are complete.  This should be completed around 20:00 UTC on the 4/July/2002
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">1.2.6rc1 released</font></b>
+    <br />
+    <font size="-1">[<i>02/July/2002</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      Lots of minor clean ups and bug fixes, new in this release Large file support
+      STOU Define, IfDefine and IfModule conditional elements, TimeoutSession
+      Cygwin support
+      <br />
+      mod_quota has been removed due to bugs and a lack of maintainership
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">German Language Site has moved</font></b>
+    <br />
+    <font size="-1">[<i>12/June/2002</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+     The german language support site for ProFTPD has moved from
+     www.stonki.de to <a href="http://www.proftpd.de/">www.proftpd.de</a>
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">1.2.5 released</font></b>
+    <br />
+    <font size="-1">[<i>09/June/2002</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+     New version of mod_sql from the upstream maintainer fixing a number of the 
+     outstanding SQL bugs.  Nothing else has changed from rc3.
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">1.2.5rc2 released</font></b>
+    <br />
+    <font size="-1">[<i>13/May/2002</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+     Many patches, lots of cleanups, please hammer this to death so we can
+     get 1.2.5 released into the wild.
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">Urgent testing needed</font></b>
+    <br />
+    <font size="-1">[<i>09/May/2002</i>]</font>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+    The core team and particularly TJ have been busy clearing a stack of 
+    patches from the bugs system.  What we need now is some urgent testing
+    so checkout a copy of the latest CVS and see if you can break it.
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
+      <b><font face="arial" color="#003399">CVS changes</font></b>
+      <br />
+      <font size="-1">[<i>07/May/2002</i>]</font>
+
+      <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      The main cvs repositoriy for the project has been moved to sourceforge
+      and commit access widened to allow for a faster testing / release cycle.
+      Details of the new location are on the <a href="/cvs.html">cvs page</a>, 
+      we expect to have 1.2.5rc2 out within the next 7 days.
+      </font></blockquote>
   </td>
 </tr>
 
