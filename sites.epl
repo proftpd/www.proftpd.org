@@ -2,7 +2,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Sites powered by ProFTPD" :>//
-<: $last_changed = "04/Apr/2001 - jwm" :>//
+<: $last_changed = "27/Apr/2001 - hamster" :>//
 
 #include "header.epl"
 
@@ -61,10 +61,32 @@
     </dl>
 
     <dl>
-      <dt><a href="http://http://www.ccp14.ac.uk/">Daresbury Laboratory, UK</a></dt>
+      <dt><a href="http://www.ccp14.ac.uk/">Daresbury Laboratory, UK</a></dt>
       <dd>Collaborative Computational Project Number 14 (CCP14) for Single
           Crystal and Powder Diffraction, CLRC, Daresbury Synchrotron
           Laboratory, UK.
+      </dd>
+    </dl>
+
+    <dl>
+      <dt><a href="http://www.swebase.com/">Swebase AB, Sweden</A></dt>
+      <dd>Swebase are running ProFTPD on a number of BSD servers each hosting 200+
+          domains</dd>
+      </dd>
+    </dl>
+
+
+    <dl>
+      <dt><A href="http://www.cslab.vt.edu/">Virginia Tech Computer Science Lab</A></dt>
+      <dd>This site uses ProFTPD to host ftp3.freebsd.org and a Progeny Linux mirror, 
+          shifting over 250Gb of data monthly.</dd>
+    </dl>
+
+    <dl>
+      <dt><a href="ftp://ftp.leo.org/">LEO - Link Everything Online - TU Munich</A></dt>
+      <dd>Large (450GB) software archive hosting many mirrors of major
+      projects like FreeBSD or kernel.org and our own collections for
+      selected topics (e.g. OS/2). Pushing 10mbit/s average.
       </dd>
     </dl>
 

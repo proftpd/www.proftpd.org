@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Website mirrors" :>//
-<: $last_changed = "11/04/2001 - hamster" :>//
+<: $last_changed = "28/05/2001 - hamster" :>//
 #include "header.epl"
 <TR>
 <TD>
@@ -36,7 +36,9 @@ have mirrors are listed below</P>
 <A HREF="http://www.it.proftpd.org/">it</A> 
 <A HREF="http://www.jp.proftpd.org/">jp</A> 
 <A HREF="http://www.nl.proftpd.org/">nl</A> 
+<A HREF="http://www.no.proftpd.org/">no</A> 
 <A HREF="http://www.ru.proftpd.org/">ru</A> 
+<A HREF="http://www.se.proftpd.org/">se</A> 
 <A HREF="http://www.sg.proftpd.org/">sg</A> 
 <A HREF="http://www.ua.proftpd.org/">ua</A> 
 <A HREF="http://www.uk.proftpd.org/">uk</A> 
@@ -49,9 +51,29 @@ Location: Australia (Adelaide)<BR>
 Maintained by: Jarrod Sayers<BR>
 </P>
 <P>
+<A HREF="http://proftpd.planetmirror.com/">http://proftpd.planetmirror.com/</A><BR>
+Location: Australia<BR>
+Maintained by: Jason Andrade<BR>
+</P>
+<P>
 <A HREF="http://www2.linuxforum.net/mirror/proftpd/">http://www2.linuxforum.net/mirror/proftpd/</A><BR>
 Location: China (Beijing)<BR>
 Maintained by: David<BR>
+</P>
+<P>
+<A HREF="http://proftpd.uasw.edu/">http://proftpd.uasw.edu/</A><BR>
+Location: Germany (Wolfenbuettel)<BR>
+Maintained by: Thorsten Ludewig<BR>
+</P>
+<P>
+<A HREF="http://ftp.tim.linux-site.net/">http://ftp.tim.linux-site.net/</A><BR>
+Location: Germany (Oberhausen)<BR>
+Maintained by: Tim Korves<BR>
+</P>
+<P>
+<A HREF="http://proftpd.neptuno2000.com/">http://proftpd.neptuno2000.com/</A><BR>
+Location: Spain (Barcelona)<BR>
+Maintained by: Llu\355s Gargallo<BR>
 </P>
 <P>
 <A HREF="http://hosted.selfdestruct.net/">http://hosted.selfdestruct.net/</A><BR>
@@ -64,9 +86,9 @@ Location: France (Reims)<BR>
 Maintained by: veins<BR>
 </P>
 <P>
-<A HREF="http://proftpd.uasw.edu/">http://proftpd.uasw.edu/</A><BR>
-Location: Germany (Wolfenbuettel)<BR>
-Maintained by: Thorsten Ludewig<BR>
+<A HREF="http://proftpd.proxad.net/">http://proftpd.proxad.net/</A><BR>
+Location: France (Paris)<BR>
+Maintained by: Benoit Artuso<BR>
 </P>
 <P>
 <A HREF="http://proftpd.middle-earth.it/">http://proftpd.middle-earth.it/</A><BR>
@@ -84,9 +106,19 @@ Location: Netherlands (Amsterdam)<BR>
 Maintained by: Peter Batenburg<BR>
 </P>
 <P>
+<A HREF="http://proftpd.borregata.no/">http://proftpd.borregata.no/</A><BR>
+Location: Norway (Tonsberg)<BR>
+Maintained by: BiG-PaPa<BR>
+</P>
+<P>
 <A HREF="http://lich.phys.spbu.ru/">http://lich.phys.spbu.ru/</A><BR>
 Location: Russia (St.Petersburg)<BR>
 Maintained by: Dima Veselov<BR>
+</P>
+<P>
+<A HREF="http://proftpd.mirror1.dataphone.se/">http://proftpd.mirror1.dataphone.se/</A><BR>
+Location: Sweden (Stockholm)<BR>
+Maintained by: Mirror Admin<BR>
 </P>
 <P>
 <A HREF="http://proftpd.hjc.edu.sg/">http://proftpd.hjc.edu.sg/</A><BR>
@@ -94,14 +126,9 @@ Location: Singapore<BR>
 Maintained by: Chen Shiyuan<BR>
 </P>
 <P>
-<A HREF="http://proftpd.neptuno2000.com/">http://proftpd.neptuno2000.com/</A><BR>
-Location: Spain (Barcelona)<BR>
-Maintained by: Llu\355s Gargallo<BR>
-</P>
-<P>
-<A HREF="http://programming.ccp14.ac.uk/ftp-mirror/programming/proftpd/">http://programming.ccp14.ac.uk/ftp-mirror/programming/proftpd/</A><BR>
-Location: UK (Daresbury Laboratory (Manchester))<BR>
-Maintained by: Lachlan Cranswick<BR>
+<A HREF="http://proftpd.dp.ua/">http://proftpd.dp.ua/</A><BR>
+Location: Ukraine (Dnepropetrovsk)<BR>
+Maintained by: Alexander Ryumshin<BR>
 </P>
 <P>
 <A HREF="http://proftpd.korenwolf.net/">http://proftpd.korenwolf.net/</A><BR>
@@ -109,9 +136,24 @@ Location: UK (London)<BR>
 Maintained by: Mark Lowes<BR>
 </P>
 <P>
-<A HREF="http://abn2.alkar.net/">http://abn2.alkar.net/</A><BR>
-Location: Ukraine (Dnepropetrovsk)<BR>
-Maintained by: lexander Ryumshin<BR>
+<A HREF="http://programming.ccp14.ac.uk/ftp-mirror/programming/proftpd/">http://programming.ccp14.ac.uk/ftp-mirror/programming/proftpd/</A><BR>
+Location: UK (Daresbury Laboratory (Manchester))<BR>
+Maintained by: Lachlan Cranswick<BR>
+</P>
+<P>
+<A HREF="http://proftpd.networkedsystems.co.uk/ ">http://proftpd.networkedsystems.co.uk/ </A><BR>
+Location: UK (Manchester (Telecity))<BR>
+Maintained by: fxp0<BR>
+</P>
+<P>
+<A HREF="http://www.proftpd.linuxceptional.com/">http://www.proftpd.linuxceptional.com/</A><BR>
+Location: USA<BR>
+Maintained by: Phil Barnett<BR>
+</P>
+<P>
+<A HREF="http://proftpd.isecuretty.com/">http://proftpd.isecuretty.com/</A><BR>
+Location: USA (Texas)<BR>
+Maintained by: datamatrix<BR>
 </P>
 <P>
 <A HREF="http://proftpd.theuw.net/">http://proftpd.theuw.net/</A><BR>
@@ -124,14 +166,14 @@ Location: USA (Aquebogue, NY)<BR>
 Maintained by: BBK Systems<BR>
 </P>
 <P>
-<A HREF="http://proftpd.isecuretty.com/">http://proftpd.isecuretty.com/</A><BR>
-Location: USA (Texas)<BR>
-Maintained by: datamatrix<BR>
+<A HREF="http://mirage.informationwave.net/proftpd/">http://mirage.informationwave.net/proftpd/</A><BR>
+Location: USA (Clifton, NJ)<BR>
+Maintained by: Omachonu Ogali<BR>
 </P>
 <P>
-<A HREF="http://www.proftpd.linuxceptional.com/">http://www.proftpd.linuxceptional.com/</A><BR>
-Location: USA<BR>
-Maintained by: Phil Barnett<BR>
+<A HREF="http://proftpd.ethereal.com/">http://proftpd.ethereal.com/</A><BR>
+Location: USA (Lenexa, KS)<BR>
+Maintained by: Gerald Combs<BR>
 </P>
 </DL>
 
