@@ -167,6 +167,11 @@ Contact: Lucian Daniel Kafka <luci@conexim.com.au>
           ProFTPD</dd>
     </dl>
 
+    <dl>
+      <dt><A href="http://www.liquidneon.com">Liquidneon.com</A></dt>
+      <dd>Offers a wide range of webhosting, dedicated hosting, and
+          colocation services, running exclusively FreeBSD and OpenBSD.</dd>
+    </dl>
 <!--
 "Goran Matic" gmatic@sircus.com
 If you like you can add ftp.sircus.com as a site that is powered by ProFTPD.
