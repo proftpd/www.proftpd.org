@@ -4,7 +4,7 @@
 
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="proftpd.css" />
+  <link rel="stylesheet" type="text/css" href="/proftpd.css" />
   <title>The ProFTPD Project<: print ": ", $html_title unless !defined($html_title) :></title>
   <: print "<meta name=\"description\" content=\"$meta_description\" />\n" unless !defined($meta_description) :>//
   <: print "<meta name=\"keywords\" content=\"$meta_keywords\" />\n" unless !defined($meta_keywords) :>//
@@ -16,12 +16,12 @@
 <table cellpadding="3" cellspacing="0" border="0">
 <tr valign="middle">
   <td align="left" valign="middle" rowspan="2">
-    <img src="proftpd.png" width="215" height="92" align="left" alt="[ProFTPD Logo]" />
+    <img src="/proftpd.png" width="215" height="92" align="left" alt="[ProFTPD Logo]" />
   </td>
   <td align="left" valign="bottom">
-    <img src="dotgreen.jpg" alt="[*]" />
+    <img src="/dotgreen.jpg" alt="[*]" />
     <font size="+2" face="Times New Roman, sans-serif">ProFTPD</font>
-    <img src="dotgreen.jpg" alt="[*]" />
+    <img src="/dotgreen.jpg" alt="[*]" />
   </td>
 </tr>
 

@@ -21,4 +21,5 @@ OUTDIR = /home/mark/Proftpd/www.proftpd.org/
 EPLINCS = $(INCDIR)/footer.epl  $(INCDIR)/global.epl  $(INCDIR)/header.epl  $(INCDIR)/table.epl 
 
 %.html : %.epl $(EPLINCS)
-	$(EPERL) -P -I $(INCDIR) $< > $(OUTDIR)/$@
+	$(EPERL) -P -I $(INCDIR) $< > ./$@
+#	$(EPERL) -P -I $(INCDIR) $< > $(OUTDIR)/$@
