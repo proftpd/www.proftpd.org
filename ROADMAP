@@ -11,7 +11,7 @@ C = Committed
         #2062 - Enhance UserOwner/GroupOwner to take IDs as well as name
                 parameters
      C  #2071 - Add Variables API
-        #2331 - Proftpd does not honor POSIX ACLs
+     C  #2331 - Proftpd does not honor POSIX ACLs
      C  #2389 - 64-bit compilation warnings
      C  #2392 - mod_sql needs better handling of its backend modules
      C  #2454 - Extend <VirtualHost> to honor multiple addresses
