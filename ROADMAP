@@ -4,9 +4,9 @@ Version: $Id$
 
 C = Committed
 
-1.2.11
+1.2.11/1.3
 
-        #1965 - Changing timing of handling of QUIT command
+     C  #1965 - Changing timing of handling of QUIT command
         #2013 - Track RFC2228 sessions in scoreboard
         #2052 - ProFTPD "ununsed parameters" cleanup
         #2062 - Enhance UserOwner/GroupOwner to take IDs as well as name
@@ -15,12 +15,11 @@ C = Committed
 	#2331 - Proftpd does not honor POSIX ACLs
 	#2368 - Allow contrib modules to extend mod_sql's SQLAuthTypes
         #2389 - 64-bit compilation warnings
-	#2392 - mod_sql needs better handling of its backend modules
+     C  #2392 - mod_sql needs better handling of its backend modules
 	#2454 - Extend <VirtualHost> to honor multiple addresses
 	Add mod_shaper, mod_md5 modules to contrib/
 	DSO support
 
 TBD
         contrib/ per-module directory reorganization
-        shared memory support
         i18n (including RFC2640)
