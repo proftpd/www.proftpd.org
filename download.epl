@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Downloading and mirror sites" :>//
-<: $last_changed = "10/04/2001 - mark" :>//
+<: $last_changed = "11/04/2001 - mark" :>//
 
 #include "header.epl"
 
@@ -316,6 +316,11 @@ Maintained by: Adam<BR>
 <A HREF="ftp://www.linuxceptional.com/proftpd/">ftp://www.linuxceptional.com/proftpd/</A><BR>
 Location: USA<BR>
 Maintained by: Phil Barnett<BR>
+</P>
+<P>
+<A HREF="ftp://proftpd.linuxmafia.org/pub/mirrors/proftpd.org/">ftp://proftpd.linuxmafia.org/pub/mirrors/proftpd.org/</A><BR>
+Location: USA (San Antonio, Texas)<BR>
+Maintained by: Jim Simmons<BR>
 </P>
 </DL>
 
