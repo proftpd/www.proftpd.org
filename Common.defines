@@ -15,8 +15,8 @@ HTMLCHECK = html-check
 EPERL = /usr/bin/eperl
 OUTDIR = $(PWD)/..
 INCDIR = $(DEVROOT)/include
-DEVROOT = /home/jwm/dev/pdd/www.proftpd.org/
-OUTDIR = /home/jwm/public_html/www.proftpd.org/
+DEVROOT = /home/mark/Proftpd/www.proftpd.org/
+OUTDIR = /home/mark/Proftpd/www.proftpd.org/  
 
 EPLINCS = $(INCDIR)/footer.epl  $(INCDIR)/global.epl  $(INCDIR)/header.epl  $(INCDIR)/table.epl 
 
