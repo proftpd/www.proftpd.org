@@ -3112,7 +3112,7 @@ this module.
   <strong>Compatibility:</strong> 1.2.0rc2 and later</p>
 
   <P>This directive is DEPRECATED.  Please use <A
-  HREF="SQLAuthTypes">SQLAuthTypes</A> instead.
+  HREF="#SQLAuthTypes">SQLAuthTypes</A> instead.
 
   <P>Specifies whether an empty (non-NULL but zero-length) password is
   acceped from the database.  Default is no, and truly NULL passwords
@@ -3131,7 +3131,7 @@ this module.
   <strong>Compatibility:</strong> 1.2.0rc2 and later</p>
 
   <P>This directive is DEPRECATED.  Please use <A
-  HREF="SQLAuthTypes">SQLAuthTypes</A> instead.
+  HREF="#SQLAuthTypes">SQLAuthTypes</A> instead.
 
   <P>Specifies whether the password in the database may be in UNIX
   crypt() format.  Default is true, with this being the only check
