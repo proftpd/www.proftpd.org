@@ -24,6 +24,31 @@ More information available at http://www.proftpd.org/proftpd-devel-archive/full/
 -->
 
   <ul>
+    <b><font face="arial" color="#003399">Automatic updating of <code>MasqueradeAddress</code></font></b>
+    <br />
+    <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
+    <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/modules/mod_dynmasq.html">http://www.castaglia.org/proftpd/modules/mod_dynmasq.html</a></i></font>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      For sites that use the <code>MasqueradeAddress</directive> and which
+      have dynamic IP addresses, the <code>mod_dynmasq</code> module is
+      very useful.
+    </font></blockquote>
+  </ul>
+
+  <ul>
+    <b><font face="arial" color="#003399">LDAP-based configuration module</font></b>
+    <br />
+    <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
+    <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/modules/mod_conf_ldap.html">http://www.castaglia.org/proftpd/modules/mod_conf_ldap.html</a></i></font>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      Support for storing <code>proftpd.conf</code> configuration data in
+      LDAP directories.
+    </font></blockquote>
+  </ul>
+
+  <ul>
     <b><font face="arial" color="#003399">FTP server bans</font></b>
     <br />
     <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
