@@ -17,10 +17,10 @@
     to be added shortly and some supplementary notes</p>
 
     <dl>
-      <dt><a href="./basic.conf">Basic</a></dt>
-      <dt><a href="./anonymous.conf">Anonymous</a></dt>
-      <dt><a href="./virtual.conf">Virtual hosts</a></dt>
-      <dt><a href="./complex-virtual.conf">Complex Virtual</a></dt>
+      <dt><a href="./configs/basic.conf">Basic</a></dt>
+      <dt><a href="./configs/anonymous.conf">Anonymous</a></dt>
+      <dt><a href="./configs/virtual.conf">Virtual hosts</a></dt>
+      <dt><a href="./configs/virtual_authuserfile.conf">Complex Virtual</a></dt>
     </dl>
 
   </td>
