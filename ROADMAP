@@ -21,7 +21,7 @@ C       #1486 - Directory listing performance
         #1507 - regex pattern matching in [Allow/Deny][User/Group]
 C       #1564 - Add DESTDIR in Makefile
 C       #1623 - "connected since" in ftpwho
-        #1644 - LogFormat local IP and FQDN tags missing
+C       #1644 - LogFormat local IP and FQDN tags missing
 C       #1649 - setproctitle() prepends and appends process name
 C       #1666 - Auth modules can return duplicate supplemental groups
 C       #1682 - Broken SyslogFacility requires custom syslog code
