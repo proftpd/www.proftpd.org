@@ -70,14 +70,14 @@
     offer.</p>
 
     <dl>
-      <dt><a href="http://www.castaglia.org/proftpd/doc/contrib/ProFTPD-mini-HOWTO-TLS.html">SSL/TLS support</a> (mod_tls)</dt>
-      <dt><a href="http://www.horde.net/~jwm/software/mod_ldap/">LDAP support</a> (mod_ldap)</dt>
+      <dt><a href="http://www.castaglia.org/proftpd/doc/contrib/ProFTPD-mini-HOWTO-TLS.html">SSL/TLS</a> support (mod_tls)</dt>
+      <dt><a href="http://www.horde.net/~jwm/software/mod_ldap/">LDAP</a> support (mod_ldap)</dt>
       <dt>POSIX capabilities (mod_cap)</dt>
-      <dt><a href="http://www.castaglia.org/proftpd/doc/contrib/ProFTPD-mini-HOWTO-SQL.html">SQL support</a> (mod_sql)</dt>
+      <dt><a href="http://www.castaglia.org/proftpd/doc/contrib/ProFTPD-mini-HOWTO-SQL.html">SQL</a> support (mod_sql)</dt>
       <dt>RADIUS support (mod_radius)</dt>
-      <dt>mod_ratio (Maintained by: James Dogopoulos &lt;jd@dynw.com&gt;)</dt>
+      <dt><a href="http://www.castaglia.org/proftpd/">TCP wrappers</a> support (mod_wrap)</dt>
       <dt>mod_readme</dt>
-      <dt><a href="http://www.castaglia.org/proftpd/">TCP wrappers support</a> (mod_wrap)</dt>
+      <dt>mod_ratio (Maintained by: James Dogopoulos &lt;jd@dynw.com&gt;)</dt>
     </dl>
 
     <hr />
