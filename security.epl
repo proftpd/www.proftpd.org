@@ -1,59 +1,57 @@
-<:
-# $Id$
-:>//
+<: # $Id$ :>//
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Reporting Security Issues" :>//
-<: $last_changed = "15/Feb/2001 - hamster" :>//
+<: $last_changed = "04/Apr/2001 - jwm" :>//
 
 #include "header.epl"
 
-        <TR>
-          <TD>
+<table bgcolor="white">
+<tr>
+  <td>
+    <div class="headline">
+      <: print "<b>$html_title</b>" unless !defined($html_title) :>//
+    </div>
 
-<DIV CLASS="headline">
-<: print "<B>$html_title</B>" unless !defined($html_title) :>//
-</DIV>
+    <p> The ProFTPD Group takes a very active stance in eliminating security
+    problems and denial of service attacks against the ProFTPD ftp server.
+    We strongly encourage folks to report such problems to <a
+    href="mailto:security@proftpd.org">security@proftpd.org</a> first,
+    before disclosing them in a public forum.  <strong>We cannot accept
+    regular bug reports or other queries at this address, we ask that you
+    use our <a href="http://bugs.proftpd.org/">bug reporting page</a> for
+    those.</strong></p>
 
-<P> The ProFTPD Group takes a very active stance in eliminating
-security problems and denial of service attacks against the ProFTPD
-ftp server. We strongly encourage folks to report such problems to <A
-HREF="mailto:security@proftpd.org">security@proftpd.org</A> first,
-before disclosing them in a public forum.  <STRONG>We cannot accept
-regular bug reports or other queries at this address, we ask that you
-use our <A HREF="http://bugs.proftpd.org/">bug reporting page</A> for
-those.</STRONG></P>
+    <p> Note that all networked servers are subject to denial of service
+    attacks, and we cannot promise magic workarounds to generic problems or
+    issues which are a result of the host OS.  In general our philosophy is
+    to avoid any attacks which can cause the server to consume resources in
+    a non-linear relationship to the size of inputs. </p>
 
-<P> Note that all networked servers are subject to denial of service
-attacks, and we cannot promise magic workarounds to generic problems
-or issues which are a result of the host OS.  In general our
-philosophy is to avoid any attacks which can cause the server to
-consume resources in a non-linear relationship to the size of
-inputs. </P>
 
-<DIV class="headline">Security</Div>
+    <div class="headline">Security</div>
 
-<P>All users of ProFTPD are strongly encouraged to upgrade to
-<STRONG>at least</STRONG> ProFTPD 1.2.0rc3 as soon as possible.  There
-are several known exploits for prior versions of ProFTPD.  <STRONG>If
-you are using an older version of ProFTPD you do so at your own risk,
-and without support.  In short: you are asking for trouble, with a
-large neon sign, and full-page ads in all the world's newspapers if
-you aren't running 1.2.0rc3.</STRONG></P>
+    <p>All users of ProFTPD are strongly encouraged to upgrade to <strong>at
+    least</strong> ProFTPD 1.2.0rc3 as soon as possible.  There are several
+    known exploits for prior versions of ProFTPD.  <strong>If you are using
+    an older version of ProFTPD you do so at your own risk, and without
+    support.  In short: you are asking for trouble, with a large neon sign,
+    and full-page ads in all the world's newspapers if you aren't running
+    1.2.0rc3.</strong></p>
 
-<P>ProFTPD has had a number of audits of its code for particular
-faults or vunerabilities.  While the developers are happy with these
-audits there still remains a need for a full code audit to root out
-any, and hopefully all, remaining issues.  However, several potential
-vulnerabilities were located and addressed long before they could
-become full-blown exploits.  The developers of ProFTPD believe it to
-be reasonably secure, and sleep well at night running ProFTPD on their
-sites.  ProFTPD has had remarkably fewer security exploits and issues
-than any other major FTP server in wide use today.  While this does
-not guarantee ProFTPD's security, we believe it is a testament to the
-robustness of the code, and the cleanliness of the code base.</P>
-
-          </TD>
-        </TR>
+    <p>ProFTPD has had a number of audits of its code for particular faults
+    or vunerabilities.  While the developers are happy with these audits
+    there still remains a need for a full code audit to root out any, and
+    hopefully all, remaining issues.  However, several potential
+    vulnerabilities were located and addressed long before they could become
+    full-blown exploits.  The developers of ProFTPD believe it to be
+    reasonably secure, and sleep well at night running ProFTPD on their
+    sites.  ProFTPD has had remarkably fewer security exploits and issues
+    than any other major FTP server in wide use today.  While this does not
+    guarantee ProFTPD's security, we believe it is a testament to the
+    robustness of the code, and the cleanliness of the code base.</p>
+  </td>
+</tr>
+</table>
 
 #include "footer.epl"

@@ -1,74 +1,75 @@
-<:
-# $Id$
-:>//
+<: # $Id$ :>//
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Sites powered by ProFTPD" :>//
-<: $last_changed = "02/Apr/2001 - hamster" :>//
+<: $last_changed = "04/Apr/2001 - jwm" :>//
 
 #include "header.epl"
 
-        <TR>
-          <TD>
+<table bgcolor="white">
+<tr>
+  <td>
+    <div class="headline">
+      <: print "<b>$html_title</b>" unless !defined($html_title) :>//
+    </div>
 
+    <p>The core development team would like to thank the following
+    organizations for allowing themselves to be listed.</p>
 
-<DIV CLASS="headline">
-<: print "<B>$html_title</B>" unless !defined($html_title) :>//
-</DIV>
+    <dl>
+      <dt><a href="ftp://ftp.kernel.org/">ftp.kernel.org</a></dt>
+      <dd>The primary source for Linux kernels.</dd>
+    </dl>
 
+    <dl>
+      <dt><a href="ftp://ftp.gnu.org/">GNU.org</a></dt>
+      <dd>The GNU project</dd>
+    </dl>
 
-<P>The core development team would like to thank the following organisations 
-for allowing themselves to be listed.</P>
+    <dl>
+      <dt><a href="http://www.sourceforge.net/">SourceForge</a></dt>
+      <dd>The home for a large number of Open Source projects, including the
+          documentation arm of the ProFTPD Project and the Project's mailing
+          lists.
+      </dd>
+    </dl>
 
-<DL>
-<DT><a href="ftp://ftp.kernel.org/">ftp.kernel.org</A>
-<DD>The primary source for Linux kernels.
-</DL>
+    <dl>
+      <dt><a href="http://www.e-magic.be/">e-magic</a></dt>
+      <dd>Web hosting/design company located in Belgium, mainly using
+          open-source software.
+      </dd>
+    </dl>
 
-<DL>
-<DT><a href="ftp://ftp.gnu.org/">GNU.org</A>
-<DD>The GNU project
-</DL>
+    <dl>
+      <dt><a href="http://www.frontier.net.uk/">Frontier Internet</a></dt>
+      <dd>UK based business ISP, running almost exclusively on Linux
+          servers. Hosts ftp.linux.co.uk and www.linux.co.uk.
+      </dd>
+    </dl>
 
-<DL>
-<DT><A HREF="http://www.sourceforge.net">Sourceforge</A>
-<DD>The home for a large number of open source projects including the documentation arm of the proftpd project and the mailing lists
-</DL>
+    <dl>
+      <dt><a href="http://www.duno.com/">Duno</a></dt>
+      <dd>Hosting service, aiming to be holding 1.6 million domains by the
+          end of 2001.
+      </dd>
+    </dl>
 
-<DL>
-<DT><A HREF="http://www.e-magic.be">e-magic</A>
-<DD>Web hosting/design company located in Belgium, mainly using
-open-source software.
-</DL>
+    <dl>
+      <dt><a href="http://www.fuitadnet.com/">FuitadNET</a></dt>
+      <dd>A free webhosting service running ProFTPD.</dd>
+    </dl>
 
-<DL>
-<DT><A HREF="http://www.frontier.net.uk">Frontier Internet</A></DT>
-<DD>UK based business ISP, running almost exclusively on Linux servers, hosts for ftp.linux.co.uk and www.linux.co.uk</DD>
-</DL>
+    <dl>
+      <dt><a href="http://http://www.ccp14.ac.uk/">Daresbury Laboratory, UK</a></dt>
+      <dd>Collaborative Computational Project Number 14 (CCP14) for Single
+          Crystal and Powder Diffraction, CLRC, Daresbury Synchrotron
+          Laboratory, UK.
+      </dd>
+    </dl>
 
-
-<DL>
-<DT><A HREF="http://www.duno.com">Duno</A></DT>
-<DD>Hosting service, aiming to be holding 1.6 million domains by the end of 2001</DD>
-</DL>
-
-<DL>
-<DT><A HREF="http://www.fuitadnet.com">FuitadNET</A></DT>
-<DD>A free webhosting service running ProFTPD</DD>
-</DL>
-
-<DL>
-<DT><A HREF="http://http://www.ccp14.ac.uk/">Daresbury Laboratory, UK</A></DT>
-<DD>
-Collaborative Computational Project Number 14 (CCP14)<br>
-for Single Crystal and Powder Diffraction, CLRC<br>
-Daresbury Synchrotron Laboratory, UK.
-</DD>
-
-</DL>
-
-          </TD>
-        </TR>
+  </td>
+</tr>
+</table>
 
 #include "footer.epl"
-

@@ -8,21 +8,15 @@
 
 #include "header.epl"
 
-        <TR>
-          <TD>
+<tr>
+  <td>
+    <div class="headline">
+      <: print "<b>$html_title</b>" unless !defined($html_title) :>//
+    </div>
 
-
-<DIV CLASS="headline">
-<: print "<B>$html_title</B>" unless !defined($html_title) :>//
-</DIV>
-
-
-
-page content goes here....
-
+    page content goes here....
           
-          </TD>
-        </TR>
+  </td>
+</tr>
 
 #include "footer.epl"
-

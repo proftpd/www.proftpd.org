@@ -7,13 +7,10 @@ include ../Common.defines
 SEPDIRS =
 SUBDIRS =
 HTMLFILES = $(addsuffix .html, $(basename $(wildcard *.epl)))
-#INFILES = Common.defines scripts/macrodefs.m4
-#CONFIGURE = $(SOURCEROOT)/configure
+OUTDIR = /home/jwm/public_html/www.proftpd.org/docs/
 
 # Top level targets
 
-all : html
+all: html
 
 include ../Common.targets
-
-

@@ -1,59 +1,53 @@
-<:
-# $Id$
-:>//
+<: # $Id$ :>//
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Supported Platforms" :>//
-<: $last_changed = "10/Feb/2001 - hamster" :>//
+<: $last_changed = "04/Apr/2001 - jwm" :>//
 
 #include "header.epl"
 
-        <TR>
-          <TD>
+<table bgcolor="white">
+<tr>
+  <td>
+    <div class="headline">
+      <: print "<b>$html_title</b>" unless !defined($html_title) :>//
+    </div>
 
+    <p>ProFTPD is known to compile and run on the following platforms. If
+    you know of any that are not in this list, please email <a
+    href="mailto:proftpd-devel@proftpd.org">the developers' list</a>).</p>
 
-<DIV CLASS="headline">
-<: print "<B>$html_title</B>" unless !defined($html_title) :>//
-</DIV>
+    <br />
+    <table border="0" align="center" width="75%">
+    <:
+       my @platforms = (
+         'AIX', 'Digital Unix', 'DG/UX', 'FreeBSD*',
+         'HP/UX', 'IRIX*', 'Mac OS/X', 'Linux*', 'NetBSD',
+         'OpenBSD', 'SCO', 'Solaris', 'SunOS', 'BSD/OS'
+       );
+         
+       @platforms = sort(@platforms);
+         
+       for (my $i = 0; $i <= $#platforms; ++$i) {
+         print "<tr>\n";
 
-        <P>
-                ProFTPD is known to compile and run on at least the
-                following platforms (if you have any that are not in
-                this list, please email <A
-                HREF="mailto:proftpd-devel@proftpd.org">the developers list</A>):
+         print '  <td>', $platforms[$i++], "</td>\n";
+         print '  <td>', $platforms[$i++], "</td>\n";
+         print '  <td>', $platforms[$i],   "</td>\n";
 
-                <BR>
-                <TABLE BORDER="0" ALIGN="center" WIDTH="75%">
-                <:
-                   my @platforms = (
-                      'AIX', 'Digital Unix', 'DG/UX', 'FreeBSD*',
-                      'HP/UX', 'IRIX*', 'Mac OS/X', 'Linux*', 'NetBSD',
-                      'OpenBSD', 'SCO', 'Solaris', 'SunOS', 'BSD/OS'
-                   );
-                   
-                   @platforms = sort(@platforms);
-                   
-                   for(my $i = 0; $i <= $#platforms; $i++) {
-                       print "<TR>\n";
+         print "</tr>\n\n";
+       }
+    :>
+    </table>
+ 
+    <br />
 
-                       print '     <TD>', $platforms[$i++], "</TD>\n";
-                       print '     <TD>', $platforms[$i++], "</TD>\n";
-                       print '     <TD>', $platforms[$i], "</TD>\n";
-                       print "</TR>\n\n";
-                   }
-                :>
-                </TABLE>
-                <BR>
-
-                An asterisk(*) denotes a platform that the core
-                ProFTPD team has access to test on.  If you wish to
-                donate either hardware or network access please
-                contact <A
-                HREF="mailto:proftpd-devel@proftpd.org">the developers list</A>.
-        </P>
-
-          </TD>
-        </TR>
+    <p>An asterisk(*) denotes a platform that the ProFTPD core team has
+    access to test on.  If you wish to donate hardware or network access,
+    please contact <a href="mailto:proftpd-devel@proftpd.org">the
+    developers' list</a>.</p>
+  </td>
+</tr>
+</table>
 
 #include "footer.epl"
-

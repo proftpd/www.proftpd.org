@@ -1,23 +1,33 @@
-<:
-# $Id$
-:>//
+<: # $Id$ :>//
 <: $html_title = "Development" :>//
 <: $meta_description = "The Official ProFTPD development web site." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
+<: $last_changed = "04/Apr/2001 - jwm" :>//
+            
 #include "header.epl"
-<H2>Development</H2>
 
-<P> ProFTPD is currently working toward a 1.2.0 release and is
-currently in a feature freeze.  Once 1.2.0 ships, development will
-begin on 1.3.x.  ProFTPD has adopted an even number for
-production-quality versions of ProFTPD and odd numbers for development
-releases.  That is, 1.2.x will be a production release -- the next
-production release of ProFTPD will be 1.4.x.  The next development
-release will be 1.3.x.  Stay tuned to the development mailing list for
-details on features/functionality planned for 1.3.x.</P>
+<table bgcolor="white">
+<tr>
+  <td>
+    <div class="headline">
+      <: print "<b>$html_title</b>" unless !defined($html_title) :>//
+    </div>
 
-<P>Meanwhile, you'll find <A href="/docs/cvs.html">instructions</A>
-on accessing the ProFTPD CVS repository on the <A href="/docs/">docs
-pages</A>.</P>
+    <p>The ProFTPD Project has adopted an even number for production-quality
+    versions of ProFTPD and odd numbers for development releases.  That is,
+    1.2.x will be a production release; the next production release of
+    ProFTPD will be 1.4.x or 2.0.x.</p>
+
+    <p>We've met our goal of releasing a stable, feature-frozen release (the
+    1.2.x series).  Development on the next unstable branch, 1.3.x, will
+    begin soon.  Stay tuned to the development mailing list for details on
+    1.3.x.</p>
+
+    <p>You can find <a href="docs/cvs.html">instructions on accessing the
+    ProFTPD CVS repository</a> in the <a href="/docs/">documentation
+    section</a>.</p>
+  </td>
+</tr>
+</table>
 
 #include "footer.epl"

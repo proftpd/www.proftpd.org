@@ -1,29 +1,25 @@
-<:
-# $Id$
-:>//
+<: # $Id$ :>//
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "PGP public keys" :>//
-<: $last_changed = "" :>//
+<: $last_changed = "04/Apr/2001 - jwm" :>//
 
 #include "header.epl"
 
-        <TR>
-          <TD>
+<table bgcolor="white">
+<tr>
+  <td>
+    <div class="headline">
+      <: print "<b>$html_title</b>" unless !defined($html_title) :>//
+    </div>
 
+    <p>Below is the project PGP key. This key will be used to sign important
+    announcements and generate PGP signatures of released files.  This
+    signature can be used to prove that any file or message originated from
+    the core development team.  The current key will always appear on this
+    page as well as within the public keyserver network.</p>
 
-<DIV CLASS="headline">
-<: print "<B>$html_title</B>" unless !defined($html_title) :>//
-</DIV>
-
-<P>Below is the project PGP key for the project which will be used to
-sign important announces and generate pgp signatures of release files.
-This signature can be used to prove that any file or message really
-originated from the core development team.  The current key will always
-appear on this page.  The public key has been lodged with the MIT public
-keyserver.
-
-<PRE>
+<pre>
 Type Bits/KeyID    Date       User ID
 pub  1024/320C6F9D 2001/02/20 The ProFTPD Group &lt;core@proftpd.org&gt;
 
@@ -43,10 +39,10 @@ t1PQ9vPlsygQAYAOpNG0p+m464p9lvAO7bLP2uwocLV1fkP90FfUo79yK1ADdDje
 EJ56rVH9
 =+/oI
 -----END PGP PUBLIC KEY BLOCK-----
-</PRE>
+</pre>
 
-          </TD>
-        </TR>
+  </td>
+</tr>
+</table>
 
 #include "footer.epl"
-

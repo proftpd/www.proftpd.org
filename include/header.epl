@@ -1,45 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+
 #include "global.epl"
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
-               "http://www.w3.org/TR/REC-html40/loose.dtd">
-<HTML>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="proftpd.css" />
+  <title>The ProFTPD Project<: print ": ", $html_title unless !defined($html_title) :></title>
+  <: print "<meta name=\"description\" content=\"$meta_description\" />\n" unless !defined($meta_description) :>//
+  <: print "<meta name=\"keywords\" content=\"$meta_keywords\" />\n" unless !defined($meta_keywords) :>//
+</head>
 
-<HEAD>
-<LINK REL="stylesheet" TYPE="text/css" HREF="/proftpd.css">
-<TITLE>ProFTPD Project<: print ": ", $html_title unless !defined($html_title) :></TITLE>
-<: print "<META NAME=\"description\" CONTENT=\"$meta_description\">\n" unless !defined($meta_description) :>//
-<: print "<META NAME=\"keywords\" CONTENT=\"$meta_keywords\">\n" unless !defined($meta_keywords) :>//
-</HEAD>
-<BODY text="#000000" link="#000099" alink="#cc0000" vlink="#6666cc" bgcolor="white">
+<body text="#000000" link="#000099" alink="#cc0000" vlink="#6666cc" bgcolor="white">
 
 <!-- Header of the page -->
-<TABLE cellpadding="0" cellspacing="0" border="0">
-  <TR valign="middle">
-    <TD align="left" valign="middle" rowspan="2"><IMG
-src="/proftpd.png" width="198" height="112" align="left" alt="ProFTPD Logo"></TD>
-    <TD align="left" valign="bottom">
-      <IMG SRC="/dotgreen.jpg" alt="o">
-      <FONT size="+2" face="Times New Roman, sans-serif">ProFTPD</FONT>
-      <IMG SRC="/dotgreen.jpg" alt="o">
-    </TD>
-  </TR>
-  <TR>
-    <TD align="left" valign="middle" ><FONT face="verdana,arial" size="-1"><I>Highly configurable GPL ftp server software</I></FONT>
-    </TD>
-  </TR>
-</TABLE>
+<table cellpadding="3" cellspacing="0" border="0">
+<tr valign="middle">
+  <td align="left" valign="middle" rowspan="2">
+    <img src="proftpd.png" width="215" height="92" align="left" alt="[ProFTPD Logo]" />
+  </td>
+  <td align="left" valign="bottom">
+    <img src="dotgreen.jpg" alt="[*]" />
+    <font size="+2" face="Times New Roman, sans-serif">ProFTPD</font>
+    <img src="dotgreen.jpg" alt="[*]" />
+  </td>
+</tr>
+
+<tr>
+  <td align="left" valign="middle">
+    <font face="Verdana,Arial,Helvetica,sans-serif"><i>Highly configurable GPL-licensed FTP server software</i></font>
+  </td>
+</tr>
 
 <!-- Body  of the page -->
-<TABLE cellpadding="0" cellspacing="0" border="0" width="100%">
-  <TR>
-    <TD valign="top" rowspan="2">
+<tr>
+  <td valign="top" rowspan="2">
 
 #include "table.epl"
 
-    </TD>
-    <TD valign="top" align="left" width="100%">
-      <TABLE bgcolor="white">
+  </td>
+  <td valign="top" align="left" width="100%">
 
 <!-- Start the body of the page here -->
-
-

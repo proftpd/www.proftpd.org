@@ -1,138 +1,144 @@
-<:
-# $Id$
-:>//
+<: # $Id$ :>//
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Mailing lists" :>//
-<: $last_changed = "25/Mar/2001" :>//
+<: $last_changed = "04/Apr/2001 - jwm" :>//
 
 #include "header.epl"
 
-        <TR>
-          <TD>
+<table bgcolor="white">
+<tr>
+  <td>
+    <div class="headline">
+      <: print "<b>$html_title</b>" unless !defined($html_title) :>//
+    </div>
 
+    <p>There are a number of mailing lists for the ProFTPD Project covering
+    the entire range of activites.</p>
+  </td>
+</tr>
 
-<DIV CLASS="headline">
-<: print "<B>$html_title</B>" unless !defined($html_title) :>//
-</DIV>
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">Announcements</font></b><br />
+    <font size="-1">[<i>proftpd-announce-request@proftpd.org</i>]</font>
 
-        <P>There are a number of mailing lists for the ProFTPD project covering the whole range of activites relating to the project.
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"> 
+      <p>A very low traffic mailing list, strictly used for major
+      announcements related to ProFTPD (new versions, bug fixes, security
+      issues).  <strong>This list is highly recommended for anyone using
+      ProFTPD.</strong></p>
 
-        </TD>
-        </TR>
+      <br />
 
-        <TR>
-          <TD>
-            <B><FONT face="arial" color="#003399">Announcements</FONT></B><BR>
-            <FONT size="-1">[<I>proftpd-announce-request@proftpd.org</I>]</FONT>
-            <BLOCKQUOTE><font face="verdana,arial" size=-1> 
+      <p>To subscribe, <a
+      href="mailto:proftpd-announce-request@proftpd.org?subject=subscribe">e-mail
+      proftpd-announce-request@proftpd.org, with the subject
+      "subscribe."</a></p>
+    </font></blockquote>
+  </td>
+</tr>
 
-            <P>A very low traffic mailing list, strictly used for major
-            announcements related to ProFTPD (new versions, bug fixes,
-            security issues).  <STRONG>This list is highly recommended
-            for anyone using ProFTPD.</STRONG><BR>&nbsp;
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">Users</font></b><br />
+    <font size="-1">[<i>proftpd-users-request@proftpd.org</i>]</font>
 
-            <P>To subscribe email
-            proftpd-announce-request@proftpd.org, with the subject "subscribe"
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"> 
+      <p>This list is for end user questions and comments on ProFTPD.
+      <strong>This is a high volume list.</strong></p>
 
-            </font></BLOCKQUOTE>
-          </TD>
-        </TR>
+      <br />
 
-        <TR>
-          <TD>
-            <B><FONT face="arial" color="#003399">Users</FONT></B><BR>
-            <FONT size="-1">[<I>proftpd-users-request@proftpd.org</I>]</FONT>
-            <BLOCKQUOTE><font face="verdana,arial" size=-1> 
+      <p>To subscribe, <a
+      href="mailto:proftpd-users-request@proftpd.org?subject=subscribe">e-mail
+      proftpd-users-request@proftpd.org, with the subject
+      "subscribe."</a></p>
+    </font></blockquote>
+  </td>
+</tr>
 
-            <P>This list is for end user questions and comments on ProFTPD.
-            <STRONG>This is a high volume list.</STRONG><BR>&nbsp;
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">Developers</font></b><br />
+    <font size="-1">[<i>proftpd-devel-request@proftpd.org</i>]</font>
 
-            <P>To subscribe email
-            proftpd-users-request@proftpd.org, with the subject "subscribe"
-            
-            </font></BLOCKQUOTE>
-          </TD>
-        </TR>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      <p>This list is intended for those who are interested in the
+      development and future functionality of ProFTPD.</p>
 
-        <TR>
-          <TD>
-            <B><FONT face="arial" color="#003399">Developers</FONT></B><BR>
-            <FONT size="-1">[<I>proftpd-devel-request@proftpd.org</I>]</FONT>
-            <BLOCKQUOTE><font face="verdana,arial" size=-1> 
+      <br />
 
-            <P>The audience for this list is developers and people
-            interested in the development and future functionality of
-            ProFTPD.<BR>&nbsp;
+      <p>To subscribe, <a
+      href="mailto:proftpd-devel-request@proftpd.org?subject=subscribe">e-mail
+      proftpd-devel-request@proftpd.org, with the subject
+      "subscribe."</a></p>
+    </font></blockquote>
+  </td>
+</tr>
 
-            <P>To subscribe email
-            proftpd-devel-request@proftpd.org, with the subject
-            "subscribe"
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">Committers</font></b><br />
+    <font size="-1">[<i>proftpd-committers-request@proftpd.org</i>]</font>
 
-            </font></BLOCKQUOTE>
-          </TD>
-        </TR>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      <p>This list receives the automated e-mail messages from CVS and the
+      bug tracking system. These messages are probably only of use or
+      interest to subscribers of the -devel list (it is intended to cut down
+      on the traffic hitting -devel).</p>
 
-        <TR>
-          <TD>
-            <B><FONT face="arial" color="#003399">Committers</FONT></B><BR>
-            <FONT size="-1">[<I>proftpd-committers-request@proftpd.org</I>]</FONT>
-            <BLOCKQUOTE><font face="verdana,arial" size=-1>
+      <p>To subscribe, <a
+      href="mailto:proftpd-committers-request@proftpd.org?subject=subscribe">e-mail
+      proftpd-committers-request@proftpd.org, with the subject
+      "subscribe."</a></p>
+    </font></blockquote>
+  </td>
+</tr>
 
-            This list exists to take all the automated emails from cvs
-            and the bug system, probably only of use or interest to
-            subscribers of the -devel list (it is intended to cut down
-            on the traffic hitting -devel)
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">Mirror Admins</font></b><br />
+    <font size="-1">[<i>proftpd-mirrorsrequest@proftpd.org</i>]</font>
 
-            <P>To subscribe email
-            proftpd-committers-request@proftpd.org, with the subject
-            "subscribe"
-            
-            </font></BLOCKQUOTE>
-          </TD>
-        </TR>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      <p>This list is intended for administrators mirroring or interested in
+      mirroring the ProFTPD FTP and web site.</p>
 
-        <TR>
-          <TD>
-            <B><FONT face="arial" color="#003399">Mirror Admins</FONT></B><BR>
-            <FONT size="-1">[<I>proftpd-mirrorsrequest@proftpd.org</I>]</FONT>
-            <BLOCKQUOTE><font face="verdana,arial" size=-1>
+      <p>To subscribe, <a
+      href="mailto:proftpd-mirrors-request@proftpd.org?subject=subscribe">e-mail
+      proftpd-mirrors-request@proftpd.org, with the subject
+      "subscribe."</a></p>
+    </font></blockquote>
+  </td>
+</tr>
 
-            The target audience for this list is administrators mirroring
-            or interested in mirroring the ProFTPD ftp and websites.
+<tr>
+  <td>
+    <font face="arial" color="#003399"><b>List Policy</b></font>
 
-            <P>To subscribe email
-            proftpd-mirrors-request@proftpd.org, with the subject
-            "subscribe"
+    <ul>
 
-            </font></BLOCKQUOTE>
-          </TD>
-        </TR>
+      <li>In order to limit the amount of spam received on the lists,
+          posting is restricted to list members only.
+      </li>
+      <li>The list administrators reserve the right to remove members from
+          the list(s) at any time.
+      </li>
+    </ul>
+  </td>
+</tr>
 
-        <TR><TD>
-        <DIV CLASS="headline_small">
-        <: print "List Policy" unless !defined($html_title) :>//
-        </DIV>
-
-        <UL>
-        <LI>Posting is restricted to list members only, this is to
-        limit the amount of spam.
-
-        <LI>The list admins reserve the right to remove members from
-        the list at any time.
-        </UL>
-
-        </TD></TR>
-
-        <TR><TD>
-        The mailing lists are now housed by the Sourceforge project<BR>
-
-        <A href="http://sourceforge.net">
-        <IMG src="http://sourceforge.net/sflogo.php?group_id=17793" width="88" height="31" border="0" alt="SourceForge Logo">
-        </A>
-        
-        </TD></TR>
-        
+<tr>
+  <td>
+    The mailing lists are now housed by <a
+    href="http://www.sourceforge.net/">SourceForge</a>.
+    <br />
+    <a href="http://sourceforge.net/"> <img
+    src="http://sourceforge.net/sflogo.php?group_id=17793" width="88"
+    height="31" border="0" alt="[SourceForge Logo]" /></a>
+  </td>
+</tr>
+</table>
 
 #include "footer.epl"
-

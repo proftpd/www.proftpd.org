@@ -1,146 +1,178 @@
-      <TABLE width=185 border=0>
-        <TR>
-          <!-- Left side menu start. -->
-          <TD valign="top">
-            <font face="Verdana,Arial" size=-1>
-            Current Version: <b><: print $proftpd_version :></b><br>
-            Development Version: <b><: print $proftpd_devel_version :></b><br>
+<table width="215" border="0">
+<tr>
+  <!-- Left side menu start. -->
+  <td valign="top">
+    <table cellspacing="0" cellpadding="3" border="0" bgcolor="#9999cc" width="100%">
+    <tr>
+      <td>
+        <table bgcolor="#9999cc" cellspacing="0" cellpadding="3" border="0" width="100%">
+        <tr>
+          <td><font face="Verdana,Arial,Helvetica,sans-serif"><b>Current Versions</b></font></td>
+        </tr>
+
+        <tr>
+          <td bgcolor="#ffffff">
+            <font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+              Current: <b><: print $proftpd_version :></b> [ <a href="ftp://ftp.proftpd.org/distrib/proftpd-<: print $proftpd_version :>.tar.gz">gz</a> ] [ <a href="ftp://ftp.proftpd.org/distrib/proftpd-<: print $proftpd_version :>.tar.bz2">bz2</a> ]<br />
+              Candidate: <b><: print $proftpd_rc_version :></b> [ <a href="ftp://ftp.proftpd.org/distrib/proftpd-<: print $proftpd_rc_version :>.tar.gz">gz</a> ] [ <a href="ftp://ftp.proftpd.org/distrib/proftpd-<: print $proftpd_rc_version :>.tar.bz2">bz2</a> ]<br />
             </font>
-            <table cellspacing="0" cellpadding="0" border=0 bgcolor="#9999cc" width="100%">
-              <tr>
-                <td>
-                  <table bgcolor="#9999cc" cellspacing=0 cellpadding=0 border=0 width="100%">
-                    <tr>
-                      <td><font face="Verdana,Arial" size=-1><b>Newsroom</b></font></td>
-                    </tr>
-                  </table>
-                  <table bgcolor="#ffffff" cellspacing=0 cellpadding=0 border=0 width="100%">
-                    <tr>
-                      <td><font face="verdana,arial" size=-1>
-                      <UL>
-                        <li><a href="/">News Flashes</a>
-                        <li><a href="/critbugs.html">Critical Bugs</a>
-                        <li><a href="/security.html">Security Updates</a>
-                        <LI><a href="/module_news.html">Contrib module news</A>
-                        </UL>
-                        </font>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table><br>
+          </td>
+        </tr>
+        </table>
+      </td>
+    </tr>
+    </table>
 
+    <br />
 
-            <table border="0" cellspacing="0" cellpadding="0" bgcolor="#9999cc" width="100%">
-              <tr>
-                <td>
-                  <table bgcolor="#9999cc" cellspacing=0 cellpadding=0 border=0 width="100%">
-                    <tr>
-                      <td><font face="Verdana,Arial" size=-1><b>Information</b></font></td>
-                    </tr>
-                  </table>
-                  <table bgcolor="#ffffff" cellspacing=0 cellpadding=0 border=0 width="100%">
-                    <tr>
-                      <td><font face="verdana,arial" size=-1>
-                      <UL>
-                        <li><a href="/goals.html">What is ProFTPD?</a>
-                        <li><A href="/features.html">Features</A>
-                        <li><a href="/platforms.html">Supported Platforms</A>
-                        <LI><A HREF="http://bugs.proftpd.org/">Bug reporting system</A>
-                        <LI><A HREF="http://bugs.proftpd.org/buglist.cgi?bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&email1=&emailtype1=substring&emailassigned_to1=1&email2=&emailtype2=substring&emailreporter2=1&bugidtype=include&bug_id=&changedin=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&short_desc=&short_desc_type=substring&long_desc=&long_desc_type=substring&bug_file_loc=&bug_file_loc_type=substring&status_whiteboard=&status_whiteboard_type=substring&field0-0-0=noop&type0-0-0=noop&value0-0-0=&order=bugs.bug_id">Current bug reports</A>
-                        <LI><A HREF="/links.html">Other sites</A>
-                        <LI><A HREF="/sites.html">Sites powered by ProFTPD</A>
-                        <LI><A href="/credits.html">Core team and contributers</A></LI>
-                        </UL>
-                        </font>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-            
-            <table border="0" cellspacing="0" cellpadding="0" bgcolor="#9999cc" width="100%">
-              <tr>
-                <td>
-                  <table bgcolor="#9999cc" cellspacing=0 cellpadding=0 border=0 width="100%">
-                    <tr>
-                      <td><font face="Verdana,Arial" size=-1><b>Documentation</b></font></td>
-                    </tr>
-                  </table>
-                  <table bgcolor="#ffffff" cellspacing=0 cellpadding=0 border=0 width="100%">
-                    <tr>
-                      <td><font face="verdana,arial" size=-1>
-                        <UL>
-                        <li><a href="/docs/">Docs</a>
-                        <li><a href="/docs/rfc.html">RFCs</A>
-                        <li><a href="/docs/y2k.html">Year 2000 Compliance</a>
-                        <LI><A href="/docs/configuration.html">Directive list</A>
-                        <LI><A HREF="http://pdd.sourceforge.net/faq/proftpdfaq.html">FAQ</A>
-                        <LI><A HREF="http://pdd.sourceforge.net/userguide/linked/userguide.html">Userguide</A>
-                        </UL>
-                        </font>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table><br>
+    <table cellspacing="0" cellpadding="3" border="0" bgcolor="#9999cc" width="100%">
+    <tr>
+      <td>
+        <table bgcolor="#9999cc" cellspacing="0" cellpadding="3" border="0" width="100%">
+        <tr>
+          <td><font face="Verdana,Arial,Helvetica,sans-serif"><b>Newsroom</b></font></td>
+        </tr>
 
-            <table border="0" cellspacing="0" cellpadding="0" bgcolor="#9999cc" width="100%">
-              <tr>
-                <td>
-                  <table bgcolor="#9999cc" cellspacing=0 cellpadding=0 border=0 width="100%">
-                    <tr>
-                      <td><font face="Verdana,Arial" size=-1><b>Mirrors and downloads</b></font></td>
-                    </tr>
-                  </table>
-                  <table bgcolor="#ffffff" cellspacing=0 cellpadding=0 border=0 width="100%">
-                    <tr>
-                      <td><font face="verdana,arial" size=-1>
-                        <UL>
-                        <li><a href="/download.html">FTP download servers</A>
-                        <LI><A HREF="/wwwmirror.html">Website mirrors</A>
-                        <LI><A HREF="/pgp.html">PGP public keys</A>
-                        <LI><A HREF="/md5_pgp.html">md5 & PGP signatures</A>
-                        <LI><A HREF="/howtomirror.html">How to become a mirror</A>
-                        <li><a href="/cvs.html">CVS Repository</a>
-                        </UL>
-                        </font>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table><br>
+        <tr>
+          <td bgcolor="#ffffff">
+            <ul>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="index.html">News Flashes</a></font></li>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="critbugs.html">Critical Bugs</a></font></li>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="security.html">Security Updates</a></font></li>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="module_news.html">Contrib module news</a></font></li>
+            </ul>
+          </td>
+        </tr>
+        </table>
+      </td>
+    </tr>
+    </table>
 
+    <br />
 
-            <table border="0" cellspacing="0" cellpadding="0" bgcolor="#9999cc" width="100%">
-              <tr>
-                <td>
-                  <table bgcolor="#9999cc" cellspacing=0 cellpadding=0 border=0 width="100%">
-                    <tr>
-                      <td><font face="Verdana,Arial" size=-1><b>Development</b></font></td>
-                    </tr>
-                  </table>
-                  <table bgcolor="#ffffff" cellspacing=0 cellpadding=0 border=0 width="100%">
-                    <tr>
-                      <td><font face="verdana,arial" size=-1>
-                        <UL>
-                        <li><a href="/lists.html">Mailing Lists</A>
-                        <LI><A HREF="http://www.proftpd.org/proftpd-announce-archive/">Announce Archive</A>
-                        <LI><A HREF="http://www.proftpd.org/proftpd-l-archive/">Users Archive</A>
-                        <LI><A HREF="http://www.proftpd.org/proftpd-devel-archive/">Devel Archive</A>
-                        </UL>
-                        </font>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table><br>
-          </TD>
-        </TR>
-      </TABLE>
+    <table border="0" cellspacing="0" cellpadding="3" bgcolor="#9999cc" width="100%">
+    <tr>
+      <td>
+        <table bgcolor="#9999cc" cellspacing="0" cellpadding="3" border="0" width="100%">
+        <tr>
+          <td><font face="Verdana,Arial,Helvetica,sans-serif"><b>Information</b></font></td>
+        </tr>
 
+        <tr>
+          <td bgcolor="#ffffff">
+            <ul>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="goals.html">What is ProFTPD?</a></font></li>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="features.html">Features</a></font></li>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="platforms.html">Supported Platforms</a></font></li>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="http://bugs.proftpd.org/">Bug reporting system</a></font></li>
+<!--              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="http://bugs.proftpd.org/buglist.cgi?bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&email1=&emailtype1=substring&emailassigned_to1=1&email2=&emailtype2=substring&emailreporter2=1&bugidtype=include&bug_id=&changedin=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&short_desc=&short_desc_type=substring&long_desc=&long_desc_type=substring&bug_file_loc=&bug_file_loc_type=substring&status_whiteboard=&status_whiteboard_type=substring&field0-0-0=noop&type0-0-0=noop&value0-0-0=&order=bugs.bug_id">Current bug reports</a></font></li>-->
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="links.html">Other sites</a></font></li>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="sites.html">Sites powered by ProFTPD</a></font></li>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="credits.html">Core team and contributers</a></font></li>
+            </ul>
+          </td>
+        </tr>
+        </table>
+      </td>
+    </tr>
+    </table>
+
+    <br />
+  
+    <table border="0" cellspacing="0" cellpadding="3" bgcolor="#9999cc" width="100%">
+    <tr>
+      <td>
+        <table bgcolor="#9999cc" cellspacing="0" cellpadding="3" border="0" width="100%">
+        <tr>
+          <td><font face="Verdana,Arial,Helvetica,sans-serif"><b>Documentation</b></font></td>
+        </tr>
+
+        <tr>
+          <td bgcolor="#ffffff">
+            <ul>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="docs/">Docs</a></font></li>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="docs/rfc.html">RFCs</a></font></li>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="docs/y2k.html">Year 2000 Compliance</a></font></li>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="docs/configuration.html">Directive list</a></font></li>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="http://pdd.sourceforge.net/faq/proftpdfaq.html">FAQ</a></font></li>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="http://pdd.sourceforge.net/userguide/linked/userguide.html">Userguide</a></font></li>
+            </ul>
+          </td>
+        </tr>
+        </table>
+      </td>
+    </tr>
+    </table>
+
+    <br />
+
+    <table border="0" cellspacing="0" cellpadding="3" bgcolor="#9999cc" width="100%">
+    <tr>
+      <td>
+        <table bgcolor="#9999cc" cellspacing="0" cellpadding="3" border="0" width="100%">
+        <tr>
+          <td><font face="Verdana,Arial,Helvetica,sans-serif"><b>Mirrors and downloads</b></font></td>
+        </tr>
+
+        <tr>
+          <td bgcolor="#ffffff">
+            <ul>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="download.html">FTP download servers</a></font></li>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="wwwmirror.html">Website mirrors</a></font></li>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="pgp.html">PGP public keys</a></font></li>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="md5_pgp.html">md5 &amp; PGP signatures</a></font></li>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="howtomirror.html">How to become a mirror</a></font></li>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="cvs.html">CVS Repository</a></font></li>
+            </ul>
+          </td>
+        </tr>
+        </table>
+      </td>
+    </tr>
+    </table>
+
+    <br />
+
+    <table border="0" cellspacing="0" cellpadding="3" bgcolor="#9999cc" width="100%">
+    <tr>
+      <td>
+        <table bgcolor="#9999cc" cellspacing="0" cellpadding="3" border="0" width="100%">
+        <tr>
+          <td><font face="Verdana,Arial,Helvetica,sans-serif"><b>Mailing Lists</b></font></td>
+        </tr>
+
+        <tr>
+          <td bgcolor="#ffffff">
+            <ul>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="lists.html">Available Lists</a></font></li>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="http://www.proftpd.org/proftpd-announce-archive/">Announce Archive</a></font></li>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="http://www.proftpd.org/proftpd-l-archive/">Users Archive</a></font></li>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="http://www.proftpd.org/proftpd-devel-archive/">Development Archive</a></font></li>
+            </ul>
+          </td>
+        </tr>
+        </table>
+      </td>
+    </tr>
+    </table>
+  </td>
+</tr>
+
+<tr>
+  <td valign="top">
+    <table width="100%">
+      <tr>
+        <td align="left">
+          <font size="-1"><i>Updated: <: print $last_changed unless !defined( $last_changed ) :></i></font>
+        </td>
+      </tr>
+
+      <tr>
+        <td align="left">
+          <font size="-1">Copyright (C) 1999, 2000-1, The ProFTPD Project.</font>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>

@@ -1,70 +1,68 @@
-<:
-# $Id$
-:>//
+<: # $Id$ :>//
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Accessing the CVS Repository" :>//
-<: $last_changed = "15/Feb/2001 - hamster" :>//
+<: $last_changed = "04/Apr/2001 - jwm" :>//
 
 #include "header.epl"
 
-        <TR>
-          <TD>
+<table bgcolor="white">
+<tr>
+  <td>
+    <div class="headline">
+      <: print "<b>$html_title</b>" unless !defined($html_title) :>//
+    </div>
 
-<DIV CLASS="headline">
-<: print "<B>$html_title</B>" unless !defined($html_title) :>//
-</DIV>
+    <p>The most recent version of the code is available via <a
+    href="http://www.cvshome.org/">CVS</a> from the proftpd.org cvs server. 
+    While this gives access to the very latest code, it must be stressed
+    that this is <strong>development</strong> grade code and is not
+    guaranteed to work, compile and may completely mangle your system.  For
+    production environments, it is recommended that the distribution
+    tarballs or packages are used unless you really know what you're
+    doing.</p>
 
-<P>The most recent version of the code is available via <A
-HREF="http://www.cyclic.com/">CVS</A> from the proftpd.org cvs server.
-While this gives access to the very latest code it must be stressed that
-this is <STRONG>development</STRONG> grade code and is not guaranteed
-to work, compile and may completely mangle your system.  For production
-environments it is recommended that the distribution tarballs or packages
-are used unless you really know what you're doing.  </P>
-
-<P>There are no mirror sites for the CVS server, however nightly tarballs
-are rolled on a number of sites and these are available for download.</P>
-
-<div class="headline_small">Quick Instructions</div>
-<UL>
-    <LI>The CVS server is <CODE>proftpd.org</CODE></LI>
-
-    <LI><CODE>anonymous@proftpd.org</CODE> is the user, and
-    <CODE>proftpd</CODE> is the password.</LI>
-
-    <LI>The directory is <CODE>/var/proftpd</CODE> and the tree is
-    <CODE>proftpd-1.2</CODE>.</LI>
-</UL>
-
-<div class="headline_small">Detailed Instructions</div>
-<P>Assuming you have a CVS client, the process for accessing the ProFTPD
-repository is fairly straight forward:</P>
+    <p>There are no mirror sites for the CVS server. Nightly tarballs of the
+    latest source from CVS are made available from a number of sites.</p>
 
 
-<BLOCKQUOTE>
-  <P>Type the command <CODE>cvs -d
-  :pserver:anonymous@proftpd.org:/var/proftpd login</CODE>.</P>
+    <div class="headline-small">Quick Instructions</div>
+    <ul>
+        <li>The CVS server is <code>proftpd.org</code></li>
+        <li><code>anonymous@proftpd.org</code> is the user, and
+            <code>proftpd</code> is the password.</li>
+        <li>The directory is <code>/var/proftpd</code> and the tree
+            is <code>proftpd-1.2</code>.</li>
+    </ul>
 
-  <P>You'll see:</P>
 
-  <P><CODE>(Logging in to anonymous@proftpd.org)
-           <BR>
-           CVS password:
-     </CODE>
-  </P>
+    <div class="headline-small">Detailed Instructions</div>
+    <p>Assuming you have a CVS client, the process for accessing the ProFTPD
+    repository is fairly straightforward:</p>
+    
+    <blockquote>
+      <p>Type the command <code>cvs -z3 -d
+      :pserver:anonymous@proftpd.org:/var/proftpd login</code>.</p>
 
-  <P>The password is <CODE>proftpd</CODE>.</P>
+      <p>You'll see:</p>
 
-  <P>Next, type in <CODE>cvs -d
-  :pserver:anonymous@proftpd.org:/var/proftpd checkout
-  proftpd-1.2</CODE></P>
-</BLOCKQUOTE>
+      <p><code>(Logging in to anonymous@proftpd.org)
+               <br />
+               CVS password:
+         </code>
+      </p>
 
-  <P>That's it.  You can keep up to date by executing <CODE>cvs update
-  -dP</CODE> periodically.</P>
+      <p>The password is <code>proftpd</code>.</p>
 
-          </TD>
-        </TR>
+      <p>Next, type in <code>cvs -z3 -d
+      :pserver:anonymous@proftpd.org:/var/proftpd checkout
+      proftpd-1.2</code></p>
+    </blockquote>
+
+    <p>That's it.  You can keep up to date by executing <code>cvs
+    -z3 -update dP</code> periodically.</p>
+  </td>
+</tr>
+</table>
 
 #include "footer.epl"

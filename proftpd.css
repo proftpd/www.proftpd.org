@@ -1,26 +1,21 @@
 /* $Id$ */
-BODY
-{
-	BACKGROUND-COLOR: white;
-	COLOR: black;
-	FONT-SIZE: 12pt
+
+BODY {
+	background-color: white;
+	color: black;
+	font-size: 12pt;
 }
 
-
-
-.headline
-{
-	COLOR: #003399;
-	FONT-FAMILY: Arial,Helvetica;
-	FONT-SIZE: 12pt
+.headline {
+	background-color: white;
+	color: #003399;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 12pt;
 }
             
-.headline_small
-{
-	COLOR: #003399;
-	FONT-FAMILY: Arial,Helvetica;
-	FONT-SIZE: 10pt
+.headline-small {
+	background-color: white;
+	color: #003399;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 10pt;
 }
-            
-/* -- end -- */
-

@@ -10,7 +10,6 @@ HTMLFILES = $(addsuffix .html, $(basename $(wildcard *.epl)))
 
 # Top level targets
 
-all : html
+all: html
 
 include Common.targets
-

@@ -1,58 +1,42 @@
-<:
-# $Id$
-:>//
+<: # $Id$ :>//
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Project Goals" :>//
-<: $last_changed = "09/Feb/2001" :>//
+<: $last_changed = "04/Apr/2001 - jwm" :>//
 
 #include "header.epl"
 
-        <TR>
-          <TD>
+<table bgcolor="white">
+<tr>
+  <td>
+    <div class="headline">
+      <: print "<b>$html_title</b>" unless !defined($html_title) :>//
+    </div>
 
+    <p>ProFTPD grew out of the desire to have a secure and configurable FTP
+    server, and out of a significant admiration of the <a
+    href="http://www.apache.org/">Apache</a> web server. There are currently
+    a very limited number of FTP servers running on Unix (or Unix-like)
+    hosts. The most commonly used server is wu-ftpd.  While wu-ftpd provides
+    excellent performance and is generally a good product, it lacks numerous
+    features found in newer Win32 FTP servers and has a poor security
+    history.  Many people, including the developers who work on ProFTPD,
+    have spent a great deal of time fixing bugs and hacking features into
+    wu-ftpd.  Unfortunately, it quickly became clear that a complete
+    redesign was necessary in order to implement the configurability and
+    features desired. ProFTPD is not a hack based on any other server, it's
+    an independent source tree from the ground up.  A number of well known
+    and high traffic <a href="sites.html">sites</a> use ProFTPD.</p>
 
-<DIV CLASS="headline">
-<: print "<B>$html_title</B>" unless !defined($html_title) :>//
-</DIV>
-
-
-        <P>
-                ProFTPD grew out of the desire to have a secure and
-                configurable FTP server, and out of a significant
-                admiration of the <A
-                HREF="http://www.apache.org">Apache</A> web
-                server. There are currently a very limited number of
-                FTP servers running on unix (or unix-like) hosts. The
-                most commonly used server is probably wu-ftpd. While
-                wu-ftpd provides excellent performance and is
-                generally a good product, it lacks numerous features
-                found in newer Win32 FTP servers, and has a poor
-                security history.  Many people, including the
-                developers who work on ProFTPD have spent a great deal
-                of time fixing bugs and hacking features into
-                wu-ftpd.  Unfortunately, it quickly became clear that
-                a complete redesign was necessary in order to
-                implement the configurability and features
-                desired. ProFTPD is not a hack based on any other
-                server, it's an independent source tree from the
-                ground up.  A number of well known and high traffic <A
-                HREF="/sites.html">sites</A> use ProFTPD.
-        </P>
-
-        <P>
-                In addition to wu-ftpd there are a few of other FTP
-                servers available which are designed to be light-weight and
-                secure, at the expense of configurability. For
-                example, Troll FTP is an excellent FTP daemon which is
-                considerably more secure and less resource intensive
-                than wu-ftpd. Unfortunately, while it is quite
-                suitable for basic FTP services, it does not offer the
-                feature set required for more sophisticated FTP sites.
-
-          
-          </TD>
-        </TR>
+    <p>In addition to wu-ftpd, there are a few of other FTP servers
+    available which are designed to be light-weight and secure at the
+    expense of configurability. For example, Troll FTP is an excellent FTP
+    daemon which is considerably more secure and less resource-intensive
+    than wu-ftpd. Unfortunately, while it is quite suitable for basic FTP
+    services, it does not offer the feature set required for more
+    sophisticated FTP sites.</p>
+  </td>
+</tr>
+</table>
 
 #include "footer.epl"
-

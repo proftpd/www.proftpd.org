@@ -1,45 +1,39 @@
-<:
-# $Id$
-:>//
+<: # $Id$ :>//
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "MD5 sums and PGP signatures of release files" :>//
-<: $last_changed = "31/Mar/2001 - jwm" :>//
+<: $last_changed = "04/Apr/2001 - jwm" :>//
 
 #include "header.epl"
 
-        <TR>
-          <TD>
+<table bgcolor="white">
+<tr>
+  <td>
+    <div class="headline">
+      <: print "<b>$html_title</b>" unless !defined($html_title) :>//
+    </div>
 
+    <div class="headline-small">MD5 Digest Hashes</div>
 
-<DIV CLASS="headline">
-<: print "<B>$html_title</B>" unless !defined($html_title) :>//
-</DIV>
+<pre>
+c3af9b3593e8d1e2cc28c63a4b77f774  <a href="ftp://ftp.proftpd.org/proftpd-1.2.1.tar.gz">proftpd-1.2.1.tar.gz</a>
+0ca3b3c10d2a87a4c3f72a4f76df6a89  <a href="ftp://ftp.proftpd.org/proftpd-1.2.1.tar.bz2">proftpd-1.2.1.tar.bz2</a>
 
-<DIV CLASS="headline_small">
-MD5 Digest Hashes
-</DIV>
+19952cf8f8abd55b7bbc0251e3ff9fda  <a href="ftp://ftp.proftpd.org/proftpd-1.2.2rc1.tar.gz">proftpd-1.2.2rc1.tar.gz</a>
+c43a62b2b5fac287041a8a8756bb6c49  <a href="ftp://ftp.proftpd.org/proftpd-1.2.2rc1.tar.bz2">proftpd-1.2.2rc1.tar.bz2</a>
+</pre>
+  </td>
+</tr>
 
-<PRE>
-c3af9b3593e8d1e2cc28c63a4b77f774  proftpd-1.2.1.tar.gz
-0ca3b3c10d2a87a4c3f72a4f76df6a89  proftpd-1.2.1.tar.bz2
+<tr>
+  <td>
+    <div class="headline-small">PGP Signatures</div>
 
-19952cf8f8abd55b7bbc0251e3ff9fda  proftpd-1.2.2rc1.tar.gz
-c43a62b2b5fac287041a8a8756bb6c49  proftpd-1.2.2rc1.tar.bz2
-</PRE>
+    <b><font face="arial" color="#003399">proftpd-1.2.1.tar.gz.asc</font></b>
+    <br />
+    <font size="-1">[<i>Released 1/Mar/2001</i>]</font>
 
-</TD>
-</TR>
-
-<TR>
-<TD>
-<DIV CLASS="headline_small">
-PGP Signatures
-</DIV>
-
-<B><FONT face="arial" color="#003399">proftpd-1.2.1.tar.gz.asc</FONT></B><BR>
-<FONT size="-1">[<I>20/Feb/2001</I>]</FONT>
-<BLOCKQUOTE><pre><font face="verdana,arial" size=-1>
+<font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><pre>
 -----BEGIN PGP MESSAGE-----
 Version: 2.6.3ia
 
@@ -49,11 +43,14 @@ vlRukY1Ze7724wvhW25vnRawFIXmsqOdoSwhXcs5Dzep9+II6qbd5G2R9VSn870z
 lA5F+HbDKvQ=
 =0CKt
 -----END PGP MESSAGE-----
-</font></pre></BLOCKQUOTE>
+</pre></font>
 
-<B><FONT face="arial" color="#003399">proftpd-1.2.1.tar.bz2.asc</FONT></B><BR>
-<FONT size="-1">[<I>20/Feb/2001</I>]</FONT>
-<BLOCKQUOTE><pre><font face="verdana,arial" size=-1>
+
+    <b><font face="arial" color="#003399">proftpd-1.2.1.tar.bz2.asc</font></b>
+    <br />
+    <font size="-1">[<i>Released 1/Mar/2001</i>]</font>
+
+<font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><pre>
 -----BEGIN PGP MESSAGE-----
 Version: 2.6.3ia
 
@@ -63,11 +60,14 @@ NfTLqCHYkWbTDTcv3NGkdY4yVp+3PI0QoKqMBOXyNDwnpIQID4hgdXVqwUnLvU1C
 oV1E9kLrne8=
 =tJRV
 -----END PGP MESSAGE-----
-</font></pre></BLOCKQUOTE>
+</pre></font>
 
-<B><FONT face="arial" color="#003399">proftpd-1.2.2rc1.tar.gz.asc</FONT></B><BR>
-<FONT size="-1">[<I>20/Feb/2001</I>]</FONT>
-<BLOCKQUOTE><pre><font face="verdana,arial" size=-1>
+
+    <b><font face="arial" color="#003399">proftpd-1.2.2rc1.tar.gz.asc</font></b>
+    <br />
+    <font size="-1">[<i>Released 24/Mar/2001</i>]</font>
+
+<font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><pre>
 -----BEGIN PGP MESSAGE-----
 Version: 2.6.3ia
 
@@ -77,11 +77,14 @@ IeSJMgtcff56t+m+ThqIM8IcM0hnT6HFAZaDpHcn1RlqmN9i9ugxcpRtl8+r9BcQ
 cAcRgRWaa9E=
 =+uys
 -----END PGP MESSAGE-----
-</font></pre></BLOCKQUOTE>
+</pre></font>
 
-<B><FONT face="arial" color="#003399">proftpd-1.2.2rc1.tar.bz2.asc</FONT></B><BR>
-<FONT size="-1">[<I>20/Feb/2001</I>]</FONT>
-<BLOCKQUOTE><pre><font face="verdana,arial" size=-1>
+
+    <b><font face="arial" color="#003399">proftpd-1.2.2rc1.tar.bz2.asc</font></b>
+    <br />
+    <font size="-1">[<i>Released 24/Mar/2001</i>]</font>
+
+<font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><pre>
 -----BEGIN PGP MESSAGE-----
 Version: 2.6.3ia
 
@@ -91,11 +94,10 @@ QWwTj3RQgGrpyqnieE0v1ibzmKswe3fHlDLEVKwrBK5Ydrz4YUGGAioyngnMTvep
 0ItBDWHqBho=
 =791r
 -----END PGP MESSAGE-----
-</font></pre></BLOCKQUOTE>
+</pre></font>
 
-
-          </TD>
-        </TR>
+  </td>
+</tr>
+</table>
 
 #include "footer.epl"
-

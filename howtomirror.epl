@@ -1,107 +1,108 @@
-<:
-# $Id$
-:>//
+<: # $Id$ :>//
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "How to mirror ProFTPD" :>//
-<: $last_changed = "21/Feb/2001 - hamster" :>//
+<: $last_changed = "04/Apr/2001 - jwm" :>//
 
 #include "header.epl"
 
-<TR>
-<TD>
+<table bgcolor="white">
+<tr>
+  <td>
+    <p>ProFTPD has over 30 FTP mirror sites around the world.  If you wish
+    to add to this number and help spread the load, please read on and
+    mirror the FTP site, web site, or both.</p>
 
-<P>ProFTPD has over 30 ftp mirror sites around the world.  If you wish to
-add to this number and help spread the load then please read on and
-mirror either or both of the ftp and websites.</P>
+
+    <div class="headline">Mirroring the Web Site</div>
+
+    <p>There are a couple different ways to mirror the ProFTPD web site.
+    Here is the list of ways we make available, in order of decreasing
+    preference:</p>
 
 
-<div class="headline">Mirroring WWW</div>
+    <div class="headline-small">rsync</div>
 
-<P>There are a couple different ways to mirror the ProFTPD web and ftp
-sites. Here is the list of ways we make available, in order of
-decreasing preference:</P>
+    <p>Details on rsync and how to use it can be found at <a
+    href="http://rsync.samba.org/">http://rsync.samba.org/</a>. You might
+    want to call it using the following arguments, for example:</p>
 
-<div class="headline_small">rsync</div>
+    <pre>rsync -rtlzv --delete proftpd.org::proftpd-www /local/path/to/www/mirror</pre>
 
-Details on rsync and how to use it can be found on <a
-href="http://rsync.samba.org">http://rsync.samba.org/</A>. You might
-want to call it using the following arguments, for example:  </P>
+    <p>You can also just do a <em>rsync proftpd.org::</em> to get a list of
+    rsync modules available.</p>
+
+
+    <div class="headline-small">CVS</div>
+
+    <p>The web site is managed via CVS to allow for multiple-developer
+    access and to make sure we have a good revision history to allow for the
+    quick correction of mistakes.</p>
+
+    <p>Those wishing to mirror direct from CVS will need access to a Unix
+    system with eperl and GNU make installed.  The repository can be found
+    on <a href="http://www.sourceforge.net/projects/pdd/">the ProFTPD
+    documentation web site</a>.</p>
+
+
+    <div class="headline">Mirroring the FTP Site</div>
+
+    <p>There are a couple different ways to mirror the ProFTPD FTP site.
+    Here is the list of ways we make available, in order of decreasing
+    preference:</p>
+
+
+    <div class="headline-small">rsync</div>
+
+    <p>Details on rsync and how to use it can be found at <a
+    href="http://rsync.samba.org/">http://rsync.samba.org/</a>. You might
+    want to call it using the following arguments, for example:</p>
+
+    <pre>rsync -rtlzv --delete proftpd.org::proftpd-ftp /local/path/to/ftp/mirror</pre>
+
+    <p>You can also just do a <em>rsync proftpd.org::</em> to get a list of
+    rsync modules available.</p>
+
+
+    <div class="headline-small">FTP mirroring</div>
+
+    <p>Not much to add here, the FTP site is naturally available via FTP and
+    mirroring using the likes of the perl 'mirror' script, emirror, and the
+    myriad of tools out there is welcome.</p>
+
+
+    <div class="headline">Let us know you're out there</div>
+    <div class="headline-small">Join the mailing list</div>
+
+    <p>We have a mailing list for the use of mirror maintainers. 
+    Announcements of changes on our end and the discussion of problems and
+    issues involved in becoming and running a mirror site are on-topic
+    here.</p>
+
+    <p>The list can be joined by visiting the SourceForge <a
+    href="http://lists.sourceforge.net/mailman/listinfo/proftp-mirrors">mailman
+    interface.</a></p>
+
+
+    <div class="headline-small">Let us know your details.</div>
+
+    <p>Fill out the following template with your information and e-mail it
+    to (hamster at vom dot tm). We'll add you to the mirrors list as soon as
+    possible.</p>
 
 <pre>
-rsync -rtlzv --delete proftpd.org::proftpd-www /path/to/www/mirror
-</pre>
-
-<P>You can also just do a <em>rsync proftpd.org::</em> to get a list
-of rsync modules available.</P>
-
-<div class="headline_small">CVS</div>
-
-<P>The website is managed via CVS to allow for multiple developers and
-to make sure we have a good solid revision history to allow for quick
-correct of mistakes.</P>
-
-<P>Those wishing to mirror direct from CVS will need access to a unix
-box with eperl and GNU make installed.  The repository can be found on
-<A href="http://www.sourceforge.net/projects/pdd/">sourceforge</A></P>
-
-
-<div class="headline">Mirroring FTP</div>
-
-<P>There are a couple different ways to mirror the ProFTPD web and ftp
-sites. Here is the list of ways we make available, in order of
-decreasing preference:</P>
-
-<div class="headline_small">rsync</div>
-
-Details on rsync and how to use it can be found on <a
-href="http://rsync.samba.org">http://rsync.samba.org/</A>. You might
-want to call it using the following arguments, for example:  </P>
-
-<pre>
-rsync -rtlzv --delete proftpd.org::proftpd-ftp /path/to/ftp/mirror
-</pre>
-
-<P>You can also just do a <em>rsync proftpd.org::</em> to get a list
-of rsync modules available.</P>
-
-<div class="headline_small">ftp mirroring</div>
-
-<P>Not much to add here, the ftp site is naturally available via ftp
-and mirroring using the likes of the perl 'mirror' script, emirror,
-and all the other myriad of tools out there is welcome.</P>
-
-
-<div class="headline">Let us know you're out there</div>
-
-<div class="headline_small">Join the mailing list</div>
-
-<P>We have a mailing list dedicated for the use of the mirror
-maintainers for both announcements on changes at our end and for
-discussion of problems and issues around becoming and running a mirror
-site.</P>
-
-<P>The list can be joined by visiting the Sourceforge <A
-HREF="http://lists.sourceforge.net/mailman/listinfo/proftp-mirrors">mailman
-interface</A></P>
-
-
-<div class="headline_small">Let us know your details.</div>
-
-
-<PRE>
 MIRRORTYPE: www/ftp
 URL: (ie ftp://site/directory/)
 ADMIN NAME:
 ADMIN EMAIL:
 PHYSICAL LOCATION: (ie UK, London)
-UPDATED: (ie daily at 0100 GMT)
+UPDATED: (i.e. daily at 0100 GMT)
 OTHER DETAILS: (penguin powered hardware blah blah)
-</PRE>
+</pre>
 
-<P>A few examples
+    <p>A few examples:</p>
 
-<PRE>
+<pre>
 MIRRORTYPE: www
 URL: http://proftpd.mydomain.com
 ADMIN NAME: Gonzo
@@ -118,14 +119,10 @@ ADMIN EMAIL: gonzo@example.org
 PHYSICAL LOCATION: (ie UK, London)
 UPDATED: (ie daily at 0100 GMT)
 OTHER DETAILS: (penguin powered hardware blah blah)
-</PRE>
+</pre>
 
-<P>and email it off to hamster@vom.tm and we'll add you into the
-mirrors list as soon as possible.</P>
-
-</TD>
-</TR>
-
+  </td>
+</tr>
+</table>
 
 #include "footer.epl"
-
