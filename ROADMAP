@@ -31,10 +31,12 @@ C       #1922 - Server allows RNTO an existing file even with AllowOverwrite tur
 1.2.9
         #1166 - custom wtmp log file
         #1279 - AuthAgedPassword option
-        #1454 - <Limit OVERWRITE>
         #1532 - Human readable disk free
+        #1915 - Unsafe pointer usage in scoreboard file format 
         #1921 - Socket-level performance tweaks
         #1925 - Clean up of Class code
+        #1932 - Make Max* checks a PASS POST_CMD handler
+        #1933 - Add mod_ifsession contrib module
 TBD
         #1711 - IPv6 support
         i8n
