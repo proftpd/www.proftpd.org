@@ -2,7 +2,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Project Documentation" :>//
-<: $last_changed = "09/May/2002 - hamster" :>//
+<: $last_changed = "11/May/2002 - hamster" :>//
 
 #include "header.epl"
 
@@ -31,23 +31,22 @@
       		<a href="/docs/directives/configuration.pdf">pdf</a> / 
       		<a href="/docs/directives/configuration.ps">ps</a></li>
       </ul>
-      <li>Frequently Asked Questions</li>
-      <ul>
-        <li><a href="/docs/faq/proftpdfaq.html">Hyperlinked version</a></li>
-        <li><a href="/docs/faq/proftpdfaq-full.html">Single html file</a></li>
-      </ul>
-      <li>Userguide (<a href="http://proftpd.linux.co.uk/localsite/Userguide/linked/userguide.html">linked html</a>) 
+      <li>Frequently Asked Questions
+        (<a href="/docs/faq/linked/faq.html">linked html</a>)
+        (<a href="/docs/faq/faq_full.html">single html</a>)
+        (<a href="/docs/faq/faq.ps">ps</a>)
+        (<a href="/docs/faq/faq.pdf">pdf</a>)
+      <li>Userguide 
+        (<a href="http://proftpd.linux.co.uk/localsite/Userguide/linked/userguide.html">linked html</a>) 
       	(<a href="http://proftpd.linux.co.uk/localsite/Userguide/other/userguide_full.html">single html</a>) 
       	(<a href="http://proftpd.linux.co.uk/localsite/Userguide/other/userguide.ps">postscript</a>) 
       	(<a href="http://proftpd.linux.co.uk/localsite/Userguide/other/userguide.pdf">pdf</a>)</li>
-      <li><a href="/cvs.html">CVS Howto and FAQ</a></li>
-      <!-- <li><a href="y2k.html">Year 2000 statement</a></li> -->
-    </ul>
-
-    <ul>
-		<li><a href="http://www.castaglia.org/proftpd/doc/devel-guide/">ProFTPD Developer's Guide</a> (by TJ Saunders)</li>
-		<li><a href="http://www.castaglia.org/proftpd/doc/contrib/ProFTPD-mini-HOWTO-NAT.txt">Mini-HOWTO for ProFTPD and NAT</a> (by Tobias Ekbom)</li>
-		<li><a href="http://www.castaglia.org/proftpd/doc/contrib/ProFTPD-mini-HOWTO-SSH.html">Mini-HOWTO for FTP over SSH</a> (by TJ Saunders)</li>
+        <li><a href="/cvs.html">CVS Howto and FAQ</a></li>
+	<li><a href="http://www.castaglia.org/proftpd/doc/devel-guide/">ProFTPD Developer's Guide</a> (by TJ Saunders)</li>
+	<li><a href="http://proftpd.linux.co.uk/localsite/Userguide/linked/config-nat.html">Configuring ProFTPD and NAT</a> 
+		(by Tobias Ekbom)</li>
+	<li><a href="http://proftpd.linux.co.uk/localsite/Userguide/linked/config_ftpoverssh.html">Configuring FTP over SSH</a> 
+		(by TJ Saunders)</li>
 	</ul>
 
     <hr />
@@ -89,7 +88,7 @@
     the shortcomings will be put up shortly.</p>
 
     <ul>
-      <li><a href="http://www.mrunix.net/webalizer/">The Webalizer</a></li>
+      <li><a href="http://www.webalizer.org/">The Webalizer</a></li>
       <li><a href="http://www.nihongo.org/snowhare/utilities/ftpweblog/">ftpweblog</a></li>
     </ul>
   </td>
