@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Downloading and mirror sites" :>//
-<: $last_changed = "07/01/1900 - mark" :>//
+<: $last_changed = "08/01/1900 - mark" :>//
 
 #include "header.epl"
 
@@ -43,12 +43,17 @@ Location: Belgium<br />
 Maintained by: Bert Vermeulen<br />
 </p>
 <p>
+<a href="ftp://ftp.proftpd.skynet.be/mirror/ftp.proftpd.org/">ftp://ftp.proftpd.skynet.be/mirror/ftp.proftpd.org/</A><br />
+Location: Belgium<br />
+Maintained by: Vincent Luyckx<br />
+</p>
+<p>
 <a href="ftp://ftp.samurai.com/pub/proftpd/">ftp://ftp.samurai.com/pub/proftpd/</A><br />
 Location: Canada<br />
 Maintained by: Bryan Fullerton<br />
 </p>
 <p>
-<a href="ftp://ftp.solnet.ch/pub/proftpd/">ftp://ftp.solnet.ch/pub/proftpd/</A><br />
+<a href="ftp://ftp.solnet.ch/mirror/proftpd.org/">ftp://ftp.solnet.ch/mirror/proftpd.org/</A><br />
 Location: Switzerland<br />
 Maintained by: Erich Hohermuth<br />
 </p>
@@ -342,6 +347,11 @@ Maintained by: Marian Witkowski<br />
 <a href="ftp://ni.fe.up.pt/pub/mirrors/proftpd/">ftp://ni.fe.up.pt/pub/mirrors/proftpd/</A><br />
 Location: Portugal (FEUP, PORTO)<br />
 Maintained by: vector<br />
+</p>
+<p>
+<a href="ftp://ftp.fixity.net/pub/proftpd/">ftp://ftp.fixity.net/pub/proftpd/</A><br />
+Location: Bulgaria (Bulgaria (Varna))<br />
+Maintained by: Krasimir Ganchev<br />
 </p>
 <p>
 <a href="ftp://venom.ath.cx/mirror/proftpd/">ftp://venom.ath.cx/mirror/proftpd/</A><br />
