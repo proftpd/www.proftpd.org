@@ -2,7 +2,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Reporting Security Issues" :>//
-<: $last_changed = "04/Apr/2001 - jwm" :>//
+<: $last_changed = "09/June/2002 - hamster" :>//
 
 #include "header.epl"
 
@@ -32,7 +32,8 @@
     <div class="headline">Security</div>
 
     <p>All users of ProFTPD are strongly encouraged to upgrade to <strong>at
-    least</strong> ProFTPD 1.2.0rc3 as soon as possible.  There are several
+    least</strong> ProFTPD 1.2.0rc3 as soon as possible and preferably the
+    most recent version (<: print $proftpd_version :>).  There are several
     known exploits for prior versions of ProFTPD.  <strong>If you are using
     an older version of ProFTPD you do so at your own risk, and without
     support.  In short: you are asking for trouble, with a large neon sign,
