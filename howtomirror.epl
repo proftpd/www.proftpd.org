@@ -2,7 +2,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "How to mirror ProFTPD" :>//
-<: $last_changed = "04/Apr/2001 - jwm" :>//
+<: $last_changed = "10/Mar/2002 - jwm" :>//
 
 #include "header.epl"
 
@@ -43,6 +43,16 @@
     system with eperl and GNU make installed.  The repository can be found
     on <a href="http://www.sourceforge.net/projects/pdd/">the ProFTPD
     documentation web site</a>.</p>
+
+    <p>Once you have a mirror site setup you'll need to make a couple
+    of minor changes to the server config if you want to be part of
+    the proftpd.org DNS entries (this makes it easier for end users
+    to find their closest mirror).  When your details are submitted
+    to us we'll assign a site name within your geographic region (ie
+    www1.uk.proftpd.org) and once you've configured your end to handle
+    that and the master entry for your country (ie www.uk.proftpd.org)
+    we'll add you to the DNS.  Apache users can achieve this by using
+    the ServerAlias directive.
 
 
     <div class="headline">Mirroring the FTP Site</div>
@@ -86,8 +96,12 @@
 
     <div class="headline-small">Let us know your details.</div>
 
-    <p>Fill out the following template with your information and e-mail it
-    to (hamster at vom dot tm). We'll add you to the mirrors list as soon as
+    <p>There are two ways of letting us know about
+    your mirror, the preferred option is to fill in this <a
+    href="http://www.korenwolf.net/proftpd/mirrors/AddMirrorSite.php4">form</a>
+    which will add you to the lists here for checking.  Alternatively fill
+    out the following template with your information and e-mail it
+    to (hamster at vom dot org dot uk). We'll add you to the mirrors list as soon as
     possible.</p>
 
 <pre>

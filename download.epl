@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Downloading and mirror sites" :>//
-<: $last_changed = "49/01/1900 - mark" :>//
+<: $last_changed = "68/01/1900 - mark" :>//
 
 #include "header.epl"
 
@@ -389,11 +389,6 @@ Location: United states<br />
 Maintained by: Chris Foti<br />
 </p>
 <p>
-<a href="ftp://ftp.approbation.org/pub/mirrors/proftpd/">ftp://ftp.approbation.org/pub/mirrors/proftpd/</A><br />
-Location: United states<br />
-Maintained by: Terry Davis<br />
-</p>
-<p>
 <a href="ftp://mirror.cybercomm.nl/">ftp://mirror.cybercomm.nl/</A><br />
 Location: Netherlands (Amsterdam)<br />
 Maintained by: Maurice Sienema<br />
@@ -566,6 +561,16 @@ Maintained by: core<br />
 <a href="ftp://proftpd.area51.dk/mirrors/public/proftpd/ftp/">ftp://proftpd.area51.dk/mirrors/public/proftpd/ftp/</A><br />
 Location: Denmark (Copenhagen)<br />
 Maintained by: Gorm Jorgensen<br />
+</p>
+<p>
+<a href="ftp://ftp.approbation.org/pub/mirrors/proftpd/">ftp://ftp.approbation.org/pub/mirrors/proftpd/</A><br />
+Location: United states (Omaha, NE)<br />
+Maintained by: Terry Davis<br />
+</p>
+<p>
+<a href="ftp://proftpd.anwire.org/pub/mirrors/proftpd.org/">ftp://proftpd.anwire.org/pub/mirrors/proftpd.org/</A><br />
+Location: Greece (Athens)<br />
+Maintained by: Vaggelis Georgatos<br />
 </p>
 </dl>
 
