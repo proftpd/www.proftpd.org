@@ -50,14 +50,11 @@
     <em>Fixed in:</em> 1.2.2rc1
     </p>
 
-    <p><a
-    href="http://www.securityfocus.com/frames/?content=/templates/archive.pike%3Flist%3D1%26threads%3D0%26fromthread%3D0%26mid%3D169069%26start%3D2001-03-11%26end%3D2001-03-17%26">Reported</a>
-    on <a href="http://www.securityfocus.com/">BUGTRAQ</a> on the 15th of
-    March by Frank DENIS (Jedi/Sector One).</p>
+    <p>Reported via <a href="http://www.securityfocus.com/">BUGTRAQ</a>
+    on the 15th of March by Frank DENIS (Jedi/Sector One).</p>
 
     <p>Official response from the <a
-    href="http://www.securityfocus.com/frames/?content=/templates/archive.pike%3Flist%3D1%26threads%3D0%26fromthread%3D0%26mid%3D169395%26start%3D2001-03-11%26end%3D2001-03-17%26">development
-    team.</a></p>
+    href="http://online.securityfocus.com/archive/1/169395">development team.</a></p>
 
 
     <div class="headline-small">Problem commands:</div>
