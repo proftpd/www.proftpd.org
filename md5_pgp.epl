@@ -19,8 +19,8 @@
 c3af9b3593e8d1e2cc28c63a4b77f774  <a href="ftp://ftp.proftpd.org/proftpd-1.2.1.tar.gz">proftpd-1.2.1.tar.gz</a>
 0ca3b3c10d2a87a4c3f72a4f76df6a89  <a href="ftp://ftp.proftpd.org/proftpd-1.2.1.tar.bz2">proftpd-1.2.1.tar.bz2</a>
 
-19952cf8f8abd55b7bbc0251e3ff9fda  <a href="ftp://ftp.proftpd.org/proftpd-1.2.2rc1.tar.gz">proftpd-1.2.2rc1.tar.gz</a>
-c43a62b2b5fac287041a8a8756bb6c49  <a href="ftp://ftp.proftpd.org/proftpd-1.2.2rc1.tar.bz2">proftpd-1.2.2rc1.tar.bz2</a>
+2919356b9afe35e74dc9a897cef861b2  <a href="ftp://ftp.proftpd.org/proftpd-1.2.2rc2.tar.gz">proftpd-1.2.2rc2.tar.gz</a>
+287b115963797c60fa6c88bc040ced62  <a href="ftp://ftp.proftpd.org/proftpd-1.2.2rc2.tar.bz2">proftpd-1.2.2rc2.tar.bz2</a>
 </pre>
   </td>
 </tr>
@@ -63,7 +63,7 @@ oV1E9kLrne8=
 </pre></font>
 
 
-    <b><font face="arial" color="#003399">proftpd-1.2.2rc1.tar.gz.asc</font></b>
+    <b><font face="arial" color="#003399">proftpd-1.2.2rc2.tar.gz.asc</font></b>
     <br />
     <font size="-1">[<i>Released 24/Mar/2001</i>]</font>
 
@@ -71,16 +71,16 @@ oV1E9kLrne8=
 -----BEGIN PGP MESSAGE-----
 Version: 2.6.3ia
 
-iQCVAwUAOr0BqWFBiHYyDG+dAQEBmQQArXfLRXDVyzgVJ44SUv52Urkv/s7Y8dDJ
-IeSJMgtcff56t+m+ThqIM8IcM0hnT6HFAZaDpHcn1RlqmN9i9ugxcpRtl8+r9BcQ
-/5sYb6SSvd9uVHxK+K4O1NTaBjYEMwsu5vrXRKR+C6oS0DJHGcpJpOfV99o7Hu5m
-cAcRgRWaa9E=
-=+uys
+iQCVAwUAOuBXkGFBiHYyDG+dAQHodAQAizJgPciM7fBi3ft0YDK7AUNZMckf9bmQ
+3f4sQMeB7l4j6ZqXje8z+Kg19Ge/ChQgJtmecEM5splrSI9T4Cyrp426r/DwJk5d
+imhQrc7aYO+2HFlKcgn+MHEnaEUNby90qZ/mSaVt/lqpu2Kcb3KOAfo/2s7RPRA/
+DLE5XVrwrfs=
+=9KAp
 -----END PGP MESSAGE-----
 </pre></font>
 
 
-    <b><font face="arial" color="#003399">proftpd-1.2.2rc1.tar.bz2.asc</font></b>
+    <b><font face="arial" color="#003399">proftpd-1.2.2rc2.tar.bz2.asc</font></b>
     <br />
     <font size="-1">[<i>Released 24/Mar/2001</i>]</font>
 
@@ -88,11 +88,11 @@ cAcRgRWaa9E=
 -----BEGIN PGP MESSAGE-----
 Version: 2.6.3ia
 
-iQCVAwUAOr0B0GFBiHYyDG+dAQGyYQP+K1nmOuIT6Vb5dpVF7o8oVk7x71qA6Rv6
-D/kIZP5ZBijGX+UWtEwW7KgN0hoVF73slC19m7yeK6jeUIB4RawHRFQ6Mg4V0nUC
-QWwTj3RQgGrpyqnieE0v1ibzmKswe3fHlDLEVKwrBK5Ydrz4YUGGAioyngnMTvep
-0ItBDWHqBho=
-=791r
+iQCVAwUAOuBXRGFBiHYyDG+dAQHRBAP/bGzuJI7BzzA1/2Y8xKgKF7vuCOsbkykK
+nRFscKYWuFiURZ6PqGNzliutscjnx6yqdP9PHkpo6I54imgC6/W86lmd63IytFbD
+rkeycBYnC/eAfIK1+q4LQp0/wSXqYtiZCb6AlGa/6eGy+uTzlIfOxmQTbtHGZx7M
+kJk0riPpxGQ=
+=FzWz
 -----END PGP MESSAGE-----
 </pre></font>
 
