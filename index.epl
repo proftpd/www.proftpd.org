@@ -9,6 +9,20 @@
 
 <tr>
   <td>
+    <b><font face="arial" color="#003399">&quot;Timing attack&quot; protection module</font></b>
+    <br />
+    <font size="-1">[<i>10/Nov/2004</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      <p>The ProFTPD Project team has developed a <code>mod_delay</code>
+      module to help mitigate the timing leak described by Leon Juranic.
+      This module will be included in the next release of ProFTPD.  Details
+      on the module can be found <a href="http://www.castaglia.org/proftpd/modules/mod_delay.html">here</a>.
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
     <b><font face="arial" color="#003399">ProFTPD &quot;timing attack&quot;</font></b>
     <br />
     <font size="-1">[<i>17/Oct/2004</i>]</font>
