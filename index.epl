@@ -41,7 +41,8 @@
       existence since early 2001 (and before, but our web site was only
       revision-controlled beginning in early 2001). Our policy on security
       vulnerabilities has also been clearly stated at
-      <a href="http://www.proftpd.org/security.html"> since that time.</p>
+      <a href="http://www.proftpd.org/security.html">
+      http://www.proftpd.org/security.html</a> since that time.</p>
 
       <p>In summary, we would like to reiterate that this "vulnerability"
       has been a non-issue for quite some time. Furthermore, we suggest that
