@@ -1,7 +1,7 @@
 <:
 # $Id$
 
-$proftpd_version = "1.2.6";
-$proftpd_rc_version = "1.2.7rc3";
+$proftpd_version = "1.2.7";
+$proftpd_rc_version = "none";
 
 :>//
