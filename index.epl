@@ -26,11 +26,11 @@
 	<dt>AnonRejectPasswords
 	<dd>Configure a regular expression filter for commonly used anonymous login "passwords".
 	<dt>RootRevoke
-	<dt>Drop root privileges completely after authentication.  Safer, but disables some features (such as UserOwner).
-	<dd>SocketOptions
-	<dt>Combine existing directives for configuring TCP settings into a single directive, and add support for configuring the TCP maximum segment size.
-	<dd>ListOptions</dd>
-	<dt>ListOptions now supports optional parameters that can be used to set limits on recursive directory listings: "maxdepth", for
+	<dd>Drop root privileges completely after authentication.  Safer, but disables some features (such as UserOwner).
+	<dt>SocketOptions
+	<dd>Combine existing directives for configuring TCP settings into a single directive, and add support for configuring the TCP maximum segment size.
+	<dt>ListOptions
+	<dd>ListOptions now supports optional parameters that can be used to set limits on recursive directory listings: "maxdepth", for
 	limiting the maximum directory depth; "maxdirs", for limiting the maximum number of directories than will be listed; and
 	"maxfiles", for limiting the maximum number of files that will be listed.</dt>
 	</dl>
@@ -41,7 +41,7 @@
 	<b><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">New and Enhanced modules</font></b>
 	<br><br>
 	<font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-	mod_ifsession, mod_radius, mod_rewrite, mod_tls,
+	mod_ifsession, mod_radius, mod_rewrite, mod_tls
 	</font>
 	</blockquote>
 
