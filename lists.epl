@@ -28,10 +28,14 @@
             <FONT size="-1">[<I>proftpd-announce@proftpd.org</I>]</FONT>
 	    <BLOCKQUOTE><font face="verdana,arial" size=-1> 
 
-	    A very low traffic mailing list, strictly used for major
+	    <P>A very low traffic mailing list, strictly used for major
 	    announcements related to ProFTPD (new versions, bug fixes,
 	    security issues).  <STRONG>This list is highly recommended
 	    for anyone using ProFTPD.</STRONG><BR>&nbsp;
+
+	    <P>To subscribe email
+	    proftpd-announce-request@proftpd.org, with the subject "subscribe"
+	    
 
 	    </font></BLOCKQUOTE>
 	  </TD>
@@ -43,9 +47,12 @@
             <FONT size="-1">[<I>proftpd-users@proftpd.org</I>]</FONT>
 	    <BLOCKQUOTE><font face="verdana,arial" size=-1> 
 
-	    This list is for end user questions and comments on ProFTPD.
+	    <P>This list is for end user questions and comments on ProFTPD.
 	    <STRONG>This is a high volume list.</STRONG><BR>&nbsp;
 
+	    <P>To subscribe email
+	    proftpd-users-request@proftpd.org, with the subject "subscribe"
+	    
 	    </font></BLOCKQUOTE>
 	  </TD>
 	</TR>
@@ -56,9 +63,13 @@
             <FONT size="-1">[<I>proftpd-devel@proftpd.org</I>]</FONT>
 	    <BLOCKQUOTE><font face="verdana,arial" size=-1> 
 
-	    The audience for this list is developers and people
+	    <P>The audience for this list is developers and people
 	    interested in the development and future functionality of
 	    ProFTPD.<BR>&nbsp;
+
+	    <P>To subscribe email
+            proftpd-devel-request@proftpd.org, with the subject
+            "subscribe"
 
 	    </font></BLOCKQUOTE>
 	  </TD>
@@ -74,6 +85,10 @@
 	    and the bug system, probably only of use or interest to
 	    subscribers of the -devel list (it is intended to cut down
 	    on the traffic hitting -devel)
+
+	    <P>To subscribe email
+            proftpd-committers-request@proftpd.org, with the subject
+            "subscribe"
 	    
 	    </font></BLOCKQUOTE>
 	  </TD>
@@ -88,9 +103,26 @@
 	    The target audience for this list is administrators mirroring
 	    or interested in mirroring the ProFTPD ftp and websites.
 
+	    <P>To subscribe email
+            proftpd-mirrors-request@proftpd.org, with the subject
+            "subscribe"
+
 	    </font></BLOCKQUOTE>
 	  </TD>
 	</TR>
+
+	<TR><TD>
+	<DIV CLASS="headline_small">
+	<: print "List Policy" unless !defined($html_title) :>//
+	</DIV>
+
+	<LI>Posting is restricted to list members only, this is to
+	limit the amount of spam.
+
+	<LI>The list admins reserve the right to remove members from
+	the list at any time.
+
+	</TD></TR>
 
 	<TR><TD>
 	The mailing lists are now housed by the Sourceforge project<BR>

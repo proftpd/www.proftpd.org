@@ -32,7 +32,7 @@
       </UL>
 
       <LI><A HREF="http://pdd.sourceforge.net/userguide/linked/userguide.html">User Guide</A> (draft)</A></LI>
-      <LI><A HREF="cvs.html">CVS Howto and FAQ</A></LI>
+      <LI><A HREF="/cvs.html">CVS Howto and FAQ</A></LI>
       <LI><A HREF="y2k.html">Year 2000 statement</A></LI>
     </UL>
   </P>
@@ -51,7 +51,7 @@ they offer.</P>
 <DL>
 <DT><A HREF="http://www.horde.net/~jwm/software/mod_ldap">LDAP support</A> (mod_ldap) 
 <DT>mod_linuxprivs
-<DT>SQL authentication support (mod_sql mod_sql_mysql mod_sql_postgres)
+<DT><A HREF="http://www.lastditcheffort.org/aah/mod_sql.html">SQL authentication support</A> (mod_sql)
 <!--
 <DT>mod_pgsql
 <DT>mod_sqlpw
