@@ -6,7 +6,7 @@ C = Committed
 
 1.2.9
         #1279 - AuthAgedPassword option
-        #1532 - Human readable disk free
+C       #1532 - Human readable disk free
         #1711 - IPv6 support
 C       #1828 - mod_sql can only find mysql.sock if in /tmp
 C       #1849 - Compile can have trouble finding mysql.h
