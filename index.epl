@@ -9,6 +9,19 @@
 
 <tr>
   <td>
+    <b><font face="arial" color="#003399">Version 1.2.4 released</font></b>
+    <br />
+    <font size="-1">[<i>19/Oct/2001</i>]</font>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+     1.2.4 is now available from ftp.proftpd.org and all mirror sites. This
+     release fixes the Umask bug in 1.2.3
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
     <b><font face="arial" color="#003399">Version 1.2.3 released</font></b>
     <br />
     <font size="-1">[<i>18/Oct/2001</i>]</font>
@@ -19,8 +32,6 @@
     </font></blockquote>
   </td>
 </tr>
-
-
 
 <tr>
   <td>
