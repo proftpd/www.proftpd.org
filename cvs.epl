@@ -28,8 +28,8 @@
 
     <div class="headline-small">Quick Instructions</div>
     <ul>
-        <li>The CVS server is <code>cvs.proftp.sourceforge.net</code></li>
-        <li><code>anonymous@cvs.proftp.sourceforge.net</code> is the user, the
+        <li>The CVS server is <code>cvs.sourceforge.net</code></li>
+        <li><code>anonymous@cvs.sourceforge.net</code> is the user, the
         password is blank</li>
         <li>The directory is <code>/cvsroot/proftp</code> and the tree
             is <code>proftpd</code>.</li>
@@ -41,14 +41,14 @@
     
     <blockquote>
       <p>Type the command <code>cvs -d
-      :pserver:anonymous@cvs.proftp.sourceforge.net:/cvsroot/proftp login
+      :pserver:anonymous@cvs.sourceforge.net:/cvsroot/proftp login
       </code></p>
 
       <p>Hit Enter when prompted for a password (there is no password
       for anonymous access).</p>
 
       <p>Next, type in <code>cvs -d
-      :pserver:anonymous@cvs.proftp.sourceforge.net:/cvsroot/proftp -z3
+      :pserver:anonymous@cvs.sourceforge.net:/cvsroot/proftp -z3
       co proftpd</code></p>
     </blockquote>
 
