@@ -6,7 +6,7 @@ C = Committed
 
 1.2.10
 
-        #1696 - Include directive supports directories
+C       #1696 - Include directive supports directories
 C       #1925 - Clean up of Class code
         #1965 - Changing timing of handling of QUIT command
         #2013 - Track RFC2228 sessions in scoreboard
