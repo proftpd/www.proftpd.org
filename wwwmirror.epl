@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Website mirrors" :>//
-<: $last_changed = "174/01/1900 - mark" :>//
+<: $last_changed = "27/06/2001 - mark" :>//
 
 #include "header.epl"
 
@@ -27,6 +27,7 @@
     closest geographic mirror to conserve bandwidth.</p>
 <div align="center">
 <a href="http://www.au.proftpd.org/">au</a>
+<a href="http://www.bg.proftpd.org/">bg</a>
 <a href="http://www.cn.proftpd.org/">cn</a>
 <a href="http://www.de.proftpd.org/">de</a>
 <a href="http://www.dk.proftpd.org/">dk</a>
@@ -39,6 +40,8 @@
 <a href="http://www.nl.proftpd.org/">nl</a>
 <a href="http://www.no.proftpd.org/">no</a>
 <a href="http://www.nz.proftpd.org/">nz</a>
+<a href="http://www.pl.proftpd.org/">pl</a>
+<a href="http://www.ro.proftpd.org/">ro</a>
 <a href="http://www.ru.proftpd.org/">ru</a>
 <a href="http://www.se.proftpd.org/">se</a>
 <a href="http://www.sg.proftpd.org/">sg</a>
@@ -211,6 +214,21 @@ Maintained by: Levin<br />
 <a href="http://proftpd.fixity.net">http://proftpd.fixity.net</a><br />
 Location: Bulgaria (Bulgaria (Varna))<br />
 Maintained by: Krasimir Ganchev<br />
+</p>
+<p>
+<a href="http://proftpd.proxy.ro">http://proftpd.proxy.ro</a><br />
+Location: Romaina (Romania (RO), Craiova)<br />
+Maintained by: Bogdan Eugen Daja<br />
+</p>
+<p>
+<a href="http://proftpd.filipe.dhs.org">http://proftpd.filipe.dhs.org</a><br />
+Location: Portugal (Portugal (Madeira Island))<br />
+Maintained by: Carlos Filipe<br />
+</p>
+<p>
+<a href="http://proftpd.mirrors.esat.net">http://proftpd.mirrors.esat.net</a><br />
+Location: Ireland (Dublin, Ireland)<br />
+Maintained by: Dave Burke<br />
 </p>
 </dl>
 

@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Downloading and mirror sites" :>//
-<: $last_changed = "174/01/1900 - mark" :>//
+<: $last_changed = "27/07/2001 - mark" :>//
 
 #include "header.epl"
 
@@ -126,11 +126,6 @@ Maintained by: Andreas Mallek<br />
 <a href="ftp://ftp.jaquet.dk/pub/proftp/">ftp://ftp.jaquet.dk/pub/proftp/</A><br />
 Location: Denmark<br />
 Maintained by: Rasmus<br />
-</p>
-<p>
-<a href="ftp://ftp.neptuno2000.com/pub/proftpd/">ftp://ftp.neptuno2000.com/pub/proftpd/</A><br />
-Location: Spain<br />
-Maintained by: Lluis Gargallo<br />
 </p>
 <p>
 <a href="ftp://ftp.linja.net/pub/mirrors/proftpd/">ftp://ftp.linja.net/pub/mirrors/proftpd/</A><br />
@@ -389,7 +384,7 @@ Location: United states<br />
 Maintained by: Mirror Administrator<br />
 </p>
 <p>
-<a href="http://proftpd.cakraweb.com/">http://proftpd.cakraweb.com/</A><br />
+<a href="http://public.cakraweb.com/pub/proftpd/">http://public.cakraweb.com/pub/proftpd/</A><br />
 Location: Indonesia (Jakarta)<br />
 Maintained by: Asfihani<br />
 </p>
@@ -407,6 +402,26 @@ Maintained by: vector<br />
 <a href="ftp://ftp.fixity.net/pub/proftpd/">ftp://ftp.fixity.net/pub/proftpd/</A><br />
 Location: Bulgaria (Bulgaria (Varna))<br />
 Maintained by: Krasimir Ganchev<br />
+</p>
+<p>
+<a href="ftp://venom.ath.cx/mirror/proftpd/">ftp://venom.ath.cx/mirror/proftpd/</A><br />
+Location: Italy (Italy (Florence))<br />
+Maintained by: Matteo<br />
+</p>
+<p>
+<a href="ftp://ftp.proxy.ro/linux/proftpd/">ftp://ftp.proxy.ro/linux/proftpd/</A><br />
+Location: Romaina (Romania (RO), Craiova)<br />
+Maintained by: Bogdan Eugen Daja<br />
+</p>
+<p>
+<a href="ftp://ftp.filipe.dhs.org/pub/proftpd">ftp://ftp.filipe.dhs.org/pub/proftpd</A><br />
+Location: Portugal (Portugal (Madeira Island))<br />
+Maintained by: Carlos Filipe<br />
+</p>
+<p>
+<a href="ftp://ftp.esat.net/mirrors/ftp.proftpd.org/">ftp://ftp.esat.net/mirrors/ftp.proftpd.org/</A><br />
+Location: Ireland (Dublin, Ireland)<br />
+Maintained by: Dave Burke<br />
 </p>
 </dl>
 
