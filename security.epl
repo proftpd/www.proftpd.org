@@ -38,24 +38,12 @@
 
     <div class="headline">Security</div>
 
-    <p>All users of ProFTPD are strongly encouraged to upgrade to <strong>at
-    least</strong> ProFTPD 1.2.2rc1 as soon as possible and preferably the
+    <p>All users of ProFTPD are strongly urged to upgrade to <strong>at
+    least</strong> ProFTPD 1.2.7 as soon as possible and preferably the
     most recent stable version (<: print $proftpd_version :>). There are
-    several known exploits for prior versions of ProFTPD. <strong>If you are
-    using an older version of ProFTPD you do so at your own risk, and
+    severe known vulnerabilities in prior versions of ProFTPD. <strong>If you
+    are using an older version of ProFTPD you do so at your own risk, and
     without support and may your gods go with you.</strong></p>
-
-    <p>ProFTPD has had a number of audits of its code for particular faults
-    or vunerabilities. While the developers are happy with these audits
-    there still remains a need for a full code audit to root out any, and
-    hopefully all, remaining issues. However, several potential
-    vulnerabilities were located and addressed long before they could become
-    full-blown exploits. The developers of ProFTPD believe it to be
-    reasonably secure, and sleep well at night running ProFTPD on their
-    sites. ProFTPD has had remarkably fewer security exploits and issues
-    than any other major FTP server in wide use today. While this does not
-    guarantee ProFTPD's security, we believe it is a testament to the
-    robustness of the code, and the cleanliness of the code base.</p>
   </td>
 </tr>
 </table>

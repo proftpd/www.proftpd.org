@@ -21,37 +21,31 @@
 
 <tr>
   <td>
-    <p>There are currently no known critical or security bugs in the latest version of 
-    proftpd (<: print $proftpd_version :>).  If you know of any problems or suspect 
-    that there is one please read the <a href="security.html">security</a> and report
-    the issue as detailed there.</p>
-    
-    <p>Older fixed critical bugs have been <a href="critbugs_old.html">moved</a><br /></p>
-  </td>
-</tr>
-
-<!--
-<tr>
-  <td>
     <p>
-    <em>Bug:</em> Security risk in mod_sql/3.2.3<br />
-    <em>Bugzilla ID:</em> none<br />
-    <em>Version:</em> Not shipped with Proftpd source<br />
+    <em>Bug:</em> Remote Exploit in ASCII translation<br />
+    <em>Bugzilla ID:</em> None<br />
+    <em>Version:</em> All<br />
     <em>Platforms:</em> All<br />
-    <em>Severity/Effect:</em> Critical<br />
-    <em>Fixed in:</em> mod_sql/3.2.4 (shipped with 1.2.2)
+    <em>Severity/Effect:</em> <b>Critical</b><br />
+    <em>Date:</em> September 23, 2003<br /> 
+    <em>Fixed In:</em>(see below)
     </p>
 
-    <div class="headline-small">Description of problem:</div>
+    <div class="headline-small">Description of Problem:</div>
     <p>
-     A bug in 3.2.3 has resulted in only usernames being checked, not passwords
-     it is recommended that anyone running mod_sql/3.2.3 upgrades immediately.  This
-     version of mod_sql was not shipped with the official source releases and therefore 
-     only administrators who have manually updated mod_sql will be affected.
+    X-Force Research at ISS has discovered a bug in ProFTPD's handling of
+    ASCII translations that can allow an attacker to use a carefully crafted
+    file to remotely exploit the bug and gain a root shell:
+<pre>
+      <a href="http://xforce.iss.net/xforce/alerts/id/154">http://xforce.iss.net/xforce/alerts/id/154</a>
+</pre>
+    <p>The source code for the 1.2.7, 1.2.8, 1.2.9rc1, and 1.2.9rc2 releases
+    on our FTP server has been patched, and new MD5 checksums and PGP
+    signatures posted.  <b>All current users of ProFTPD are strongly urged to
+    upgrade to one of these patched distributions.</b>
     </p>
   </td>
 </tr>
--->
 
 </table>
 

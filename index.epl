@@ -9,6 +9,30 @@
 
 <tr>
   <td>
+    <b><font face="arial" color="#003399">X-Force Research Discovers Remote Exploit</font></b>
+    <br />
+    <font size="-1">[<i>23/Sep/2003</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      <p>X-Force Research at <a href="http://www.iss.net">ISS</a> has
+      discovered a remote exploit in ProFTPD's handling of ASCII translations
+      that an attacker, by downloading a carefully crafted file, can exploit
+      and gain a root shell.</p>
+
+      <p>The source distributions on <code>ftp.proftpd.org</code> have all
+      been replaced with patched versions.  All ProFTPD users are <b>strongly
+      urged</b> to upgrade to one of the patched versions as soon as possible.
+      </p>
+
+      <p>The ProFTPD Project team would like to heartily thank the X-Force
+      engineers for the responsible and professional way in which they
+      reported the vulnerability, and worked with the ProFTPD Project
+      team to address the issue.</p>
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
     <b><font face="arial" color="#003399">1.2.9rc2 released</font></b>
     <br />
     <font size="-1">[<i>11/Sep/2003</i>]</font>
