@@ -1,0 +1,9 @@
+User-agent: *           # directed to all spiders, not just Scooter
+Disallow: /cgi-bin/
+Disallow: /CVS
+Disallow: /proftpd-announce-archive
+Disallow: /proftpd-l-archive 
+Disallow: /proftpd-devel-archive
+Disallow: /cgi-local
+Disallow: /htdig
+Disallow: /include 
