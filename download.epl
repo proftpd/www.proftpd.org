@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Downloading and mirror sites" :>//
-<: $last_changed = "08/01/1900 - mark" :>//
+<: $last_changed = "270/01/1900 - proftpd" :>//
 
 #include "header.epl"
 
@@ -128,8 +128,8 @@ Location: Poland (Olsztyn)<br />
 Maintained by: Bartek Raszczyk, MAN Olsztyn<br />
 </p>
 <p>
-<a href="ftp://ftp.fastorama.com/">ftp://ftp.fastorama.com/</A><br />
-Location: France<br />
+<a href="ftp://ftp.fastorama.com/mirrors/ftp.proftpd.org/">ftp://ftp.fastorama.com/mirrors/ftp.proftpd.org/</A><br />
+Location: France (France, Alsace)<br />
 Maintained by: MrJacK<br />
 </p>
 <p>
@@ -157,17 +157,22 @@ Location: Netherlands (Netherlands, Amsterdam)<br />
 Maintained by: Richard Pijnenburg<br />
 </p>
 <p>
-<a href="ftp://ftp.middle-earth.it/proftpd/">ftp://ftp.middle-earth.it/proftpd/</A><br />
-Location: Italy<br />
-Maintained by: Saverio Salatino<br />
+<a href="http://gc-site.hopto.org/pub/proftpd">http://gc-site.hopto.org/pub/proftpd</A><br />
+Location: United states (Orlando, Florida USA)<br />
+Maintained by: Damien Estrada<br />
 </p>
 <p>
-<a href="ftp://ftp.ayamura.org/pub/proftpd/">ftp://ftp.ayamura.org/pub/proftpd/</A><br />
-Location: Japan<br />
-Maintained by: Ayamura Kikuchi<br />
+<a href="ftp://ftp.digitalviolation.com/pub/mirrors/proftpd/">ftp://ftp.digitalviolation.com/pub/mirrors/proftpd/</A><br />
+Location: United states<br />
+Maintained by: marlboro<br />
 </p>
 <p>
-<a href="ftp://ftp.win.ne.jp/pub/network/ftp/proftpd/">ftp://ftp.win.ne.jp/pub/network/ftp/proftpd/</A><br />
+<a href="ftp://proftpd.iseetimes.com/proftpd.org/">ftp://proftpd.iseetimes.com/proftpd.org/</A><br />
+Location: China (China)<br />
+Maintained by: lihaiquan<br />
+</p>
+<p>
+<a href="ftp://ftp.win.jp/pub/proftpd/">ftp://ftp.win.jp/pub/proftpd/</A><br />
 Location: Japan<br />
 Maintained by: Ayamura Kikuchi<br />
 </p>
@@ -188,6 +193,11 @@ Location: Netherlands<br />
 <a href="ftp://ftp.dataguard.no/pub/proftpd/">ftp://ftp.dataguard.no/pub/proftpd/</A><br />
 Location: Norway<br />
 Maintained by: Christian Nikolaisen<br />
+</p>
+<p>
+<a href="ftp://download.enitel.no/pub/proftpd/">ftp://download.enitel.no/pub/proftpd/</A><br />
+Location: Norway<br />
+Maintained by: Jorn-Morten Innselset<br />
 </p>
 <p>
 <a href="ftp://ftp.truuz.com/mirrors/ftp.proftpd.net/">ftp://ftp.truuz.com/mirrors/ftp.proftpd.net/</A><br />
@@ -270,11 +280,6 @@ Location: Ukraine<br />
 Maintained by: Alexander Ryumshin<br />
 </p>
 <p>
-<a href="ftp://ftp.linux.co.uk/mirrors/ftp.proftpd.org/">ftp://ftp.linux.co.uk/mirrors/ftp.proftpd.org/</A><br />
-Location: United kingdom<br />
-Maintained by: Mark Lowes<br />
-</p>
-<p>
 <a href="ftp://ftp.ccp14.ac.uk/ccp14/ftp-mirror/programming/proftpd/">ftp://ftp.ccp14.ac.uk/ccp14/ftp-mirror/programming/proftpd/</A><br />
 Location: United kingdom<br />
 Maintained by: Lachlan Cranswick<br />
@@ -300,10 +305,6 @@ Location: Estonia (Estonia)<br />
 Maintained by: Ivari Horm<br />
 </p>
 <p>
-<a href="ftp://ftp.kracked.com/pub/proftpd/">ftp://ftp.kracked.com/pub/proftpd/</A><br />
-Location: United states<br />
-</p>
-<p>
 <a href="ftp://ftp.infoteam.com/pub/proftpd/">ftp://ftp.infoteam.com/pub/proftpd/</A><br />
 Location: United states<br />
 Maintained by: Kenn Martin<br />
@@ -319,9 +320,9 @@ Location: United states<br />
 Maintained by: Steve Kaczkowski<br />
 </p>
 <p>
-<a href="ftp://www.linuxceptional.com/proftpd/">ftp://www.linuxceptional.com/proftpd/</A><br />
+<a href="ftp://proftpd.theuw.net/proftpd/">ftp://proftpd.theuw.net/proftpd/</A><br />
 Location: United states<br />
-Maintained by: Phil Barnett<br />
+Maintained by: dan laffin<br />
 </p>
 <p>
 <a href="ftp://ftp.ethereal.com/mirrors/ftp.proftpd.org/">ftp://ftp.ethereal.com/mirrors/ftp.proftpd.org/</A><br />
@@ -374,14 +375,24 @@ Location: Ireland (Dublin, Ireland)<br />
 Maintained by: Dave Burke<br />
 </p>
 <p>
+<a href="ftp://ftp.matrix.com.br/pub/proftpd/">ftp://ftp.matrix.com.br/pub/proftpd/</A><br />
+Location: Brazil (Sao Paulo, Brazil)<br />
+Maintained by: Rodrigo Campos<br />
+</p>
+<p>
 <a href="ftp://proftpd.bylinux.net/pub/mirror/proftpd/">ftp://proftpd.bylinux.net/pub/mirror/proftpd/</A><br />
 Location: Hong kong (Hong Kong)<br />
 Maintained by: pyjamas<br />
 </p>
 <p>
-<a href="ftp://proftpd.mirror.stop.hu/proftpd/">ftp://proftpd.mirror.stop.hu/proftpd/</A><br />
-Location: Hungary (Budapest)<br />
-Maintained by:  telnet Co. mirror admin<br />
+<a href="ftp://mirror.aphix.com/pub/proftpd/">ftp://mirror.aphix.com/pub/proftpd/</A><br />
+Location: United states (milwaukee, wisconsin  USA)<br />
+Maintained by: aphix mirror admin<br />
+</p>
+<p>
+<a href="ftp://ftp.linux.se/pub/mirrors/proftpd/">ftp://ftp.linux.se/pub/mirrors/proftpd/</A><br />
+Location: Sweden (Stockholm)<br />
+Maintained by: Martin Friberg<br />
 </p>
 <p>
 <a href="ftp://ftp.seasonfive.com/mirrors/ftp.proftpd.org/">ftp://ftp.seasonfive.com/mirrors/ftp.proftpd.org/</A><br />
@@ -402,6 +413,11 @@ Maintained by: kernel.org mirror administrator<br />
 <a href="ftp://histeria.pl/proftpd/">ftp://histeria.pl/proftpd/</A><br />
 Location: Poland (PL, Radom)<br />
 Maintained by: Argail<br />
+</p>
+<p>
+<a href="ftp://proftpd.isca.uiowa.edu/">ftp://proftpd.isca.uiowa.edu/</A><br />
+Location: United states (Iowa City, IA, USA)<br />
+Maintained by: Iowa Student Computer Association FTP Archives Maintainer<br />
 </p>
 <p>
 <a href="ftp://ftp.404-not-found.net/proftpd.org/">ftp://ftp.404-not-found.net/proftpd.org/</A><br />
@@ -449,9 +465,19 @@ Location: United kingdom (London)<br />
 Maintained by: Michael Pye<br />
 </p>
 <p>
+<a href="ftp://sunsite.dk/mirrors/proftpd/">ftp://sunsite.dk/mirrors/proftpd/</A><br />
+Location: Denmark (Denmark, Aalborg)<br />
+Maintained by: Martin Dalum<br />
+</p>
+<p>
 <a href="ftp://ftp.ogreland.lv/proftpd.org/">ftp://ftp.ogreland.lv/proftpd.org/</A><br />
 Location: Latvia (Ogre, Latvia)<br />
 Maintained by: core<br />
+</p>
+<p>
+<a href="ftp://ftp.linuxbox1.net/ProFTPD/">ftp://ftp.linuxbox1.net/ProFTPD/</A><br />
+Location: United states (Nashua, NH. USA)<br />
+Maintained by: Tony<br />
 </p>
 <p>
 <a href="ftp://proftpd.anwire.org/pub/mirrors/proftpd.org/">ftp://proftpd.anwire.org/pub/mirrors/proftpd.org/</A><br />
@@ -469,14 +495,14 @@ Location: Netherlands (Hoofddorp)<br />
 Maintained by: Diederik<br />
 </p>
 <p>
-<a href="ftp://ftp.linuxforum.hu/mirror/ftp.proftpd.org/">ftp://ftp.linuxforum.hu/mirror/ftp.proftpd.org/</A><br />
+<a href="ftp://ftp.linuxforum.hu/mirrors/ftp.proftpd.org/">ftp://ftp.linuxforum.hu/mirrors/ftp.proftpd.org/</A><br />
 Location: Hungary<br />
 Maintained by: Christian Hamar alias krix<br />
 </p>
 <p>
-<a href="ftp://proftp.serveftp.org/proftp/">ftp://proftp.serveftp.org/proftp/</A><br />
-Location: Germany (Nürnberg)<br />
-Maintained by: Flo Spiege<br />
+<a href="ftp://proftpd.zadnik.org/">ftp://proftpd.zadnik.org/</A><br />
+Location: Bulgaria (Sofia, Bulgaria)<br />
+Maintained by: Alexander Velin<br />
 </p>
 <p>
 <a href="ftp://ftp.doc.cs.univ-paris8.fr/mirrors/ftp.proftpd.org/">ftp://ftp.doc.cs.univ-paris8.fr/mirrors/ftp.proftpd.org/</A><br />
@@ -499,9 +525,19 @@ Location: Spain (Burgos, SPAIN)<br />
 Maintained by: Pedro R. Benito<br />
 </p>
 <p>
+<a href="ftp://zadnik.org/mirrors/proftpd/">ftp://zadnik.org/mirrors/proftpd/</A><br />
+Location: Bulgaria (Sofia, Bulgaria)<br />
+Maintained by: Alexander Velin<br />
+</p>
+<p>
 <a href="ftp://proftpd.get7.biz/proftpd/">ftp://proftpd.get7.biz/proftpd/</A><br />
 Location: Japan (Tokyo,Japan)<br />
 Maintained by: Motohiro Sunouchi<br />
+</p>
+<p>
+<a href="ftp://ftp.cis.nctu.edu.tw/proftpd/">ftp://ftp.cis.nctu.edu.tw/proftpd/</A><br />
+Location: Taiwan (HsinChu , Taiwan)<br />
+Maintained by: Eric Chen<br />
 </p>
 <p>
 <a href="ftp://ftp.sourwood.net/pub/ProFTPD/">ftp://ftp.sourwood.net/pub/ProFTPD/</A><br />

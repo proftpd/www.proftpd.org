@@ -104,7 +104,8 @@
       can lead to an escalation in access rights within the ftp site.
       This flaw affects all versions up to and including 1.2.9, it has
       been fixed in cvs and 1.2.10rc1.  To avoid the flaw do not use
-      CIDR based ACLs on vulnerable versions.
+      CIDR based ACLs on vulnerable versions, or use mod_wrap and
+      /etc/hosts.allow|deny.
     </font></blockquote>
   </td>
 </tr>
