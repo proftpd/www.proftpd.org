@@ -43,6 +43,8 @@ C       #1737 - Enhance file hiding via regular expressions
         #1767 - Reporting problem with ftpwho (transfer rate)
         #1788 - Add ability to configure auth module checking order
         #1789 - Add ability to block recursive directory options
+        #1805 - this patch will allow pam support on 10.2 (Mac OSX)
+        #1806 - Add RFC2389 support 
 
 1.2.9
         #1166 - custom wtmp log file
