@@ -19,7 +19,7 @@ C       #2048 - Add ability to get configuration file values from environment
 C       #2072 - Add Controls API
 C       #2086 - Add limits for PORT, PASV
 C       #2098 - Add SetEnv, UnsetEnv directives
-        #2105 - Remove *Authoritative directives
+C       #2105 - Remove *Authoritative directives
 	#2107 - Fix handling of $Libraries$ tag, --with-libraries option
 C	#2135 - Add ability to handle passphrase-protected server keys
 
