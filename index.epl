@@ -1,7 +1,7 @@
 <: # $Id$ :>//
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
-<: $last_changed = "04/Sept/2002 - hamster" :>//
+<: $last_changed = "23/Oct/2002 - hamster" :>//
 
 #include "header.epl"
 
@@ -16,6 +16,12 @@
     <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
       The second release candidate for 1.2.7 has been released and is
       available on the ftp mirror sites.
+    </font></blockquote>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      <em>Update:</em> RPMs have now been built by Devrim GUNDUZ and are 
+      now available from ftp.proftpd.org/distrib/packages/ they should 
+      be on all the mirror sites within 48 hours.
     </font></blockquote>
     
     <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
