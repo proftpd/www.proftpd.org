@@ -4,29 +4,6 @@ Version: $Id$
 
 C = Committed
 
-1.2.7
-C       #1065 - Limit upload/download file sizes
-C       #1076 - Toggle parsing of .ftpaccess files with a AllowOverride
-C       #1231 - Extra options for ftpwho
-C       #1253 - ServerAddress
-C       #1294 - MaxClientsPerHost fix
-C       #1395 - Check return values in PRIVS calls
-C       #1398 - there is no log rotate for /var/log/xferlog
-C       #1432 - Pedantic handling of leading whitespace in FTP commands
-C       #1475 - Minor changes to SITE command handling
-C       #1486 - Directory listing performance
-C       #1564 - Add DESTDIR in Makefile
-C       #1623 - "connected since" in ftpwho
-C       #1644 - LogFormat local IP and FQDN tags missing
-C       #1649 - setproctitle() prepends and appends process name
-C       #1666 - Auth modules can return duplicate supplemental groups
-C       #1682 - Broken SyslogFacility requires custom syslog code
-C       #1687 - Add contrib module for RADIUS authentication, accounting
-C       #1719 - Add RFC2228 stuff to distribution
-C       #1736 - RETR does not handle an inappropriate REST
-C       #1737 - Enhance file hiding via regular expressions
-C       #1805 - this patch will allow pam support on 10.2 (Mac OSX)
-
 1.2.8
         Small enchancement patches
         'Other' arch fixes as and when tested
