@@ -14,7 +14,7 @@
 
     <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
       As many of you are aware CERT have released advisory 
-      <A HREF="http://www.cert.org/advisories/CA-2001-07.html">CA-2001-07</A>
+      <a href="http://www.cert.org/advisories/CA-2001-07.html">CA-2001-07</a>
       on security problems with the globbing on various operating systems and 
       the effect on FTP daemons.
 
@@ -24,7 +24,7 @@
       testing to confirm the status of both versions, more information will
       be released as we have it.  If you have any concerns or information
       which may help with this process please contact the core team via the
-      address for <A HREF="/security.html">security issues</A>.</p>
+      address for <a href="/security.html">security issues</a>.</p>
 
       <div class="headline-small">Update 20:30GMT 11/Apr/2001</div>
 
