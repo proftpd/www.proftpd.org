@@ -2,7 +2,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Supported Platforms" :>//
-<: $last_changed = "20/Jun/2001 - hamster" :>//
+<: $last_changed = "20/Jan/2003 - jwm" :>//
 
 #include "header.epl"
 
@@ -23,7 +23,8 @@
        my @platforms = (
          'AIX', 'BSD/OS', 'Cygwin*', 'Digital Unix', 'DG/UX',
          'HP/UX', 'IRIX*', 'Linux*', 'Mac OS X*+', 'SCO',
-         'FreeBSD*', 'NetBSD', 'OpenBSD', 'Solaris*', 'SunOS'
+         'FreeBSD*', 'NetBSD', 'OpenBSD', 'Solaris*', 'SunOS',
+         'Linux for IBM S/390, zSeries'
        );
          
        @platforms = sort(@platforms);
