@@ -23,11 +23,12 @@
       <li>Charles Seeger</li>
       <li><a href="http://rad.geology.washington.edu/~tj/proftpd/">TJ Saunders</a></li> 
       <li><a href="http://hamster.wibble.org/">Mark Lowes</a>: Documentation and Webhamster.</li>
+      <li><a href="mailto:aah at acm dot org">Andrew Houghton</a></li>
+      <li><a href="mailto:droesen at entire dash systems dot com">Daniel Roesen</a></li>
     </ul>
 
     <p>Module Developers:</p>
     <ul>
-      <li><a href="mailto:aah at acm dot org">Andrew Houghton</a></li>
       <li>Please e-mail the <a href="mailto:core@proftpd.org">core developers</a> to be listed here if you have contributed a module to ProFTPD.</li>
     </ul>
 
