@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Downloading and mirror sites" :>//
-<: $last_changed = "109/01/1900 - mark" :>//
+<: $last_changed = "134/01/1900 - mark" :>//
 
 #include "header.epl"
 
@@ -266,7 +266,7 @@ Maintained by: Unknown<br />
 </p>
 <p>
 <a href="ftp://ftp.eagle.y.se/pub/proftpd/">ftp://ftp.eagle.y.se/pub/proftpd/</A><br />
-Location: Sweden<br />
+Location: Sweden (Örnsköldsvik)<br />
 Maintained by: Martin Ostlund<br />
 </p>
 <p>

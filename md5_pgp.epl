@@ -17,12 +17,12 @@
     <div class="headline-small">MD5 Digest Hashes</div>
 
 <pre>
-98570c48e3187ddaac385e33e0765c74  <a href="ftp://ftp.proftpd.org/proftpd-1.2.4.tar.bz2">proftpd-1.2.4.tar.bz2</a>
-ed99bc92ecebbb57c4c4e43f8dc3068d  <a href="ftp://ftp.proftpd.org/proftpd-1.2.4.tar.gz">proftpd-1.2.4.tar.gz</a>
-b90e6cdd08f318fdfba047e016a9a792  <a href="ftp://ftp.proftpd.org/proftpd-1.2.5rc1.tar.bz2">proftpd-1.2.5rc1.tar.bz2</a>
-035cdce84737b322e3ae8c4ce45e1f90  <a href="ftp://ftp.proftpd.org/proftpd-1.2.5rc1.tar.gz">proftpd-1.2.5rc1.tar.gz</a>
-91dbab7e204fd8bc2f4b213c6dacdee4  <a href="ftp://ftp.proftpd.org/proftpd-1.2.5rc2.tar.bz2">proftpd-1.2.5rc2.tar.bz2</a>
-c48772dd0f6c55295d1ac0bda64bff64  <a href="ftp://ftp.proftpd.org/proftpd-1.2.5rc2.tar.gz">proftpd-1.2.5rc2.tar.gz</a>
+98570c48e3187ddaac385e33e0765c74  <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.2.4.tar.bz2">proftpd-1.2.4.tar.bz2</a>
+ed99bc92ecebbb57c4c4e43f8dc3068d  <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.2.4.tar.gz">proftpd-1.2.4.tar.gz</a>
+b90e6cdd08f318fdfba047e016a9a792  <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.2.5rc1.tar.bz2">proftpd-1.2.5rc1.tar.bz2</a>
+035cdce84737b322e3ae8c4ce45e1f90  <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.2.5rc1.tar.gz">proftpd-1.2.5rc1.tar.gz</a>
+91dbab7e204fd8bc2f4b213c6dacdee4  <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.2.5rc2.tar.bz2">proftpd-1.2.5rc2.tar.bz2</a>
+c48772dd0f6c55295d1ac0bda64bff64  <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.2.5rc2.tar.gz">proftpd-1.2.5rc2.tar.gz</a>
 </pre>
 
   </td>

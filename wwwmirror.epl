@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Website mirrors" :>//
-<: $last_changed = "109/01/1900 - mark" :>//
+<: $last_changed = "134/01/1900 - mark" :>//
 
 #include "header.epl"
 
@@ -33,7 +33,6 @@
 <a href="http://www.ch.proftpd.org/">ch</a>
 <a href="http://www.de.proftpd.org/">de</a>
 <a href="http://www.dk.proftpd.org/">dk</a>
-<a href="http://www.es.proftpd.org/">es</a>
 <a href="http://www.fi.proftpd.org/">fi</a>
 <a href="http://www.fr.proftpd.org/">fr</a>
 <a href="http://www.hk.proftpd.org/">hk</a>
@@ -77,11 +76,6 @@ Maintained by: Thorsten Ludewig<br />
 <a href="http://proftpd.area51.dk/">http://proftpd.area51.dk/</a><br />
 Location: Denmark (Copenhagen)<br />
 Maintained by: Gorm Jorgensen<br />
-</p>
-<p>
-<a href="http://proftpd.neptuno2000.com/">http://proftpd.neptuno2000.com/</a><br />
-Location: Spain (Barcelona)<br />
-Maintained by: Llu355s Gargallo<br />
 </p>
 <p>
 <a href="http://hosted.selfdestruct.net/">http://hosted.selfdestruct.net/</a><br />
