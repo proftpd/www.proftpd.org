@@ -1,27 +1,24 @@
 <: # $Id$ :>//
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
-<: $last_changed = "23/Aug/2001 - hamster" :>//
+<: $last_changed = "25/Aug/2001 - jwm" :>//
 
 #include "header.epl"
 
 <table bgcolor="white">
-
 <tr>
   <td>
-    <b><font face="arial" color="#003399">mod_sql_tds : new third party module</font></b>
+    <b><font face="arial" color="#003399">mod_sql_tds: new third-party module</font></b>
     <br />
     <font size="-1">[<i>23/Aug/2001</i>]</font>
 
     <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-
-     mod_sql_tds provides SQL backend support for servers
-     which speak TDS, ie MS SQL Server and Sybase.  This module
-     should be considered beta (maybe even alpha), it's available from <A
-     href="http://www.labratsoftware.com/mod_sql_tds-0.5.tar.gz">http://www.labratsoftware.com/mod_sql_tds-0.5.tar.gz</a>
-     and problem reports should be sent to Patrick Muldoon &lt;doon at
-     inoc.net&gt;
-
+     mod_sql_tds provides SQL backend support for servers which speak TDS,
+     i.e. MS SQL Server and Sybase.  This module should be considered beta
+     (maybe even alpha). It's available from <a
+     href="http://www.labratsoftware.com/mod_sql_tds-0.5.tar.gz">http://www.labratsoftware.com/mod_sql_tds-0.5.tar.gz</a>. 
+     Problem reports should be sent to Patrick Muldoon &lt;doon at inoc dot
+     net&gt;.
     </font></blockquote>
   </td>
 </tr>
@@ -33,10 +30,10 @@
     <font size="-1">[<i>22/Aug/2001</i>]</font>
 
     <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-     1.2.2 is now available from ftp.proftpd.org and all mirror sites, this release 
-     includes a fixed mod_sql which addresses a security concern.  The release
-     also contains a number of bug fixes and portability updates, read the NEWS file
-     supplied with the source for the full list.
+     1.2.2 is now available from ftp.proftpd.org and all mirror sites. This
+     release includes a fixed mod_sql which addresses a security concern. 
+     The release also contains a number of bug fixes and portability
+     updates. Read the NEWS file supplied with the source for the full list.
     </font></blockquote>
   </td>
 </tr>
@@ -46,10 +43,11 @@
     <b><font face="arial" color="#003399">mod_sql/3.2.3 security issue</font></b>
     <br />
     <font size="-1">[<i>22/Aug/2001</i>]</font>
+
     <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-    The 3.2.3 release of mod_sql has a security problem, only users who manually updated
-    mod_sql from the maintainers site are at risk, this version was not shipped with any 
-    official Proftpd tarball.
+    The 3.2.3 release of mod_sql has a security problem. Only users who
+    manually updated mod_sql from the maintainers' site are at risk; this
+    version was not shipped with any official version of ProFTPD. 
     </font></blockquote>
   </td>
 </tr>
@@ -62,135 +60,10 @@
 
     <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
      The third release candidate for ProFTPD 1.2.2 is now available for
-     public testing.  rc3 does not have any significant new features
-     and is mainly a maintenance release fixing a number of portability
-     issues which have arisen since the globbing exploit.  As ever
-     the source tarball can be downloaded from ftp.proftpd.org and
-     it's mirrors.
-    </font></blockquote>
-  </td>
-</tr>
-
-<tr>
-  <td>
-    <b><font face="arial" color="#003399">Cert advisory on file globbing</font></b>
-    <br />
-    <font size="-1">[<i>11/April/2001</i>]</font>
-
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      As many of you are aware CERT have released advisory 
-      <a href="http://www.cert.org/advisories/CA-2001-07.html">CA-2001-07</a>
-      on security problems with the globbing on various operating systems and 
-      the effect on FTP daemons.
-
-      <p>At this time the ProFTPD development team are checking the status
-      of the 1.2.1 stable release but believe that 1.2.2rc1 is not
-      vulnerable to this problem.  The team is undertaking additional
-      testing to confirm the status of both versions, more information will
-      be released as we have it.  If you have any concerns or information
-      which may help with this process please contact the core team via the
-      address for <a href="/security.html">security issues</a>.</p>
-
-      <div class="headline-small">Update 20:30GMT 11/Apr/2001</div>
-
-      <p>Our investigations to date show that both Linux and the gnu glob()
-      are not affected by this problem.  ProFTPD 1.2.2rc1 always uses gnu
-      glob() therefore should not be vulnerable.</p>
-
-      <ul>
-        <li>Linux [tested]: Not affected.</li>
-        <li>FreeBSD [tested]: Does not use the system libc's glob(), compiles GNU.</li>
-        <li>Solaris 2.6 [tested]: Does not use the system libc's glob(), compiles GNU.</li>
-      </ul>
-    </font></blockquote>
-  </td>
-</tr>
-
-<tr>
-  <td>
-    <b><font face="arial" color="#003399">Mirror site updated</font></b>
-    <br />
-    <font size="-1">[<i>29/Mar/2001</i>]</font>
-
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      I've updated the download page to include a number of new
-      mirror sites, a number of webmirrors are also now available,
-      the following countries now have their own local mirror sites.
-
-      <a href="http://www.fi.proftpd.org/">fi</a>
-      <a href="http://www.nl.proftpd.org/">nl</a>
-      <a href="http://www.uk.proftpd.org/">uk</a>
-    </font></blockquote>
-  </td>
-</tr>
-
-<tr>
-  <td>
-    <b><font face="arial" color="#003399">1.2.2rc1 test release is out</font></b>
-    <br />
-    <font size="-1">[<i>25/Mar/2001</i>]</font>
-
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      The first (and hopefully only) test release for 1.2.2 is now on
-      ftp.proftpd.org (and should be on most mirrors by now).  This release
-      resolves a number of minor bugs with the 1.2.1 release and addresses
-      the recent security / DoS issue with 1.2.1 and earlier releases as
-      discussed on <a
-      href="http://www.securityfocus.com/frames/?content=/templates/archive.pike%3Flist%3D1%26threads%3D0%26fromthread%3D0%26mid%3D169395%26start%3D2001-03-11%26end%3D2001-03-17%26">BUGTRAQ.</a>
-      The announcement can be found in the <a
-      href="http://www.proftpd.org/proftpd-announce-archive/01-03/msg00002.html">mailing
-      list archives</a>.
-    </font></blockquote>
-  </td>
-</tr>
-
-<tr>
-  <td>
-    <b><font face="arial" color="#003399">New DNS entries for ftp mirrors is live</font></b>
-    <br />
-    <font size="-1">[<i>25/Mar/2001</i>]</font>
-
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      All of the known mirrors are now reachable via
-      ftp.&lt;isocountrycode&gt;.proftpd.org, not all countries have
-      a local mirror however please use your closest geographic
-      mirror to conserve bandwidth on the main site.  A full list of
-      mirrors can be found on the <a
-      href="download.html">downloads</a> page.
-    </font></blockquote>
-  </td>
-</tr>
-
-<tr>
-  <td>
-    <b><font face="arial" color="#003399">ProFTPD 1.2.1 released</font></b>
-    <br />
-    <font size="-1">[<i>01/Mar/2001</i>]</font>
-
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      The ProFTPD development team have released 1.2.1 as a minor
-      bugfix release to the recent 1.2.0 release.  The full announce
-      message is in the <a
-      href="http://www.proftpd.org/proftpd-announce-archive/01-03/msg00000.html">mailing
-      list archive</a>.
-    </font></blockquote>
-  </td>
-</tr>
-
-<tr>
-  <td>
-    <b><font face="arial" color="#003399">ProFTPD 1.2.0 released</font></b>
-    <br />
-    <font size="-1">[<i>26/Feb/2001</i>]</font>
-
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      The ProFTPD development team are proud to release the 1.2.0
-      final release of their ftp server software.  The tarball is
-      available from <a
-      href="ftp://ftp.proftpd.org/distrib/">ftp://ftp.proftpd.org/distrib/</a>. 
-      Packaged versions are likely to appear over the next few days
-      and these files will propogate to the mirror sites within
-      about 24 to 48 hours.
+     public testing.  rc3 does not have any significant new features and is
+     mainly a maintenance release fixing a number of portability issues
+     which have arisen since the globbing exploit.  As ever, the source
+     tarball can be downloaded from ftp.proftpd.org and its mirrors.
     </font></blockquote>
   </td>
 </tr>
