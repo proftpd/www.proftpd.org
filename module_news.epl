@@ -2,7 +2,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Third-party modules and patches" :>//
-<: $last_changed = "23/Aug/2001 - hamster" :>//
+<: $last_changed = "1/Jan/2003 - hamster" :>//
 
 #include "header.epl"
 
@@ -28,158 +28,157 @@ ftp://ftp.eos.hokudai.ac.jp/pub/pck/release/
 More information available at http://www.proftpd.org/proftpd-devel-archive/full/msg01630.html
 -->
 
-	<ul>
-		<b><font face="arial" color="#003399">GSSAPI module</font></b>
-		<br />
-		<br /><font size="-1"><i>Maintainer: Markus Moeller</i></font>
-		<br /><font size="-1"><i><a href="http://ourworld.compuserve.com/homepages/Markus_Moeller/">http://ourworld.compuserve.com/homepages/Markus_Moeller/</a></i></font>
+  <ul>
+    <b><font face="arial" color="#003399">GSSAPI module</font></b>
+    <br />
+    <br /><font size="-1"><i>Maintainer: Markus Moeller</i></font>
+    <br /><font size="-1"><i><a href="http://ourworld.compuserve.com/homepages/Markus_Moeller/">http://ourworld.compuserve.com/homepages/Markus_Moeller/</a></i></font>
 
-		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-		mod_gss provides support for the GSSAPI security mechanism,
-		as described in RFC2228.
-		</blockquote>
-	</ul>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      mod_gss provides support for the GSSAPI security mechanism, as
+      described in RFC2228.
+    </font></blockquote>
+  </ul>
 
-	<ul>
-		<b><font face="arial" color="#003399">TDS SQL backend module</font></b>
-		<br />
-		<br /><font size="-1"><i>Maintainer: Patrick Muldoon</i></font>
-		<br /><font size="-1"><i><a href="http://labratsoftware.com/mod_sql_tds/mod_sql_tds-4.0.tar.gz">http://labratsoftware.com/mod_sql_tds/mod_sql_tds-4.0.tar.gz</a></i></font>
+  <ul>
+    <b><font face="arial" color="#003399">TDS SQL backend module</font></b>
+    <br />
+    <br /><font size="-1"><i>Maintainer: Patrick Muldoon</i></font>
+    <br /><font size="-1"><i><a href="http://labratsoftware.com/mod_sql_tds/mod_sql_tds-4.0.tar.gz">http://labratsoftware.com/mod_sql_tds/mod_sql_tds-4.0.tar.gz</a></i></font>
 
-		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-		 mod_sql_tds provides SQL backend support for servers which speak
-		 TDS, i.e. MS SQL Server and Sybase.  This module should be
-		 considered beta (maybe even alpha).
-		</blockquote>
-	</ul>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      mod_sql_tds provides SQL backend support for servers which speak TDS,
+      i.e. MS SQL Server and Sybase. This module should be considered beta
+      (maybe even alpha).
+    </font></blockquote>
+  </ul>
 
-	<ul>
-		<b><font face="arial" color="#003399">LDAP authentication module</font></b>
-		<br />
-		<br /><font size="-1"><i>Maintainer: John Morrissey</i></font>
-		<br /><font size="-1"><i><a href="http://horde.net/~jwm/software/mod_ldap/">http://horde.net/~jwm/software/mod_ldap</a></font>
+  <ul>
+    <b><font face="arial" color="#003399">LDAP authentication module</font></b>
+    <br />
+    <br /><font size="-1"><i>Maintainer: John Morrissey</i></font>
+    <br /><font size="-1"><i><a href="http://horde.net/~jwm/software/mod_ldap/">http://horde.net/~jwm/software/mod_ldap</a></font>
 
-		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-			Authentication support using the Lightweight Directory Access Protocol.
-		</blockquote>
-	</ul>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      Authentication support using the Lightweight Directory Access Protocol.
+    </font></blockquote>
+  </ul>
 
-	<ul>
-		<b><font face="arial" color="#003399">CDB authentication module</font></b>
-		<br />
-		<br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
-		<br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/">http://www.castaglia.org/proftpd/</a></font>
+  <ul>
+    <b><font face="arial" color="#003399">CDB authentication module</font></b>
+    <br />
+    <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
+    <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/">http://www.castaglia.org/proftpd/</a></font>
 
-		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-			Support for Dan J. Bernstein's <a
-			href="http://cr.yp.to/cdb.html">CDB format</a> for group and
-			passwd file lookups. CDB lookups are generally faster than other
-			similar database formats.
-		</blockquote>
-	</ul>
-		
-	<ul>
-		<b><font face="arial" color="#003399">TJ's enhancement patches</font></b>
-		<br />
-		<br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
-		<br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/">http://www.castaglia.org/proftpd/</a></font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      Support for Dan J. Bernstein's <a href="http://cr.yp.to/cdb.html">CDB
+      format</a> for group and passwd file lookups. CDB lookups are generally
+      faster than other similar database formats.
+    </font></blockquote>
+  </ul>
+    
+  <ul>
+    <b><font face="arial" color="#003399">TJ's enhancement patches</font></b>
+    <br />
+    <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
+    <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/">http://www.castaglia.org/proftpd/</a></font>
 
-		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-			Lots of useful patches not included in the main source
-			distribution, including file size control, support for blocking
-			.ftpaccess files and IfDefine/IfModule support.
-		</blockquote>
-	</ul>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      Lots of useful patches not included in the main source distribution,
+      including file size control, support for blocking .ftpaccess files and
+      more.
+    </font></blockquote>
+  </ul>
 
-	<ul>
-		<b><font face="arial" color="#003399">mod_autorun (1.7)</font></b>
-		<br />
-		<br /><font size="-1"><i>Maintainer: Brett Morgan</i></font>
-		<br /><font size="-1"><i><a href="http://www.korenwolf.net/proftpd/mod_autorun.c">http://www.korenwolf.net/proftpd/mod_autorun.c</a></font>
+  <ul>
+    <b><font face="arial" color="#003399">mod_autorun (1.7)</font></b>
+    <br />
+    <br /><font size="-1"><i>Maintainer: Brett Morgan</i></font>
+    <br /><font size="-1"><i><a href="http://www.korenwolf.net/proftpd/mod_autorun.c">http://www.korenwolf.net/proftpd/mod_autorun.c</a></font>
 
-		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-			Allow execution of external commands from within ProFTPD.
-		</blockquote>
-	</ul>
-	
-	<ul>
-		<b><font face="arial" color="#003399">mod_time (2.1rc2)</font></b>
-		<br />
-		<br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
-		<br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/">http://www.castaglia.org/proftpd/</a></i></font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      Allow execution of external commands from within ProFTPD.
+    </font></blockquote>
+  </ul>
+  
+  <ul>
+    <b><font face="arial" color="#003399">mod_time (2.1rc2)</font></b>
+    <br />
+    <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
+    <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/">http://www.castaglia.org/proftpd/</a></i></font>
 
-		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-			A ProFTPD module that limits FTP commands based on time of day
-			and/or day of the week.
-		</font></blockquote>
-	</ul>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      A ProFTPD module that limits FTP commands based on time of day
+      and/or day of the week.
+    </font></blockquote>
+  </ul>
 
-	<ul>
-		<b><font face="arial" color="#003399">TLS patch</font></b>
-		<br />
-		<br /><font size="-1"><i>Maintainer: Peter 'Luna' Runestig</i></font>
-		<br /><font size="-1"><i><a href="ftp://ftp.runestig.com/pub/proftpd-tls/">ftp://ftp.runestig.com/pub/proftpd-tls/</a></font>
+  <ul>
+    <b><font face="arial" color="#003399">TLS patch</font></b>
+    <br />
+    <br /><font size="-1"><i>Maintainer: Peter 'Luna' Runestig</i></font>
+    <br /><font size="-1"><i><a href="ftp://ftp.runestig.com/pub/proftpd-tls/">ftp://ftp.runestig.com/pub/proftpd-tls/</a></font>
 
-		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-			This patch implements the TLS extensions to the FTP protocol.
-			This patch requires that OpenSSL be installed.
-		</font></blockquote>
-	</ul>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      This patch implements the TLS extensions to the FTP protocol.  This
+      patch requires that OpenSSL be installed.
+    </font></blockquote>
+  </ul>
 
-	<ul>
-		<b><font face="arial" color="#003399">mod_quota (1.26)</font></b>
-		<br />
-		<br /><font size="-1"><i>Maintainer: Eric Estabrooks</i></font>
-		<br /><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></font>
+  <ul>
+    <b><font face="arial" color="#003399">mod_quota (1.26)</font></b>
+    <br />
+    <br /><font size="-1"><i>Maintainer: Eric Estabrooks</i></font>
+    <br /><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></font>
 
-		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-			This module provides for upload/download quota controls.
-		</font></blockquote>
-	</ul>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      This module provides for upload/download quota controls.
+    </font></blockquote>
+  </ul>
 
-	<ul>
-		<b><font face="arial" color="#003399">mod_ratio (3.3)</font></b>
-		<br />
-		<br /><font size="-1"><i>Maintainer: James Dogopoulos</i></font>
-		<br /><font size="-1"><i><a href="http://www.dynw.com/mod_ratio/">http://www.dynw.com/mod_ratio/</a></font>
+  <ul>
+    <b><font face="arial" color="#003399">mod_ratio (3.3)</font></b>
+    <br />
+    <br /><font size="-1"><i>Maintainer: James Dogopoulos</i></font>
+    <br /><font size="-1"><i><a href="http://www.dynw.com/mod_ratio/">http://www.dynw.com/mod_ratio/</a></font>
 
-		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-			File/Byte ratio module.
-		</blockquote>
-	</ul>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      File/Byte ratio module.
+    </blockquote>
+  </ul>
 
-	<ul>
-		<b><font face="arial" color="#003399">mod_dbauth (1.7)</font></b>
-		<br />
-		<br /><font size="-1"><i>Maintainer: Eric Estabrooks</i></font>
-		<br /><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></font>
+  <ul>
+    <b><font face="arial" color="#003399">mod_dbauth (1.7)</font></b>
+    <br />
+    <br /><font size="-1"><i>Maintainer: Eric Estabrooks</i></font>
+    <br /><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></font>
 
-		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-			BerkeleyDB authentication module for ProFTPD.
-		</font></blockquote>
-	</ul>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      BerkeleyDB authentication module for ProFTPD.
+    </font></blockquote>
+  </ul>
 
-	<ul>
-		<b><font face="arial" color="#003399">mod_gdbmauth</font></b>
-		<br />
-		<br /><font size="-1"><i>Maintainer: Eric Estabrooks</i></font>
-		<br /><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></font>
+  <ul>
+    <b><font face="arial" color="#003399">mod_gdbmauth</font></b>
+    <br />
+    <br /><font size="-1"><i>Maintainer: Eric Estabrooks</i></font>
+    <br /><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></font>
 
-		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-			GDBM authentication module for ProFTPD.
-		</font></blockquote>
-	</ul>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      GDBM authentication module for ProFTPD.
+    </font></blockquote>
+  </ul>
 
-	<ul>
-		<b><font face="arial" color="#003399">mod_opie (1.1)</font></b>
-		<br />
-		<br /><font size="-1"><i>Maintainer: Eric Estabrooks</i></font>
-		<br /><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></font>
+  <ul>
+    <b><font face="arial" color="#003399">mod_opie (1.1)</font></b>
+    <br />
+    <br /><font size="-1"><i>Maintainer: Eric Estabrooks</i></font>
+    <br /><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></font>
 
-		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-			A implementation of one-time passwords for ProFTPD.
-		</blockquote>
-	</ul>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      A implementation of one-time passwords for ProFTPD.
+    </font></blockquote>
+  </ul>
   </td>
 </tr>
 </table>
