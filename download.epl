@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Downloading and mirror sites" :>//
-<: $last_changed = "161/01/1900 - mark" :>//
+<: $last_changed = "185/01/1900 - mark" :>//
 
 #include "header.epl"
 
@@ -553,11 +553,6 @@ Location: Latvia (Ogre, Latvia)<br />
 Maintained by: core<br />
 </p>
 <p>
-<a href="ftp://proftpd.area51.dk/mirrors/public/proftpd/ftp/">ftp://proftpd.area51.dk/mirrors/public/proftpd/ftp/</A><br />
-Location: Denmark (Copenhagen)<br />
-Maintained by: Gorm Jorgensen<br />
-</p>
-<p>
 <a href="ftp://ftp.approbation.org/pub/mirrors/proftpd/">ftp://ftp.approbation.org/pub/mirrors/proftpd/</A><br />
 Location: United states (Omaha, NE)<br />
 Maintained by: Terry Davis<br />
@@ -586,6 +581,11 @@ Maintained by: Christian Hamar alias krix<br />
 <a href="ftp://proftp.serveftp.org/proftp/">ftp://proftp.serveftp.org/proftp/</A><br />
 Location: Germany (Nürnberg)<br />
 Maintained by: Flo Spiege<br />
+</p>
+<p>
+<a href="ftp://mirror.bs2.com.br/pub/proftpd">ftp://mirror.bs2.com.br/pub/proftpd</A><br />
+Location: Brazil (Maringá)<br />
+Maintained by: Giovanni P. Tirloni<br />
 </p>
 </dl>
 

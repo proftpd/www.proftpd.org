@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Website mirrors" :>//
-<: $last_changed = "161/01/1900 - mark" :>//
+<: $last_changed = "185/01/1900 - mark" :>//
 
 #include "header.epl"
 
@@ -32,7 +32,6 @@
 <a href="http://www.bg.proftpd.org/">bg</a>
 <a href="http://www.ch.proftpd.org/">ch</a>
 <a href="http://www.de.proftpd.org/">de</a>
-<a href="http://www.dk.proftpd.org/">dk</a>
 <a href="http://www.fi.proftpd.org/">fi</a>
 <a href="http://www.fr.proftpd.org/">fr</a>
 <a href="http://www.hk.proftpd.org/">hk</a>
@@ -68,11 +67,6 @@ Maintained by: Jason Andrade<br />
 <a href="http://proftpd.uasw.edu/">http://proftpd.uasw.edu/</a><br />
 Location: Germany (Wolfenbuettel)<br />
 Maintained by: Thorsten Ludewig<br />
-</p>
-<p>
-<a href="http://proftpd.area51.dk/">http://proftpd.area51.dk/</a><br />
-Location: Denmark (Copenhagen)<br />
-Maintained by: Gorm Jorgensen<br />
 </p>
 <p>
 <a href="http://proftpd.ttlhost.com/">http://proftpd.ttlhost.com/</a><br />
@@ -138,6 +132,11 @@ Maintained by: Lachlan Cranswick<br />
 <a href="http://proftpd.networkedsystems.co.uk/">http://proftpd.networkedsystems.co.uk/</a><br />
 Location: United kingdom (Manchester (Telecity))<br />
 Maintained by: fxp0<br />
+</p>
+<p>
+<a href="http://www.proftpd.linuxceptional.com/">http://www.proftpd.linuxceptional.com/</a><br />
+Location: United states (Baltimore MD)<br />
+Maintained by: Phil Barnett<br />
 </p>
 <p>
 <a href="http://proftpd.isecuretty.com/">http://proftpd.isecuretty.com/</a><br />
