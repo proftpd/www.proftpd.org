@@ -9,6 +9,19 @@
 
 <tr>
   <td>
+    <b><font face="arial" color="#003399">1.2.10 released</font></b>
+    <br />
+    <font size="-1">[<i>04/Sep/2004</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      <p>The ProFTPD Project is pleased to release 1.2.10 to the community.
+      Please read the NEWS, RELEASE_NOTES, and ChangeLog files for the full
+      details.
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
     <b><font face="arial" color="#003399">1.2.10rc3 released</font></b>
     <br />
     <font size="-1">[<i>13/Jul/2004</i>]</font>
