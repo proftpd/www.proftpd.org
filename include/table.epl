@@ -147,9 +147,10 @@
           <td bgcolor="#ffffff">
             <ul>
               <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="/lists.html">Available Lists</a></font></li>
-              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="http://www.proftpd.org/proftpd-announce-archive/">Announce Archive</a></font></li>
-              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="http://www.proftpd.org/proftpd-l-archive/">Users Archive</a></font></li>
-              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="http://www.proftpd.org/proftpd-devel-archive/">Development Archive</a></font></li>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="http://www.geocrawler.com/redir-sf.php3?list=proftp-announce">Announce Archive</a></font></li>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="http://www.geocrawler.com/redir-sf.php3?list=proftp-user">Users Archive</a></font></li>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="http://www.geocrawler.com/redir-sf.php3?list=proftp-devel">Development Archive</a></font></li>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="http://www.geocrawler.com/redir-sf.php3?list=proftp-committers">Committers Archive</a></font></li>
             </ul>
           </td>
         </tr>
