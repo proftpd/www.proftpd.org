@@ -25,6 +25,7 @@ C	#2135 - Add ability to handle passphrase-protected server keys
 
 1.2.11
 
+	#2071 - Add Variables API
 	#2331 - Proftpd does not honor POSIX ACLs
 
 TBD
