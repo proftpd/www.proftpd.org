@@ -4,8 +4,8 @@
 
 include Common.defines
 
-SEPDIRS = include
-SUBDIRS = docs proftpd-announce-archive  proftpd-devel-archive  proftpd-l-archive  
+SEPDIRS = include proftpd-announce-archive  proftpd-devel-archive  proftpd-l-archive
+SUBDIRS = docs 
 HTMLFILES = $(addsuffix .html, $(basename $(wildcard *.epl)))
 
 # Top level targets
