@@ -23,6 +23,10 @@ C       #2105 - Remove *Authoritative directives
 	#2107 - Fix handling of $Libraries$ tag, --with-libraries option
 C	#2135 - Add ability to handle passphrase-protected server keys
 
+1.2.11
+
+	#2331 - Proftpd does not honor POSIX ACLs
+
 TBD
         DSOs
         contrib/ per-module directory reorganization
