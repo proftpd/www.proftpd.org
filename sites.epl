@@ -4,7 +4,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Sites powered by ProFTPD" :>//
-<: $last_changed = "10/Feb/2001 - hamster" :>//
+<: $last_changed = "20/Mar/2001 - hamster" :>//
 
 #include "header.epl"
 
@@ -40,6 +40,18 @@ open-source software.
 <DT><A HREF="http://www.frontier.net.uk">Frontier Internet</A></DT>
 <DD>UK based business ISP, running almost exclusively on Linux servers, hosts for ftp.linux.co.uk and www.linux.co.uk</DD>
 </DL>
+
+
+<DL>
+<DT><A HREF="http://www.duno.com">Duno</A></DT>
+<DD>Hosting service, aiming to be holding 1.6 million domains by the end of 2001</DD>
+</DL>
+
+<DL>
+<DT><A HREF="http://www.fuitadnet.com">FuitadNET</A></DT>
+<DD>A free webhosting service running ProFTPD</DD>
+</DL>
+
 	  </TD>
 	</TR>
 

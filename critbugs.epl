@@ -4,7 +4,7 @@
 <: $html_title = "Critical Bugs" :>//
 <: $meta_description = "The Official ProFTPD web site." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download, showstopper, bugs, security" :>//
-<: $last_changed = "07/Feb/2001" :>//
+<: $last_changed = "17/Mar/2001" :>//
 
 
 #include "header.epl"
@@ -18,6 +18,69 @@
 </DIV>
 
 
+
+
+<P>
+<EM>Bug: </EM>glob() DoS attack<BR>
+<EM>Bugzilla ID:</EM> <A HREF="(http://bugs.proftpd.org/show_bug.cgi?id=1066">1066</A><BR>
+<EM>Version: </EM>1.2.1 and earlier<BR>
+<EM>Platforms: </EM> All<BR>
+<EM>Severity/Effect: </EM> Critical<BR>
+<EM>Fixed in:</EM> No fix yet<BR><BR>
+
+<P><A href="http://www.securityfocus.com/frames/?content=/templates/archive.pike%3Flist%3D1%26threads%3D0%26fromthread%3D0%26mid%3D169069%26start%3D2001-03-11%26end%3D2001-03-17%26">Reported</A> on <A href="http://www.securityfocus.com">Bugtraq</A> on the 15th of March by Frank DENIS (Jedi/Sector One)</P>
+
+<P>Official Response from the <A href="http://www.securityfocus.com/frames/?content=/templates/archive.pike%3Flist%3D1%26threads%3D0%26fromthread%3D0%26mid%3D169395%26start%3D2001-03-11%26end%3D2001-03-17%26">development team</A></P>
+
+<div class="headline_small">Problem commands:</div>
+<P>
+ls */../*/../*/../*/../*/../*/../*/../*/../*/../*/../*/../*/../*<br>
+ls */.*/*/.*/*/.*/*/.*/*/.*/*/.*/*/.*/*/.*/*/.*/*/.*/*/.*/*/.*/<br>
+ls .*./*?/.*./*?/.*./*?/.*./*?/.*./*?/.*./*?/.*./*?/.*./*?/.*./*?/</P>
+
+<P>Other commands of this style may also cause the same behavior; the
+exact commands listed here are not necessary to trigger.</P>
+
+<div class="headline_small">Effect: </div>
+<P>The daemon process starts to consume all CPU and memory resources
+available to it.  Multiple simultaneous instances will result in
+faster depletion of resources, causing either the daemon process or
+the server to crash.</P>
+
+<div class="headline_small">Fix / Workaround: </div>
+
+<P>A patch against the 1.2.1 source is currently being worked on.
+However, given the nature of the problem and the lack of time given
+between notification and publication of the vulnerability, it is not
+ready for release yet.</P>
+
+<P>Until a more permanent fix is ready, we recommend adding the
+following directive in the <Global> context which should catch most
+variants of this problem.</P>
+
+<P>DenyFilter \*.*/</P>
+
+<P>We also recommend that the daemon process is started with
+appropriate ulimits set to control the system resources that can be
+utilized by the running daemon.  This should help in maintaining a
+viable server regardless attacks being made.  The development team is
+looking into modifying ProFTPD to provide native ulimit functionality.</P>
+
+
+<div class="headline_small">Summary:</div>
+  
+<P>The ProFTPD development team is aware of this issue and will be
+looking into providing a proper patch shortly.  Details of any patch
+or new version will be released on http://www.proftpd.org/.</P>
+
+<P>Additionally, the administrators of ftp.proftpd.org would like to
+thank Frank Denis for testing his theory about the vunerability by
+launching a denial of service attack against that server, causing it
+to become unavailable for a period of time.
+</P>
+
+<HR>
+
 <P>
 <EM>Bug: </EM>SIZE memory leak<BR>
 <EM>Bugzilla ID:</EM> <BR>
@@ -30,6 +93,7 @@ Reported on Bugtraq (<A HREF="http://www.securityfocus.com/archive/1/15199">http
 
 </P>
 
+<HR>
 <P>
 <EM>Bug:</EM> USER memory leak<BR>
 <EM>Bugzilla ID:</EM> <BR>
@@ -41,6 +105,7 @@ Reported on Bugtraq (<A HREF="http://www.securityfocus.com/archive/1/15199">http
 Reported on Bugtraq (<A HREF="http://www.securityfocus.com/archive/1/155349">http://www.securityfocus.com/archive/1/155349</A>) by Wojciech Purczynski
 </P>
 
+<HR>
 <P>
 <EM>Bug:</EM> Minor format string vulnerabilities<BR>
 <EM>Bugzilla ID:</EM> <BR>
@@ -52,6 +117,7 @@ Reported on Bugtraq (<A HREF="http://www.securityfocus.com/archive/1/155349">htt
 Reported on Bugtraq (<A HREF="http://www.securityfocus.com/archive/1/155428">http://www.securityfocus.com/archive/1/155428</A>) by Przemyslaw Frasunek 
 </P>
 
+<HR>
 <P>
 <EM>Bug:</EM> File corruption<BR>
 <EM>Bugzilla ID:</EM> none<BR>
@@ -64,6 +130,7 @@ Enabling support for sendfile() may result in corrupted file transfers.  It is c
 
 </P>
 
+<HR>
 <P>
 <EM>Bug:</EM> No PORT command issued<BR>
 <EM>Bugzilla ID:</EM> 240<BR>
@@ -77,6 +144,7 @@ command which tries to access the data sockets.  This has been fixed
 in CVS.
 </P>
 
+<HR>
 <P>
 <EM>Bug: CHMOD doesn't work</EM> <BR>
 <EM>Bugzilla ID:</EM> <BR>

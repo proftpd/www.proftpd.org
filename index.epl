@@ -3,12 +3,68 @@
 :>//
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
-<: $last_changed = "26/Feb/2001 - hamster" :>//
+<: $last_changed = "25/Mar/2001 - hamster" :>//
 
 #include "header.epl"
 
 	<TR>
 	  <TD>
+
+        <TR>
+	  <TD>
+	    <B><FONT face="arial" color="#003399">Mirror site updated</FONT></B><BR>
+            <FONT size="-1">[<I>29/Mar/2001</I>]</FONT>
+	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
+
+	    I've updated the download page to include a number of new mirror sites, a number of webmirrors are also now available, 
+	    the following countries now have their own local mirror sites.
+
+	    <A HREF="http://www.fi.proftpd.org">fi</A>
+	    <A HREF="http://www.nl.proftpd.org">nl</A>
+	    <A HREF="http://www.uk.proftpd.org">uk</A>
+
+	    </font></BLOCKQUOTE>
+	  </TD>
+	</TR>
+
+        <TR>
+	  <TD>
+	    <B><FONT face="arial" color="#003399">1.2.2rc1 test release is out</FONT></B><BR>
+            <FONT size="-1">[<I>25/Mar/2001</I>]</FONT>
+	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
+
+	    The first (and hopefully only) test release for 1.2.2 is
+	    now on ftp.proftpd.org (and should be on most mirrors by now).
+	    This release resolves a number of minor bugs with the
+	    1.2.1 release and addresses the recent security / DoS
+	    issue with 1.2.1 and earlier releases as discussed on <A
+	    HREF="http://www.securityfocus.com">bugtraq.</A>
+	    The announce can be found in the mailing list archives
+
+	    </font></BLOCKQUOTE>
+	  </TD>
+	</TR>
+
+        <TR>
+	  <TD>
+	    <B><FONT face="arial" color="#003399">New DNS entries for ftp mirrors is live</FONT></B><BR>
+            <FONT size="-1">[<I>25/Mar/2001</I>]</FONT>
+	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
+
+	    All of the known mirrors are now reachable via
+	    ftp.&lt;isocountrycode&gt;.proftpd.org, not all countries
+	    have a local mirror however please use your closest
+	    geographic mirror to conserve bandwidth on the main
+	    site.  A full list of mirrors can be found on the <A
+	    href="/download.html">downloads</A> page.
+
+	    The first (and hopefully only) test release for 1.2.2 is
+	    
+	    </font></BLOCKQUOTE>
+	  </TD>
+	</TR>
+
+
 
 	<TR>
 	  <TD>
@@ -34,110 +90,6 @@
 	    days and these files will propogate to the mirror sites
 	    within about 24 to 48 hours.
 	    </font></BLOCKQUOTE>
-	  </TD>
-	</TR>
-
-	<TR>
-	  <TD>
-	    <B><FONT face="arial" color="#003399">1.2.0-final testing release</FONT></B><BR>
-            <FONT size="-1">[<I>23/Feb/2001</I>]</FONT>
-	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
-	    The development team have release what is hopefully going to
-	    be the final release code as a testing tarball availble from
-	    ftp://ftp.proftpd.org/devel/ (and all good mirror sites).
-	    DR has also built rpms for this release.  Please test as soon
-	    as possible and report any problems back to core@proftpd.org
-	    and proftpd-devel@proftpd.org
-	    </font></BLOCKQUOTE>
-	  </TD>
-	</TR>
-
-	<TR>
-	  <TD>
-	    <B><FONT face="arial" color="#003399">More RPMs</FONT></B><BR>
-            <FONT size="-1">[<I>20/Feb/2001</I>]</FONT>
-	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
-	    i586 and i686 RPMs have now been uploaded to ftp.proftpd.org
-	    </font></BLOCKQUOTE>
-	  </TD>
-	</TR>
-	
-	<TR>
-	  <TD>
-	    <B><FONT face="arial" color="#003399">Release of new SQL modules</FONT></B><BR>
-            <FONT size="-1">[<I>18/Feb/2001</I>]</FONT>
-	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
-
-	    <P>Andrew Houghton has released new versions of the SQL
-	    authentication modules, these are not drop in replacements
-	    and will require some work to migrate existing configurations
-	    to the new code.</P>
-
-	    <P>All the bugs should be fixed but a final shakedown is needed
-	    so please test these modules so they can be included in -final</P>
-
-	    <P>Documentation for the
-	    modules is currently to be found at <A
-	    HREF="http://www.lastditcheffort.org/aah/mod_sql.html">http://www.lastditcheffort.org/aah/mod_sql.html</A>,
-	    this will be merged into the main docs before -final.</P>
-
-	    
-	    </font></BLOCKQUOTE>
-	  </TD>
-	</TR>
-	
-	<TR>
-	  <TD>
-	    <B><FONT face="arial" color="#003399">New RPM's released</FONT></B><BR>
-            <FONT size="-1">[<I>15/Feb/2001</I>]</FONT>
-	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
-	    Daniel Roesen has released new rpm's which fix a number of problems present in the 
-	    previous versions.  These are available from ftp.proftpd.org and will appear on 
-	    mirrors in the next 24-36 hours.
-	    </font></BLOCKQUOTE>
-	  </TD>
-	</TR>
-
-	<TR>
-	  <TD>
-	    <B><FONT face="arial" color="#003399">www.proftpd.org gets a makeover</FONT></B><BR>
-            <FONT size="-1">[<I>10/Feb/2001</I>]</FONT>
-	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
-	    Ok, it's been probably overdue for a while but the site has had a make over.
-	    Expect some more pages to appear over the next few days once they've been checked.
-	    </font></BLOCKQUOTE>
-	  </TD>
-	</TR>
-	
-	<TR>
-	  <TD>
-	    <B><FONT face="arial" color="#003399">SQL module news</FONT></B><BR>
-            <FONT size="-1">[<I>2001/02/09</I>]</FONT>
-	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
-
-            The SQL modules have a new maintainer (Andrew Houghton),
-            he will be picking up where the previous maintainer left
-            off with the aim of getting the modules back into the code
-            for 1.2.0-final
-
-	    </font></BLOCKQUOTE>
-	  </TD>
-	</TR>
-
-	<TR>
-	  <TD>
-	    <B><FONT face="arial" color="#003399">New test version (1.2.0rc3) released</FONT></B><BR>
-            <FONT size="-1">[<I>2001/02/06</I>]</FONT>
-	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
-            1.2.0rc3 released.  Changes include security fixes to address
-            the DoS issues raised on Bugtraq, fixing the PASV problem in
-            rc2 and various other problems.  <EM>Note: sql support has
-            been removed from this release because the third party modules
-            are not being maintained and have security related bugs.
-            If you have an interest in maintaining them please email
-            the developers list.</EM>
-	    </font></BLOCKQUOTE>
-
 	  </TD>
 	</TR>
 
