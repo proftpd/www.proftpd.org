@@ -27,10 +27,10 @@
     href="http://rsync.samba.org/">http://rsync.samba.org/</a>. You might
     want to call it using the following arguments, for example:</p>
 
-    <pre>rsync -rtlzv --delete proftpd.org::proftpd-www /local/path/to/www/mirror</pre>
+    <pre>rsync -rtlzv --delete rsync.proftpd.org::proftpd-www /local/path/to/www/mirror</pre>
 
-    <p>You can also just do a <em>rsync proftpd.org::</em> to get a list of
-    rsync modules available.</p>
+    <p>You can also just do a <em>rsync rsync.proftpd.org::</em> to get a
+    list of rsync modules available.</p>
 
 
     <div class="headline-small">CVS</div>
@@ -68,10 +68,10 @@
     href="http://rsync.samba.org/">http://rsync.samba.org/</a>. You might
     want to call it using the following arguments, for example:</p>
 
-    <pre>rsync -rtlzv --delete proftpd.org::proftpd-ftp /local/path/to/ftp/mirror</pre>
+    <pre>rsync -rtlzv --delete rsync.proftpd.org::proftpd-ftp /local/path/to/ftp/mirror</pre>
 
-    <p>You can also just do a <em>rsync proftpd.org::</em> to get a list of
-    rsync modules available.</p>
+    <p>You can also just do a <em>rsync rsync.proftpd.org::</em> to get a
+    list of rsync modules available.</p>
 
 
     <div class="headline-small">FTP mirroring</div>
