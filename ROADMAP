@@ -4,19 +4,6 @@ Version: $Id$
 
 C = Committed
 
-1.2.10
-
-C       #1696 - Include directive supports directories
-C       #1925 - Clean up of Class code
-C       #2015 - Add AND, OR keywords to Allow/Deny User/Group directives
-C       #2034 - Add support for a "graceful shutdown" signal
-C       #2048 - Add ability to get configuration file values from environment
-C       #2072 - Add Controls API
-C       #2086 - Add limits for PORT, PASV
-C       #2098 - Add SetEnv, UnsetEnv directives
-C       #2105 - Remove *Authoritative directives
-C	#2135 - Add ability to handle passphrase-protected server keys
-
 1.2.11
 
         #1965 - Changing timing of handling of QUIT command
