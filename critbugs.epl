@@ -153,7 +153,7 @@ in CVS.
 <EM>Severity/Effect:</EM> Severe / Prevents SITE CHMOD from working<BR>
 <EM>Fixed in:</EM> 1.2.0rc2<BR><BR>
 
-The AllowCHMOD directive has a bug in this version which results in it's setting within the conf file only being honoured for the first use.  After which CHMOD commands are denied regardless.  
+The AllowCHMOD directive has a bug in this version which results in its setting within the conf file only being honoured for the first use.  After which CHMOD commands are denied regardless.
 </P>
 
 	  </TD>

@@ -55,7 +55,7 @@
 			<LI> Runs as a configurable non-privileged
 			     user in stand-alone mode in order to
 			     decrease chances of attacks which might
-			     exploit it's "root"
+			     exploit its "root"
 			     abilities. <STRONG>Note: This feature is
 			     dependent on the capabilities of the host
 			     Unix system.</STRONG>
