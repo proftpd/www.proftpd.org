@@ -24,6 +24,51 @@ More information available at http://www.proftpd.org/proftpd-devel-archive/full/
 -->
 
   <ul>
+    <b><font face="arial" color="#003399">FTP traffic shaping</font></b> 
+    <br />
+    <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
+    <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/modules/mod_shaper.html">http://www.castaglia.org/proftpd/modules/mod_shaper.html</a></i></font>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      Adds ability to configure overall bandwidth control for proftpd
+    </font></blockquote>
+  </ul>
+
+  <ul>
+    <b><font face="arial" color="#003399">Send messages to connected clients</font></b> 
+    <br />
+    <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
+    <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/modules/mod_msg.html">http://www.castaglia.org/proftpd/modules/mod_msg.html</a></i></font>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      Adds ability to send messages to connected FTP clients
+    </font></blockquote>
+  </ul>
+
+  <ul>
+    <b><font face="arial" color="#003399">Counter-based read/write file locks</font></b> 
+    <br />
+    <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
+    <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/modules/mod_counter.html">http://www.castaglia.org/proftpd/modules/mod_counter.html</a></i></font>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      Support for configuring counter-based read and/or write locks for
+      files being uploaded or download
+    </font></blockquote>
+  </ul>
+
+  <ul>
+    <b><font face="arial" color="#003399">Case-insensitive path checking</font></b>
+    <br />
+    <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
+    <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/modules/mod_case.html">http://www.castaglia.org/proftpd/modules/mod_case.html</a></i></font>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      Support for performing case-insensitive file checks
+    </font></blockquote>
+  </ul>
+
+  <ul>
     <b><font face="arial" color="#003399">SQL-based configuration module</font></b>
     <br />
     <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
