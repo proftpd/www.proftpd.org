@@ -12,7 +12,7 @@ C = Committed
         #2013 - Track RFC2228 sessions in scoreboard
 C       #2015 - Add AND, OR keywords to Allow/Deny User/Group directives
         #2034 - Add support for a "graceful shutdown" signal
-        #2048 - Add command-line option for configuring DefaultAddress
+C       #2048 - Add ability to get configuration file values from environment
         #2052 - ProFTPD "ununsed parameters" cleanup
         #2062 - Enhance UserOwner/GroupOwner to take IDs as well as name
                 parameters
