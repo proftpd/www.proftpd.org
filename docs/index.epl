@@ -64,7 +64,7 @@
     <dl>
       <dt><a href="http://www.horde.net/~jwm/software/mod_ldap/">LDAP support</a> (mod_ldap)</dt>
       <dt>mod_linuxprivs</dt>
-      <dt><a href="http://www.lastditcheffort.org/aah/mod_sql.html">SQL support</a> (mod_sql)</dt>
+      <dt><a href="http://www.lastditcheffort.org/~aah/proftpd/mod_sql/">SQL support</a> (mod_sql)</dt>
       <dt>mod_ratio (Maintained by: James Dogopoulos &lt;jd@dynw.com&gt;)</dt>
       <dt>mod_readme</dt>
       <dt><a href="http://www.castaglia.org/proftpd/">TCP wrappers support</a> (mod_wrap)</dt>
