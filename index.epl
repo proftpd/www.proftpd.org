@@ -6,8 +6,6 @@
 #include "header.epl"
 
 <table bgcolor="white">
-
-
 <tr>
   <td>
     <b><font face="arial" color="#003399">1.2.2rc3 test release is out</font></b>

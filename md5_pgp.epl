@@ -2,7 +2,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "MD5 sums and PGP signatures of release files" :>//
-<: $last_changed = "04/Apr/2001 - jwm" :>//
+<: $last_changed = "20/Jun/2001 - jwm" :>//
 
 #include "header.epl"
 
@@ -19,8 +19,8 @@
 c3af9b3593e8d1e2cc28c63a4b77f774  <a href="ftp://ftp.proftpd.org/proftpd-1.2.1.tar.gz">proftpd-1.2.1.tar.gz</a>
 0ca3b3c10d2a87a4c3f72a4f76df6a89  <a href="ftp://ftp.proftpd.org/proftpd-1.2.1.tar.bz2">proftpd-1.2.1.tar.bz2</a>
 
-2919356b9afe35e74dc9a897cef861b2  <a href="ftp://ftp.proftpd.org/proftpd-1.2.2rc2.tar.gz">proftpd-1.2.2rc2.tar.gz</a>
-287b115963797c60fa6c88bc040ced62  <a href="ftp://ftp.proftpd.org/proftpd-1.2.2rc2.tar.bz2">proftpd-1.2.2rc2.tar.bz2</a>
+feb4c13614992e8ac985168d0099267e  <a href="ftp://ftp.proftpd.org/proftpd-1.2.2rc3.tar.gz">proftpd-1.2.2rc3.tar.gz</a>
+4c40f7fb9efa2886c0b5b82c972eed37  <a href="ftp://ftp.proftpd.org/proftpd-1.2.2rc3.tar.bz2">proftpd-1.2.2rc3.tar.bz2</a>
 </pre>
   </td>
 </tr>
@@ -63,7 +63,7 @@ oV1E9kLrne8=
 </pre></font>
 
 
-    <b><font face="arial" color="#003399">proftpd-1.2.2rc2.tar.gz.asc</font></b>
+    <b><font face="arial" color="#003399">proftpd-1.2.2rc3.tar.gz.asc</font></b>
     <br />
     <font size="-1">[<i>Released 24/Mar/2001</i>]</font>
 
@@ -71,16 +71,16 @@ oV1E9kLrne8=
 -----BEGIN PGP MESSAGE-----
 Version: 2.6.3ia
 
-iQCVAwUAOuBXkGFBiHYyDG+dAQHodAQAizJgPciM7fBi3ft0YDK7AUNZMckf9bmQ
-3f4sQMeB7l4j6ZqXje8z+Kg19Ge/ChQgJtmecEM5splrSI9T4Cyrp426r/DwJk5d
-imhQrc7aYO+2HFlKcgn+MHEnaEUNby90qZ/mSaVt/lqpu2Kcb3KOAfo/2s7RPRA/
-DLE5XVrwrfs=
-=9KAp
+iQCVAwUAOy//H2FBiHYyDG+dAQESAQP+OfhoXq8xPSnVb9YP2O4mZve5u1fq4nDL
+EUwQL3AJngPXNAq8QP7ELTM4VmDu6CEUvpLJewM5uW1XiYTpaeAksVGIQkfyf3EO
+n6/9o69UlQAf9hs3Z4XyAiPAxXanUcrwnKLGAUJfnxgimdJCaE4WzoW5RMqu2Svk
+Y2g3fzxy/Rc=
+=5vrs
 -----END PGP MESSAGE-----
 </pre></font>
 
 
-    <b><font face="arial" color="#003399">proftpd-1.2.2rc2.tar.bz2.asc</font></b>
+    <b><font face="arial" color="#003399">proftpd-1.2.2rc3.tar.bz2.asc</font></b>
     <br />
     <font size="-1">[<i>Released 24/Mar/2001</i>]</font>
 
@@ -88,11 +88,11 @@ DLE5XVrwrfs=
 -----BEGIN PGP MESSAGE-----
 Version: 2.6.3ia
 
-iQCVAwUAOuBXRGFBiHYyDG+dAQHRBAP/bGzuJI7BzzA1/2Y8xKgKF7vuCOsbkykK
-nRFscKYWuFiURZ6PqGNzliutscjnx6yqdP9PHkpo6I54imgC6/W86lmd63IytFbD
-rkeycBYnC/eAfIK1+q4LQp0/wSXqYtiZCb6AlGa/6eGy+uTzlIfOxmQTbtHGZx7M
-kJk0riPpxGQ=
-=FzWz
+iQCVAwUAOzAAXmFBiHYyDG+dAQHZxwP+IMo6o5uVAwiWFpVRSN/fQ7XaPpP9zzFp
+ySd4hObJpbeqGuUlYj95GfnmqNxI3tLERoRvviugN2Oc+MvGgFgw/NzID811L8lC
+ZeFI5G6w9KmrgsD+PELon0WRh9+wyhBOkfaMBYPzIt8E5nRRO5dciYy2urwEWQxr
+y/oWNHUOpIo=
+=yP7D
 -----END PGP MESSAGE-----
 </pre></font>
 
