@@ -1,4 +1,4 @@
-r<:
+<:
 # $Id$
 :>//
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
@@ -121,7 +121,6 @@ configuration:</p>
   <li><a href="#LsDefaultOptions">LsDefaultOptions</a></li>
   <li><a href="#MaxClients">MaxClients</a></li>
   <li><a href="#MaxClientsPerHost">MaxClientsPerHost</a></li>
-  <li><a href="#MaxHostsPerUser">MaxHostsPerUser</a>
   <li><a href="#MaxInstances">MaxInstances</a></li>
   <li><a href="#MaxLoginAttempts">MaxLoginAttempts</a></li>
   <li><a href="#MultilineRFC2228">MultilineRFC2228</a></li>
@@ -2108,37 +2107,6 @@ href="#Limit">&lt;Limit&gt;</a> block to completely ignore any hidden
     time.&quot;</code></p>
   <p>Results in:</p>
   <p><code>530 Sorry, you may not connect more than one time.</code></p>
-
-  <hr>
-  <h2><a name="MaxClientsPerUser">MaxClientsPerUser</a></h2>
-  <p><strong>Syntax:</strong> MaxClientsPerUser <em>number|none [message]</em><br />
-    <strong>Default:</strong> none<br />
-    <strong>Context:</strong> server config, &lt;Anonymous&gt;, &lt;VirtualHost&gt;, &lt;Global&gt;<br />
-  <STRONG>Module:</STRONG> mod_core<br />
-    <strong>Compatibility:</strong> 1.2.0 and later</p>
-
-  <p>The MaxClientsPerUser directive configures the maximum number of
-  authenticated clients that can log into the server for any given
-  user.  This is to limit the effect of some of the more popular ftp
-  clients which can open multiple connections to a server and perform
-  parallel downloads. Once the limit is reached additional
-  authentication attempts will be disconnected.</p>
-
-  <p>An optional <em><strong>message</strong></em> argument may be
-  used which will be displayed to a client attempting to exceed the
-  maximum value; immediately before disconnection. The
-  <em><strong>message</strong></em> argument is parsed for the magic
-  string <strong>&quot;%m&quot;</strong>, which is replaced with the
-  configured maximum value. If <em><strong>message</strong></em> is
-  not supplied, a system-wide default message is used.</p>
-
-  <p>Example:</p>
-  <p><code>MaxClientsPerUser 1 &quot;Please do not abuse this facility
-          you are already connected %m times from your host.&quot;</code></p>
-  <p>Results in:</p>
-  <p><code>530 Please do not abuse this facility you are already
-          connected 1 times from your host.</code></p> 
-
 
   <hr>
   <h2><a name="MaxInstances">MaxInstances</a></h2>
