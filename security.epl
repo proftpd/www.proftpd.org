@@ -39,11 +39,8 @@
     <div class="headline">Security</div>
 
     <p>All users of ProFTPD are strongly urged to upgrade to <strong>at
-    least</strong> ProFTPD 1.2.7 as soon as possible and preferably the
-    most recent stable version (<: print $proftpd_version :>). There are
-    severe known vulnerabilities in prior versions of ProFTPD. <strong>If you
-    are using an older version of ProFTPD you do so at your own risk, and
-    without support and may your gods go with you.</strong></p>
+    least</strong> ProFTPD 1.2.7p as soon as possible and preferably the
+    most recent stable version (<: print $proftpd_version :>).
   </td>
 </tr>
 </table>
