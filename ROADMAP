@@ -8,8 +8,8 @@ C = Committed
 1.2.6
         mod_quota - removed until security problems are fixed
         Remaining outstanding fixes / bugs in the ticketing system.
-        'Other' arch fixes as and when tested
-        Grubb's signal handler changes
+N/A?    'Other' arch fixes as and when tested
+C?      Grubb's signal handler changes
 C       IFModule patch 
         #1241 - Homedir on demand
 C       #1258 - STOU command
