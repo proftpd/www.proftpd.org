@@ -22,7 +22,7 @@
     <:
        my @platforms = (
          'AIX', 'BSD/OS', 'Cygwin*', 'Digital Unix', 'DG/UX',
-         'HP/UX', 'IRIX*', 'Linux*', 'Mac OS X*', 'SCO',
+         'HP/UX', 'IRIX*', 'Linux*', 'Mac OS X*+', 'SCO',
          'FreeBSD*', 'NetBSD', 'OpenBSD', 'Solaris*', 'SunOS'
        );
          
@@ -42,10 +42,15 @@
  
     <br />
 
-    <p>An asterisk(*) denotes a platform that the ProFTPD core team has
-    access to test on.  If you wish to donate hardware or network access,
-    please contact <a href="mailto:proftpd-devel@proftpd.org">the
-    developers' list</a>.</p>
+    <p>(*) The ProFTPD core team has access to test on this platform.
+           If you wish to donate hardware or network access, please
+           contact <a href="mailto:proftpd-devel@proftpd.org">the
+           developers' list</a>.
+    </p>
+    <p>(+) While ProFTPD should compile "out of the box" under Mac OS X,
+           <a href="http://fink.sf.net/">Fink</a> includes ProFTPD in its
+           distribution for OS X.
+    </p>
   </td>
 </tr>
 </table>
