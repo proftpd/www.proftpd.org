@@ -33,6 +33,7 @@ C       #1569 - Cygwin support
         #1486 - Directory listing performance
         #1507 - regex pattern matching in [Allow/Deny][User/Group]
         #1623 - "connected since" in ftpwho
+        #1644 - LogFormat local IP and FQDN tags missing
 
 1.2.8
         MaxFileSize
