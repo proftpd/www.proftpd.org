@@ -70,7 +70,7 @@ More information available at http://www.proftpd.org/proftpd-devel-archive/full/
 		<b><font face="arial" color="#003399">TJ's enhancement patches</font></b>
 		<br />
 		<br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
-		<br /><font size="-1"><i><a href="http://rad.geology.washington.edu/~tj/proftpd/">http://rad.geology.washington.edu/~tj/proftpd/</a></font>
+		<br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/">http://www.castaglia.org/proftpd/</a></font>
 
 		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
 			Lots of useful patches not included in the main source
@@ -94,7 +94,7 @@ More information available at http://www.proftpd.org/proftpd-devel-archive/full/
 		<b><font face="arial" color="#003399">mod_time (2.1rc2)</font></b>
 		<br />
 		<br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
-		<br /><font size="-1"><i><a href="http://rad.geology.washington.edu/~tj/proftpd/">http://rad.geology.washington.edu/~tj/proftpd/</a></i></font>
+		<br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/">http://www.castaglia.org/proftpd/</a></i></font>
 
 		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
 			A ProFTPD module that limits FTP commands based on time of day
