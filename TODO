@@ -14,3 +14,8 @@ jwm:
   * security.epl needs an update
   * the <blockquote><font><pre>/<p> stuff in lists,md5_pgp,old_news isn't
     xhtml compliant, need to look into this
+
+CSS1 Support Chart at
+http://www.webreview.com/style/css1/charts/mastergrid.shtml
+CSS2 Support Chart at
+http://www.webreview.com/style/css2/charts/selectors.shtml
