@@ -24,6 +24,20 @@ More information available at http://www.proftpd.org/proftpd-devel-archive/full/
 -->
 
   <ul>
+    <b><font face="arial" color="#003399">Alternative TLS module</font></b>
+    <br />
+    <br /><font size="-1"><i>Maintainer: Nikos Mavroyanopoulos</i></font>
+    <br /><font size="-1"><i><a href="http://members.hellug.gr/nmav/misc/proftpd/mod_gnutls.html">http://members.hellug.gr/nmav/misc/proftpd/mod_gnutls.html</a></i></font>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      The mod_gnutls module is an alternative to the distributed TLS module,
+      which uses GnuTLS instead, and supports several alternative
+      authentication methods by taking advantage of the TLS-SRP and TLS with
+      OpenPGP keys features of GnuTLS
+    </font></blockquote>
+  </ul>
+
+  <ul>
     <b><font face="arial" color="#003399">FTP traffic shaping</font></b> 
     <br />
     <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
