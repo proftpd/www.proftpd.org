@@ -17,14 +17,17 @@
 
     <p>Core Team (in no particular order):</p>
     <ul>
-      <li>Jesse Sipprell: ProFTPD creator/developer/co-maintainer.</li>
-      <li><a href="http://www.macgyver.org/">MacGyver</a>: ProFTPD developer/co-maintainer.</li>
-      <li><a href="http://horde.net/~jwm/">John Morrissey</a></li>
-      <li>Charles Seeger</li>
-      <li><a href="http://www.castaglia.org/proftpd/">TJ Saunders</a></li> 
+      <li><a href="http://horde.net/~jwm/">John Morrissey</a>: Developer, mod_ldap maintainer</li>
+      <li><a href="http://www.castaglia.org/proftpd/">TJ Saunders</a>: ProFTPD maintainer</li> 
       <li><a href="http://hamster.wibble.org/">Mark Lowes</a>: Documentation and Webhamster.</li>
-      <li><a href="mailto:aah at acm dot org">Andrew Houghton</a></li>
       <li><a href="mailto:droesen at entire dash systems dot com">Daniel Roesen</a></li>
+      <li><a href="mailto:robe at amd dot co dot at">Michael Renner</a></li>
+
+      <p>Retired:</p>
+      <li>Jesse Sipprell: ProFTPD creator.</li>
+      <li><a href="http://www.macgyver.org/">MacGyver</a>: ProFTPD maintainer.</li>
+      <li>Charles Seeger</li>
+      <li><a href="mailto:aah at acm dot org">Andrew Houghton</a>: mod_sql maintainer</li>
     </ul>
 
     <p>Module Developers:</p>
