@@ -1,46 +1,43 @@
 <: # $Id$ :>//
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
-<: $last_changed = "11/Apr/2001 - hamster" :>//
+<: $last_changed = "22/Apr/2001 - jwm" :>//
 
 #include "header.epl"
 
 <table bgcolor="white">
-
 <tr>
   <td>
-      <b><font face="arial" color="#003399">Cert advisory on file globbing</font></b>
-      <br />
-      <font size="-1">[<i>11/April/2001</i>]</font>
+    <b><font face="arial" color="#003399">Cert advisory on file globbing</font></b>
+    <br />
+    <font size="-1">[<i>11/April/2001</i>]</font>
 
-      <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-       As many of you are aware CERT have released advisory 
-       <A HREF="http://www.cert.org/advisories/CA-2001-07.html">CA-2001-07</A>
-       on security problems with the globbing on various operating systems and 
-       the effect on FTP daemons.
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      As many of you are aware CERT have released advisory 
+      <A HREF="http://www.cert.org/advisories/CA-2001-07.html">CA-2001-07</A>
+      on security problems with the globbing on various operating systems and 
+      the effect on FTP daemons.
 
-       <P>At this time the ProFTPD development team are checking the
-       status of the 1.2.1 stable release but believe that 1.2.2rc1 is
-       not vulnerable to this problem.  The team is undertaking additional
-       testing to confirm the status of both versions, more information
-       will be released as we have it.  If you have any concerns or
-       information which may help with this process please contact the
-       core team via the address for <A HREF="/security.html">security
-       issues</A>.</P>
+      <p>At this time the ProFTPD development team are checking the status
+      of the 1.2.1 stable release but believe that 1.2.2rc1 is not
+      vulnerable to this problem.  The team is undertaking additional
+      testing to confirm the status of both versions, more information will
+      be released as we have it.  If you have any concerns or information
+      which may help with this process please contact the core team via the
+      address for <A HREF="/security.html">security issues</A>.</p>
 
-       <div class="headline-small">Update 20:30GMT 11/Apr/2001</div>
+      <div class="headline-small">Update 20:30GMT 11/Apr/2001</div>
 
-	<P>Our investigations to date show that both Linux and the gnu
-	glob() are not affected by this problem.  ProFTPD 1.2.2rc1 always
-	uses gnu glob() therefore should not be vulnerable.</P>
+      <p>Our investigations to date show that both Linux and the gnu glob()
+      are not affected by this problem.  ProFTPD 1.2.2rc1 always uses gnu
+      glob() therefore should not be vulnerable.</p>
 
-	<UL>
-	<LI>Linux [tested]: Not affected
-	<LI>FreeBSD [tested]: Does not use the system libc's glob(), compiles GNU.
-	<LI>Solaris 2.6 [tested]: Does not use the system libc's glob(), compiles GNU.
-	</UL>
-
-      </font></blockquote>
+      <ul>
+        <li>Linux [tested]: Not affected.</li>
+        <li>FreeBSD [tested]: Does not use the system libc's glob(), compiles GNU.</li>
+        <li>Solaris 2.6 [tested]: Does not use the system libc's glob(), compiles GNU.</li>
+      </ul>
+    </font></blockquote>
   </td>
 </tr>
 
