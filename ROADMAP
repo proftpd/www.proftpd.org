@@ -18,7 +18,7 @@ C       #1932 - Make Max* checks a PASS POST_CMD handler
 C       #1933 - Add mod_ifsession contrib module
 C       #1960 - Add removed file size by DELE command to xferlog
 C       #1967 - Add display of uptime to ftpwho, ftptop
-        Add RootRevoke, AnonRejectPasswords directives
+C       Add RootRevoke, AnonRejectPasswords directives
 
 TBD
         i18n (including RFC2640)
