@@ -12,7 +12,7 @@ C       #1205 - Add debug option to SystemLog
         #1272 - DenyFilter by User or DenyFilter by Dire
 C       #1403 - per-server system logs via ServerLog directive
 C       #1482 - %U cookie to LogFormat
-        #1507 - regex pattern matching in [Allow/Deny][User/Group]
+C       #1507 - regex pattern matching in [Allow/Deny][User/Group]
 C       #1515 - Enable mod_log to log into default log / syslog
 C       #1565 - ftpwho bandwidth usage
 C       #1597 - Problems with HP-UX 10/11 trusted systems, mod_pam, and mod_unixpw
