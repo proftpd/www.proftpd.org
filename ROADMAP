@@ -39,6 +39,6 @@ C       #1922 - Server allows RNTO an existing file even with AllowOverwrite tur
         #1933 - Add mod_ifsession contrib module
 TBD
         #1711 - IPv6 support
-        i8n
+        i18n (including RFC2640)
         contrib/ per-module directory reorganization
         shared memory support
