@@ -29,6 +29,17 @@ More information available at http://www.proftpd.org/proftpd-devel-archive/full/
 -->
 
   <ul>
+    <b><font face="arial" color="#003399">PostgreSQL-Enabled RPMs</font></b>
+    <br />
+    <br /><font size="-1"><i>Maintainer: Devrim GUNDUZ</i></font>
+    <br /><font size="-1"><i><a href="ftp://ftp.proftpd.org/contrib/users/DevrimGUNDUZ/v1.2.8rc1/">ftp://ftp.proftpd.org/contrib/users/DevrimGUNDUZ/v1.2.8rc1/</a></i></font>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      Devrim GUNDUZ has released PostgreSQL-enabled RPMs for 1.2.8rc1.
+    </font></blockquote>
+  </ul>
+
+  <ul>
     <b><font face="arial" color="#003399">GSSAPI module</font></b>
     <br />
     <br /><font size="-1"><i>Maintainer: Markus Moeller</i></font>
