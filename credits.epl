@@ -29,7 +29,10 @@
 
     <p>Module Developers:</p>
     <ul>
+      <li>James Dogopoulos: mod_ratio maintainer</li>
+      <!--
       <li>Please e-mail the <a href="mailto:core@proftpd.org">core developers</a> to be listed here if you have contributed a module to ProFTPD.</li>
+      -->
     </ul>
 
     <p>Frequent Contributors:</p>

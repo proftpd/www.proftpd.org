@@ -2,7 +2,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Accessing the CVS Repository" :>//
-<: $last_changed = "04/Apr/2001 - jwm" :>//
+<: $last_changed = "07/May/2002 - hamster" :>//
 
 #include "header.epl"
 
@@ -29,12 +29,11 @@
     <div class="headline-small">Quick Instructions</div>
     <ul>
         <li>The CVS server is <code>proftpd.org</code></li>
-        <li><code>anonymous@proftpd.org</code> is the user, and
-            <code>proftpd</code> is the password.</li>
-        <li>The directory is <code>/var/proftpd</code> and the tree
-            is <code>proftpd-1.2</code>.</li>
-    </ul>
-
+        <li><code>anonymous@cvs.proftp.sourceforge.net</code> is the user, the
+        password is blank</li>
+        <li>The directory is <code>/cvsroot/proftp</code> and the tree
+            is <code>proftpd</code>.</li>
+    </ul>o
 
     <div class="headline-small">Detailed Instructions</div>
     <p>Assuming you have a CVS client, the process for accessing the ProFTPD

@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Downloading and mirror sites" :>//
-<: $last_changed = "68/01/1900 - mark" :>//
+<: $last_changed = "109/01/1900 - mark" :>//
 
 #include "header.epl"
 
@@ -233,11 +233,6 @@ Maintained by: Andre Tomt<br />
 <a href="http://ftp.isu.edu.tw/pub/Unix/FTP/proftpd/">http://ftp.isu.edu.tw/pub/Unix/FTP/proftpd/</A><br />
 Location: Taiwan (I-SHOU University (TW, Kaohsiung))<br />
 Maintained by: KTH<br />
-</p>
-<p>
-<a href="ftp://ftp.futuro.pl/pub/mirror/ftp.proftpd.org/">ftp://ftp.futuro.pl/pub/mirror/ftp.proftpd.org/</A><br />
-Location: Poland<br />
-Maintained by: Piotr Babula<br />
 </p>
 <p>
 <a href="ftp://ftp.interweb.pl/pub/mirrors/ftp.proftpd.org/">ftp://ftp.interweb.pl/pub/mirrors/ftp.proftpd.org/</A><br />
@@ -571,6 +566,26 @@ Maintained by: Terry Davis<br />
 <a href="ftp://proftpd.anwire.org/pub/mirrors/proftpd.org/">ftp://proftpd.anwire.org/pub/mirrors/proftpd.org/</A><br />
 Location: Greece (Athens)<br />
 Maintained by: Vaggelis Georgatos<br />
+</p>
+<p>
+<a href="ftp://proftpdmirror.bartj.com/">ftp://proftpdmirror.bartj.com/</A><br />
+Location: Netherlands (Leveroy)<br />
+Maintained by: Bart<br />
+</p>
+<p>
+<a href="ftp://ftp.easynet.nl/mirror/proftp/">ftp://ftp.easynet.nl/mirror/proftp/</A><br />
+Location: Netherlands (Hoofddorp)<br />
+Maintained by: Diederik<br />
+</p>
+<p>
+<a href="ftp://ftp.linuxforum.hu/mirror/ftp.proftpd.org/">ftp://ftp.linuxforum.hu/mirror/ftp.proftpd.org/</A><br />
+Location: Hungary<br />
+Maintained by: Christian Hamar alias krix<br />
+</p>
+<p>
+<a href="ftp://proftp.serveftp.org/proftp/">ftp://proftp.serveftp.org/proftp/</A><br />
+Location: Germany (Nürnberg)<br />
+Maintained by: Flo Spiege<br />
 </p>
 </dl>
 
