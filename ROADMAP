@@ -7,7 +7,7 @@ C = Committed
 
 1.2.7
         #1065 - Limit upload/download file sizes
-        #1076 - Toggle parsing of .ftpaccess files with a AllowOverride
+C       #1076 - Toggle parsing of .ftpaccess files with a AllowOverride
         #1231 - Extra options for ftpwho
         #1241 - Homedir on demand
         #1253 - ServerAddress
@@ -24,8 +24,10 @@ C       #1564 - Add DESTDIR in Makefile
         #1644 - LogFormat local IP and FQDN tags missing
 C       #1649 - setproctitle() prepends and appends process name
 C       #1666 - Auth modules can return duplicate supplemental groups
+C       #1682 - Broken SyslogFacility requires custom syslog code
         #1687 - Add contrib module for RADIUS authentication, accounting
         #1705 - Add contrib module for time-of-day restrictions
+        #1719 - Add RFC2228 stuff to distribution
 
 1.2.8
         MaxFileSize
