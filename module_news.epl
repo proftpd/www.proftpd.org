@@ -2,7 +2,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Third-party modules and patches" :>//
-<: $last_changed = "10/Jul/2001 - jwm" :>//
+<: $last_changed = "11/Jul/2001 - hamster" :>//
 
 #include "header.epl"
 
@@ -49,7 +49,8 @@ More information available at http://www.proftpd.org/proftpd-devel-archive/full/
 		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
 			Support for Dan J. Bernstein's <a
 			href="http://cr.yp.to/cdb.htm">CDB format</a> for group and
-			passwd file lookups, a database format is known for its speed.
+			passwd file lookups, CDB lookups are generally faster than 
+			other similar database formats.
 		</blockquote>
 	</ul>
 		
