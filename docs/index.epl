@@ -2,7 +2,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Project Documentation" :>//
-<: $last_changed = "18/Oct//2001 - hamster" :>//
+<: $last_changed = "30/Jan/2002 - hamster" :>//
 
 #include "header.epl"
 
@@ -16,19 +16,32 @@
     <p>The core documentation is held on SourceForge (project pdd), if you
     have patches or changes please submit them as a diff against those
     souces where possible.  All updates should be directed to (<a
-    href="mailto:hamster@vom.tm">Mark Lowes</a> and they will be dealt with
-    as quickly as possible.</p>
+    href="mailto:hamster@vom.org.uk">Mark Lowes</a> and they will be dealt with
+    as quickly as possible)</p>
 
     <ul>
-      <li><a href="configuration.html">List of configuration directives</a></li>
+      <li>Directives list 
+      <ul>
+      	<li><a href="/docs/directives/linked/by-name.html">by name</a></li>
+      	<li><a href="/docs/directives/linked/by-modules.html">by module</a></li>
+      	<li><a href="/docs/directives/linked/by-context.html">by context</a></li>
+      	<li>single file 
+      		<a href="/docs/directives/configuration_full.html">html</a> / 
+      		<a href="/docs/directives/configuration.pdf">pdf</a> / 
+      		<a href="/docs/directives/configuration.ps">ps</a></li>
+      	<li><a href="configuration.html">original format</a></li>
+      </ul>
       <li>Frequently Asked Questions</li>
       <ul>
         <li><a href="/docs/faq/proftpdfaq.html">Hyperlinked version</a></li>
         <li><a href="/docs/faq/proftpdfaq-full.html">Single html file</a></li>
       </ul>
-      <li>Userguide (<a href="/docs/userguide/linked/userguide.html">linked html</a>) (<a href="/docs/userguide/userguide_full.html">single html</a>) (<a href="/docs/userguide/userguide.ps">postscript</a>) (<a href="/docs/userguide/userguide.pdf">pdf</a>)</li>
+      <li>Userguide (<a href="http://www.korenwolf.net/proftpd/Userguide/linked/userguide.html">linked html</a>) 
+      	(<a href="http://www.korenwolf.net/proftpd/Userguide/userguide_full.html">single html</a>) 
+      	(<a href="http://www.korenwolf.net/proftpd/Userguide/userguide.ps">postscript</a>) 
+      	(<a href="http://www.korenwolf.net/proftpd/Userguide/userguide.pdf">pdf</a>)</li>
       <li><a href="/cvs.html">CVS Howto and FAQ</a></li>
-      <li><a href="y2k.html">Year 2000 statement</a></li>
+      <!-- <li><a href="y2k.html">Year 2000 statement</a></li> -->
     </ul>
 
     <ul>
@@ -56,20 +69,6 @@
       <dt>mod_ratio (Maintained by: James Dogopoulos &lt;jd@dynw.com&gt;)</dt>
       <dt>mod_readme</dt>
       <dt><a href="http://www.castaglia.org/proftpd/">TCP wrappers support</a> (mod_wrap)</dt>
-    </dl>
-
-    <hr />
-
-    <div class="headline">Example Configurations</div>
-
-    <p>Here are some example configurations which are known to work, more
-    to be added shortly and some supplementary notes</p>
-
-    <dl>
-      <dt><a href="./basic.conf">Basic</a></dt>
-      <dt><a href="./anonymous.conf">Anonymous</a></dt>
-      <dt><a href="./virtual.conf">Virtual hosts</a></dt>
-      <dt><a href="./complex-virtual.conf">Complex Virtual</a></dt>
     </dl>
 
     <hr />

@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Downloading and mirror sites" :>//
-<: $last_changed = "325/01/1900 - mark" :>//
+<: $last_changed = "28/01/1900 - mark" :>//
 
 #include "header.epl"
 
@@ -126,6 +126,11 @@ Maintained by: Andreas Mallek<br />
 <a href="ftp://ftp.jaquet.dk/pub/proftp/">ftp://ftp.jaquet.dk/pub/proftp/</A><br />
 Location: Denmark<br />
 Maintained by: Rasmus<br />
+</p>
+<p>
+<a href="ftp://ftp.neptuno2000.com/pub/proftpd/">ftp://ftp.neptuno2000.com/pub/proftpd/</A><br />
+Location: Spain<br />
+Maintained by: Lluis Gargallo<br />
 </p>
 <p>
 <a href="ftp://ftp.linja.net/pub/mirrors/proftpd/">ftp://ftp.linja.net/pub/mirrors/proftpd/</A><br />
@@ -434,7 +439,7 @@ Location: United states (Islandia, NY USA)<br />
 </p>
 <p>
 <a href="ftp://proftpd.bylinux.net/pub/mirror/proftpd/">ftp://proftpd.bylinux.net/pub/mirror/proftpd/</A><br />
-Location: United kingdom ((ie UK, London))<br />
+Location: Hong kong (Hong Kong)<br />
 Maintained by: pyjamas<br />
 </p>
 <p>
@@ -478,7 +483,7 @@ Location: United states (     Portland, OR, USA)<br />
 Maintained by:             The BigFatPipe.Net Hostmaster Team<br />
 </p>
 <p>
-<a href="ftp://proftpd.histeria.pl/proftpd/">ftp://proftpd.histeria.pl/proftpd/</A><br />
+<a href="ftp://histeria.pl/proftpd/">ftp://histeria.pl/proftpd/</A><br />
 Location: Poland (PL, Radom)<br />
 Maintained by: Argail<br />
 </p>
@@ -511,6 +516,21 @@ Maintained by: Antonin<br />
 <a href="ftp://proftpd.crihan.fr/pub/proftpd/">ftp://proftpd.crihan.fr/pub/proftpd/</A><br />
 Location: France (Rouen)<br />
 Maintained by: Alain Bidaud<br />
+</p>
+<p>
+<a href="ftp://mirage.informationwave.net/proftpd/">ftp://mirage.informationwave.net/proftpd/</A><br />
+Location: United states (US, NJ, Clifton)<br />
+Maintained by: Omachonu Ogali<br />
+</p>
+<p>
+<a href="ftp://ftp.gcs.nu/mirror/proftpd/">ftp://ftp.gcs.nu/mirror/proftpd/</A><br />
+Location: United states (USA, Ohio)<br />
+Maintained by: Robert Sheets<br />
+</p>
+<p>
+<a href="ftp://ftp.exobit.org/pub/ftp/proftpd/">ftp://ftp.exobit.org/pub/ftp/proftpd/</A><br />
+Location: United states (Long Island, NY, USA)<br />
+Maintained by: Jeffrey Meltzer<br />
 </p>
 </dl>
 

@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Website mirrors" :>//
-<: $last_changed = "325/01/1900 - mark" :>//
+<: $last_changed = "28/01/1900 - mark" :>//
 
 #include "header.epl"
 
@@ -30,7 +30,7 @@
 <a href="http://www.au.proftpd.org/">au</a>
 <a href="http://www.be.proftpd.org/">be</a>
 <a href="http://www.bg.proftpd.org/">bg</a>
-<a href="http://www.cn.proftpd.org/">cn</a>
+<a href="http://www.ch.proftpd.org/">ch</a>
 <a href="http://www.de.proftpd.org/">de</a>
 <a href="http://www.dk.proftpd.org/">dk</a>
 <a href="http://www.es.proftpd.org/">es</a>
@@ -68,11 +68,6 @@ Location: Australia<br />
 Maintained by: Jason Andrade<br />
 </p>
 <p>
-<a href="http://www2.linuxforum.net/mirror/proftpd/">http://www2.linuxforum.net/mirror/proftpd/</a><br />
-Location: China (Beijing)<br />
-Maintained by: David<br />
-</p>
-<p>
 <a href="http://proftpd.uasw.edu/">http://proftpd.uasw.edu/</a><br />
 Location: Germany (Wolfenbuettel)<br />
 Maintained by: Thorsten Ludewig<br />
@@ -96,16 +91,6 @@ Maintained by: Toni Viemero<br />
 <a href="http://proftpd.proxad.net/">http://proftpd.proxad.net/</a><br />
 Location: France (Paris)<br />
 Maintained by: Benoit Artuso<br />
-</p>
-<p>
-<a href="http://proftpd.at.web.id/">http://proftpd.at.web.id/</a><br />
-Location: Indonesia (Jakarta)<br />
-Maintained by: Hengky Stevanus<br />
-</p>
-<p>
-<a href="http://proftpd.kheos.net/">http://proftpd.kheos.net/</a><br />
-Location: France (Reims)<br />
-Maintained by: viens<br />
 </p>
 <p>
 <a href="http://proftpd.middle-earth.it/">http://proftpd.middle-earth.it/</a><br />
@@ -169,7 +154,7 @@ Maintained by: fxp0<br />
 </p>
 <p>
 <a href="http://www.proftpd.linuxceptional.com/">http://www.proftpd.linuxceptional.com/</a><br />
-Location: United states<br />
+Location: United states (Baltimore MD)<br />
 Maintained by: Phil Barnett<br />
 </p>
 <p>
@@ -211,11 +196,6 @@ Maintained by: NOC<br />
 <a href="http://proftpd.polbiznes.pl/">http://proftpd.polbiznes.pl/</a><br />
 Location: Poland (Gdansk)<br />
 Maintained by: Marian Witkowski<br />
-</p>
-<p>
-<a href="http://proftpd.mirror.os.org.cn/">http://proftpd.mirror.os.org.cn/</a><br />
-Location: China (Beijing)<br />
-Maintained by: Levin<br />
 </p>
 <p>
 <a href="http://proftpd.fixity.net/">http://proftpd.fixity.net/</a><br />
@@ -262,11 +242,6 @@ Location: Hungary (Budapest)<br />
 Maintained by:  telnet Co. mirror admin<br />
 </p>
 <p>
-<a href="http://proftpd.rs-systems.at/">http://proftpd.rs-systems.at/</a><br />
-Location: Austria (Vienna)<br />
-Maintained by: Stefan Lueger<br />
-</p>
-<p>
 <a href="http://proftpd.mirror.easynet.be/">http://proftpd.mirror.easynet.be/</a><br />
 Location: Belgium (Brussels, BELGIUM)<br />
 Maintained by: Iyi Dogan Claude<br />
@@ -282,12 +257,7 @@ Location: United states (Iowa City, IA, USA)<br />
 Maintained by: Iowa Student Computer Association FTP Archives Maintainer<br />
 </p>
 <p>
-<a href="http://proftpd.404-not-found.net/">http://proftpd.404-not-found.net/</a><br />
-Location: Hong kong (HK)<br />
-Maintained by: Johnson<br />
-</p>
-<p>
-<a href="httP;//gd.tuwien.ac.at/www.proftpd.org/">httP;//gd.tuwien.ac.at/www.proftpd.org/</a><br />
+<a href="http://gd.tuwien.ac.at/www.proftpd.org/">http://gd.tuwien.ac.at/www.proftpd.org/</a><br />
 Location: Austria (Vienna Univ. of Technology, Austria)<br />
 Maintained by: Antonin<br />
 </p>
@@ -302,14 +272,14 @@ Location: United states<br />
 Maintained by: marlboro<br />
 </p>
 <p>
-<a href="http://proftpd.cybercomm.nl/">http://proftpd.cybercomm.nl/</a><br />
-Location: Netherlands (Amsterdam)<br />
-Maintained by: Maurice Sienema<br />
-</p>
-<p>
 <a href="http://proftpd.crihan.fr/">http://proftpd.crihan.fr/</a><br />
 Location: France (Rouen)<br />
 Maintained by: Alain Bidaud<br />
+</p>
+<p>
+<a href="http://proftpd.asylog.net/">http://proftpd.asylog.net/</a><br />
+Location: Switzerland (Switzerland)<br />
+Maintained by: Escario Julien<br />
 </p>
 </dl>
 

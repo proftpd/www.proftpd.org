@@ -90,12 +90,11 @@
         <tr>
           <td bgcolor="#ffffff">
             <ul>
-              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="/docs/">Docs</a></font></li>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="/docs/">Docs index</a></font></li>
               <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="/docs/rfc.html">RFCs</a></font></li>
-              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="/docs/y2k.html">Year 2000 Compliance</a></font></li>
-              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="/docs/configuration.html">Directive list</a></font></li>
               <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="/docs/faq/proftpdfaq.html">FAQ</a></font></li>
               <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="/docs/userguide/linked/userguide.html">Userguide</a></font></li>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="/docs/example-conf.html">Example configurations</a></font></li>
             </ul>
           </td>
         </tr>
@@ -169,7 +168,7 @@
 
       <tr>
         <td align="left">
-          <font size="-1">Copyright (C) 1999, 2000-1, The ProFTPD Project.</font>
+          <font size="-1">Copyright (C) 1999, 2000-2, The ProFTPD Project.</font>
         </td>
       </tr>
     </table>
