@@ -29,6 +29,7 @@ C       #1701 - Reverse lookups not working
         #1272 - DenyFilter by User or DenyFilter by Dire
         #1395 - Check return values in PRIVS calls
         #1432 - Pedantic handling of leading whitespace in FTP commands
+        #1475 - Minor changes to SITE command handling
         #1486 - Directory listing performance
         #1507 - regex pattern matching in [Allow/Deny][User/Group]
         #1623 - "connected since" in ftpwho
