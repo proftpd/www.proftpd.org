@@ -2,7 +2,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Third-party modules and patches" :>//
-<: $last_changed = "20/Jun/2001 - jwm" :>//
+<: $last_changed = "22/Jun/2001 - hamster" :>//
 
 #include "header.epl"
 
@@ -13,6 +13,16 @@
       <: print "<b>$html_title</b>" unless !defined($html_title) :>//
     </div>
 
+	<ul>
+		<b><font face="arial" color="#003399">mod_autorun (1.7)</font></b>
+		<br />
+		<br /><font size="-1"><i>Maintainer: Brett Morgan</i></font>
+		<br /><font size="-1"><i><a href="http://www.korenwolf.net/proftpd/mod_autorun.c">http://www.korenwolf.net/proftpd/mod_autorun.c</a></font>
+		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+			Allow execution of external scripts from within ProFTPD
+		</blockquote>
+	</ul>
+	
 	<ul>
 		<b><font face="arial" color="#003399">mod_time (2.0rc1)</font></b>
 		<br />
@@ -78,6 +88,7 @@
 			A implementation of one-time passwords for ProFTPD.
 		</blockquote>
 	</ul>
+
   </td>
 </tr>
 </table>

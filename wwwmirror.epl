@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Website mirrors" :>//
-<: $last_changed = "28/05/2001 - hamster" :>//
+<: $last_changed = "21/06/2001 - hamster" :>//
 #include "header.epl"
 <TR>
 <TD>
@@ -30,6 +30,7 @@ have mirrors are listed below</P>
 <A HREF="http://www.au.proftpd.org/">au</A> 
 <A HREF="http://www.cn.proftpd.org/">cn</A> 
 <A HREF="http://www.de.proftpd.org/">de</A> 
+<A HREF="http://www.dk.proftpd.org/">dk</A> 
 <A HREF="http://www.es.proftpd.org/">es</A> 
 <A HREF="http://www.fi.proftpd.org/">fi</A> 
 <A HREF="http://www.fr.proftpd.org/">fr</A> 
@@ -37,6 +38,7 @@ have mirrors are listed below</P>
 <A HREF="http://www.jp.proftpd.org/">jp</A> 
 <A HREF="http://www.nl.proftpd.org/">nl</A> 
 <A HREF="http://www.no.proftpd.org/">no</A> 
+<A HREF="http://www.nz.proftpd.org/">nz</A> 
 <A HREF="http://www.ru.proftpd.org/">ru</A> 
 <A HREF="http://www.se.proftpd.org/">se</A> 
 <A HREF="http://www.sg.proftpd.org/">sg</A> 
@@ -69,6 +71,11 @@ Maintained by: Thorsten Ludewig<BR>
 <A HREF="http://ftp.tim.linux-site.net/">http://ftp.tim.linux-site.net/</A><BR>
 Location: Germany (Oberhausen)<BR>
 Maintained by: Tim Korves<BR>
+</P>
+<P>
+<A HREF="http://proftpd.area51.dk/">http://proftpd.area51.dk/</A><BR>
+Location: Denmark (Copenhagen)<BR>
+Maintained by: Gorm Jorgensen<BR>
 </P>
 <P>
 <A HREF="http://proftpd.neptuno2000.com/">http://proftpd.neptuno2000.com/</A><BR>
@@ -109,6 +116,11 @@ Maintained by: Peter Batenburg<BR>
 <A HREF="http://proftpd.borregata.no/">http://proftpd.borregata.no/</A><BR>
 Location: Norway (Tonsberg)<BR>
 Maintained by: BiG-PaPa<BR>
+</P>
+<P>
+<A HREF="http://mirror.tel.net.nz/proftpd/">http://mirror.tel.net.nz/proftpd/</A><BR>
+Location: New Zealand (Auckland)<BR>
+Maintained by: Alan Lee<BR>
 </P>
 <P>
 <A HREF="http://lich.phys.spbu.ru/">http://lich.phys.spbu.ru/</A><BR>
