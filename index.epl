@@ -6,6 +6,7 @@
 #include "header.epl"
 
 <table bgcolor="white">
+
 <tr>
   <td>
     <b><font face="arial" color="#003399">German-language FAQ</font></b>
@@ -16,6 +17,18 @@
       Sven Hoexter has put together a basic FAQ in German, available at
       <a href="http://www.hoaxter.de/geb/proftpdfaq.txt">http://www.hoaxter.de/geb/proftpdfaq.txt</a>.
       (Note: this is *not* a translation of the official <a href="http://www.proftpd.org/docs/faq/proftpdfaq.html">ProFTPD FAQ</a>.)
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">Version 1.2.5rc1 released</font></b>
+    <br />
+    <font size="-1">[<i>19/Oct/2001</i>]</font>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+     1.2.5rc1 is now available from ftp.proftpd.org and all mirror sites. 
     </font></blockquote>
   </td>
 </tr>

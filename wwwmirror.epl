@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Website mirrors" :>//
-<: $last_changed = "289/01/1900 - mark" :>//
+<: $last_changed = "325/01/1900 - mark" :>//
 
 #include "header.epl"
 
@@ -30,9 +30,12 @@
 <a href="http://www.au.proftpd.org/">au</a>
 <a href="http://www.be.proftpd.org/">be</a>
 <a href="http://www.bg.proftpd.org/">bg</a>
+<a href="http://www.cn.proftpd.org/">cn</a>
+<a href="http://www.de.proftpd.org/">de</a>
 <a href="http://www.dk.proftpd.org/">dk</a>
 <a href="http://www.es.proftpd.org/">es</a>
 <a href="http://www.fi.proftpd.org/">fi</a>
+<a href="http://www.fr.proftpd.org/">fr</a>
 <a href="http://www.hk.proftpd.org/">hk</a>
 <a href="http://www.hu.proftpd.org/">hu</a>
 <a href="http://www.id.proftpd.org/">id</a>
@@ -48,6 +51,7 @@
 <a href="http://www.ru.proftpd.org/">ru</a>
 <a href="http://www.se.proftpd.org/">se</a>
 <a href="http://www.sg.proftpd.org/">sg</a>
+<a href="http://www.tr.proftpd.org/">tr</a>
 <a href="http://www.ua.proftpd.org/">ua</a>
 <a href="http://www.uk.proftpd.org/">uk</a>
 <a href="http://www.us.proftpd.org/">us</a>
@@ -278,11 +282,6 @@ Location: United states (Iowa City, IA, USA)<br />
 Maintained by: Iowa Student Computer Association FTP Archives Maintainer<br />
 </p>
 <p>
-<a href="http://proftpd.vanadiumcorp.org/">http://proftpd.vanadiumcorp.org/</a><br />
-Location: Italy (Italy)<br />
-Maintained by: VaNaDi0<br />
-</p>
-<p>
 <a href="http://proftpd.404-not-found.net/">http://proftpd.404-not-found.net/</a><br />
 Location: Hong kong (HK)<br />
 Maintained by: Johnson<br />
@@ -296,6 +295,21 @@ Maintained by: Antonin<br />
 <a href="http://proftpd.dnepr.net/">http://proftpd.dnepr.net/</a><br />
 Location: Ukraine (Dnepropetrovsk)<br />
 Maintained by: Andrey Lakhno<br />
+</p>
+<p>
+<a href="http://proftpd.digitalviolation.com/">http://proftpd.digitalviolation.com/</a><br />
+Location: United states<br />
+Maintained by: marlboro<br />
+</p>
+<p>
+<a href="http://proftpd.cybercomm.nl/">http://proftpd.cybercomm.nl/</a><br />
+Location: Netherlands (Amsterdam)<br />
+Maintained by: Maurice Sienema<br />
+</p>
+<p>
+<a href="http://proftpd.crihan.fr/">http://proftpd.crihan.fr/</a><br />
+Location: France (Rouen)<br />
+Maintained by: Alain Bidaud<br />
 </p>
 </dl>
 

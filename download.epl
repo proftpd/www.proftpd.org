@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Downloading and mirror sites" :>//
-<: $last_changed = "289/01/1900 - mark" :>//
+<: $last_changed = "325/01/1900 - mark" :>//
 
 #include "header.epl"
 
@@ -172,9 +172,9 @@ Location: Italy<br />
 Maintained by: Saverio Salatino<br />
 </p>
 <p>
-<a href="ftp://venom.ath.cx/">ftp://venom.ath.cx/</A><br />
-Location: Italy<br />
-Maintained by: Matteo<br />
+<a href="ftp://ftp.digitalviolation.com/pub/mirrors/proftpd/">ftp://ftp.digitalviolation.com/pub/mirrors/proftpd/</A><br />
+Location: United states<br />
+Maintained by: marlboro<br />
 </p>
 <p>
 <a href="ftp://ftp.ayamura.org/pub/proftpd/">ftp://ftp.ayamura.org/pub/proftpd/</A><br />
@@ -379,6 +379,11 @@ Location: United states<br />
 Maintained by: Chris Foti<br />
 </p>
 <p>
+<a href="ftp://mirror.cybercomm.nl/">ftp://mirror.cybercomm.nl/</A><br />
+Location: Netherlands (Amsterdam)<br />
+Maintained by: Maurice Sienema<br />
+</p>
+<p>
 <a href="http://public.cakraweb.com/pub/proftpd/">http://public.cakraweb.com/pub/proftpd/</A><br />
 Location: Indonesia (Jakarta)<br />
 Maintained by: Asfihani<br />
@@ -501,6 +506,11 @@ Maintained by: Tomaz Kostrevc<br />
 <a href="ftp://gd.tuwien.ac.at/infosys/servers/ftp/proftpd/">ftp://gd.tuwien.ac.at/infosys/servers/ftp/proftpd/</A><br />
 Location: Austria (Vienna Univ. of Technology, Austria)<br />
 Maintained by: Antonin<br />
+</p>
+<p>
+<a href="ftp://proftpd.crihan.fr/pub/proftpd/">ftp://proftpd.crihan.fr/pub/proftpd/</A><br />
+Location: France (Rouen)<br />
+Maintained by: Alain Bidaud<br />
 </p>
 </dl>
 
