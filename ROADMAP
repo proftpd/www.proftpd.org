@@ -36,6 +36,7 @@ C       #1701 - Reverse lookups not working
         #1623 - "connected since" in ftpwho
         #1644 - LogFormat local IP and FQDN tags missing
         #1649 - setproctitle() prepends and appends process name
+        #1564 - Add DESTDIR in Makefile
         #1687 - Add contrib module for RADIUS authentication, accounting
         #1705 - Add contrib module for time-of-day restrictions
 
@@ -61,3 +62,4 @@ C       #1701 - Reverse lookups not working
 TBD
         #1711 - IPv6 support
         i8n
+        contrib/ per-module directory reorganization
