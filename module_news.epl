@@ -24,6 +24,20 @@ More information available at http://www.proftpd.org/proftpd-devel-archive/full/
 -->
 
   <ul>
+    <b><font face="arial" color="#003399">FTP server bans</font></b>
+    <br />
+    <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
+    <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/modules/mod_ban.html">http://www.castaglia.org/proftpd/modules/mod_ban.html</a></i></font>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      mod_ban allows the ability to dynamically ban clients by user name,
+      by host IP address or DNS name, and by class name.  In addition, it
+      has support for automatically banning clients based on configurable
+      rules.
+    </font></blockquote>
+  </ul>
+
+  <ul>
     <b><font face="arial" color="#003399">Alternative TLS module</font></b>
     <br />
     <br /><font size="-1"><i>Maintainer: Nikos Mavroyanopoulos</i></font>
