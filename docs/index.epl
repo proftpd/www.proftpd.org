@@ -33,6 +33,11 @@
       <li><a href="y2k.html">Year 2000 statement</a></li>
     </ul>
 
+    <ul>
+	<li><a href="http://rad.geology.washington.edu/~tj/proftpd/doc/devel-guide/">ProFTPD Developer's Guide</a> (by TH Saunders)</li>
+	<li><a href="http://rad.geology.washington.edu/~tj/proftpd/doc/contrib/ProFTPD-mini-HOWTO-NAT.txt">Mini-HOWTO for ProFTPD and NAT</a> (by Tobias Ekbom)</li>
+	<li><a href="http://rad.geology.washington.edu/~tj/proftpd/doc/contrib/ProFTPD-mini-HOWTO-SSH.html">Mini-HOWTO for FTP over SSH</a> (by TJ Saunders)</li>
+
     <hr />
 
     <div class="headline">Contributed modules</div>
