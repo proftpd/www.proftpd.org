@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Website mirrors" :>//
-<: $last_changed = "281/01/1900 - mark" :>//
+<: $last_changed = "351/01/1900 - mark" :>//
 
 #include "header.epl"
 
@@ -264,6 +264,11 @@ Location: Indonesia (Depok)<br />
 Maintained by: Reza Iskandar Achmad<br />
 </p>
 <p>
+<a href="http://proftpd.hknetworks.com/">http://proftpd.hknetworks.com/</a><br />
+Location: Hong kong<br />
+Maintained by: Stanley Au<br />
+</p>
+<p>
 <a href="http://proftpd.lemon4ssc.org/">http://proftpd.lemon4ssc.org/</a><br />
 Location: China ((Beijing Polytechnic University China))<br />
 Maintained by: Liu Kang<br />
@@ -277,11 +282,6 @@ Maintained by: NDSoftware<br />
 <a href="http://proftpd.chu.edu.tw/">http://proftpd.chu.edu.tw/</a><br />
 Location: Taiwan (Chung Hua University, Hsinchu, Taiwan,R.O.C.)<br />
 Maintained by: PE2500<br />
-</p>
-<p>
-<a href="http://www.proftpd.gibt-es.net/">http://www.proftpd.gibt-es.net/</a><br />
-Location: Germany (Oberhausen, Nordrhein-Westfalen, Germany)<br />
-Maintained by: Tim Korves<br />
 </p>
 <p>
 <a href="http://proftpd.worldakt.com/">http://proftpd.worldakt.com/</a><br />
