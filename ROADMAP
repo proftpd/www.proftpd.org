@@ -27,6 +27,7 @@ C	#2135 - Add ability to handle passphrase-protected server keys
 
 	#2071 - Add Variables API
 	#2331 - Proftpd does not honor POSIX ACLs
+	Add mod_shaper, mod_md5 modules to contrib/
 
 TBD
         DSOs
