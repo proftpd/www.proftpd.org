@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Website mirrors" :>//
-<: $last_changed = "349/01/1900 - mark" :>//
+<: $last_changed = "07/01/1900 - mark" :>//
 
 #include "header.epl"
 
@@ -42,9 +42,11 @@
 <a href="http://www.jp.proftpd.org/">jp</a>
 <a href="http://www.lv.proftpd.org/">lv</a>
 <a href="http://www.nl.proftpd.org/">nl</a>
+<a href="http://www.pl.proftpd.org/">pl</a>
 <a href="http://www.pt.proftpd.org/">pt</a>
 <a href="http://www.ro.proftpd.org/">ro</a>
 <a href="http://www.ru.proftpd.org/">ru</a>
+<a href="http://www.se.proftpd.org/">se</a>
 <a href="http://www.sg.proftpd.org/">sg</a>
 <a href="http://www.tw.proftpd.org/">tw</a>
 <a href="http://www.ua.proftpd.org/">ua</a>
@@ -148,9 +150,29 @@ Location: Hong kong (Hong Kong)<br />
 Maintained by: pyjamas<br />
 </p>
 <p>
+<a href="http://proftpd.mirrors.softdev.nl/">http://proftpd.mirrors.softdev.nl/</a><br />
+Location: Netherlands (Netherlands, Amsterdam)<br />
+Maintained by: Richard Pijnenburg<br />
+</p>
+<p>
+<a href="http://proftpd.not-your-box.com/">http://proftpd.not-your-box.com/</a><br />
+Location: United states (Dallas, Texas)<br />
+Maintained by: Joshua<br />
+</p>
+<p>
 <a href="http://proftpd.mirror.easynet.be/">http://proftpd.mirror.easynet.be/</a><br />
 Location: Belgium (Brussels, BELGIUM)<br />
 Maintained by: Iyi Dogan Claude<br />
+</p>
+<p>
+<a href="http://proftpd.tpnet.pl/">http://proftpd.tpnet.pl/</a><br />
+Location: Poland (Piotrkow Trybunalski)<br />
+Maintained by: Ireneusz Weglewski<br />
+</p>
+<p>
+<a href="http://proftpd.mirror2.dataphone.se/">http://proftpd.mirror2.dataphone.se/</a><br />
+Location: Sweden<br />
+Maintained by: Patrik Forsberg<br />
 </p>
 <p>
 <a href="http://proftpd.seasonfive.com/">http://proftpd.seasonfive.com/</a><br />
