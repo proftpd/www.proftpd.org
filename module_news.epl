@@ -24,6 +24,20 @@ More information available at http://www.proftpd.org/proftpd-devel-archive/full/
 -->
 
   <ul>
+    <b><font face="arial" color="#003399">Buffer cache inefficiencies in Linux 2.4</font></b>
+    <br />
+    <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
+    <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/modules/mod_fsync.html">http://www.castaglia.org/proftpd/modules/mod_fsync.html</a></i></font>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      The buffer cache algorithm in the Linux 2.4 kernel has some
+      issues with mixing reads and writes to the disk.  The
+      <code>mod_fsync</code> module was written to work around these
+      inefficiencies.
+    </font></blockquote>
+  </ul>
+
+  <ul>
     <b><font face="arial" color="#003399">Automatic updating of <code>MasqueradeAddress</code></font></b>
     <br />
     <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
