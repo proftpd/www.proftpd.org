@@ -51,6 +51,13 @@
       <li>Shadow password suite support, including support for expired
           accounts.
       </li>
+      <li>Modular design, allowing server to be extended easily with
+          modules.  Modules have been written for SQL databases, LDAP servers, 
+          SSL/TLS encryption, RADIUS support, etc.
+      </li>
+      <li>
+          IPv6 support.
+      </li> 
     </ul>
   </td>
 </tr>
