@@ -2,7 +2,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Supported Platforms" :>//
-<: $last_changed = "04/Apr/2001 - jwm" :>//
+<: $last_changed = "20/Jun/2001 - hamster" :>//
 
 #include "header.epl"
 
@@ -15,7 +15,7 @@
 
     <p>ProFTPD is known to compile and run on the following platforms. If
     you know of any that are not in this list, please email <a
-    href="mailto:proftpd-devel@proftpd.org">the developers' list</a>).</p>
+    href="mailto:core@proftpd.org">the core developer</a>).</p>
 
     <br />
     <table border="0" align="center" width="75%">
