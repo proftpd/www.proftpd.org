@@ -6,6 +6,25 @@
 #include "header.epl"
 
 <table bgcolor="white">
+
+
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">1.2.2rc3 test release is out</font></b>
+    <br />
+    <font size="-1">[<i>20/Jun/2001</i>]</font>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+     The third release candidate for ProFTPD 1.2.2 is now available for
+     public testing.  rc3 does not have any significant new features
+     and is mainly a maintenance release fixing a number of portability
+     issues which have arisen since the globbing exploit.  As ever
+     the source tarball can be downloaded from ftp.proftpd.org and
+     it's mirrors.
+    </font></blockquote>
+  </td>
+</tr>
+
 <tr>
   <td>
     <b><font face="arial" color="#003399">Cert advisory on file globbing</font></b>
