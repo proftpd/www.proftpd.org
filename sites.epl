@@ -42,6 +42,15 @@
     </dl>
 
     <dl>
+      <dt><a href="http://www.slackware.com/">Slackware</a></dt>
+      <dd>The Official Release of Slackware Linux by Patrick Volkerding is an
+          advanced Linux operating system, designed with the twin goals of ease
+          of use and stability as top priorities. ProFTPD is used to power
+          ftp.slackware.com.
+      </dd>
+    </dl>
+
+    <dl>
       <dt><a href="http://www.chello.com/">chello</a></dt>
       <dd>European broadband ISP, powering numerous customer web sites and a
           large mirror site with ProFTPD.</dd>
