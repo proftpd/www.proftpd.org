@@ -1,11 +1,23 @@
 <: # $Id$ :>//
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
-<: $last_changed = "09/June/2002 - hamster" :>//
+<: $last_changed = "12/June/2002 - hamster" :>//
 
 #include "header.epl"
 
 <table bgcolor="white">
+
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">German Language Site has moved</font></b>
+    <br />
+    <font size="-1">[<i>12/June/2002</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+     The german language support site for ProFTPD has moved from
+     www.stonki.de to <a href="http://www.proftpd.de/">www.proftpd.de</a>
+    </font></blockquote>
+  </td>
+</tr>
 
 <tr>
   <td>

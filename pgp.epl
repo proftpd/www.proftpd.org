@@ -20,6 +20,43 @@
     page as well as within the public keyserver network.</p>
 
 <pre>
+Type bits/keyID    Date       User ID
+pub  1024/A511976A 2002/05/12 TJ Saunders <tj@castaglia.org>
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: 5.0
+Comment: PGP Key Server 0.9.4+patch2
+
+mQGiBDze4PkRBADtl8nbLuIgZkIdl6fUj9/LOBXGrtP5B8cTgDjBlURronHtLzkQ
+oHqNS8zmh5gmg8F6EMnCy6tqTGlQ3OylhY2u8fBUFJZk0RpaGYka0SI+hkNn/Hmu
+GLXs4+5RKIuL1lp1DFv2L2S+Qp3xFs0vYJsrdi7nRhM1/LqN9S0pr2/i9QCg/5bD
+AMS9qiVZvd7E0464cWWUXDsD/2z7fwPUFD23bHGSpifSl8jOqUuOWf5lhJqXLpHZ
+TnSsO+rOi5dXdB1fPwgvwFnv7akFStTpXaRq1XdB33/QTwWNO3DBXKe8VkBivXTY
+nWHLiktQwoY06Ws6r2cYxfgRhoHBSQFR/e1OhURaV8d0nSZsISrUyOREAYFUZT0L
+s0jHBADcNSLHoehRf69mBEh3SMk+hiNse8r0VTcE6aJ5AISE6famDQw9cQh8gdmf
+R5LrN/QbF4qQ2jWrfzhkVB6oslyghk3KCncFMnmT/4QpPVfSeTon3yM0Sz9Gtr2Q
+YRp6Qhy7RgnoJ35bMaleww18WKOJtS840PRikboy5XFXt14gvbQeVEogU2F1bmRl
+cnMgPHRqQGNhc3RhZ2xpYS5vcmc+iQBOBBARAgAOBQI83uD5BAsDAQICGQEACgkQ
+t46JP6URl2rgQwCgvQx+ZHbpacHF9ABQUPVsydI73kQAoLWOeqp71epM9OwZY5nA
+0ZzXedOYuQINBDze4PsQCAD2Qle3CH8IF3KiutapQvMF6PlTETlPtvFuuUs4INoB
+p1ajFOmPQFXz0AfGy0OplK33TGSGSfgMg71l6RfUodNQ+PVZX9x2Uk89PY3bzpnh
+V5JZzf24rnRPxfx2vIPFRzBhznzJZv8V+bv9kV7HAarTW56NoKVyOtQa8L9GAFgr
+5fSI/VhOSdvNILSd5JEHNmszbDgNRR0PfIizHHxbLY7288kjwEPwpVsYjY67VYy4
+XTjTNP18F1dDox0YbN4zISy1Kv884bEpQBgRjXyEpwpy1obEAxnIByl6ypUM2Zaf
+q9AKUJsCRtMIPWakXUGfnHy9iUsiGSa6q6Jew1XpMgs7AAICB/45ECvLwsTXw9Uq
+ImT39uln4vNJD+SA0oOOpGypPwc4WNOgilttjWU4ESsSvs550kYretqDWry8P6Q0
+rgxl01wR4hxowbtOcCs4njM1nMoFBDNmnyF2/yF6Kt+Em1vkx0U7Ywg3b4j06h5R
+c1fUZXFhAmS4em+xuptno/ZtFjA9SadIDLrLbLLdmZNkMPoi1pRpMgAltPybJOWN
+47i/PzSdaV2lRl9W3CQJFzOMvsZi/AZuDUNnjk0PWmr0qnmOrJt69jB3Zr/t6z4+
+BZDHLqpEVbeP3mWb0N3uFrb22vOKKfFnkZ69SDI8hyzlIJBQb5xvlhtVSkvEascs
+qhb+Z0EJiQBGBBgRAgAGBQI83uD7AAoJELeOiT+lEZdqNQsAnRs0MfBx6HtjvrXN
+8pp7QHTZe5C2AKDTdIDe+W0v2Vgayqy0dJ3uiQHZDg==
+=z+YR
+-----END PGP PUBLIC KEY BLOCK-----
+</pre>
+    
+<!--
+<pre>
 Type Bits/KeyID    Date       User ID
 pub  1024/320C6F9D 2001/02/20 The ProFTPD Group &lt;core@proftpd.org&gt;
 
@@ -40,6 +77,7 @@ EJ56rVH9
 =+/oI
 -----END PGP PUBLIC KEY BLOCK-----
 </pre>
+-->
 
   </td>
 </tr>

@@ -15,6 +15,7 @@ Version: $Id$
         #1306 - TimeoutSession
         #1346 - Cygwin fix
         #1398 - there is no log rotate for /var/log/xferlog
+        #1407 - ftp protocol differences
         #1463 - Add auth handler dispatch reporting at new debug level
         #1534 - Large File Support
         #1569 - Cygwin support
@@ -26,7 +27,6 @@ Version: $Id$
         #1231 - Extra options for ftpwho
         #1272 - DenyFilter by User or DenyFilter by Dire
         #1395 - Check return values in PRIVS calls
-        #1407 - ftp protocol differences
 	#1432 - Pedantic handling of leading whitespace in FTP commands
         #1486 - Directory listing performance
         #1507 - regex pattern matching in [Allow/Deny][User/Group]

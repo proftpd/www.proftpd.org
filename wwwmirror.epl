@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Website mirrors" :>//
-<: $last_changed = "159/01/1900 - mark" :>//
+<: $last_changed = "161/01/1900 - mark" :>//
 
 #include "header.epl"
 
@@ -41,14 +41,11 @@
 <a href="http://www.ie.proftpd.org/">ie</a>
 <a href="http://www.it.proftpd.org/">it</a>
 <a href="http://www.jp.proftpd.org/">jp</a>
-<a href="http://www.lt.proftpd.org/">lt</a>
 <a href="http://www.nl.proftpd.org/">nl</a>
-<a href="http://www.nz.proftpd.org/">nz</a>
 <a href="http://www.pl.proftpd.org/">pl</a>
 <a href="http://www.pt.proftpd.org/">pt</a>
 <a href="http://www.ro.proftpd.org/">ro</a>
 <a href="http://www.ru.proftpd.org/">ru</a>
-<a href="http://www.se.proftpd.org/">se</a>
 <a href="http://www.sg.proftpd.org/">sg</a>
 <a href="http://www.tr.proftpd.org/">tr</a>
 <a href="http://www.tw.proftpd.org/">tw</a>
@@ -98,11 +95,6 @@ Location: France (Paris)<br />
 Maintained by: Benoit Artuso<br />
 </p>
 <p>
-<a href="http://proftpd.kheos.net/">http://proftpd.kheos.net/</a><br />
-Location: France (Reims)<br />
-Maintained by: viens<br />
-</p>
-<p>
 <a href="http://proftpd.middle-earth.it/">http://proftpd.middle-earth.it/</a><br />
 Location: Italy (Rome)<br />
 Maintained by: Saverio Salatino<br />
@@ -118,19 +110,9 @@ Location: Netherlands (Amsterdam)<br />
 Maintained by: Peter Batenburg<br />
 </p>
 <p>
-<a href="http://mirror.tel.net.nz/proftpd/">http://mirror.tel.net.nz/proftpd/</a><br />
-Location: New zealand (Auckland)<br />
-Maintained by: Alan Lee<br />
-</p>
-<p>
 <a href="http://lich.phys.spbu.ru/">http://lich.phys.spbu.ru/</a><br />
 Location: Russian federation (St.Petersburg)<br />
 Maintained by: Dima Veselov<br />
-</p>
-<p>
-<a href="http://proftpd.mirror1.dataphone.se/">http://proftpd.mirror1.dataphone.se/</a><br />
-Location: Sweden (Stockholm)<br />
-Maintained by: Mirror Admin<br />
 </p>
 <p>
 <a href="http://proftpd.hjc.edu.sg/">http://proftpd.hjc.edu.sg/</a><br />
@@ -158,11 +140,6 @@ Location: United kingdom (Manchester (Telecity))<br />
 Maintained by: fxp0<br />
 </p>
 <p>
-<a href="http://www.proftpd.linuxceptional.com/">http://www.proftpd.linuxceptional.com/</a><br />
-Location: United states (Baltimore MD)<br />
-Maintained by: Phil Barnett<br />
-</p>
-<p>
 <a href="http://proftpd.isecuretty.com/">http://proftpd.isecuretty.com/</a><br />
 Location: United states (Texas)<br />
 Maintained by: datamatrix<br />
@@ -176,11 +153,6 @@ Maintained by: dan laffin<br />
 <a href="http://proftpd.bbksys.com/">http://proftpd.bbksys.com/</a><br />
 Location: United states (Aquebogue, NY)<br />
 Maintained by: BBK Systems<br />
-</p>
-<p>
-<a href="http://mirage.informationwave.net/proftpd/">http://mirage.informationwave.net/proftpd/</a><br />
-Location: United states (Clifton, NJ)<br />
-Maintained by: Omachonu Ogali<br />
 </p>
 <p>
 <a href="http://proftpd.ethereal.com/">http://proftpd.ethereal.com/</a><br />
@@ -201,11 +173,6 @@ Maintained by: NOC<br />
 <a href="http://proftpd.polbiznes.pl/">http://proftpd.polbiznes.pl/</a><br />
 Location: Poland (Gdansk)<br />
 Maintained by: Marian Witkowski<br />
-</p>
-<p>
-<a href="http://proftpd.ogreland.lv/">http://proftpd.ogreland.lv/</a><br />
-Location: Latvia (Ogre, Latvia)<br />
-Maintained by: core<br />
 </p>
 <p>
 <a href="http://proftpd.fixity.net/">http://proftpd.fixity.net/</a><br />
@@ -262,11 +229,6 @@ Location: Poland (PL, Radom)<br />
 Maintained by: Argail<br />
 </p>
 <p>
-<a href="http://proftpd.isca.uiowa.edu/">http://proftpd.isca.uiowa.edu/</a><br />
-Location: United states (Iowa City, IA, USA)<br />
-Maintained by: Iowa Student Computer Association FTP Archives Maintainer<br />
-</p>
-<p>
 <a href="http://gd.tuwien.ac.at/www.proftpd.org/">http://gd.tuwien.ac.at/www.proftpd.org/</a><br />
 Location: Austria (Vienna Univ. of Technology, Austria)<br />
 Maintained by: Antonin<br />
@@ -312,19 +274,9 @@ Location: United kingdom (London)<br />
 Maintained by: Michael Pye<br />
 </p>
 <p>
-<a href="http://proftpd.mirrors.emu.lt/">http://proftpd.mirrors.emu.lt/</a><br />
-Location: Lithuania (Lithuania)<br />
-Maintained by: Tomas Jankauskas<br />
-</p>
-<p>
 <a href="http://202.106.127.54/">http://202.106.127.54/</a><br />
 Location: China (China)<br />
 Maintained by: LI DONG<br />
-</p>
-<p>
-<a href="http://proftpd.linuxforum.hu/">http://proftpd.linuxforum.hu/</a><br />
-Location: Hungary<br />
-Maintained by: Christian Hamar alias krix<br />
 </p>
 <p>
 <a href="http://proftp.serveftp.org/">http://proftp.serveftp.org/</a><br />
@@ -332,9 +284,19 @@ Location: Germany (Nürnberg)<br />
 Maintained by: Flo Spiege<br />
 </p>
 <p>
+<a href="http://proftpd.chu.edu.tw/">http://proftpd.chu.edu.tw/</a><br />
+Location: Taiwan (Chung Hua University, Hsinchu, Taiwan,R.O.C.)<br />
+Maintained by: PE2500<br />
+</p>
+<p>
 <a href="http://www.proftpd.gibt-es.net/">http://www.proftpd.gibt-es.net/</a><br />
 Location: Germany (Oberhausen, Nordrhein-Westfalen, Germany)<br />
 Maintained by: Tim Korves<br />
+</p>
+<p>
+<a href="http://proftpd.worldakt.com/">http://proftpd.worldakt.com/</a><br />
+Location: France (Paris)<br />
+Maintained by: CHAILLAN Nicolas<br />
 </p>
 </dl>
 
