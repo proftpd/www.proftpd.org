@@ -2832,7 +2832,7 @@ href="#DisplayFirstChdir">DisplayFirstChdir</a>).</p>
       be run from the inetd &quot;super server.&quot; New connections
       are passed from inetd to proftpd and serviced immediately.</li>
       <li><em><strong>standalone</strong></em><br> The daemon starts
-      and begins listening to the configured <a href="#port">port</a>
+      and begins listening to the configured <a href="#Port">port</a>
       for incoming connections. New connections result in spawned
       child processes dedicated to servicing all requests from the
       newly connected client.</li>
