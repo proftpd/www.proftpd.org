@@ -1,7 +1,7 @@
 <: # $Id$ :>//
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
-<: $last_changed = "25/Aug/2001 - jwm" :>//
+<: $last_changed = "21/Sept/2001 - hamster" :>//
 
 #include "header.epl"
 
@@ -11,7 +11,7 @@
   <td>
       <b><font face="arial" color="#003399">We're back to normal</font></b>
       <br />
-      <font size="-1">[<i>17/Sept/2001</i>]</font>
+      <font size="-1">[<i>21/Sept/2001</i>]</font>
       <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
        DNS has now done it's thing and www.proftpd.org is back to it's 
        normal home.  Thanks to everyone who offered help, space and bandwidth.
