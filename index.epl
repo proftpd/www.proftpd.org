@@ -8,6 +8,23 @@
 <table bgcolor="white">
 <tr>
   <td>
+    <b><font face="arial" color="#003399">1.2.7rc1 released</font></b>
+    <br />
+    <font size="-1">[<i>02/Oct/2002</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+	 <ul>
+	 <li>Better RFC2228 support
+	 <li>Changes to scoreboarding system
+	 <li>SITE CHGRP added
+	 <li>Timeout handling enhancements
+	 <li>Directives to limit up/download filesize.
+	 <li>Bug fixes
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
     <b><font face="arial" color="#003399">1.2.6 released</font></b>
     <br />
     <font size="-1">[<i>04/Sept/2002</i>]</font>
