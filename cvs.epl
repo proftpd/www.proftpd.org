@@ -31,8 +31,10 @@
         <li>The CVS server is <code>cvs.sourceforge.net</code></li>
         <li><code>anonymous@cvs.sourceforge.net</code> is the user, the
         password is blank</li>
-        <li>The directory is <code>/cvsroot/proftp</code> and the tree
-            is <code>proftpd</code>.</li>
+        <li>The source code directory is <code>/cvsroot/proftp</code> and
+            the tree is <code>proftpd</code>.</li>
+        <li>The documentation directory is <code>/cvsroot/pdd</code> and
+            the trees are <code>FAQ</code> and <code>Userguide</code>.</li>
     </ul>o
 
     <div class="headline-small">Detailed Instructions</div>
@@ -42,7 +44,7 @@
     <blockquote>
       <p>Type the command <code>cvs -d
       :pserver:anonymous@cvs.sourceforge.net:/cvsroot/proftp login
-      </code></p>
+      </code> (or <code>/cvsroot/pdd</code> for docs)</p>
 
       <p>Hit Enter when prompted for a password (there is no password
       for anonymous access).</p>
