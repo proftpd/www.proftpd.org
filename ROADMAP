@@ -32,9 +32,10 @@ C       Add RootRevoke, AnonRejectPasswords directives
         #2086 - Add limits for PORT, PASV
         #2098 - Add SetEnv, UnsetEnv directives
         #2105 - Remove *Authoritative directives
+	#2107 - Fix handling of $Libraries$ tag, --with-libraries option
 
 TBD
-        i18n (including RFC2640)
         DSOs
         contrib/ per-module directory reorganization
         shared memory support
+        i18n (including RFC2640)
