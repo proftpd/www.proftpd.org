@@ -2,7 +2,7 @@
 <: $html_title = "Critical Bugs" :>//
 <: $meta_description = "The Official ProFTPD web site." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download, showstopper, bugs, security" :>//
-<: $last_changed = "10/Apr/2001 - hamster" :>//
+<: $last_changed = "22/Aug/2001 - hamster" :>//
 
 
 #include "header.epl"
@@ -13,7 +13,34 @@
     <div class="headline">
       <: print "<b>$html_title</b>" unless !defined($html_title) :>//
     </div>
+  </td>
+</tr>
+</table>
 
+<table bgcolor="white">
+<tr>
+  <td>
+    <p>
+    <em>Bug:</em> Security risk in mod_sql/3.2.3<br />
+    <em>Bugzilla ID:</em> none<br />
+    <em>Version:</em> Not shipped with Proftpd source<br />
+    <em>Platforms:</em> All<br />
+    <em>Severity/Effect:</em> Critical<br />
+    <em>Fixed in:</em> mod_sql/3.2.4 (shipped with 1.2.2)
+    </p>
+
+    <div class="headline-small">Description of problem:</div>
+    <p>
+     A bug in 3.2.3 has resulted in only usernames being checked, not passwords
+     it is recommended that anyone running mod_sql/3.2.3 upgrades immediately.  This
+     version of mod_sql was not shipped with the official source releases and therefore 
+     only administrators who have manually updated mod_sql will be affected.
+    </p>
+  </td>
+</tr>
+
+<tr>
+  <td>
     <p>
     <em>Bug:</em> glob() DoS attack<br />
     <em>Bugzilla ID:</em> <a href="http://bugs.proftpd.org/show_bug.cgi?id=1066">1066</a><br />

@@ -2,7 +2,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Project Documentation" :>//
-<: $last_changed = "19/Jun/2001 - jwm" :>//
+<: $last_changed = "22/Aug/2001 - hamster" :>//
 
 #include "header.epl"
 
@@ -26,7 +26,7 @@
         <li><a href="http://pdd.sourceforge.net/faq/proftpdfaq.html">Hyperlinked version</a></li>
         <li><a href="http://pdd.sourceforge.net/faq/proftpdfaq-full.html">Single html file</a></li>
       </ul>
-      <li><a href="http://pdd.sourceforge.net/userguide/linked/userguide.html">User Guide</a> (draft)</a></li>
+      <li>Userguide (<a href="/docs/userguide_full.html">single html</a>) (<a href="/docs/userguide.ps">postscript</a>) (<a href="userguide.pdf">pdf</a>)</li>
       <li><a href="/cvs.html">CVS Howto and FAQ</a></li>
       <li><a href="y2k.html">Year 2000 statement</a></li>
     </ul>

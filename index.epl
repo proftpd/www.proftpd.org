@@ -1,11 +1,59 @@
 <: # $Id$ :>//
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
-<: $last_changed = "22/Apr/2001 - jwm" :>//
+<: $last_changed = "23/Aug/2001 - hamster" :>//
 
 #include "header.epl"
 
 <table bgcolor="white">
+
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">mod_sql_tds : new third party module</font></b>
+    <br />
+    <font size="-1">[<i>23/Aug/2001</i>]</font>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+
+     mod_sql_tds provides SQL backend support for servers
+     which speak TDS, ie MS SQL Server and Sybase.  This module
+     should be considered beta (maybe even alpha), it's available from <A
+     href="http://www.labratsoftware.com/mod_sql_tds-0.5.tar.gz">http://www.labratsoftware.com/mod_sql_tds-0.5.tar.gz</a>
+     and problem reports should be sent to Patrick Muldoon &lt;doon at
+     inoc.net&gt;
+
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">1.2.2 released</font></b>
+    <br />
+    <font size="-1">[<i>22/Aug/2001</i>]</font>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+     1.2.2 is now available from ftp.proftpd.org and all mirror sites, this release 
+     includes a fixed mod_sql which addresses a security concern.  The release
+     also contains a number of bug fixes and portability updates, read the NEWS file
+     supplied with the source for the full list.
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">mod_sql/3.2.3 security issue</font></b>
+    <br />
+    <font size="-1">[<i>22/Aug/2001</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+    The 3.2.3 release of mod_sql has a security problem, only users who manually updated
+    mod_sql from the maintainers site are at risk, this version was not shipped with any 
+    official Proftpd tarball.
+    </font></blockquote>
+  </td>
+</tr>
+
 <tr>
   <td>
     <b><font face="arial" color="#003399">1.2.2rc3 test release is out</font></b>
