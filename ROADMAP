@@ -11,10 +11,10 @@ C = Committed
         #2052 - ProFTPD "ununsed parameters" cleanup
         #2062 - Enhance UserOwner/GroupOwner to take IDs as well as name
                 parameters
-	#2071 - Add Variables API
+     C  #2071 - Add Variables API
 	#2331 - Proftpd does not honor POSIX ACLs
 	#2368 - Allow contrib modules to extend mod_sql's SQLAuthTypes
-        #2389 - 64-bit compilation warnings
+     C  #2389 - 64-bit compilation warnings
      C  #2392 - mod_sql needs better handling of its backend modules
 	#2454 - Extend <VirtualHost> to honor multiple addresses
 	Add mod_shaper, mod_md5 modules to contrib/
