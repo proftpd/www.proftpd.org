@@ -41,6 +41,8 @@
 		</td>
 	      </tr>
 	    </table><br>
+
+
 	    <table border="0" cellspacing="0" cellpadding="0" bgcolor=#9999cc width="100%">
               <tr>
 		<td>
@@ -55,12 +57,35 @@
                         <li><a href="/goals.html">What is ProFTPD?</a>
                         <li><A href="/features.html">Features</A>
 			<li><a href="/platforms.html">Supported Platforms</A>
-                        <li><a href="/docs/">Documentation</a>
-                        <li><a href="/rfc.html">Supported RFCs</A>
+			<LI><A HREF="http://bugs.proftpd.org/">Bug reporting system</A>
                         <LI><A HREF="/links.html">Other sites</A>
-                        <li><a href="/docs/y2k.html">Year 2000 Compliance</a>
                         <LI><A HREF="/sites.html">Sites powered by ProFTPD</A>
-                        <LI><A href="/credits.html">Core team and contributers</A>
+                        <LI><A href="/credits.html">Core team and contributers</A></LI>
+                        </font>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+	    
+	    <table border="0" cellspacing="0" cellpadding="0" bgcolor=#9999cc width="100%">
+              <tr>
+		<td>
+		  <table bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0 width="100%">
+                    <tr>
+		      <td><font face="Verdana,Arial" size=-1><b>Documentation</b></font></td>
+		    </tr>
+		  </table>
+                  <table bgcolor=#ffffff cellspacing=0 cellpadding=0 border=0 width="100%">
+                    <tr>
+                      <td><font face="verdana,arial"size=-1>
+                        <li><a href="/docs/">Docs</a>
+                        <li><a href="/docs/rfc.html">RFCs</A>
+                        <li><a href="/docs/y2k.html">Year 2000 Compliance</a>
+                        <LI><A href="/docs/configuration.html">Directive list</A>
+                        <LI><A HREF="http://pdd.sourceforge.net/faq/proftpdfaq.html">FAQ</A>
+                        <LI><A HREF="http://pdd.sourceforge.net/userguide/linked/userguide.html">Userguide</A>
                         </font>
                       </td>
                     </tr>
@@ -68,7 +93,6 @@
                 </td>
               </tr>
             </table><br>
-
 
 	    <table border="0" cellspacing="0" cellpadding="0" bgcolor=#9999cc width="100%">
               <tr>
@@ -107,6 +131,9 @@
                     <tr>
                       <td><font face="verdana,arial"size=-1>
                         <li><a href="/lists.html">Mailing Lists</A>
+                        <LI><A HREF="/proftpd-announce-archive/">Announce Archive</A>
+                        <LI><A HREF="/proftpd-l-archive/">Users Archive</A>
+                        <LI><A HREF="/proftpd-devel-archive/">Devel Archive</A>
                         </font>
                       </td>
                     </tr>

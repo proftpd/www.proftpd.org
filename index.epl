@@ -3,7 +3,7 @@
 :>//
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
-<: $last_changed = "15/Feb/2001 - hamster" :>//
+<: $last_changed = "26/Feb/2001 - hamster" :>//
 
 #include "header.epl"
 
@@ -11,6 +11,7 @@
 	  <TD>
 
 <!--
+
 	<TR>
 	  <TD>
 	    <B><FONT face="arial" color="#003399">TITLE</FONT></B><BR>
@@ -23,6 +24,49 @@
 	  </TD>
 	</TR>
 -->
+
+
+	<TR>
+	  <TD>
+	    <B><FONT face="arial" color="#003399">ProFTPD 1.2.1 released</FONT></B><BR>
+            <FONT size="-1">[<I>01/Mar/2001</I>]</FONT>
+	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
+	    The ProFTPD development team have released 1.2.1 as a minor bugfix release to the 
+	    recent 1.2.0 release.
+	    </font></BLOCKQUOTE>
+	  </TD>
+	</TR>
+
+	<TR>
+	  <TD>
+	    <B><FONT face="arial" color="#003399">ProFTPD 1.2.0 released</FONT></B><BR>
+            <FONT size="-1">[<I>26/Feb/2001</I>]</FONT>
+	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
+	    The ProFTPD development team are proud to release
+	    the 1.2.0 final release of their ftp server
+	    software.  The tarball is available from <A
+	    HREF="ftp://ftp.proftpd.org/distrib/">ftp://ftp.proftpd.org/distrib/</A>.
+	    Packaged versions are likely to appear over the next few
+	    days and these files will propogate to the mirror sites
+	    within about 24 to 48 hours.
+	    </font></BLOCKQUOTE>
+	  </TD>
+	</TR>
+
+	<TR>
+	  <TD>
+	    <B><FONT face="arial" color="#003399">1.2.0-final testing release</FONT></B><BR>
+            <FONT size="-1">[<I>23/Feb/2001</I>]</FONT>
+	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
+	    The development team have release what is hopefully going to
+	    be the final release code as a testing tarball availble from
+	    ftp://ftp.proftpd.org/devel/ (and all good mirror sites).
+	    DR has also built rpms for this release.  Please test as soon
+	    as possible and report any problems back to core@proftpd.org
+	    and proftpd-devel@proftpd.org
+	    </font></BLOCKQUOTE>
+	  </TD>
+	</TR>
 
 	<TR>
 	  <TD>

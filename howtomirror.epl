@@ -25,12 +25,17 @@
 Web Mirrors
 </DiV>
 
-<P>At the moment we are only going to be running the two primary sites,
-http://www.proftpd.org/ and http://www.proftpd.net/, once the development
-work and general hacking around is complete we will be asking if there
-is anyone willing to mirror the website for us.  We are aiming to have
-both ftp and cvs methods available.
-</P>
+<P>For those hardy fools wishing to mirror the website there are two
+options, the first is to mirror via a tool such as wget, please ensure
+it honours the robots file which excludes mirroring of the list archives
+(they're too big to allow mirorring atm).  Oh and don't forget to mirror
+the <A href="/proftpd.css">proftpd.css</A> file *grin*.</P>
+
+<P>The second option is to checkout a copy of the cvs version of the
+site and build locally, this requires gnu make and eperl.  I'd be
+interested to hear of people using this second method as it will be my
+prefered method.  The cvs repository as anonymous access and is hosted
+at http://www.sourceforge.net/projects/pdd/.</P>
 
 <DIV CLASS="headline_small">
 FTP Mirrors

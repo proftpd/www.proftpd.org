@@ -51,7 +51,7 @@ they offer.</P>
 <DL>
 <DT><A HREF="http://www.horde.net/~jwm/software/mod_ldap">LDAP support</A> (mod_ldap) 
 <DT>mod_linuxprivs
-<DT><A HREF="http://www.lastditcheffort.org/aah/mod_sql.html">SQL authentication support</A> (mod_sql)
+<DT><A HREF="http://www.lastditcheffort.org/aah/mod_sql.html">SQL support</A> (mod_sql)
 <!--
 <DT>mod_pgsql
 <DT>mod_sqlpw
