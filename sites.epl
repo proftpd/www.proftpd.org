@@ -30,11 +30,6 @@
 -->
 
     <dl>
-      <dt><a href="ftp://ftp.kernel.org/">ftp.kernel.org</a></dt>
-      <dd>The primary source for Linux kernels.</dd>
-    </dl>
-
-    <dl>
       <dt><a href="http://www.sourceforge.net/">SourceForge</a></dt>
       <dd>The home for a large number of Open Source projects, including the
           documentation arm of the ProFTPD Project and the Project's mailing
