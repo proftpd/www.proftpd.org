@@ -101,6 +101,7 @@
                       <td><font face="verdana,arial"size=-1>
                         <UL>
                         <li><a href="/download.html">FTP download servers</A>
+                        <LI><A HREF="/wwwmirror.html">Website mirrors</A>
                         <LI><A HREF="/pgp.html">PGP public keys</A>
                         <LI><A HREF="/md5_pgp.html">md5 & PGP signatures</A>
                         <LI><A HREF="/howtomirror.html">How to become a mirror</A>
