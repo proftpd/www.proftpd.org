@@ -33,6 +33,46 @@
 		</blockquote>
 	</ul>
 
+	<ul>
+		<b><font face="arial" color="#003399">mod_quota (1.26)</font></b>
+		<br />
+ 		<br><font size="-1"><i>Maintainer: Eric Estabrooks</i></font></br>
+ 		<br><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></br>
+		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+		This module provides for upload/download quota controls.
+		</blockquote>
+	</ul>
+
+	<ul>
+		<b><font face="arial" color="#003399">mod_dbauth (1.7)</font></b>
+		<br />
+ 		<br><font size="-1"><i>Maintainer: Eric Estabrooks</i></font></br>
+ 		<br><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></br>
+		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+		BerkeleyDB authentication module for ProFTPD
+		</blockquote>
+	</ul>
+
+	<ul>
+		<b><font face="arial" color="#003399">mod_gdbmauth</font></b>
+		<br />
+ 		<br><font size="-1"><i>Maintainer: Eric Estabrooks</i></font></br>
+ 		<br><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></br>
+		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+		</blockquote>
+	</ul>
+
+	<ul>
+		<b><font face="arial" color="#003399">mod_opie (1.1)</font></b>
+		<br />
+ 		<br><font size="-1"><i>Maintainer: Eric Estabrooks</i></font></br>
+ 		<br><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></br>
+		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+		A implementation of one time passwords for Proftpd.
+		</blockquote>
+	</ul>
+
+
 	
 
   </td>
