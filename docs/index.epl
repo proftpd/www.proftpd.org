@@ -2,7 +2,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Project Documentation" :>//
-<: $last_changed = "11/May/2002 - hamster" :>//
+<: $last_changed = "19/Oct/2002 - hamster" :>//
 
 #include "header.epl"
 
@@ -19,7 +19,6 @@
     href="mailto:hamster@vom.org.uk">Mark Lowes</a> and they will be dealt with
     as quickly as possible)</p>
 
-
     <ul>
       <li>Directives list 
       <ul>
@@ -31,7 +30,7 @@
       		<a href="/docs/directives/configuration.pdf">pdf</a> / 
       		<a href="/docs/directives/configuration.ps">ps</a></li>
       </ul>
-      <li>Frequently Asked Questions
+      <li>Frequently Asked Questions (<em>Updated 19/Oct/2002</em>)
         (<a href="/docs/faq/linked/faq.html">linked html</a>)
         (<a href="/docs/faq/faq_full.html">single html</a>)
         (<a href="/docs/faq/faq.ps">ps</a>)
