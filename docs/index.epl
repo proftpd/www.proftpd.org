@@ -70,10 +70,10 @@
     offer.</p>
 
     <dl>
-      <dt>SSL/TLS support (mod_tls)</dt>
+      <dt><a href="http://www.castaglia.org/proftpd/doc/contrib/ProFTPD-mini-HOWTO-TLS.html">SSL/TLS support</a> (mod_tls)</dt>
       <dt><a href="http://www.horde.net/~jwm/software/mod_ldap/">LDAP support</a> (mod_ldap)</dt>
       <dt>POSIX capabilities (mod_cap)</dt>
-      <dt><a href="http://www.lastditcheffort.org/~aah/proftpd/mod_sql/">SQL support</a> (mod_sql)</dt>
+      <dt><a href="http://www.castaglia.org/proftpd/doc/contrib/ProFTPD-mini-HOWTO-SQL.html">SQL support</a> (mod_sql)</dt>
       <dt>RADIUS support (mod_radius)</dt>
       <dt>mod_ratio (Maintained by: James Dogopoulos &lt;jd@dynw.com&gt;)</dt>
       <dt>mod_readme</dt>
