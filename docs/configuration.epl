@@ -6,6 +6,7 @@ r<:
 <: $html_title = "Directive List" :>//
 <: $last_changed = "12/Feb/2001" :>//
 
+
 #include "header.epl"
 
 <table bgcolor="white">
@@ -3934,6 +3935,7 @@ href="#tcpBackLog"><u>tcpBackLog</u></a><u> value on heavily loaded
   <p>The WtmpLog directive controls proftpd's logging of ftp
   connections to the host system's wtmp file (used by such commands as
   `last'). By default, all connections are logged via wtmp.</p>
+  </table>
 
 #include "footer.epl"
 

@@ -2,7 +2,7 @@
 <: $html_title = "Critical Bugs" :>//
 <: $meta_description = "The Official ProFTPD web site." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download, showstopper, bugs, security" :>//
-<: $last_changed = "04/Apr/2001 - jwm" :>//
+<: $last_changed = "10/Apr/2001 - hamster" :>//
 
 
 #include "header.epl"
@@ -16,11 +16,11 @@
 
     <p>
     <em>Bug:</em> glob() DoS attack<br />
-    <em>Bugzilla ID:</em> <a href="(http://bugs.proftpd.org/show_bug.cgi?id=1066">1066</a><br />
+    <em>Bugzilla ID:</em> <a href="http://bugs.proftpd.org/show_bug.cgi?id=1066">1066</a><br />
     <em>Version:</em> 1.2.1 and earlier<br />
     <em>Platforms:</em> All<br />
     <em>Severity/Effect:</em> Critical<br />
-    <em>Fixed in:</em> No fix yet
+    <em>Fixed in:</em> 1.2.2rc1
     </p>
 
     <p><a

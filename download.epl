@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Downloading and mirror sites" :>//
-<: $last_changed = "06/04/2001 - mark" :>//
+<: $last_changed = "10/04/2001 - mark" :>//
 
 #include "header.epl"
 
@@ -35,6 +35,11 @@ Maintained by: Jason Andrade<BR>
 <A HREF="ftp://proftpd.netlead.com.au/pub/proftpd/">ftp://proftpd.netlead.com.au/pub/proftpd/</A><BR>
 Location: Australia<BR>
 Maintained by: Jarrod Sayers<BR>
+</P>
+<P>
+<A HREF="ftp://ftp.servus.at/ProFTPD/">ftp://ftp.servus.at/ProFTPD/</A><BR>
+Location: Austria (Linz)<BR>
+Maintained by: Didi Baer<BR>
 </P>
 <P>
 <A HREF="ftp://ftp.easynet.be/proftpd/">ftp://ftp.easynet.be/proftpd/</A><BR>
@@ -116,6 +121,11 @@ Location: Germany (Nuremberg)<BR>
 Maintained by: Harald Welte <BR>
 </P>
 <P>
+<A HREF="ftp://ftp.uasw.edu/pub/network/proftpd/ftp/">ftp://ftp.uasw.edu/pub/network/proftpd/ftp/</A><BR>
+Location: Germany (Wolfenbuettel)<BR>
+Maintained by: Thorsten Ludewig<BR>
+</P>
+<P>
 <A HREF="ftp://ftp.fh-koblenz.de/pub/ProFTPD/">ftp://ftp.fh-koblenz.de/pub/ProFTPD/</A><BR>
 Location: Germany<BR>
 Maintained by: Michael Schmidt<BR>
@@ -159,14 +169,14 @@ Location: Norway (Bergen)<BR>
 Maintained by: Christian Nikolaisen<BR>
 </P>
 <P>
-<A HREF="ftp://download.enitel.no/pub/proftpd/">ftp://download.enitel.no/pub/proftpd/</A><BR>
-Location: Norway (Oslo)<BR>
-Maintained by: Jorn-Morten Innselset<BR>
-</P>
-<P>
 <A HREF="ftp://ftp.truuz.com/mirrors/ftp.proftpd.net/   ">ftp://ftp.truuz.com/mirrors/ftp.proftpd.net/   </A><BR>
 Location: Norway (Oslo)<BR>
 Maintained by: Dag Stenstad<BR>
+</P>
+<P>
+<A HREF="ftp://download.enitel.no/pub/proftpd/">ftp://download.enitel.no/pub/proftpd/</A><BR>
+Location: Norway (Oslo)<BR>
+Maintained by: Jorn-Morten Innselset<BR>
 </P>
 <P>
 <A HREF="ftp://ftp.futuro.pl/pub/mirror/ftp.proftpd.org/">ftp://ftp.futuro.pl/pub/mirror/ftp.proftpd.org/</A><BR>
@@ -207,6 +217,11 @@ Maintained by: Unknown<BR>
 <A HREF="ftp://ftp.hjc.edu.sg/proftpd/">ftp://ftp.hjc.edu.sg/proftpd/</A><BR>
 Location: Singapore<BR>
 Maintained by: Chen Shiyuan<BR>
+</P>
+<P>
+<A HREF="ftp://ftp.neptuno2000.com/pub/proftpd/">ftp://ftp.neptuno2000.com/pub/proftpd/</A><BR>
+Location: Spain (Barcelona)<BR>
+Maintained by: Llu\355s Gargallo<BR>
 </P>
 <P>
 <A HREF="ftp://ftp.du.se/pub/mirrors/proftpd/">ftp://ftp.du.se/pub/mirrors/proftpd/</A><BR>
@@ -257,6 +272,11 @@ Maintained by: Alexander Ryumshin<BR>
 <A HREF="ftp://proftpd.theuw.net/proftpd/">ftp://proftpd.theuw.net/proftpd/</A><BR>
 Location: USA (Albany, NY)<BR>
 Maintained by: dan laffin<BR>
+</P>
+<P>
+<A HREF="ftp://ftp.bbksys.com/proftpd/">ftp://ftp.bbksys.com/proftpd/</A><BR>
+Location: USA (Aquebogue, NY)<BR>
+Maintained by: BBK Systems<BR>
 </P>
 <P>
 <A HREF="ftp://ftp.compsci.lyon.edu/ftp/pub/apps/unix/servers/ftp/proftpd/">ftp://ftp.compsci.lyon.edu/ftp/pub/apps/unix/servers/ftp/proftpd/</A><BR>
