@@ -9,13 +9,28 @@
 
 <tr>
   <td>
-      <b><font face="arial" color="#003399">We're back to normal</font></b>
-      <br />
-      <font size="-1">[<i>21/Sept/2001</i>]</font>
+    <b><font face="arial" color="#003399">German docs translation</font></b>
+    <br />
+    <font size="-1">[<i>21/Sept/2001</i>]</font>
 
-      <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-       DNS has now done its thing and www.proftpd.org is back to its
-       normal home.  Thanks to everyone who offered help, space and bandwidth.
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      A ProFTPD user has translated a good portion of the documentation
+      into German. His translation is available
+      <a href="http://stonki.myftp.org/proftpd-doc/proftpd-doc.php">here</a>
+      and <a href="http://stonki.yi.org/proftpd-doc/proftpd-doc.php">here</a>.
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">We're back to normal</font></b>
+    <br />
+    <font size="-1">[<i>21/Sept/2001</i>]</font>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+     DNS has now done its thing and www.proftpd.org is back to its
+     normal home.  Thanks to everyone who offered help, space and bandwidth.
     </font></blockquote>
   </td>
 </tr>
