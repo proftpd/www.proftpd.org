@@ -4,20 +4,6 @@ Version: $Id$
 
 C = Committed
 
-1.2.9
-C       #1532 - Human readable disk free
-C       #1711 - IPv6 support
-C       #1828 - mod_sql can only find mysql.sock if in /tmp
-C       #1849 - Compile can have trouble finding mysql.h
-C       #1869 - Add option to ftpwho/ftpcount/ftptop
-C       #1915 - Unsafe pointer usage in scoreboard file format 
-C       #1921 - Socket-level performance tweaks
-C       #1932 - Make Max* checks a PASS POST_CMD handler
-C       #1933 - Add mod_ifsession contrib module
-C       #1960 - Add removed file size by DELE command to xferlog
-C       #1967 - Add display of uptime to ftpwho, ftptop
-C       Add RootRevoke, AnonRejectPasswords directives
-
 1.2.10
 
         #1696 - Include directive supports directories
@@ -31,11 +17,11 @@ C       Add RootRevoke, AnonRejectPasswords directives
         #2062 - Enhance UserOwner/GroupOwner to take IDs as well as name
                 parameters
         #2072 - Add Controls API
-        #2086 - Add limits for PORT, PASV
-        #2098 - Add SetEnv, UnsetEnv directives
+C       #2086 - Add limits for PORT, PASV
+C       #2098 - Add SetEnv, UnsetEnv directives
         #2105 - Remove *Authoritative directives
 	#2107 - Fix handling of $Libraries$ tag, --with-libraries option
-	#2135 - Add ability to handle passphrase-protected server keys
+C	#2135 - Add ability to handle passphrase-protected server keys
 
 TBD
         DSOs
