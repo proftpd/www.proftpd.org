@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Downloading and mirror sites" :>//
-<: $last_changed = "274/01/1900 - mark" :>//
+<: $last_changed = "289/01/1900 - mark" :>//
 
 #include "header.epl"
 
@@ -138,9 +138,9 @@ Location: Finland<br />
 Maintained by: Toni Viemero<br />
 </p>
 <p>
-<a href="ftp://ftp.model-fx.com/pub/mirrors/proftpd/">ftp://ftp.model-fx.com/pub/mirrors/proftpd/</A><br />
+<a href="ftp://ftp.fastorama.com/">ftp://ftp.fastorama.com/</A><br />
 Location: France<br />
-Maintained by: elk<br />
+Maintained by: MrJacK<br />
 </p>
 <p>
 <a href="ftp://ftp.club-internet.fr/pub/mirrors/ftp.proftpd.org/">ftp://ftp.club-internet.fr/pub/mirrors/ftp.proftpd.org/</A><br />
@@ -152,9 +152,9 @@ Maintained by: Carlos Inacio<br />
 Location: France<br />
 </p>
 <p>
-<a href="ftp://ftp.fastorama.com/">ftp://ftp.fastorama.com/</A><br />
+<a href="ftp://ftp.model-fx.com/pub/mirrors/proftpd/">ftp://ftp.model-fx.com/pub/mirrors/proftpd/</A><br />
 Location: France<br />
-Maintained by: MrJacK<br />
+Maintained by: elk<br />
 </p>
 <p>
 <a href="ftp://ftp.fsn.hu/pub/proftpd/">ftp://ftp.fsn.hu/pub/proftpd/</A><br />
@@ -379,11 +379,6 @@ Location: United states<br />
 Maintained by: Chris Foti<br />
 </p>
 <p>
-<a href="ftp://ftp.kernel.org/pub/mirrors/proftpd/">ftp://ftp.kernel.org/pub/mirrors/proftpd/</A><br />
-Location: United states<br />
-Maintained by: Mirror Administrator<br />
-</p>
-<p>
 <a href="http://public.cakraweb.com/pub/proftpd/">http://public.cakraweb.com/pub/proftpd/</A><br />
 Location: Indonesia (Jakarta)<br />
 Maintained by: Asfihani<br />
@@ -468,9 +463,9 @@ Location: Poland (Zywiec)<br />
 Maintained by: Krzysztof Niescieronek<br />
 </p>
 <p>
-<a href="ftp://ftp.doc.cs.univ-paris8.fr/pub/proftpd/">ftp://ftp.doc.cs.univ-paris8.fr/pub/proftpd/</A><br />
-Location: France (Saint-Denis)<br />
-Maintained by: The Mirrors Master<br />
+<a href="ftp://mirrors.kernel.org/proftpd/">ftp://mirrors.kernel.org/proftpd/</A><br />
+Location: United states (Palo Alto, California)<br />
+Maintained by: kernel.org mirror administrator<br />
 </p>
 <p>
 <a href="ftp://mirrors.bigfatpipe.net/pub/proftpd/">ftp://mirrors.bigfatpipe.net/pub/proftpd/</A><br />
@@ -503,9 +498,9 @@ Location: Slovenia (Ljubljana)<br />
 Maintained by: Tomaz Kostrevc<br />
 </p>
 <p>
-<a href="http://ftp.mirrors.fastnetxp.com/mirrors/proftpd/">http://ftp.mirrors.fastnetxp.com/mirrors/proftpd/</A><br />
-Location: France (FR, Paris)<br />
-Maintained by: Nicolas DEFFAYET<br />
+<a href="ftp://gd.tuwien.ac.at/infosys/servers/ftp/proftpd/">ftp://gd.tuwien.ac.at/infosys/servers/ftp/proftpd/</A><br />
+Location: Austria (Vienna Univ. of Technology, Austria)<br />
+Maintained by: Antonin<br />
 </p>
 </dl>
 

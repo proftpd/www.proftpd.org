@@ -9,6 +9,21 @@
 
 <tr>
   <td>
+    <b><font face="arial" color="#003399">Version 1.2.3 released</font></b>
+    <br />
+    <font size="-1">[<i>18/Oct/2001</i>]</font>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+     1.2.3 is now available from ftp.proftpd.org and all mirror sites. This
+     release fixes the security concern raised recently on Bugtraq.
+    </font></blockquote>
+  </td>
+</tr>
+
+
+
+<tr>
+  <td>
     <b><font face="arial" color="#003399">German docs translation</font></b>
     <br />
     <font size="-1">[<i>21/Sept/2001</i>]</font>
