@@ -3,22 +3,24 @@ Development Roadmap for 1.2.x
 Version: $Id$
 
 
+C = Committed
+
 1.2.6
         mod_quota - removed until security problems are fixed
         Remaining outstanding fixes / bugs in the ticketing system.
         'Other' arch fixes as and when tested
         Grubb's signal handler changes
-        IFModule patch 
-	#1241 - Homedir on demand
-        #1258 - STOU command
+C       IFModule patch 
+        #1241 - Homedir on demand
+C       #1258 - STOU command
         #1294 - MaxClientsPerHost fix
-        #1306 - TimeoutSession
-        #1346 - Cygwin fix
+C       #1306 - TimeoutSession
+N/A?    #1346 - Cygwin fix
         #1398 - there is no log rotate for /var/log/xferlog
-        #1407 - ftp protocol differences
-        #1463 - Add auth handler dispatch reporting at new debug level
-        #1534 - Large File Support
-        #1569 - Cygwin support
+C       #1407 - ftp protocol differences
+C       #1463 - Add auth handler dispatch reporting at new debug level
+C       #1534 - Large File Support
+C       #1569 - Cygwin support
 
 
 1.2.7
@@ -27,7 +29,7 @@ Version: $Id$
         #1231 - Extra options for ftpwho
         #1272 - DenyFilter by User or DenyFilter by Dire
         #1395 - Check return values in PRIVS calls
-	#1432 - Pedantic handling of leading whitespace in FTP commands
+        #1432 - Pedantic handling of leading whitespace in FTP commands
         #1486 - Directory listing performance
         #1507 - regex pattern matching in [Allow/Deny][User/Group]
         #1623 - "connected since" in ftpwho
@@ -51,4 +53,3 @@ Version: $Id$
         #1454 - <Limit OVERWRITE>
         #1532 - Human readable disk free
         #1565 - ftpwho bandwidth usage
-
