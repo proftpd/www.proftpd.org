@@ -35,6 +35,27 @@
     </dl>
 
     <dl>
+      <dt><a href="http://www.chello.com/">Chello</a></dt>
+      <dd>Western European broadband ISP, powering numerous customer web
+          sites and a large mirror site with ProFTPD.</dd>
+    </dl>
+
+    <dl>
+      <dt><a href="http://www.ccp14.ac.uk/">Daresbury Laboratory, UK</a></dt>
+      <dd>Collaborative Computational Project Number 14 (CCP14) for Single
+          Crystal and Powder Diffraction, CLRC, Daresbury Synchrotron
+          Laboratory, UK.
+      </dd>
+    </dl>
+
+    <dl>
+      <dt><a href="http://www.duno.com/">Duno</a></dt>
+      <dd>Hosting service, aiming to be holding 1.6 million domains by the
+          end of 2001.
+      </dd>
+    </dl>
+
+    <dl>
       <dt><a href="http://www.e-magic.be/">e-magic</a></dt>
       <dd>Web hosting/design company located in Belgium, mainly using
           open-source software.
@@ -49,37 +70,13 @@
     </dl>
 
     <dl>
-      <dt><a href="http://www.duno.com/">Duno</a></dt>
-      <dd>Hosting service, aiming to be holding 1.6 million domains by the
-          end of 2001.
-      </dd>
-    </dl>
-
-    <dl>
       <dt><a href="http://www.fuitadnet.com/">FuitadNET</a></dt>
       <dd>A free webhosting service running ProFTPD.</dd>
     </dl>
 
     <dl>
-      <dt><a href="http://www.ccp14.ac.uk/">Daresbury Laboratory, UK</a></dt>
-      <dd>Collaborative Computational Project Number 14 (CCP14) for Single
-          Crystal and Powder Diffraction, CLRC, Daresbury Synchrotron
-          Laboratory, UK.
-      </dd>
-    </dl>
-
-    <dl>
-      <dt><a href="http://www.swebase.com/">Swebase AB, Sweden</A></dt>
-      <dd>Swebase are running ProFTPD on a number of BSD servers each hosting 200+
-          domains</dd>
-      </dd>
-    </dl>
-
-
-    <dl>
-      <dt><A href="http://www.cslab.vt.edu/">Virginia Tech Computer Science Lab</A></dt>
-      <dd>This site uses ProFTPD to host ftp3.freebsd.org and a Progeny Linux mirror, 
-          shifting over 250Gb of data monthly.</dd>
+      <dt><a href="http://www.law.harvard.edu/">Harvard Law</a></dt>
+      <dd>Harvard Law School</dd>
     </dl>
 
     <dl>
@@ -90,14 +87,25 @@
       </dd>
     </dl>
 
-<!--
+    <dl>
+      <dt><a href="http://www.swebase.com/">Swebase AB, Sweden</A></dt>
+      <dd>Swebase are running ProFTPD on a number of BSD servers each hosting 200+
+          domains</dd>
+      </dd>
+    </dl>
 
+    <dl>
+      <dt><A href="http://www.cslab.vt.edu/">Virginia Tech Computer Science Lab</A></dt>
+      <dd>This site uses ProFTPD to host ftp3.freebsd.org and a Progeny Linux mirror, 
+          shifting over 250Gb of data monthly.</dd>
+    </dl>
+
+<!--
 "Goran Matic" gmatic@sircus.com
 If you like you can add ftp.sircus.com as a site that is powered by ProFTPD.
 ftp://ftp.sircus.com
 ftp://ftp2.sircus.com
 Online Music Xchange community.
-
 -->
 
   </td>
