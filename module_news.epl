@@ -2,7 +2,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Third party module and patches" :>//
-<: $last_changed = "19/Jun/2001 - hamster" :>//
+<: $last_changed = "19/Jun/2001 - jwm" :>//
 
 #include "header.epl"
 
@@ -16,65 +16,68 @@
 	<ul>
 		<b><font face="arial" color="#003399">mod_time (2.0rc1)</font></b>
 		<br />
- 		<br><font size="-1"><i>Maintainer: TJ Saunders</i></font></br>
- 		<br><font size="-1"><i><a href="http://rad.geology.washington.edu/~tj/proftpd/">http://rad.geology.washington.edu/~tj/proftpd/</a></i></font></br>
+ 		<br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
+  		<br /><font size="-1"><i><a href="http://rad.geology.washington.edu/~tj/proftpd/">http://rad.geology.washington.edu/~tj/proftpd/</a></i></font>
+
 		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-		mod_time is a ProFTPD module that limits FTP commands based on time of day and/or day of the week.
-		</blockquote>
+			mod_time is a ProFTPD module that limits FTP commands based on time of day and/or day of the week.
+		</font></blockquote>
 	</ul>
 
 	<ul>
 		<b><font face="arial" color="#003399">TLS patch (for 1.2.1)</font></b>
 		<br />
- 		<br><font size="-1"><i>Maintainer: Peter 'Luna' Runestig</i></font></br>
- 		<br><font size="-1"><i><a href="ftp://ftp.runestig.com/pub/proftpd-tls/">ftp://ftp.runestig.com/pub/proftpd-tls/</a></br>
+ 		<br /><font size="-1"><i>Maintainer: Peter 'Luna' Runestig</i></font>
+ 		<br /><font size="-1"><i><a href="ftp://ftp.runestig.com/pub/proftpd-tls/">ftp://ftp.runestig.com/pub/proftpd-tls/</a></font>
+
 		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-		This patch implements the TLS extensions to the ftp protocol, openssl must be installed for this patch to work.
-		</blockquote>
+			This patch implements the TLS extensions to the FTP protocol.
+			This patch requires that OpenSSL be installed.
+		</font></blockquote>
 	</ul>
 
 	<ul>
 		<b><font face="arial" color="#003399">mod_quota (1.26)</font></b>
 		<br />
- 		<br><font size="-1"><i>Maintainer: Eric Estabrooks</i></font></br>
- 		<br><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></br>
+ 		<br /><font size="-1"><i>Maintainer: Eric Estabrooks</i></font>
+ 		<br /><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></font>
+
 		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-		This module provides for upload/download quota controls.
-		</blockquote>
+			This module provides for upload/download quota controls.
+		</font></blockquote>
 	</ul>
 
 	<ul>
 		<b><font face="arial" color="#003399">mod_dbauth (1.7)</font></b>
 		<br />
- 		<br><font size="-1"><i>Maintainer: Eric Estabrooks</i></font></br>
- 		<br><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></br>
+ 		<br /><font size="-1"><i>Maintainer: Eric Estabrooks</i></font>
+ 		<br /><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></font>
+
 		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-		BerkeleyDB authentication module for ProFTPD
-		</blockquote>
+			BerkeleyDB authentication module for ProFTPD.
+		</font></blockquote>
 	</ul>
 
 	<ul>
 		<b><font face="arial" color="#003399">mod_gdbmauth</font></b>
 		<br />
- 		<br><font size="-1"><i>Maintainer: Eric Estabrooks</i></font></br>
- 		<br><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></br>
+ 		<br /><font size="-1"><i>Maintainer: Eric Estabrooks</i></font>
+ 		<br /><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></font>
+
 		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-		</blockquote>
+		</font></blockquote>
 	</ul>
 
 	<ul>
 		<b><font face="arial" color="#003399">mod_opie (1.1)</font></b>
 		<br />
- 		<br><font size="-1"><i>Maintainer: Eric Estabrooks</i></font></br>
- 		<br><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></br>
+ 		<br /><font size="-1"><i>Maintainer: Eric Estabrooks</i></font>
+ 		<br /><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></font>
+
 		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-		A implementation of one time passwords for Proftpd.
+			A implementation of one-time passwords for ProFTPD.
 		</blockquote>
 	</ul>
-
-
-	
-
   </td>
 </tr>
 </table>

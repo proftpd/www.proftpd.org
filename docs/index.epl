@@ -1,10 +1,8 @@
-<:
-# $Id$
-:>//
+<: # $Id$ :>//
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Project Documentation" :>//
-<: $last_changed = "" :>//
+<: $last_changed = "19/Jun/2001 - jwm" :>//
 
 #include "header.epl"
 
@@ -34,9 +32,10 @@
     </ul>
 
     <ul>
-	<li><a href="http://rad.geology.washington.edu/~tj/proftpd/doc/devel-guide/">ProFTPD Developer's Guide</a> (by TJ Saunders)</li>
-	<li><a href="http://rad.geology.washington.edu/~tj/proftpd/doc/contrib/ProFTPD-mini-HOWTO-NAT.txt">Mini-HOWTO for ProFTPD and NAT</a> (by Tobias Ekbom)</li>
-	<li><a href="http://rad.geology.washington.edu/~tj/proftpd/doc/contrib/ProFTPD-mini-HOWTO-SSH.html">Mini-HOWTO for FTP over SSH</a> (by TJ Saunders)</li>
+		<li><a href="http://rad.geology.washington.edu/~tj/proftpd/doc/devel-guide/">ProFTPD Developer's Guide</a> (by TJ Saunders)</li>
+		<li><a href="http://rad.geology.washington.edu/~tj/proftpd/doc/contrib/ProFTPD-mini-HOWTO-NAT.txt">Mini-HOWTO for ProFTPD and NAT</a> (by Tobias Ekbom)</li>
+		<li><a href="http://rad.geology.washington.edu/~tj/proftpd/doc/contrib/ProFTPD-mini-HOWTO-SSH.html">Mini-HOWTO for FTP over SSH</a> (by TJ Saunders)</li>
+	</ul>
 
     <hr />
 
@@ -82,7 +81,7 @@
     the shortcomings will be put up shortly.</p>
 
     <ul>
-      <li><a href="http://www.mrunix.net/webalizer/">Webalizer</a></li>
+      <li><a href="http://www.mrunix.net/webalizer/">The Webalizer</a></li>
       <li><a href="http://www.nihongo.org/snowhare/utilities/ftpweblog/">ftpweblog</a></li>
     </ul>
   </td>
