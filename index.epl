@@ -10,22 +10,6 @@
 	<TR>
 	  <TD>
 
-<!--
-
-	<TR>
-	  <TD>
-	    <B><FONT face="arial" color="#003399">TITLE</FONT></B><BR>
-            <FONT size="-1">[<I>DATE</I>]</FONT>
-	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
-	    NEWSNEWS
-	    NEWSNEWS
-	    NEWSNEWS
-	    </font></BLOCKQUOTE>
-	  </TD>
-	</TR>
--->
-
-
 	<TR>
 	  <TD>
 	    <B><FONT face="arial" color="#003399">ProFTPD 1.2.1 released</FONT></B><BR>
@@ -87,15 +71,15 @@
 	    <P>Andrew Houghton has released new versions of the SQL
 	    authentication modules, these are not drop in replacements
 	    and will require some work to migrate existing configurations
-	    to the new code.
+	    to the new code.</P>
 
 	    <P>All the bugs should be fixed but a final shakedown is needed
-	    so please test these modules so they can be included in -final
+	    so please test these modules so they can be included in -final</P>
 
 	    <P>Documentation for the
 	    modules is currently to be found at <A
 	    HREF="http://www.lastditcheffort.org/aah/mod_sql.html">http://www.lastditcheffort.org/aah/mod_sql.html</A>,
-	    this will be merged into the main docs before -final.
+	    this will be merged into the main docs before -final.</P>
 
 	    
 	    </font></BLOCKQUOTE>
@@ -134,7 +118,7 @@
             The SQL modules have a new maintainer (Andrew Houghton),
             he will be picking up where the previous maintainer left
             off with the aim of getting the modules back into the code
-            for 1.2.0-final<
+            for 1.2.0-final
 
 	    </font></BLOCKQUOTE>
 	  </TD>
@@ -151,7 +135,7 @@
             been removed from this release because the third party modules
             are not being maintained and have security related bugs.
             If you have an interest in maintaining them please email
-            the developers list.
+            the developers list.</EM>
 	    </font></BLOCKQUOTE>
 
 	  </TD>
@@ -159,7 +143,7 @@
 
 	<TR>
 	  <TD>
-	  <P>Older news is <A HREF="/old_news.html">here</A>
+	  <P><A HREF="/old_news.html">Older news</A>
 	  </TD>
 	</TR>
 #include "footer.epl"

@@ -1,7 +1,7 @@
 #include "global.epl"
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
-
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+               "http://www.w3.org/TR/REC-html40/loose.dtd">
 <HTML>
 
 <HEAD>
@@ -10,28 +10,27 @@
 <: print "<META NAME=\"description\" CONTENT=\"$meta_description\">\n" unless !defined($meta_description) :>//
 <: print "<META NAME=\"keywords\" CONTENT=\"$meta_keywords\">\n" unless !defined($meta_keywords) :>//
 </HEAD>
-</HEAD>
-
-<BODY topmargin="0" leftmargin="0" text=#000000 link="#000099" alink="#cc0000" vlink=#6666cc bgcolor="white">
+<BODY text="#000000" link="#000099" alink="#cc0000" vlink="#6666cc" bgcolor="white">
 
 <!-- Header of the page -->
-<TABLE cellpadding="0" callspacing="0" border="0" height="112">
-  <TR valign="center">
-    <TD align="left" valign="center" rowspan="2"><IMG src="/proftpd.png" width="198" height="112" align="left" valign="center"></TD>
+<TABLE cellpadding="0" cellspacing="0" border="0">
+  <TR valign="middle">
+    <TD align="left" valign="middle" rowspan="2"><IMG
+src="/proftpd.png" width="198" height="112" align="left" alt="ProFTPD Logo"></TD>
     <TD align="left" valign="bottom">
-      <IMG SRC="/dotgreen.jpg" valign="center">
+      <IMG SRC="/dotgreen.jpg" alt="o">
       <FONT size="+2" face="Times New Roman, sans-serif">ProFTPD</FONT>
-      <IMG SRC="/dotgreen.jpg" valign="center">
+      <IMG SRC="/dotgreen.jpg" alt="o">
     </TD>
   </TR>
   <TR>
-    <TD align="left" valign="center" ><FONT face="verdana,arial" size="-1"><I>Highly configurable GPL ftp server software</I></FONT>
+    <TD align="left" valign="middle" ><FONT face="verdana,arial" size="-1"><I>Highly configurable GPL ftp server software</I></FONT>
     </TD>
   </TR>
 </TABLE>
 
 <!-- Body  of the page -->
-<TABLE cellpadding="0" callspacing="0" border="0" width="100%">
+<TABLE cellpadding="0" cellspacing="0" border="0" width="100%">
   <TR>
     <TD valign="top" rowspan="2">
 
