@@ -5,23 +5,23 @@ Version: $Id$
 C = Committed
 
 1.2.9
-        #1166 - custom wtmp log file
         #1279 - AuthAgedPassword option
         #1532 - Human readable disk free
         #1711 - IPv6 support
-        #1828 - mod_sql can only find mysql.sock if in /tmp
-        #1849 - Compile can have trouble finding mysql.h
-        #1869 - Add option to ftpwho/ftpcount/ftptop
-        #1915 - Unsafe pointer usage in scoreboard file format 
-        #1921 - Socket-level performance tweaks
+C       #1828 - mod_sql can only find mysql.sock if in /tmp
+C       #1849 - Compile can have trouble finding mysql.h
+C       #1869 - Add option to ftpwho/ftpcount/ftptop
+C       #1915 - Unsafe pointer usage in scoreboard file format 
+C       #1921 - Socket-level performance tweaks
         #1925 - Clean up of Class code
-        #1932 - Make Max* checks a PASS POST_CMD handler
-        #1933 - Add mod_ifsession contrib module
-        #1960 - Add removed file size by DELE command to xferlog
-        #1967 - Add display of uptime to ftpwho, ftptop
+C       #1932 - Make Max* checks a PASS POST_CMD handler
+C       #1933 - Add mod_ifsession contrib module
+C       #1960 - Add removed file size by DELE command to xferlog
+C       #1967 - Add display of uptime to ftpwho, ftptop
         Add RootRevoke, AnonRejectPasswords directives
 
 TBD
         i18n (including RFC2640)
+        DSOs
         contrib/ per-module directory reorganization
         shared memory support
