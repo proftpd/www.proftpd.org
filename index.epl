@@ -21,6 +21,20 @@
 
 <tr>
   <td>
+    <b><font face="arial" color="#003399">Development roadmap</font></b>
+    <br />
+    <font size="-1">[<i>09/June/2002</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+     The <a href="ROADMAP">roadmap</a> for development of ProFTPD 1.2.x is 
+     now available, this is a working document which changes regularly 
+     and sets out the planned course of action of the development team
+     not necessarily what <em>will</em> happen.
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
     <b><font face="arial" color="#003399">1.2.5rc2 released</font></b>
     <br />
     <font size="-1">[<i>13/May/2002</i>]</font>

@@ -1,5 +1,7 @@
 Development Roadmap for 1.2.x
 -----------------------------
+Version: $Id$
+
 
 1.2.6
         mod_quota - removed until security problems are fixed
