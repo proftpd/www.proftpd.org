@@ -29,6 +29,7 @@ C	#2135 - Add ability to handle passphrase-protected server keys
 	#2368 - Allow contrib modules to extend mod_sql's SQLAuthTypes
         #2389 - 64-bit compilation warnings
 	#2392 - mod_sql needs better handling of its backend modules
+	#2454 - Extend <VirtualHost> to honor multiple addresses
 	Add mod_shaper, mod_md5 modules to contrib/
 	DSO support
 
