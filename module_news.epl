@@ -33,9 +33,11 @@ More information available at http://www.proftpd.org/proftpd-devel-archive/full/
 		<br />
 		<br /><font size="-1"><i>Maintainer: Patrick Muldoon</i></font>
 		<br /><font size="-1"><i><a href="http://www.labratsoftware.com/mod_sql_tds-0.5.tar.gz">http://www.labratsoftware.com/mod_sql_tds-0.5.tar.gz</a></i></font>
+
 		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-		 mod_sql_tds provides SQL backend support for servers which speak TDS, ie MS SQL Server and
-		 Sybase.  This module should be considered beta (maybe even alpha). 
+		 mod_sql_tds provides SQL backend support for servers which speak
+		 TDS, i.e. MS SQL Server and Sybase.  This module should be
+		 considered beta (maybe even alpha).
 		</blockquote>
 	</ul>
 
@@ -59,8 +61,8 @@ More information available at http://www.proftpd.org/proftpd-devel-archive/full/
 		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
 			Support for Dan J. Bernstein's <a
 			href="http://cr.yp.to/cdb.html">CDB format</a> for group and
-			passwd file lookups, CDB lookups are generally faster than 
-			other similar database formats.
+			passwd file lookups. CDB lookups are generally faster than other
+			similar database formats.
 		</blockquote>
 	</ul>
 		
@@ -91,8 +93,8 @@ More information available at http://www.proftpd.org/proftpd-devel-archive/full/
 	<ul>
 		<b><font face="arial" color="#003399">mod_time (2.0rc1)</font></b>
 		<br />
- 		<br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
-  		<br /><font size="-1"><i><a href="http://rad.geology.washington.edu/~tj/proftpd/">http://rad.geology.washington.edu/~tj/proftpd/</a></i></font>
+		<br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
+		<br /><font size="-1"><i><a href="http://rad.geology.washington.edu/~tj/proftpd/">http://rad.geology.washington.edu/~tj/proftpd/</a></i></font>
 
 		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
 			A ProFTPD module that limits FTP commands based on time of day
@@ -103,8 +105,8 @@ More information available at http://www.proftpd.org/proftpd-devel-archive/full/
 	<ul>
 		<b><font face="arial" color="#003399">TLS patch (for 1.2.1)</font></b>
 		<br />
- 		<br /><font size="-1"><i>Maintainer: Peter 'Luna' Runestig</i></font>
- 		<br /><font size="-1"><i><a href="ftp://ftp.runestig.com/pub/proftpd-tls/">ftp://ftp.runestig.com/pub/proftpd-tls/</a></font>
+		<br /><font size="-1"><i>Maintainer: Peter 'Luna' Runestig</i></font>
+		<br /><font size="-1"><i><a href="ftp://ftp.runestig.com/pub/proftpd-tls/">ftp://ftp.runestig.com/pub/proftpd-tls/</a></font>
 
 		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
 			This patch implements the TLS extensions to the FTP protocol.
@@ -115,8 +117,8 @@ More information available at http://www.proftpd.org/proftpd-devel-archive/full/
 	<ul>
 		<b><font face="arial" color="#003399">mod_quota (1.26)</font></b>
 		<br />
- 		<br /><font size="-1"><i>Maintainer: Eric Estabrooks</i></font>
- 		<br /><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></font>
+		<br /><font size="-1"><i>Maintainer: Eric Estabrooks</i></font>
+		<br /><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></font>
 
 		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
 			This module provides for upload/download quota controls.
@@ -126,8 +128,8 @@ More information available at http://www.proftpd.org/proftpd-devel-archive/full/
 	<ul>
 		<b><font face="arial" color="#003399">mod_dbauth (1.7)</font></b>
 		<br />
- 		<br /><font size="-1"><i>Maintainer: Eric Estabrooks</i></font>
- 		<br /><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></font>
+		<br /><font size="-1"><i>Maintainer: Eric Estabrooks</i></font>
+		<br /><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></font>
 
 		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
 			BerkeleyDB authentication module for ProFTPD.
@@ -137,8 +139,8 @@ More information available at http://www.proftpd.org/proftpd-devel-archive/full/
 	<ul>
 		<b><font face="arial" color="#003399">mod_gdbmauth</font></b>
 		<br />
- 		<br /><font size="-1"><i>Maintainer: Eric Estabrooks</i></font>
- 		<br /><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></font>
+		<br /><font size="-1"><i>Maintainer: Eric Estabrooks</i></font>
+		<br /><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></font>
 
 		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
 			GDBM authentication module for ProFTPD.
@@ -148,8 +150,8 @@ More information available at http://www.proftpd.org/proftpd-devel-archive/full/
 	<ul>
 		<b><font face="arial" color="#003399">mod_opie (1.1)</font></b>
 		<br />
- 		<br /><font size="-1"><i>Maintainer: Eric Estabrooks</i></font>
- 		<br /><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></font>
+		<br /><font size="-1"><i>Maintainer: Eric Estabrooks</i></font>
+		<br /><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></font>
 
 		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
 			A implementation of one-time passwords for ProFTPD.
