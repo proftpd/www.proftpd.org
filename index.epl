@@ -1,11 +1,56 @@
 <: # $Id$ :>//
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
-<: $last_changed = "05/Dec/2002 - jwm" :>//
+<: $last_changed = "12/Dec/2002 - jwm" :>//
 
 #include "header.epl"
 
 <table bgcolor="white">
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">Globbing "vulnerability"</font></b>
+    <br />
+    <font size="-1">[<i>05/Dec/2002</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      <p>The ProFTPD Project would like to formally acknowledge Rob klein
+      Gunnewiek's
+      &lt;<a href="mailto:rmkleing_at_hio.hen.nl">rmkleing@hio.hen.nl</a>&gt;
+      <a href="http://archives.neohapsis.com/archives/vulnwatch/2002-q4/0098.html">post
+      to VulnWatch</a> describing a "vulnerability" in ProFTPD's globbing
+      code. This bug was <a href="http://bugs.proftpd.org/show_bug.cgi?id=1066">
+      addressed long ago</a> by upgrading ProFTPD's bundled globbing code to
+      a newer version from the GNU libc project.</p>
+
+      <p>Despite this change, the resources of some systems could still be
+      exhausted by very large, deep directory structures. We also recommended
+      use of the
+      <a href="http://www.proftpd.org/docs/directives/linked/config_ref_RLimitCPU.html">
+      <tt>RLimitCPU</tt></a> and
+      <a href="http://www.proftpd.org/docs/directives/linked/config_ref_RLimitMemory.html">
+      <tt>RLimitMemory</tt></a> directives, especially on smaller systems,
+      to further avoid the possibility of a resource-exhausting situation.</p>
+
+      <p>Despite our complete and comprehensive handling of the GNU globbing
+      vulnerability back in March 2001, Mr. Gunnewiek has decided that the
+      problem isn't really fixed. On 8 December 2002, Mr. Gunnewiek posted
+      an advisory to VulnWatch with no advance notice to us whatsoever. We'd
+      like to point out that the members of the core team are believers in
+      responsible full disclosure and advocate the policies outlined
+      in <a href="http://www.wiretrip.net/rfp/policy.html">RFPolicy</a>. The
+      e-mail address <i>security at proftpd dot org</i> has been in
+      existence since early 2001 (and before, but our web site was only
+      revision-controlled beginning in early 2001). Our policy on security
+      vulnerabilities has also been clearly stated at
+      <a href="http://www.proftpd.org/security.html"> since that time.</p>
+
+      <p>In summary, we would like to reiterate that this "vulnerability"
+      has been a non-issue for quite some time. Furthermore, we suggest that
+      Mr. Gunnewiek check his facts in the future before he engages in
+      handwaving and publicity-seeking.</p>
+    </font></blockquote>
+  </td>
+</tr>
+
 <tr>
   <td>
     <b><font face="arial" color="#003399">1.2.7 released</font></b>
