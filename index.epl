@@ -8,6 +8,31 @@
 <table bgcolor="white">
 <tr>
   <td>
+    <b><font face="arial" color="#003399">1.2.8rc2 released</font></b>
+    <br />
+    <font size="-1">[<i>29/Jan/2003</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      <p>1.2.8rc2 has just been released. This release includes numerous new
+      features, including:</p>
+
+      <ul>
+        <li>Allow/DenyFilter are now extended to the directory and ftpaccess contexts.</li>
+        <li>New directive SQLLogFile</li>
+        <li>Fixes for TRU64 and OS/X</li>
+        <li>Numerous bugfixes</li>
+        <li>Linuxprivs are renamed to mod_cap and built-in</li>
+      </ul>
+
+      <p>More details are available
+      <a href="http://sourceforge.net/mailarchive/forum.php?thread_id=1586743&forum_id=2625">here</a>.</p>
+
+      <p>RPMs should be available on the primary FTP site and mirrors soon.</p>
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
     <b><font face="arial" color="#003399">1.2.8rc1 released</font></b>
     <br />
     <font size="-1">[<i>28/Dec/2002</i>]</font>
