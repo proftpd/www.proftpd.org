@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Downloading and mirror sites" :>//
-<: $last_changed = "242/01/1900 - mark" :>//
+<: $last_changed = "274/01/1900 - mark" :>//
 
 #include "header.epl"
 
@@ -448,7 +448,7 @@ Location: China (BeiJing)<br />
 Maintained by: LiuKang<br />
 </p>
 <p>
-<a href="ftp://ftp.linux.se/pub/proftpd/">ftp://ftp.linux.se/pub/proftpd/</A><br />
+<a href="ftp://ftp.linux.se/pub/mirrors/proftpd/">ftp://ftp.linux.se/pub/mirrors/proftpd/</A><br />
 Location: Sweden (Stockholm)<br />
 Maintained by: Martin Friberg<br />
 </p>
@@ -476,6 +476,36 @@ Maintained by: The Mirrors Master<br />
 <a href="ftp://mirrors.bigfatpipe.net/pub/proftpd/">ftp://mirrors.bigfatpipe.net/pub/proftpd/</A><br />
 Location: United states (     Portland, OR, USA)<br />
 Maintained by:             The BigFatPipe.Net Hostmaster Team<br />
+</p>
+<p>
+<a href="ftp://proftpd.histeria.pl/proftpd/">ftp://proftpd.histeria.pl/proftpd/</A><br />
+Location: Poland (PL, Radom)<br />
+Maintained by: Argail<br />
+</p>
+<p>
+<a href="ftp://proftpd.isca.uiowa.edu/">ftp://proftpd.isca.uiowa.edu/</A><br />
+Location: United states (Iowa City, IA, USA)<br />
+Maintained by: Iowa Student Computer Association FTP Archives Maintainer<br />
+</p>
+<p>
+<a href="ftp://ftp.vanadiumcorp.org/pub/proftpd-mirror/">ftp://ftp.vanadiumcorp.org/pub/proftpd-mirror/</A><br />
+Location: Italy (Italy)<br />
+Maintained by: VaNaDi0<br />
+</p>
+<p>
+<a href="ftp://ftp.404-not-found.net/proftpd.org/">ftp://ftp.404-not-found.net/proftpd.org/</A><br />
+Location: Hong kong (HK)<br />
+Maintained by: Johnson<br />
+</p>
+<p>
+<a href="ftp://ftp.its.si/pub/mirror/ftp.proftpd.org/">ftp://ftp.its.si/pub/mirror/ftp.proftpd.org/</A><br />
+Location: Slovenia (Ljubljana)<br />
+Maintained by: Tomaz Kostrevc<br />
+</p>
+<p>
+<a href="http://ftp.mirrors.fastnetxp.com/mirrors/proftpd/">http://ftp.mirrors.fastnetxp.com/mirrors/proftpd/</A><br />
+Location: France (FR, Paris)<br />
+Maintained by: Nicolas DEFFAYET<br />
 </p>
 </dl>
 

@@ -23,10 +23,10 @@
       <li><a href="configuration.html">List of configuration directives</a></li>
       <li>Frequently Asked Questions</li>
       <ul>
-        <li><a href="http://pdd.sourceforge.net/faq/proftpdfaq.html">Hyperlinked version</a></li>
-        <li><a href="http://pdd.sourceforge.net/faq/proftpdfaq-full.html">Single html file</a></li>
+        <li><a href="/docs/faq/proftpdfaq.html">Hyperlinked version</a></li>
+        <li><a href="/docs/faq/proftpdfaq-full.html">Single html file</a></li>
       </ul>
-      <li>Userguide (<a href="/docs/userguide_full.html">single html</a>) (<a href="/docs/userguide.ps">postscript</a>) (<a href="userguide.pdf">pdf</a>)</li>
+      <li>Userguide (<a href="/docs/userguide/linked/userguide.html">linked html</a>) (<a href="/docs/userguide/userguide_full.html">single html</a>) (<a href="/docs/userguide/userguide.ps">postscript</a>) (<a href="/docs/userguide/userguide.pdf">pdf</a>)</li>
       <li><a href="/cvs.html">CVS Howto and FAQ</a></li>
       <li><a href="y2k.html">Year 2000 statement</a></li>
     </ul>

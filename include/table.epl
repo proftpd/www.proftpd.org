@@ -94,8 +94,8 @@
               <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="/docs/rfc.html">RFCs</a></font></li>
               <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="/docs/y2k.html">Year 2000 Compliance</a></font></li>
               <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="/docs/configuration.html">Directive list</a></font></li>
-              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="http://pdd.sourceforge.net/faq/proftpdfaq.html">FAQ</a></font></li>
-              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="http://pdd.sourceforge.net/userguide/linked/userguide.html">Userguide</a></font></li>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="/docs/faq/proftpdfaq.html">FAQ</a></font></li>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="/docs/userguide/linked/userguide.html">Userguide</a></font></li>
             </ul>
           </td>
         </tr>

@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Website mirrors" :>//
-<: $last_changed = "242/01/1900 - mark" :>//
+<: $last_changed = "274/01/1900 - mark" :>//
 
 #include "header.epl"
 
@@ -28,6 +28,7 @@
 <div align="center">
 <a href="http://www.at.proftpd.org/">at</a>
 <a href="http://www.au.proftpd.org/">au</a>
+<a href="http://www.be.proftpd.org/">be</a>
 <a href="http://www.bg.proftpd.org/">bg</a>
 <a href="http://www.cn.proftpd.org/">cn</a>
 <a href="http://www.de.proftpd.org/">de</a>
@@ -36,6 +37,7 @@
 <a href="http://www.fi.proftpd.org/">fi</a>
 <a href="http://www.fr.proftpd.org/">fr</a>
 <a href="http://www.hk.proftpd.org/">hk</a>
+<a href="http://www.hu.proftpd.org/">hu</a>
 <a href="http://www.id.proftpd.org/">id</a>
 <a href="http://www.ie.proftpd.org/">ie</a>
 <a href="http://www.it.proftpd.org/">it</a>
@@ -73,11 +75,6 @@ Maintained by: David<br />
 <a href="http://proftpd.uasw.edu/">http://proftpd.uasw.edu/</a><br />
 Location: Germany (Wolfenbuettel)<br />
 Maintained by: Thorsten Ludewig<br />
-</p>
-<p>
-<a href="http://ftp.tim.linux-site.net/">http://ftp.tim.linux-site.net/</a><br />
-Location: Germany (Oberhausen)<br />
-Maintained by: Tim Korves<br />
 </p>
 <p>
 <a href="http://proftpd.area51.dk/">http://proftpd.area51.dk/</a><br />
@@ -264,9 +261,34 @@ Location: Austria (Vienna)<br />
 Maintained by: Stefan Lueger<br />
 </p>
 <p>
-<a href="http://proftpd.mirrors.bigfatpipe.net/">http://proftpd.mirrors.bigfatpipe.net/</a><br />
-Location: United states (     Portland, OR, USA)<br />
-Maintained by:             The BigFatPipe.Net Hostmaster Team<br />
+<a href="http://proftpd.mirror.easynet.be/">http://proftpd.mirror.easynet.be/</a><br />
+Location: Belgium (Brussels, BELGIUM)<br />
+Maintained by: Iyi Dogan Claude<br />
+</p>
+<p>
+<a href="http://proftpd.histeria.pl/">http://proftpd.histeria.pl/</a><br />
+Location: Poland (PL, Radom)<br />
+Maintained by: Argail<br />
+</p>
+<p>
+<a href="http://proftpd.isca.uiowa.edu/">http://proftpd.isca.uiowa.edu/</a><br />
+Location: United states (Iowa City, IA, USA)<br />
+Maintained by: Iowa Student Computer Association FTP Archives Maintainer<br />
+</p>
+<p>
+<a href="http://proftpd.vanadiumcorp.org/">http://proftpd.vanadiumcorp.org/</a><br />
+Location: Italy (Italy)<br />
+Maintained by: VaNaDi0<br />
+</p>
+<p>
+<a href="http://proftpd.404-not-found.net/">http://proftpd.404-not-found.net/</a><br />
+Location: Hong kong (HK)<br />
+Maintained by: Johnson<br />
+</p>
+<p>
+<a href="http://proftpd.mirrors.fastnetxp.com/">http://proftpd.mirrors.fastnetxp.com/</a><br />
+Location: France (FR, Paris)<br />
+Maintained by: Nicolas DEFFAYET<br />
 </p>
 </dl>
 
