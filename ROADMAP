@@ -4,7 +4,7 @@ Version: $Id$
 
 C = Committed
 
-1.2.11/1.3
+1.3
 
      C  #1965 - Changing timing of handling of QUIT command
         #2013 - Track RFC2228 sessions in scoreboard
@@ -16,9 +16,9 @@ C = Committed
 	#2368 - Allow contrib modules to extend mod_sql's SQLAuthTypes
      C  #2389 - 64-bit compilation warnings
      C  #2392 - mod_sql needs better handling of its backend modules
-	#2454 - Extend <VirtualHost> to honor multiple addresses
+     C  #2454 - Extend <VirtualHost> to honor multiple addresses
 	Add mod_shaper, mod_md5 modules to contrib/
-	DSO support
+     C  DSO support
 
 TBD
         contrib/ per-module directory reorganization
