@@ -167,6 +167,12 @@ Contact: Lucian Daniel Kafka <luci@conexim.com.au>
       <dd>Offers a wide range of webhosting, dedicated hosting, and
           colocation services, running exclusively FreeBSD and OpenBSD.</dd>
     </dl>
+
+    <dl>
+      <dt><a href="http://www.nq.pl">nQ.l Hosting</a></dt>
+      <dd>Hosting company in Poland proving FTP access to client accounts
+          via ProFTPD.</dd>
+    </dl>
 <!--
 "Goran Matic" gmatic@sircus.com
 If you like you can add ftp.sircus.com as a site that is powered by ProFTPD.
