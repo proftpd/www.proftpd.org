@@ -9,6 +9,21 @@
 
 <tr>
   <td>
+    <b><font face="arial" color="#003399">1.2.10rc1 released</font></b>
+    <br />
+    <font size="-1">[<i>28/Apr/2004</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      <p>The ProFTPD Project is pleased to make the 1.2.10rc1 release to the
+      community.  Highlights like reworked Class support, addition of
+      contrib quota modules, and support for passphrase-protected certs in
+      mod_tls.  Please read the RELEASE_NOTES and NEWS files for the full
+      details.
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
     <b><font face="arial" color="#003399">1.2.9 released</font></b>
     <br />
     <font size="-1">[<i>31/Oct/2003</i>]</font>
