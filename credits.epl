@@ -21,7 +21,7 @@
 <UL>
 <LI>Floody:  ProFTPD developer/creator.</LI>
 <LI><A HREF="http://www.macgyver.org">MacGyver</A>:  ProFTPD developer and maintainer.</LI>
-<LI>John Morrissey</LI>
+<LI><A HREF="http://horde.net/~jwm/">John Morrissey</A></LI>
 <LI>Charles Seeger</LI>
 <LI><A HREF="http://rad.geology.washington.edu/~tj/proftpd/">TJ Saunders</A></LI> 
 <LI><A HREF="http://hamster.wibble.org">Mark Lowes</A>:  Documentation and Webhamster.</LI>
@@ -30,7 +30,7 @@
 <P>Module Developers:</P>
 
 <UL>
-<LI>Please email the <A HREF="mailto:core@proftpd.org">core developers</A> to be listed here if you have contributed a module to ProFTPD</LI>
+<LI>Please email the <A HREF="mailto:core@proftpd.org">core developers</A> to be listed here if you have contributed a module to ProFTPD.</LI>
 </UL>
 
 <P>Frequent Contributors</P>
