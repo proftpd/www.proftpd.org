@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Downloading and mirror sites" :>//
-<: $last_changed = "134/01/1900 - mark" :>//
+<: $last_changed = "159/01/1900 - mark" :>//
 
 #include "header.epl"
 
@@ -220,11 +220,6 @@ Location: Norway<br />
 Maintained by: Dag Stenstad<br />
 </p>
 <p>
-<a href="ftp://ftp.borregata.no/pub/linux/proftpd/">ftp://ftp.borregata.no/pub/linux/proftpd/</A><br />
-Location: Norway<br />
-Maintained by: BiG-PaPa<br />
-</p>
-<p>
 <a href="ftp://ftp.tomt.net/pub/proftpd">ftp://ftp.tomt.net/pub/proftpd</A><br />
 Location: Norway<br />
 Maintained by: Andre Tomt<br />
@@ -233,6 +228,11 @@ Maintained by: Andre Tomt<br />
 <a href="http://ftp.isu.edu.tw/pub/Unix/FTP/proftpd/">http://ftp.isu.edu.tw/pub/Unix/FTP/proftpd/</A><br />
 Location: Taiwan (I-SHOU University (TW, Kaohsiung))<br />
 Maintained by: KTH<br />
+</p>
+<p>
+<a href="ftp://spirit.profinet.sk/mirrors/Proftpd/">ftp://spirit.profinet.sk/mirrors/Proftpd/</A><br />
+Location: Slovakia (slovak republic) (Bratislava, Slovakia)<br />
+Maintained by: lubos klokner<br />
 </p>
 <p>
 <a href="ftp://ftp.interweb.pl/pub/mirrors/ftp.proftpd.org/">ftp://ftp.interweb.pl/pub/mirrors/ftp.proftpd.org/</A><br />

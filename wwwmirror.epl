@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Website mirrors" :>//
-<: $last_changed = "134/01/1900 - mark" :>//
+<: $last_changed = "159/01/1900 - mark" :>//
 
 #include "header.epl"
 
@@ -43,7 +43,6 @@
 <a href="http://www.jp.proftpd.org/">jp</a>
 <a href="http://www.lt.proftpd.org/">lt</a>
 <a href="http://www.nl.proftpd.org/">nl</a>
-<a href="http://www.no.proftpd.org/">no</a>
 <a href="http://www.nz.proftpd.org/">nz</a>
 <a href="http://www.pl.proftpd.org/">pl</a>
 <a href="http://www.pt.proftpd.org/">pt</a>
@@ -52,6 +51,7 @@
 <a href="http://www.se.proftpd.org/">se</a>
 <a href="http://www.sg.proftpd.org/">sg</a>
 <a href="http://www.tr.proftpd.org/">tr</a>
+<a href="http://www.tw.proftpd.org/">tw</a>
 <a href="http://www.ua.proftpd.org/">ua</a>
 <a href="http://www.uk.proftpd.org/">uk</a>
 <a href="http://www.us.proftpd.org/">us</a>
@@ -76,6 +76,16 @@ Maintained by: Thorsten Ludewig<br />
 <a href="http://proftpd.area51.dk/">http://proftpd.area51.dk/</a><br />
 Location: Denmark (Copenhagen)<br />
 Maintained by: Gorm Jorgensen<br />
+</p>
+<p>
+<a href="http://proftpd.ttlhost.com/">http://proftpd.ttlhost.com/</a><br />
+Location: United states (Irvine, CA)<br />
+Maintained by: John Ellis<br />
+</p>
+<p>
+<a href="http://proftpd.zadnik.org/">http://proftpd.zadnik.org/</a><br />
+Location: Bulgaria (Sofia)<br />
+Maintained by: Alexander Velin<br />
 </p>
 <p>
 <a href="http://hosted.selfdestruct.net/">http://hosted.selfdestruct.net/</a><br />
@@ -106,11 +116,6 @@ Maintained by: Ayamura Kikuchi<br />
 <a href="http://proftpd.proserve.nl/">http://proftpd.proserve.nl/</a><br />
 Location: Netherlands (Amsterdam)<br />
 Maintained by: Peter Batenburg<br />
-</p>
-<p>
-<a href="http://proftpd.borregata.no/">http://proftpd.borregata.no/</a><br />
-Location: Norway (Tonsberg)<br />
-Maintained by: BiG-PaPa<br />
 </p>
 <p>
 <a href="http://mirror.tel.net.nz/proftpd/">http://mirror.tel.net.nz/proftpd/</a><br />
@@ -325,6 +330,11 @@ Maintained by: Christian Hamar alias krix<br />
 <a href="http://proftp.serveftp.org/">http://proftp.serveftp.org/</a><br />
 Location: Germany (Nürnberg)<br />
 Maintained by: Flo Spiege<br />
+</p>
+<p>
+<a href="http://www.proftpd.gibt-es.net/">http://www.proftpd.gibt-es.net/</a><br />
+Location: Germany (Oberhausen, Nordrhein-Westfalen, Germany)<br />
+Maintained by: Tim Korves<br />
 </p>
 </dl>
 
