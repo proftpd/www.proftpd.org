@@ -34,12 +34,12 @@
     <a NAME="conformance"></a>
     <p>
     ProFTPD 1.2 conforms to the FTP protocol standard as defined
-    in RFC-959 (STD-9) and RFC-1123 (STD-3).  All the required
-    commands are implemented, as are most of the optional commands
-    appropriate for FTP servers hosted on POSIX (IEEE-1003.1) style
-    operating systems.
-    However, the STOU (Store Unique) and ACCT (Account) commands
-    are not implemented.
+    in RFC-959 (STD-9) and RFC-1123 (STD-3).  It also implements
+    RFC-2389 ("Feature negotiation mechanism for the File Transfer
+    Protocol"). All the required commands are implemented, as are most of
+    the optional commands appropriate for FTP servers hosted on POSIX
+    (IEEE-1003.1) style operating systems.  However, the ACCT (Account)
+    command is not implemented.
     </p>
 
     <a name="extensions"></a>
@@ -58,10 +58,8 @@
     of the recent standards track RFCs developed by the IETF CAT
     and FTPEXT Working Groups.
     It is likely that attention will first focus on RFC-2228
-    "FTP Security Extensions", RFC-2389
-    "Feature negotiation mechanism for the File Transfer Protocol",
-    and the MLST and MLSD commands from the IETF Draft
-    "Extensions to FTP".
+    "FTP Security Extensions", and the MLST and MLSD commands from
+    the IETF Draft "Extensions to FTP".
     RFC-2640 "Internationalization of the File Transfer Protocol"
     also may receive early attention.
     </p>
