@@ -31,7 +31,6 @@
 <a href="http://www.ba.proftpd.org/">ba</a>
 <a href="http://www.be.proftpd.org/">be</a>
 <a href="http://www.bg.proftpd.org/">bg</a>
-<a href="http://www.ca.proftpd.org/">ca</a>
 <a href="http://www.ch.proftpd.org/">ch</a>
 <a href="http://www.cn.proftpd.org/">cn</a>
 <a href="http://www.de.proftpd.org/">de</a>
@@ -73,11 +72,6 @@ Maintained by: Rasmus Andersen<br />
 <a href="http://proftpd.zadnik.org/">http://proftpd.zadnik.org/</a><br />
 Location: Bulgaria (Sofia)<br />
 Maintained by: Alexander Velin<br />
-</p>
-<p>
-<a href="http://proftpd.proxad.net/">http://proftpd.proxad.net/</a><br />
-Location: France (Paris)<br />
-Maintained by: Benoit Artuso<br />
 </p>
 <p>
 <a href="http://proftpd.ayamura.org/">http://proftpd.ayamura.org/</a><br />
@@ -235,11 +229,6 @@ Location: United states (Dallas)<br />
 Maintained by: Martin S.<br />
 </p>
 <p>
-<a href="http://proftp.serveftp.org/">http://proftp.serveftp.org/</a><br />
-Location: Germany (Nürnberg)<br />
-Maintained by: Flo Spiege<br />
-</p>
-<p>
 <a href="http://proftpd.nurulfikri.co.id/">http://proftpd.nurulfikri.co.id/</a><br />
 Location: Indonesia (Depok)<br />
 Maintained by: Reza Iskandar Achmad<br />
@@ -280,19 +269,9 @@ Location: France (Paris)<br />
 Maintained by: CHAILLAN Nicolas<br />
 </p>
 <p>
-<a href="http://www.proftpd.cw-services.net/">http://www.proftpd.cw-services.net/</a><br />
-Location: Germany (Karlsruhe, Germany)<br />
-Maintained by: Tim Korves<br />
-</p>
-<p>
 <a href="http://proftpd.web-spread.com/">http://proftpd.web-spread.com/</a><br />
 Location: Italy (Rome)<br />
 Maintained by: Fabio Massi<br />
-</p>
-<p>
-<a href="http://proftpd.activalink.net/">http://proftpd.activalink.net/</a><br />
-Location: Canada (Toronto, Canada (The ActivaLink Project, Forensic Research Unit))<br />
-Maintained by: Ervin Sarkisov<br />
 </p>
 <p>
 <a href="http://proftpd.MyBSD.org.my/">http://proftpd.MyBSD.org.my/</a><br />
@@ -308,11 +287,6 @@ Maintained by: Doru Popa<br />
 <a href="http://proftpd.thedigitaldream.co.uk/">http://proftpd.thedigitaldream.co.uk/</a><br />
 Location: United kingdom<br />
 Maintained by: Matthew Jones<br />
-</p>
-<p>
-<a href="http://proftpd.cafesrv.com/">http://proftpd.cafesrv.com/</a><br />
-Location: Hong kong<br />
-Maintained by: Lam KW<br />
 </p>
 </dl>
 
