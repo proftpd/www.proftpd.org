@@ -19,6 +19,8 @@
 <pre>
 35e669cb085879eea21c6db9e7af2040 <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.2.8.tar.bz2">proftpd-1.2.8.tar.bz2</a>
 9064ac430730c792b13910bd7c8b2060 <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.2.7.tar.gz">proftpd-1.2.8.tar.gz</a>
+5b6291a5c92687c5b697202369f71466 <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.2.9rc1.tar.bz2">proftpd-1.2.9rc1.tar.bz2</a>
+7c9dbe370c02c61c36a282ce50cff7bd <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.2.9rc1.tar.gz">proftpd-1.2.9rc1.tar.gz</a>
 </pre>
 
   </td>
@@ -50,6 +52,30 @@ Version: PGP 6.5.8
 iQA/AwUAPmQ7ZbeOiT+lEZdqEQJJ6QCeJcBgl19C3ErrshM3j7z5K049UU8AoKHG
 L79MJrvRvQ0oiECdtGbuRfwe
 =u41Z
+-----END PGP SIGNATURE-----
+</pre></font>
+
+<b><font face="arial" color="#003399">proftpd-1.2.8.tar.bz2.asc</font></b>
+<br />
+<font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><pre>
+-----BEGIN PGP SIGNATURE-----
+Version: PGP 6.5.8
+
+iQA/AwUAPsRsQbeOiT+lEZdqEQJ0+QCgvagAO5ONIBin1oWFmBIqqva0C0MAn2A0
+FKcY9ws5Eh9keI7cuXD/fYwe
+=jwuG
+-----END PGP SIGNATURE-----
+</pre></font>
+
+<b><font face="arial" color="#003399">proftpd-1.2.9rc1.tar.gz.asc</font></b>
+<br />
+<font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><pre>
+-----BEGIN PGP SIGNATURE-----
+Version: PGP 6.5.8
+
+iQA/AwUAPsRsNbeOiT+lEZdqEQIZwgCg3ZUn7Q+7ejLKKQoGbdNL54tt+DsAn105
+PWmrV0oRD+hD7+GdT2awXkQu
+=J0o5
 -----END PGP SIGNATURE-----
 </pre></font>
 
