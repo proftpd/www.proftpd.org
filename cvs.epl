@@ -60,7 +60,7 @@
     </blockquote>
 
     <p>That's it.  You can keep up to date by executing <code>cvs
-    -z3 -update dP</code> periodically.</p>
+    -z3 -update -dP</code> periodically.</p>
   </td>
 </tr>
 </table>
