@@ -44,6 +44,13 @@
     signatures posted.  <b>All current users of ProFTPD are strongly urged to
     upgrade to one of these patched distributions.</b>
     </p>
+
+    <p>CVE (<a href="http://cve.mitre.org">cve.mitre.org</a>) has assigned
+    CANN-2003-0831 as the CVE name for this vulnerability:
+<pre>
+      <a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CAN-2003-0831">http://cve.mitre.org/cgi-bin/cvename.cgi?name=CAN-2003-0831</a>
+</pre>
+    </p>
   </td>
 </tr>
 
