@@ -6,8 +6,8 @@ Version: $Id$
 C = Committed
 
 1.2.6
-        mod_quota - removed until security problems are fixed
-        Remaining outstanding fixes / bugs in the ticketing system.
+C       mod_quota - removed until security problems are fixed
+C       Remaining outstanding fixes / bugs in the ticketing system.
 N/A?    'Other' arch fixes as and when tested
 C?      Grubb's signal handler changes
 C       IFModule patch 
