@@ -149,7 +149,7 @@ More information available at http://www.proftpd.org/proftpd-devel-archive/full/
     <b><font face="arial" color="#003399">Script-executing module</font></b>
     <br />
     <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
-    <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/modules/mod_exec.html">http://www.castaglia.org/proftpd/modules/mod_exec.html</a></font>
+    <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/modules/mod_exec.html">http://www.castaglia.org/proftpd/modules/mod_exec.html</a></i></font>
 
     <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
       Support for executing external scripts and commands, based on a variety
