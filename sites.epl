@@ -2,7 +2,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Sites powered by ProFTPD" :>//
-<: $last_changed = "14/Sept/2002 - hamster" :>//
+<: $last_changed = "08/Oct/2002 - hamster" :>//
 
 #include "header.epl"
 
@@ -21,19 +21,17 @@
       <dd>Suppliers of Linux based network appliances, in their latest release they have chosen to use ProFTPD as the ftp server.</dd>
     </dl>
 
+<!-- gnu.org removed until we can confirm they're still using proftpd -->
+<!--
     <dl>
       <dt><a href="ftp://ftp.gnu.org/">GNU.org</a></dt>
       <dd>The GNU project</dd>
     </dl>
+-->
 
     <dl>
       <dt><a href="ftp://ftp.kernel.org/">ftp.kernel.org</a></dt>
       <dd>The primary source for Linux kernels.</dd>
-    </dl>
-
-    <dl>
-      <dt><a href="ftp://ftp.gnu.org/">GNU.org</a></dt>
-      <dd>The GNU project</dd>
     </dl>
 
     <dl>
