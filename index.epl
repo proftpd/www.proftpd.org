@@ -9,6 +9,20 @@
 
 <tr>
   <td>
+    <b><font face="arial" color="#003399">Urgent testing needed</font></b>
+    <br />
+    <font size="-1">[<i>09/May/2002</i>]</font>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+    The core team and particularly TJ have been busy clearing a stack of 
+    patches from the bugs system.  What we need now is some urgent testing
+    so checkout a copy of the latest CVS and see if you can break it.
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
       <b><font face="arial" color="#003399">CVS changes</font></b>
       <br />
       <font size="-1">[<i>07/May/2002</i>]</font>

@@ -1,0 +1,46 @@
+<: # $Id$ :>//
+<: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
+<: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
+<: $html_title = "Reporting problems" :>//
+<: $last_changed = "09/May/2002 - hamster" :>//
+
+#include "header.epl"
+
+<table bgcolor="white">
+<tr valign=top>
+  <td>
+    <div class="headline">
+      <: print "<b>$html_title</b>" unless !defined($html_title) :>//
+    </div>
+
+    <p>As the code develops and changes there will always be new
+    'features' and bugs introduced.  While the developers always
+    strive to attain perfection mistakes and the unexpected always
+    occur.</p>
+
+    <li><a href="http://proftpd.linux.co.uk/localsite/Userguide/linked/debugging-problems.html">Guide on tracking proftpd bugs</a>
+    <li><a href="http://www.tuxedo.org/~esr/faqs/smart-questions.html">Guide on how to ask 'smart' questions</a>
+
+    <br />
+    <br />
+
+    <div class="headline">Diagnosing problems</div>
+
+    <p>Before wading in to track down a problem it's worth consulting
+    the <a href="/docs/faq/proftpdfaq.html">FAQ</a> and the <a
+    href="http://bugs.proftpd.org/">bug database</a> to see if there
+    are any reports of similar issues.</p>
+
+    <ul>
+    <li><a href="http://bugs.proftpd.org/buglist.cgi?&cmdtype=runnamed&namedcmd=Open%20tickets">All open bugs</a>
+    <li><a href="http://bugs.proftpd.org/buglist.cgi?bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_severity=blocker&bug_severity=critical&bug_severity=major&bug_severity=normal&email1=&emailtype1=substring&emailassigned_to1=1&email2=&emailtype2=substring&emailreporter2=1&bugidtype=include&bug_id=&changedin=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&short_desc=&short_desc_type=allwordssubstr&long_desc=&long_desc_type=allwordssubstr&bug_file_loc=&bug_file_loc_type=allwordssubstr&keywords=&keywords_type=anywords&field0-0-0=noop&type0-0-0=noop&value0-0-0=&cmdtype=doit&namedcmd=Normal%2B&newqueryname=&order=Reuse+same+sort+as+last+time">All
+bugs with a severity of 'normal' or higher</a>
+    <li><a href="http://bugs.proftpd.org/buglist.cgi?bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_severity=enhancement&email1=&emailtype1=substring&emailassigned_to1=1&email2=&emailtype2=substring&emailreporter2=1&bugidtype=include&bug_id=&changedin=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&short_desc=&short_desc_type=allwordssubstr&long_desc=&long_desc_type=allwordssubstr&bug_file_loc=&bug_file_loc_type=allwordssubstr&keywords=&keywords_type=anywords&field0-0-0=noop&type0-0-0=noop&value0-0-0=&cmdtype=doit&namedcmd=Normal%2B&newqueryname=&order=Reuse+same+sort+as+last+time">Requested
+Enhancements</a>
+    </ul>
+
+</td>
+</tr>
+</table>
+
+#include "footer.epl"
