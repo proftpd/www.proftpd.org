@@ -9,12 +9,12 @@
 
 <tr>
   <td>
-    <b><font face="arial" color="#003399">RPMs released</font></b>
+    <b><font face="arial" color="#003399">bugs.proftpd.org down</font></b>
     <br />
     <font size="-1">[<i>04/July/2002</i>]</font>
     <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      RPMs for 1.2.5 and 1.2.6rc1 have been uploaded to ftp.proftpd.org 
-      and the mirroring system.
+      The bugs database system will be offline until some urgent upgrades
+      are complete.  This should be completed around 20:00 UTC on the 4/July/2002
     </font></blockquote>
   </td>
 </tr>
