@@ -30,7 +30,7 @@ More information available at http://www.proftpd.org/proftpd-devel-archive/full/
     <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/modules/mod_dynmasq.html">http://www.castaglia.org/proftpd/modules/mod_dynmasq.html</a></i></font>
 
     <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      For sites that use the <code>MasqueradeAddress</directive> and which
+      For sites that use the <code>MasqueradeAddress</code> and which
       have dynamic IP addresses, the <code>mod_dynmasq</code> module is
       very useful.
     </font></blockquote>
