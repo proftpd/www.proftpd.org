@@ -100,7 +100,7 @@ Contact: Lucian Daniel Kafka <luci@conexim.com.au>
 -->
     <dl>
       <dt><a href="http://www.conexim.com.au/">Conexim web hosting Australia</a></dt>
-      <dd>WebHosting provider in Australia based round open source software.
+      <dd>WebHosting provider in Australia based around open source software.
       </dd>
     </dl>
 
@@ -159,6 +159,12 @@ Contact: Lucian Daniel Kafka <luci@conexim.com.au>
       <dt><A href="http://www.cslab.vt.edu/">Virginia Tech Computer Science Lab</A></dt>
       <dd>This site uses ProFTPD to host ftp3.freebsd.org and a Progeny Linux mirror, 
           shifting over 250Gb of data monthly.</dd>
+    </dl>
+
+    <dl>
+      <dt><A href="http://www.subspacenet.com/">SubspaceNet</A></dt>
+      <dd>Low-cost professional web hosting with 24/7 FTP site access via
+          ProFTPD</dd>
     </dl>
 
 <!--
