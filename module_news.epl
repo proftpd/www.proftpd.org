@@ -1,8 +1,8 @@
 <: # $Id$ :>//
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
-<: $html_title = "Third party module and patches" :>//
-<: $last_changed = "19/Jun/2001 - jwm" :>//
+<: $html_title = "Third-party modules and patches" :>//
+<: $last_changed = "20/Jun/2001 - jwm" :>//
 
 #include "header.epl"
 
