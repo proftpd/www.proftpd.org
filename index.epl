@@ -8,6 +8,20 @@
 <table bgcolor="white">
 
 
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">1.2.10rc2 released</font></b>
+    <br />
+    <font size="-1">[<i>13/Jul/2004</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      <p>The ProFTPD Project is pleased to make the 1.2.10rc2 release
+      available to the community.  Highlights include <Class> fixes,
+      mod_sql bugfixes, support for the -h ListOption, and better
+      mod_ifsession handling of <Global> configurations.  Please read the
+      NEWS file for the full details.
+    </font></blockquote>
+  </td>
+</tr>
 
 <tr>
   <td>
