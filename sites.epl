@@ -43,6 +43,13 @@
     </dl>
 
     <dl>
+      <dt><a href="ftp://ftp.samba.org/">ftp.samba.org</a></dt>
+      <dd>Samba is an Open Source/Free Software suite that provides seamless
+          file and print services to SMB/CIFS clients.
+      </dd>
+    </dl>
+
+    <dl>
       <dt><a href="http://www.linksys.com/">Linksys</a></dt>
       <dd>Linksys is the leader of broadband, wireless and networking hardware
           to the home and SOHO user worldwide.
