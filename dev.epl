@@ -16,7 +16,8 @@ production release of ProFTPD will be 1.4.x.  The next development
 release will be 1.3.x.  Stay tuned to the development mailing list for
 details on features/functionality planned for 1.3.x.</P>
 
-<P>Meanwhile, you'll find instructions on accessing the ProFTPD CVS
-repository <A HREF="/docs/cvs.html">here</A>.</P>
+<P>Meanwhile, you'll find <A href="/docs/cvs.html">instructions</A>
+on accessing the ProFTPD CVS repository on the <A href="/docs/">docs
+pages</A>.</P>
 
 #include "footer.epl"

@@ -116,11 +116,13 @@
 	<: print "List Policy" unless !defined($html_title) :>//
 	</DIV>
 
+	<UL>
 	<LI>Posting is restricted to list members only, this is to
 	limit the amount of spam.
 
 	<LI>The list admins reserve the right to remove members from
 	the list at any time.
+	</UL>
 
 	</TD></TR>
 
@@ -131,11 +133,7 @@
 	<IMG src="http://sourceforge.net/sflogo.php?group_id=17793" width="88" height="31" border="0" alt="SourceForge Logo">
 	</A>
 	
-<!--	<A href="http://sourceforge.net">
-	<IMG src="http://sourceforge.net/sflogo.php?group_id=12589" width="88" height="31" border="0" alt="SourceForge Logo">
-	</A>
--->
-	</TD</TR>
+	</TD></TR>
 	
 
 #include "footer.epl"

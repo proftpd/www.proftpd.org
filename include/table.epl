@@ -47,6 +47,7 @@
                         <li><A href="/features.html">Features</A>
 			<li><a href="/platforms.html">Supported Platforms</A>
 			<LI><A HREF="http://bugs.proftpd.org/">Bug reporting system</A>
+			<LI><A HREF="http://bugs.proftpd.org/buglist.cgi?bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&email1=&emailtype1=substring&emailassigned_to1=1&email2=&emailtype2=substring&emailreporter2=1&bugidtype=include&bug_id=&changedin=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&short_desc=&short_desc_type=substring&long_desc=&long_desc_type=substring&bug_file_loc=&bug_file_loc_type=substring&status_whiteboard=&status_whiteboard_type=substring&field0-0-0=noop&type0-0-0=noop&value0-0-0=&order=bugs.bug_id">Current bug reports</A>
                         <LI><A HREF="/links.html">Other sites</A>
                         <LI><A HREF="/sites.html">Sites powered by ProFTPD</A>
                         <LI><A href="/credits.html">Core team and contributers</A></LI>
@@ -126,9 +127,9 @@
                       <td><font face="verdana,arial"size=-1>
                         <UL>
                         <li><a href="/lists.html">Mailing Lists</A>
-                        <LI><A HREF="/proftpd-announce-archive/">Announce Archive</A>
-                        <LI><A HREF="/proftpd-l-archive/">Users Archive</A>
-                        <LI><A HREF="/proftpd-devel-archive/">Devel Archive</A>
+                        <LI><A HREF="http://www.proftpd.org/proftpd-announce-archive/">Announce Archive</A>
+                        <LI><A HREF="http://www.proftpd.org/proftpd-l-archive/">Users Archive</A>
+                        <LI><A HREF="http://www.proftpd.org/proftpd-devel-archive/">Devel Archive</A>
                         </UL>
                         </font>
                       </td>

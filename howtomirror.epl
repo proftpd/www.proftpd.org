@@ -25,17 +25,23 @@
 Web Mirrors
 </DiV>
 
-<P>For those hardy fools wishing to mirror the website there are two
-options, the first is to mirror via a tool such as wget, please ensure
-it honours the robots file which excludes mirroring of the list archives
-(they're too big to allow mirorring atm).  Oh and don't forget to mirror
-the <A href="/proftpd.css">proftpd.css</A> file *grin*.</P>
+<P>For those hardy fools wishing to mirror the website there are a few options.</P>
 
-<P>The second option is to checkout a copy of the cvs version of the
-site and build locally, this requires gnu make and eperl.  I'd be
-interested to hear of people using this second method as it will be my
-prefered method.  The cvs repository as anonymous access and is hosted
-at http://www.sourceforge.net/projects/pdd/.</P>
+<DL>
+<DT>rsync
+<DD>This the prefered option, the rsync server is rsync://proftpd.org::proftpd-www 
+
+<DT>CVS
+<DD>The cvs server holds the source files and build system from which the site is built, please feel free to use 
+this as a base to build your mirror.
+The CVS repository can be found at <A
+href="http://www.sourceforge.net/projects/pdd/">http://www.sourceforge.net/projects/pdd/</A>
+
+</DL>
+
+<P>The mailing list archives are explicity excluded from the publically
+mirrorable site due to bandwidth and searching issues.  Please honour
+this.</P>
 
 <DIV CLASS="headline_small">
 FTP Mirrors
@@ -43,6 +49,8 @@ FTP Mirrors
 
 <P>Sites wishing to mirror the ftp site are welcome, under normal
 conditions please only mirror the site once per day.  The location to mirror is ftp://ftp.proftpd.org/</P>
+
+<P>Rsync is now available as a mirroring system, please point your connection at rsync://proftpd.org::proftpd-ftp
 
 <P>Once your mirror is up please email hamster@vom.tm with the details of your mirror
 

@@ -22,7 +22,18 @@ for allowing themselves to be listed.</P>
 
 <DL>
 <DT><a href="ftp://ftp.kernel.org/">ftp.kernel.org</A>
-<DD>The primary source for Linux kernels.</A>
+<DD>The primary source for Linux kernels.
+</DL>
+
+<DL>
+<DT><A HREF="http://www.sourceforge.net">Sourceforge</A>
+<DD>The home for a large number of open source projects including the documentation arm of the proftpd project and the mailing lists
+</DL>
+
+<DL>
+<DT><A HREF="http://www.e-magic.be">e-magic</A>
+<DD>Web hosting/design company located in Belgium, mainly using
+open-source software.
 </DL>
 
 <DL>

@@ -88,20 +88,6 @@ in CVS.
 The AllowCHMOD directive has a bug in this version which results in it's setting within the conf file only being honoured for the first use.  After which CHMOD commands are denied regardless.  
 </P>
 
-<!-- Please leave the following text unmolested -->
-<!-- 13 lines -->
-<!--
-<P>
-<EM>Bug:</EM> <BR>
-<EM>Bugzilla ID:</EM> <BR>
-<EM>Version:</EM> <BR>
-<EM>Platforms:</EM> <BR>
-<EM>Severity/Effect:</EM> <BR>
-<EM>Fixed in:</EM> <BR><BR>
-
-</P>
--->
-
 	  </TD>
 	</TR>
 

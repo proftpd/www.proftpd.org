@@ -36,49 +36,9 @@
 		implement the configurability and features
 		desired. ProFTPD is not a hack based on any other
 		server, it's an independent source tree from the
-		ground up.  Click <A HREF="/sites.html">here</A> for a
-		small list of some of the sites ProFTPD powers --
-		many of them handling large volumes of traffic on a
-		daily basis.
+		ground up.  A number of well known and high traffic <A
+		HREF="/sites.html">sites</A> use ProFTPD.
 	</P>
-
-<!--
-	<P>
-		ProFTPD is known to compile and run on at least the
-		following platforms (if you have any that are not in
-		this list, please email <A
-		HREF="mailto:"proftpd-devel@proftpd.org">the developers list</A>):
-
-		<BR>
-		<TABLE BORDER="0" ALIGN="center" WIDTH="75%">
-		<:
-		   my @platforms = (
-		      'AIX', 'Digital Unix', 'DG/UX', 'FreeBSD*',
-		      'HP/UX', 'IRIX*', 'Mac OS/X', 'Linux*', 'NetBSD',
-		      'OpenBSD', 'SCO', 'Solaris', 'SunOS', 'BSD/OS'
-		   );
-		   
-		   @platforms = sort(@platforms);
-		   
-                   for(my $i = 0; $i <= $#platforms; $i++) {
-                       print "<TR>\n";
-
-                       print '     <TD>', $platforms[$i++], "</TD>\n";
-                       print '     <TD>', $platforms[$i++], "</TD>\n";
-                       print '     <TD>', $platforms[$i], "</TD>\n";
-		       print "</TR>\n\n";
-                   }
-		:>
-		</TABLE>
-		<BR>
-
-		An asterisk(*) denotes a platform that the core
-		ProFTPD team has access to test on.  If you wish to
-		donate either hardware or network access please
-		contact <A
-		HREF="mailto:proftpd-devel@proftpd.org">the developers list</A>.
-	</P>
--->
 
 	<P>
 		In addition to wu-ftpd there are a few of other FTP

@@ -38,7 +38,7 @@ are rolled on a number of sites and these are available for download.</P>
 </UL>
 
 <div class="headline_small">Detailed Instructions</div>
-Assuming you have a CVS client, the process for accessing the ProFTPD
+<P>Assuming you have a CVS client, the process for accessing the ProFTPD
 repository is fairly straight forward:</P>
 
 
