@@ -34,6 +34,7 @@ C       #1701 - Reverse lookups not working
         #1507 - regex pattern matching in [Allow/Deny][User/Group]
         #1623 - "connected since" in ftpwho
         #1644 - LogFormat local IP and FQDN tags missing
+        #1649 - setproctitle() prepends and appends process name
         #1687 - Add contrib module for RADIUS authentication, accounting
         #1705 - Add contrib module for time-of-day restrictions
 
