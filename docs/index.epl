@@ -32,9 +32,9 @@
     </ul>
 
     <ul>
-		<li><a href="http://rad.geology.washington.edu/~tj/proftpd/doc/devel-guide/">ProFTPD Developer's Guide</a> (by TJ Saunders)</li>
-		<li><a href="http://rad.geology.washington.edu/~tj/proftpd/doc/contrib/ProFTPD-mini-HOWTO-NAT.txt">Mini-HOWTO for ProFTPD and NAT</a> (by Tobias Ekbom)</li>
-		<li><a href="http://rad.geology.washington.edu/~tj/proftpd/doc/contrib/ProFTPD-mini-HOWTO-SSH.html">Mini-HOWTO for FTP over SSH</a> (by TJ Saunders)</li>
+		<li><a href="http://www.castaglia.org/proftpd/doc/devel-guide/">ProFTPD Developer's Guide</a> (by TJ Saunders)</li>
+		<li><a href="http://www.castaglia.org/proftpd/doc/contrib/ProFTPD-mini-HOWTO-NAT.txt">Mini-HOWTO for ProFTPD and NAT</a> (by Tobias Ekbom)</li>
+		<li><a href="http://www.castaglia.org/proftpd/doc/contrib/ProFTPD-mini-HOWTO-SSH.html">Mini-HOWTO for FTP over SSH</a> (by TJ Saunders)</li>
 	</ul>
 
     <hr />
