@@ -26,6 +26,7 @@ C       #1701 - Reverse lookups not working
         #1076 - Toggle parsing of .ftpaccess files with a AllowOverride
         #1231 - Extra options for ftpwho
         #1241 - Homedir on demand
+        #1253 - ServerAddress
         #1272 - DenyFilter by User or DenyFilter by Dire
         #1395 - Check return values in PRIVS calls
         #1432 - Pedantic handling of leading whitespace in FTP commands
@@ -43,7 +44,6 @@ C       #1701 - Reverse lookups not working
         Small enchancement patches
         'Other' arch fixes as and when tested
         #1205 - Add debug option to SystemLog
-        #1253 - ServerAddress
         #1482 - %U cookie to LogFormat
         #1515 - Enable mod_log to log into default log / syslog
         #1605 - MKD and RMD do not log filepaths
