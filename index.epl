@@ -1,11 +1,33 @@
 <: # $Id$ :>//
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
-<: $last_changed = "28/Dec/2002 - jwm" :>//
+<: $last_changed = "12/May/2004 - hamster" :>//
 
 #include "header.epl"
 
 <table bgcolor="white">
+
+
+
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">Security Issues</font></b>
+    <br />
+    <font size="-1">[<i>12/May/2004</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+
+      <p>There are two issues which have come to our attention, there
+      is an additional flaw related to the ASCII translation
+      bug discovered by X-Force, this affects all versions up to and
+      including 1.2.9rc3.  Versions from 1.2.9 are not vulnerable.
+      Additionally a flaw in the CIDRACL code has been discovered which
+      can lead to an escalation in access rights within the ftp site.
+      This flaw affects all versions up to and including 1.2.9, it has
+      been fixed in cvs and 1.2.10rc1.  To avoid the flaw do not use
+      CIDR based ACLs on vulnerable versions.
+    </font></blockquote>
+  </td>
+</tr>
 
 <tr>
   <td>
