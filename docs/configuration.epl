@@ -4028,6 +4028,9 @@ href="#tcpBackLog"><u>tcpBackLog</u></a><u> value on heavily loaded
 
 <P>Please report any corrections or additions via <A
 HREF="http://bugs.proftpd.org/">Bugzilla</A> or to <A HREF="mailto:hamster@vom.tm">Mark</A></P>
+
+</td></tr>
+</table>
  
 
 #include "footer.epl"

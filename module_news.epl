@@ -2,7 +2,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Third-party modules and patches" :>//
-<: $last_changed = "22/Jun/2001 - hamster" :>//
+<: $last_changed = "02/Jul/2001 - hamster" :>//
 
 #include "header.epl"
 
@@ -14,25 +14,9 @@
     </div>
 
 <!--
-
 SQL authentication modules for MySQL and PostgreSQL (mod_sql, mod_sql_mysql, mod_sql_postgres)
 Andrew Houghton (aah@acm.org)
 http://www.lastditcheffort.org/aah/mod_sql.html
-
-LDAP authentication module (mod_ldap)
-John Morrissey (jwm@horde.net)
-http://horde.net/~jwm/software/mod_ldap/
-
-TCP Wrappers support (mod_wrap)
-TJ Saunders (tj@digisle.net)
-http://rad.geology.washington.edu/~tj/proftpd/
-
-Upload/download ratio support (mod_ratio)
-Non-OS-based quota support (mod_quota)
-OneTime Password in Everything support (mod_opie)
-DBM authentication (mod_dbauth, mod_gdbmauth)
-Eric (eric@urbanrage.com)
-ftp://ftp.urbanrage.com/pub/c/
 
 Kerberos 5 support (mod_krb5pw)
 OS-based filesystem quota support (mod_fsquota)
@@ -42,9 +26,43 @@ Password Check Kit (mod_pwcheck)
 Akihiko YAMAMOTO (star@eos.hokudai.ac.jp)
 ftp://ftp.eos.hokudai.ac.jp/pub/pck/release/
 More information available at http://www.proftpd.org/proftpd-devel-archive/full/msg01630.html
-
-
 -->
+
+
+	<ul>
+		<b><font face="arial" color="#003399">LDAP authentication module</font></b>
+		<br />
+		<br /><font size="-1"><i>Maintainer: John Morrissey</i></font>
+		<br /><font size="-1"><i><a href="http://horde.net/~jwm/software/mod_ldap/">http://horde.net/~jwm/software/mod_ldap</a></font>
+		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+			Authentication support using the Lightweight Directory Access Protocol.
+		</blockquote>
+	</ul>
+
+	<ul>
+		<b><font face="arial" color="#003399">CDB authentication module</font></b>
+		<br />
+		<br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
+		<br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/">http://www.castaglia.org/proftpd/</a></font>
+		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+			Support for Dan J. Bernstein's <a
+			href="http://cr.yp.to/cdb.htm">CDB format</a>
+			for group and passwd file lookups, this database
+			format is known for it's speed.
+		</blockquote>
+	</ul>
+		
+	<ul>
+		<b><font face="arial" color="#003399">TJ's enhancement patches</font></b>
+		<br />
+		<br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
+		<br /><font size="-1"><i><a href="http://rad.geology.washington.edu/~tj/proftpd/">http://rad.geology.washington.edu/~tj/proftpd/</a></font>
+		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+			Lots of useful patches not included in the main source ball including
+			file size control, blocking of ftpaccess parsing
+			support for IfDefine and IfModule support
+		</blockquote>
+	</ul>
 
 	<ul>
 		<b><font face="arial" color="#003399">mod_autorun (1.7)</font></b>

@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Downloading and mirror sites" :>//
-<: $last_changed = "27/07/2001 - mark" :>//
+<: $last_changed = "186/01/1900 - mark" :>//
 
 #include "header.epl"
 
@@ -423,6 +423,21 @@ Maintained by: Carlos Filipe<br />
 Location: Ireland (Dublin, Ireland)<br />
 Maintained by: Dave Burke<br />
 </p>
+<p>
+<a href="ftp://ftp.matrix.com.br/pub/proftpd/">ftp://ftp.matrix.com.br/pub/proftpd/</A><br />
+Location: Brazil (Sao Paulo, Brazil)<br />
+Maintained by: Rodrigo Campos<br />
+</p>
+<p>
+<a href="ftp://ftp.2mbit.com/pub/proftpd/">ftp://ftp.2mbit.com/pub/proftpd/</A><br />
+Location: United states (Islandia, NY USA)<br />
+</p>
+<p>
+<a href="ftp://proftpd.bylinux.net/pub/mirror/proftpd/">ftp://proftpd.bylinux.net/pub/mirror/proftpd/</A><br />
+Location: United kingdom ((ie UK, London))<br />
+Maintained by: pyjamas<br />
+</p>
 </dl>
 
+</td></tr></table>
 #include "footer.epl"

@@ -7,7 +7,7 @@
 #include "header.epl"
 
 <table bgcolor="white">
-<tr>
+<tr valign=top>
   <td>
     <div class="headline">
       <: print "<b>$html_title</b>" unless !defined($html_title) :>//
