@@ -8,6 +8,24 @@
 <table bgcolor="white">
 <tr>
   <td>
+    <b><font face="arial" color="#003399">1.2.8rc1 released</font></b>
+    <br />
+    <font size="-1">[<i>28/Dec/2002</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      1.2.8rc1 has just been released. This release includes numerous
+      new features, including:
+        <li>new contrib modules: mod_auth_file, mod_tls, mod_rewrite 
+        <li>new directives: AuthOrder, ListOptions, TransferRate
+        <li>new display variables: %i, %o, %t
+        <li>new log variables: %d, %D, %U
+        <li>RFC2389 support
+      RPMs should be available on the primary FTP site and mirrors soon.
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
     <b><font face="arial" color="#003399">Globbing "vulnerability"</font></b>
     <br />
     <font size="-1">[<i>12/Dec/2002</i>]</font>
