@@ -9,6 +9,20 @@
 
 <tr>
   <td>
+    <b><font face="arial" color="#003399">1.2.9rc3 released</font></b>
+    <br />
+    <font size="-1">[<i>15/Oct/2003</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      <p>The ProFTPD Project moves one step closer to a 1.2.9-final release
+      by releasing 1.2.9rc3.  This release fixes some of the IPv6 issues
+      introduced in 1.2.9rc2, and remedies the bugs that made 1.2.9rc2
+      incorrectly handle many configurations.
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
     <b><font face="arial" color="#003399">X-Force Research Discovers Remote Exploit</font></b>
     <br />
     <font size="-1">[<i>23/Sep/2003</i>]</font>
