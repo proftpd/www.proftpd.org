@@ -1541,7 +1541,25 @@ href="#Anonymous">&lt;Anonymous&gt;</a> block to hide all directory
   <a href="#IgnoreHidden">IgnoreHidden</a></p>
 
 <hr>
+<h2><a name="HideUser">HideUser</a></h2>
+<p><strong>Syntax:</strong> HideUser <em>userid</em><br />
+  <strong>Default:</strong> None<br />
+  <strong>Context:</strong> &lt;Directory&gt;, &lt;Anonymous&gt;<br />
+  <STRONG>Module:</STRONG> mod_core<br />
+  <strong>Compatibility:</strong> 0.99.0 and later</p>
+<p>The HideUser directive configures a <a
+href="#Directory">&lt;Directory&gt;</a> or &lt;<a
+href="#Anonymous">Anonymous&gt;</a> block to hide all directory 
+  entries owned by the specified user, unless the owning user is the currently 
+  logged-in, authenticated user. Normally, hidden directories and files cannot 
+  be seen via LIST or NLST commands but <strong>can</strong> be operated on via 
+  other FTP commands (CWD, DELE, RETR, etc). This behavior can be modified via 
+  the <a href="#IgnoreHidden">IgnoreHidden</a> directive.</p>
+<p><strong>See Also:</strong> <a href="#HideGroup">HideGroup</a>, <a
+href="#HideNoAccess">HideNoAccess</a>, <a
+href="#IgnoreHidden">IgnoreHidden</a></p>
 
+<hr>
 <h2><a name="HostRatio">HostRatio</a></h2>
 <p><strong>Syntax:</strong> HostRatio <em>foo1 foo2 foo3</em><br />
   <strong>Default:</strong> None known<br />
@@ -1592,25 +1610,6 @@ href="#Anonymous">&lt;Anonymous&gt;</a> block to hide all directory
   href="#HostsAllowSyslogLevel">HostsAllowSyslogLevel</a></p>
 
   <p><EM>Example:</EM> <code>HostsDenySyslogLevel local3</code></p>
-
-<hr>
-<h2><a name="HideUser">HideUser</a></h2>
-<p><strong>Syntax:</strong> HideUser <em>userid</em><br />
-  <strong>Default:</strong> None<br />
-  <strong>Context:</strong> &lt;Directory&gt;, &lt;Anonymous&gt;<br />
-  <STRONG>Module:</STRONG> mod_core<br />
-  <strong>Compatibility:</strong> 0.99.0 and later</p>
-<p>The HideUser directive configures a <a
-href="#Directory">&lt;Directory&gt;</a> or &lt;<a
-href="#Anonymous">Anonymous&gt;</a> block to hide all directory 
-  entries owned by the specified user, unless the owning user is the currently 
-  logged-in, authenticated user. Normally, hidden directories and files cannot 
-  be seen via LIST or NLST commands but <strong>can</strong> be operated on via 
-  other FTP commands (CWD, DELE, RETR, etc). This behavior can be modified via 
-  the <a href="#IgnoreHidden">IgnoreHidden</a> directive.</p>
-<p><strong>See Also:</strong> <a href="#HideGroup">HideGroup</a>, <a
-href="#HideNoAccess">HideNoAccess</a>, <a
-href="#IgnoreHidden">IgnoreHidden</a></p>
 
 <hr>
 <h2><a name="IdentLookups">IdentLookups</a></h2>
