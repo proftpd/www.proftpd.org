@@ -24,7 +24,7 @@
     <p>
     <em>Bug:</em> Remote Exploit in ASCII translation<br />
     <em>Bugzilla ID:</em> None<br />
-    <em>Version:</em> All<br />
+    <em>Version:</em> 1.2.7rc1 and later<br />
     <em>Platforms:</em> All<br />
     <em>Severity/Effect:</em> <b>Critical</b><br />
     <em>Date:</em> September 23, 2003<br /> 
