@@ -5,7 +5,6 @@ Version: $Id$
 C = Committed
 
 1.2.9
-        #1279 - AuthAgedPassword option
 C       #1532 - Human readable disk free
         #1711 - IPv6 support
 C       #1828 - mod_sql can only find mysql.sock if in /tmp
@@ -13,7 +12,6 @@ C       #1849 - Compile can have trouble finding mysql.h
 C       #1869 - Add option to ftpwho/ftpcount/ftptop
 C       #1915 - Unsafe pointer usage in scoreboard file format 
 C       #1921 - Socket-level performance tweaks
-        #1925 - Clean up of Class code
 C       #1932 - Make Max* checks a PASS POST_CMD handler
 C       #1933 - Add mod_ifsession contrib module
 C       #1960 - Add removed file size by DELE command to xferlog
@@ -22,12 +20,18 @@ C       Add RootRevoke, AnonRejectPasswords directives
 
 1.2.10
 
+        #1925 - Clean up of Class code
         #1696 - Include directive supports directories
         #1965 - Changing timing of handling of QUIT command
         #2013 - Track RFC2228 sessions in scoreboard
         #2015 - Add AND, OR keywords to Allow/Deny User/Group directives
-        #2062 - ProFTPD "ununsed parameters" cleanup
+        #2052 - ProFTPD "ununsed parameters" cleanup
+        #2062 - Enhance UserOwner/GroupOwner to take IDs as well as name
+                parameters
         #2072 - Add Controls API
+        #2086 - Add limits for PORT, PASV
+        #2098 - Add SetEnv, UnsetEnv directives
+        #2105 - Remove *Authoritative directives
 
 TBD
         i18n (including RFC2640)
