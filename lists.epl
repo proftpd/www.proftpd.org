@@ -19,6 +19,7 @@
 	<li><a href="#announce">Proftpd-Announce</a></li>
 	<li><a href="#users">Proftpd-Users</a></li>
 	<li><a href="#devel">Proftpd-Devel</a></li>
+        <li><a href="#docs">Proftpd-Docs</a></a>
 	<li><a href="#committers">Proftpd-Committers</a></li>
 	<li><a href="#mirrors">Proftpd-Mirrors</a></li>
 	<br>
@@ -90,6 +91,25 @@
   </td>
 </tr>
 
+<tr>
+  <td><a name="docs">
+    <b><font face="arial" color="#003399">Developers</font></b><br />
+    <font size="-1">[<i>proftpd-devel-request@proftpd.org</i>]</font>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      <p>This list is intended for those who are interested in the
+      development of documentation, including HOWTOs, tutorials, examples,
+      and translations.</p>
+
+      <br />
+
+      <p>To subscribe, <a
+      href="mailto:proftpd-docs-request@proftpd.org?subject=subscribe">e-mail
+      proftpd-docs-request@proftpd.org, with the subject
+      "subscribe."</a> or visit <a href="https://lists.sourceforge.net/lists/listinfo/proftp-docs">https://lists.sourceforge.net/lists/listinfo/proftp-docs</a></p>
+    </font></blockquote>
+  </td>
+</tr>
 <tr>
   <td><a name="committers">
     <b><font face="arial" color="#003399">Committers</font></b><br />
