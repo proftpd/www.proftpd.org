@@ -8,7 +8,7 @@ C = Committed
         Small enchancement patches
         'Other' arch fixes as and when tested
 C       #1205 - Add debug option to SystemLog
-        #1241 - Homedir on demand
+C       #1241 - Homedir on demand
 C       #1272 - DenyFilter by User or DenyFilter by Dire
 C       #1403 - per-server system logs via ServerLog directive
 C       #1482 - %U cookie to LogFormat
