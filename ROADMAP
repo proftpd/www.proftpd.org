@@ -13,8 +13,8 @@ C       #1205 - Add debug option to SystemLog
 C       #1403 - per-server system logs via ServerLog directive
 C       #1482 - %U cookie to LogFormat
         #1507 - regex pattern matching in [Allow/Deny][User/Group]
-        #1515 - Enable mod_log to log into default log / syslog
-        #1565 - ftpwho bandwidth usage
+C       #1515 - Enable mod_log to log into default log / syslog
+C       #1565 - ftpwho bandwidth usage
 C       #1597 - Problems with HP-UX 10/11 trusted systems, mod_pam, and mod_unixpw
 C       #1605 - MKD and RMD do not log filepaths
 C       #1653 - Complete the FS API abstraction implementation
@@ -22,9 +22,9 @@ C       #1653 - Complete the FS API abstraction implementation
         #1705 - Add contrib module for time-of-day restrictions
 C       #1712 - TLS support
 C       #1743 - No magic cookie for number of files transferred
-        #1767 - Reporting problem with ftpwho (transfer rate)
+C       #1767 - Reporting problem with ftpwho (transfer rate)
 C       #1788 - Add ability to configure auth module checking order
-        #1789 - Add ability to block recursive directory options
+C       #1789 - Add ability to block recursive directory options
 C       #1806 - Add RFC2389 support 
 C       #1825 - AUTH macro namespace cleanup
 C       #1833 - Add ability to have add'l module initialization callback
