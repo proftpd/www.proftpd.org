@@ -48,7 +48,7 @@ More information available at http://www.proftpd.org/proftpd-devel-archive/full/
 
 		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
 			Support for Dan J. Bernstein's <a
-			href="http://cr.yp.to/cdb.htm">CDB format</a> for group and
+			href="http://cr.yp.to/cdb.html">CDB format</a> for group and
 			passwd file lookups, CDB lookups are generally faster than 
 			other similar database formats.
 		</blockquote>
