@@ -6,18 +6,18 @@ Version: $Id$
 C = Committed
 
 1.2.7
-        #1065 - Limit upload/download file sizes
+C       #1065 - Limit upload/download file sizes
 C       #1076 - Toggle parsing of .ftpaccess files with a AllowOverride
         #1231 - Extra options for ftpwho
         #1241 - Homedir on demand
-        #1253 - ServerAddress
+C       #1253 - ServerAddress
         #1272 - DenyFilter by User or DenyFilter by Dire
         #1294 - MaxClientsPerHost fix
         #1395 - Check return values in PRIVS calls
         #1398 - there is no log rotate for /var/log/xferlog
-        #1432 - Pedantic handling of leading whitespace in FTP commands
+C       #1432 - Pedantic handling of leading whitespace in FTP commands
         #1475 - Minor changes to SITE command handling
-        #1486 - Directory listing performance
+C       #1486 - Directory listing performance
         #1507 - regex pattern matching in [Allow/Deny][User/Group]
 C       #1564 - Add DESTDIR in Makefile
         #1623 - "connected since" in ftpwho
@@ -27,7 +27,9 @@ C       #1666 - Auth modules can return duplicate supplemental groups
 C       #1682 - Broken SyslogFacility requires custom syslog code
         #1687 - Add contrib module for RADIUS authentication, accounting
         #1705 - Add contrib module for time-of-day restrictions
-        #1719 - Add RFC2228 stuff to distribution
+C       #1719 - Add RFC2228 stuff to distribution
+        #1736 - RETR does not handle an inappropriate REST
+        #1737 - Enhance file hiding via regular expressions
 
 1.2.8
         MaxFileSize
