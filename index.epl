@@ -1,11 +1,24 @@
 <: # $Id$ :>//
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
-<: $last_changed = "15/Nov/2002 - hamster" :>//
+<: $last_changed = "05/Dec/2002 - jwm" :>//
 
 #include "header.epl"
 
 <table bgcolor="white">
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">1.2.7 released</font></b>
+    <br />
+    <font size="-1">[<i>05/Dec/2002</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      1.2.7 has just been released. This release fixes bugs found in
+      1.2.7rc3 and is considered a stable release. Source and RPMs should be
+      available on the primary FTP site and mirrors by the time you read this.
+    </font></blockquote>
+  </td>
+</tr>
+
 <tr>
   <td>
     <b><font face="arial" color="#003399">1.2.7rc3 released</font></b>
@@ -31,7 +44,6 @@
     </font></blockquote>
   </td>
 </tr>
-
 
 <tr>
   <td>
