@@ -26,19 +26,17 @@ Version: $Id$
         #1231 - Extra options for ftpwho
         #1272 - DenyFilter by User or DenyFilter by Dire
         #1395 - Check return values in PRIVS calls
-        #1507 - regex pattern matching in [Allow/Deny][User/Group]
-        #1407
+        #1407 - ftp protocol differences
+	#1432 - Pedantic handling of leading whitespace in FTP commands
         #1486 - Directory listing performance
+        #1507 - regex pattern matching in [Allow/Deny][User/Group]
         #1623 - "connected since" in ftpwho
-
-
-1432
 
 1.2.8
         MaxFileSize
         Small enchancement patches
         'Other' arch fixes as and when tested
-*       #1205 - Add debug option to SystemLog
+        #1205 - Add debug option to SystemLog
         #1253 - ServerAddress
         #1482 - %U cookie to LogFormat
         #1515 - Enable mod_log to log into default log / syslog
@@ -49,8 +47,8 @@ Version: $Id$
         TLS
         #1166 - custom wtmp log file
         #1279 - AuthAgedPassword option
-*       #1403 - per-server system logs via ServerLog directive
-*       #1454 - <Limit OVERWRITE>
+        #1403 - per-server system logs via ServerLog directive
+        #1454 - <Limit OVERWRITE>
         #1532 - Human readable disk free
         #1565 - ftpwho bandwidth usage
 
