@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Website mirrors" :>//
-<: $last_changed = "351/01/1900 - mark" :>//
+<: $last_changed = "64/01/1900 - mark" :>//
 
 #include "header.epl"
 
@@ -104,9 +104,9 @@ Location: Russian federation (St.Petersburg)<br />
 Maintained by: Dima Veselov<br />
 </p>
 <p>
-<a href="http://proftpd.hjc.edu.sg/">http://proftpd.hjc.edu.sg/</a><br />
+<a href="http://proftpd.oss.eznetsols.org/">http://proftpd.oss.eznetsols.org/</a><br />
 Location: Singapore<br />
-Maintained by: Chen Shiyuan<br />
+Maintained by: Network Operations Center<br />
 </p>
 <p>
 <a href="http://proftpd.dp.ua/">http://proftpd.dp.ua/</a><br />
@@ -287,6 +287,26 @@ Maintained by: PE2500<br />
 <a href="http://proftpd.worldakt.com/">http://proftpd.worldakt.com/</a><br />
 Location: France (Paris)<br />
 Maintained by: CHAILLAN Nicolas<br />
+</p>
+<p>
+<a href="http://www.proftpd.cw-services.net/">http://www.proftpd.cw-services.net/</a><br />
+Location: Germany (Karlsruhe, Germany)<br />
+Maintained by: Tim Korves<br />
+</p>
+<p>
+<a href="http://proftpd.homelinux.net/">http://proftpd.homelinux.net/</a><br />
+Location: Slovenia (Slovenia (SI), Maribor)<br />
+Maintained by: Sasa<br />
+</p>
+<p>
+<a href="http://proftpd.activalink.net/">http://proftpd.activalink.net/</a><br />
+Location: Canada (Toronto, Canada (The ActivaLink Project, Forensic Research Unit))<br />
+Maintained by: Ervin Sarkisov<br />
+</p>
+<p>
+<a href="http://proftpd.MyBSD.org.my/">http://proftpd.MyBSD.org.my/</a><br />
+Location: Malaysia (ITD, International Islamic University, SELANGOR)<br />
+Maintained by: Ahmad Faisal<br />
 </p>
 </dl>
 

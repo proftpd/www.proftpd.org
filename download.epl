@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Downloading and mirror sites" :>//
-<: $last_changed = "351/01/1900 - mark" :>//
+<: $last_changed = "64/01/1900 - mark" :>//
 
 #include "header.epl"
 
@@ -210,7 +210,7 @@ Location: Taiwan (I-SHOU University (TW, Kaohsiung))<br />
 Maintained by: KTH<br />
 </p>
 <p>
-<a href="ftp://spirit.profinet.sk/mirrors/Proftpd/">ftp://spirit.profinet.sk/mirrors/Proftpd/</A><br />
+<a href="ftp://spirit.bentel.sk/mirrors/Proftpd/">ftp://spirit.bentel.sk/mirrors/Proftpd/</A><br />
 Location: Slovakia (slovak republic) (Bratislava, Slovakia)<br />
 Maintained by: lubos klokner<br />
 </p>
@@ -255,9 +255,9 @@ Location: Sweden<br />
 Maintained by: Mirror Admin<br />
 </p>
 <p>
-<a href="ftp://ftp.hjc.edu.sg/proftpd/">ftp://ftp.hjc.edu.sg/proftpd/</A><br />
+<a href="ftp://ftp.oss.eznetsols.org/proftpd/">ftp://ftp.oss.eznetsols.org/proftpd/</A><br />
 Location: Singapore<br />
-Maintained by: Chen Shiyuan<br />
+Maintained by: Network Operations Center<br />
 </p>
 <p>
 <a href="ftp://ftp.gazi.edu.tr/pub/proftpd/">ftp://ftp.gazi.edu.tr/pub/proftpd/</A><br />
@@ -454,11 +454,6 @@ Location: United states (US, NJ, Clifton)<br />
 Maintained by: Omachonu Ogali<br />
 </p>
 <p>
-<a href="ftp://ftp.exobit.org/pub/ftp/proftpd/">ftp://ftp.exobit.org/pub/ftp/proftpd/</A><br />
-Location: United states (Long Island, NY, USA)<br />
-Maintained by: Jeffrey Meltzer<br />
-</p>
-<p>
 <a href="ftp://ftp.mysiar.net/pub/mirrors/">ftp://ftp.mysiar.net/pub/mirrors/</A><br />
 Location: Poland (( Poland, Kraków))<br />
 Maintained by: Mysiar<br />
@@ -552,6 +547,21 @@ Maintained by: Motohiro Sunouchi<br />
 <a href="ftp://ftp.cis.nctu.edu.tw/proftpd/">ftp://ftp.cis.nctu.edu.tw/proftpd/</A><br />
 Location: Taiwan (HsinChu , Taiwan)<br />
 Maintained by: Eric Chen<br />
+</p>
+<p>
+<a href="ftp://ftp.sourwood.net/pub/ProFTPD/">ftp://ftp.sourwood.net/pub/ProFTPD/</A><br />
+Location: United states (Danvers, Massachusetts  USA)<br />
+Maintained by: Matt Mozur<br />
+</p>
+<p>
+<a href="ftp://proftpd.homelinux.net/proftpd-mirror/">ftp://proftpd.homelinux.net/proftpd-mirror/</A><br />
+Location: Slovenia (Slovenia (SI), Maribor)<br />
+Maintained by: Sasa<br />
+</p>
+<p>
+<a href="ftp://ftp.necrogods.dyndns.org/pub/mirrors/proftpd/">ftp://ftp.necrogods.dyndns.org/pub/mirrors/proftpd/</A><br />
+Location: Sweden (Skellefteå, Sweden)<br />
+Maintained by: Per Granlund<br />
 </p>
 </dl>
 
