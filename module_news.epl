@@ -126,6 +126,17 @@ More information available at http://www.proftpd.org/proftpd-devel-archive/full/
 	</ul>
 
 	<ul>
+		<b><font face="arial" color="#003399">mod_ratio (3.3)</font></b>
+		<br />
+		<br /><font size="-1"><i>Maintainer: James Dogopoulos</i></font>
+		<br /><font size="-1"><i><a href="http://www.dynw.com/mod_ratio/">http://www.dynw.com/mod_ratio/</a></font>
+
+		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+			File/Byte ratio module.
+		</blockquote>
+	</ul>
+
+	<ul>
 		<b><font face="arial" color="#003399">mod_dbauth (1.7)</font></b>
 		<br />
 		<br /><font size="-1"><i>Maintainer: Eric Estabrooks</i></font>
@@ -157,7 +168,6 @@ More information available at http://www.proftpd.org/proftpd-devel-archive/full/
 			A implementation of one-time passwords for ProFTPD.
 		</blockquote>
 	</ul>
-
   </td>
 </tr>
 </table>
