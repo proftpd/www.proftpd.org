@@ -2,7 +2,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Historic project news" :>//
-<: $last_changed = "30/Jan/2002 - hamster" :>//
+<: $last_changed = "09/June/2002 - hamster" :>//
 
 #include "header.epl"
 
@@ -12,6 +12,111 @@
     <div class="headline">
       <: print "<b>$html_title</b>" unless !defined($html_title) :>//
     </div>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">Solaris article on ProFTPD</font></b>
+    <br />
+    <font size="-1">[<i>06/Feb/2002</i>]</font>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+       Michael Holve has posted an <a
+       href="http://everythingsolaris.org/articles/utp/index.html">article</a>
+       regarding ProFTPD and solaris on <a
+       href="http://everythingsolaris.org/">Everthing Solaris</a>
+    </font></blockquote>
+  </td>
+</tr>
+    
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">Bugzilla is moving</font></b>
+    <br />
+    <font size="-1">[<i>31/Jan/2002</i>]</font>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      The bugzilla ticketing system is moving hosts at the moment,
+      aah has the new server up and running and the DNS has changed,
+      please bear with us if you experience 'weirdness' as the DNS
+      change propogates.  
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">Example configurations</font></b>
+    <br />
+    <font size="-1">[<i>30/Jan/2002</i>]</font>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      To make them easier to find they've been moved onto a new <a
+      href="/docs/example-conf.html">page</a> and added to the sidebar.
+    </font></blockquote>
+    
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      If you have a good example configuration (we're particularly lacking
+      SQL and LDAP setups) please send us an annotated copy for inculsion
+      on the site.
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">Mirror sites update / Userguide on ftp.proftpd.org</font></b>
+    <br />
+    <font size="-1">[<i>27/Jan/2002</i>]</font>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      A few new mirrors have been added this weekend and some dead
+      ones removed.  Please let us know if you spot something which
+      isn't working properly.
+    </font></blockquote>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      The Userguide (pdf,ps) has been uploaded to ftp://ftp.proftpd.org/docs/
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">RPMs for 1.2.5rc1</font></b>
+    <br />
+    <font size="-1">[<i>15/Jan/2002</i>]</font>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      Patrick McHardy has put together some RPMs for the 1.2.5rc1 release, these
+      are downloadable from ftp://ftp.proftpd.org/distrib/packages/ (and all 
+      good mirror sites)
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">German-language FAQ</font></b>
+    <br />
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      Sven Hoexter has put together a basic FAQ in German, available at
+      <a href="http://www.hoaxter.de/geb/proftpdfaq.txt">http://www.hoaxter.de/geb/proftpdfaq.txt</a>.
+      (Note: this is *not* a translation of the official <a href="http://www.proftpd.org/docs/faq/proftpdfaq.html">ProFTPD FAQ</a>.)
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">Version 1.2.5rc1 released</font></b>
+    <br />
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+     1.2.5rc1 is now available from ftp.proftpd.org and all mirror sites. 
+    </font></blockquote>
   </td>
 </tr>
 
