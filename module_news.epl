@@ -103,7 +103,7 @@ More information available at http://www.proftpd.org/proftpd-devel-archive/full/
 	</ul>
 
 	<ul>
-		<b><font face="arial" color="#003399">TLS patch (for 1.2.1)</font></b>
+		<b><font face="arial" color="#003399">TLS patch</font></b>
 		<br />
 		<br /><font size="-1"><i>Maintainer: Peter 'Luna' Runestig</i></font>
 		<br /><font size="-1"><i><a href="ftp://ftp.runestig.com/pub/proftpd-tls/">ftp://ftp.runestig.com/pub/proftpd-tls/</a></font>
