@@ -6,23 +6,6 @@
 #include "header.epl"
 
 <table bgcolor="white">
-<<<<<<< index.epl
-
-
-<tr>
-  <td>
-    <b><font face="arial" color="#003399">1.2.8 released</font></b>
-    <br />
-    <font size="-1">[<i>04/Mar/2003</i>]</font>
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      <p>1.2.8 has just been released. This release includes numerous new
-      features, including bug fixes, and all the cool features listed below.</p>
-    </font></blockquote>
-  </td>
-</tr>
-
-
-=======
 
 <tr>
   <td>
@@ -92,8 +75,6 @@
   </td>
 </tr>
 
-
->>>>>>> 1.55
 <tr>
   <td>
     <b><font face="arial" color="#003399">1.2.8rc2 released</font></b>
