@@ -9,6 +9,33 @@
 
 <tr>
   <td>
+    <b><font face="arial" color="#003399">ProFTPD &quot;timing attack&quot;</font></b>
+    <br />
+    <font size="-1">[<i>17/Oct/2004</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      <p>Leon Juranic of the <a href="http://www.lss.hr/">LSS Security team</a> announced 
+      that he discovered a <a href="http://security.lss.hr/index.php?page=details&ID=LSS-2004-10-02">
+      "security issue"</a> in ProFTPD. As a matter of fact the issue he has found is not 
+      restricted to ProFTPD alone but can be discovered in any given software product which
+      uses authentication mechanisms. The fix he proposes in his security advisory 
+      is a band-aid patch at best and won't be included in ProFTPD in its current form, 
+      since it's still prone to statistical analysis and only obfuscates the problem. 
+      Moreover different speeds of servers and authentication backends make fixing this 
+      problem by a random delay, with a fixed upper limit, impossible.<p>Quoting from a 
+      <a href="http://www.security-corporation.com/articles-20030430-002.html">writeup</a> 
+      about an related OpenSSH/PAM timing attack: "There is currently no complete fix to 
+      this. Moreover, there are many smaller timing leaks which too are easy to use to 
+      obtain the same information. These are primarily in OpenSSH and in the system libraries 
+      (getpwnam(3), NSS modules, and so on). Solving this kind of timing leaks requires a 
+      re-design of the authentication code paths [..]".<p>This is true for ProFTPD, too. 
+      The ProFTPD team is currently investigating methods that address this issue sufficiently.
+      
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
     <b><font face="arial" color="#003399">1.2.10 released</font></b>
     <br />
     <font size="-1">[<i>04/Sep/2004</i>]</font>
