@@ -19,6 +19,8 @@ C = Committed
         #1933 - Add mod_ifsession contrib module
         #1960 - Add removed file size by DELE command to xferlog
         #1967 - Add display of uptime to ftpwho, ftptop
+        Add RootRevoke, AnonRejectPasswords directives
+
 TBD
         i18n (including RFC2640)
         contrib/ per-module directory reorganization
