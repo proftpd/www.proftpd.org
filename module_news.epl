@@ -13,7 +13,13 @@
       <: print "<b>$html_title</b>" unless !defined($html_title) :>//
     </div>
 
-    Under construction, please check back later.
+	<ul>
+		<li>The latest version of mod_time, 2.0rc1, is available from <a
+			href="http://rad.geology.washington.edu/~tj/proftpd/">TJ
+			Saunders' web site</a>. mod_time is a ProFTPD module that limits
+			FTP commands based on time of day and/or day of the week.
+		</li>
+	</ul>
 
   </td>
 </tr>
