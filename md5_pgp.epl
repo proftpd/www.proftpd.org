@@ -4,7 +4,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "MD5 sums and PGP signatures of release files" :>//
-<: $last_changed = "20/Feb/2001 - hamster" :>//
+<: $last_changed = "31/Mar/2001 - jwm" :>//
 
 #include "header.epl"
 
@@ -21,8 +21,11 @@ MD5 Digest Hashes
 </DIV>
 
 <PRE>
-0b2b32cec7138cdc1ba4b2a99148bb93  proftpd-1.2.0rc3.tar.gz
-f1ce2bc06a3e0c30962a2e6c545260d1  proftpd-1.2.0rc3.tar.bz2
+c3af9b3593e8d1e2cc28c63a4b77f774  proftpd-1.2.1.tar.gz
+0ca3b3c10d2a87a4c3f72a4f76df6a89  proftpd-1.2.1.tar.bz2
+
+19952cf8f8abd55b7bbc0251e3ff9fda  proftpd-1.2.2rc1.tar.gz
+c43a62b2b5fac287041a8a8756bb6c49  proftpd-1.2.2rc1.tar.bz2
 </PRE>
 
 </TD>
@@ -34,36 +37,61 @@ f1ce2bc06a3e0c30962a2e6c545260d1  proftpd-1.2.0rc3.tar.bz2
 PGP Signatures
 </DIV>
 
-<B><FONT face="arial" color="#003399">proftpd-1.2.0rc3.tar.gz.asc</FONT></B><BR>
+<B><FONT face="arial" color="#003399">proftpd-1.2.1.tar.gz.asc</FONT></B><BR>
 <FONT size="-1">[<I>20/Feb/2001</I>]</FONT>
-<BLOCKQUOTE><font face="verdana,arial" size=-1>
+<BLOCKQUOTE><pre><font face="verdana,arial" size=-1>
 -----BEGIN PGP MESSAGE-----
 Version: 2.6.3ia
 
-iQCVAwUAOpIEEmFBiHYyDG+dAQGljQQAgfj4jvFFqAF0Mf/tyhcpc+b5XNklq5zb
-sd7Bt/Y4Byg3Ziyv7MxQEzxlLsrW2KsSjSyr1Y/iOE5iblw31JOJN8OOxHzndFza
-UHTY5JEB8+UPmAo8rKMLuCF+gYFvx3wMKC9NBCuCOM6H78AEkbyVYWYjAkHlv+cP
-+hqjfZP1vps=
-=7/9j
+iQCVAwUAOp5zbWFBiHYyDG+dAQFCGwP/XgLxmSSgCafdPWVsUzbJ7/pvn+c+CYCN
+JXXdq49ZQDJp2pmAOpsZOwFEplDwaX3UC2kjy3+3BGCo6CuguEkgwmpB0KTbr70c
+vlRukY1Ze7724wvhW25vnRawFIXmsqOdoSwhXcs5Dzep9+II6qbd5G2R9VSn870z
+lA5F+HbDKvQ=
+=0CKt
 -----END PGP MESSAGE-----
-</font></BLOCKQUOTE>
+</font></pre></BLOCKQUOTE>
 
-
-<B><FONT face="arial" color="#003399">proftpd-1.2.0rc3.tar.bz2.asc</FONT></B><BR>
+<B><FONT face="arial" color="#003399">proftpd-1.2.1.tar.bz2.asc</FONT></B><BR>
 <FONT size="-1">[<I>20/Feb/2001</I>]</FONT>
-<BLOCKQUOTE><font face="verdana,arial" size=-1>
+<BLOCKQUOTE><pre><font face="verdana,arial" size=-1>
 -----BEGIN PGP MESSAGE-----
 Version: 2.6.3ia
 
-iQCVAwUAOpIEKWFBiHYyDG+dAQF7DQP+PcsXmGUVGyZLfm6yLGtVRDUxvW3ea/WJ
-HuAHRsUEORF3//ZaykoJIIIWFgDPNAJ87LDqYN5qif07mysgzoZde440ytNR2bTJ
-VTHxNm9rmSnPO6oRt/3xIugroUUrNT9zzBTe5m49AVoLZ0KJBVd8OzVCw/qvepVW
-xCjBiAgk42g=
-=1I/0
+iQCVAwUAOp5zV2FBiHYyDG+dAQFZ8wQAsLP+j/VQnUtxC1W5EV3YBJGKZ6QSpJwL
+ijh4lvRhIx1tH1k/PysGduLakX++mdzFfZEI4HYSekYa9CsG+cBCLXpPIOR/Axl/
+NfTLqCHYkWbTDTcv3NGkdY4yVp+3PI0QoKqMBOXyNDwnpIQID4hgdXVqwUnLvU1C
+oV1E9kLrne8=
+=tJRV
 -----END PGP MESSAGE-----
-</font></BLOCKQUOTE>
+</font></pre></BLOCKQUOTE>
 
+<B><FONT face="arial" color="#003399">proftpd-1.2.2rc1.tar.gz.asc</FONT></B><BR>
+<FONT size="-1">[<I>20/Feb/2001</I>]</FONT>
+<BLOCKQUOTE><pre><font face="verdana,arial" size=-1>
+-----BEGIN PGP MESSAGE-----
+Version: 2.6.3ia
 
+iQCVAwUAOr0BqWFBiHYyDG+dAQEBmQQArXfLRXDVyzgVJ44SUv52Urkv/s7Y8dDJ
+IeSJMgtcff56t+m+ThqIM8IcM0hnT6HFAZaDpHcn1RlqmN9i9ugxcpRtl8+r9BcQ
+/5sYb6SSvd9uVHxK+K4O1NTaBjYEMwsu5vrXRKR+C6oS0DJHGcpJpOfV99o7Hu5m
+cAcRgRWaa9E=
+=+uys
+-----END PGP MESSAGE-----
+</font></pre></BLOCKQUOTE>
+
+<B><FONT face="arial" color="#003399">proftpd-1.2.2rc1.tar.bz2.asc</FONT></B><BR>
+<FONT size="-1">[<I>20/Feb/2001</I>]</FONT>
+<BLOCKQUOTE><pre><font face="verdana,arial" size=-1>
+-----BEGIN PGP MESSAGE-----
+Version: 2.6.3ia
+
+iQCVAwUAOr0B0GFBiHYyDG+dAQGyYQP+K1nmOuIT6Vb5dpVF7o8oVk7x71qA6Rv6
+D/kIZP5ZBijGX+UWtEwW7KgN0hoVF73slC19m7yeK6jeUIB4RawHRFQ6Mg4V0nUC
+QWwTj3RQgGrpyqnieE0v1ibzmKswe3fHlDLEVKwrBK5Ydrz4YUGGAioyngnMTvep
+0ItBDWHqBho=
+=791r
+-----END PGP MESSAGE-----
+</font></pre></BLOCKQUOTE>
 
 
 	  </TD>
