@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Downloading and mirror sites" :>//
-<: $last_changed = "28/01/1900 - mark" :>//
+<: $last_changed = "49/01/1900 - mark" :>//
 
 #include "header.epl"
 
@@ -225,9 +225,14 @@ Location: Norway<br />
 Maintained by: BiG-PaPa<br />
 </p>
 <p>
-<a href="ftp://ftp.tomt.net/pub/linux/proftpd/">ftp://ftp.tomt.net/pub/linux/proftpd/</A><br />
+<a href="ftp://ftp.tomt.net/pub/proftpd">ftp://ftp.tomt.net/pub/proftpd</A><br />
 Location: Norway<br />
 Maintained by: Andre Tomt<br />
+</p>
+<p>
+<a href="http://ftp.isu.edu.tw/pub/Unix/FTP/proftpd/">http://ftp.isu.edu.tw/pub/Unix/FTP/proftpd/</A><br />
+Location: Taiwan (I-SHOU University (TW, Kaohsiung))<br />
+Maintained by: KTH<br />
 </p>
 <p>
 <a href="ftp://ftp.futuro.pl/pub/mirror/ftp.proftpd.org/">ftp://ftp.futuro.pl/pub/mirror/ftp.proftpd.org/</A><br />
@@ -531,6 +536,31 @@ Maintained by: Robert Sheets<br />
 <a href="ftp://ftp.exobit.org/pub/ftp/proftpd/">ftp://ftp.exobit.org/pub/ftp/proftpd/</A><br />
 Location: United states (Long Island, NY, USA)<br />
 Maintained by: Jeffrey Meltzer<br />
+</p>
+<p>
+<a href="ftp://ftp.mysiar.net/pub/mirrors/">ftp://ftp.mysiar.net/pub/mirrors/</A><br />
+Location: Poland (( Poland, Kraków))<br />
+Maintained by: Mysiar<br />
+</p>
+<p>
+<a href="ftp://proftpd.ulimit.org/proftpd/">ftp://proftpd.ulimit.org/proftpd/</A><br />
+Location: United kingdom (London)<br />
+Maintained by: Michael Pye<br />
+</p>
+<p>
+<a href="ftp://sunsite.dk/mirrors/proftpd/">ftp://sunsite.dk/mirrors/proftpd/</A><br />
+Location: Denmark (Denmark, Aalborg)<br />
+Maintained by: Martin Dalum<br />
+</p>
+<p>
+<a href="ftp://ftp.ogreland.lv/proftpd.org/">ftp://ftp.ogreland.lv/proftpd.org/</A><br />
+Location: Latvia (Ogre, Latvia)<br />
+Maintained by: core<br />
+</p>
+<p>
+<a href="ftp://proftpd.area51.dk/mirrors/public/proftpd/ftp/">ftp://proftpd.area51.dk/mirrors/public/proftpd/ftp/</A><br />
+Location: Denmark (Copenhagen)<br />
+Maintained by: Gorm Jorgensen<br />
 </p>
 </dl>
 

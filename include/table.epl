@@ -93,7 +93,7 @@
               <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="/docs/">Docs index</a></font></li>
               <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="/docs/rfc.html">RFCs</a></font></li>
               <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="/docs/faq/proftpdfaq.html">FAQ</a></font></li>
-              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="/docs/userguide/linked/userguide.html">Userguide</a></font></li>
+              <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="http://proftpd.linux.co.uk/localsite/Userguide/linked/userguide.html">Userguide</a></font></li>
               <li><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><a href="/docs/example-conf.html">Example configurations</a></font></li>
             </ul>
           </td>

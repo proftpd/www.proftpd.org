@@ -36,10 +36,10 @@
         <li><a href="/docs/faq/proftpdfaq.html">Hyperlinked version</a></li>
         <li><a href="/docs/faq/proftpdfaq-full.html">Single html file</a></li>
       </ul>
-      <li>Userguide (<a href="http://www.korenwolf.net/proftpd/Userguide/linked/userguide.html">linked html</a>) 
-      	(<a href="http://www.korenwolf.net/proftpd/Userguide/userguide_full.html">single html</a>) 
-      	(<a href="http://www.korenwolf.net/proftpd/Userguide/userguide.ps">postscript</a>) 
-      	(<a href="http://www.korenwolf.net/proftpd/Userguide/userguide.pdf">pdf</a>)</li>
+      <li>Userguide (<a href="http://proftpd.linux.co.uk/localsite/Userguide/linked/userguide.html">linked html</a>) 
+      	(<a href="http://proftpd.linux.co.uk/localsite/Userguide/other/userguide_full.html">single html</a>) 
+      	(<a href="http://proftpd.linux.co.uk/localsite/Userguide/other/userguide.ps">postscript</a>) 
+      	(<a href="http://proftpd.linux.co.uk/localsite/Userguide/other/userguide.pdf">pdf</a>)</li>
       <li><a href="/cvs.html">CVS Howto and FAQ</a></li>
       <!-- <li><a href="y2k.html">Year 2000 statement</a></li> -->
     </ul>
