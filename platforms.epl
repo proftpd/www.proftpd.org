@@ -1,0 +1,59 @@
+<:
+# $Id$
+:>//
+<: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
+<: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
+<: $html_title = "Supported Platforms" :>//
+<: $last_changed = "10/Feb/2001 - hamster" :>//
+
+#include "header.epl"
+
+	<TR>
+	  <TD>
+
+
+<DIV CLASS="headline">
+<: print "<B>$html_title</B>" unless !defined($html_title) :>//
+</DIV>
+
+	<P>
+		ProFTPD is known to compile and run on at least the
+		following platforms (if you have any that are not in
+		this list, please email <A
+		HREF="mailto:proftpd-devel@proftpd.org">the developers list</A>):
+
+		<BR>
+		<TABLE BORDER="0" ALIGN="center" WIDTH="75%">
+		<:
+		   my @platforms = (
+		      'AIX', 'Digital Unix', 'DG/UX', 'FreeBSD*',
+		      'HP/UX', 'IRIX*', 'Mac OS/X', 'Linux*', 'NetBSD',
+		      'OpenBSD', 'SCO', 'Solaris', 'SunOS', 'BSD/OS'
+		   );
+		   
+		   @platforms = sort(@platforms);
+		   
+                   for(my $i = 0; $i <= $#platforms; $i++) {
+                       print "<TR>\n";
+
+                       print '     <TD>', $platforms[$i++], "</TD>\n";
+                       print '     <TD>', $platforms[$i++], "</TD>\n";
+                       print '     <TD>', $platforms[$i], "</TD>\n";
+		       print "</TR>\n\n";
+                   }
+		:>
+		</TABLE>
+		<BR>
+
+		An asterisk(*) denotes a platform that the core
+		ProFTPD team has access to test on.  If you wish to
+		donate either hardware or network access please
+		contact <A
+		HREF="mailto:proftpd-devel@proftpd.org">the developers list</A>.
+	</P>
+
+	  </TD>
+	</TR>
+
+#include "footer.epl"
+

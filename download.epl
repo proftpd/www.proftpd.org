@@ -1,0 +1,171 @@
+<:
+# $Id$
+:>//
+<: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
+<: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
+<: $html_title = "Downloading and mirror sites" :>//
+
+#include "header.epl"
+
+	<TR>
+	  <TD>
+
+
+<DIV CLASS="headline">
+<: print "<B>$html_title</B>" unless !defined($html_title) :>//
+</DIV>
+
+
+
+<P>Please use a mirror that's closest to you.  If you would like to
+    volunteer to be a mirror site, please email <A
+    HREF="mailto:hamster@vom.tm">Mark</A>.</P>
+
+<P ALIGN="center">The latest version of ProFTPD is <: print ": ", $proftpd_version :></P>
+
+
+
+<DL>
+   <DT> Official Distribution Site </DT>
+   <DD> 
+   <A HREF="ftp://ftp.proftpd.org/">ftp://ftp.proftpd.org/</A><BR>
+   <A HREF="ftp://ftp.proftpd.net/pub/proftpd/">ftp://ftp.proftpd.net/pub/proftpd/</A><BR>
+   &nbsp;
+   </DD>
+
+
+
+
+	<DT> Mirrors </DT>
+<P><UL>
+<A HREF="ftp://ftp.nutt.net.au/pub/proftpd">ftp://ftp.nutt.net.au/pub/proftpd</A><BR>
+Location: Australia<BR>
+Maintained by: Jarrod Sayers<BR>
+</UL></P>
+<P><UL>
+<A HREF="ftp://ftp.linja.net:/pub/mirrors/proftpd/">ftp://ftp.linja.net:/pub/mirrors/proftpd/</A><BR>
+Location: Finland (Helsinki)<BR>
+Maintained by: vko@linja.net<BR>
+</UL></P>
+<P><UL>
+<A HREF="ftp://ftp.free.fr/pub/Networking/proftpd/">ftp://ftp.free.fr/pub/Networking/proftpd/</A><BR>
+Location: France<BR>
+</UL></P>
+<P><UL>
+<A HREF="ftp://de.samba.org/pub/mirror/ftp.proftpd.net/">ftp://de.samba.org/pub/mirror/ftp.proftpd.net/</A><BR>
+Location: Germany (Bonn)<BR>
+Maintained by: Noel Koethe<BR>
+</UL></P>
+<P><UL>
+<A HREF="ftp://ftp.wipol.uni-bonn.de/pub/mirror/ftp.proftpd.net/">ftp://ftp.wipol.uni-bonn.de/pub/mirror/ftp.proftpd.net/</A><BR>
+Location: Germany (Bonn)<BR>
+Maintained by: Noel Koethe<BR>
+</UL></P>
+<P><UL>
+<A HREF="http://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.proftpd.net/ ">http://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.proftpd.net/ </A><BR>
+Location: Germany (Esslingen)<BR>
+Maintained by: Adrian Reber<BR>
+</UL></P>
+<P><UL>
+<A HREF="ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.proftpd.net/">ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.proftpd.net/</A><BR>
+Location: Germany (Esslingen)<BR>
+Maintained by: Adrian Reber<BR>
+</UL></P>
+<P><UL>
+<A HREF="ftp://ftp.taubenschlag.uni-frankfurt.de/pub/mirror/ftp.proftpd.net/">ftp://ftp.taubenschlag.uni-frankfurt.de/pub/mirror/ftp.proftpd.net/</A><BR>
+Location: Germany (Frankfurt)<BR>
+Maintained by: Bjoern Krueger<BR>
+</UL></P>
+<P><UL>
+<A HREF="ftp://ftp.franken.de/pub/Linux/proftpd">ftp://ftp.franken.de/pub/Linux/proftpd</A><BR>
+Location: Germany (Nuremberg)<BR>
+Maintained by: Harald Welte <BR>
+</UL></P>
+<P><UL>
+<A HREF="ftp://ftp.fh-koblenz.de/pub/ProFTPD/">ftp://ftp.fh-koblenz.de/pub/ProFTPD/</A><BR>
+Location: Germany<BR>
+Maintained by: Michael Schmidt<BR>
+</UL></P>
+<P><UL>
+<A HREF="ftp://ftp.fsn.hu/pub/proftpd/">ftp://ftp.fsn.hu/pub/proftpd/</A><BR>
+Location: Hungary (Budapest)<BR>
+Maintained by: Attila Nagy<BR>
+</UL></P>
+<P><UL>
+<A HREF="ftp://ftp.win.ne.jp/pub/network/ftp/proftpd/">ftp://ftp.win.ne.jp/pub/network/ftp/proftpd/</A><BR>
+Location: Japan (Tokyo)<BR>
+Maintained by: Ayamura Kikuchi <BR>
+</UL></P>
+<P><UL>
+<A HREF="ftp://linux.sarang.net/mirror/network/daemon/ftp/proftpd/">ftp://linux.sarang.net/mirror/network/daemon/ftp/proftpd/</A><BR>
+Location: Korea (Seoul)<BR>
+</UL></P>
+<P><UL>
+<A HREF="ftp://vejas.aic.lt/pub/linux/mirrors/proftpd/">ftp://vejas.aic.lt/pub/linux/mirrors/proftpd/</A><BR>
+Location: Lithuania (Ziezmariai)<BR>
+Maintained by: Simas Mockevicius<BR>
+</UL></P>
+<P><UL>
+<A HREF="ftp://ftp.nl.uu.net:/pub/unix/ftp/proftpd/">ftp://ftp.nl.uu.net:/pub/unix/ftp/proftpd/</A><BR>
+Location: Netherlands (Amsterdam)<BR>
+</UL></P>
+<P><UL>
+<A HREF="ftp://ftp.truuz.com/mirrors/ftp.proftpd.net/   ">ftp://ftp.truuz.com/mirrors/ftp.proftpd.net/   </A><BR>
+Location: Norway (Oslo)<BR>
+Maintained by: Dag Stenstad<BR>
+</UL></P>
+<P><UL>
+<A HREF="ftp://ftp.task.gda.pl/pub/proftpd/">ftp://ftp.task.gda.pl/pub/proftpd/</A><BR>
+Location: Poland<BR>
+Maintained by: Robert Milkowski<BR>
+</UL></P>
+<P><UL>
+<A HREF="ftp://ftp.hjc.edu.sg/proftpd/">ftp://ftp.hjc.edu.sg/proftpd/</A><BR>
+Location: Singapore<BR>
+Maintained by: Chen Shiyuan<BR>
+</UL></P>
+<P><UL>
+<A HREF="ftp://ftp.solnet.ch/pub/proftpd">ftp://ftp.solnet.ch/pub/proftpd</A><BR>
+Location: Switzerland (Zurich Telehouse)<BR>
+Maintained by: Erich Hohermuth<BR>
+</UL></P>
+<P><UL>
+<A HREF="ftp://ftp.linux.co.uk/mirrors/ftp.proftpd.net/">ftp://ftp.linux.co.uk/mirrors/ftp.proftpd.net/</A><BR>
+Location: UK (London)<BR>
+Maintained by: Mark Lowes<BR>
+</UL></P>
+<P><UL>
+<A HREF="ftp://ftp.compsci.lyon.edu/ftp/pub/apps/unix/servers/ftp/proftpd/">ftp://ftp.compsci.lyon.edu/ftp/pub/apps/unix/servers/ftp/proftpd/</A><BR>
+Location: USA (Batesville, Arkansas)<BR>
+Maintained by: Matt Critcher<BR>
+</UL></P>
+<P><UL>
+<A HREF="ftp://ftp.kracked.com/pub/proftpd">ftp://ftp.kracked.com/pub/proftpd</A><BR>
+Location: USA (Johnson City, TN)<BR>
+</UL></P>
+<P><UL>
+<A HREF="ftp://ftp.infoteam.com/pub/proftpd/">ftp://ftp.infoteam.com/pub/proftpd/</A><BR>
+Location: USA (Lexington, KY)<BR>
+Maintained by: Kenn Martin<BR>
+</UL></P>
+<P><UL>
+<A HREF="ftp://ftp.stikman.com:/pub/proftpd/">ftp://ftp.stikman.com:/pub/proftpd/</A><BR>
+Location: USA (Los Angeles, CA)<BR>
+</UL></P>
+<P><UL>
+<A HREF="ftp://ftp.twtelecom.net/pub/proftpd/">ftp://ftp.twtelecom.net/pub/proftpd/</A><BR>
+Location: USA (Milwaukee, WI)<BR>
+Maintained by: Steve Kaczkowski<BR>
+</UL></P>
+<P><UL>
+<A HREF="ftp://www.linuxceptional.com/proftpd/">ftp://www.linuxceptional.com/proftpd/</A><BR>
+Location: USA<BR>
+Maintained by: Phil Barnett<BR>
+</UL></P>
+</DL>
+
+	  </TD>
+	</TR>
+
+#include "footer.epl"
+

@@ -1,0 +1,92 @@
+<:
+# $Id$
+:>//
+<: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
+<: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
+<: $html_title = "Historic project news" :>//
+<: $last_changed = "10/Feb/2001 - hamster" :>//
+
+#include "header.epl"
+
+	<TR>
+	  <TD>
+
+
+<DIV CLASS="headline">
+<: print "<B>$html_title</B>" unless !defined($html_title) :>//
+</DIV>
+
+</td>
+</tr>
+
+
+<!--
+	<TR>
+	  <TD>
+	    <B><FONT face="arial" color="#003399">TITLE</FONT></B><BR>
+            <FONT size="-1">[<I>DATE</I>]</FONT>
+	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
+	    NEWSNEWS
+	    NEWSNEWS
+	    NEWSNEWS
+	    </font></BLOCKQUOTE>
+	  </TD>
+	</TR>
+	
+-->
+
+	<TR>
+	  <TD>
+	    <B><FONT face="arial" color="#003399">File corruption</FONT></B><BR>
+            <FONT size="-1">[<I>Jan 31, 2001</I>]</FONT>
+	    <BLOCKQUOTE><font face="verdana,arial" size=-1> 
+	    sendfile() issues. If you are experiencing problems with file
+	    corruption during transfer please check bug 279 on bugzilla
+	    </font></BLOCKQUOTE>
+	  </TD>
+	</TR>
+	
+	<TR>
+	  <TD>
+	    <B><FONT face="arial" color="#003399">Security updates</FONT></B><BR>
+            <FONT size="-1">[<I>Jan 30, 2001</I>]</FONT>
+	    <BLOCKQUOTE><font face="verdana,arial" size=-1> 
+	    Various security bugs are now fixed in the CVS sources, rc3 is due shortly. 
+	    </font></BLOCKQUOTE>
+	  </TD>
+	</TR>
+	
+	<TR>
+	  <TD>
+	    <B><FONT face="arial" color="#003399">New pre-release versionTITLE</FONT></B><BR>
+            <FONT size="-1">[<I>July 28, 2000</I>]</FONT>
+	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
+            ProFTPD 1.2.0rc2 now available. 
+	    </font></BLOCKQUOTE>
+	  </TD>
+	</TR>
+	
+	<TR>
+	  <TD>
+	    <B><FONT face="arial" color="#003399">First Pre-release for 1.2.0</FONT></B><BR>
+            <FONT size="-1">[<I>July 11, 2000</I>]</FONT>
+	    <BLOCKQUOTE><font face="verdana,arial" size=-1> 
+	    ProFTPD 1.2.0rc1 now available. 
+	    </font></BLOCKQUOTE>
+	  </TD>
+	</TR>
+	
+	<TR>
+	  <TD>
+	    <B><FONT face="arial" color="#003399">New project logo</FONT></B><BR>
+            <FONT size="-1">[<I>February 25, 2000</I>]</FONT>
+	    <BLOCKQUOTE><font face="verdana,arial" size=-1> 
+	    We finally have an official ProFTPD logo -- congratulations
+	    to Jakub Chromy for submitting the winning entry, and thank
+	    you to everyone who submitted a logo.
+	    </font></BLOCKQUOTE>
+	  </TD>
+	</TR>
+	
+#include "footer.epl"
+

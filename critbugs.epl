@@ -1,0 +1,108 @@
+<:
+# $Id$
+:>//
+<: $html_title = "Critical Bugs" :>//
+<: $meta_description = "The Official ProFTPD web site." :>//
+<: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download, showstopper, bugs, security" :>//
+<: $last_changed = "07/Feb/2001" :>//
+
+
+#include "header.epl"
+
+	<TR>
+	  <TD>
+
+
+<DIV CLASS="headline">
+<: print "<B>$html_title</B>" unless !defined($html_title) :>//
+</DIV>
+
+
+<P>
+<EM>Bug: </EM>SIZE memory leak<BR>
+<EM>Bugzilla ID:</EM> <BR>
+<EM>Version: </EM>1.2.0rc2 and earlier<BR>
+<EM>Platforms: </EM> All<BR>
+<EM>Severity/Effect: </EM> Critical<BR>
+<EM>Fixed in:</EM> 1.2.0rc3<BR><BR>
+
+Reported on Bugtraq (<A HREF="http://www.securityfocus.com/archive/1/15199">http://www.securityfocus.com/archive/1/15199</A>) by Wojciech Purczynski
+
+</P>
+
+<P>
+<EM>Bug:</EM> USER memory leak<BR>
+<EM>Bugzilla ID:</EM> <BR>
+<EM>Version:</EM> 1.2.0rc2 and earlier<BR>
+<EM>Platforms:</EM> All<BR>
+<EM>Severity/Effect:</EM> Critical<BR>
+<EM>Fixed in:</EM> 1.2.0rc3<BR><BR>
+
+Reported on Bugtraq (<A HREF="http://www.securityfocus.com/archive/1/155349">http://www.securityfocus.com/archive/1/155349</A>) by Wojciech Purczynski
+</P>
+
+<P>
+<EM>Bug:</EM> Minor format string vulnerabilities<BR>
+<EM>Bugzilla ID:</EM> <BR>
+<EM>Version:</EM> 1.2.0rc2 and earlier<BR>
+<EM>Platforms:</EM> <BR>
+<EM>Severity/Effect:</EM> <BR>
+<EM>Fixed in:</EM> 1.2.0rc3<BR><BR>
+
+Reported on Bugtraq (<A HREF="http://www.securityfocus.com/archive/1/155428">http://www.securityfocus.com/archive/1/155428</A>) by Przemyslaw Frasunek 
+</P>
+
+<P>
+<EM>Bug:</EM> File corruption<BR>
+<EM>Bugzilla ID:</EM> none<BR>
+<EM>Version:</EM> 1.2.0rc2 (and earlier)<BR>
+<EM>Platforms:</EM> All<BR>
+<EM>Severity/Effect:</EM> Critical<BR>
+<EM>Fixed in:</EM> (kludged round in rc3)<BR><BR>
+
+Enabling support for sendfile() may result in corrupted file transfers.  It is currently recommended that sendfile support is disabled (--disable-sendfile).
+
+</P>
+
+<P>
+<EM>Bug:</EM> No PORT command issued<BR>
+<EM>Bugzilla ID:</EM> 240<BR>
+<EM>Version:</EM> 1.2.0rc2<BR>
+<EM>Platforms:</EM> All<BR>
+<EM>Severity/Effect:</EM> Critical / Breaks the data socket<BR>
+<EM>Fixed in:</EM> 1.2.0rc3<BR><BR>
+
+The error "503 No PORT command issued first." is seem on attempting any
+command which tries to access the data sockets.  This has been fixed
+in CVS.
+</P>
+
+<P>
+<EM>Bug: CHMOD doesn't work</EM> <BR>
+<EM>Bugzilla ID:</EM> <BR>
+<EM>Version:</EM> 1.2.0rc1<BR>
+<EM>Platforms:</EM> All<BR>
+<EM>Severity/Effect:</EM> Severe / Prevents SITE CHMOD from working<BR>
+<EM>Fixed in:</EM> 1.2.0rc2<BR><BR>
+
+The AllowCHMOD directive has a bug in this version which results in it's setting within the conf file only being honoured for the first use.  After which CHMOD commands are denied regardless.  
+</P>
+
+<!-- Please leave the following text unmolested -->
+<!-- 13 lines -->
+<!--
+<P>
+<EM>Bug:</EM> <BR>
+<EM>Bugzilla ID:</EM> <BR>
+<EM>Version:</EM> <BR>
+<EM>Platforms:</EM> <BR>
+<EM>Severity/Effect:</EM> <BR>
+<EM>Fixed in:</EM> <BR><BR>
+
+</P>
+-->
+
+	  </TD>
+	</TR>
+
+#include "footer.epl"

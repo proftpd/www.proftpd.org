@@ -1,0 +1,30 @@
+<:
+# $Id$
+:>//
+<: $html_title = "PGP Signature" :>//
+<: $meta_description = "ProFTPD PGP signature and fingerprint." :>//
+<: $meta_keywords = "PGP, signature, cryptography, crypto, SSL, RSA, server, ftp, proftpd, wuftpd" :>//
+#include "header.epl"
+
+            <P>Below is <A HREF="http://www.macgyver.org">MacGyver's</A>
+	    PGP fingerprint and public key block.
+	    This signature can be used to prove that any file or
+	    message really originated from me, MacGyver (aka Habeeb
+	    J. Dihu).  My current PGP key will always appear on this
+	    page, including any potential updates and key revocations.
+	    Remember, you can always get my signature from
+	    <A HREF="http://www.macgyver.org/signature.html">http://www.macgyver.org/signature.html</A>.</P>
+
+	    <P><EM>This signature does not guarantee that someone
+	    hasn't comprimised this site.  If this site is comprimised
+	    in any way, my PGP key <B>will</B> be revoked, and a new
+	    one issued as soon as possible, and it will be posted here.
+	    </EM></P>
+
+	    <P>My current key is:</P>
+
+	    <PRE>
+#include "macgyver.asc"
+	    </PRE>
+
+#include "footer.epl"

@@ -1,0 +1,19 @@
+
+<!-- end of the page stuff... -->
+
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>
+    <TD valign="bottom" align="left">
+      <TABLE width="80%">
+	<TR><TD align="left"><FONT size="-1"><I>Updated: <: print $last_changed unless !defined( $last_changed ) :></I></FONT></TD></TR>
+	<TR><TD align="left"><FONT size="-1">Copyright (C) 1999 - 2001 The ProFTPD Project.</FONT></TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>
+

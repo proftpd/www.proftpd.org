@@ -1,0 +1,68 @@
+<:
+# $Id$
+:>//
+<: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
+<: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
+<: $html_title = "Accessing the CVS Repository" :>//
+<: $last_changed = "" :>//
+
+#include "header.epl"
+
+	<TR>
+	  <TD>
+
+<DIV CLASS="headline">
+<: print "<B>$html_title</B>" unless !defined($html_title) :>//
+</DIV>
+
+<P>The most recent version of the code is available via <A HREF="http://www.cyclic.com/">CVS</A>
+from the proftpd.org cvs server.  While this gives access to the very
+latest code it must be stressed that this is <STRONG>development</STRONG>
+grade code and is not guaranteed to work, compile and may completely
+mangle your system.  For production environments it is recommended that
+the distribution tarballs or packages are used unless you really know
+what you're doing.
+</P>
+
+<div class="headline_small">Quick Instructions</div>
+<UL>
+    <LI>The CVS server is <CODE>proftpd.org</CODE></LI>
+
+    <LI><CODE>anonymous@proftpd.org</CODE> is the user, and
+    <CODE>proftpd</CODE> is the password.</LI>
+
+    <LI>The directory is <CODE>/var/proftpd</CODE> and the tree is
+    <CODE>proftpd-1.2</CODE>.</LI>
+</UL>
+
+<div class="headline_small">Detailed Instructions</div>
+Assuming you have a CVS client, the process for accessing the ProFTPD
+repository is fairly straight forward:</P>
+
+
+<BLOCKQUOTE>
+  <P>Type the command <CODE>cvs -d
+  :pserver:anonymous@proftpd.org:/var/proftpd login</CODE>.</P>
+
+  <P>You'll see:</P>
+
+  <P><CODE>(Logging in to anonymous@proftpd.org)
+           <BR>
+           CVS password:
+     </CODE>
+  </P>
+
+  <P>The password is <CODE>proftpd</CODE>.</P>
+
+  <P>Next, type in <CODE>cvs -d
+  :pserver:anonymous@proftpd.org:/var/proftpd checkout
+  proftpd-1.2</CODE></P>
+</BLOCKQUOTE>
+
+  <P>That's it.  You can keep up to date by executing <CODE>cvs update
+  -dP</CODE> periodically.</P>
+
+	  </TD>
+	</TR>
+
+#include "footer.epl"

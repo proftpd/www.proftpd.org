@@ -1,0 +1,46 @@
+<:
+# $Id$
+:>//
+<: $html_title = "Credits" :>//
+<: $meta_description = "The Official ProFTPD web site." :>//
+<: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
+
+#include "header.epl"
+
+	<TR>
+	  <TD>
+
+<DIV CLASS="headline">
+<: print "<B>$html_title</B>" unless !defined($html_title) :>//
+</DIV>
+
+<P>ProFTPD would not be where it is today without the contribution of many people.</P>
+
+<P>Core Development Team: <EM>(in no particular order)</EM></P>
+
+<UL>
+<LI>Floody:  ProFTPD developer/creator.</LI>
+<LI><A HREF="http://www.macgyver.org">MacGyver</A>:  ProFTPD developer and maintainer.</LI>
+<LI>John Morrissey</LI>
+<LI>Charles Seeger</LI>
+<LI><A HREF="http://rad.geology.washington.edu/~tj/proftpd/">TJ Saunders</A></LI> 
+<LI><A HREF="http://hamster.wibble.org">Mark Lowes</A>:  Documentation and Webhamster.</LI>
+</UL>
+
+<P>Module Developers:</P>
+
+<UL>
+<LI>Please email the <A HREF="mailto:core@proftpd.org">core developers</A> to be listed here if you have contributed a module to ProFTPD</LI>
+</UL>
+
+<P>Frequent Contributors</P>
+
+<UL>
+<LI><A HREF="http://www.stikman.com">Jeff Grossman</A>:  Help with the web site, user questions, and debugging.</LI>
+
+<LI>Please email the <A HREF="mailto:core@proftpd.org">core developers</A> to be listed here if you wish to be listed as a frequent contributor to the project</LI>
+</UL>
+
+	  </TD>
+	</TR>
+#include "footer.epl"

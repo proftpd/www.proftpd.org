@@ -1,0 +1,36 @@
+<:
+# $Id$
+:>//
+<: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
+<: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
+<: $html_title = "Sites powered by ProFTPD" :>//
+<: $last_changed = "10/Feb/2001 - hamster" :>//
+
+#include "header.epl"
+
+	<TR>
+	  <TD>
+
+
+<DIV CLASS="headline">
+<: print "<B>$html_title</B>" unless !defined($html_title) :>//
+</DIV>
+
+
+<P>The core development team would like to thank the following organisations 
+for allowing themselves to be listed.</P>
+
+<DL>
+<DT><a href="ftp://ftp.kernel.org/">ftp.kernel.org</A>
+<DD>The primary source for Linux kernels.</A>
+</DL>
+
+<DL>
+<DT><A HREF="http://www.frontier.net.uk">Frontier Internet</A></DT>
+<DD>UK based business ISP, running almost exclusively on Linux servers, hosts for ftp.linux.co.uk and www.linux.co.uk</DD>
+</DL>
+	  </TD>
+	</TR>
+
+#include "footer.epl"
+

@@ -1,0 +1,87 @@
+<:
+# $Id$
+:>//
+<: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
+<: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
+<: $last_changed = "15/Feb/2001 - hamster" :>//
+
+#include "header.epl"
+
+	<TR>
+	  <TD>
+
+<!--
+	<TR>
+	  <TD>
+	    <B><FONT face="arial" color="#003399">TITLE</FONT></B><BR>
+            <FONT size="-1">[<I>DATE</I>]</FONT>
+	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
+	    NEWSNEWS
+	    NEWSNEWS
+	    NEWSNEWS
+	    </font></BLOCKQUOTE>
+	  </TD>
+	</TR>
+-->
+
+	<TR>
+	  <TD>
+	    <B><FONT face="arial" color="#003399">New RPM's released</FONT></B><BR>
+            <FONT size="-1">[<I>15/Feb/2001</I>]</FONT>
+	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
+	    Daniel Rosen has released new rpm's which fix a number of problems present in the 
+	    previous versions.  These are available from ftp.proftpd.org and will appear on 
+	    mirrors in the next 24-36 hours.
+	    </font></BLOCKQUOTE>
+	  </TD>
+	</TR>
+
+	<TR>
+	  <TD>
+	    <B><FONT face="arial" color="#003399">www.proftpd.org gets a makeover</FONT></B><BR>
+            <FONT size="-1">[<I>10/Feb/2001</I>]</FONT>
+	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
+	    Ok, it's been probably overdue for a while but the site has had a make over.
+	    Expect some more pages to appear over the next few days once they've been checked.
+	    </font></BLOCKQUOTE>
+	  </TD>
+	</TR>
+	
+	<TR>
+	  <TD>
+	    <B><FONT face="arial" color="#003399">SQL module news</FONT></B><BR>
+            <FONT size="-1">[<I>2001/02/09</I>]</FONT>
+	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
+
+            The SQL modules have a new maintainer (Andrew Houghton),
+            he will be picking up where the previous maintainer left
+            off with the aim of getting the modules back into the code
+            for 1.2.0-final<
+
+	    </font></BLOCKQUOTE>
+	  </TD>
+	</TR>
+
+	<TR>
+	  <TD>
+	    <B><FONT face="arial" color="#003399">New test version (1.2.0rc3) released</FONT></B><BR>
+            <FONT size="-1">[<I>2001/02/06</I>]</FONT>
+	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
+            1.2.0rc3 released.  Changes include security fixes to address
+            the DoS issues raised on Bugtraq, fixing the PASV problem in
+            rc2 and various other problems.  <EM>Note: sql support has
+            been removed from this release because the third party modules
+            are not being maintained and have security related bugs.
+            If you have an interest in maintaining them please email
+            the developers list.
+	    </font></BLOCKQUOTE>
+
+	  </TD>
+	</TR>
+
+	<TR>
+	  <TD>
+	  <P>Older news is <A HREF="/old_news.html">here</A>
+	  </TD>
+	</TR>
+#include "footer.epl"

@@ -1,0 +1,26 @@
+/* $Id$ */
+BODY
+{
+	BACKGROUND-COLOR: white;
+	COLOR: black;
+	FONT-SIZE: 12pt
+}
+
+
+
+.headline
+{
+	COLOR: #003399;
+	FONT-FAMILY: Arial,Helvetica;
+	FONT-SIZE: 12pt
+}
+            
+.headline_small
+{
+	COLOR: #003399;
+	FONT-FAMILY: Arial,Helvetica;
+	FONT-SIZE: 10pt
+}
+            
+/* -- end -- */
+

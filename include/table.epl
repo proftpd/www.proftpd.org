@@ -1,0 +1,121 @@
+      <TABLE width=185 border=0>
+	<TR>
+	  <!-- Left side menu start. -->
+	  <TD valign="top">
+	    <font face="Verdana,Arial" size=-1>
+	    Current Version: <b><: print $proftpd_version :></b><br>
+	    Development Version: <b><: print $proftpd_devel_version :></b><br>
+	    </font>
+	    <!--<table cellpadding=0 cellspacing=0 border=0 bgcolor=#000000 width="100%">
+              <tr>
+                <td>
+                  <table cellpadding=0 cellspacing=0 border=0 bgcolor=#9999cc width="100%">
+                    <tr>
+                      <td>
+                        <font face="verdana,arial" size=-1>
+                        <a href="staff.html">Zebra Staff</a></font>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table><br>-->
+            <table cellspacing="0" cellpadding="0" border=0 bgcolor=#9999cc width="100%">
+	      <tr>
+		<td>
+		  <table bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0 width="100%">
+		    <tr>
+                      <td><font face="Verdana,Arial" size=-1><b>Newsroom</b></font></td>
+                    </tr>
+	          </table>
+                  <table bgcolor=#ffffff cellspacing=0 cellpadding=0 border=0 width="100%">
+                    <tr>
+                      <td><font face="verdana,arial"size=-1>
+			<li><a href="/">News Flashes</a>
+			<li><a href="/critbugs.html">Critical Bugs</a>
+			<li><a href="/security.html">Security Updates</a>
+			</font>
+		      </td>
+		    </tr>
+		  </table>
+		</td>
+	      </tr>
+	    </table><br>
+	    <table border="0" cellspacing="0" cellpadding="0" bgcolor=#9999cc width="100%">
+              <tr>
+		<td>
+		  <table bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0 width="100%">
+                    <tr>
+		      <td><font face="Verdana,Arial" size=-1><b>Information</b></font></td>
+		    </tr>
+		  </table>
+                  <table bgcolor=#ffffff cellspacing=0 cellpadding=0 border=0 width="100%">
+                    <tr>
+                      <td><font face="verdana,arial"size=-1>
+                        <li><a href="/goals.html">What is ProFTPD?</a>
+                        <li><A href="/features.html">Features</A>
+			<li><a href="/platforms.html">Supported Platforms</A>
+                        <li><a href="/docs/">Documentation</a>
+                        <li><a href="/rfc.html">Supported RFCs</A>
+                        <LI><A HREF="/links.html">Other sites</A>
+                        <li><a href="/docs/y2k.html">Year 2000 Compliance</a>
+                        <LI><A HREF="/sites.html">Sites powered by ProFTPD</A>
+                        <LI><A href="/credits.html">Core team and contributers</A>
+                        </font>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table><br>
+            <table border="0" cellspacing="0" cellpadding="0" bgcolor=#9999cc width="100%">
+              <tr>
+                <td>
+                  <table bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0 width="100%">
+                    <tr>
+                      <td><font face="Verdana,Arial" size=-1><b>Development</b></font></td>
+                    </tr>
+                  </table>
+                  <table bgcolor=#ffffff cellspacing=0 cellpadding=0 border=0 width="100%">
+                    <tr>
+                      <td><font face="verdana,arial"size=-1>
+                        <li><a href="/download.html">Download / ftp mirrors</a>
+                        <li><a href="/lists.html">Mailing Lists</A>
+                        <li><a href="/docs/cvs.html">CVS Repository</a>
+                        </font>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table><br>
+            <!--
+            <table border=0 cellspacing=0 cellpadding=0 bgcolor=#9999cc width="100%">
+              <tr>
+                <td>
+                  <table bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0 width="100%">
+                    <tr>
+                      <td><font face="Verdana,Arial" size=-1><b>Contact Information</b></font></td>
+                    </tr>
+                  </table>
+                  <table bgcolor=#ffffff cellspacing=0 cellpadding=0 border=0 width="100%">
+                    <tr>
+                      <td><font face="verdana,arial" size=-1>
+                        <li><a href="mailto:zebra-biz@dmlnet.com">Business Inquiries</a>
+                        <li><a href="mailto:zebra-pr@dmlnet.com">Press Inquiries</a>
+                        <li><a href="mailto:zebra-job@dmlnet.com">Job Opportunities</a>
+                        <li><a href="mailto:zebra-web@dmlnet.com">Website Comments/Bugs</a><p>
+                        <li>Physical Coordinates:<br>
+                        &nbsp;&nbsp;&nbsp;<a href="http://www.ipinfusion.com/">IP Infusion Inc.</a><br>
+			&nbsp;&nbsp;&nbsp;<a href="http://www.ipinfusion.com/contact.html">Contact</a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>  
+            -->
+          </TD>
+	</TR>
+      </TABLE>
+

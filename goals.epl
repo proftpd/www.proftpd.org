@@ -1,0 +1,98 @@
+<:
+# $Id$
+:>//
+<: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
+<: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
+<: $html_title = "Project Goals" :>//
+<: $last_changed = "09/Feb/2001" :>//
+
+#include "header.epl"
+
+	<TR>
+	  <TD>
+
+
+<DIV CLASS="headline">
+<: print "<B>$html_title</B>" unless !defined($html_title) :>//
+</DIV>
+
+
+	<P>
+		ProFTPD grew out of the desire to have a secure and
+		configurable FTP server, and out of a significant
+		admiration of the <A
+		HREF="http://www.apache.org">Apache</A> web
+		server. There are currently a very limited number of
+		FTP servers running on unix (or unix-like) hosts. The
+		most commonly used server is probably wu-ftpd. While
+		wu-ftpd provides excellent performance and is
+		generally a good product, it lacks numerous features
+		found in newer Win32 FTP servers, and has a poor
+		security history.  Many people, including the
+		developers who work on ProFTPD have spent a great deal
+		of time fixing bugs and hacking features into
+		wu-ftpd.  Unfortunately, it quickly became clear that
+		a complete redesign was necessary in order to
+		implement the configurability and features
+		desired. ProFTPD is not a hack based on any other
+		server, it's an independent source tree from the
+		ground up.  Click <A HREF="/sites.html">here</A> for a
+		small list of some of the sites ProFTPD powers --
+		many of them handling large volumes of traffic on a
+		daily basis.
+	</P>
+
+<!--
+	<P>
+		ProFTPD is known to compile and run on at least the
+		following platforms (if you have any that are not in
+		this list, please email <A
+		HREF="mailto:"proftpd-devel@proftpd.org">the developers list</A>):
+
+		<BR>
+		<TABLE BORDER="0" ALIGN="center" WIDTH="75%">
+		<:
+		   my @platforms = (
+		      'AIX', 'Digital Unix', 'DG/UX', 'FreeBSD*',
+		      'HP/UX', 'IRIX*', 'Mac OS/X', 'Linux*', 'NetBSD',
+		      'OpenBSD', 'SCO', 'Solaris', 'SunOS', 'BSD/OS'
+		   );
+		   
+		   @platforms = sort(@platforms);
+		   
+                   for(my $i = 0; $i <= $#platforms; $i++) {
+                       print "<TR>\n";
+
+                       print '     <TD>', $platforms[$i++], "</TD>\n";
+                       print '     <TD>', $platforms[$i++], "</TD>\n";
+                       print '     <TD>', $platforms[$i], "</TD>\n";
+		       print "</TR>\n\n";
+                   }
+		:>
+		</TABLE>
+		<BR>
+
+		An asterisk(*) denotes a platform that the core
+		ProFTPD team has access to test on.  If you wish to
+		donate either hardware or network access please
+		contact <A
+		HREF="mailto:proftpd-devel@proftpd.org">the developers list</A>.
+	</P>
+-->
+
+	<P>
+		In addition to wu-ftpd there are a few of other FTP
+		servers available which are designed to be light-weight and
+		secure, at the expense of configurability. For
+		example, Troll FTP is an excellent FTP daemon which is
+		considerably more secure and less resource intensive
+		than wu-ftpd. Unfortunately, while it is quite
+		suitable for basic FTP services, it does not offer the
+		feature set required for more sophisticated FTP sites.
+
+	  
+	  </TD>
+	</TR>
+
+#include "footer.epl"
+

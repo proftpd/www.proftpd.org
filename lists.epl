@@ -1,0 +1,110 @@
+<:
+# $Id$
+:>//
+<: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
+<: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
+<: $html_title = "Mailing lists" :>//
+<: $last_changed = "10/Feb/2001" :>//
+
+#include "header.epl"
+
+	<TR>
+	  <TD>
+
+
+<DIV CLASS="headline">
+<: print "<B>$html_title</B>" unless !defined($html_title) :>//
+</DIV>
+
+	<P>
+		There are a number of mailing lists for the ProFTPD project covering the whole range of activites relating to the project.
+
+	</TD>
+	</TR>
+
+	<TR>
+	  <TD>
+	    <B><FONT face="arial" color="#003399">Announcements</FONT></B><BR>
+            <FONT size="-1">[<I>proftpd-announce@proftpd.org</I>]</FONT>
+	    <BLOCKQUOTE><font face="verdana,arial" size=-1> 
+
+	    A very low traffic mailing list, strictly used for major
+	    announcements related to ProFTPD (new versions, bug fixes,
+	    security issues).  <STRONG>This list is highly recommended
+	    for anyone using ProFTPD.</STRONG><BR>&nbsp;
+
+	    </font></BLOCKQUOTE>
+	  </TD>
+	</TR>
+
+	<TR>
+	  <TD>
+	    <B><FONT face="arial" color="#003399">Users</FONT></B><BR>
+            <FONT size="-1">[<I>proftpd-users@proftpd.org</I>]</FONT>
+	    <BLOCKQUOTE><font face="verdana,arial" size=-1> 
+
+	    This list is for end user questions and comments on ProFTPD.
+	    <STRONG>This is a high volume list.</STRONG><BR>&nbsp;
+
+	    </font></BLOCKQUOTE>
+	  </TD>
+	</TR>
+
+	<TR>
+	  <TD>
+	    <B><FONT face="arial" color="#003399">Developers</FONT></B><BR>
+            <FONT size="-1">[<I>proftpd-devel@proftpd.org</I>]</FONT>
+	    <BLOCKQUOTE><font face="verdana,arial" size=-1> 
+
+	    The audience for this list is developers and people
+	    interested in the development and future functionality of
+	    ProFTPD.<BR>&nbsp;
+
+	    </font></BLOCKQUOTE>
+	  </TD>
+	</TR>
+
+	<TR>
+	  <TD>
+	    <B><FONT face="arial" color="#003399">Committers</FONT></B><BR>
+            <FONT size="-1">[<I>proftpd-committers@proftpd.org</I>]</FONT>
+	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
+
+	    This list exists to take all the automated emails from cvs
+	    and the bug system, probably only of use or interest to
+	    subscribers of the -devel list (it is intended to cut down
+	    on the traffic hitting -devel)
+	    
+	    </font></BLOCKQUOTE>
+	  </TD>
+	</TR>
+
+	<TR>
+	  <TD>
+	    <B><FONT face="arial" color="#003399">Mirror Admins</FONT></B><BR>
+            <FONT size="-1">[<I>proftpd-mirrors@proftpd.org</I>]</FONT>
+	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
+
+	    The target audience for this list is administrators mirroring
+	    or interested in mirroring the ProFTPD ftp and websites.
+
+	    </font></BLOCKQUOTE>
+	  </TD>
+	</TR>
+
+	<TR><TD>
+	The mailing lists are now housed by the Sourceforge project<BR>
+
+	<A href="http://sourceforge.net">
+	<IMG src="http://sourceforge.net/sflogo.php?group_id=17793" width="88" height="31" border="0" alt="SourceForge Logo">
+	</A>
+	
+<!--	<A href="http://sourceforge.net">
+	<IMG src="http://sourceforge.net/sflogo.php?group_id=12589" width="88" height="31" border="0" alt="SourceForge Logo">
+	</A>
+-->
+	</TD</TR>
+	
+
+#include "footer.epl"
+

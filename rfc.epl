@@ -1,0 +1,93 @@
+<:
+# $Id$
+:>//
+<: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
+<: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
+<: $html_title = "Supported RFCs" :>//
+<: $last_changed = "10/Feb/2001" :>//
+
+#include "header.epl"
+
+	<TR>
+	  <TD>
+
+
+<DIV CLASS="headline">
+<: print "<B>$html_title</B>" unless !defined($html_title) :>//
+</DIV>
+<DIV class="headline_small">
+<: print "The current version is $proftpd_version" :>//
+</div>
+
+<P>
+</P>
+</TD></TR>
+
+
+<!--
+	<TR>
+	  <TD>
+	    <B><FONT face="arial" color="#003399">TITLE</FONT></B><BR>
+            <FONT size="-1">[<I>DATE</I>]</FONT>
+	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
+	    NEWSNEWS
+	    NEWSNEWS
+	    NEWSNEWS
+	    </font></BLOCKQUOTE>
+	  </TD>
+	</TR>
+-->
+
+	<TR>
+	  <TD>
+	    <B><FONT face="arial" color="#003399"><A HREF="http://www.rfc-editor.org/rfc/rfc959.txt">RFC959</A></FONT></B><BR>
+            <FONT size="-1">[<I>Supported</I>]</FONT>
+	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
+	    This RFC is the official specification of the File Transfer Protocol (FTP).
+	    </font></BLOCKQUOTE>
+	  </TD>
+	</TR>
+
+	<TR>
+	  <TD>
+	    <B><FONT face="arial" color="#003399"><A HREF="http://www.rfc-editor.org/rfc/rfc1123.txt">RFC1123</A></FONT></B><BR>
+            <FONT size="-1">[<I>Supported</I>]</FONT>
+	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
+	    This RFC extends and clarifies some of the aspects of RFC959.
+	    </font></BLOCKQUOTE>
+	  </TD>
+	</TR>
+
+	<TR>
+	  <TD>
+	    <B><FONT face="arial" color="#003399"><A HREF="http://www.rfc-editor.org/rfc/rfc2228.txt">RFC2228</A></FONT></B><BR>
+            <FONT size="-1">[<I>Unsupported</I>]</FONT>
+	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
+	    This RFC specifies a number of security extensions to the
+	    protocol defined in RFC959, these are not currently supported
+	    within ProFTPD.  Work on these extensions is planned for
+	    the 1.3.x development branch.
+	    </font></BLOCKQUOTE>
+	  </TD>
+	</TR>
+
+	<TR>
+	  <TD>
+	    <B><FONT face="arial" color="#003399"><A HREF="http://www.rfc-editor.org/rfc/rfc2604.txt">RFC2604</A></FONT></B><BR>
+            <FONT size="-1">[<I>Unsupported</I>]</FONT>
+	    <BLOCKQUOTE><font face="verdana,arial" size=-1>
+	    Internationalization of the File Transfer Protocol, FTP as
+	    defined originally in RFC959 uses 7 bit transfer for it's
+	    character set.  Due to the growth of the Internet in the
+	    years since it's release there is a need to support characters
+	    which do not fit into the 7bit set.  This RFC addresses the
+	    extension of the protocol to support the multiple character
+	    sets found on the Internet of today.
+	    </font></BLOCKQUOTE>
+	  </TD>
+	</TR>
+
+
+
+#include "footer.epl"
+
