@@ -54,3 +54,7 @@ C       #1569 - Cygwin support
         #1454 - <Limit OVERWRITE>
         #1532 - Human readable disk free
         #1565 - ftpwho bandwidth usage
+
+TBD
+        IPv6
+        i8n
