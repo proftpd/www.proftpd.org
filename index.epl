@@ -12,8 +12,9 @@
       <b><font face="arial" color="#003399">We're back to normal</font></b>
       <br />
       <font size="-1">[<i>21/Sept/2001</i>]</font>
+
       <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-       DNS has now done it's thing and www.proftpd.org is back to it's 
+       DNS has now done its thing and www.proftpd.org is back to its
        normal home.  Thanks to everyone who offered help, space and bandwidth.
     </font></blockquote>
   </td>
@@ -26,18 +27,19 @@
     <font size="-1">[<i>17/Sept/2001</i>]</font>
 
     <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-     The core proftpd.org server appears to have problems and the admin
-     is currently uncontactable.  In the meantime we've repointed both
-     www.proftpd.org/net and ftp.proftpd.org to one of the existing
-     mirrors.  At the moment bugs.proftpd.org and mail delivery is
-     unaffected, however the mailing list archives are offline.
-     We will update this site once more details are available.
+     The core proftpd.org server appears to be having problems and the admin
+     is currently unavailable.  In the meantime, we've repointed both
+     www.proftpd.org/net and ftp.proftpd.org to one of the existing mirrors. 
+     At the moment bugs.proftpd.org and mail delivery is unaffected, however
+     the mailing list archives are offline.  We will update this site once
+     more details are available.
      - <em>hamster</em>
     </font></blockquote>
 
     <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-    <strong>Update</strong>: Flood has kicked the server, it looks like human 
-    error caused the IP to drop off the net, www will be migrating back shortly
+     <strong>Update</strong>: Flood has kicked the server, it looks like
+     human error caused the IP to drop off the net, www will be migrating
+     back shortly.
     </font></blockquote>
   </td>
 </tr>
