@@ -21,8 +21,8 @@
 abf8409bbd9150494bc1847ace06857a <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.2.8p.tar.gz">proftpd-1.2.8p.tar.gz</a>
 7c85503b160a36a96594ef75f3180a07 <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.2.9.tar.bz2">proftpd-1.2.9.tar.bz2</a>
 445fbf24e2ec300800a184eb81296bda <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.2.9.tar.gz">proftpd-1.2.9.tar.gz</a>
-5a9f2716c1439c84ddc455406054d53a <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.2.10rc2.tar.bz2">proftpd-1.2.10rc2.tar.bz2</a>
-b4e0742f428fc91a44a920e411308d0e <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.2.10rc2.tar.gz">proftpd-1.2.10rc2.tar.gz</a>
+d834bb822816a2ce483cc2ef1a9533e7 <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.2.10rc3.tar.bz2">proftpd-1.2.10rc3.tar.bz2</a>
+1e306d2f54ea92895ecff6659498b911 <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.2.10rc3.tar.gz">proftpd-1.2.10rc3.tar.gz</a>
 </pre>
 
   </td>
@@ -81,27 +81,27 @@ RUHsB4OtkoKjUm+MCiuHPtaC
 -----END PGP SIGNATURE-----
 </pre></font>
 
-<b><font face="arial" color="#003399">proftpd-1.2.10rc2.tar.bz2.asc</font></b>
+<b><font face="arial" color="#003399">proftpd-1.2.10rc3.tar.bz2.asc</font></b>
 <br />
 <font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><pre>
 -----BEGIN PGP SIGNATURE-----
 Version: PGP 6.5.8
 
-iQA/AwUAQPQtfbeOiT+lEZdqEQKkGgCfSj3BM7FiUWwuTlZfr+lXmGOKSn0AoIkt
-gPpoyn1YtsuN1T9ekjvm4J1N
-=qlKE
+iQA/AwUAQPR4ELeOiT+lEZdqEQIv/QCeJNR8kCfQN/v/e0Rao50JumsVbrYAn2OJ
+X0Sol5kI4AdsqgPaBYrOcQpM
+=x+f9
 -----END PGP SIGNATURE-----
 </pre></font>
 
-<b><font face="arial" color="#003399">proftpd-1.2.10rc2.tar.gz.asc</font></b>
+<b><font face="arial" color="#003399">proftpd-1.2.10rc3.tar.gz.asc</font></b>
 <br />
 <font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><pre>
 -----BEGIN PGP SIGNATURE-----
 Version: PGP 6.5.8
 
-iQA/AwUAQPQtd7eOiT+lEZdqEQIRlACeO8D2/9RAwtVoF1G8tr6U0qp/A+EAniFN
-I2s7P1d3dROi/6tTtChxuisl
-=d/SI
+iQA/AwUAQPR4CreOiT+lEZdqEQJ5jQCfc9Dw4Kpq78pVFgFzmyA9YcVWQdcAoJUK
+AXtahQJle8VxcdlCcOwcYyxo
+=eUFl
 -----END PGP SIGNATURE-----
 </pre></font>
 

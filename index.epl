@@ -7,6 +7,18 @@
 
 <table bgcolor="white">
 
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">1.2.10rc3 released</font></b>
+    <br />
+    <font size="-1">[<i>13/Jul/2004</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      <p>The ProFTPD Project has made a 1.2.10rc3 release
+      available to the community.  This release fixes a typo that prevented
+      the 1.2.10rc2 release from compiling properly.
+    </font></blockquote>
+  </td>
+</tr>
 
 <tr>
   <td>
