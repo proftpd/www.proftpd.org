@@ -38,6 +38,7 @@ C       #1805 - this patch will allow pam support on 10.2 (Mac OSX)
         #1507 - regex pattern matching in [Allow/Deny][User/Group]
         #1515 - Enable mod_log to log into default log / syslog
         #1565 - ftpwho bandwidth usage
+        #1597 - Problems with HP-UX 10/11 trusted systems, mod_pam, and mod_unixpw
         #1605 - MKD and RMD do not log filepaths
         #1653 - Complete the FS API abstraction implementation
         #1671 - new directive SQLLogFile
