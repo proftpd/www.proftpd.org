@@ -2,7 +2,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Project Documentation" :>//
-<: $last_changed = "22/Aug/2001 - hamster" :>//
+<: $last_changed = "18/Oct//2001 - hamster" :>//
 
 #include "header.epl"
 
@@ -53,7 +53,7 @@
       <dt><a href="http://www.horde.net/~jwm/software/mod_ldap/">LDAP support</a> (mod_ldap)</dt>
       <dt>mod_linuxprivs</dt>
       <dt><a href="http://www.lastditcheffort.org/aah/mod_sql.html">SQL support</a> (mod_sql)</dt>
-      <dt>mod_ratio</dt>
+      <dt>mod_ratio (Maintained by: James Dogopoulos &lt;jd@dynw.com&gt;)</dt>
       <dt>mod_readme</dt>
       <dt><a href="http://rad.geology.washington.edu/~tj/proftpd/">TCP wrappers support</a> (mod_wrap)</dt>
     </dl>
