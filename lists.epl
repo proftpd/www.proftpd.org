@@ -14,59 +14,21 @@
     </div>
     <p>There are a number of mailing lists for the ProFTPD Project covering 
 	 the entire range of activites.</p>
-  </td>
-</tr>
 
-<tr>
-  <td>
-	<b><font face="arial" color="#003399">Hints on unsubscribing from the mailing lists</font></b><br />
-	<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"> 
-	Unsubscribing from the Sourceforge hosted lists is easy, simply follow these hints only two 
-	pieces of information must be known.
-	
 	<ul>
-	<li>The email address subscribed to the list.</li>
-	<li>The list subscribed to</li>
+	<li><a href="#announce">Proftpd-Announce</a></li>
+	<li><a href="#users">Proftpd-Users</a></li>
+	<li><a href="#devel">Proftpd-Devel</a></li>
+	<li><a href="#committers">Proftpd-Committers</a></li>
+	<li><a href="#mirrors">Proftpd-Mirrors</a></li>
+	<li><a href="list-unsub.html">How to unsubscribe</a></li>
 	</ul>
-	
-	<p>It helps if you can remember the password assigned by Mailman to 
-	your address but it's not essential</p>
-	
-	<p>Using your favourite browser visit one or more of the following websites.</p>
-	
-	<dl>
 
-	<dt>Proftpd-Announce
-	<dd><a href="https://lists.sourceforge.net/lists/listinfo/proftp-announce">https://lists.sourceforge.net/lists/listinfo/proftp-announce</a>
-	
-	<dt>Proftpd-Users
-	<dd><a href="https://lists.sourceforge.net/lists/listinfo/proftp-user">https://lists.sourceforge.net/lists/listinfo/proftp-user</a>
-
-	<dt>Proftpd-Devel
-	<dd><a href="https://lists.sourceforge.net/lists/listinfo/proftp-devel">https://lists.sourceforge.net/lists/listinfo/proftp-devel</a>
-
-	<dt>Proftpd-Committers
-	<dd><a href="https://lists.sourceforge.net/lists/listinfo/proftp-committers">https://lists.sourceforge.net/lists/listinfo/proftp-committers</a>
-	
-	<dt>Proftpd-Mirrors
-   <dd><a href="https://lists.sourceforge.net/lists/listinfo/proftp-mirrors">https://lists.sourceforge.net/lists/listinfo/proftp-mirrors</a>
-
-	</dl>
-
-	<p>Enter your subscribed email address into the textfield at the bottom of the 
-	page, next to the "Edit Options" button.  Then click that button.</p>
-	
-	<p>This will take you to a page where you can request to have your password 
-	emailed to you.  Once you have received the password, you can return to this 
-	subscription options editing page, and use the password to unsubscribe yourself.</p>
-
-	</font></blockquote>
   </td>
 </tr>
 
-
 <tr>
-  <td>
+  <td><a name="announce">
     <b><font face="arial" color="#003399">Announcements</font></b><br />
     <font size="-1">[<i>proftpd-announce-request@proftpd.org</i>]</font>
 
@@ -81,13 +43,16 @@
       <p>To subscribe, <a
       href="mailto:proftpd-announce-request@proftpd.org?subject=subscribe">e-mail
       proftpd-announce-request@proftpd.org, with the subject
-      "subscribe."</a></p>
+      "subscribe."</a> or visit 
+		<a href="https://lists.sourceforge.net/lists/listinfo/proftp-announce">https://lists.sourceforge.net/lists/listinfo/proftp-announce</a>
+		</p>
+		
     </font></blockquote>
   </td>
 </tr>
 
 <tr>
-  <td>
+  <td><a name="users">
     <b><font face="arial" color="#003399">Users</font></b><br />
     <font size="-1">[<i>proftpd-users-request@proftpd.org</i>]</font>
 
@@ -100,13 +65,13 @@
       <p>To subscribe, <a
       href="mailto:proftpd-users-request@proftpd.org?subject=subscribe">e-mail
       proftpd-users-request@proftpd.org, with the subject
-      "subscribe."</a></p>
+      "subscribe."</a> or visit <a href="https://lists.sourceforge.net/lists/listinfo/proftp-user">https://lists.sourceforge.net/lists/listinfo/proftp-user</a></p>
     </font></blockquote>
   </td>
 </tr>
 
 <tr>
-  <td>
+  <td><a name="devel">
     <b><font face="arial" color="#003399">Developers</font></b><br />
     <font size="-1">[<i>proftpd-devel-request@proftpd.org</i>]</font>
 
@@ -119,13 +84,13 @@
       <p>To subscribe, <a
       href="mailto:proftpd-devel-request@proftpd.org?subject=subscribe">e-mail
       proftpd-devel-request@proftpd.org, with the subject
-      "subscribe."</a></p>
+      "subscribe."</a> or visit <a href="https://lists.sourceforge.net/lists/listinfo/proftp-devel">https://lists.sourceforge.net/lists/listinfo/proftp-devel</a></p>
     </font></blockquote>
   </td>
 </tr>
 
 <tr>
-  <td>
+  <td><a name="committers">
     <b><font face="arial" color="#003399">Committers</font></b><br />
     <font size="-1">[<i>proftpd-committers-request@proftpd.org</i>]</font>
 
@@ -138,13 +103,13 @@
       <p>To subscribe, <a
       href="mailto:proftpd-committers-request@proftpd.org?subject=subscribe">e-mail
       proftpd-committers-request@proftpd.org, with the subject
-      "subscribe."</a></p>
+      "subscribe."</a> or visit <a href="https://lists.sourceforge.net/lists/listinfo/proftp-committers">https://lists.sourceforge.net/lists/listinfo/proftp-committers</a></p>
     </font></blockquote>
   </td>
 </tr>
 
 <tr>
-  <td>
+  <td><a name="mirrors">
     <b><font face="arial" color="#003399">Mirror Admins</font></b><br />
     <font size="-1">[<i>proftpd-mirrors-request@proftpd.org</i>]</font>
 
@@ -155,7 +120,7 @@
       <p>To subscribe, <a
       href="mailto:proftpd-mirrors-request@proftpd.org?subject=subscribe">e-mail
       proftpd-mirrors-request@proftpd.org, with the subject
-      "subscribe."</a></p>
+      "subscribe."</a> or visit <a href="https://lists.sourceforge.net/lists/listinfo/proftp-mirrors">https://lists.sourceforge.net/lists/listinfo/proftp-mirrors</a></p>
     </font></blockquote>
   </td>
 </tr>
