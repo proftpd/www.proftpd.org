@@ -32,7 +32,7 @@ More information available at http://www.proftpd.org/proftpd-devel-archive/full/
 		<b><font face="arial" color="#003399">TDS SQL backend module</font></b>
 		<br />
 		<br /><font size="-1"><i>Maintainer: Patrick Muldoon</i></font>
-		<br /><font size="-1"><i><a href="http://www.labratsoftware.com/mod_sql_tds-0.5.tar.gz">http://www.labratsoftware.com/mod_sql_tds-0.5.tar.gz</a></i></font>
+		<br /><font size="-1"><i><a href="http://labratsoftware.com/mod_sql_tds/mod_sql_tds-4.0.tar.gz">http://labratsoftware.com/mod_sql_tds/mod_sql_tds-4.0.tar.gz</a></i></font>
 
 		<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
 		 mod_sql_tds provides SQL backend support for servers which speak
