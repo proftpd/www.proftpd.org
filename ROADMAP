@@ -8,25 +8,24 @@ C = Committed
 1.2.6
 C       mod_quota - removed until security problems are fixed
 C       Remaining outstanding fixes / bugs in the ticketing system.
-N/A?    'Other' arch fixes as and when tested
-C?      Grubb's signal handler changes
+C       Grubb's signal handler changes
 C       IFModule patch 
-        #1241 - Homedir on demand
 C       #1258 - STOU command
         #1294 - MaxClientsPerHost fix
 C       #1306 - TimeoutSession
-N/A?    #1346 - Cygwin fix
         #1398 - there is no log rotate for /var/log/xferlog
 C       #1407 - ftp protocol differences
 C       #1463 - Add auth handler dispatch reporting at new debug level
 C       #1534 - Large File Support
 C       #1569 - Cygwin support
+C       #1701 - Reverse lookups not working
 
 
 1.2.7
         #1065 - Limit upload/download file sizes
         #1076 - Toggle parsing of .ftpaccess files with a AllowOverride
         #1231 - Extra options for ftpwho
+        #1241 - Homedir on demand
         #1272 - DenyFilter by User or DenyFilter by Dire
         #1395 - Check return values in PRIVS calls
         #1432 - Pedantic handling of leading whitespace in FTP commands
@@ -34,6 +33,8 @@ C       #1569 - Cygwin support
         #1507 - regex pattern matching in [Allow/Deny][User/Group]
         #1623 - "connected since" in ftpwho
         #1644 - LogFormat local IP and FQDN tags missing
+        #1687 - Add contrib module for RADIUS authentication, accounting
+        #1705 - Add contrib module for time-of-day restrictions
 
 1.2.8
         MaxFileSize
