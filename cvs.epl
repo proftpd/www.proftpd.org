@@ -28,7 +28,7 @@
 
     <div class="headline-small">Quick Instructions</div>
     <ul>
-        <li>The CVS server is <code>proftpd.org</code></li>
+        <li>The CVS server is <code>cvs.proftp.sourceforge.net</code></li>
         <li><code>anonymous@cvs.proftp.sourceforge.net</code> is the user, the
         password is blank</li>
         <li>The directory is <code>/cvsroot/proftp</code> and the tree
