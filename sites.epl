@@ -157,8 +157,8 @@ Contact: Lucian Daniel Kafka <luci@conexim.com.au>
 
     <dl>
       <dt><A href="http://www.cslab.vt.edu/">Virginia Tech Computer Science Lab</A></dt>
-      <dd>This site uses ProFTPD to host ftp3.freebsd.org and a Progeny Linux mirror, 
-          shifting over 250Gb of data monthly.</dd>
+      <dd>This site uses ProFTPD to host a mirrors site shifting over
+      250Gb of data monthly.</dd>
     </dl>
 
     <dl>
