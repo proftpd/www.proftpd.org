@@ -11,15 +11,15 @@ C = Committed
         #2062 - Enhance UserOwner/GroupOwner to take IDs as well as name
                 parameters
      C  #2071 - Add Variables API
-	#2331 - Proftpd does not honor POSIX ACLs
+        #2331 - Proftpd does not honor POSIX ACLs
      C  #2389 - 64-bit compilation warnings
      C  #2392 - mod_sql needs better handling of its backend modules
      C  #2454 - Extend <VirtualHost> to honor multiple addresses
      C  DSO support
+     C  #2549 Allow contrib modules to be built from multiple source files
 
 TBD
 	Add mod_shaper, mod_md5 modules to contrib/
 	#2368 - Allow contrib modules to extend mod_sql's SQLAuthTypes
         #2013 - Track RFC2228 sessions in scoreboard
-        #2549 Allow contrib modules to be built from multiple source files
         i18n (including RFC2640)
