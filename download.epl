@@ -1,7 +1,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Downloading and mirror sites" :>//
-<: $last_changed = "29/03//2001 - hamster" :>//
+<: $last_changed = "31/03/2001 - mark" :>//
 
 #include "header.epl"
 
@@ -67,19 +67,19 @@ Location: Finland (Helsinki)<BR>
 Maintained by: Ville Koskinen<BR>
 </P>
 <P>
-<A HREF="ftp://ftp.selfdestruct.net/pub/proftpd/">ftp://ftp.selfdestruct.net/pub/proftpd/</A><BR>
+<A HREF="ftp://hosted.selfdestruct.net/pub/proftpd/">ftp://hosted.selfdestruct.net/pub/proftpd/</A><BR>
 Location: Finland (Vaasa)<BR>
 Maintained by: Toni Viemero<BR>
-</P>
-<P>
-<A HREF="ftp://ftp.club-internet.fr/pub/mirrors/ftp.proftpd.org/">ftp://ftp.club-internet.fr/pub/mirrors/ftp.proftpd.org/</A><BR>
-Location: France (Paris)<BR>
-Maintained by: Carlos Inacio<BR>
 </P>
 <P>
 <A HREF="ftp://ftp.model-fx.com/pub/mirrors/proftpd/">ftp://ftp.model-fx.com/pub/mirrors/proftpd/</A><BR>
 Location: France (Paris)<BR>
 Maintained by: elk<BR>
+</P>
+<P>
+<A HREF="ftp://ftp.club-internet.fr/pub/mirrors/ftp.proftpd.org/">ftp://ftp.club-internet.fr/pub/mirrors/ftp.proftpd.org/</A><BR>
+Location: France (Paris)<BR>
+Maintained by: Carlos Inacio<BR>
 </P>
 <P>
 <A HREF="ftp://ftp.free.fr/pub/Networking/proftpd/">ftp://ftp.free.fr/pub/Networking/proftpd/</A><BR>
@@ -136,6 +136,11 @@ Location: Japan (Tokyo)<BR>
 Maintained by: Ayamura Kikuchi <BR>
 </P>
 <P>
+<A HREF="ftp://ftp.ayamura.org/pub/proftpd/">ftp://ftp.ayamura.org/pub/proftpd/</A><BR>
+Location: Japan (Tokyo)<BR>
+Maintained by: Ayamura Kikuchi <BR>
+</P>
+<P>
 <A HREF="ftp://linux.sarang.net/mirror/network/daemon/ftp/proftpd/">ftp://linux.sarang.net/mirror/network/daemon/ftp/proftpd/</A><BR>
 Location: Korea (Seoul)<BR>
 </P>
@@ -154,14 +159,14 @@ Location: Norway (Bergen)<BR>
 Maintained by: Christian Nikolaisen<BR>
 </P>
 <P>
-<A HREF="ftp://ftp.truuz.com/mirrors/ftp.proftpd.net/   ">ftp://ftp.truuz.com/mirrors/ftp.proftpd.net/   </A><BR>
-Location: Norway (Oslo)<BR>
-Maintained by: Dag Stenstad<BR>
-</P>
-<P>
 <A HREF="ftp://download.enitel.no/pub/proftpd/">ftp://download.enitel.no/pub/proftpd/</A><BR>
 Location: Norway (Oslo)<BR>
 Maintained by: Jorn-Morten Innselset<BR>
+</P>
+<P>
+<A HREF="ftp://ftp.truuz.com/mirrors/ftp.proftpd.net/   ">ftp://ftp.truuz.com/mirrors/ftp.proftpd.net/   </A><BR>
+Location: Norway (Oslo)<BR>
+Maintained by: Dag Stenstad<BR>
 </P>
 <P>
 <A HREF="ftp://ftp.futuro.pl/pub/mirror/ftp.proftpd.org/">ftp://ftp.futuro.pl/pub/mirror/ftp.proftpd.org/</A><BR>
@@ -205,8 +210,8 @@ Maintained by: tol & dempa<BR>
 </P>
 <P>
 <A HREF="ftp://ftp.eagle.y.se/pub/proftpd/">ftp://ftp.eagle.y.se/pub/proftpd/</A><BR>
-Location: Sweden (Link\366ping)<BR>
-Maintained by: Martin Ostlund<BR>
+Location: mo@bestlinux.se (Sweden)<BR>
+Maintained by: Martin &Ouml<BR>
 </P>
 <P>
 <A HREF="ftp://ftp.solnet.ch/pub/proftpd">ftp://ftp.solnet.ch/pub/proftpd</A><BR>
