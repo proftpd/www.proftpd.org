@@ -36,6 +36,7 @@ C       #1737 - Enhance file hiding via regular expressions
         #1205 - Add debug option to SystemLog
         #1482 - %U cookie to LogFormat
         #1515 - Enable mod_log to log into default log / syslog
+        #1565 - ftpwho bandwidth usage
         #1605 - MKD and RMD do not log filepaths
         #1653 - Complete the FS API abstraction implementation
         #1705 - Add contrib module for time-of-day restrictions
