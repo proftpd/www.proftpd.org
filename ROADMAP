@@ -2,23 +2,19 @@ Development Roadmap for 1.2.x
 -----------------------------
 Version: $Id$
 
-
 C = Committed
 
 1.2.7
 C       #1065 - Limit upload/download file sizes
 C       #1076 - Toggle parsing of .ftpaccess files with a AllowOverride
 C       #1231 - Extra options for ftpwho
-        #1241 - Homedir on demand
 C       #1253 - ServerAddress
-        #1272 - DenyFilter by User or DenyFilter by Dire
 C       #1294 - MaxClientsPerHost fix
 C       #1395 - Check return values in PRIVS calls
-        #1398 - there is no log rotate for /var/log/xferlog
+C       #1398 - there is no log rotate for /var/log/xferlog
 C       #1432 - Pedantic handling of leading whitespace in FTP commands
 C       #1475 - Minor changes to SITE command handling
 C       #1486 - Directory listing performance
-        #1507 - regex pattern matching in [Allow/Deny][User/Group]
 C       #1564 - Add DESTDIR in Makefile
 C       #1623 - "connected since" in ftpwho
 C       #1644 - LogFormat local IP and FQDN tags missing
@@ -34,7 +30,11 @@ C       #1737 - Enhance file hiding via regular expressions
         Small enchancement patches
         'Other' arch fixes as and when tested
         #1205 - Add debug option to SystemLog
+        #1241 - Homedir on demand
+        #1272 - DenyFilter by User or DenyFilter by Dire
+        #1403 - per-server system logs via ServerLog directive
         #1482 - %U cookie to LogFormat
+        #1507 - regex pattern matching in [Allow/Deny][User/Group]
         #1515 - Enable mod_log to log into default log / syslog
         #1565 - ftpwho bandwidth usage
         #1605 - MKD and RMD do not log filepaths
@@ -50,10 +50,8 @@ C       #1737 - Enhance file hiding via regular expressions
 1.2.9
         #1166 - custom wtmp log file
         #1279 - AuthAgedPassword option
-        #1403 - per-server system logs via ServerLog directive
         #1454 - <Limit OVERWRITE>
         #1532 - Human readable disk free
-        #1565 - ftpwho bandwidth usage
 
 TBD
         #1711 - IPv6 support
