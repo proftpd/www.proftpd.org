@@ -77,14 +77,14 @@ Location: Finland (Vaasa)<BR>
 Maintained by: Toni Viemero<BR>
 </P>
 <P>
-<A HREF="ftp://ftp.model-fx.com/pub/mirrors/proftpd/">ftp://ftp.model-fx.com/pub/mirrors/proftpd/</A><BR>
-Location: France (Paris)<BR>
-Maintained by: elk<BR>
-</P>
-<P>
 <A HREF="ftp://ftp.club-internet.fr/pub/mirrors/ftp.proftpd.org/">ftp://ftp.club-internet.fr/pub/mirrors/ftp.proftpd.org/</A><BR>
 Location: France (Paris)<BR>
 Maintained by: Carlos Inacio<BR>
+</P>
+<P>
+<A HREF="ftp://ftp.model-fx.com/pub/mirrors/proftpd/">ftp://ftp.model-fx.com/pub/mirrors/proftpd/</A><BR>
+Location: France (Paris)<BR>
+Maintained by: elk<BR>
 </P>
 <P>
 <A HREF="ftp://ftp.free.fr/pub/Networking/proftpd/">ftp://ftp.free.fr/pub/Networking/proftpd/</A><BR>
@@ -141,12 +141,12 @@ Location: Italy (Rome)<BR>
 Maintained by: Saverio Salatino<BR>
 </P>
 <P>
-<A HREF="ftp://ftp.win.ne.jp/pub/network/ftp/proftpd/">ftp://ftp.win.ne.jp/pub/network/ftp/proftpd/</A><BR>
+<A HREF="ftp://ftp.ayamura.org/pub/proftpd/">ftp://ftp.ayamura.org/pub/proftpd/</A><BR>
 Location: Japan (Tokyo)<BR>
 Maintained by: Ayamura Kikuchi <BR>
 </P>
 <P>
-<A HREF="ftp://ftp.ayamura.org/pub/proftpd/">ftp://ftp.ayamura.org/pub/proftpd/</A><BR>
+<A HREF="ftp://ftp.win.ne.jp/pub/network/ftp/proftpd/">ftp://ftp.win.ne.jp/pub/network/ftp/proftpd/</A><BR>
 Location: Japan (Tokyo)<BR>
 Maintained by: Ayamura Kikuchi <BR>
 </P>
@@ -169,14 +169,14 @@ Location: Norway (Bergen)<BR>
 Maintained by: Christian Nikolaisen<BR>
 </P>
 <P>
-<A HREF="ftp://ftp.truuz.com/mirrors/ftp.proftpd.net/   ">ftp://ftp.truuz.com/mirrors/ftp.proftpd.net/   </A><BR>
-Location: Norway (Oslo)<BR>
-Maintained by: Dag Stenstad<BR>
-</P>
-<P>
 <A HREF="ftp://download.enitel.no/pub/proftpd/">ftp://download.enitel.no/pub/proftpd/</A><BR>
 Location: Norway (Oslo)<BR>
 Maintained by: Jorn-Morten Innselset<BR>
+</P>
+<P>
+<A HREF="ftp://ftp.truuz.com/mirrors/ftp.proftpd.net/   ">ftp://ftp.truuz.com/mirrors/ftp.proftpd.net/   </A><BR>
+Location: Norway (Oslo)<BR>
+Maintained by: Dag Stenstad<BR>
 </P>
 <P>
 <A HREF="ftp://ftp.futuro.pl/pub/mirror/ftp.proftpd.org/">ftp://ftp.futuro.pl/pub/mirror/ftp.proftpd.org/</A><BR>
@@ -259,6 +259,11 @@ Location: UK (Daresbury Laboratory (Manchester))<BR>
 Maintained by: Lachlan Cranswick<BR>
 </P>
 <P>
+<A HREF="ftp//annihilation-colo-01.whoc.theplanet.co.uk/">ftp//annihilation-colo-01.whoc.theplanet.co.uk/</A><BR>
+Location: UK (Leeds)<BR>
+Maintained by: Jon<BR>
+</P>
+<P>
 <A HREF="ftp://ftp.linux.co.uk/mirrors/ftp.proftpd.org/">ftp://ftp.linux.co.uk/mirrors/ftp.proftpd.org/</A><BR>
 Location: UK (London)<BR>
 Maintained by: Mark Lowes<BR>
@@ -313,14 +318,14 @@ Location: USA (Richmond Hill, NY)<BR>
 Maintained by: Adam<BR>
 </P>
 <P>
-<A HREF="ftp://www.linuxceptional.com/proftpd/">ftp://www.linuxceptional.com/proftpd/</A><BR>
-Location: USA<BR>
-Maintained by: Phil Barnett<BR>
-</P>
-<P>
 <A HREF="ftp://proftpd.linuxmafia.org/pub/mirrors/proftpd.org/">ftp://proftpd.linuxmafia.org/pub/mirrors/proftpd.org/</A><BR>
 Location: USA (San Antonio, Texas)<BR>
 Maintained by: Jim Simmons<BR>
+</P>
+<P>
+<A HREF="ftp://www.linuxceptional.com/proftpd/">ftp://www.linuxceptional.com/proftpd/</A><BR>
+Location: USA<BR>
+Maintained by: Phil Barnett<BR>
 </P>
 </DL>
 
