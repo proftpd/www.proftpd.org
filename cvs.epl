@@ -41,26 +41,20 @@
     repository is fairly straightforward:</p>
     
     <blockquote>
-      <p>Type the command <code>cvs -z3 -d
-      :pserver:anonymous@proftpd.org:/var/proftpd login</code>.</p>
+      <p>Type the command <code>cvs -d
+      :pserver:anonymous@cvs.proftp.sourceforge.net:/cvsroot/proftp login
+      </code></p>
 
-      <p>You'll see:</p>
+      <p>Hit Enter when prompted for a password (there is no password
+      for anonymous access).</p>
 
-      <p><code>(Logging in to anonymous@proftpd.org)
-               <br />
-               CVS password:
-         </code>
-      </p>
-
-      <p>The password is <code>proftpd</code>.</p>
-
-      <p>Next, type in <code>cvs -z3 -d
-      :pserver:anonymous@proftpd.org:/var/proftpd checkout
-      proftpd-1.2</code></p>
+      <p>Next, type in <code>cvs -d
+      :pserver:anonymous@cvs.proftp.sourceforge.net:/cvsroot/proftp -z3
+      co proftpd</code></p>
     </blockquote>
 
     <p>That's it.  You can keep up to date by executing <code>cvs
-    -z3 -update -dP</code> periodically.</p>
+    -z3 update -dP</code> periodically.</p>
   </td>
 </tr>
 </table>
