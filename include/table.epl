@@ -16,7 +16,7 @@
               Current: <b><: print $proftpd_version :></b> [ <a href="/docs/NEWS-<: print $proftpd_version :>">NEWS</a> ]<br>
               &nbsp;&nbsp;&nbsp;[ <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-<: print $proftpd_version :>.tar.gz">gz</a> ] [ <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-<: print $proftpd_version :>.tar.bz2">bz2</a> ]<br />
               <br />
-              Candidate: <b><: print $proftpd_rc_version :></b> <: if ($proftpd_rc_version !~ m#none#i) { print " [ <a href=\"/docs/NEWS-1.2.5rc3\">NEWS</a> ]<br>&nbsp;&nbsp;&nbsp;[ <a href=\"ftp://ftp.proftpd.org/distrib/source/proftpd-$proftpd_rc_version.tar.gz\">gz</a> ] [ <a href=\"ftp://ftp.proftpd.org/distrib/source/proftpd-$proftpd_rc_version.tar.bz2\">bz2</a> ]"; } :><br />
+              Candidate: <b><: print $proftpd_rc_version :></b> <: if ($proftpd_rc_version !~ m#none#i) { print " [ <a href=\"/docs/NEWS-$proftpd_rc_version\">NEWS</a> ]<br>&nbsp;&nbsp;&nbsp;[ <a href=\"ftp://ftp.proftpd.org/distrib/source/proftpd-$proftpd_rc_version.tar.gz\">gz</a> ] [ <a href=\"ftp://ftp.proftpd.org/distrib/source/proftpd-$proftpd_rc_version.tar.bz2\">bz2</a> ]"; } :><br />
             </font>
           </td>
         </tr>

@@ -1,11 +1,38 @@
 <: # $Id$ :>//
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
-<: $last_changed = "12/June/2002 - hamster" :>//
+<: $last_changed = "04/July/2002 - hamster" :>//
 
 #include "header.epl"
 
 <table bgcolor="white">
+
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">RPMs released</font></b>
+    <br />
+    <font size="-1">[<i>04/July/2002</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      RPMs for 1.2.5 and 1.2.6rc1 have been uploaded to ftp.proftpd.org 
+      and the mirroring system.
+    </font></blockquote>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <b><font face="arial" color="#003399">1.2.6rc1 released</font></b>
+    <br />
+    <font size="-1">[<i>02/July/2002</i>]</font>
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      Lots of minor clean ups and bug fixes, new in this release Large file support
+      STOU Define, IfDefine and IfModule conditional elements, TimeoutSession
+      Cygwin support
+      <br />
+      mod_quota has been removed due to bugs and a lack of maintainership
+    </font></blockquote>
+  </td>
+</tr>
 
 <tr>
   <td>
