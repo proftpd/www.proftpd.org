@@ -2,38 +2,34 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "ProFTPD Package Maintainers" :>//
-<: $last_changed = "09/May/2002 - TJ" :>//
+<: $last_changed = "12/May/2002 - jwm" :>//
 
 #include "header.epl"
 
 <table bgcolor="white">
-<tr valign=top>
+<tr valign="top">
   <td>
-      <div class="headline">
-            <: print "<b>$html_title</b>" unless !defined($html_title) :>//
-                </div>
+    <div class="headline">
+      <: print "<b>$html_title</b>" unless !defined($html_title) :>//
+    </div>
 
-<p>
-List of proftpd maintainers for various Unix flavors:
+    <p>List of proftpd maintainers for various Unix flavors:</p>
 
-<ul>
-  <li><b><a href="http://www.freebsd.org/">FreeBSD</a></b>: Michael Haro &lt;mharo at freebsd.org&gt;
-  <li><b><a href="http://www.netbsd.org/">NetBSD</a></b>: Martti Kuparinen &lt;martti.kuparinen at iki.fi&gt;, &lt;martti at netbsd.org&gt;
-  <li><a href="http://www.openbsd.org/">OpenBSD</a>
-  <li><b><a href="http://www.sunfreeware.com/">Solaris</a></b>: Steve Christensen &lt;steve at smc.vnet.net&gt; <i>(sunfreeware)</i>
+    <ul>
+      <li><b><a href="http://www.freebsd.org/">FreeBSD</a></b>: Michael Haro &lt;mharo at freebsd.org&gt;
+      <li><b><a href="http://www.netbsd.org/">NetBSD</a></b>: Martti Kuparinen &lt;martti.kuparinen at iki.fi&gt;, &lt;martti at netbsd.org&gt;
+      <li><a href="http://www.openbsd.org/">OpenBSD</a>
+      <li><b><a href="http://www.sunfreeware.com/">Solaris</a></b>: Steve Christensen &lt;steve at smc.vnet.net&gt; <i>(sunfreeware)</i>
 
-  <br />
-  <br />
+      <br />
+      <br />
  
-  <li><b><a href="http://www.debian.org">Debian Linux</a></b>: Ivo Timmermans &lt;ivo at debian.org&gt;
-  <li><a href="http://www.linux-mandrake.com/">Mandrake Linux</a>
-  <li><a href="http://www.redhat.com">Red Hat Linux</a>
-  <li><b><a href="http://www.slackware.com/">Slackware Linux</a></b>: Patrick J. Volkerding &lt;volkerdi at slackware.com&gt;
-  <li><a href="http://www.suse.de/">SuSE Linux</a>
-</ul>
-
-<p>
-
+      <li><b><a href="http://www.debian.org">Debian Linux</a></b>: Ivo Timmermans &lt;ivo at debian.org&gt;
+      <li><a href="http://www.linux-mandrake.com/">Mandrake Linux</a>
+      <li><a href="http://www.redhat.com">Red Hat Linux</a>
+      <li><b><a href="http://www.slackware.com/">Slackware Linux</a></b>: Patrick J. Volkerding &lt;volkerdi at slackware.com&gt;
+      <li><a href="http://www.suse.de/">SuSE Linux</a>
+    </ul>
   </td>
 </tr>
 
