@@ -50,7 +50,7 @@ C       #1701 - Reverse lookups not working
 
 
 1.2.9
-        TLS
+        #1712 - TLS support
         #1166 - custom wtmp log file
         #1279 - AuthAgedPassword option
         #1403 - per-server system logs via ServerLog directive
