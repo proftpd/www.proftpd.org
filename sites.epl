@@ -66,6 +66,13 @@
     </dl>
 
     <dl>
+      <dt><a href="ftp://ftp.freeradius.org">ftp.freeradius.org</a></dt>
+      <dd>The FreeRADIUS Server Project is an attempt to create a
+          high-performance and highly configurable GPL'd free RADIUS server.
+      </dd>
+    </dl>
+
+    <dl>
       <dt><a href="http://www.chello.com/">chello</a></dt>
       <dd>European broadband ISP, powering numerous customer web sites and a
           large mirror site with ProFTPD.</dd>
