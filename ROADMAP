@@ -39,3 +39,4 @@ TBD
         #1711 - IPv6 support
         i8n
         contrib/ per-module directory reorganization
+        shared memory support
