@@ -31,7 +31,6 @@ C       #1736 - RETR does not handle an inappropriate REST
 C       #1737 - Enhance file hiding via regular expressions
 
 1.2.8
-        MaxFileSize
         Small enchancement patches
         'Other' arch fixes as and when tested
         #1205 - Add debug option to SystemLog
