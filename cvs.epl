@@ -4,7 +4,7 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Accessing the CVS Repository" :>//
-<: $last_changed = "" :>//
+<: $last_changed = "15/Feb/2001 - hamster" :>//
 
 #include "header.epl"
 
@@ -15,14 +15,16 @@
 <: print "<B>$html_title</B>" unless !defined($html_title) :>//
 </DIV>
 
-<P>The most recent version of the code is available via <A HREF="http://www.cyclic.com/">CVS</A>
-from the proftpd.org cvs server.  While this gives access to the very
-latest code it must be stressed that this is <STRONG>development</STRONG>
-grade code and is not guaranteed to work, compile and may completely
-mangle your system.  For production environments it is recommended that
-the distribution tarballs or packages are used unless you really know
-what you're doing.
-</P>
+<P>The most recent version of the code is available via <A
+HREF="http://www.cyclic.com/">CVS</A> from the proftpd.org cvs server.
+While this gives access to the very latest code it must be stressed that
+this is <STRONG>development</STRONG> grade code and is not guaranteed
+to work, compile and may completely mangle your system.  For production
+environments it is recommended that the distribution tarballs or packages
+are used unless you really know what you're doing.  </P>
+
+<P>There are no mirror sites for the CVS server, however nightly tarballs
+are rolled on a number of sites and these are available for download.</P>
 
 <div class="headline_small">Quick Instructions</div>
 <UL>

@@ -68,6 +68,31 @@
                 </td>
               </tr>
             </table><br>
+
+
+	    <table border="0" cellspacing="0" cellpadding="0" bgcolor=#9999cc width="100%">
+              <tr>
+		<td>
+		  <table bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0 width="100%">
+                    <tr>
+		      <td><font face="Verdana,Arial" size=-1><b>Mirrors and downloads</b></font></td>
+		    </tr>
+		  </table>
+                  <table bgcolor=#ffffff cellspacing=0 cellpadding=0 border=0 width="100%">
+                    <tr>
+                      <td><font face="verdana,arial"size=-1>
+                        <li><a href="/download.html">FTP download servers</A>
+                        <LI><A HREF="/howtomirror.html">How to become a mirror</A>
+                        <li><a href="/docs/cvs.html">CVS Repository</a>
+                        </font>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table><br>
+
+
             <table border="0" cellspacing="0" cellpadding="0" bgcolor=#9999cc width="100%">
               <tr>
                 <td>
@@ -79,9 +104,7 @@
                   <table bgcolor=#ffffff cellspacing=0 cellpadding=0 border=0 width="100%">
                     <tr>
                       <td><font face="verdana,arial"size=-1>
-                        <li><a href="/download.html">Download / ftp mirrors</a>
                         <li><a href="/lists.html">Mailing Lists</A>
-                        <li><a href="/docs/cvs.html">CVS Repository</a>
                         </font>
                       </td>
                     </tr>

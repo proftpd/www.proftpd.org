@@ -4,6 +4,8 @@
 <: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
 <: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Downloading and mirror sites" :>//
+<: $last_changed = "15/Feb/2001 - hamster" :>//
+
 
 #include "header.epl"
 
@@ -34,9 +36,7 @@
    </DD>
 
 
-
-
-	<DT> Mirrors </DT>
+<DT> Mirrors </DT>
 <P><UL>
 <A HREF="ftp://ftp.nutt.net.au/pub/proftpd">ftp://ftp.nutt.net.au/pub/proftpd</A><BR>
 Location: Australia<BR>
@@ -57,17 +57,12 @@ Location: Germany (Bonn)<BR>
 Maintained by: Noel Koethe<BR>
 </UL></P>
 <P><UL>
-<A HREF="ftp://ftp.wipol.uni-bonn.de/pub/mirror/ftp.proftpd.net/">ftp://ftp.wipol.uni-bonn.de/pub/mirror/ftp.proftpd.net/</A><BR>
-Location: Germany (Bonn)<BR>
-Maintained by: Noel Koethe<BR>
-</UL></P>
-<P><UL>
-<A HREF="http://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.proftpd.net/ ">http://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.proftpd.net/ </A><BR>
+<A HREF="ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.proftpd.net/">ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.proftpd.net/</A><BR>
 Location: Germany (Esslingen)<BR>
 Maintained by: Adrian Reber<BR>
 </UL></P>
 <P><UL>
-<A HREF="ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.proftpd.net/">ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.proftpd.net/</A><BR>
+<A HREF="http://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.proftpd.net/ ">http://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.proftpd.net/ </A><BR>
 Location: Germany (Esslingen)<BR>
 Maintained by: Adrian Reber<BR>
 </UL></P>
@@ -151,6 +146,12 @@ Maintained by: Kenn Martin<BR>
 <P><UL>
 <A HREF="ftp://ftp.stikman.com:/pub/proftpd/">ftp://ftp.stikman.com:/pub/proftpd/</A><BR>
 Location: USA (Los Angeles, CA)<BR>
+Maintained by: Jeff Grossman<BR>
+</UL></P>
+<P><UL>
+<A HREF="ftp://vinnie.ksu.ksu.edu/pub/mirror/linux/proftpd/">ftp://vinnie.ksu.ksu.edu/pub/mirror/linux/proftpd/</A><BR>
+Location: USA (Manhattan, KN)<BR>
+Maintained by: Justin Shore<BR>
 </UL></P>
 <P><UL>
 <A HREF="ftp://ftp.twtelecom.net/pub/proftpd/">ftp://ftp.twtelecom.net/pub/proftpd/</A><BR>
@@ -163,9 +164,6 @@ Location: USA<BR>
 Maintained by: Phil Barnett<BR>
 </UL></P>
 </DL>
-
-	  </TD>
-	</TR>
 
 #include "footer.epl"
 

@@ -1,0 +1,61 @@
+<:
+# $Id$
+:>//
+<: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
+<: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
+<: $html_title = "How to mirror ProFTPD" :>//
+<: $last_changed = "15/Feb/2001 - hamster" :>//
+
+#include "header.epl"
+
+	<TR>
+	  <TD>
+
+
+<DIV CLASS="headline">
+<: print "<B>$html_title</B>" unless !defined($html_title) :>//
+</DIV>
+
+<P>There is a mailing list for all mirror admins or those thinking of mirroring, to subscribe please visit 
+<A HREF="http://lists.sourceforge.net/mailman/listinfo/proftp-mirrors">http://lists.sourceforge.net/mailman/listinfo/proftp-mirrors</A>
+</P>
+
+
+<DIV CLASS="headline_small">
+Web Mirrors
+</DiV>
+
+<P>At the moment we are only going to be running the two primary sites,
+http://www.proftpd.org/ and http://www.proftpd.net/, once the development
+work and general hacking around is complete we will be asking if there
+is anyone willing to mirror the website for us.  We are aiming to have
+both ftp and cvs methods available.
+</P>
+
+<DIV CLASS="headline_small">
+FTP Mirrors
+</DiV>
+
+<P>Sites wishing to mirror the ftp site are welcome, under normal
+conditions please only mirror the site once per day.  The location to mirror is ftp://ftp.proftpd.org/</P>
+
+<P>Once your mirror is up please email hamster@vom.tm with the details of your mirror
+
+<PRE>
+URL: (ie ftp://site/directory/)
+ADMIN NAME:
+ADMIN EMAIL:
+PHYSICAL LOCATION: (ie UK, London)
+UPDATED: (ie daily at 0100 GMT)
+OTHER DETAILS: (penguin powered hardware blah blah)
+</PRE>
+
+
+
+
+	  
+	  </TD>
+	</TR>
+
+#include "footer.epl"
+
