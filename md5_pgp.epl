@@ -17,10 +17,10 @@
     <div class="headline-small">MD5 Digest Hashes</div>
 
 <pre>
-7c85503b160a36a96594ef75f3180a07 <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.2.9.tar.bz2">proftpd-1.2.9.tar.bz2</a>
-445fbf24e2ec300800a184eb81296bda <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.2.9.tar.gz">proftpd-1.2.9.tar.gz</a>
 5feb4a7348e12faefc25e34fd92efdd6 <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.2.10.tar.bz2">proftpd-1.2.10.tar.bz2</a>
 70c0188db00ed99f2df061d603ffff82 <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.2.10.tar.gz">proftpd-1.2.10.tar.gz</a>
+c09df98d2e44b46af4f7a8174c59b294 <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.3.0rc1.tar.bz2">proftpd-1.3.0rc1.tar.bz2</a>
+79f868c36ef2ab0a8f30c665fd293f65 <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.3.0rc1.tar.gz">proftpd-1.3.0rc1.tar.gz</a>
 </pre>
 
   </td>
@@ -31,30 +31,6 @@
   <td>
     <br>
     <div class="headline-small">PGP Signatures</div>
-<b><font face="arial" color="#003399">proftpd-1.2.9.tar.bz2.asc</font></b>
-<br />
-<font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><pre>
------BEGIN PGP SIGNATURE-----
-Version: PGP 6.5.8
-
-iQA/AwUAP6IfzreOiT+lEZdqEQLKBACeONw5dyThxH1ay+hJnBUPdoUHPToAn2XL
-uj0XyAyQSacqUY/GXjqBHk5u
-=/0Vd
------END PGP SIGNATURE-----
-</pre></font>
-
-<b><font face="arial" color="#003399">proftpd-1.2.9.tar.gz.asc</font></b>
-<br />
-<font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><pre>
------BEGIN PGP SIGNATURE-----
-Version: PGP 6.5.8
-
-iQA/AwUAP6If1LeOiT+lEZdqEQINpwCg/j3HD612calKNRrzfGPEo5bwJ9UAnRIo
-RUHsB4OtkoKjUm+MCiuHPtaC
-=3dbK
------END PGP SIGNATURE-----
-</pre></font>
-
 <b><font face="arial" color="#003399">proftpd-1.2.10.tar.bz2.asc</font></b>
 <br />
 <font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><pre>
@@ -76,6 +52,30 @@ Version: PGP 6.5.8
 iQA/AwUAQToSZ7eOiT+lEZdqEQKcggCg5mTZsh8Xq79ksJ1NNmu3CEGRLmsAnRhc
 bKwwz3Jo2LGMI6R0j9WphoBs
 =lGh2
+-----END PGP SIGNATURE-----
+</pre></font>
+
+<b><font face="arial" color="#003399">proftpd-1.3.0rc1.tar.bz2.asc</font></b>
+<br />
+<font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><pre>
+-----BEGIN PGP SIGNATURE-----
+Version: PGP 6.5.8
+
+iQA/AwUAQlnRVreOiT+lEZdqEQJXsACgx0lLb5A4tjdlGKFM0AndpEMHhLoAnRJk
+z1c2HOkUwqazM+RRl1Vxeex0
+=GM31
+-----END PGP SIGNATURE-----
+</pre></font>
+
+<b><font face="arial" color="#003399">proftpd-1.3.0rc1.tar.gz.asc</font></b>
+<br />
+<font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><pre>
+-----BEGIN PGP SIGNATURE-----
+Version: PGP 6.5.8
+
+iQA/AwUAQlnRXreOiT+lEZdqEQKViQCfaPWGdxJdPx4gdjGdNEar49ju3xAAnjS2
+c3Sv4WnmMWQlNiiB1TLD14IG
+=rxfB
 -----END PGP SIGNATURE-----
 </pre></font>
 
