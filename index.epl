@@ -19,7 +19,9 @@
       RELEASE_NOTES and NEWS files for the full details.
     </font></blockquote>
   </td>
+</tr>
 
+<tr>
   <td>
     <b><font face="arial" color="#003399">&quot;Timing attack&quot; protection module</font></b>
     <br />
@@ -363,33 +365,6 @@
       has been a non-issue for quite some time. Furthermore, we suggest that
       Mr. Gunnewiek check his facts in the future before he engages in
       handwaving and publicity-seeking.</p>
-    </font></blockquote>
-  </td>
-</tr>
-
-<tr>
-  <td>
-    <b><font face="arial" color="#003399">1.2.7 released</font></b>
-    <br />
-    <font size="-1">[<i>05/Dec/2002</i>]</font>
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      1.2.7 has just been released. This release fixes bugs found in
-      1.2.7rc3 and is considered a stable release. Source and RPMs should be
-      available on the primary FTP site and mirrors by the time you read this.
-    </font></blockquote>
-  </td>
-</tr>
-
-<tr>
-  <td>
-    <b><font face="arial" color="#003399">Development roadmap</font></b>
-    <br />
-    <font size="-1">[<i>09/June/2002</i>]</font>
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-     The <a href="ROADMAP">roadmap</a> for development of ProFTPD 1.2.x is
-     now available, this is a working document which changes regularly
-     and sets out the planned course of action of the development team
-     not necessarily what <em>will</em> happen.
     </font></blockquote>
   </td>
 </tr>
