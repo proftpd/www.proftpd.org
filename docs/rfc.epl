@@ -86,12 +86,6 @@
     "Extensions to FTP" Internet Draft, draft-ietf-ftpext-mlst-12.txt.
     </p>
 
-  </td>
-</tr>
-
-
-<tr>
-  <td>
     <p>
     <br />
     <HR><!-- ------------------------------------------------------ -->
@@ -100,11 +94,7 @@
     RFC Summaries
     </div>
     <br />
-  </td>
-</tr>
 
-<tr>
-  <td>
     <a name="rfc959"></a>
     <b><font face="arial" color="#003399">
     RFC-959 File Transfer Protocol (FTP)
@@ -139,11 +129,7 @@
     The base specification of the current File Transfer Protocol.
     </font></blockquote>
     <br />
-  </td>
-</tr>
 
-<tr>
-  <td>
     <a name="rfc1123"></a>
     <b><font face="arial" color="#003399">
     RFC-1123 Requirements for Internet Hosts -- Application and Support
@@ -171,11 +157,7 @@
     Introduces new response codes 554 and 555.
     </font></blockquote>
     <br />
-  </td>
-</tr>
 
-<tr>
-  <td>
     <a name="rfc1579"></a>
     <b><font face="arial" color="#003399">
     RFC-1579 Firewall-Friendly FTP
@@ -195,11 +177,7 @@
     Suggests a new APSV command and 151 response code.
     </font></blockquote>
     <br />
-  </td>
-</tr>
 
-<tr>
-  <td>
     <a name="rfc1635"></a>
     <b><font face="arial" color="#003399">
     RFC-1635 How to Use Anonymous FTP
@@ -226,11 +204,7 @@
     user about using the File Transfer Protocol (FTP).
     </font></blockquote>
     <br />
-  </td>
-</tr>
 
-<tr>
-  <td>
     <a name="rfc1639"></a>
     <b><font face="arial" color="#003399">
     RFC-1639 FTP Operation Over Big Address Records (FOOBAR)
@@ -257,11 +231,7 @@
     Defines new LPRT and LPSV commands and response codes 228 and 521.
     </font></blockquote>
     <br />
-  </td>
-</tr>
 
-<tr>
-  <td>
     <a name="rfc2151"></a>
     <b><font face="arial" color="#003399">
     RFC-2151 A Primer On Internet and TCP/IP Tools and Utilities
@@ -291,11 +261,7 @@
     Internet tools and resources, including FTP
     </font></blockquote>
     <br />
-  </td>
-</tr>
 
-<tr>
-  <td>
     <a name="rfc2228"></a>
     <b><font face="arial" color="#003399">
     RFC-2228 FTP Security Extensions (FTPSECEXT)
@@ -322,11 +288,7 @@
     535, 536, 537, 631, 632, and 633.
     </font></blockquote>
     <br />
-  </td>
-</tr>
 
-<tr>
-  <td>
     <a name="rfc2389"></a>
     <b><font face="arial" color="#003399">
     RFC-2389 Feature negotiation mechanism for the File Transfer
@@ -349,11 +311,7 @@
     Introduces the new FEAT and OPTS commands.
     </font></blockquote>
     <br />
-  </td>
-</tr>
 
-<tr>
-  <td>
     <a name="rfc2428"></a>
     <b><font face="arial" color="#003399">
     RFC-2428 FTP Extensions for IPv6 and NATs
@@ -374,11 +332,7 @@
     new response codes 522 and 229.
     </font></blockquote>
     <br />
-  </td>
-</tr>
 
-<tr>
-  <td>
     <a name="rfc2577"></a>
     <b><font face="arial" color="#003399">
     RFC-2577 FTP Security Considerations
@@ -401,11 +355,7 @@
     can be used in "bounce attacks" (CERT97:27).
     </font></blockquote>
     <br />
-  </td>
-</tr>
 
-<tr>
-  <td>
     <a name="rfc2585"></a>
     <b><font face="arial" color="#003399">
     RFC-2585 Internet X.509 Public Key Infrastructure Operational
@@ -428,11 +378,7 @@
     from Public Key Infrastructure (PKI) repositories.
     </font></blockquote>
     <br />
-  </td>
-</tr>
 
-<tr>
-  <td>
     <a name="rfc2640"></a>
     <b><font face="arial" color="#003399">
     RFC-2640 Internationalization of the File Transfer Protocol
@@ -457,11 +403,7 @@
     Introduces the new LANG command.
     </font></blockquote>
     <br />
-  </td>
-</tr>
 
-<tr>
-  <td>
     <a name="rfc2773"></a>
     <b><font face="arial" color="#003399">
     RFC-2773 Encryption using KEA and SKIPJACK
@@ -487,11 +429,9 @@
     both FTP data and control channels.
     </font></blockquote>
     <br />
-  </td>
-</tr>
+
 
 <!-- HTML template for RFCs (lines)
-
 <tr>
   <td>
     <a name="rfc0000"></a>
@@ -513,23 +453,16 @@
     ____BLOCK__text____
     </font></blockquote>
     <br />
-  </td>
-</tr>
-
 -->
 
 <!--
-
 RFC-1415 FTP-FTAM Gateway Specification (FTP-FTAM)
 Issued: January 1993     Status: PROPOSED STANDARD
 
 RFC-2415 Simulation Studies of Increased Initial TCP Window Size
 Issued: September 1998    Status: INFORMATIONAL
-
 -->
 
-<tr>
-  <td>
     <br />
     <p>
     <HR><!-- ------------------------------------------------------ -->
@@ -538,11 +471,7 @@ Issued: September 1998    Status: INFORMATIONAL
     Draft Summaries
     </div>
     <br />
-  </td>
-</tr>
 
-<tr>
-  <td>
     <a name="draft-ietf-ftpext-mlst"></a>
     <b><font face="arial" color="#003399">
     IETF Draft: Extensions to FTP
@@ -574,11 +503,7 @@ Issued: September 1998    Status: INFORMATIONAL
     However, this feature was deleted in the 09 revision of the draft.
     </font></blockquote>
     <br />
-  </td>
-</tr>
 
-<tr>
-  <td>
     <a name="draft-murray-auth-ftp-ssl"></a>
     <b><font face="arial" color="#003399">
     Draft: Securing FTP with TLS
@@ -603,11 +528,7 @@ Issued: September 1998    Status: INFORMATIONAL
     Uses repsonse code 522 (originally introduced in RFC-2428).
     </font></blockquote>
     <br />
-  </td>
-</tr>
 
-<tr>
-  <td>
     <a name="draft-bonachea-sftp"></a>
     <b><font face="arial" color="#003399">
     Draft: Protocol Negotiation Extensions to Secure FTP
@@ -635,11 +556,7 @@ Issued: September 1998    Status: INFORMATIONAL
     originating from port 20.
     </font></blockquote>
     <br />
-  </td>
-</tr>
 
-<tr>
-  <td>
     <a name="draft-saul-ftp-plus"></a>
     <b><font face="arial" color="#003399">
     Draft: FTP Plus
@@ -667,11 +584,7 @@ Issued: September 1998    Status: INFORMATIONAL
     RATE, for bandwidth limiting.
     </font></blockquote>
     <br />
-  </td>
-</tr>
 
-<tr>
-  <td>
     <a name="draft-ietf-cat-ftpdsaauth"></a>
     <b><font face="arial" color="#003399">
     IETF Draft: FTP Authentication Using DSA
@@ -698,13 +611,9 @@ Issued: September 1998    Status: INFORMATIONAL
     the SHA-1 (Secure Hash Standard 1) algorithms.
     </font></blockquote>
     <br />
-  </td>
-</tr>
 
 <!-- HTML template for Drafts (xx lines)
 
-<tr>
-  <td>
     <a name="draft-XXXX"></a>
     <b><font face="arial" color="#003399">
     Draft: TITLE
@@ -726,9 +635,6 @@ Issued: September 1998    Status: INFORMATIONAL
     ____BLOCK__text____
     </font></blockquote>
     <br />
-  </td>
-</tr>
-
 -->
   
   </td>
@@ -736,4 +642,3 @@ Issued: September 1998    Status: INFORMATIONAL
 </table>
 
 #include "footer.epl"
-
