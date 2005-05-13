@@ -24,6 +24,23 @@ More information available at http://www.proftpd.org/proftpd-devel-archive/full/
 -->
 
   <ul>
+    <b><font face="arial" color="#003399">Virus filtering for uploaded files</font></b>
+    <br />
+    <br /><font size="-1"><i>Maintainer: Joseph Benden</i></font>
+    <br /><font size="-1"><i><a href="http://www.uglyboxindustries.com/mod_clamav.html">http://www.uglyboxindustries.com/mod_clamav.html</a></i></font>
+
+    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
+      The mod_clamav module enables the FTP server to scan newly uploaded
+      files for viruses, before allowing the file upload to complete.  This
+      has proven itself very handy for my admin situations, and I thought
+      that I'd share, in case someone else can benefit from it too.
+    </font></blockquote>
+
+    <p>
+    <a href="http://www.uglyboxindustries.com/open-source.php">http://www.uglyboxindustries.com/open-source.php</a>
+  </ul>
+
+  <ul>
     <b><font face="arial" color="#003399">Buffer cache inefficiencies in Linux 2.4</font></b>
     <br />
     <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
