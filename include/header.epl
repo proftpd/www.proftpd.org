@@ -1,7 +1,4 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
-<!-- Proftpd Website Tracking Comment -->
-<!-- do not delete, used by Hamster's automatic mirror checking scripts -->
-
 #include "global.epl"
 
 <html>
