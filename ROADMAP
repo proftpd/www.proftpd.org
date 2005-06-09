@@ -15,6 +15,6 @@ C = Committed
         #2628 - SQLHomedirOnDemand should be deprecated
 
 TBD
-	Add mod_shaper, mod_md5 modules to contrib/
+	Add mod_shaper, mod_md5, mod_wrap-2.0 modules to contrib/
 	#2368 - Allow contrib modules to extend mod_sql's SQLAuthTypes
         #2013 - Track RFC2228 sessions in scoreboard
