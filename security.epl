@@ -34,13 +34,6 @@
     problems or issues which are a result of the host OS. In general, our
     philosophy is to avoid any attacks which can cause the server to consume
     resources in a non-linear relationship to the size of inputs.</p>
-
-
-    <div class="headline">Security</div>
-
-    <p>All users of ProFTPD are strongly urged to upgrade to <strong>at
-    least</strong> ProFTPD 1.2.7p as soon as possible and preferably the
-    most recent stable version (<: print $proftpd_version :>).
   </td>
 </tr>
 </table>

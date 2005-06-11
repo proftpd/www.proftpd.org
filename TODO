@@ -12,7 +12,6 @@ jwm:
     i'll let you do this, Mark :-)
     (ML: work in progress.. as time happens)
   * lists: add more space between lists
-  * security.epl needs an update
   * the <blockquote><font><pre>/<p> stuff in lists,md5_pgp,old_news isn't
     xhtml compliant, need to look into this
 
