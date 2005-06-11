@@ -236,7 +236,7 @@
 
 	<blockquote>
 	<b><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">New and Enhanced modules</font></b>
-	<br><br>
+	<br /><br />
 	<font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
 	mod_ifsession, mod_radius, mod_rewrite, mod_tls
 	</font>
@@ -244,7 +244,7 @@
 
 	<blockquote>
 	<b><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">Important Notes</font></b>
-	<br><br>
+	<br /><br />
 	<font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
 	If you run proftpd with a ServerType of inetd, please make sure that all FTP sessions are ended, and that the current scoreboard is
 	deleted, before installing and running proftpd-1.2.9rc1.  This is made necessary by scoreboard format changes in 1.2.9rc1.  Sites

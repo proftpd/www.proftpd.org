@@ -13,7 +13,7 @@
       <: print "<b>$html_title</b>" unless !defined($html_title) :>//
     </div>
 
-    <br>
+    <br />
     <div class="headline-small">MD5 Digest Hashes</div>
 
 <pre>
@@ -29,7 +29,7 @@ c09df98d2e44b46af4f7a8174c59b294 <a href="ftp://ftp.proftpd.org/distrib/sources/
 <table bgcolor="white">
 <tr>
   <td>
-    <br>
+    <br />
     <div class="headline-small">PGP Signatures</div>
 <b><font face="arial" color="#003399">proftpd-1.2.10.tar.bz2.asc</font></b>
 <br />
