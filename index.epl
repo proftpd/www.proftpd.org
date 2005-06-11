@@ -368,12 +368,6 @@
     </font></blockquote>
   </td>
 </tr>
-
-<tr>
-  <td>
-    <a href="old_news.html">Older news</a>
-  </td>
-</tr>
 </table>
 
 #include "footer.epl"
