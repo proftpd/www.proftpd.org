@@ -1,15 +1,16 @@
-#
-# The ProFTPD Website Makefile
-#
+EPERL = eperl
 
-include Common.defines
-
-SEPDIRS = include proftpd-announce-archive  proftpd-devel-archive  proftpd-l-archive
-SUBDIRS = docs 
+INCDIR = include
+SUBDIRS = docs
+EPLINCS = $(INCDIR)/footer.epl $(INCDIR)/global.epl $(INCDIR)/header.epl $(INCDIR)/table.epl
 HTMLFILES = $(addsuffix .html, $(basename $(wildcard *.epl)))
 
-# Top level targets
+%.html: %.epl $(EPLINCS)
+	$(EPERL) -P -I $(INCDIR) $< >./$@
 
-all: html
+all: $(HTMLFILES) $(EPLINCS)
+	@for i in $(SUBDIRS); do $(MAKE) -j $(JOBS) -C $$i; done
 
-include Common.targets
+clean:
+	rm -f $(HTMLFILES)
+	@for i in $(SUBDIRS); do $(MAKE) -C $$i clean; done
