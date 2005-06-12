@@ -3,6 +3,9 @@
 .nowrap {
 	white-space: nowrap;
 }
+.indent {
+	text-indent: 1em;
+}
 
 a {
 	color: #000099;
