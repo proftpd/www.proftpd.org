@@ -1,5 +1,9 @@
 /* $Id$ */
 
+.nowrap {
+	white-space: nowrap;
+}
+
 a {
 	color: #000099;
 }
