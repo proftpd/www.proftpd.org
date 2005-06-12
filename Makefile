@@ -9,7 +9,7 @@ HTMLFILES = $(addsuffix .html, $(basename $(wildcard *.epl)))
 	$(EPERL) -P -I $(INCDIR) $< >./$@
 
 all: $(HTMLFILES) $(EPLINCS)
-	@for i in $(SUBDIRS); do $(MAKE) -j $(JOBS) -C $$i; done
+	@for i in $(SUBDIRS); do $(MAKE) -C $$i; done
 
 clean:
 	rm -f $(HTMLFILES)
