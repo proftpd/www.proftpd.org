@@ -1,68 +1,44 @@
-<: # $Id$ :>//
-<: $html_title = "Mailing lists : Unsubscribing" :>//
+<: # $Id$ :>
+<: $html_title = "Mailing lists: Unsubscribing" :>
 
 #include "header.epl"
 
-<table bgcolor="white">
-<tr>
-  <td>
-    <div class="headline">
-      <: print "<b>$html_title</b>" unless !defined($html_title) :>//
-    </div>
+<h1><: print "$html_title" :></h1>
+<p>To unsubscribe from a ProFTPD mailing list, simply follow these hints.
+Please try everything on this page before reporting problems to the list
+administrators.</p>
 
-	<b><font face="arial" color="#003399">Hints on unsubscribing from the mailing lists</font></b><br />
-	<blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"> 
-	Unsubscribing from the Sourceforge hosted lists is easy, simply follow these hints only two 
-	pieces of information must be known.  Please try everything on this page before 
-	reporting problems to the list administrators.</p>
-	
-	<ul>
-	<li>The email address subscribed to the list.</li>
-	<li>The list subscribed to</li>
-	</ul>
-	
-	<p>It helps if you can remember the password assigned by Mailman to 
-	your address but it's not essential</p>
-	
-	<p>Using your favourite browser visit one or more of the following websites.</p>
-	
-	<dl>
+<p>You will need the following information:</p>
+<ul>
+  <li>The e-mail address subscribed to the list.</li>
+  <li>The list subscribed to.</li>
+  <li>It helps if you can remember the password assigned by Mailman to your
+      address, but it's not essential.
+  </li>
+</ul>
 
-	<dt>Proftpd-Announce
-	<dd><a href="https://lists.sourceforge.net/lists/listinfo/proftp-announce">https://lists.sourceforge.net/lists/listinfo/proftp-announce</a>
-	
-	<dt>Proftpd-Users
-	<dd><a href="https://lists.sourceforge.net/lists/listinfo/proftp-user">https://lists.sourceforge.net/lists/listinfo/proftp-user</a>
 
-	<dt>Proftpd-Devel
-	<dd><a href="https://lists.sourceforge.net/lists/listinfo/proftp-devel">https://lists.sourceforge.net/lists/listinfo/proftp-devel</a>
+<p>Using your favourite browser visit one or more of the following web
+sites:</p>
+<ul>
+  <li>proftpd-announce:
+      <a href="https://lists.sourceforge.net/lists/listinfo/proftp-announce">https://lists.sourceforge.net/lists/listinfo/proftp-announce</a>
+  <li>proftpd-users:
+      <a href="https://lists.sourceforge.net/lists/listinfo/proftp-user">https://lists.sourceforge.net/lists/listinfo/proftp-user</a>
+  <li>proftpd-devel:
+      <a href="https://lists.sourceforge.net/lists/listinfo/proftp-devel">https://lists.sourceforge.net/lists/listinfo/proftp-devel</a>
+  <li>proftpd-committers:
+      <a href="https://lists.sourceforge.net/lists/listinfo/proftp-committers">https://lists.sourceforge.net/lists/listinfo/proftp-committers</a>
+  <li>proftpd-mirrors:
+      <a href="https://lists.sourceforge.net/lists/listinfo/proftp-mirrors">https://lists.sourceforge.net/lists/listinfo/proftp-mirrors</a>
+</ul>
 
-	<dt>Proftpd-Committers
-	<dd><a href="https://lists.sourceforge.net/lists/listinfo/proftp-committers">https://lists.sourceforge.net/lists/listinfo/proftp-committers</a>
-	
-	<dt>Proftpd-Mirrors
-   <dd><a href="https://lists.sourceforge.net/lists/listinfo/proftp-mirrors">https://lists.sourceforge.net/lists/listinfo/proftp-mirrors</a>
+<p>Enter your subscribed e-mail address into the textfield at the bottom of
+the page, next to the "Edit Options" button.  Then click that button.</p>
 
-	</dl>
-
-	<p>Enter your subscribed email address into the textfield at the bottom of the 
-	page, next to the "Edit Options" button.  Then click that button.</p>
-	
-	<p>This will take you to a page where you can request to have your password 
-	emailed to you.  Once you have received the password, you can return to this 
-	subscription options editing page, and use the password to unsubscribe yourself.</p>
-
-	</font></blockquote>
-  </td>
-</tr>
-
-<tr>
-  <td>
-    The mailing lists are hosted by <a href="http://www.sourceforge.net/">SourceForge</a>.
-    <br />
-    <a href="http://sourceforge.net/"> <img src="http://sourceforge.net/sflogo.php?group_id=17793" width="88" height="31" border="0" alt="[SourceForge Logo]" /></a>
-  </td>
-</tr>
-</table>
+<p>This will take you to a page where you can request to have your password
+e-mailed to you.  Once you have received the password, you can return to
+this subscription options editing page, and use the password to unsubscribe
+yourself.</p>
 
 #include "footer.epl"
