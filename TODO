@@ -1,2 +1,3 @@
 * Need better build system for pdd-hosted docs; perhaps integrate it with
   the web site build system (FAQ, directive list, user guide)
+* finish cleaning up docs/rfc.epl
