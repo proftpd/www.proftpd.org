@@ -26,42 +26,42 @@
   
   <h1>Mirrors and Downloads</h1>
   <ul>
-    <li><a href="download.html">Download servers</a></li>
-    <li><a href="wwwmirror.html">Web site mirrors</a></li>
-    <li><a href="pgp.html">PGP public keys</a></li>
-    <li><a href="md5_pgp.html">MD5 &amp; PGP signatures</a></li>
-    <li><a href="cvs.html">CVS Repository</a></li>
-    <li><a href="howtomirror.html">How to become a mirror</a></li>
+    <li><a href="/download.html">Download servers</a></li>
+    <li><a href="/wwwmirror.html">Web site mirrors</a></li>
+    <li><a href="/pgp.html">PGP public keys</a></li>
+    <li><a href="/md5_pgp.html">MD5 &amp; PGP signatures</a></li>
+    <li><a href="/cvs.html">CVS Repository</a></li>
+    <li><a href="/howtomirror.html">How to become a mirror</a></li>
   </ul>
 
   <h1>Newsroom</h1>
   <ul>
-    <li><a href="index.html">News Flashes</a></li>
-    <li><a href="module_news.html">Contrib module news</a></li>
+    <li><a href="/index.html">News Flashes</a></li>
+    <li><a href="/module_news.html">Contrib module news</a></li>
   </ul>
 
   <h1>Information</h1>
   <ul>
-    <li><a href="goals.html">What is ProFTPD?</a></li>
-    <li><a href="features.html">Features &amp; Platforms</a></li>
+    <li><a href="/goals.html">What is ProFTPD?</a></li>
+    <li><a href="/features.html">Features &amp; Platforms</a></li>
     <li><a href="http://bugs.proftpd.org/">Bug reporting system</a></li>
-    <li><a href="bugs.html">Bug reporting and security guidelines</a></li>
-    <li><a href="sites.html">Sites powered by ProFTPD</a></li>
+    <li><a href="/bugs.html">Bug reporting and security guidelines</a></li>
+    <li><a href="/sites.html">Sites powered by ProFTPD</a></li>
     <li><a href="http://forums.proftpd.org/">Forums</a></li>
   </ul>
 
   <h1>Documentation</h1>
   <ul>
-    <li><a href="docs/">Docs index</a></li>
-    <li><a href="docs/rfc.html">RFCs</a></li>
-    <li><a href="docs/faq/linked/faq.html">FAQ</a></li>
+    <li><a href="/docs/">Docs index</a></li>
+    <li><a href="/docs/rfc.html">RFCs</a></li>
+    <li><a href="/docs/faq/linked/faq.html">FAQ</a></li>
     <li><a href="http://proftpd.linux.co.uk/localsite/Userguide/linked/userguide.html">Userguide</a></li>
-    <li><a href="docs/example-conf.html">Example configurations</a></li>
+    <li><a href="/docs/example-conf.html">Example configurations</a></li>
   </ul>
 
   <h1>Mailing Lists</h1>
   <ul>
-    <li><a href="lists.html">Available Lists</a></li>
+    <li><a href="/lists.html">Available Lists</a></li>
     <li><a href="http://sourceforge.net/mailarchive/forum.php?forum_id=2625">Announce Archive</a></li>
     <li><a href="http://sourceforge.net/mailarchive/forum.php?forum_id=2637">Users Archive</a></li>
     <li><a href="http://sourceforge.net/mailarchive/forum.php?forum_id=2638">Development Archive</a></li>
