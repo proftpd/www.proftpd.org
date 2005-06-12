@@ -1,323 +1,187 @@
 <: # $Id$ :>//
-<: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
-<: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Third-party modules and patches" :>//
-<: $last_changed = "1/Jan/2003 - hamster" :>//
 
 #include "header.epl"
 
-<table bgcolor="white">
-<tr>
-  <td>
-    <div class="headline">
-      <: print "<b>$html_title</b>" unless !defined($html_title) :>//
-    </div>
+<h1><: print "$html_title" :></h1>
 
-<!--
-OS-based filesystem quota support (mod_fsquota)
-Chuck Seeger (seeger@cise.ufl.edu)
+<h2>Virus filtering for uploaded files</h2>
+<i>Maintainer: Joseph Benden</i>
+<br /><a href="http://www.uglyboxindustries.com/mod_clamav.html">http://www.uglyboxindustries.com/mod_clamav.html</a>
 
-Password Check Kit (mod_pwcheck)
-Akihiko YAMAMOTO (star@eos.hokudai.ac.jp)
-ftp://ftp.eos.hokudai.ac.jp/pub/pck/release/
-More information available at http://www.proftpd.org/proftpd-devel-archive/full/msg01630.html
--->
+<p><code>mod_clamav</code> enables the FTP server to scan newly uploaded
+files for viruses, before allowing the file upload to complete. This has
+proven itself very handy for my admin situations, and I thought that I'd
+share, in case someone else can benefit from it too.</p>
 
-  <ul>
-    <b><font face="arial" color="#003399">Virus filtering for uploaded files</font></b>
-    <br />
-    <br /><font size="-1"><i>Maintainer: Joseph Benden</i></font>
-    <br /><font size="-1"><i><a href="http://www.uglyboxindustries.com/mod_clamav.html">http://www.uglyboxindustries.com/mod_clamav.html</a></i></font>
 
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      The mod_clamav module enables the FTP server to scan newly uploaded
-      files for viruses, before allowing the file upload to complete.  This
-      has proven itself very handy for my admin situations, and I thought
-      that I'd share, in case someone else can benefit from it too.
-    </font></blockquote>
+<h2>Buffer cache inefficiencies in Linux 2.4</h2>
+<i>Maintainer: TJ Saunders</i>
+<br /><a href="http://www.castaglia.org/proftpd/modules/mod_fsync.html">http://www.castaglia.org/proftpd/modules/mod_fsync.html</a>
 
-    <p>
-    <a href="http://www.uglyboxindustries.com/open-source.php">http://www.uglyboxindustries.com/open-source.php</a>
-  </ul>
+<p>The buffer cache algorithm in the Linux 2.4 kernel has some issues with
+mixing reads and writes to the disk. <code>mod_fsync</code> was written to
+work around these inefficiencies.</p>
 
-  <ul>
-    <b><font face="arial" color="#003399">Buffer cache inefficiencies in Linux 2.4</font></b>
-    <br />
-    <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
-    <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/modules/mod_fsync.html">http://www.castaglia.org/proftpd/modules/mod_fsync.html</a></i></font>
 
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      The buffer cache algorithm in the Linux 2.4 kernel has some
-      issues with mixing reads and writes to the disk.  The
-      <code>mod_fsync</code> module was written to work around these
-      inefficiencies.
-    </font></blockquote>
-  </ul>
+<h2>Automatic updating of <code>MasqueradeAddress</code></h2>
+<i>Maintainer: TJ Saunders</i>
+<br /><a href="http://www.castaglia.org/proftpd/modules/mod_dynmasq.html">http://www.castaglia.org/proftpd/modules/mod_dynmasq.html</a>
 
-  <ul>
-    <b><font face="arial" color="#003399">Automatic updating of <code>MasqueradeAddress</code></font></b>
-    <br />
-    <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
-    <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/modules/mod_dynmasq.html">http://www.castaglia.org/proftpd/modules/mod_dynmasq.html</a></i></font>
+<p>For sites that use the <code>MasqueradeAddress</code> and which have
+dynamic IP addresses, <code>mod_dynmasq</code> is very useful.</p>
 
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      For sites that use the <code>MasqueradeAddress</code> and which
-      have dynamic IP addresses, the <code>mod_dynmasq</code> module is
-      very useful.
-    </font></blockquote>
-  </ul>
 
-  <ul>
-    <b><font face="arial" color="#003399">LDAP-based configuration module</font></b>
-    <br />
-    <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
-    <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/modules/mod_conf_ldap.html">http://www.castaglia.org/proftpd/modules/mod_conf_ldap.html</a></i></font>
+<h2>LDAP-based configuration module</h2>
+<i>Maintainer: TJ Saunders</i>
+<br /><a href="http://www.castaglia.org/proftpd/modules/mod_conf_ldap.html">http://www.castaglia.org/proftpd/modules/mod_conf_ldap.html</a>
 
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      Support for storing <code>proftpd.conf</code> configuration data in
-      LDAP directories.
-    </font></blockquote>
-  </ul>
+<p>Support for storing <code>proftpd.conf</code> configuration data in LDAP
+directories.</p>
 
-  <ul>
-    <b><font face="arial" color="#003399">FTP server bans</font></b>
-    <br />
-    <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
-    <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/modules/mod_ban.html">http://www.castaglia.org/proftpd/modules/mod_ban.html</a></i></font>
 
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      mod_ban allows the ability to dynamically ban clients by user name,
-      by host IP address or DNS name, and by class name.  In addition, it
-      has support for automatically banning clients based on configurable
-      rules.
-    </font></blockquote>
-  </ul>
+<h2>FTP server bans</h2>
+<i>Maintainer: TJ Saunders</i>
+<br /><a href="http://www.castaglia.org/proftpd/modules/mod_ban.html">http://www.castaglia.org/proftpd/modules/mod_ban.html</a>
 
-  <ul>
-    <b><font face="arial" color="#003399">Alternative TLS module</font></b>
-    <br />
-    <br /><font size="-1"><i>Maintainer: Nikos Mavroyanopoulos</i></font>
-    <br /><font size="-1"><i><a href="http://members.hellug.gr/nmav/misc/proftpd/mod_gnutls.html">http://members.hellug.gr/nmav/misc/proftpd/mod_gnutls.html</a></i></font>
+<p><code>mod_ban</code> allows the ability to dynamically ban clients by
+user name, by host IP address or DNS name, and by class name.  In addition,
+it has support for automatically banning clients based on configurable
+rules.</p>
 
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      The mod_gnutls module is an alternative to the distributed TLS module,
-      which uses GnuTLS instead, and supports several alternative
-      authentication methods by taking advantage of the TLS-SRP and TLS with
-      OpenPGP keys features of GnuTLS
-    </font></blockquote>
-  </ul>
 
-  <ul>
-    <b><font face="arial" color="#003399">FTP traffic shaping</font></b> 
-    <br />
-    <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
-    <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/modules/mod_shaper.html">http://www.castaglia.org/proftpd/modules/mod_shaper.html</a></i></font>
+<h2>Alternative TLS module</h2>
+<i>Maintainer: Nikos Mavroyanopoulos</i>
+<br /><a href="http://members.hellug.gr/nmav/misc/proftpd/mod_gnutls.html">http://members.hellug.gr/nmav/misc/proftpd/mod_gnutls.html</a>
 
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      Adds ability to configure overall bandwidth control for proftpd
-    </font></blockquote>
-  </ul>
+<p><code>mod_gnutls</code> is an alternative to the distributed TLS module,
+which uses GnuTLS instead, and supports several alternative authentication
+methods by taking advantage of the TLS-SRP and TLS with OpenPGP keys
+features of GnuTLS.</p>
 
-  <ul>
-    <b><font face="arial" color="#003399">Send messages to connected clients</font></b> 
-    <br />
-    <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
-    <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/modules/mod_msg.html">http://www.castaglia.org/proftpd/modules/mod_msg.html</a></i></font>
 
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      Adds ability to send messages to connected FTP clients
-    </font></blockquote>
-  </ul>
+<h2>FTP traffic shaping</h2> 
+<i>Maintainer: TJ Saunders</i>
+<br /><a href="http://www.castaglia.org/proftpd/modules/mod_shaper.html">http://www.castaglia.org/proftpd/modules/mod_shaper.html</a>
 
-  <ul>
-    <b><font face="arial" color="#003399">Counter-based read/write file locks</font></b> 
-    <br />
-    <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
-    <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/modules/mod_counter.html">http://www.castaglia.org/proftpd/modules/mod_counter.html</a></i></font>
+<p>Adds ability to configure overall bandwidth control for ProFTPD.</p>
 
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      Support for configuring counter-based read and/or write locks for
-      files being uploaded or download
-    </font></blockquote>
-  </ul>
 
-  <ul>
-    <b><font face="arial" color="#003399">Case-insensitive path checking</font></b>
-    <br />
-    <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
-    <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/modules/mod_case.html">http://www.castaglia.org/proftpd/modules/mod_case.html</a></i></font>
+<h2>Send messages to connected clients</h2> 
+<i>Maintainer: TJ Saunders</i>
+<br /><a href="http://www.castaglia.org/proftpd/modules/mod_msg.html">http://www.castaglia.org/proftpd/modules/mod_msg.html</a>
 
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      Support for performing case-insensitive file checks
-    </font></blockquote>
-  </ul>
+<p>Adds ability to send messages to connected FTP clients.</p>
 
-  <ul>
-    <b><font face="arial" color="#003399">SQL-based configuration module</font></b>
-    <br />
-    <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
-    <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/modules/mod_conf_sql.html">http://www.castaglia.org/proftpd/modules/mod_conf_sql.html</a></i></font>
 
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      Support for storing <code>proftpd.conf</code> configuration data in
-      SQL tables.
-    </font></blockquote>
-  </ul>
+<h2>Counter-based read/write file locks</h2> 
+<i>Maintainer: TJ Saunders</i>
+<br /><a href="http://www.castaglia.org/proftpd/modules/mod_counter.html">http://www.castaglia.org/proftpd/modules/mod_counter.html</a>
 
-  <ul>
-    <b><font face="arial" color="#003399">GSSAPI module</font></b>
-    <br />
-    <br /><font size="-1"><i>Maintainer: Markus Moeller</i></font>
-    <br /><font size="-1"><i><a href="http://gssmod.sourceforge.net">http://gssmod.sourceforge.net</a></i></font>
+<p>Support for configuring counter-based read and/or write locks for files
+being uploaded or download.</p>
 
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      mod_gss provides support for the GSSAPI security mechanism, as
-      described in RFC2228.
-    </font></blockquote>
-  </ul>
 
-  <ul>
-    <b><font face="arial" color="#003399">Script-executing module</font></b>
-    <br />
-    <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
-    <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/modules/mod_exec.html">http://www.castaglia.org/proftpd/modules/mod_exec.html</a></i></font>
+<h2>Case-insensitive path checking</h2>
+<i>Maintainer: TJ Saunders</i>
+<br /><a href="http://www.castaglia.org/proftpd/modules/mod_case.html">http://www.castaglia.org/proftpd/modules/mod_case.html</a>
 
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      Support for executing external scripts and commands, based on a variety
-      of conditions, during the course of an FTP session.
-    </font></blockquote>
-  </ul>
+<p>Support for performing case-insensitive file checks.</p>
 
-  <ul>
-    <b><font face="arial" color="#003399">A different quota module</font></b>
-    <br />
-    <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
-    <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/modules/mod_quotatab.html">http://www.castaglia.org/proftpd/modules/mod_quotatab.html</a></font>
 
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      The <code>mod_quotatab</code> implements FTP quotas in a manner different
-      from the now-deprecated <code>mod_quota</code> module.  Current versions
-      support reading quota limits from flat files, LDAP servers, or SQL
-      tables, and storing quota tallies in flat files or SQL tables.
-    </font></blockquote>
-  </ul>
+<h2>SQL-based configuration module</h2>
+<i>Maintainer: TJ Saunders</i>
+<br /><a href="http://www.castaglia.org/proftpd/modules/mod_conf_sql.html">http://www.castaglia.org/proftpd/modules/mod_conf_sql.html</a>
 
-  <ul>
-    <b><font face="arial" color="#003399">TDS SQL backend module</font></b>
-    <br />
-    <br /><font size="-1"><i>Maintainer: Patrick Muldoon</i></font>
-    <br /><font size="-1"><i><a href="http://labratsoftware.com/mod_sql_tds/mod_sql_tds-4.0.tar.gz">http://labratsoftware.com/mod_sql_tds/mod_sql_tds-4.0.tar.gz</a></i></font>
+<p>Support for storing <code>proftpd.conf</code> configuration data in SQL
+tables.</p>
 
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      mod_sql_tds provides SQL backend support for servers which speak TDS,
-      i.e. MS SQL Server and Sybase. This module should be considered beta
-      (maybe even alpha).
-    </font></blockquote>
-  </ul>
 
-  <ul>
-    <b><font face="arial" color="#003399">LDAP authentication module</font></b>
-    <br />
-    <br /><font size="-1"><i>Maintainer: John Morrissey</i></font>
-    <br /><font size="-1"><i><a href="http://horde.net/~jwm/software/mod_ldap/">http://horde.net/~jwm/software/mod_ldap</a></font>
+<h2>GSSAPI module</h2>
+<i>Maintainer: Markus Moeller</i>
+<br /><a href="http://gssmod.sourceforge.net">http://gssmod.sourceforge.net</a>
 
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      Authentication support using the Lightweight Directory Access Protocol.
-    </font></blockquote>
-  </ul>
+<p><code>mod_gss</code> provides support for the GSSAPI security mechanism,
+as described in RFC2228.</p>
 
-  <ul>
-    <b><font face="arial" color="#003399">CDB authentication module</font></b>
-    <br />
-    <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
-    <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/">http://www.castaglia.org/proftpd/</a></font>
 
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      Support for Dan J. Bernstein's <a href="http://cr.yp.to/cdb.html">CDB
-      format</a> for group and passwd file lookups. CDB lookups are generally
-      faster than other similar database formats.
-    </font></blockquote>
-  </ul>
-    
-  <ul>
-    <b><font face="arial" color="#003399">mod_autorun (1.7)</font></b>
-    <br />
-    <br /><font size="-1"><i>Maintainer: Brett Morgan</i></font>
-    <br /><font size="-1"><i><a href="http://www.korenwolf.net/proftpd/mod_autorun.c">http://www.korenwolf.net/proftpd/mod_autorun.c</a></font>
+<h2>Script-executing module</h2>
+<i>Maintainer: TJ Saunders</i>
+<br /><a href="http://www.castaglia.org/proftpd/modules/mod_exec.html">http://www.castaglia.org/proftpd/modules/mod_exec.html</a>
 
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      Allow execution of external commands from within ProFTPD.
-    </font></blockquote>
-  </ul>
-  
-  <ul>
-    <b><font face="arial" color="#003399">mod_time (2.1rc2)</font></b>
-    <br />
-    <br /><font size="-1"><i>Maintainer: TJ Saunders</i></font>
-    <br /><font size="-1"><i><a href="http://www.castaglia.org/proftpd/">http://www.castaglia.org/proftpd/</a></i></font>
+<p>Support for executing external scripts and commands, based on a variety
+of conditions, during the course of an FTP session.</p>
 
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      A ProFTPD module that limits FTP commands based on time of day
-      and/or day of the week.
-    </font></blockquote>
-  </ul>
 
-  <ul>
-    <b><font face="arial" color="#003399">mod_quota (1.26)</font></b>
-    <br />
-    <br /><font size="-1"><i>Maintainer: Eric Estabrooks</i></font>
-    <br /><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></font>
+<h2>Quota module</h2>
+<i>Maintainer: TJ Saunders</i>
+<br /><a href="http://www.castaglia.org/proftpd/modules/mod_quotatab.html">http://www.castaglia.org/proftpd/modules/mod_quotatab.html</a>
 
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      This module provides for upload/download quota controls.
-    </font></blockquote>
-  </ul>
+<p><code>mod_quotatab</code> implements FTP quotas in a manner different
+from the now-deprecated <code>mod_quota</code>.  Current versions support
+reading quota limits from flat files, LDAP servers, or SQL tables, and
+storing quota tallies in flat files or SQL tables.</p>
 
-  <ul>
-    <b><font face="arial" color="#003399">mod_ratio (3.3)</font></b>
-    <br />
-    <br /><font size="-1"><i>Maintainer: James Dogopoulos</i></font>
-    <br /><font size="-1"><i><a href="http://www.dynw.com/mod_ratio/">http://www.dynw.com/mod_ratio/</a></font>
 
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      File/Byte ratio module.
-    </blockquote>
-  </ul>
+<h2>TDS SQL backend module</h2>
+<i>Maintainer: Patrick Muldoon</i>
+<br /><a href="http://labratsoftware.com/mod_sql_tds/mod_sql_tds-4.0.tar.gz">http://labratsoftware.com/mod_sql_tds/mod_sql_tds-4.0.tar.gz</a>
 
-  <ul>
-    <b><font face="arial" color="#003399">mod_dbauth (1.7)</font></b>
-    <br />
-    <br /><font size="-1"><i>Maintainer: Eric Estabrooks</i></font>
-    <br /><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></font>
+<p><code>mod_sql_tds</code> provides SQL backend support for servers which
+speak TDS, i.e. MS SQL Server and Sybase. This module should be considered
+beta (maybe even alpha).</p>
 
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      BerkeleyDB authentication module for ProFTPD.
-    </font></blockquote>
-  </ul>
 
-  <ul>
-    <b><font face="arial" color="#003399">mod_gdbmauth</font></b>
-    <br />
-    <br /><font size="-1"><i>Maintainer: Eric Estabrooks</i></font>
-    <br /><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></font>
+<h2>LDAP authentication module</h2>
+<i>Maintainer: John Morrissey</i>
+<br /><a href="http://horde.net/~jwm/software/mod_ldap/">http://horde.net/~jwm/software/mod_ldap/</a>
 
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      GDBM authentication module for ProFTPD.
-    </font></blockquote>
-  </ul>
+<p>Authentication support using the Lightweight Directory Access
+Protocol.</p>
 
-  <ul>
-    <b><font face="arial" color="#003399">mod_opie (1.1)</font></b>
-    <br />
-    <br /><font size="-1"><i>Maintainer: Eric Estabrooks</i></font>
-    <br /><font size="-1"><i><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a></font>
 
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      A implementation of one-time passwords for ProFTPD.
-    </font></blockquote>
-  </ul>
-  </td>
-</tr>
-</table>
+<h2>CDB authentication module</h2>
+<i>Maintainer: TJ Saunders</i>
+<br /><a href="http://www.castaglia.org/proftpd/">http://www.castaglia.org/proftpd/</a>
+
+<p>Support for Dan J. Bernstein's <a href="http://cr.yp.to/cdb.html">CDB
+format</a> for group and passwd file lookups. CDB lookups are generally
+faster than other similar database formats.</p>
+
+
+<h2>mod_time (2.1rc2)</h2>
+<i>Maintainer: TJ Saunders</i>
+<br /><a href="http://www.castaglia.org/proftpd/">http://www.castaglia.org/proftpd/</a>
+
+<p>A ProFTPD module that limits FTP commands based on time of day and/or day
+of the week.</p>
+
+
+<h2>mod_ratio (3.3)</h2>
+<i>Maintainer: James Dogopoulos</i>
+<br /><a href="http://www.dynw.com/mod_ratio/">http://www.dynw.com/mod_ratio/</a>
+
+<p>File/Byte ratio module.</p>
+
+
+<h2>mod_dbauth (1.7)</h2>
+<i>Maintainer: Eric Estabrooks</i>
+<br /><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a>
+
+<p>BerkeleyDB authentication module for ProFTPD.</p>
+
+
+<h2>mod_gdbmauth</h2>
+<i>Maintainer: Eric Estabrooks</i>
+<br /><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a>
+
+<p>GDBM authentication module for ProFTPD.</p>
+
+
+<h2>mod_opie (1.1)</h2>
+<i>Maintainer: Eric Estabrooks</i>
+<br /><a href="ftp://pooh.urbanrage.com/pub/c/">ftp://pooh.urbanrage.com/pub/c</a>
+
+<p>A implementation of one-time passwords for ProFTPD.</p>
 
 #include "footer.epl"

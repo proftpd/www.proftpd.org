@@ -1,31 +1,18 @@
-<: # $Id$ :>//
-<: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
-<: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download, configuration" :>//
-<: $html_title = "Example configuration cookbook" :>//
-<: $last_changed = "30/Jan/2002 - hamster" :>//
+<: # $Id$ :>
+<: $html_title = "Example Configurations" :>
 
 #include "header.epl"
 
-<table bgcolor="white">
-<tr valign=top>
-  <td>
-    <div class="headline">
-      <: print "<b>$html_title</b>" unless !defined($html_title) :>//
-    </div>
+<h1><: print "$html_title" :></h1>
+<p>Here are some example configurations which are known to work, more
+to be added shortly and some supplementary notes</p>
 
-    <p>Here are some example configurations which are known to work, more
-    to be added shortly and some supplementary notes</p>
-
-    <dl>
-      <dt><a href="./configs/basic.conf">Basic</a></dt>
-      <dt><a href="./configs/anonymous.conf">Anonymous</a></dt>
-      <dt><a href="./configs/virtual.conf">Virtual hosts</a></dt>
-      <dt><a href="./configs/virtual_authuserfile.conf">Complex Virtual</a></dt>
-      <dt><a href="./configs/mysql_simple.conf">Simple MySQL Authentication</a></dt>
-    </dl>
-
-  </td>
-</tr>
-</table>
+<ul>
+  <li><a href="configs/basic.conf">Basic</a></li>
+  <li><a href="configs/anonymous.conf">Anonymous</a></li>
+  <li><a href="configs/virtual.conf">Virtual hosts</a></li>
+  <li><a href="configs/virtual_authuserfile.conf">Complex Virtual</a></li>
+  <li><a href="configs/mysql_simple.conf">Simple MySQL Authentication</a></li>
+</ul>
 
 #include "footer.epl"

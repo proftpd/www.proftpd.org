@@ -1,93 +1,71 @@
 <: # $Id$ :>//
-<: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
-<: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
-<: $html_title = "Project Documentation" :>//
-<: $last_changed = "19/Oct/2002 - hamster" :>//
+<: $html_title = "Project Documentation" :>
 
 #include "header.epl"
 
-<table bgcolor="white">
-<tr valign=top>
-  <td>
-    <div class="headline">
-      <: print "<b>$html_title</b>" unless !defined($html_title) :>//
-    </div>
+<h1><: print "$html_title" :></h1>
+<p>The core documentation is held on SourceForge (project pdd), if you have
+patches or changes please submit them as a diff against those souces where
+possible. All updates should be directed to (<a
+href="mailto:hamster@vom.org.uk">Mark Lowes</a> and they will be dealt with
+as quickly as possible)</p>
 
-    <p>The core documentation is held on SourceForge (project pdd), if you
-    have patches or changes please submit them as a diff against those
-    souces where possible.  All updates should be directed to (<a
-    href="mailto:hamster@vom.org.uk">Mark Lowes</a> and they will be dealt with
-    as quickly as possible)</p>
+<ul>
+  <li>Directives list 
+  <ul>
+      <li><a href="/docs/directives/linked/by-name.html">by name</a></li>
+      <li><a href="/docs/directives/linked/by-modules.html">by module</a></li>
+      <li><a href="/docs/directives/linked/by-context.html">by context</a></li>
+      <li>single file 
+          <a href="/docs/directives/configuration_full.html">html</a> / 
+          <a href="/docs/directives/configuration.pdf">pdf</a> / 
+          <a href="/docs/directives/configuration.ps">ps</a></li>
+  </ul>
+  <li>Frequently Asked Questions (<em>Updated 19/Oct/2002</em>)
+    <li>(See Also: <code>doc/</code> directory of the source distribution)
+    (<a href="/docs/faq/linked/faq.html">linked html</a>)
+    (<a href="/docs/faq/faq_full.html">single html</a>)
+    (<a href="/docs/faq/faq.ps">ps</a>)
+    (<a href="/docs/faq/faq.pdf">pdf</a>)
+    <li><a href="/cvs.html">CVS Howto and FAQ</a></li>
+    <li><a href="http://www.castaglia.org/proftpd/doc/devel-guide/">ProFTPD Developer's Guide</a> (by TJ Saunders)</li>
+    <li><a href="http://www.castaglia.org/proftpd/doc/contrib/ProFTPD-mini-HOWTO-NAT.html">Configuring ProFTPD and NAT</a> (by Tobias Ekbom)</li>
+    <li><a href="http://www.castaglia.org/proftpd/doc/contrib/ProFTPD-mini-HOWTO-SSH.html">Configuring FTP over SSH</a> (by TJ Saunders)</li>
+</ul>
 
-    <ul>
-      <li>Directives list 
-      <ul>
-      	<li><a href="/docs/directives/linked/by-name.html">by name</a></li>
-      	<li><a href="/docs/directives/linked/by-modules.html">by module</a></li>
-      	<li><a href="/docs/directives/linked/by-context.html">by context</a></li>
-      	<li>single file 
-      		<a href="/docs/directives/configuration_full.html">html</a> / 
-      		<a href="/docs/directives/configuration.pdf">pdf</a> / 
-      		<a href="/docs/directives/configuration.ps">ps</a></li>
-      </ul>
-      <li>Frequently Asked Questions (<em>Updated 19/Oct/2002</em>)
-	<li>(See Also: <code>doc/</code> directory of the source distribution)
-        (<a href="/docs/faq/linked/faq.html">linked html</a>)
-        (<a href="/docs/faq/faq_full.html">single html</a>)
-        (<a href="/docs/faq/faq.ps">ps</a>)
-        (<a href="/docs/faq/faq.pdf">pdf</a>)
-        <li><a href="/cvs.html">CVS Howto and FAQ</a></li>
-	<li><a href="http://www.castaglia.org/proftpd/doc/devel-guide/">ProFTPD Developer's Guide</a> (by TJ Saunders)</li>
-	<li><a href="http://www.castaglia.org/proftpd/doc/contrib/ProFTPD-mini-HOWTO-NAT.html">Configuring ProFTPD and NAT</a> (by Tobias Ekbom)</li>
-	<li><a href="http://www.castaglia.org/proftpd/doc/contrib/ProFTPD-mini-HOWTO-SSH.html">Configuring FTP over SSH</a> (by TJ Saunders)</li>
-	</ul>
+<h1>Other sites</h1>
+<ul>
+  <li><a href="http://www.proftpd.de/">German language version of this site</a></li>
+  <li><a href="http://slacksite.com/other/ftp.html">Active FTP vs. Passive FTP, a Definitive Explanation</a></li>
+</ul>
 
-    <hr />
+<h1>Contributed modules</h1>
+<p>The core of the ProFTPD code is maintained by the ProFTPD Core Team.
+However, without the contributed modules provided by various other
+programmers, ProFTPD would be much poorer in the features it could offer.
+This section of the site will soon contain links and information on these
+additional modules and where to find further help in configuring the
+features they offer.</p>
 
-    <div class="headline">Other sites</div>
+<ul>
+  <li><a href="http://www.castaglia.org/proftpd/doc/contrib/ProFTPD-mini-HOWTO-TLS.html">SSL/TLS</a> support (mod_tls)</li>
+  <li><a href="http://horde.net/~jwm/software/mod_ldap/">LDAP</a> support (mod_ldap)</li>
+  <li>POSIX capabilities (mod_cap)</li>
+  <li><a href="http://www.castaglia.org/proftpd/doc/contrib/ProFTPD-mini-HOWTO-SQL.html">SQL</a> support (mod_sql)</li>
+  <li>RADIUS support (mod_radius)</li>
+  <li><a href="http://www.castaglia.org/proftpd/">TCP wrappers</a> support (mod_wrap)</li>
+  <li>mod_readme</li>
+  <li>mod_ratio (Maintained by: James Dogopoulos &lt;jd@dynw.com&gt;)</li>
+</ul>
 
-	<ul>
-    	<LI><a href="http://www.proftpd.de/">German language version of this site</a>
-	<li><a href="http://slacksite.com/other/ftp.html">Active FTP vs. Passive FTP, a Definitive Explanation</a>
-	</ul>
+<h1>Log analysis scripts</h1>
+<p>There are various packages available to provide useful analysis of the
+access logs generated by ProFTPD. Examples and more detail on their use and
+the shortcomings will be put up shortly.</p>
 
-    <hr />
-
-    <div class="headline">Contributed modules</div>
-
-    <p>The core of the ProFTPD code is maintained by the <a
-    href="mailto:core@proftpd.org">ProFTPD Core Team</a>. However, without
-    the contributed modules provided by various other programmers, ProFTPD
-    would be much poorer in the features it could offer.  This section of
-    the site will soon contain links and information on these additional
-    modules and where to find further help in configuring the features they
-    offer.</p>
-
-    <dl>
-      <dt><a href="http://www.castaglia.org/proftpd/doc/contrib/ProFTPD-mini-HOWTO-TLS.html">SSL/TLS</a> support (mod_tls)</dt>
-      <dt><a href="http://www.horde.net/~jwm/software/mod_ldap/">LDAP</a> support (mod_ldap)</dt>
-      <dt>POSIX capabilities (mod_cap)</dt>
-      <dt><a href="http://www.castaglia.org/proftpd/doc/contrib/ProFTPD-mini-HOWTO-SQL.html">SQL</a> support (mod_sql)</dt>
-      <dt>RADIUS support (mod_radius)</dt>
-      <dt><a href="http://www.castaglia.org/proftpd/">TCP wrappers</a> support (mod_wrap)</dt>
-      <dt>mod_readme</dt>
-      <dt>mod_ratio (Maintained by: James Dogopoulos &lt;jd@dynw.com&gt;)</dt>
-    </dl>
-
-    <hr />
-
-    <div class="headline">Log analysis scripts</div>
-
-    <p>There are various packages available to provide useful analysis of the
-    access logs generated by ProFTPD.  Examples and more detail on their use and
-    the shortcomings will be put up shortly.</p>
-
-    <ul>
-      <li><a href="http://www.webalizer.org/">The Webalizer</a></li>
-      <li><a href="http://www.nihongo.org/snowhare/utilities/ftpweblog/">ftpweblog</a></li>
-    </ul>
-  </td>
-</tr>
-</table>
+<ul>
+  <li><a href="http://www.webalizer.org/">The Webalizer</a></li>
+  <li><a href="http://www.nihongo.org/snowhare/utilities/ftpweblog/">ftpweblog</a></li>
+</ul>
 
 #include "footer.epl"

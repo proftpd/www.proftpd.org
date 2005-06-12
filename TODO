@@ -3,5 +3,4 @@
 * Link in user guide 
 * Create CVS howto
 * lists: add more space between lists
-* the <blockquote><font><pre>/<p> stuff in lists,md5_pgp,old_news isn't
-  xhtml compliant, need to look into this
+* update features.epl

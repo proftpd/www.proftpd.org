@@ -1,20 +1,11 @@
 <: # $Id$ :>//
-<: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
-<: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "MD5 sums and PGP signatures of release files" :>//
-<: $last_changed = "09/June/2002 - hamster" :>//
 
 #include "header.epl"
 
-<table bgcolor="white">
-<tr>
-  <td>
-    <div class="headline">
-      <: print "<b>$html_title</b>" unless !defined($html_title) :>//
-    </div>
+<h1><: print "$html_title" :></h1>
 
-    <br />
-    <div class="headline-small">MD5 Digest Hashes</div>
+<h2>MD5 Digest Hashes</h2>
 
 <pre>
 5feb4a7348e12faefc25e34fd92efdd6 <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.2.10.tar.bz2">proftpd-1.2.10.tar.bz2</a>
@@ -23,17 +14,10 @@ c09df98d2e44b46af4f7a8174c59b294 <a href="ftp://ftp.proftpd.org/distrib/sources/
 79f868c36ef2ab0a8f30c665fd293f65 <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.3.0rc1.tar.gz">proftpd-1.3.0rc1.tar.gz</a>
 </pre>
 
-  </td>
-</tr>
+<h2>PGP Signatures</h2>
 
-<table bgcolor="white">
-<tr>
-  <td>
-    <br />
-    <div class="headline-small">PGP Signatures</div>
-<b><font face="arial" color="#003399">proftpd-1.2.10.tar.bz2.asc</font></b>
-<br />
-<font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><pre>
+<pre>
+<strong>proftpd-1.2.10.tar.bz2.asc</strong>
 -----BEGIN PGP SIGNATURE-----
 Version: PGP 6.5.8
 
@@ -41,11 +25,10 @@ iQA/AwUAQToSbreOiT+lEZdqEQLRiACeP7QpF1pVM+0qAaxQw3TaKCEd3KUAoMSt
 cMtCLuuFA1Xf4O5i16U00oHj
 =Pn2Z
 -----END PGP SIGNATURE-----
-</pre></font>
+</pre>
 
-<b><font face="arial" color="#003399">proftpd-1.2.10.tar.gz.asc</font></b>
-<br />
-<font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><pre>
+<pre>
+<strong>proftpd-1.2.10.tar.gz.asc</strong>
 -----BEGIN PGP SIGNATURE-----
 Version: PGP 6.5.8
 
@@ -53,11 +36,10 @@ iQA/AwUAQToSZ7eOiT+lEZdqEQKcggCg5mTZsh8Xq79ksJ1NNmu3CEGRLmsAnRhc
 bKwwz3Jo2LGMI6R0j9WphoBs
 =lGh2
 -----END PGP SIGNATURE-----
-</pre></font>
+</pre>
 
-<b><font face="arial" color="#003399">proftpd-1.3.0rc1.tar.bz2.asc</font></b>
-<br />
-<font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><pre>
+<pre>
+<strong>proftpd-1.3.0rc1.tar.bz2.asc</strong>
 -----BEGIN PGP SIGNATURE-----
 Version: PGP 6.5.8
 
@@ -65,11 +47,10 @@ iQA/AwUAQlnRVreOiT+lEZdqEQJXsACgx0lLb5A4tjdlGKFM0AndpEMHhLoAnRJk
 z1c2HOkUwqazM+RRl1Vxeex0
 =GM31
 -----END PGP SIGNATURE-----
-</pre></font>
+</pre>
 
-<b><font face="arial" color="#003399">proftpd-1.3.0rc1.tar.gz.asc</font></b>
-<br />
-<font face="Verdana,Arial,Helvetica,sans-serif" size="-1"><pre>
+<pre>
+<strong>proftpd-1.3.0rc1.tar.gz.asc</strong>
 -----BEGIN PGP SIGNATURE-----
 Version: PGP 6.5.8
 
@@ -77,10 +58,6 @@ iQA/AwUAQlnRXreOiT+lEZdqEQKViQCfaPWGdxJdPx4gdjGdNEar49ju3xAAnjS2
 c3Sv4WnmMWQlNiiB1TLD14IG
 =rxfB
 -----END PGP SIGNATURE-----
-</pre></font>
-
-  </td>
-</tr>
-</table>
+</pre>
 
 #include "footer.epl"

@@ -1,188 +1,126 @@
 <: # $Id$ :>//
-<: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
-<: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Sites powered by ProFTPD" :>//
-<: $last_changed = "08/Oct/2002 - hamster" :>//
 
 #include "header.epl"
 
-<table bgcolor="white">
-<tr>
-  <td>
-    <div class="headline">
-      <: print "<b>$html_title</b>" unless !defined($html_title) :>//
-    </div>
+<h1><: print "$html_title" :></h1>
 
-    <p>The core development team would like to thank the following
-    organizations for allowing themselves to be listed.</p>
+<p>The core development team would like to thank the following organizations
+for allowing themselves to be listed.</p>
 
-    <dl>
-      <dt><a href="http://www.netmax.com/">NetMAX</a></dt>
-      <dd>Suppliers of Linux based network appliances, in their latest release they have chosen to use ProFTPD as the ftp server.</dd>
-    </dl>
+<ul id="sitesList">
+  <li><a href="http://www.sourceforge.net/">SourceForge</a><br />
+      The home for a large number of Open Source projects, including the
+      documentation arm of the ProFTPD Project and the Project's mailing
+      lists.
+  </li>
 
-<!-- gnu.org removed until we can confirm they're still using proftpd -->
-<!--
-    <dl>
-      <dt><a href="ftp://ftp.gnu.org/">GNU.org</a></dt>
-      <dd>The GNU project</dd>
-    </dl>
--->
+  <li><a href="ftp://ftp.samba.org/">ftp.samba.org</a><br />
+      Samba is an Open Source/Free Software suite that provides seamless
+      file and print services to SMB/CIFS clients.
+  </li>
 
-    <dl>
-      <dt><a href="http://www.sourceforge.net/">SourceForge</a></dt>
-      <dd>The home for a large number of Open Source projects, including the
-          documentation arm of the ProFTPD Project and the Project's mailing
-          lists.
-      </dd>
-    </dl>
+  <li><a href="http://www.linksys.com/">Linksys</a><br />
+      Linksys is the leader of broadband, wireless and networking hardware
+      to the home and SOHO user worldwide.
+  </li>
 
-    <dl>
-      <dt><a href="ftp://ftp.samba.org/">ftp.samba.org</a></dt>
-      <dd>Samba is an Open Source/Free Software suite that provides seamless
-          file and print services to SMB/CIFS clients.
-      </dd>
-    </dl>
+  <li><a href="http://www.slackware.com/">Slackware</a><br />
+      The Official Release of Slackware Linux by Patrick Volkerding is an
+      advanced Linux operating system, designed with the twin goals of ease
+      of use and stability as top priorities. ProFTPD is used to power
+      ftp.slackware.com.
+  </li>
 
-    <dl>
-      <dt><a href="http://www.linksys.com/">Linksys</a></dt>
-      <dd>Linksys is the leader of broadband, wireless and networking hardware
-          to the home and SOHO user worldwide.
-      </dd>
-    </dl>
+  <li><a href="ftp://ftp.freeradius.org/">ftp.freeradius.org</a><br />
+      The FreeRADIUS Server Project is an attempt to create a
+      high-performance and highly configurable GPL'd free RADIUS server.
+  </li>
 
-    <dl>
-      <dt><a href="http://www.slackware.com/">Slackware</a></dt>
-      <dd>The Official Release of Slackware Linux by Patrick Volkerding is an
-          advanced Linux operating system, designed with the twin goals of ease
-          of use and stability as top priorities. ProFTPD is used to power
-          ftp.slackware.com.
-      </dd>
-    </dl>
+  <li><a href="http://www.chello.com/">Chello</a><br />
+      European broadband ISP, powering numerous customer web sites and a
+      large mirror site with ProFTPD.
+  </li>
 
-    <dl>
-      <dt><a href="ftp://ftp.freeradius.org">ftp.freeradius.org</a></dt>
-      <dd>The FreeRADIUS Server Project is an attempt to create a
-          high-performance and highly configurable GPL'd free RADIUS server.
-      </dd>
-    </dl>
+  <li><a href="ftp://ftp.abebooks.com/">abebooks.com</a><br />
+      Largest online source of out-of-print, rare and secondhand titles.
+      Access our database of 35 million books from a network of over 10,000
+      independent booksellers worldwide.
+  </li>
 
-    <dl>
-      <dt><a href="http://www.chello.com/">chello</a></dt>
-      <dd>European broadband ISP, powering numerous customer web sites and a
-          large mirror site with ProFTPD.</dd>
-    </dl>
+  <li><a href="http://www.ccp14.ac.uk/">Daresbury Laboratory, UK</a><br />
+      Collaborative Computational Project Number 14 (CCP14) for Single
+      Crystal and Powder Diffraction, CLRC, Daresbury Synchrotron
+      Laboratory, UK.
+  </li>
 
-    <dl>
-      <dt><a href="ftp://ftp.abebooks.com/">abebooks.com</a></dt>
-      <dd>
-        Largest online source of out-of-print, rare and secondhand titles.
-        Access our database of 35 million books from a network of over
-        10,000 independent booksellers worldwide.
-      </dd>
-    </dl>
+  <!-- Contact: Lucian Daniel Kafka <luci@conexim.com.au> -->
+  <li><a href="http://www.conexim.com.au/">Conexim web hosting Australia</a><br />
+      WebHosting provider in Australia based around open source software.
+  </li>
 
-    <dl>
-      <dt><a href="http://www.ccp14.ac.uk/">Daresbury Laboratory, UK</a></dt>
-      <dd>Collaborative Computational Project Number 14 (CCP14) for Single
-          Crystal and Powder Diffraction, CLRC, Daresbury Synchrotron
-          Laboratory, UK.
-      </dd>
-    </dl>
+  <li><a href="http://www.duno.com/">Duno</a><br />
+      Hosting service, aiming to be holding 1.6 million domains by the end
+      of 2001.
+  </li>
 
-<!-- 
-Contact: Lucian Daniel Kafka <luci@conexim.com.au>
--->
-    <dl>
-      <dt><a href="http://www.conexim.com.au/">Conexim web hosting Australia</a></dt>
-      <dd>WebHosting provider in Australia based around open source software.
-      </dd>
-    </dl>
+  <li><a href="http://www.e-magic.be/">e-magic</a><br />
+      Web hosting/design company located in Belgium, mainly using
+      open-source software.
+  </li>
 
-    <dl>
-      <dt><a href="http://www.duno.com/">Duno</a></dt>
-      <dd>Hosting service, aiming to be holding 1.6 million domains by the
-          end of 2001.
-      </dd>
-    </dl>
+  <li><a href="http://www.frontier.net.uk/">Frontier Internet</a><br />
+      UK based business ISP, running almost exclusively on Linux
+      servers. Hosts ftp.linux.co.uk and www.linux.co.uk.
+  </li>
 
-    <dl>
-      <dt><a href="http://www.e-magic.be/">e-magic</a></dt>
-      <dd>Web hosting/design company located in Belgium, mainly using
-          open-source software.
-      </dd>
-    </dl>
+  <li><a href="http://www.fuitadnet.com/">FuitadNET</a><br />
+      A free webhosting service running ProFTPD.
+  </li>
 
-    <dl>
-      <dt><a href="http://www.frontier.net.uk/">Frontier Internet</a></dt>
-      <dd>UK based business ISP, running almost exclusively on Linux
-          servers. Hosts ftp.linux.co.uk and www.linux.co.uk.
-      </dd>
-    </dl>
+  <li><a href="http://www.law.harvard.edu/">Harvard Law</a><br />
+      Harvard Law School
+  </li>
 
-    <dl>
-      <dt><a href="http://www.fuitadnet.com/">FuitadNET</a></dt>
-      <dd>A free webhosting service running ProFTPD.</dd>
-    </dl>
+  <li><a href="http://www.hispalinux.es/">Spanish Linux Users' Group</a><br />
+      Spanish Linux Users' Group
+  </li>
 
-    <dl>
-      <dt><a href="http://www.law.harvard.edu/">Harvard Law</a></dt>
-      <dd>Harvard Law School</dd>
-    </dl>
+  <li><a href="ftp://ftp.leo.org/">LEO - Link Everything Online - TU Munich</A>
+      Large (450GB) software archive hosting many mirrors of major projects
+      like FreeBSD or kernel.org and our own collections for selected topics
+      (e.g. OS/2). Pushing 10mbit/s average.
+  </li>
 
-    <dl>
-      <dt><a href="http://www.hispalinux.es/">Spanish Linux Users' Group</a></dt>
-      <dd>Spanish Linux Users' Group</dd>
-    </dl>
+  <li><a href="http://www.swebase.com/">Swebase AB, Sweden</A>
+      Swebase are running ProFTPD on a number of BSD servers each hosting 200+
+      domains
+  </li>
 
-    <dl>
-      <dt><a href="ftp://ftp.leo.org/">LEO - Link Everything Online - TU Munich</A></dt>
-      <dd>Large (450GB) software archive hosting many mirrors of major
-      projects like FreeBSD or kernel.org and our own collections for
-      selected topics (e.g. OS/2). Pushing 10mbit/s average.
-      </dd>
-    </dl>
+  <li><A href="http://www.cslab.vt.edu/">Virginia Tech Computer Science Lab</A>
+      This site uses ProFTPD to host a mirrors site shifting over
+      250Gb of data monthly.
+  </li>
 
-    <dl>
-      <dt><a href="http://www.swebase.com/">Swebase AB, Sweden</A></dt>
-      <dd>Swebase are running ProFTPD on a number of BSD servers each hosting 200+
-          domains</dd>
-      </dd>
-    </dl>
+  <li><A href="http://www.subspacenet.com/">SubspaceNet</A>
+      Low-cost professional web hosting with 24/7 FTP site access via
+      ProFTPD
+  </li>
 
-    <dl>
-      <dt><A href="http://www.cslab.vt.edu/">Virginia Tech Computer Science Lab</A></dt>
-      <dd>This site uses ProFTPD to host a mirrors site shifting over
-      250Gb of data monthly.</dd>
-    </dl>
+  <li><A href="http://www.liquidneon.com/">Liquidneon.com</A>
+      Offers a wide range of webhosting, dedicated hosting, and
+      colocation services, running exclusively FreeBSD and OpenBSD.
+  </li>
 
-    <dl>
-      <dt><A href="http://www.subspacenet.com/">SubspaceNet</A></dt>
-      <dd>Low-cost professional web hosting with 24/7 FTP site access via
-          ProFTPD</dd>
-    </dl>
+  <li><a href="http://www.nq.pl/">nQ.l Hosting</a><br />
+      Hosting company in Poland proving FTP access to client accounts
+      via ProFTPD.
+  </li>
 
-    <dl>
-      <dt><A href="http://www.liquidneon.com">Liquidneon.com</A></dt>
-      <dd>Offers a wide range of webhosting, dedicated hosting, and
-          colocation services, running exclusively FreeBSD and OpenBSD.</dd>
-    </dl>
-
-    <dl>
-      <dt><a href="http://www.nq.pl">nQ.l Hosting</a></dt>
-      <dd>Hosting company in Poland proving FTP access to client accounts
-          via ProFTPD.</dd>
-    </dl>
-<!--
-"Goran Matic" gmatic@sircus.com
-If you like you can add ftp.sircus.com as a site that is powered by ProFTPD.
-ftp://ftp.sircus.com
-ftp://ftp2.sircus.com
-Online Music Xchange community.
--->
-
-  </td>
-</tr>
-</table>
+  <li><a href="http://www.netmax.com/">NetMAX</a><br />
+      Suppliers of Linux based network appliances, in their latest release
+      they have chosen to use ProFTPD as the ftp server.
+  </li>
+</ul>
 
 #include "footer.epl"

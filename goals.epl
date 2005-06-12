@@ -1,42 +1,54 @@
 <: # $Id$ :>//
-<: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
-<: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Project Goals" :>//
-<: $last_changed = "04/Apr/2001 - jwm" :>//
 
 #include "header.epl"
 
-<table bgcolor="white">
-<tr>
-  <td>
-    <div class="headline">
-      <: print "<b>$html_title</b>" unless !defined($html_title) :>//
-    </div>
+<h1><: print "$html_title" :></h1>
 
-    <p>ProFTPD grew out of the desire to have a secure and configurable FTP
-    server, and out of a significant admiration of the <a
-    href="http://www.apache.org/">Apache</a> web server. There are currently
-    a very limited number of FTP servers running on Unix (or Unix-like)
-    hosts. The most commonly used server is wu-ftpd.  While wu-ftpd provides
-    excellent performance and is generally a good product, it lacks numerous
-    features found in newer Win32 FTP servers and has a poor security
-    history.  Many people, including the developers who work on ProFTPD,
-    have spent a great deal of time fixing bugs and hacking features into
-    wu-ftpd.  Unfortunately, it quickly became clear that a complete
-    redesign was necessary in order to implement the configurability and
-    features desired. ProFTPD is not a hack based on any other server, it's
-    an independent source tree from the ground up.  A number of well known
-    and high traffic <a href="sites.html">sites</a> use ProFTPD.</p>
+<p>ProFTPD grew out of the desire to have a secure and configurable FTP
+server, and out of a significant admiration of the
+<a href="http://httpd.apache.org/">Apache web server</a>.</p>
 
-    <p>In addition to wu-ftpd, there are a few of other FTP servers
-    available which are designed to be light-weight and secure at the
-    expense of configurability. For example, Troll FTP is an excellent FTP
-    daemon which is considerably more secure and less resource-intensive
-    than wu-ftpd. Unfortunately, while it is quite suitable for basic FTP
-    services, it does not offer the feature set required for more
-    sophisticated FTP sites.</p>
-  </td>
-</tr>
-</table>
+<p>When the Project began, the most commonly used server was wu-ftpd. While
+wu-ftpd provides excellent performance and is generally a good product, it
+lacks numerous features found in newer Win32 FTP servers and has a poor
+security history. Many people, including the developers who work on ProFTPD,
+had spent a great deal of time fixing bugs and hacking features into
+wu-ftpd. Unfortunately, it quickly became clear that a complete redesign was
+necessary in order to implement the configurability and features
+desired.</p>
+
+<p>In addition to wu-ftpd, there are a few of other FTP servers available
+which are designed to be light-weight and secure at the expense of
+configurability. For example, Troll FTP is an excellent FTP daemon which is
+considerably more secure and less resource-intensive than wu-ftpd.
+Unfortunately, while it is quite suitable for basic FTP services, it does
+not offer the feature set required for more sophisticated FTP sites.</p>
+
+<p>ProFTPD is not a hack based on any other server, it's an independent
+source tree from the ground up. A number of <a href="sites.html">well known
+and high traffic sites use ProFTPD.</a></p>
+
+
+<h1>Contributors</h1>
+<p>ProFTPD would not be where it is today without the contributions of
+many people.</p>
+
+<h2>Core Team (in alphabetical order)</h2>
+<ul>
+  <li><a href="http://horde.net/~jwm/">John Morrissey</a>: Developer, mod_ldap maintainer</li>
+  <li><a href="http://www.amd.co.at/">Michael Renner</a></li>
+  <li><a href="mailto:dr at proftpd dot org">Daniel Roesen</a></li>
+  <li><a href="http://www.castaglia.org/proftpd/">TJ Saunders</a>: ProFTPD maintainer</li> 
+</ul>
+
+<h2>Retired Core Team Members</h2>
+<ul>
+  <li>Jesse Sipprell: ProFTPD creator</li>
+  <li><a href="http://www.macgyver.org/">MacGyver</a>: ProFTPD maintainer</li>
+  <li>Charles Seeger</li>
+  <li><a href="mailto:aah at acm dot org">Andrew Houghton</a>: mod_sql maintainer</li>
+  <li><a href="http://www.korenwolf.net/">Mark Lowes</a>: Documentation and Webhamster</li>
+</ul>
 
 #include "footer.epl"

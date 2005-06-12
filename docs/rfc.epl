@@ -1,459 +1,299 @@
-<:
-# $Id$
-:>//
-<: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
-<: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
-<: $html_title = "FTP Related RFCs (Request For Comments)" :>//
-<: $last_changed = "15/Mar/2001 - Seeger" :>//
+<: # $Id$ :>
+<: $html_title = "FTP Related RFCs (Request For Comments)" :>
 
 #include "header.epl"
 
-<table bgcolor="white">
-<tr>
-  <td>
-    <div class="headline">
-      <: print "<b>$html_title</b>" unless !defined($html_title) :>//
-    </div>
-  </td>
-</tr>
+<h1><: print "$html_title" :></h1>
+<p>This page lists current Internet RFCs and Drafts that define or are
+closely related to the FTP protocol.</p>
 
-<tr>
-  <td>
-    <p>
-    This page lists current Internet RFCs and Drafts that define or
-    are closely related to the FTP protocol.
-    <!--
-    Other
-    <a href="ftp_support_rfc_index.epl">supporting</a>
-    and
-    <a href="ftp_historic_rfc_index.epl">historic</a>
-    RFCs and Drafts are listed separately.
-    -->
-    </p>
+<p> ProFTPD 1.2 conforms to the FTP protocol standard as defined in RFC-959
+(STD-9) and RFC-1123 (STD-3).  It also implements RFC-2389 ("Feature
+negotiation mechanism for the File Transfer Protocol"). All the required
+commands are implemented, as are most of the optional commands appropriate
+for FTP servers hosted on POSIX (IEEE-1003.1) style operating systems. 
+However, the ACCT (Account) command is not implemented.</p>
 
-    <a NAME="conformance"></a>
-    <p>
-    ProFTPD 1.2 conforms to the FTP protocol standard as defined
-    in RFC-959 (STD-9) and RFC-1123 (STD-3).  It also implements
-    RFC-2389 ("Feature negotiation mechanism for the File Transfer
-    Protocol"). All the required commands are implemented, as are most of
-    the optional commands appropriate for FTP servers hosted on POSIX
-    (IEEE-1003.1) style operating systems.  However, the ACCT (Account)
-    command is not implemented.
-    </p>
+<p>ProFTPD 1.2 implements the extended protocol commands MDTM (Modification
+Time) and size, and extends the REST (Restart) command to STREAM mode
+transfers. These extensions are for resuming interrupted file transfers and
+represent common existing practice, which is being codified in the IETF
+Draft "Extensions to FTP."</p>
 
-    <a name="extensions"></a>
-    <p>
-    ProFTPD 1.2 implements the extended protocol commands
-    MDTM (Modification Time) and size, and extends the
-    REST (Restart) command to STREAM mode transfers.
-    These extensions are for resuming interrupted file transfers
-    and represent common existing practice, which is being codified
-    in the IETF Draft "Extensions to FTP".
-    </p>
+<p>Future plans for ProFTPD include the gradual implementation of the recent
+standards track RFCs developed by the IETF CAT and FTPEXT Working Groups. It
+is likely that attention will first focus on RFC-2228 "FTP Security
+Extensions", and the MLST and MLSD commands from the IETF Draft "Extensions
+to FTP." RFC-2640 "Internationalization of the File Transfer Protocol" also
+may receive early attention.</p>
 
-    <a name="futureplans"></a>
-    <p>
-    Future plans for ProFTPD include the gradual implementation
-    of the recent standards track RFCs developed by the IETF CAT
-    and FTPEXT Working Groups.
-    It is likely that attention will first focus on RFC-2228
-    "FTP Security Extensions", and the MLST and MLSD commands from
-    the IETF Draft "Extensions to FTP".
-    RFC-2640 "Internationalization of the File Transfer Protocol"
-    also may receive early attention.
-    </p>
+<p>The <a href="http://www.ietf.org/html.charters/cat-charter.html">IETF
+Common Authentication Technology (CAT) Working Group </a> has produced
+RFC-2228 and RFC-2773. The CAT WG has produced numerous other RFCs about
+various authentication and authorization topics, including Kerberos-5, SASL
+and GSS-API.</p>
 
-    <a name="catwg"></a>
-    <p>
-    The
-    <a href="http://www.ietf.org/html.charters/cat-charter.html">
-    IETF Common Authentication Technology (CAT) Working Group
-    </a>
-    has produced RFC-2228 and RFC-2773.
-    The CAT WG has produced numerous other RFCs about various
-    authentication and authorization topics, including Kerberos-5,
-    SASL and GSS-API.
-    </p>
+<p>The <a href="http://www.ietf.org/html.charters/ftpext-charter.html">
+IETF Extensions to FTP (FTPEXT) Working Group</a> has produced RFC-2389,
+RFC-2428, RFC-2577, RFC-2640, and the "Extensions to FTP" Internet Draft,
+draft-ietf-ftpext-mlst-12.txt.</p>
 
-    <a name="ftpextwg"></a>
-    <p>
-    The
-    <a href="http://www.ietf.org/html.charters/ftpext-charter.html">
-    IETF Extensions to FTP (FTPEXT) Working Group
-    </a>
-    has produced RFC-2389, RFC-2428, RFC-2577, RFC-2640, and the
-    "Extensions to FTP" Internet Draft, draft-ietf-ftpext-mlst-12.txt.
-    </p>
+<hr />
+<a name="rfcsummaries"></a>
+<h1>RFC Summaries</h1>
 
-    <p>
-    <br />
-    <HR><!-- ------------------------------------------------------ -->
-    <a name="rfcsummaries"></a>
-    <div class="headline_small">
-    RFC Summaries
-    </div>
-    <br />
+<h2>RFC-959 File Transfer Protocol (FTP)</h2>
+<a href="http://www.rfc-editor.org/rfc/rfc959.txt">[http]</a>
+<a href="ftp://ftp.rfc-editor.org/in-notes/rfc959.txt">[ftp]</a>
+<i>Errata:</i> <a href="http://www.rfc-editor.org/errata.html">[http]</a>
 
-    <a name="rfc959"></a>
-    <b><font face="arial" color="#003399">
-    RFC-959 File Transfer Protocol (FTP)
-    </font></b>
-    <font size="-1">
-    <a href="http://www.rfc-editor.org/rfc/rfc959.txt">[http]</a>
-    <a href="ftp://ftp.rfc-editor.org/in-notes/rfc959.txt">[ftp]</a>
-    </font>
-    <i> Errata: </i>
-    <font size="-1">
-    <a href="http://www.rfc-editor.org/errata.html">[http]</a>
-    </font>
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr>
-        <td><i>Issued: </i>October 1985</td>
-        <td width="40"></td>
-        <td>
-          <i>Status: </i>STANDARD -- STD-0009
-          <font size="-1">
-          <a href="http://www.rfc-editor.org/rfc/std/std9.txt">[http]</a>
-          <a href="ftp://ftp.rfc-editor.org/in-notes/std/std9.txt">[ftp]</a>
-          </font>
-        </td>
-      </tr>
-      <tr>
-        <td><i>Obsoletes: </i>RFC-765</td>
-        <td width="40"></td>
-        <td><i>Updated by: </i>RFC-1123, RFC-2228, RFC-2640, RFC-2773</td>
-      </tr>
-    </table>
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-    The base specification of the current File Transfer Protocol.
-    </font></blockquote>
-    <br />
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td><i>Issued: </i>October 1985</td>
+    <td width="40"></td>
+    <td>
+      <i>Status: </i>STANDARD -- STD-0009
+      <a href="http://www.rfc-editor.org/rfc/std/std9.txt">[http]</a>
+      <a href="ftp://ftp.rfc-editor.org/in-notes/std/std9.txt">[ftp]</a>
+    </td>
+  </tr>
+  <tr>
+    <td><i>Obsoletes: </i>RFC-765</td>
+    <td width="40"></td>
+    <td><i>Updated by: </i>RFC-1123, RFC-2228, RFC-2640, RFC-2773</td>
+  </tr>
+</table>
 
-    <a name="rfc1123"></a>
-    <b><font face="arial" color="#003399">
-    RFC-1123 Requirements for Internet Hosts -- Application and Support
-    </font></b>
-    <font size="-1">
-    <a href="http://www.rfc-editor.org/rfc/rfc1123.txt">[http]</a>
-    <a href="ftp://ftp.rfc-editor.org/in-notes/rfc1123.txt">[ftp]</a>
-    </font>
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr>
-        <td><i>Issued: </i>October 1989</td>
-        <td width="40"></td>
-        <td>
-          <i>Status: </i>STANDARD -- STD-0003
-          <font size="-1">
-          <a href="http://www.rfc-editor.org/rfc/std/std3.txt">[http]</a>
-          <a href="ftp://ftp.rfc-editor.org/in-notes/std/std3.txt">[ftp]</a>
-          </font>
-        </td>
-      </tr>
-    </table>
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-    Section 4.1, pp. 29-43, is devoted to FTP.
-    Extends and clarifies some aspects of RFC-959.
-    Introduces new response codes 554 and 555.
-    </font></blockquote>
-    <br />
+The base specification of the current File Transfer Protocol.
 
-    <a name="rfc1579"></a>
-    <b><font face="arial" color="#003399">
-    RFC-1579 Firewall-Friendly FTP
-    </font></b>
-    <font size="-1">
-    <a href="http://www.rfc-editor.org/rfc/rfc1579.txt">[http]</a>
-    <a href="ftp://ftp.rfc-editor.org/in-notes/rfc1579.txt">[ftp]</a>
-    </font>
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr>
-        <td><i>Issued: </i>February 1994</td>
-        <td width="40"></td>
-        <td><i>Status: </i>INFORMATIONAL</td>
-      </tr>
-    </table>
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-    Suggests a new APSV command and 151 response code.
-    </font></blockquote>
-    <br />
+<h2>RFC-1123 Requirements for Internet Hosts -- Application and Support</h2>
+<a href="http://www.rfc-editor.org/rfc/rfc1123.txt">[http]</a>
+<a href="ftp://ftp.rfc-editor.org/in-notes/rfc1123.txt">[ftp]</a>
 
-    <a name="rfc1635"></a>
-    <b><font face="arial" color="#003399">
-    RFC-1635 How to Use Anonymous FTP
-    </font></b>
-    <font size="-1">
-    <a href="http://www.rfc-editor.org/rfc/rfc1635.txt">[http]</a>
-    <a href="ftp://ftp.rfc-editor.org/in-notes/rfc1635.txt">[ftp]</a>
-    </font>
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr>
-        <td><i>Issued: </i>May 1994</td>
-        <td width="40"></td>
-        <td>
-          <i>Status: </i>INFORMATIONAL -- FYI-0024
-          <font size="-1">
-          <a href="http://www.rfc-editor.org/rfc/fyi/fyi24.txt">[http]</a>
-          <a href="ftp://ftp.rfc-editor.org/in-notes/fyi/fyi24.txt">[ftp]</a>
-          </font>
-        </td>
-      </tr>
-    </table>
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-    Provides introductory information for the novice Internet
-    user about using the File Transfer Protocol (FTP).
-    </font></blockquote>
-    <br />
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td><i>Issued: </i>October 1989</td>
+    <td width="40"></td>
+    <td>
+      <i>Status: </i>STANDARD -- STD-0003
+      
+      <a href="http://www.rfc-editor.org/rfc/std/std3.txt">[http]</a>
+      <a href="ftp://ftp.rfc-editor.org/in-notes/std/std3.txt">[ftp]</a>
+      
+    </td>
+  </tr>
+</table>
 
-    <a name="rfc1639"></a>
-    <b><font face="arial" color="#003399">
-    RFC-1639 FTP Operation Over Big Address Records (FOOBAR)
-    </font></b>
-    <font size="-1">
-    <a href="http://www.rfc-editor.org/rfc/rfc1639.txt">[http]</a>
-    <a href="ftp://ftp.rfc-editor.org/in-notes/rfc1639.txt">[ftp]</a>
-    </font>
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr>
-        <td><i>Issued: </i>June 1994</td>
-        <td width="40"></td>
-        <td><i>Status: </i>EXPERIMENTAL</td>
-      </tr>
-      <tr>
-        <td><i>Obsoletes: </i>RFC-1545</td>
-      </tr>
-    </table>
-    <font size="-1">
-    (FOOBAR Assigned Numbers
-    <a href="http://www.isi.edu/in-notes/iana/assignments/foobar-af-numbers">[http]</a>)
-    </font>
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-    Defines new LPRT and LPSV commands and response codes 228 and 521.
-    </font></blockquote>
-    <br />
+Section 4.1, pp. 29-43, is devoted to FTP.
+Extends and clarifies some aspects of RFC-959.
+Introduces new response codes 554 and 555.
 
-    <a name="rfc2151"></a>
-    <b><font face="arial" color="#003399">
-    RFC-2151 A Primer On Internet and TCP/IP Tools and Utilities
-    </font></b>
-    <font size="-1">
-    <a href="http://www.rfc-editor.org/rfc/rfc2151.txt">[http]</a>
-    <a href="ftp://ftp.rfc-editor.org/in-notes/rfc2151.txt">[ftp]</a>
-    </font>
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr>
-        <td><i>Issued: </i>June 1997</td>
-        <td width="40"></td>
-        <td>
-          <i>Status: </i>INFORMATIONAL -- FYI-0030
-          <font size="-1">
-          <a href="http://www.rfc-editor.org/rfc/fyi/fyi30.txt">[http]</a>
-          <a href="ftp://ftp.rfc-editor.org/in-notes/fyi/fyi30.txt">[ftp]</a>
-          </font>
-        </td>
-      </tr>
-      <tr>
-        <td><i>Obsoletes: </i>RFC-1739</td>
-      </tr>
-    </table>
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-    An introductory guide to many of the most common TCP/IP and
-    Internet tools and resources, including FTP
-    </font></blockquote>
-    <br />
+<h2>RFC-1579 Firewall-Friendly FTP</h2>
+<a href="http://www.rfc-editor.org/rfc/rfc1579.txt">[http]</a>
+<a href="ftp://ftp.rfc-editor.org/in-notes/rfc1579.txt">[ftp]</a>
 
-    <a name="rfc2228"></a>
-    <b><font face="arial" color="#003399">
-    RFC-2228 FTP Security Extensions (FTPSECEXT)
-    </font></b>
-    <font size="-1">
-    <a href="http://www.rfc-editor.org/rfc/rfc2228.txt">[http]</a>
-    <a href="ftp://ftp.rfc-editor.org/in-notes/rfc2228.txt">[ftp]</a>
-    </font>
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr>
-        <td><i>Issued: </i>October 1997</tr>
-        <td width="40"></tr>
-        <td><i>Status: </i>PROPOSED STANDARD</tr>
-      </tr>
-      <tr>
-        <td><i>Updates: </i>RFC-959</tr>
-      </tr>
-    </table>
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-    Specifies several security extensions to the base FTP protocol
-    defined in RFC-959.
-    New commands: AUTH, ADAT, PROT, PBSZ, CCC, MIC, CONF, and ENC.
-    New response codes: 232, 234, 235, 334, 335, 336, 431, 533, 534,
-    535, 536, 537, 631, 632, and 633.
-    </font></blockquote>
-    <br />
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td><i>Issued: </i>February 1994</td>
+    <td width="40"></td>
+    <td><i>Status: </i>INFORMATIONAL</td>
+  </tr>
+</table>
 
-    <a name="rfc2389"></a>
-    <b><font face="arial" color="#003399">
-    RFC-2389 Feature negotiation mechanism for the File Transfer
-    Protocol (FTP-FNEGO)
-    </font></b>
-    <font size="-1">
-    <a href="http://www.rfc-editor.org/rfc/rfc2389.txt">[http]</a>
-    <a href="ftp://ftp.rfc-editor.org/in-notes/rfc2389.txt">[ftp]</a>
-    </font>
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr>
-        <td><i>Issued: </i>August 1998</tr>
-        <td width="40"></tr>
-        <td><i>Status: </i>PROPOSED STANDARD</tr>
-      </tr>
-    </table>
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-    Defines mechanisms for FTP client programs to obtain
-    lists of features and options supported by FTP servers.
-    Introduces the new FEAT and OPTS commands.
-    </font></blockquote>
-    <br />
+Suggests a new APSV command and 151 response code.
 
-    <a name="rfc2428"></a>
-    <b><font face="arial" color="#003399">
-    RFC-2428 FTP Extensions for IPv6 and NATs
-    </font></b>
-    <font size="-1">
-    <a href="http://www.rfc-editor.org/rfc/rfc2428.txt">[http]</a>
-    <a href="ftp://ftp.rfc-editor.org/in-notes/rfc2428.txt">[ftp]</a>
-    </font>
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr>
-        <td><i>Issued: </i>September 1998</td>
-        <td width="40"></td>
-        <td><i>Status: </i>PROPOSED STANDARD</td>
-      </tr>
-    </table>
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-    Introduces the new commands EPRT and EPSV, and the
-    new response codes 522 and 229.
-    </font></blockquote>
-    <br />
+<h2>RFC-1635 How to Use Anonymous FTP</h2>
+<a href="http://www.rfc-editor.org/rfc/rfc1635.txt">[http]</a>
+<a href="ftp://ftp.rfc-editor.org/in-notes/rfc1635.txt">[ftp]</a>
 
-    <a name="rfc2577"></a>
-    <b><font face="arial" color="#003399">
-    RFC-2577 FTP Security Considerations
-    </font></b>
-    <font size="-1">
-    <a href="http://www.rfc-editor.org/rfc/rfc2577.txt">[http]</a>
-    <a href="ftp://ftp.rfc-editor.org/in-notes/rfc2577.txt">[ftp]</a>
-    </font>
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr>
-        <td><i>Issued: </i>May 1999</td>
-        <td width="40"></td>
-        <td><i>Status: </i>INFORMATIONAL</td>
-      </tr>
-    </table>
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-    Provides several configuration and implementation suggestions
-    to mitigate some security concerns, including limiting failed
-    password attempts and third-party "proxy FTP" transfers, which
-    can be used in "bounce attacks" (CERT97:27).
-    </font></blockquote>
-    <br />
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td><i>Issued: </i>May 1994</td>
+    <td width="40"></td>
+    <td>
+      <i>Status: </i>INFORMATIONAL -- FYI-0024
+      
+      <a href="http://www.rfc-editor.org/rfc/fyi/fyi24.txt">[http]</a>
+      <a href="ftp://ftp.rfc-editor.org/in-notes/fyi/fyi24.txt">[ftp]</a>
+      
+    </td>
+  </tr>
+</table>
 
-    <a name="rfc2585"></a>
-    <b><font face="arial" color="#003399">
-    RFC-2585 Internet X.509 Public Key Infrastructure Operational
-    Protocols: FTP and HTTP
-    </font></b>
-    <font size="-1">
-    <a href="http://www.rfc-editor.org/rfc/rfc2585.txt">[http]</a>
-    <a href="ftp://ftp.rfc-editor.org/in-notes/rfc2585.txt">[ftp]</a>
-    </font>
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr>
-        <td><i>Issued: </i>May 1999</td>
-        <td width="40"></td>
-        <td><i>Status: </i>PROPOSED STANDARD</td>
-      </tr>
-    </table>
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-    Specifies conventions for using the FTP and HTTP to obtain
-    X.509 certificates and certificate revocation lists (CRLs)
-    from Public Key Infrastructure (PKI) repositories.
-    </font></blockquote>
-    <br />
+Provides introductory information for the novice Internet
+user about using the File Transfer Protocol (FTP).
 
-    <a name="rfc2640"></a>
-    <b><font face="arial" color="#003399">
-    RFC-2640 Internationalization of the File Transfer Protocol
-    </font></b>
-    <font size="-1">
-    <a href="http://www.rfc-editor.org/rfc/rfc2640.txt">[http]</a>
-    <a href="ftp://ftp.rfc-editor.org/in-notes/rfc2640.txt">[ftp]</a>
-    </font>
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr>
-        <td><i>Issued: </i>July 1999</td>
-        <td width="40"></td>
-        <td><i>Status: </i>PROPOSED STANDARD</td>
-      </tr>
-      <tr>
-        <td><i>Updates: </i>RFC-959</td>
-      </tr>
-    </table>
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-    Extends the FTP protocol to support multiple character sets,
-    in addition to the original 7-bit ASCII.
-    Introduces the new LANG command.
-    </font></blockquote>
-    <br />
+<h2>RFC-1639 FTP Operation Over Big Address Records (FOOBAR)</h2>
+<a href="http://www.rfc-editor.org/rfc/rfc1639.txt">[http]</a>
+<a href="ftp://ftp.rfc-editor.org/in-notes/rfc1639.txt">[ftp]</a>
 
-    <a name="rfc2773"></a>
-    <b><font face="arial" color="#003399">
-    RFC-2773 Encryption using KEA and SKIPJACK
-    </font></b>
-    <font size="-1">
-    <a href="http://www.rfc-editor.org/rfc/rfc2773.txt">[http]</a>
-    <a href="ftp://ftp.rfc-editor.org/in-notes/rfc2773.txt">[ftp]</a>
-    </font>
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr>
-        <td><i>Issued: </i>February 2000</td>
-        <td width="40"></td>
-        <td><i>Status: </i>Experimental</td>
-      </tr>
-      <tr>
-        <td><i>Updates: </i>Updates: RFC-959</td>
-      </tr>
-    </table>
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-    Defines a RFC-2228 "FTP Security Extensions" method, which
-    uses the Key Exchange Algorithm (KEA) for mutual authentication
-    and encryption key exchange, and uses SKIPJACK to encrypt
-    both FTP data and control channels.
-    </font></blockquote>
-    <br />
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td><i>Issued: </i>June 1994</td>
+    <td width="40"></td>
+    <td><i>Status: </i>EXPERIMENTAL</td>
+  </tr>
+  <tr>
+    <td><i>Obsoletes: </i>RFC-1545</td>
+  </tr>
+</table>
+
+(FOOBAR Assigned Numbers
+<a href="http://www.isi.edu/in-notes/iana/assignments/foobar-af-numbers">[http]</a>)
 
 
-<!-- HTML template for RFCs (lines)
-<tr>
-  <td>
-    <a name="rfc0000"></a>
-    <b><font face="arial" color="#003399">
-    RFC-0000 TITLE
-    </font></b>
-    <font size="-1">
-    <a href="http://www.rfc-editor.org/rfc/rfc0.txt">[http]</a>
-    <a href="ftp://ftp.rfc-editor.org/in-notes/rfc0.txt">[ftp]</a>
-    </font>
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr>
-        <td><i>Issued: </i>________</td>
-        <td width="40"></td>
-        <td><i>Status: </i>UNKNOWN</td>
-      </tr>
-    </table>
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-    ____BLOCK__text____
-    </font></blockquote>
-    <br />
--->
+Defines new LPRT and LPSV commands and response codes 228 and 521.
+
+<h2>RFC-2151 A Primer On Internet and TCP/IP Tools and Utilities</h2>
+<a href="http://www.rfc-editor.org/rfc/rfc2151.txt">[http]</a>
+<a href="ftp://ftp.rfc-editor.org/in-notes/rfc2151.txt">[ftp]</a>
+
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td><i>Issued: </i>June 1997</td>
+    <td width="40"></td>
+    <td>
+      <i>Status: </i>INFORMATIONAL -- FYI-0030
+      
+      <a href="http://www.rfc-editor.org/rfc/fyi/fyi30.txt">[http]</a>
+      <a href="ftp://ftp.rfc-editor.org/in-notes/fyi/fyi30.txt">[ftp]</a>
+      
+    </td>
+  </tr>
+  <tr>
+    <td><i>Obsoletes: </i>RFC-1739</td>
+  </tr>
+</table>
+
+An introductory guide to many of the most common TCP/IP and
+Internet tools and resources, including FTP
+
+
+<h2>RFC-2228 FTP Security Extensions (FTPSECEXT)</h2>
+<a href="http://www.rfc-editor.org/rfc/rfc2228.txt">[http]</a>
+<a href="ftp://ftp.rfc-editor.org/in-notes/rfc2228.txt">[ftp]</a>
+
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td><i>Issued: </i>October 1997</tr>
+    <td width="40"></tr>
+    <td><i>Status: </i>PROPOSED STANDARD</tr>
+  </tr>
+  <tr>
+    <td><i>Updates: </i>RFC-959</tr>
+  </tr>
+</table>
+
+Specifies several security extensions to the base FTP protocol
+defined in RFC-959.
+New commands: AUTH, ADAT, PROT, PBSZ, CCC, MIC, CONF, and ENC.
+New response codes: 232, 234, 235, 334, 335, 336, 431, 533, 534,
+535, 536, 537, 631, 632, and 633.
+
+<h2>RFC-2389 Feature negotiation mechanism for the File Transfer
+Protocol (FTP-FNEGO)</h2>
+<a href="http://www.rfc-editor.org/rfc/rfc2389.txt">[http]</a>
+<a href="ftp://ftp.rfc-editor.org/in-notes/rfc2389.txt">[ftp]</a>
+
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td><i>Issued: </i>August 1998</tr>
+    <td width="40"></tr>
+    <td><i>Status: </i>PROPOSED STANDARD</tr>
+  </tr>
+</table>
+
+Defines mechanisms for FTP client programs to obtain
+lists of features and options supported by FTP servers.
+Introduces the new FEAT and OPTS commands.
+
+<h2>RFC-2428 FTP Extensions for IPv6 and NATs</h2>
+<a href="http://www.rfc-editor.org/rfc/rfc2428.txt">[http]</a>
+<a href="ftp://ftp.rfc-editor.org/in-notes/rfc2428.txt">[ftp]</a>
+
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td><i>Issued: </i>September 1998</td>
+    <td width="40"></td>
+    <td><i>Status: </i>PROPOSED STANDARD</td>
+  </tr>
+</table>
+
+Introduces the new commands EPRT and EPSV, and the
+new response codes 522 and 229.
+
+<h2>RFC-2577 FTP Security Considerations</h2>
+<a href="http://www.rfc-editor.org/rfc/rfc2577.txt">[http]</a>
+<a href="ftp://ftp.rfc-editor.org/in-notes/rfc2577.txt">[ftp]</a>
+
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td><i>Issued: </i>May 1999</td>
+    <td width="40"></td>
+    <td><i>Status: </i>INFORMATIONAL</td>
+  </tr>
+</table>
+
+Provides several configuration and implementation suggestions
+to mitigate some security concerns, including limiting failed
+password attempts and third-party "proxy FTP" transfers, which
+can be used in "bounce attacks" (CERT97:27).
+
+<h2>RFC-2585 Internet X.509 Public Key Infrastructure Operational
+Protocols: FTP and HTTP</h2>
+<a href="http://www.rfc-editor.org/rfc/rfc2585.txt">[http]</a>
+<a href="ftp://ftp.rfc-editor.org/in-notes/rfc2585.txt">[ftp]</a>
+
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td><i>Issued: </i>May 1999</td>
+    <td width="40"></td>
+    <td><i>Status: </i>PROPOSED STANDARD</td>
+  </tr>
+</table>
+
+Specifies conventions for using the FTP and HTTP to obtain
+X.509 certificates and certificate revocation lists (CRLs)
+from Public Key Infrastructure (PKI) repositories.
+
+<h2>RFC-2640 Internationalization of the File Transfer Protocol</h2>
+<a href="http://www.rfc-editor.org/rfc/rfc2640.txt">[http]</a>
+<a href="ftp://ftp.rfc-editor.org/in-notes/rfc2640.txt">[ftp]</a>
+
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td><i>Issued: </i>July 1999</td>
+    <td width="40"></td>
+    <td><i>Status: </i>PROPOSED STANDARD</td>
+  </tr>
+  <tr>
+    <td><i>Updates: </i>RFC-959</td>
+  </tr>
+</table>
+
+Extends the FTP protocol to support multiple character sets,
+in addition to the original 7-bit ASCII.
+Introduces the new LANG command.
+
+<h2>RFC-2773 Encryption using KEA and SKIPJACK</h2>
+<a href="http://www.rfc-editor.org/rfc/rfc2773.txt">[http]</a>
+<a href="ftp://ftp.rfc-editor.org/in-notes/rfc2773.txt">[ftp]</a>
+
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td><i>Issued: </i>February 2000</td>
+    <td width="40"></td>
+    <td><i>Status: </i>Experimental</td>
+  </tr>
+  <tr>
+    <td><i>Updates: </i>Updates: RFC-959</td>
+  </tr>
+</table>
+
+Defines a RFC-2228 "FTP Security Extensions" method, which
+uses the Key Exchange Algorithm (KEA) for mutual authentication
+and encryption key exchange, and uses SKIPJACK to encrypt
+both FTP data and control channels.
 
 <!--
 RFC-1415 FTP-FTAM Gateway Specification (FTP-FTAM)
@@ -463,182 +303,114 @@ RFC-2415 Simulation Studies of Increased Initial TCP Window Size
 Issued: September 1998    Status: INFORMATIONAL
 -->
 
-    <br />
-    <p>
-    <HR><!-- ------------------------------------------------------ -->
-    <a name="draftsummaries"></a>
-    <div class="headline_small">
-    Draft Summaries
-    </div>
-    <br />
+<hr />
+<a name="draftsummaries"></a>
+<h1>Draft Summaries</h1>
 
-    <a name="draft-ietf-ftpext-mlst"></a>
-    <b><font face="arial" color="#003399">
-    IETF Draft: Extensions to FTP
-    </font></b>
-    <br />
-    <i>draft-ietf-ftpext-mlst-12.txt</i>
-    <font size="-1">
-    <a href="http://www.ietf.org/internet-drafts/draft-ietf-ftpext-mlst-12.txt">[http]</a>
-    <a href="ftp://ftp.ietf.org/internet-drafts/draft-ietf-ftpext-mlst-12.txt">[ftp]</a>
-    </font>
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr>
-        <td><i>Status: </i>Expires March 2001</td>
-        <td width="40"></td>
-        <td><i>Category: </i>Informational</td>
-      </tr>
-    </table>
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-    Several protocol extensions are defined or documented.
-    The new MLST and MLSD commands are defined to provide
-    standardized file and directory list formats.
-    A "trivial" virtual file store (TVFS) is specified.
-    8-bit characters with UTF-8 encoding.
-    The REST (Restart) command is extended to STREAM mode transfers,
-    and the commonly implemented MDTM (Mod Time) and size commands
-    are documented.
-    Earlier revisions of this draft included a HOST command,
-    which allowed HTTP style name-based virtual servers.
-    However, this feature was deleted in the 09 revision of the draft.
-    </font></blockquote>
-    <br />
+<h2>IETF Draft: Extensions to FTP</h2>
+<i>draft-ietf-ftpext-mlst-12.txt</i>
 
-    <a name="draft-murray-auth-ftp-ssl"></a>
-    <b><font face="arial" color="#003399">
-    Draft: Securing FTP with TLS
-    </font></b>
-    <br />
-    <i>draft-murray-auth-ftp-ssl-06.txt</i>
-    <font size="-1">
-    <a href="http://www.ietf.org/internet-drafts/draft-murray-auth-ftp-ssl-06.txt">[http]</a>
-    <a href="ftp://ftp.ietf.org/internet-drafts/draft-murray-auth-ftp-ssl-06.txt">[ftp]</a>
-    </font>
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr>
-        <td><i>Status: </i>Expires 17 March 2001</td>
-        <td width="40"></td>
-        <td><i>Category: </i>Informational</td>
-      </tr>
-    </table>
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-    Describes a mechanism for secure authentication based on
-    SSL/TLS (RFC-2246) and the FTP Security Extensions (RFC-2228),
-    modeled after TLS for SMTP (RFC-2487).
-    Uses repsonse code 522 (originally introduced in RFC-2428).
-    </font></blockquote>
-    <br />
+<a href="http://www.ietf.org/internet-drafts/draft-ietf-ftpext-mlst-12.txt">[http]</a>
+<a href="ftp://ftp.ietf.org/internet-drafts/draft-ietf-ftpext-mlst-12.txt">[ftp]</a>
 
-    <a name="draft-bonachea-sftp"></a>
-    <b><font face="arial" color="#003399">
-    Draft: Protocol Negotiation Extensions to Secure FTP
-    </font></b>
-    <br />
-    <i>draft-bonachea-sftp-00.txt</i>
-    <font size="-1">
-    <a href="http://www.ietf.org/internet-drafts/draft-bonachea-sftp-00.txt">[http]</a>
-    <a href="ftp://ftp.ietf.org/internet-drafts/draft-bonachea-sftp-00.txt">[ftp]</a>
-    </font>
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr>
-        <td><i>Status: </i>Expired January 2000.</td>
-        <td width="40"></td>
-        <td><i>Category: </i>Informational</td>
-      </tr>
-    </table>
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-    Adds refinements for RFC-2228, including a more efficient and
-    secure protocol negotiation in the presence of multiple protocols.
-    Adds one new optional command, DIGT (Protocol Negotiation Digest),
-    and one new response code 538.
-    It defines a legal naming convention for security mechanisms,
-    and lifts the restriction on active outgoing connections only
-    originating from port 20.
-    </font></blockquote>
-    <br />
-
-    <a name="draft-saul-ftp-plus"></a>
-    <b><font face="arial" color="#003399">
-    Draft: FTP Plus
-    </font></b>
-    <br />
-    <i>draft-saul-ftp-plus-00.txt</i>
-    <font size="-1">
-    <a href="http://www.ietf.org/internet-drafts/draft-saul-ftp-plus-00.txt">[http]</a>
-    <a href="ftp://ftp.ietf.org/internet-drafts/draft-saul-ftp-plus-00.txt">[ftp]</a>
-    </font>
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr>
-        <td><i>Status: </i>Expired February 2001</td>
-        <td width="40"></td>
-        <td><i>Category: </i>Informational</td>
-      </tr>
-    </table>
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-    Extends FTP for transferring audio/video files and for network
-    protocol adaptability,
-    It introduces the new XPRT and XPSV commands in the so-called
-    GEN profile.  It modifies the STAT, RETR, STOR, and size commands.
-    Several new commands are introduced for the XTP profile: RATE,
-    MCPT, MCPV, MCGC, MCGM, MCGR, MCGS, and a new SITE subcommand,
-    RATE, for bandwidth limiting.
-    </font></blockquote>
-    <br />
-
-    <a name="draft-ietf-cat-ftpdsaauth"></a>
-    <b><font face="arial" color="#003399">
-    IETF Draft: FTP Authentication Using DSA
-    </font></b>
-    <br />
-    <i>draft-ietf-cat-ftpdsaauth-03.txt</i>
-    <font size="-1">
-    <a href="http://www.ietf.org/internet-drafts/draft-ietf-cat-ftpdsaauth-03.txt">[http]</a>
-    <a href="ftp://ftp.ietf.org/internet-drafts/draft-ietf-cat-ftpdsaauth-03.txt">[ftp]</a>
-    </font>
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr>
-        <td><i>Status: </i>Expired June 2000</td>
-        <td width="40"></td>
-        <td><i>Category: </i>Informational</td>
-      </tr>
-      <tr>
-        <td><i>Updates: </i>RFC-959</td>
-      </tr>
-    </table>
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-    Describes a profile for the FTP Security Extensions using
-    the DSA (Digital Signature Algorithm) and
-    the SHA-1 (Secure Hash Standard 1) algorithms.
-    </font></blockquote>
-    <br />
-
-<!-- HTML template for Drafts (xx lines)
-
-    <a name="draft-XXXX"></a>
-    <b><font face="arial" color="#003399">
-    Draft: TITLE
-    </font></b>
-    <br />
-    <i>draft-XXXX.txt</i>
-    <font size="-1">
-    <a href="http://www.ietf.org/internet-drafts/draft-XXXX.txt">[http]</a>
-    <a href="ftp://ftp.ietf.org/internet-drafts/draft-XXXX.txt">[ftp]</a>
-    </font>
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr>
-        <td><i>Status: </i>Expires ______</td>
-        <td width="40"></td>
-        <td><i>Category: </i>Informational</td>
-      </tr>
-    </table>
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-    ____BLOCK__text____
-    </font></blockquote>
-    <br />
--->
-  
-  </td>
-</tr>
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td><i>Status: </i>Expires March 2001</td>
+    <td width="40"></td>
+    <td><i>Category: </i>Informational</td>
+  </tr>
 </table>
+
+Several protocol extensions are defined or documented.
+The new MLST and MLSD commands are defined to provide
+standardized file and directory list formats.
+A "trivial" virtual file store (TVFS) is specified.
+8-bit characters with UTF-8 encoding.
+The REST (Restart) command is extended to STREAM mode transfers,
+and the commonly implemented MDTM (Mod Time) and size commands
+are documented.
+Earlier revisions of this draft included a HOST command,
+which allowed HTTP style name-based virtual servers.
+However, this feature was deleted in the 09 revision of the draft.
+
+<h2>Draft: Securing FTP with TLS</h2>
+<i>draft-murray-auth-ftp-ssl-06.txt</i>
+<a href="http://www.ietf.org/internet-drafts/draft-murray-auth-ftp-ssl-06.txt">[http]</a>
+<a href="ftp://ftp.ietf.org/internet-drafts/draft-murray-auth-ftp-ssl-06.txt">[ftp]</a>
+
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td><i>Status: </i>Expires 17 March 2001</td>
+    <td width="40"></td>
+    <td><i>Category: </i>Informational</td>
+  </tr>
+</table>
+
+Describes a mechanism for secure authentication based on
+SSL/TLS (RFC-2246) and the FTP Security Extensions (RFC-2228),
+modeled after TLS for SMTP (RFC-2487).
+Uses repsonse code 522 (originally introduced in RFC-2428).
+
+<h2>Draft: Protocol Negotiation Extensions to Secure FTP</h2>
+<i>draft-bonachea-sftp-00.txt</i>
+<a href="http://www.ietf.org/internet-drafts/draft-bonachea-sftp-00.txt">[http]</a>
+<a href="ftp://ftp.ietf.org/internet-drafts/draft-bonachea-sftp-00.txt">[ftp]</a>
+
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td><i>Status: </i>Expired January 2000.</td>
+    <td width="40"></td>
+    <td><i>Category: </i>Informational</td>
+  </tr>
+</table>
+
+Adds refinements for RFC-2228, including a more efficient and
+secure protocol negotiation in the presence of multiple protocols.
+Adds one new optional command, DIGT (Protocol Negotiation Digest),
+and one new response code 538.
+It defines a legal naming convention for security mechanisms,
+and lifts the restriction on active outgoing connections only
+originating from port 20.
+
+<h2>Draft: FTP Plus</h2>
+<i>draft-saul-ftp-plus-00.txt</i>
+<a href="http://www.ietf.org/internet-drafts/draft-saul-ftp-plus-00.txt">[http]</a>
+<a href="ftp://ftp.ietf.org/internet-drafts/draft-saul-ftp-plus-00.txt">[ftp]</a>
+
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td><i>Status: </i>Expired February 2001</td>
+    <td width="40"></td>
+    <td><i>Category: </i>Informational</td>
+  </tr>
+</table>
+
+Extends FTP for transferring audio/video files and for network
+protocol adaptability,
+It introduces the new XPRT and XPSV commands in the so-called
+GEN profile.  It modifies the STAT, RETR, STOR, and size commands.
+Several new commands are introduced for the XTP profile: RATE,
+MCPT, MCPV, MCGC, MCGM, MCGR, MCGS, and a new SITE subcommand,
+RATE, for bandwidth limiting.
+
+<h2>IETF Draft: FTP Authentication Using DSA</h2>
+<i>draft-ietf-cat-ftpdsaauth-03.txt</i>
+<a href="http://www.ietf.org/internet-drafts/draft-ietf-cat-ftpdsaauth-03.txt">[http]</a>
+<a href="ftp://ftp.ietf.org/internet-drafts/draft-ietf-cat-ftpdsaauth-03.txt">[ftp]</a>
+
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td><i>Status: </i>Expired June 2000</td>
+    <td width="40"></td>
+    <td><i>Category: </i>Informational</td>
+  </tr>
+  <tr>
+    <td><i>Updates: </i>RFC-959</td>
+  </tr>
+</table>
+
+Describes a profile for the FTP Security Extensions using
+the DSA (Digital Signature Algorithm) and
+the SHA-1 (Secure Hash Standard 1) algorithms.
 
 #include "footer.epl"

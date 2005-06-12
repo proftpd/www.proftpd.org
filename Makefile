@@ -2,7 +2,7 @@ EPERL = eperl
 
 INCDIR = include
 SUBDIRS = docs
-EPLINCS = $(INCDIR)/footer.epl $(INCDIR)/global.epl $(INCDIR)/header.epl $(INCDIR)/table.epl
+EPLINCS = $(INCDIR)/footer.epl $(INCDIR)/header.epl
 HTMLFILES = $(addsuffix .html, $(basename $(wildcard *.epl)))
 
 %.html: %.epl $(EPLINCS)

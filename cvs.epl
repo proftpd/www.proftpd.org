@@ -1,63 +1,53 @@
 <: # $Id$ :>//
-<: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
-<: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Accessing the CVS Repository" :>//
-<: $last_changed = "07/May/2002 - hamster" :>//
 
 #include "header.epl"
 
-<table bgcolor="white">
-<tr>
-  <td>
-    <div class="headline">
-      <: print "<b>$html_title</b>" unless !defined($html_title) :>//
-    </div>
+<h1><: print "$html_title" :></h1>
 
-    <p>The most recent version of the code is available via <a
-    href="http://www.cvshome.org/">CVS</a> from the proftpd.org cvs server. 
-    While this gives access to the very latest code, it must be stressed
-    that this is <strong>development</strong> grade code and is not
-    guaranteed to work, compile and may completely mangle your system.  For
-    production environments, it is recommended that the distribution
-    tarballs or packages are used unless you really know what you're
-    doing.</p>
+<p>The most recent version of the code is available via
+<a href="http://www.cvshome.org/">CVS</a>. While this gives access to the
+very latest code, it is <em>development</em>-grade code. We try to make sure
+it will always compile and that basic functions work, but it is usually not
+thoroughly tested. For production environments, it is recommended that the
+distribution tarballs or packages are used unless you really know what
+you're doing.</p>
 
-    <p>There are no mirror sites for the CVS server. Nightly tarballs of the
-    latest source from CVS are made available from a number of sites.</p>
+<p>There are no mirror sites for the CVS server. Nightly tarballs of the
+latest source from CVS are available from <a href="download.html">the FTP
+sites</a> in the <code>devel/source/</code> directory.</p>
 
 
-    <div class="headline-small">Quick Instructions</div>
-    <ul>
-        <li>The CVS server is <code>cvs.sourceforge.net</code></li>
-        <li><code>anonymous@cvs.sourceforge.net</code> is the user, the
-        password is blank</li>
-        <li>The source code directory is <code>/cvsroot/proftp</code> and
-            the tree is <code>proftpd</code>.</li>
-        <li>The documentation directory is <code>/cvsroot/pdd</code> and
-            the trees are <code>FAQ</code> and <code>Userguide</code>.</li>
-    </ul>o
+<h2>Quick Instructions</h2>
+<ul>
+    <li>The CVS server is <code>cvs.sourceforge.net</code>.</li>
+    <li><code>anonymous@cvs.sourceforge.net</code> is the user, the
+        password is blank.</li>
+    <li>The source code directory is <code>/cvsroot/proftp</code> and
+        the tree is <code>proftpd</code>.</li>
+    <li>The documentation directory is <code>/cvsroot/pdd</code> and
+        the trees are <code>FAQ</code> and <code>Userguide</code>.</li>
+</ul>
 
-    <div class="headline-small">Detailed Instructions</div>
-    <p>Assuming you have a CVS client, the process for accessing the ProFTPD
-    repository is fairly straightforward:</p>
-    
-    <blockquote>
-      <p>Type the command <code>cvs -d
-      :pserver:anonymous@cvs.sourceforge.net:/cvsroot/proftp login
-      </code> (or <code>/cvsroot/pdd</code> for docs)</p>
+<h2>Detailed Instructions</h2>
+<p>Assuming you have a CVS client, the process for accessing the ProFTPD
+repository is fairly straightforward:</p>
 
-      <p>Hit Enter when prompted for a password (there is no password
-      for anonymous access).</p>
+<ul>
+    <li>Type the command <code>cvs -d
+        :pserver:anonymous@cvs.sourceforge.net:/cvsroot/proftp login</code>
+        (or <code>/cvsroot/pdd</code> for docs).
+    </li>
+    <li>Hit Enter when prompted for a password (there is no password
+        for anonymous access).
+    </li>
+    <li>Next, type in <code>cvs -d
+        :pserver:anonymous@cvs.sourceforge.net:/cvsroot/proftp -z3 co
+        proftpd</code>
+    </li>
+</ul>
 
-      <p>Next, type in <code>cvs -d
-      :pserver:anonymous@cvs.sourceforge.net:/cvsroot/proftp -z3
-      co proftpd</code></p>
-    </blockquote>
-
-    <p>That's it.  You can keep up to date by executing <code>cvs
-    -z3 update -dP</code> periodically.</p>
-  </td>
-</tr>
-</table>
+<p>That's it. You can keep up to date by executing <code>cvs
+-z3 update -dP</code> periodically.</p>
 
 #include "footer.epl"

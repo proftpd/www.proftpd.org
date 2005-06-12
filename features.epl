@@ -1,66 +1,99 @@
 <: # $Id$ :>//
-<: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
-<: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
-<: $html_title = "Software features" :>//
-<: $last_changed = "04/Apr/2001 - jwm" :>//
+<: $html_title = "Features &amp; Platforms" :>//
 
 #include "header.epl"
 
-<table bgcolor="white">
+<h1>Software Features</h1>
+<p>ProFTPD offers the following features, with <a href="ROADMAP">many more
+planned</a>):</p>
+
+<ul>
+  <li>Single main configuration file, with directives and directive
+      groups which are intuitive to any administrator who has ever used
+      the Apache web server.
+  </li>
+  <li>Per directory ".ftpaccess" configuration similar to Apache's
+      ".htaccess".
+  </li>
+  <li>Easy to configure multiple virtual FTP servers and anonymous FTP
+      services.
+  </li>
+  <li>Designed to run either as a stand-alone server or from
+      inetd/xinetd, depending on system load.
+  </li>
+  <li>Anonymous FTP root directories do not require any specific
+      directory structure, system binaries or other system files.
+  </li>
+  <li>No SITE EXEC command. In modern Internet environments, such
+      commands are a security nightmare. ProFTPD does not execute any
+      external programs at any time. The source is available (and must
+      always be available) for administrators to audit.
+  </li>
+  <li>Hidden directories and files, based on Unix-style permissions or
+      user/group ownership.
+  </li>
+  <li>Runs as a configurable non-privileged user in stand-alone mode in
+      order to decrease chances of attacks which might exploit its
+      "root" abilities. <strong>Note: This feature is dependent on the
+      capabilities of the host Unix system.</strong>
+  </li>
+  <li>Logging and utmp/wtmp support. Logging is compatible with the
+      wu-ftpd standard, with extended logging available.
+  </li>
+  <li>Shadow password suite support, including support for expired
+      accounts.
+  </li>
+  <li>Modular design, allowing server to be extended easily with
+      modules.  Modules have been written for SQL databases, LDAP servers, 
+      SSL/TLS encryption, RADIUS support, etc.
+  </li>
+  <li>IPv6 support.</li> 
+</ul>
+
+<h1>Platforms</h1>
+<p>ProFTPD is known to compile and run on the following platforms. If you
+know of any that are not in this list, please
+<a href="mailto:core@proftpd.org">contact the core team</a>.</p>
+
+<table id="platformsTable">
 <tr>
-  <td>
-    <div class="headline">
-      <: print "<b>$html_title</b>" unless !defined($html_title) :>//
-    </div>
-
-    <p>ProFTPD offers the following features (with many more planned):</p>
-
-    <ul>
-      <li>Single main configuration file, with directives and directive
-          groups which are intuitive to any administrator who has ever used
-          the Apache web server.
-      </li>
-      <li>Per directory ".ftpaccess" configuration similar to Apache's
-          ".htaccess".
-      </li>
-      <li>Easy to configure multiple virtual FTP servers and anonymous FTP
-          services.
-      </li>
-      <li>Designed to run either as a stand-alone server or from
-          inetd/xinetd, depending on system load.
-      </li>
-      <li>Anonymous FTP root directories do not require any specific
-          directory structure, system binaries or other system files.
-      </li>
-      <li>No SITE EXEC command. In modern Internet environments, such
-          commands are a security nightmare. ProFTPD does not execute any
-          external programs at any time. The source is available (and must
-          always be available) for administrators to audit.
-      </li>
-      <li>Hidden directories and files, based on Unix-style permissions or
-          user/group ownership.
-      </li>
-      <li>Runs as a configurable non-privileged user in stand-alone mode in
-          order to decrease chances of attacks which might exploit its
-          "root" abilities. <strong>Note: This feature is dependent on the
-          capabilities of the host Unix system.</strong>
-      </li>
-      <li>Logging and utmp/wtmp support. Logging is compatible with the
-          wu-ftpd standard, with extended logging available.
-      </li>
-      <li>Shadow password suite support, including support for expired
-          accounts.
-      </li>
-      <li>Modular design, allowing server to be extended easily with
-          modules.  Modules have been written for SQL databases, LDAP servers, 
-          SSL/TLS encryption, RADIUS support, etc.
-      </li>
-      <li>
-          IPv6 support.
-      </li> 
-    </ul>
-  </td>
+    <td>AIX</td>
+    <td>BSD/OS</td>
+    <td>Cygwin*</td>
 </tr>
+<tr>
+    <td>Digital Unix</td>
+    <td>DG/UX</td>
+    <td>HP/UX</td>
+</tr>
+<tr>
+    <td>IRIX*</td>
+    <td>Linux*</td>
+    <td>Mac OS X*+</td>
+</tr>
+<tr>
+    <td>SCO</td>
+    <td>FreeBSD*</td>
+    <td>NetBSD</td>
+</tr>
+<tr>
+    <td>OpenBSD</td>
+    <td>Solaris*</td>
+    <td>SunOS</td>
+</tr>
+<tr>
+    <td>Linux for IBM S/390, zSeries</td>
 </table>
+ 
+<br />
+
+<p>(*) The ProFTPD core team has access to test on this platform.
+       If you wish to donate hardware or network access, please
+       <a href="mailto:core@proftpd.org">contact the core team</a>.
+</p>
+<p>(+) While ProFTPD should compile "out of the box" under Mac OS X,
+       <a href="http://fink.sf.net/">Fink</a> includes ProFTPD in its
+       distribution for OS X.
+</p>
 
 #include "footer.epl"

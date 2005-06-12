@@ -1,42 +1,82 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
-#include "global.epl"
-
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="/proftpd.css" />
-  <title>The ProFTPD Project<: print ": ", $html_title unless !defined($html_title) :></title>
-  <: print "<meta name=\"description\" content=\"$meta_description\" />\n" unless !defined($meta_description) :>//
-  <: print "<meta name=\"keywords\" content=\"$meta_keywords\" />\n" unless !defined($meta_keywords) :>//
+  <title>The ProFTPD Project: <: print $html_title :></title>
+  <meta name="description" content="The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." />
+  <meta name="keywords" content="ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" />
 </head>
 
-<body text="#000000" link="#000099" alink="#cc0000" vlink="#6666cc" bgcolor="white">
+<body>
 
-<!-- Header of the page -->
-<table cellpadding="3" cellspacing="0" border="0">
-<tr valign="middle">
-  <td align="left" valign="middle" rowspan="2">
-    <img src="/proftpd.png" width="215" height="92" align="left" alt="[ProFTPD Logo]" />
-  </td>
-  <td align="left" valign="bottom">
-    <img src="/dotgreen.jpg" alt="[*]" />
-    <font size="+2" face="Times New Roman, sans-serif">ProFTPD</font>
-    <img src="/dotgreen.jpg" alt="[*]" />
-  </td>
-</tr>
+<div id="header">
+	<img id="logo" src="/proftpd.png" width="215" height="92" alt="[ProFTPD]" />
+	<h1>ProFTPD</h1>
+	Highly configurable GPL-licensed FTP server software
+</div>
 
-<tr>
-  <td align="left" valign="middle">
-    <font face="Verdana,Arial,Helvetica,sans-serif"><i>Highly configurable GPL-licensed FTP server software</i></font>
-  </td>
-</tr>
+<div id="menu">
+  <h1>Current Versions</h1>
+  Stable: <b>1.2.10</b> [ <a href="/docs/NEWS-1.2.10">NEWS</a> ]<br />
+  &nbsp;&nbsp;&nbsp;[ <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.2.10.tar.gz">gz</a> ] [ <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.2.10.tar.bz2">bz2</a> ]<br />
+  <nobr>
+    Candidate: <b>1.3.0rc1</b> [ <a href="/docs/NEWS-1.3.0rc1">NEWS</a> ]<br />
+    &nbsp;&nbsp;&nbsp;[ <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.0rc1.tar.gz">gz</a> ] [ <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.0rc1.tar.bz2">bz2</a> ]
+  </nobr>
+  
+  <h1>Mirrors and Downloads</h1>
+  <ul>
+    <li><a href="download.html">Download servers</a></li>
+    <li><a href="wwwmirror.html">Web site mirrors</a></li>
+    <li><a href="pgp.html">PGP public keys</a></li>
+    <li><a href="md5_pgp.html">MD5 &amp; PGP signatures</a></li>
+    <li><a href="cvs.html">CVS Repository</a></li>
+    <li><a href="howtomirror.html">How to become a mirror</a></li>
+  </ul>
 
-<!-- Body  of the page -->
-<tr>
-  <td valign="top" rowspan="2">
+  <h1>Newsroom</h1>
+  <ul>
+    <li><a href="index.html">News Flashes</a></li>
+    <li><a href="module_news.html">Contrib module news</a></li>
+  </ul>
 
-#include "table.epl"
+  <h1>Information</h1>
+  <ul>
+    <li><a href="goals.html">What is ProFTPD?</a></li>
+    <li><a href="features.html">Features &amp; Platforms</a></li>
+    <li><a href="http://bugs.proftpd.org/">Bug reporting system</a></li>
+    <li><a href="bugs.html">Bug reporting and security guidelines</a></li>
+    <li><a href="sites.html">Sites powered by ProFTPD</a></li>
+    <li><a href="http://forums.proftpd.org/">Forums</a></li>
+  </ul>
 
-  </td>
-  <td valign="top" align="left" width="100%">
+  <h1>Documentation</h1>
+  <ul>
+    <li><a href="docs/">Docs index</a></li>
+    <li><a href="docs/rfc.html">RFCs</a></li>
+    <li><a href="docs/faq/linked/faq.html">FAQ</a></li>
+    <li><a href="http://proftpd.linux.co.uk/localsite/Userguide/linked/userguide.html">Userguide</a></li>
+    <li><a href="docs/example-conf.html">Example configurations</a></li>
+  </ul>
 
-<!-- Start the body of the page here -->
+  <h1>Mailing Lists</h1>
+  <ul>
+    <li><a href="lists.html">Available Lists</a></li>
+    <li><a href="http://sourceforge.net/mailarchive/forum.php?forum_id=2625">Announce Archive</a></li>
+    <li><a href="http://sourceforge.net/mailarchive/forum.php?forum_id=2637">Users Archive</a></li>
+    <li><a href="http://sourceforge.net/mailarchive/forum.php?forum_id=2638">Development Archive</a></li>
+  </ul>
+
+  <a href="http://validator.w3.org/check?uri=referer">
+    <img src="http://www.w3.org/Icons/valid-xhtml10"
+         alt="Valid XHTML 1.0!" height="31" width="88" />
+  </a>
+  <a href="http://sourceforge.net/">
+    <img src="http://sourceforge.net/sflogo.php?group_id=17793"
+         alt="[SourceForge Logo]" width="88" height="31" />
+  </a>
+
+  <!-- Copyright (C) 1999, 2000-5, The ProFTPD Project. -->
+</div>
+
+<div id="content">

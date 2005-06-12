@@ -1,44 +1,51 @@
 <: # $Id$ :>//
-<: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
-<: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Reporting guidelines" :>//
-<: $last_changed = "09/May/2002 - hamster" :>//
 
 #include "header.epl"
 
-<table bgcolor="white">
-<tr valign=top>
-  <td>
-    <div class="headline">
-      <: print "<b>$html_title</b>" unless !defined($html_title) :>//
-    </div>
+<h1><: print "$html_title" :></h1>
+<p>As the code develops and changes, there will always be new 'features' and
+bugs introduced. While the developers always strive to attain perfection,
+mistakes and the unexpected always occur.</p>
 
-    <p>As the code develops and changes there will always be new
-    'features' and bugs introduced.  While the developers always
-    strive to attain perfection mistakes and the unexpected always
-    occur.</p>
+<ul>
+    <li><!-- FIXME --><a href="http://proftpd.linux.co.uk/localsite/Userguide/linked/debugging-problems.html">Guide on tracking proftpd bugs</a>
+    <li><a href="http://www.catb.org/~esr/faqs/smart-questions.html">How to Ask Questions the Smart Way</a>
+</ul>
 
-    <li><a href="http://proftpd.linux.co.uk/localsite/Userguide/linked/debugging-problems.html">Guide on tracking proftpd bugs</a>
-    <li><a href="http://www.tuxedo.org/~esr/faqs/smart-questions.html">Guide on how to ask 'smart' questions</a>
 
-    <br />
-    <br />
+<h1>Reporting Security Issues</h1>
+<p>The ProFTPD Project takes a very active stance in eliminating security
+problems and denial of service attacks against the ProFTPD FTP server. We
+are firm believers in responsible full disclosure and do our best to follow
+<a href="http://www.wiretrip.net/rfp/policy.html">RFPolicy</a> whenever
+possible.</p>
 
-    <div class="headline">Diagnosing problems</div>
+<p>In keeping with RFPolicy, we strongly encourage folks to
+<a href="mailto:security@proftpd.org">report security-related problems to
+security@proftpd.org</a> first, before disclosing them in a public forum.
+<strong>We cannot accept regular bug reports or other queries at this
+address. Instead, we ask that you use our
+<a href="http://bugs.proftpd.org/">bug reporting system</a> for
+those.</strong></p>
 
-    <p>Before wading in to track down a problem it's worth consulting
-    the <a href="/docs/faq/proftpdfaq.html">FAQ</a> and the <a
-    href="http://bugs.proftpd.org/">bug database</a> to see if there
-    are any reports of similar issues.</p>
+<p>Please note that all networked servers are subject to denial of service
+attacks, and we cannot promise magic workarounds to generic problems or
+issues which are a result of the host OS. In general, our philosophy is to
+avoid any attacks which can cause the server to consume resources in a
+non-linear relationship to the size of inputs.</p>
 
-    <ul>
+
+<h1>Diagnosing problems</h1>
+<p>Before wading in to track down a problem, it's worth consulting the
+<!-- FIXME --><a href="docs/faq/proftpdfaq.html">FAQ</a> and the
+<a href="http://bugs.proftpd.org/">bug database</a> to see if there are any
+reports of similar issues.</p>
+
+<ul>
     <li><a href="http://bugs.proftpd.org/buglist.cgi?bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&email1=&emailtype1=substring&emailassigned_to1=1&email2=&emailtype2=substring&emailreporter2=1&bugidtype=include&bug_id=&changedin=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&short_desc=&short_desc_type=allwordssubstr&long_desc=&long_desc_type=allwordssubstr&bug_file_loc=&bug_file_loc_type=allwordssubstr&keywords=&keywords_type=anywords&field0-0-0=noop&type0-0-0=noop&value0-0-0=&order=bugs.bug_id">All open bugs</a>
     <li><a href="http://bugs.proftpd.org/buglist.cgi?bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_severity=blocker&bug_severity=critical&bug_severity=major&bug_severity=normal&email1=&emailtype1=substring&emailassigned_to1=1&email2=&emailtype2=substring&emailreporter2=1&bugidtype=include&bug_id=&changedin=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&short_desc=&short_desc_type=allwordssubstr&long_desc=&long_desc_type=allwordssubstr&bug_file_loc=&bug_file_loc_type=allwordssubstr&keywords=&keywords_type=anywords&field0-0-0=noop&type0-0-0=noop&value0-0-0=&cmdtype=doit">All bugs with a severity of 'normal' or higher</a>
     <li><a href="http://bugs.proftpd.org/buglist.cgi?bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_severity=enhancement&email1=&emailtype1=substring&emailassigned_to1=1&email2=&emailtype2=substring&emailreporter2=1&bugidtype=include&bug_id=&changedin=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&short_desc=&short_desc_type=allwordssubstr&long_desc=&long_desc_type=allwordssubstr&bug_file_loc=&bug_file_loc_type=allwordssubstr&keywords=&keywords_type=anywords&field0-0-0=noop&type0-0-0=noop&value0-0-0=&order=bugs.bug_id">Requested Enhancements</a>
-    </ul>
-
-</td>
-</tr>
-</table>
+</ul>
 
 #include "footer.epl"

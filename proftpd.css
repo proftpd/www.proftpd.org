@@ -1,21 +1,95 @@
 /* $Id$ */
 
-BODY {
-	background-color: white;
-	color: black;
-	font-size: 12pt;
+a {
+	color: #000099;
+}
+a:visited {
+	color: #6666cc;
+}
+a:active {
+	color: #cc0000;
 }
 
-.headline {
-	background-color: white;
-	color: #003399;
-	font-family: Verdana,Arial,Helvetica,sans-serif;
-	font-size: 12pt;
+img {
+	border: 0px;
 }
-            
-.headline-small {
-	background-color: white;
+
+h1 {
 	color: #003399;
-	font-family: Verdana,Arial,Helvetica,sans-serif;
-	font-size: 10pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 3px;
+}
+h2 {
+	color: #003399;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	margin-bottom: 3px;
+}
+h1 + p {
+	margin-top: 0px;
+}
+h2 + p {
+	margin-top: 0px;
+}
+h1 + ul {
+	margin-top: 4px;
+}
+h2 + ul {
+	margin-top: 4px;
+}
+
+#header {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	height: 92px;
+	vertical-align: middle;
+}
+#header h1 {
+	font-size: 20px;
+	font-weight: bold;
+}
+#header #logo {
+	float: left;
+	padding-right: 16px;
+}
+
+#menu {
+	width: 215px;
+}
+#menu h1 {
+	color: #000000;
+	background-color: #9999cc;
+	font-size: 14px;
+	padding: 3px 3px 3px 3px;
+}
+#menu ul {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	margin-top: 6px;
+	padding-top: 0px;
+	margin-bottom: 12px;
+	padding-bottom: 0px;
+}
+
+#content {
+	position: absolute;
+	left: 240px;
+	top: 92px;
+	margin-top: 12px;
+	margin-right: 40px;
+}
+
+#platformsTable {
+	margin-left: auto;
+	margin-right: auto;
+}
+#platformsTable td {
+	padding-right: 5px;
+}
+
+#sitesList li {
+	padding-top: 8px;
 }

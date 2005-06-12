@@ -1,93 +1,58 @@
 <: # $Id$ :>//
-<: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
-<: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "How to mirror ProFTPD" :>//
-<: $last_changed = "11/Jun/2002 - jwm" :>//
 
 #include "header.epl"
 
-<table bgcolor="white">
-<tr>
-  <td>
-    <p>ProFTPD has dozens of mirror sites around the world.  If you wish to
-    add to this number and help spread the load, please read on and mirror
-    the FTP site, web site, or both.</p>
+<h1><: print "$html_title" :></h1>
+
+<p>ProFTPD has dozens of mirror sites around the world.  If you wish to add
+to this number and help spread the load, please read on and mirror the FTP
+site, web site, or both.</p>
 
 
-    <div class="headline">Mirroring the Web Site</div>
+<h2>Mirroring the Web Site</h2>
 
-    <p>There are a few ways to mirror the ProFTPD web site. In order of
-    decreasing preference:</p>
+<p>To join the ProFTPD Mirror Network, you'll need to make a couple of minor
+changes to your web server configuration. This will make it easier for end
+users to find the closest mirror. When you
+<a href="http://mirrors.proftpd.org/">submit your details</a>, we'll assign
+a site name within your geographic region (i.e.,
+<tt>www1.uk.proftpd.org</tt>). Your web server needs to be configured to
+handle this hostname as well as the master entry for your country (i.e.,
+<tt>www.uk.proftpd.org</tt>). Apache users can achieve this by using the
+<a href="http://httpd.apache.org/docs-2.0/mod/core.html#serveralias">ServerAlias</a>
+directive. Once this configuration change is made, we'll add you
+to the DNS.</p>
 
+<p>Mirrors are updated using rsync. Details on how to use it can be found at
+<a href="http://rsync.samba.org/">http://rsync.samba.org/</a>. You might
+want to call it using the following arguments, for example:</p>
 
-    <div class="headline-small">rsync</div>
-
-    <p>Details on rsync and how to use it can be found at
-    <a href="http://rsync.samba.org/">http://rsync.samba.org/</a>. You might
-    want to call it using the following arguments, for example:</p>
-
-    <pre>rsync -rtlzv --delete rsync.proftpd.org::proftpd-www /local/path/to/www/mirror</pre>
-
-    <p>You can also do a <em>rsync rsync.proftpd.org::</em> to list the
-    available rsync modules.</p>
-
-
-    <div class="headline-small">CVS</div>
-
-    <p>The web site is managed via CVS. Those wishing to mirror direct from
-    CVS will need access to a Unix system with eperl and GNU make installed. 
-    The repository can be found on
-    <a href="http://www.sourceforge.net/projects/pdd/">the ProFTPD
-    documentation web site</a>.</p>
-
-    <p>Once you have a mirror site setup, you'll need to make a couple of
-    minor changes to your web server configuration to be part of the
-    proftpd.org DNS entries to make it easier for end users to find the
-    closest mirror.  When you submit your details, we'll assign a site name
-    within your geographic region (i.e., <tt>www1.uk.proftpd.org</tt>). Your
-    web server needs to be configured to handle this hostname as well as the
-    master entry for your country (i.e., <tt>www.uk.proftpd.org</tt>).
-    Apache users can achieve this by using the ServerAlias directive. Once
-    this configuration change is made, we'll add you to the DNS.</p>
+<tt>rsync --recursive --times --links --compress --delete \<br />
+    rsync.proftpd.org::proftpd-www /local/path/</tt>
 
 
-    <div class="headline">Mirroring the FTP Site</div>
+<h2>Mirroring the FTP Site</h2>
 
-    <p>There are a few ways to mirror the ProFTPD FTP site. In order of
-    decreasing preference:</p>
+<p>Mirrors are updated using rsync. Details on how to use it can be found at
+<a href="http://rsync.samba.org/">http://rsync.samba.org/</a>. You might
+want to call it using the following arguments, for example:</p>
 
-
-    <div class="headline-small">rsync</div>
-
-    <p>Details on rsync and how to use it can be found at
-    <a href="http://rsync.samba.org/">http://rsync.samba.org/</a>. You might
-    want to call it using the following arguments, for example:</p>
-
-    <pre>rsync -rtlzv --delete rsync.proftpd.org::proftpd-ftp /local/path/to/ftp/mirror</pre>
-
-    <p>You can also do a <em>rsync rsync.proftpd.org::</em> to list the
-    available rsync modules.</p>
+<tt>rsync --recursive --times --links --compress --delete \<br />
+    rsync.proftpd.org::proftpd-ftp /local/path/</tt>
 
 
-    <div class="headline">Let us know you're out there</div>
-    <div class="headline-small">Join the mailing list</div>
+<h2>Let us know you're out there</h2>
 
-    <p>Once you become a ProFTPD mirror site, it is <em>highly
-    recommended</em> that you subscribe to the <tt>proftpd-mirror</tt>
-    mailing list. We use this list to announce changes on our end. Mirror
-    maintainers also gather there to discuss the setup and maintenance
-    involved in running a mirror site.</p>
+<p>Please submit your details at
+<a href="http://mirrors.proftpd.org/">mirrors.proftpd.org</a>.</p>
 
-    <p>The list can be joined by
-    <a href="http://lists.sourceforge.net/mailman/listinfo/proftp-mirrors">visiting the SourceForge mailman interface.</a></p>
+<p>Once you become a ProFTPD mirror site, it is <em>highly recommended</em>
+that you subscribe to the <tt>proftpd-mirror</tt> mailing list. We use this
+list to announce changes on our end. Mirror maintainers also gather there to
+discuss the setup and maintenance involved in running a mirror site.</p>
 
-
-    <div class="headline-small">Let us know your details.</div>
-
-    <p>Please submit your details at
-    <a href="http://mirrors.proftpd.org/">mirrors.proftpd.org</a>.</p>
-  </td>
-</tr>
-</table>
+<p>The list can be joined by
+<a href="http://lists.sourceforge.net/mailman/listinfo/proftp-mirrors">visiting the SourceForge mailman interface.</a></p>
 
 #include "footer.epl"

@@ -1,78 +1,49 @@
 <: # $Id$ :>//
-<: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
-<: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
-<: $last_changed = "11/Jun/2005 - jwm" :>//
+<: $html_title = "Home" :>//
 
 #include "header.epl"
 
-<table bgcolor="white">
-<tr>
-  <td>
-    <b><font face="arial" color="#003399">1.3.0rc1 released</font></b>
-    <br />
-    <font size="-1">[<i>10/Apr/2005</i>]</font>
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      <p>The ProFTPD Project is pleased to make the 1.3.0rc1 release to the
-      community.  Highlights include DSO support, enhanced mod_sql and
-      mod_tls modules, and POSIX ACL support.  Please read the
-      RELEASE_NOTES and NEWS files for the full details.
-    </font></blockquote>
-  </td>
-</tr>
+<h1>1.3.0rc1 released</h1>
+[<i>10/Apr/2005</i>]
+<p>The ProFTPD Project team is pleased to make the 1.3.0rc1 release to the
+community. Highlights include DSO support, enhanced mod_sql and mod_tls
+modules, and POSIX ACL support. Please read the RELEASE_NOTES and
+<a href="docs/NEWS-1.3.0rc1">NEWS</a> files for the full details.</p>
 
-<tr>
-  <td>
-    <b><font face="arial" color="#003399">&quot;Timing attack&quot; protection module</font></b>
-    <br />
-    <font size="-1">[<i>10/Nov/2004</i>]</font>
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      <p>The ProFTPD Project team has developed a <code>mod_delay</code>
-      module to help mitigate the timing leak described by Leon Juranic.
-      This module will be included in the next release of ProFTPD.  Details
-      on the module can be found <a href="http://www.castaglia.org/proftpd/modules/mod_delay.html">here</a>.
-    </font></blockquote>
-  </td>
-</tr>
+<h1>"Timing attack" protection module</h1>
+[<i>10/Nov/2004</i>]
+<p>The ProFTPD Project team has developed a <code>mod_delay</code> module to
+help mitigate the timing leak described by Leon Juranic. This module will be
+included in the next release of ProFTPD. Details on the module can be found
+<a href="http://www.castaglia.org/proftpd/modules/mod_delay.html">here</a>.</p>
 
-<tr>
-  <td>
-    <b><font face="arial" color="#003399">ProFTPD &quot;timing attack&quot;</font></b>
-    <br />
-    <font size="-1">[<i>17/Oct/2004</i>]</font>
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      <p>Leon Juranic of the <a href="http://www.lss.hr/">LSS Security team</a> announced 
-      that he discovered a <a href="http://security.lss.hr/index.php?page=details&ID=LSS-2004-10-02">
-      "security issue"</a> in ProFTPD. As a matter of fact the issue he has found is not 
-      restricted to ProFTPD alone but can be discovered in any given software product which
-      uses authentication mechanisms. The fix he proposes in his security advisory 
-      is a band-aid patch at best and won't be included in ProFTPD in its current form, 
-      since it's still prone to statistical analysis and only obfuscates the problem. 
-      Moreover different speeds of servers and authentication backends make fixing this 
-      problem by a random delay, with a fixed upper limit, impossible.<p>Quoting from a 
-      <a href="http://www.security-corporation.com/articles-20030430-002.html">writeup</a> 
-      about an related OpenSSH/PAM timing attack: "There is currently no complete fix to 
-      this. Moreover, there are many smaller timing leaks which too are easy to use to 
-      obtain the same information. These are primarily in OpenSSH and in the system libraries 
-      (getpwnam(3), NSS modules, and so on). Solving this kind of timing leaks requires a 
-      re-design of the authentication code paths [..]".<p>This is true for ProFTPD, too. 
-      The ProFTPD team is currently investigating methods that address this issue sufficiently.
-      
-    </font></blockquote>
-  </td>
-</tr>
+<h1>ProFTPD "timing attack"</h1>
+[<i>17/Oct/2004</i>]
+<p>Leon Juranic of the LSS Security team announced that he discovered a
+"<a href="http://security.lss.hr/index.php?page=details&ID=LSS-2004-10-02">security issue</a>"
+in ProFTPD. As a matter of fact the issue he has found is not restricted to
+ProFTPD alone but can be discovered in any given software product which uses
+authentication mechanisms. The fix he proposes in his security advisory is a
+band-aid patch at best and won't be included in ProFTPD in its current form,
+since it's still prone to statistical analysis and only obfuscates the
+problem. Moreover different speeds of servers and authentication backends
+make fixing this problem by a random delay, with a fixed upper limit,
+impossible.</p>
 
-<tr>
-  <td>
-    <b><font face="arial" color="#003399">1.2.10 released</font></b>
-    <br />
-    <font size="-1">[<i>04/Sep/2004</i>]</font>
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      <p>The ProFTPD Project is pleased to release 1.2.10 to the community.
-      Please read the NEWS, RELEASE_NOTES, and ChangeLog files for the full
-      details.
-    </font></blockquote>
-  </td>
-</tr>
-</table>
+<p>Quoting from a <a href="http://marc.theaimsgroup.com/?l=bugtraq&m=105172058404810&w=2">writeup about a related OpenSSH/PAM timing attack</a>:
+"There is currently no complete fix to this. Moreover, there are many
+smaller timing leaks which too are easy to use to obtain the same
+information. These are primarily in OpenSSH and in the system libraries
+(getpwnam(3), NSS modules, and so on). Solving this kind of timing leaks
+requires a re-design of the authentication code paths [..]".</p>
+
+<p>This is true for ProFTPD, too. The ProFTPD team is currently
+investigating methods that address this issue sufficiently.</p>
+
+<h1>1.2.10 released</h1>
+[<i>04/Sep/2004</i>]
+<p>The ProFTPD Project team is pleased to release 1.2.10 to the community.
+Please read the <a href="docs/NEWS-1.2.10">NEWS</a>, RELEASE_NOTES, and
+ChangeLog files for the full details.</p>
 
 #include "footer.epl"

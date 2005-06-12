@@ -1,175 +1,73 @@
 <: # $Id$ :>//
-<: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
-<: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "Mailing lists" :>//
-<: $last_changed = "07/Feb/2003 - Hamster" :>//
 
 #include "header.epl"
 
-<table bgcolor="white">
-<tr>
-  <td>
-    <div class="headline">
-      <: print "<b>$html_title</b>" unless !defined($html_title) :>//
-    </div>
-    <p>There are a number of mailing lists for the ProFTPD Project covering 
-	 the entire range of activites.</p>
+<h1><: print "$html_title" :></h1>
 
-	<ul>
-	<li><a href="#announce">Proftpd-Announce</a></li>
-	<li><a href="#users">Proftpd-Users</a></li>
-	<li><a href="#devel">Proftpd-Devel</a></li>
-        <li><a href="#docs">Proftpd-Docs</a></a>
-	<li><a href="#committers">Proftpd-Committers</a></li>
-	<li><a href="#mirrors">Proftpd-Mirrors</a></li>
-	<br />
-	<li><strong><a href="list-unsub.html">How to unsubscribe</a></strong></li>
-	</ul>
+<p>There are a number of mailing lists for the ProFTPD Project covering the
+entire range of activites. They are hosted by
+<a href="http://www.sourceforge.net/">SourceForge</a>.
+<strong><a href="list-unsub.html">How to unsubscribe</a></strong></p>
 
-  </td>
-</tr>
+<h2>List Policy</h2>
+<ul>
+  <li>To limit the amount of spam received on the lists, posting is
+      restricted to list members only.
+  </li>
+  <li>The list administrators reserve the right to remove members from the
+      list(s) at any time.
+  </li>
+</ul>
 
-<tr>
-  <td><a name="announce">
-    <b><font face="arial" color="#003399">Announcements</font></b><br />
-    <font size="-1">[<i>proftpd-announce-request@proftpd.org</i>]</font>
+<h2>Announcements</h2>
+<p>A very low traffic mailing list, used for major announcements related to
+ProFTPD (new versions, bug fixes, security issues). <strong>This list is
+highly recommended for all ProFTPD users.</strong></p>
 
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"> 
-      <p>A very low traffic mailing list, strictly used for major
-      announcements related to ProFTPD (new versions, bug fixes, security
-      issues).  <strong>This list is highly recommended for anyone using
-      ProFTPD.</strong></p>
+<p>Subscribe via <a href="mailto:proftpd-announce-request@proftpd.org?subject=subscribe">e-mail</a> or
+visit the <a href="https://lists.sourceforge.net/lists/listinfo/proftp-announce">web interface</a>.</p>
 
-      <br />
 
-      <p>To subscribe, <a
-      href="mailto:proftpd-announce-request@proftpd.org?subject=subscribe">e-mail
-      proftpd-announce-request@proftpd.org, with the subject
-      "subscribe."</a> or visit 
-		<a href="https://lists.sourceforge.net/lists/listinfo/proftp-announce">https://lists.sourceforge.net/lists/listinfo/proftp-announce</a>
-		</p>
-		
-    </font></blockquote>
-  </td>
-</tr>
+<h2>Users</h2>
+<p>This list is for end user questions and comments on ProFTPD. <strong>This
+is a high-volume list.</strong></p>
 
-<tr>
-  <td><a name="users">
-    <b><font face="arial" color="#003399">Users</font></b><br />
-    <font size="-1">[<i>proftpd-users-request@proftpd.org</i>]</font>
+<p>Subscribe via <a href="mailto:proftpd-users-request@proftpd.org?subject=subscribe">e-mail</a> or
+visit the <a href="https://lists.sourceforge.net/lists/listinfo/proftp-user">web interface</a>.</p>
 
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1"> 
-      <p>This list is for end user questions and comments on ProFTPD.
-      <strong>This is a high volume list.</strong></p>
 
-      <br />
+<h2>Developers</h2>
+<p>This list is intended for those who are interested in the development and
+future functionality of ProFTPD.</p>
 
-      <p>To subscribe, <a
-      href="mailto:proftpd-users-request@proftpd.org?subject=subscribe">e-mail
-      proftpd-users-request@proftpd.org, with the subject
-      "subscribe."</a> or visit <a href="https://lists.sourceforge.net/lists/listinfo/proftp-user">https://lists.sourceforge.net/lists/listinfo/proftp-user</a></p>
-    </font></blockquote>
-  </td>
-</tr>
+<p>Subscribe via <a href="mailto:proftpd-devel-request@proftpd.org?subject=subscribe">e-mail</a> or
+visit the <a href="https://lists.sourceforge.net/lists/listinfo/proftp-devel">web interface</a>.</p>
 
-<tr>
-  <td><a name="devel">
-    <b><font face="arial" color="#003399">Developers</font></b><br />
-    <font size="-1">[<i>proftpd-devel-request@proftpd.org</i>]</font>
 
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      <p>This list is intended for those who are interested in the
-      development and future functionality of ProFTPD.</p>
+<h2>Docs</h2>
+<p>This list is intended for those who are interested in the development of
+documentation, including HOWTOs, tutorials, examples, and translations.</p>
 
-      <br />
+<p>Subscribe via <a href="mailto:proftpd-docs-request@proftpd.org?subject=subscribe">e-mail</a> or
+visit the <a href="https://lists.sourceforge.net/lists/listinfo/proftp-docs">web interface</a>.</p>
 
-      <p>To subscribe, <a
-      href="mailto:proftpd-devel-request@proftpd.org?subject=subscribe">e-mail
-      proftpd-devel-request@proftpd.org, with the subject
-      "subscribe."</a> or visit <a href="https://lists.sourceforge.net/lists/listinfo/proftp-devel">https://lists.sourceforge.net/lists/listinfo/proftp-devel</a></p>
-    </font></blockquote>
-  </td>
-</tr>
 
-<tr>
-  <td><a name="docs">
-    <b><font face="arial" color="#003399">Docs</font></b><br />
-    <font size="-1">[<i>proftpd-docs-request@proftpd.org</i>]</font>
+<h2>Committers</h2>
+<p>This list receives the automated e-mail messages from CVS and the bug
+tracking system. These messages are probably only of use or interest to
+subscribers of the -devel list (it is intended to cut down on the traffic
+hitting -devel).</p>
 
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      <p>This list is intended for those who are interested in the
-      development of documentation, including HOWTOs, tutorials, examples,
-      and translations.</p>
+<p>Subscribe via <a href="mailto:proftpd-committers-request@proftpd.org?subject=subscribe">e-mail</a> or
+visit the <a href="https://lists.sourceforge.net/lists/listinfo/proftp-committers">web interface</a>.</p>
 
-      <br />
 
-      <p>To subscribe, <a
-      href="mailto:proftpd-docs-request@proftpd.org?subject=subscribe">e-mail
-      proftpd-docs-request@proftpd.org, with the subject
-      "subscribe."</a> or visit <a href="https://lists.sourceforge.net/lists/listinfo/proftp-docs">https://lists.sourceforge.net/lists/listinfo/proftp-docs</a></p>
-    </font></blockquote>
-  </td>
-</tr>
-<tr>
-  <td><a name="committers">
-    <b><font face="arial" color="#003399">Committers</font></b><br />
-    <font size="-1">[<i>proftpd-committers-request@proftpd.org</i>]</font>
+<h2>Mirror Admins</h2>
+<p>This list is intended for administrators mirroring or interested in
+mirroring the ProFTPD FTP and web site.</p>
 
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      <p>This list receives the automated e-mail messages from CVS and the
-      bug tracking system. These messages are probably only of use or
-      interest to subscribers of the -devel list (it is intended to cut down
-      on the traffic hitting -devel).</p>
-
-      <p>To subscribe, <a
-      href="mailto:proftpd-committers-request@proftpd.org?subject=subscribe">e-mail
-      proftpd-committers-request@proftpd.org, with the subject
-      "subscribe."</a> or visit <a href="https://lists.sourceforge.net/lists/listinfo/proftp-committers">https://lists.sourceforge.net/lists/listinfo/proftp-committers</a></p>
-    </font></blockquote>
-  </td>
-</tr>
-
-<tr>
-  <td><a name="mirrors">
-    <b><font face="arial" color="#003399">Mirror Admins</font></b><br />
-    <font size="-1">[<i>proftpd-mirrors-request@proftpd.org</i>]</font>
-
-    <blockquote><font face="Verdana,Arial,Helvetica,sans-serif" size="-1">
-      <p>This list is intended for administrators mirroring or interested in
-      mirroring the ProFTPD FTP and web site.</p>
-
-      <p>To subscribe, <a
-      href="mailto:proftpd-mirrors-request@proftpd.org?subject=subscribe">e-mail
-      proftpd-mirrors-request@proftpd.org, with the subject
-      "subscribe."</a> or visit <a href="https://lists.sourceforge.net/lists/listinfo/proftp-mirrors">https://lists.sourceforge.net/lists/listinfo/proftp-mirrors</a></p>
-    </font></blockquote>
-  </td>
-</tr>
-
-<tr>
-  <td>
-    <font face="arial" color="#003399"><b>List Policy</b></font>
-
-    <ul>
-
-      <li>In order to limit the amount of spam received on the lists,
-          posting is restricted to list members only.
-      </li>
-      <li>The list administrators reserve the right to remove members from
-          the list(s) at any time.
-      </li>
-    </ul>
-  </td>
-</tr>
-
-<tr>
-  <td>
-    The mailing lists are hosted by <a href="http://www.sourceforge.net/">SourceForge</a>.
-    <br />
-    <a href="http://sourceforge.net/"> <img src="http://sourceforge.net/sflogo.php?group_id=17793" width="88"
-    height="31" border="0" alt="[SourceForge Logo]" /></a>
-  </td>
-</tr>
-</table>
+<p>Subscribe via <a href="mailto:proftpd-mirrors-request@proftpd.org?subject=subscribe">e-mail</a> or
+visit the <a href="https://lists.sourceforge.net/lists/listinfo/proftp-mirrors">web interface</a>.</p>
 
 #include "footer.epl"

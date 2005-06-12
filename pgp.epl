@@ -1,27 +1,19 @@
 <: # $Id$ :>//
-<: $meta_description = "The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." :>//
-<: $meta_keywords = "ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" :>//
 <: $html_title = "PGP public keys" :>//
-<: $last_changed = "04/Apr/2001 - jwm" :>//
 
 #include "header.epl"
 
-<table bgcolor="white">
-<tr>
-  <td>
-    <div class="headline">
-      <: print "<b>$html_title</b>" unless !defined($html_title) :>//
-    </div>
+<h1><: print "$html_title" :></h1>
 
-    <p>Below is the project PGP key. This key will be used to sign important
-    announcements and generate PGP signatures of released files.  This
-    signature can be used to prove that any file or message originated from
-    the core development team.  The current key will always appear on this
-    page as well as within the public keyserver network.</p>
+<p>Below is the Project PGP key. This key will be used to sign important
+announcements and generate PGP signatures of released files. This signature
+can be used to prove that any file or message originated from the core team.
+The current key will always appear on this page as well as within the public
+keyserver network.</p>
 
 <pre>
 Type bits/keyID    Date       User ID
-pub  1024/A511976A 2002/05/12 TJ Saunders <tj@castaglia.org>
+pub  1024/A511976A 2002/05/12 TJ Saunders &lt;tj@castaglia.org&gt;
 
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: 5.0
@@ -54,33 +46,5 @@ qhb+Z0EJiQBGBBgRAgAGBQI83uD7AAoJELeOiT+lEZdqNQsAnRs0MfBx6HtjvrXN
 =z+YR
 -----END PGP PUBLIC KEY BLOCK-----
 </pre>
-    
-<!--
-<pre>
-Type Bits/KeyID    Date       User ID
-pub  1024/320C6F9D 2001/02/20 The ProFTPD Group &lt;core@proftpd.org&gt;
-
------BEGIN PGP PUBLIC KEY BLOCK-----
-Version: 2.6.3ia
-
-mQCNAzqRw58AAAEEALeBLEx497t8krN3SnZUhn2PvgCGALP83sivXj1GVnwzI4x9
-zXT3e8nEMvv1hs7FDspISpFlFwkeHMZeAwxrdY27TS+Qx4GC3814/abAH2i+JY87
-RWE6fKyQwCV8OVT+ZNkVrHaIhxFDuQNzdiSVCjuMfZzwtwnaPmFBiHYyDG+dAAUR
-tCRUaGUgUHJvRlRQRCBHcm91cCA8Y29yZUBwcm9mdHBkLm9yZz6JAJUDBRA6kcVf
-ap2xMqLF9hEBAXggBADJhF0kXNxew1KPEv8ld4wfH1UZdRCR/aQ2IP/hOdYxO7P3
-M4sAHxa4zNB5d196f+2BvQyRcL+KXzGsUSsK9humhsR00f8w3kYck7LNmd/320U3
-83JobAlvIs2ha2gRXLDFsjvNZC3CC6gya5/BmzX1A3vux4IYhXPikRojiQPHOIkA
-lQMFEDqRw59hQYh2MgxvnQEB4RcD/iFJxCArN1P8nUnraxNhoKKltL4MLnrZGzxZ
-t1PQ9vPlsygQAYAOpNG0p+m464p9lvAO7bLP2uwocLV1fkP90FfUo79yK1ADdDje
-4PuxUbliXsPgBqnR8KbXYHkLk9rJdhL8up2QTpRfJwzqtxQxrTgBfJmaJSixwFN+
-EJ56rVH9
-=+/oI
------END PGP PUBLIC KEY BLOCK-----
-</pre>
--->
-
-  </td>
-</tr>
-</table>
 
 #include "footer.epl"
