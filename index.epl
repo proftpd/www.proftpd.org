@@ -20,7 +20,7 @@ included in the next release of ProFTPD. Details on the module can be found
 <h1>ProFTPD "timing attack"</h1>
 [<i>17/Oct/2004</i>]
 <p>Leon Juranic of the LSS Security team announced that he discovered a
-"<a href="http://security.lss.hr/index.php?page=details&ID=LSS-2004-10-02">security issue</a>"
+"<a href="http://security.lss.hr/index.php?page=details&amp;ID=LSS-2004-10-02">security issue</a>"
 in ProFTPD. As a matter of fact the issue he has found is not restricted to
 ProFTPD alone but can be discovered in any given software product which uses
 authentication mechanisms. The fix he proposes in his security advisory is a
@@ -30,7 +30,7 @@ problem. Moreover different speeds of servers and authentication backends
 make fixing this problem by a random delay, with a fixed upper limit,
 impossible.</p>
 
-<p>Quoting from a <a href="http://marc.theaimsgroup.com/?l=bugtraq&m=105172058404810&w=2">writeup about a related OpenSSH/PAM timing attack</a>:
+<p>Quoting from a <a href="http://marc.theaimsgroup.com/?l=bugtraq&amp;m=105172058404810&amp;w=2">writeup about a related OpenSSH/PAM timing attack</a>:
 "There is currently no complete fix to this. Moreover, there are many
 smaller timing leaks which too are easy to use to obtain the same
 information. These are primarily in OpenSSH and in the system libraries
