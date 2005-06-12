@@ -1,6 +1,2 @@
-* Migrate FAQ
-* Migrate directive list
-* Link in user guide 
-* Create CVS howto
-* lists: add more space between lists
-* update features.epl
+* Need better build system for pdd-hosted docs; perhaps integrate it with
+  the web site build system (FAQ, directive list, user guide)
