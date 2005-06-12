@@ -12,25 +12,29 @@ as quickly as possible)</p>
 
 <ul>
   <li>Directives list 
-  <ul>
-      <li><a href="/docs/directives/linked/by-name.html">by name</a></li>
-      <li><a href="/docs/directives/linked/by-modules.html">by module</a></li>
-      <li><a href="/docs/directives/linked/by-context.html">by context</a></li>
-      <li>single file 
-          <a href="/docs/directives/configuration_full.html">html</a> / 
-          <a href="/docs/directives/configuration.pdf">pdf</a> / 
-          <a href="/docs/directives/configuration.ps">ps</a></li>
-  </ul>
+      <ul>
+        <li><a href="/docs/directives/linked/by-name.html">by name</a></li>
+        <li><a href="/docs/directives/linked/by-modules.html">by module</a></li>
+        <li><a href="/docs/directives/linked/by-context.html">by context</a></li>
+        <li>single file 
+            <a href="/docs/directives/configuration_full.html">html</a> / 
+            <a href="/docs/directives/configuration.pdf">pdf</a> / 
+            <a href="/docs/directives/configuration.ps">ps</a>
+        </li>
+    </ul>
+  </li>
   <li>Frequently Asked Questions (<em>Updated 19/Oct/2002</em>)
-    <li>(See Also: <code>doc/</code> directory of the source distribution)
-    (<a href="/docs/faq/linked/faq.html">linked html</a>)
-    (<a href="/docs/faq/faq_full.html">single html</a>)
-    (<a href="/docs/faq/faq.ps">ps</a>)
-    (<a href="/docs/faq/faq.pdf">pdf</a>)
-    <li><a href="/cvs.html">CVS Howto and FAQ</a></li>
-    <li><a href="http://www.castaglia.org/proftpd/doc/devel-guide/">ProFTPD Developer's Guide</a> (by TJ Saunders)</li>
-    <li><a href="http://www.castaglia.org/proftpd/doc/contrib/ProFTPD-mini-HOWTO-NAT.html">Configuring ProFTPD and NAT</a> (by Tobias Ekbom)</li>
-    <li><a href="http://www.castaglia.org/proftpd/doc/contrib/ProFTPD-mini-HOWTO-SSH.html">Configuring FTP over SSH</a> (by TJ Saunders)</li>
+      <a href="/docs/faq/linked/faq.html">linked html</a> /
+      <a href="/docs/faq/faq_full.html">single html</a> /
+      <a href="/docs/faq/faq.ps">ps</a> /
+      <a href="/docs/faq/faq.pdf">pdf</a>
+      <br />
+      (See Also: <code>doc/</code> directory of the source distribution)
+  </li>
+  <li><a href="/cvs.html">CVS Howto and FAQ</a></li>
+  <li><a href="http://www.castaglia.org/proftpd/doc/devel-guide/">ProFTPD Developer's Guide</a> (by TJ Saunders)</li>
+  <li><a href="http://www.castaglia.org/proftpd/doc/contrib/ProFTPD-mini-HOWTO-NAT.html">Configuring ProFTPD and NAT</a> (by Tobias Ekbom)</li>
+  <li><a href="http://www.castaglia.org/proftpd/doc/contrib/ProFTPD-mini-HOWTO-SSH.html">Configuring FTP over SSH</a> (by TJ Saunders)</li>
 </ul>
 
 <h1>Other sites</h1>

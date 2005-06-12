@@ -86,28 +86,28 @@ for allowing themselves to be listed.</p>
       Spanish Linux Users' Group
   </li>
 
-  <li><a href="ftp://ftp.leo.org/">LEO - Link Everything Online - TU Munich</A>
+  <li><a href="ftp://ftp.leo.org/">LEO - Link Everything Online - TU Munich</a>
       Large (450GB) software archive hosting many mirrors of major projects
       like FreeBSD or kernel.org and our own collections for selected topics
       (e.g. OS/2). Pushing 10mbit/s average.
   </li>
 
-  <li><a href="http://www.swebase.com/">Swebase AB, Sweden</A>
+  <li><a href="http://www.swebase.com/">Swebase AB, Sweden</a>
       Swebase are running ProFTPD on a number of BSD servers each hosting 200+
       domains
   </li>
 
-  <li><A href="http://www.cslab.vt.edu/">Virginia Tech Computer Science Lab</A>
+  <li><a href="http://www.cslab.vt.edu/">Virginia Tech Computer Science Lab</a>
       This site uses ProFTPD to host a mirrors site shifting over
       250Gb of data monthly.
   </li>
 
-  <li><A href="http://www.subspacenet.com/">SubspaceNet</A>
+  <li><a href="http://www.subspacenet.com/">SubspaceNet</a>
       Low-cost professional web hosting with 24/7 FTP site access via
       ProFTPD
   </li>
 
-  <li><A href="http://www.liquidneon.com/">Liquidneon.com</A>
+  <li><a href="http://www.liquidneon.com/">Liquidneon.com</a>
       Offers a wide range of webhosting, dedicated hosting, and
       colocation services, running exclusively FreeBSD and OpenBSD.
   </li>
