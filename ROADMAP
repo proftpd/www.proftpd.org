@@ -9,6 +9,7 @@ C = Committed
         #2052 - ProFTPD "ununsed parameters" cleanup
         #2062 - Enhance UserOwner/GroupOwner to take IDs as well as name
                 parameters
+        #2067 - Allow/Deny Filters should be supported in the <Limit> context
         #2599 - Support for using OpenSSL "engines"
         #2610 - Support for logging to /var/log/lastlog
         #2626 - "ERROR" macro collision can cause compiler errors on HP-UX.
