@@ -542,5 +542,16 @@
 
 					Maintained by: Paul Engelen<br />
 			</p>
+	<p>
+		<a href="http://www27.us.proftpd.org">http://www27.us.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.mirror.wrpn.net/">http://proftpd.mirror.wrpn.net/</a>
+		<br />
+
+		Location: United states					(Columbus, Ohio)
+				<br />
+
+					Maintained by: Wesley Haines<br />
+			</p>
 
 #include "footer.epl"

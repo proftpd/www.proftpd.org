@@ -12,47 +12,44 @@
     volunteer to be a mirror site, please read the
 	<a href="/howtomirror.html">Mirroring HOWTO</A> page.</p>
 
-    <p align="center">The latest version of ProFTPD is
-    <strong><: print $proftpd_version :></strong>.</p>
-
 <div align="center">
 
 
-	<a href="http://www.am.proftpd.org/">am</a>
-	<a href="http://www.at.proftpd.org/">at</a>
-	<a href="http://www.au.proftpd.org/">au</a>
-	<a href="http://www.be.proftpd.org/">be</a>
-	<a href="http://www.bg.proftpd.org/">bg</a>
-	<a href="http://www.ca.proftpd.org/">ca</a>
-	<a href="http://www.ch.proftpd.org/">ch</a>
-	<a href="http://www.cn.proftpd.org/">cn</a>
-	<a href="http://www.cz.proftpd.org/">cz</a>
-	<a href="http://www.de.proftpd.org/">de</a>
-	<a href="http://www.dk.proftpd.org/">dk</a>
-	<a href="http://www.ee.proftpd.org/">ee</a>
-	<a href="http://www.es.proftpd.org/">es</a>
-	<a href="http://www.fr.proftpd.org/">fr</a>
-	<a href="http://www.hu.proftpd.org/">hu</a>
-	<a href="http://www.id.proftpd.org/">id</a>
-	<a href="http://www.ie.proftpd.org/">ie</a>
-	<a href="http://www.jp.proftpd.org/">jp</a>
-	<a href="http://www.kr.proftpd.org/">kr</a>
-	<a href="http://www.lu.proftpd.org/">lu</a>
-	<a href="http://www.nl.proftpd.org/">nl</a>
-	<a href="http://www.no.proftpd.org/">no</a>
-	<a href="http://www.pl.proftpd.org/">pl</a>
-	<a href="http://www.pt.proftpd.org/">pt</a>
-	<a href="http://www.ro.proftpd.org/">ro</a>
-	<a href="http://www.ru.proftpd.org/">ru</a>
-	<a href="http://www.se.proftpd.org/">se</a>
-	<a href="http://www.sg.proftpd.org/">sg</a>
-	<a href="http://www.si.proftpd.org/">si</a>
-	<a href="http://www.sk.proftpd.org/">sk</a>
-	<a href="http://www.tr.proftpd.org/">tr</a>
-	<a href="http://www.tw.proftpd.org/">tw</a>
-	<a href="http://www.ua.proftpd.org/">ua</a>
-	<a href="http://www.uk.proftpd.org/">uk</a>
-	<a href="http://www.us.proftpd.org/">us</a>
+	<a href="ftp://ftp.am.proftpd.org/">am</a>
+	<a href="ftp://ftp.at.proftpd.org/">at</a>
+	<a href="ftp://ftp.au.proftpd.org/">au</a>
+	<a href="ftp://ftp.be.proftpd.org/">be</a>
+	<a href="ftp://ftp.bg.proftpd.org/">bg</a>
+	<a href="ftp://ftp.ca.proftpd.org/">ca</a>
+	<a href="ftp://ftp.ch.proftpd.org/">ch</a>
+	<a href="ftp://ftp.cn.proftpd.org/">cn</a>
+	<a href="ftp://ftp.cz.proftpd.org/">cz</a>
+	<a href="ftp://ftp.de.proftpd.org/">de</a>
+	<a href="ftp://ftp.dk.proftpd.org/">dk</a>
+	<a href="ftp://ftp.ee.proftpd.org/">ee</a>
+	<a href="ftp://ftp.es.proftpd.org/">es</a>
+	<a href="ftp://ftp.fr.proftpd.org/">fr</a>
+	<a href="ftp://ftp.hu.proftpd.org/">hu</a>
+	<a href="ftp://ftp.id.proftpd.org/">id</a>
+	<a href="ftp://ftp.ie.proftpd.org/">ie</a>
+	<a href="ftp://ftp.jp.proftpd.org/">jp</a>
+	<a href="ftp://ftp.kr.proftpd.org/">kr</a>
+	<a href="ftp://ftp.lu.proftpd.org/">lu</a>
+	<a href="ftp://ftp.nl.proftpd.org/">nl</a>
+	<a href="ftp://ftp.no.proftpd.org/">no</a>
+	<a href="ftp://ftp.pl.proftpd.org/">pl</a>
+	<a href="ftp://ftp.pt.proftpd.org/">pt</a>
+	<a href="ftp://ftp.ro.proftpd.org/">ro</a>
+	<a href="ftp://ftp.ru.proftpd.org/">ru</a>
+	<a href="ftp://ftp.se.proftpd.org/">se</a>
+	<a href="ftp://ftp.sg.proftpd.org/">sg</a>
+	<a href="ftp://ftp.si.proftpd.org/">si</a>
+	<a href="ftp://ftp.sk.proftpd.org/">sk</a>
+	<a href="ftp://ftp.tr.proftpd.org/">tr</a>
+	<a href="ftp://ftp.tw.proftpd.org/">tw</a>
+	<a href="ftp://ftp.ua.proftpd.org/">ua</a>
+	<a href="ftp://ftp.uk.proftpd.org/">uk</a>
+	<a href="ftp://ftp.us.proftpd.org/">us</a>
 
 </div>
 <hr />
@@ -822,7 +819,7 @@
 	<p>
 		<a href="ftp://ftp2.au.proftpd.org">ftp://ftp2.au.proftpd.org/</a>
         <br />
-		<a href="ftp://proftpd.dknss.com/">ftp://proftpd.dknss.com/</a>
+		<a href="ftp://proftpd.dknss.com/pub/proftpd/">ftp://proftpd.dknss.com/pub/proftpd/</a>
 		<br />
 
 		Location: Australia					(Gosford)
@@ -840,6 +837,17 @@
 				<br />
 
 					Maintained by: Marius van Witzenburg<br />
+			</p>
+	<p>
+		<a href="ftp://ftp25.us.proftpd.org">ftp://ftp25.us.proftpd.org/</a>
+        <br />
+		<a href="ftp://mirror.wrpn.net/proftpd/">ftp://mirror.wrpn.net/proftpd/</a>
+		<br />
+
+		Location: United states					(Columbus, Ohio)
+				<br />
+
+					Maintained by: Wesley Haines<br />
 			</p>
 
 #include "footer.epl"
