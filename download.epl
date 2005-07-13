@@ -30,7 +30,6 @@
 	<a href="ftp://ftp.hu.proftpd.org/">hu</a>
 	<a href="ftp://ftp.id.proftpd.org/">id</a>
 	<a href="ftp://ftp.ie.proftpd.org/">ie</a>
-	<a href="ftp://ftp.it.proftpd.org/">it</a>
 	<a href="ftp://ftp.jp.proftpd.org/">jp</a>
 	<a href="ftp://ftp.nl.proftpd.org/">nl</a>
 	<a href="ftp://ftp.no.proftpd.org/">no</a>
@@ -639,15 +638,15 @@
 					Maintained by: Svenska Linuxföreningens driftgrupp<br />
 			</p>
 	<p>
-		<a href="ftp://ftp2.it.proftpd.org">ftp://ftp2.it.proftpd.org/</a>
+		<a href="ftp://ftp3.tw.proftpd.org">ftp://ftp3.tw.proftpd.org/</a>
         <br />
-		<a href="ftp://ftp.web-spread.com/pub/proftpd/">ftp://ftp.web-spread.com/pub/proftpd/</a>
+		<a href="ftp://ftp.ntu.edu.tw/proftpd/">ftp://ftp.ntu.edu.tw/proftpd/</a>
 		<br />
 
-		Location: Italy					(Rome, Lazio, Italy, Europe)
+		Location: Taiwan					(National Taiwan University)
 				<br />
 
-					Maintained by: Fabio<br />
+					Maintained by: Rong-En Fan<br />
 			</p>
 
 #include "footer.epl"

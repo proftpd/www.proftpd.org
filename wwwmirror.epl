@@ -43,7 +43,6 @@
 	<a href="http://www.pl.proftpd.org/">pl</a>
 	<a href="http://www.pt.proftpd.org/">pt</a>
 	<a href="http://www.ro.proftpd.org/">ro</a>
-	<a href="http://www.ru.proftpd.org/">ru</a>
 	<a href="http://www.se.proftpd.org/">se</a>
 	<a href="http://www.sg.proftpd.org/">sg</a>
 	<a href="http://www.tw.proftpd.org/">tw</a>
@@ -108,17 +107,6 @@
 				<br />
 
 					Maintained by: Peter Batenburg<br />
-			</p>
-	<p>
-		<a href="http://www1.ru.proftpd.org">http://www1.ru.proftpd.org/</a>
-        <br />
-		<a href="http://lich.phys.spbu.ru/">http://lich.phys.spbu.ru/</a>
-		<br />
-
-		Location: Russian federation					(St.Petersburg)
-				<br />
-
-					Maintained by: Dima Veselov<br />
 			</p>
 	<p>
 		<a href="http://www1.sg.proftpd.org">http://www1.sg.proftpd.org/</a>
@@ -459,27 +447,6 @@
 					Maintained by: Marius van Witzenburg<br />
 			</p>
 	<p>
-		<a href="http://www2.ro.proftpd.org">http://www2.ro.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.darcompany.net/">http://proftpd.darcompany.net/</a>
-		<br />
-
-		Location: Romaina					(Cluj, Campia Turzii)
-				<br />
-
-					Maintained by: Doru Popa<br />
-			</p>
-	<p>
-		<a href="http://www5.uk.proftpd.org">http://www5.uk.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.thedigitaldream.co.uk/">http://proftpd.thedigitaldream.co.uk/</a>
-		<br />
-
-		Location: United kingdom				<br />
-
-					Maintained by: Matthew Jones<br />
-			</p>
-	<p>
 		<a href="http://www2.pt.proftpd.org">http://www2.pt.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.zarco.org/">http://proftpd.zarco.org/</a>
@@ -511,15 +478,6 @@
 				<br />
 
 					Maintained by: Roberto Leandrini<br />
-			</p>
-	<p>
-		<a href="http://www25.us.proftpd.org">http://www25.us.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.mirror99.com/">http://proftpd.mirror99.com/</a>
-		<br />
-
-		Location: United states				<br />
-
 			</p>
 	<p>
 		<a href="http://www4.nl.proftpd.org">http://www4.nl.proftpd.org/</a>
