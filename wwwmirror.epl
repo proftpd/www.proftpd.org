@@ -38,7 +38,6 @@
 	<a href="http://www.id.proftpd.org/">id</a>
 	<a href="http://www.ie.proftpd.org/">ie</a>
 	<a href="http://www.it.proftpd.org/">it</a>
-	<a href="http://www.lv.proftpd.org/">lv</a>
 	<a href="http://www.nl.proftpd.org/">nl</a>
 	<a href="http://www.pl.proftpd.org/">pl</a>
 	<a href="http://www.pt.proftpd.org/">pt</a>
@@ -183,17 +182,6 @@
 				<br />
 
 					Maintained by: NOC<br />
-			</p>
-	<p>
-		<a href="http://www1.lv.proftpd.org">http://www1.lv.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.ogreland.lv/">http://proftpd.ogreland.lv/</a>
-		<br />
-
-		Location: Latvia					(Ogre, Latvia)
-				<br />
-
-					Maintained by: core<br />
 			</p>
 	<p>
 		<a href="http://www1.bg.proftpd.org">http://www1.bg.proftpd.org/</a>
@@ -349,17 +337,6 @@
 					Maintained by: Escario Julien<br />
 			</p>
 	<p>
-		<a href="http://www1.tw.proftpd.org">http://www1.tw.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.cna.isu.edu.tw/">http://proftpd.cna.isu.edu.tw/</a>
-		<br />
-
-		Location: Taiwan					(I-SHOU University (TW, Kaohsiung))
-				<br />
-
-					Maintained by: KTH<br />
-			</p>
-	<p>
 		<a href="http://www21.us.proftpd.org">http://www21.us.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.sourwood.net/">http://proftpd.sourwood.net/</a>
@@ -500,6 +477,17 @@
 				<br />
 
 					Maintained by: Wesley Haines<br />
+			</p>
+	<p>
+		<a href="http://www7.fr.proftpd.org">http://www7.fr.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.psinformatique.net">http://proftpd.psinformatique.net</a>
+		<br />
+
+		Location: France					(france)
+				<br />
+
+					Maintained by: Pascal<br />
 			</p>
 
 #include "footer.epl"

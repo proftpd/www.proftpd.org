@@ -325,16 +325,6 @@
 					Maintained by: Alexander Ryumshin<br />
 			</p>
 	<p>
-		<a href="ftp://ftp2.uk.proftpd.org">ftp://ftp2.uk.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.ccp14.ac.uk/ccp14/ftp-mirror/programming/proftpd/">ftp://ftp.ccp14.ac.uk/ccp14/ftp-mirror/programming/proftpd/</a>
-		<br />
-
-		Location: United kingdom				<br />
-
-					Maintained by: Lachlan Cranswick<br />
-			</p>
-	<p>
 		<a href="ftp://ftp8.pl.proftpd.org">ftp://ftp8.pl.proftpd.org/</a>
         <br />
 		<a href="ftp://ftp.tpnet.pl/d1/proftpd/">ftp://ftp.tpnet.pl/d1/proftpd/</a>
@@ -647,6 +637,17 @@
 				<br />
 
 					Maintained by: Rong-En Fan<br />
+			</p>
+	<p>
+		<a href="ftp://ftp13.de.proftpd.org">ftp://ftp13.de.proftpd.org/</a>
+        <br />
+		<a href="ftp://ftp.fu-berlin.de/unix/ftp/proftpd/">ftp://ftp.fu-berlin.de/unix/ftp/proftpd/</a>
+		<br />
+
+		Location: Germany					(Berlin, Germany)
+				<br />
+
+					Maintained by: Holger Weiss<br />
 			</p>
 
 #include "footer.epl"
