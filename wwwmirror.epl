@@ -25,6 +25,7 @@
 
 
 	<a href="http://www.am.proftpd.org/">am</a>
+	<a href="http://www.ar.proftpd.org/">ar</a>
 	<a href="http://www.at.proftpd.org/">at</a>
 	<a href="http://www.au.proftpd.org/">au</a>
 	<a href="http://www.be.proftpd.org/">be</a>
@@ -488,6 +489,17 @@
 				<br />
 
 					Maintained by: Pascal<br />
+			</p>
+	<p>
+		<a href="http://www1.ar.proftpd.org">http://www1.ar.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.adcserver.com.ar/">http://proftpd.adcserver.com.ar/</a>
+		<br />
+
+		Location: Argentina					(Ciudad de Buenos Aires, República Argentina)
+				<br />
+
+					Maintained by: Juan Mateo Cassiet<br />
 			</p>
 
 #include "footer.epl"
