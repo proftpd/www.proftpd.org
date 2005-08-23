@@ -21,7 +21,7 @@
     <p>The countries which have mirrors are listed below. Please use your
     closest geographic mirror to conserve bandwidth.</p>
 
-<div align="center">
+<div style="text-align: center;">
 
 
 	<a href="http://www.am.proftpd.org/">am</a>
@@ -172,17 +172,6 @@
 				<br />
 
 					Maintained by: Asfihani<br />
-			</p>
-	<p>
-		<a href="http://www3.fr.proftpd.org">http://www3.fr.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.numericable.fr/">http://proftpd.numericable.fr/</a>
-		<br />
-
-		Location: France					(FR, Paris)
-				<br />
-
-					Maintained by: NOC<br />
 			</p>
 	<p>
 		<a href="http://www1.bg.proftpd.org">http://www1.bg.proftpd.org/</a>
@@ -500,6 +489,28 @@
 				<br />
 
 					Maintained by: Juan Mateo Cassiet<br />
+			</p>
+	<p>
+		<a href="http://www2.BE.proftpd.org">http://www2.BE.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.easyhost.be/">http://proftpd.easyhost.be/</a>
+		<br />
+
+		Location: Belgium					(Belgium)
+				<br />
+
+					Maintained by: EasyHost<br />
+			</p>
+	<p>
+		<a href="http://www4.it.proftpd.org">http://www4.it.proftpd.org/</a>
+        <br />
+		<a href="http://www.proftpd.topnet.it/">http://www.proftpd.topnet.it/</a>
+		<br />
+
+		Location: Italy					(Rome)
+				<br />
+
+					Maintained by: Antonio Prado<br />
 			</p>
 
 #include "footer.epl"
