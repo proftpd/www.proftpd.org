@@ -608,6 +608,17 @@
 					Maintained by: Wesley Haines<br />
 			</p>
 	<p>
+		<a href="ftp://ftp4.se.proftpd.org">ftp://ftp4.se.proftpd.org/</a>
+        <br />
+		<a href="ftp://ftp.se.linux.org/pub/network/proftpd/">ftp://ftp.se.linux.org/pub/network/proftpd/</a>
+		<br />
+
+		Location: Sweden					(G&auml;vle, Sweden)
+				<br />
+
+					Maintained by: Svenska Linuxf&ouml;reningens driftgrupp<br />
+			</p>
+	<p>
 		<a href="ftp://ftp3.tw.proftpd.org">ftp://ftp3.tw.proftpd.org/</a>
         <br />
 		<a href="ftp://ftp.ntu.edu.tw/proftpd/">ftp://ftp.ntu.edu.tw/proftpd/</a>
@@ -630,20 +641,9 @@
 					Maintained by: Holger Weiss<br />
 			</p>
 	<p>
-		<a href="ftp://ftp3.BE.proftpd.org">ftp://ftp3.BE.proftpd.org/</a>
-        <br />
-		<a href="ftp://proftpd.easyhost.be/">ftp://proftpd.easyhost.be/</a>
-		<br />
-
-		Location: Belgium					(Belgium)
-				<br />
-
-					Maintained by: EasyHost<br />
-			</p>
-	<p>
 		<a href="ftp://ftp3.it.proftpd.org">ftp://ftp3.it.proftpd.org/</a>
         <br />
-		<a href="ftp://www.proftpd.topnet.it/">ftp://www.proftpd.topnet.it/</a>
+		<a href="ftp://www.proftpd.topnet.it/pub/mirror/proftpd/">ftp://www.proftpd.topnet.it/pub/mirror/proftpd/</a>
 		<br />
 
 		Location: Italy					(Rome)

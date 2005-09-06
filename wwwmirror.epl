@@ -491,17 +491,6 @@
 					Maintained by: Juan Mateo Cassiet<br />
 			</p>
 	<p>
-		<a href="http://www2.BE.proftpd.org">http://www2.BE.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.easyhost.be/">http://proftpd.easyhost.be/</a>
-		<br />
-
-		Location: Belgium					(Belgium)
-				<br />
-
-					Maintained by: EasyHost<br />
-			</p>
-	<p>
 		<a href="http://www4.it.proftpd.org">http://www4.it.proftpd.org/</a>
         <br />
 		<a href="http://www.proftpd.topnet.it/">http://www.proftpd.topnet.it/</a>
@@ -511,6 +500,17 @@
 				<br />
 
 					Maintained by: Antonio Prado<br />
+			</p>
+	<p>
+		<a href="http://www7.NL.proftpd.org">http://www7.NL.proftpd.org/</a>
+        <br />
+		<a href="http://80.84.226.226/">http://80.84.226.226/</a>
+		<br />
+
+		Location: Netherlands					(Amsterdam)
+				<br />
+
+					Maintained by: E. van Harten<br />
 			</p>
 
 #include "footer.epl"
