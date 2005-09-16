@@ -38,6 +38,7 @@
 	<a href="http://www.hk.proftpd.org/">hk</a>
 	<a href="http://www.id.proftpd.org/">id</a>
 	<a href="http://www.ie.proftpd.org/">ie</a>
+	<a href="http://www.il.proftpd.org/">il</a>
 	<a href="http://www.it.proftpd.org/">it</a>
 	<a href="http://www.nl.proftpd.org/">nl</a>
 	<a href="http://www.pl.proftpd.org/">pl</a>
@@ -502,15 +503,37 @@
 					Maintained by: Antonio Prado<br />
 			</p>
 	<p>
+		<a href="http://www1.il.proftpd.org">http://www1.il.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.spd.co.il/">http://proftpd.spd.co.il/</a>
+		<br />
+
+		Location: Israel					(Israel)
+				<br />
+
+					Maintained by: Avi hirsh<br />
+			</p>
+	<p>
 		<a href="http://www7.NL.proftpd.org">http://www7.NL.proftpd.org/</a>
         <br />
-		<a href="http://80.84.226.226/">http://80.84.226.226/</a>
+		<a href="http://proftpd.mirror.surfnow.nl/">http://proftpd.mirror.surfnow.nl/</a>
 		<br />
 
 		Location: Netherlands					(Amsterdam)
 				<br />
 
 					Maintained by: E. van Harten<br />
+			</p>
+	<p>
+		<a href="http://www2.ID.proftpd.org">http://www2.ID.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.ugm.ac.id">http://proftpd.ugm.ac.id</a>
+		<br />
+
+		Location: Indonesia					(Yogyakarta)
+				<br />
+
+					Maintained by: Taufik Suryawan Edyna<br />
 			</p>
 
 #include "footer.epl"

@@ -651,5 +651,16 @@
 
 					Maintained by: Antonio Prado<br />
 			</p>
+	<p>
+		<a href="ftp://ftp2.id.proftpd.org">ftp://ftp2.id.proftpd.org/</a>
+        <br />
+		<a href="ftp://info.ugm.ac.id/proftpd/">ftp://info.ugm.ac.id/proftpd/</a>
+		<br />
+
+		Location: Indonesia					(Yogyakarta)
+				<br />
+
+					Maintained by: Taufik Suryawan Edyna<br />
+			</p>
 
 #include "footer.epl"
