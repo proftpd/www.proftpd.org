@@ -46,6 +46,7 @@
 	<a href="http://www.ro.proftpd.org/">ro</a>
 	<a href="http://www.se.proftpd.org/">se</a>
 	<a href="http://www.sg.proftpd.org/">sg</a>
+	<a href="http://www.tr.proftpd.org/">tr</a>
 	<a href="http://www.tw.proftpd.org/">tw</a>
 	<a href="http://www.ua.proftpd.org/">ua</a>
 	<a href="http://www.uk.proftpd.org/">uk</a>
@@ -534,6 +535,17 @@
 				<br />
 
 					Maintained by: Taufik Suryawan Edyna<br />
+			</p>
+	<p>
+		<a href="http://www1.tr.proftpd.org">http://www1.tr.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.internetsepeti.com/">http://proftpd.internetsepeti.com/</a>
+		<br />
+
+		Location: Turkey					(Istanbul/TURKEY)
+				<br />
+
+					Maintained by: Ugur GUNCER<br />
 			</p>
 
 #include "footer.epl"

@@ -662,5 +662,16 @@
 
 					Maintained by: Taufik Suryawan Edyna<br />
 			</p>
+	<p>
+		<a href="ftp://ftp4.it.proftpd.org">ftp://ftp4.it.proftpd.org/</a>
+        <br />
+		<a href="ftp://82.106.9.62/proftpd/">ftp://82.106.9.62/proftpd/</a>
+		<br />
+
+		Location: Italy					(italy)
+				<br />
+
+					Maintained by: psycheye<br />
+			</p>
 
 #include "footer.epl"
