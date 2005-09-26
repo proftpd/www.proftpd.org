@@ -30,6 +30,7 @@
 	<a href="http://www.au.proftpd.org/">au</a>
 	<a href="http://www.be.proftpd.org/">be</a>
 	<a href="http://www.bg.proftpd.org/">bg</a>
+	<a href="http://www.br.proftpd.org/">br</a>
 	<a href="http://www.ch.proftpd.org/">ch</a>
 	<a href="http://www.cn.proftpd.org/">cn</a>
 	<a href="http://www.de.proftpd.org/">de</a>
@@ -546,6 +547,17 @@
 				<br />
 
 					Maintained by: Ugur GUNCER<br />
+			</p>
+	<p>
+		<a href="http://www2.br.proftpd.org">http://www2.br.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.ehdbrasil.net">http://proftpd.ehdbrasil.net</a>
+		<br />
+
+		Location: Brazil					(Brazil)
+				<br />
+
+					Maintained by: Diego Silva<br />
 			</p>
 
 #include "footer.epl"
