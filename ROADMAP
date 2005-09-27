@@ -16,10 +16,14 @@ C = Committed
         #2626 - "ERROR" macro collision can cause compiler errors on HP-UX.
 	#2627 - Support for RADIUS quotatab module
         #2628 - SQLHomedirOnDemand should be deprecated
-	#2651 - LogFormat should support variable for logging the response
+        #2651 - LogFormat should support variable for logging the response
                 message
+        #2654 - FEAT command should be subject to <Limit>
+        #2664 - Add 'delay info' ftpdctl action for showing DelayTable values
+        #2686 - Allow CCC command but still require SSL/TLS protection during
+                authentication
 
 TBD
-	Add mod_shaper, mod_md5, mod_wrap-2.0 modules to contrib/
+	Add mod_ban, mod_shaper, mod_md5, mod_wrap-2.0 modules to contrib/
 	#2368 - Allow contrib modules to extend mod_sql's SQLAuthTypes
         #2013 - Track RFC2228 sessions in scoreboard
