@@ -47,6 +47,7 @@
 	<a href="http://www.ro.proftpd.org/">ro</a>
 	<a href="http://www.se.proftpd.org/">se</a>
 	<a href="http://www.sg.proftpd.org/">sg</a>
+	<a href="http://www.SK.proftpd.org/">SK</a>
 	<a href="http://www.tr.proftpd.org/">tr</a>
 	<a href="http://www.tw.proftpd.org/">tw</a>
 	<a href="http://www.ua.proftpd.org/">ua</a>
@@ -219,17 +220,6 @@
 				<br />
 
 					Maintained by: pyjamas<br />
-			</p>
-	<p>
-		<a href="http://www3.nl.proftpd.org">http://www3.nl.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.mirrors.softdev.nl/">http://proftpd.mirrors.softdev.nl/</a>
-		<br />
-
-		Location: Netherlands					(Netherlands, Amsterdam)
-				<br />
-
-					Maintained by: Richard Pijnenburg<br />
 			</p>
 	<p>
 		<a href="http://www1.be.proftpd.org">http://www1.be.proftpd.org/</a>
@@ -558,6 +548,17 @@
 				<br />
 
 					Maintained by: Diego Silva<br />
+			</p>
+	<p>
+		<a href="http://www1.SK.proftpd.org">http://www1.SK.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.x86.sk/">http://proftpd.x86.sk/</a>
+		<br />
+
+		Location: Slovakia (slovak republic)					(Slovakia)
+				<br />
+
+					Maintained by: Jakub Cerveny<br />
 			</p>
 
 #include "footer.epl"

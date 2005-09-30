@@ -37,7 +37,6 @@
 	<a href="ftp://ftp.pl.proftpd.org/">pl</a>
 	<a href="ftp://ftp.pt.proftpd.org/">pt</a>
 	<a href="ftp://ftp.ro.proftpd.org/">ro</a>
-	<a href="ftp://ftp.ru.proftpd.org/">ru</a>
 	<a href="ftp://ftp.se.proftpd.org/">se</a>
 	<a href="ftp://ftp.sg.proftpd.org/">sg</a>
 	<a href="ftp://ftp.sk.proftpd.org/">sk</a>
@@ -182,17 +181,6 @@
 					Maintained by: Attila Nagy<br />
 			</p>
 	<p>
-		<a href="ftp://ftp3.nl.proftpd.org">ftp://ftp3.nl.proftpd.org/</a>
-        <br />
-		<a href="ftp://proftpd.mirrors.softdev.nl/proftpd/">ftp://proftpd.mirrors.softdev.nl/proftpd/</a>
-		<br />
-
-		Location: Netherlands					(Netherlands, Amsterdam)
-				<br />
-
-					Maintained by: Richard Pijnenburg<br />
-			</p>
-	<p>
 		<a href="ftp://ftp1.nl.proftpd.org">ftp://ftp1.nl.proftpd.org/</a>
         <br />
 		<a href="ftp://ftp.nl.uu.net/pub/unix/ftp/proftpd/ftp/">ftp://ftp.nl.uu.net/pub/unix/ftp/proftpd/ftp/</a>
@@ -253,16 +241,6 @@
 		Location: Poland				<br />
 
 					Maintained by: Wojtek Sylwestrzak<br />
-			</p>
-	<p>
-		<a href="ftp://ftp1.ru.proftpd.org">ftp://ftp1.ru.proftpd.org/</a>
-        <br />
-		<a href="ftp://lich.phys.spbu.ru/mirrors/proftpd.org/">ftp://lich.phys.spbu.ru/mirrors/proftpd.org/</a>
-		<br />
-
-		Location: Russian federation				<br />
-
-					Maintained by: Dima Veselov<br />
 			</p>
 	<p>
 		<a href="ftp://ftp1.se.proftpd.org">ftp://ftp1.se.proftpd.org/</a>
@@ -431,17 +409,6 @@
 		Location: Romaina				<br />
 
 					Maintained by: SUBREDU Manuel<br />
-			</p>
-	<p>
-		<a href="ftp://ftp3.ro.proftpd.org">ftp://ftp3.ro.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.craiova.roedu.net/pub/mirrors/ftp.proftpd.org/">ftp://ftp.craiova.roedu.net/pub/mirrors/ftp.proftpd.org/</a>
-		<br />
-
-		Location: Romaina					(Craiova, Romania)
-				<br />
-
-					Maintained by: Gabriel Toma-Tumbar<br />
 			</p>
 	<p>
 		<a href="ftp://ftp5.uk.proftpd.org">ftp://ftp5.uk.proftpd.org/</a>
@@ -663,15 +630,15 @@
 					Maintained by: Taufik Suryawan Edyna<br />
 			</p>
 	<p>
-		<a href="ftp://ftp4.it.proftpd.org">ftp://ftp4.it.proftpd.org/</a>
+		<a href="ftp://ftp2.sk.proftpd.org">ftp://ftp2.sk.proftpd.org/</a>
         <br />
-		<a href="ftp://82.106.9.62/proftpd/">ftp://82.106.9.62/proftpd/</a>
+		<a href="ftp://proftpd.x86.sk/">ftp://proftpd.x86.sk/</a>
 		<br />
 
-		Location: Italy					(italy)
+		Location: Slovakia (slovak republic)					(Slovakia)
 				<br />
 
-					Maintained by: psycheye<br />
+					Maintained by: Jakub Cerveny<br />
 			</p>
 
 #include "footer.epl"
