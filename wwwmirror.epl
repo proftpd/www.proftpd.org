@@ -49,7 +49,6 @@
 	<a href="http://www.sg.proftpd.org/">sg</a>
 	<a href="http://www.SK.proftpd.org/">SK</a>
 	<a href="http://www.tr.proftpd.org/">tr</a>
-	<a href="http://www.tw.proftpd.org/">tw</a>
 	<a href="http://www.ua.proftpd.org/">ua</a>
 	<a href="http://www.uk.proftpd.org/">uk</a>
 	<a href="http://www.us.proftpd.org/">us</a>
@@ -383,17 +382,6 @@
 				<br />
 
 					Maintained by: Liu Kang<br />
-			</p>
-	<p>
-		<a href="http://www2.tw.proftpd.org">http://www2.tw.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.chu.edu.tw/">http://proftpd.chu.edu.tw/</a>
-		<br />
-
-		Location: Taiwan					(Chung Hua University, Hsinchu, Taiwan,R.O.C.)
-				<br />
-
-					Maintained by: PE2500<br />
 			</p>
 	<p>
 		<a href="http://www5.nl.proftpd.org">http://www5.nl.proftpd.org/</a>
