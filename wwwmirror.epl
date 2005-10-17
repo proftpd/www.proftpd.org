@@ -47,7 +47,7 @@
 	<a href="http://www.ro.proftpd.org/">ro</a>
 	<a href="http://www.se.proftpd.org/">se</a>
 	<a href="http://www.sg.proftpd.org/">sg</a>
-	<a href="http://www.SK.proftpd.org/">SK</a>
+	<a href="http://www.sk.proftpd.org/">sk</a>
 	<a href="http://www.tr.proftpd.org/">tr</a>
 	<a href="http://www.ua.proftpd.org/">ua</a>
 	<a href="http://www.uk.proftpd.org/">uk</a>
@@ -494,7 +494,7 @@
 					Maintained by: Avi hirsh<br />
 			</p>
 	<p>
-		<a href="http://www7.NL.proftpd.org">http://www7.NL.proftpd.org/</a>
+		<a href="http://www7.nl.proftpd.org">http://www7.nl.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.mirror.surfnow.nl/">http://proftpd.mirror.surfnow.nl/</a>
 		<br />
@@ -505,7 +505,7 @@
 					Maintained by: E. van Harten<br />
 			</p>
 	<p>
-		<a href="http://www2.ID.proftpd.org">http://www2.ID.proftpd.org/</a>
+		<a href="http://www2.id.proftpd.org">http://www2.id.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.ugm.ac.id">http://proftpd.ugm.ac.id</a>
 		<br />
@@ -538,7 +538,7 @@
 					Maintained by: Diego Silva<br />
 			</p>
 	<p>
-		<a href="http://www1.SK.proftpd.org">http://www1.SK.proftpd.org/</a>
+		<a href="http://www1.sk.proftpd.org">http://www1.sk.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.x86.sk/">http://proftpd.x86.sk/</a>
 		<br />
@@ -547,6 +547,28 @@
 				<br />
 
 					Maintained by: Jakub Cerveny<br />
+			</p>
+	<p>
+		<a href="http://www2.ar.proftpd.org">http://www2.ar.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.localhost.net.ar">http://proftpd.localhost.net.ar</a>
+		<br />
+
+		Location: Argentina					(Capital Federal, Buenos Aires, Argentina)
+				<br />
+
+					Maintained by: Nicolas Sigal<br />
+			</p>
+	<p>
+		<a href="http://www28.us.proftpd.org">http://www28.us.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.hoxt.com">http://proftpd.hoxt.com</a>
+		<br />
+
+		Location: United states					(Florida, US)
+				<br />
+
+					Maintained by: Son Nguyen<br />
 			</p>
 
 #include "footer.epl"
