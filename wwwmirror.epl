@@ -33,6 +33,7 @@
 	<a href="http://www.br.proftpd.org/">br</a>
 	<a href="http://www.ch.proftpd.org/">ch</a>
 	<a href="http://www.cn.proftpd.org/">cn</a>
+	<a href="http://www.cz.proftpd.org/">cz</a>
 	<a href="http://www.de.proftpd.org/">de</a>
 	<a href="http://www.dk.proftpd.org/">dk</a>
 	<a href="http://www.fr.proftpd.org/">fr</a>
@@ -569,6 +570,50 @@
 				<br />
 
 					Maintained by: Son Nguyen<br />
+			</p>
+	<p>
+		<a href="http://www1.cz.proftpd.org">http://www1.cz.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.ni.cz/">http://proftpd.ni.cz/</a>
+		<br />
+
+		Location: Czech republic					(http://proftpd.ni.cz)
+				<br />
+
+					Maintained by: Michal Jursa<br />
+			</p>
+	<p>
+		<a href="http://www2.tr.proftpd.org">http://www2.tr.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.ulak.net.tr/">http://proftpd.ulak.net.tr/</a>
+		<br />
+
+		Location: Turkey					(Ankara)
+				<br />
+
+					Maintained by: Onur BEKTAS<br />
+			</p>
+	<p>
+		<a href="http://www8.nl.proftpd.org">http://www8.nl.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.jlnetworks.co.uk/">http://proftpd.jlnetworks.co.uk/</a>
+		<br />
+
+		Location: Netherlands					(Netherlands)
+				<br />
+
+					Maintained by: James Louthan<br />
+			</p>
+	<p>
+		<a href="http://www29.us.proftpd.org">http://www29.us.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.linuxshop.us/">http://proftpd.linuxshop.us/</a>
+		<br />
+
+		Location: United states					(Clifton, NJ)
+				<br />
+
+					Maintained by: Scott Braynard<br />
 			</p>
 
 #include "footer.epl"

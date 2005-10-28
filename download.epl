@@ -40,6 +40,7 @@
 	<a href="ftp://ftp.se.proftpd.org/">se</a>
 	<a href="ftp://ftp.sg.proftpd.org/">sg</a>
 	<a href="ftp://ftp.sk.proftpd.org/">sk</a>
+	<a href="ftp://ftp.tr.proftpd.org/">tr</a>
 	<a href="ftp://ftp.tw.proftpd.org/">tw</a>
 	<a href="ftp://ftp.ua.proftpd.org/">ua</a>
 	<a href="ftp://ftp.uk.proftpd.org/">uk</a>
@@ -409,6 +410,17 @@
 		Location: Romaina				<br />
 
 					Maintained by: SUBREDU Manuel<br />
+			</p>
+	<p>
+		<a href="ftp://ftp2.tr.proftpd.org">ftp://ftp2.tr.proftpd.org/</a>
+        <br />
+		<a href="ftp://ftp.ulak.net.tr/proftpd">ftp://ftp.ulak.net.tr/proftpd</a>
+		<br />
+
+		Location: Turkey					(Ankara)
+				<br />
+
+					Maintained by: Onur BEKTAS<br />
 			</p>
 	<p>
 		<a href="ftp://ftp5.uk.proftpd.org">ftp://ftp5.uk.proftpd.org/</a>
