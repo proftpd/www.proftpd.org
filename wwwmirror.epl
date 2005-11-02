@@ -45,7 +45,6 @@
 	<a href="http://www.nl.proftpd.org/">nl</a>
 	<a href="http://www.pl.proftpd.org/">pl</a>
 	<a href="http://www.pt.proftpd.org/">pt</a>
-	<a href="http://www.ro.proftpd.org/">ro</a>
 	<a href="http://www.se.proftpd.org/">se</a>
 	<a href="http://www.sg.proftpd.org/">sg</a>
 	<a href="http://www.sk.proftpd.org/">sk</a>
@@ -175,7 +174,7 @@
 		Location: Indonesia					(Jakarta)
 				<br />
 
-					Maintained by: Asfihani<br />
+					Maintained by: Jeffry Antonius<br />
 			</p>
 	<p>
 		<a href="http://www1.bg.proftpd.org">http://www1.bg.proftpd.org/</a>
@@ -285,17 +284,6 @@
 				<br />
 
 					Maintained by: Andrey Lakhno<br />
-			</p>
-	<p>
-		<a href="http://www3.ro.proftpd.org">http://www3.ro.proftpd.org/</a>
-        <br />
-		<a href="http://www.ro.proftpd.org/">http://www.ro.proftpd.org/</a>
-		<br />
-
-		Location: Romaina					(Romania, Iasi)
-				<br />
-
-					Maintained by: Subredu Manuel (FTPAdmin)<br />
 			</p>
 	<p>
 		<a href="http://www4.fr.proftpd.org">http://www4.fr.proftpd.org/</a>
@@ -440,17 +428,6 @@
 					Maintained by: Paul Engelen<br />
 			</p>
 	<p>
-		<a href="http://www27.us.proftpd.org">http://www27.us.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.mirror.wrpn.net/">http://proftpd.mirror.wrpn.net/</a>
-		<br />
-
-		Location: United states					(Columbus, Ohio)
-				<br />
-
-					Maintained by: Wesley Haines<br />
-			</p>
-	<p>
 		<a href="http://www7.fr.proftpd.org">http://www7.fr.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.psinformatique.net">http://proftpd.psinformatique.net</a>
@@ -550,17 +527,6 @@
 					Maintained by: Jakub Cerveny<br />
 			</p>
 	<p>
-		<a href="http://www2.ar.proftpd.org">http://www2.ar.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.localhost.net.ar">http://proftpd.localhost.net.ar</a>
-		<br />
-
-		Location: Argentina					(Capital Federal, Buenos Aires, Argentina)
-				<br />
-
-					Maintained by: Nicolas Sigal<br />
-			</p>
-	<p>
 		<a href="http://www28.us.proftpd.org">http://www28.us.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.hoxt.com">http://proftpd.hoxt.com</a>
@@ -614,6 +580,17 @@
 				<br />
 
 					Maintained by: Scott Braynard<br />
+			</p>
+	<p>
+		<a href="http://www9.nl.proftpd.org">http://www9.nl.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.mirror.jt.org/">http://proftpd.mirror.jt.org/</a>
+		<br />
+
+		Location: Netherlands					(Netherlands)
+				<br />
+
+					Maintained by: Jeremiah Tieman<br />
 			</p>
 
 #include "footer.epl"
