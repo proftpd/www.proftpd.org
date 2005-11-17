@@ -15,7 +15,6 @@
 <div style="text-align: center;">
 
 
-	<a href="ftp://ftp.am.proftpd.org/">am</a>
 	<a href="ftp://ftp.at.proftpd.org/">at</a>
 	<a href="ftp://ftp.au.proftpd.org/">au</a>
 	<a href="ftp://ftp.be.proftpd.org/">be</a>
@@ -508,17 +507,6 @@
 				<br />
 
 					Maintained by: Matt Mozur<br />
-			</p>
-	<p>
-		<a href="ftp://ftp1.am.proftpd.org">ftp://ftp1.am.proftpd.org/</a>
-        <br />
-		<a href="ftp://proftpd.matenadaran.am/">ftp://proftpd.matenadaran.am/</a>
-		<br />
-
-		Location: Armenia					(Yerevan)
-				<br />
-
-					Maintained by: Vahan Yerkanian<br />
 			</p>
 	<p>
 		<a href="ftp://ftp6.uk.proftpd.org">ftp://ftp6.uk.proftpd.org/</a>
