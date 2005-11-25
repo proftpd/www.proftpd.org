@@ -15,6 +15,7 @@
 <div style="text-align: center;">
 
 
+	<a href="ftp://ftp.AR.proftpd.org/">AR</a>
 	<a href="ftp://ftp.at.proftpd.org/">at</a>
 	<a href="ftp://ftp.au.proftpd.org/">au</a>
 	<a href="ftp://ftp.be.proftpd.org/">be</a>
@@ -128,16 +129,6 @@
 		Location: Germany				<br />
 
 					Maintained by: Harald Welte<br />
-			</p>
-	<p>
-		<a href="ftp://ftp7.de.proftpd.org">ftp://ftp7.de.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.uasw.edu/pub/network/proftpd/ftp/">ftp://ftp.uasw.edu/pub/network/proftpd/ftp/</a>
-		<br />
-
-		Location: Germany				<br />
-
-					Maintained by: Thorsten Ludewig<br />
 			</p>
 	<p>
 		<a href="ftp://ftp1.dk.proftpd.org">ftp://ftp1.dk.proftpd.org/</a>
@@ -444,16 +435,6 @@
 					Maintained by: Diederik<br />
 			</p>
 	<p>
-		<a href="ftp://ftp3.hu.proftpd.org">ftp://ftp3.hu.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.linuxforum.hu/mirrors/ftp.proftpd.org/">ftp://ftp.linuxforum.hu/mirrors/ftp.proftpd.org/</a>
-		<br />
-
-		Location: Hungary				<br />
-
-					Maintained by: Christian Hamar alias krix<br />
-			</p>
-	<p>
 		<a href="ftp://ftp6.fr.proftpd.org">ftp://ftp6.fr.proftpd.org/</a>
         <br />
 		<a href="ftp://ftp.doc.cs.univ-paris8.fr/mirrors/ftp.proftpd.org/">ftp://ftp.doc.cs.univ-paris8.fr/mirrors/ftp.proftpd.org/</a>
@@ -553,15 +534,15 @@
 					Maintained by: Darrin Khan<br />
 			</p>
 	<p>
-		<a href="ftp://ftp5.nl.proftpd.org">ftp://ftp5.nl.proftpd.org/</a>
+		<a href="ftp://ftp25.us.proftpd.org">ftp://ftp25.us.proftpd.org/</a>
         <br />
-		<a href="ftp://proftpd.weedpowered.com/">ftp://proftpd.weedpowered.com/</a>
+		<a href="ftp://mirror.wrpn.net/proftpd/">ftp://mirror.wrpn.net/proftpd/</a>
 		<br />
 
-		Location: Netherlands					(The Netherlands)
+		Location: United states					(Columbus, Ohio)
 				<br />
 
-					Maintained by: Marius van Witzenburg<br />
+					Maintained by: Wesley Haines<br />
 			</p>
 	<p>
 		<a href="ftp://ftp4.se.proftpd.org">ftp://ftp4.se.proftpd.org/</a>
@@ -628,6 +609,28 @@
 				<br />
 
 					Maintained by: Jakub Cerveny<br />
+			</p>
+	<p>
+		<a href="ftp://ftp1.AR.proftpd.org">ftp://ftp1.AR.proftpd.org/</a>
+        <br />
+		<a href="ftp://mirrors.localhost.net.ar/pub/mirrors/proftpd">ftp://mirrors.localhost.net.ar/pub/mirrors/proftpd</a>
+		<br />
+
+		Location: Argentina					(Buenos Aires)
+				<br />
+
+					Maintained by: Nicolas Sigal<br />
+			</p>
+	<p>
+		<a href="ftp://ftp28.us.proftpd.org">ftp://ftp28.us.proftpd.org/</a>
+        <br />
+		<a href="ftp://proftpd.mirrors.borgnet.us/">ftp://proftpd.mirrors.borgnet.us/</a>
+		<br />
+
+		Location: United states					(Spokane, Washington)
+				<br />
+
+					Maintained by: Scott Grayban<br />
 			</p>
 
 #include "footer.epl"

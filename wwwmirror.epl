@@ -33,7 +33,6 @@
 	<a href="http://www.ch.proftpd.org/">ch</a>
 	<a href="http://www.cn.proftpd.org/">cn</a>
 	<a href="http://www.cz.proftpd.org/">cz</a>
-	<a href="http://www.de.proftpd.org/">de</a>
 	<a href="http://www.dk.proftpd.org/">dk</a>
 	<a href="http://www.fr.proftpd.org/">fr</a>
 	<a href="http://www.gr.proftpd.org/">gr</a>
@@ -67,17 +66,6 @@
 		Location: Australia				<br />
 
 					Maintained by: Jason Andrade<br />
-			</p>
-	<p>
-		<a href="http://www1.de.proftpd.org">http://www1.de.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.uasw.edu/">http://proftpd.uasw.edu/</a>
-		<br />
-
-		Location: Germany					(Wolfenbuettel)
-				<br />
-
-					Maintained by: Thorsten Ludewig<br />
 			</p>
 	<p>
 		<a href="http://www1.dk.proftpd.org">http://www1.dk.proftpd.org/</a>
@@ -363,17 +351,6 @@
 					Maintained by: Liu Kang<br />
 			</p>
 	<p>
-		<a href="http://www5.nl.proftpd.org">http://www5.nl.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.weedpowered.com/">http://proftpd.weedpowered.com/</a>
-		<br />
-
-		Location: Netherlands					(The Netherlands)
-				<br />
-
-					Maintained by: Marius van Witzenburg<br />
-			</p>
-	<p>
 		<a href="http://www2.pt.proftpd.org">http://www2.pt.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.zarco.org/">http://proftpd.zarco.org/</a>
@@ -416,6 +393,17 @@
 				<br />
 
 					Maintained by: Paul Engelen<br />
+			</p>
+	<p>
+		<a href="http://www27.us.proftpd.org">http://www27.us.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.mirror.wrpn.net/">http://proftpd.mirror.wrpn.net/</a>
+		<br />
+
+		Location: United states					(Columbus, Ohio)
+				<br />
+
+					Maintained by: Wesley Haines<br />
 			</p>
 	<p>
 		<a href="http://www7.fr.proftpd.org">http://www7.fr.proftpd.org/</a>
@@ -636,6 +624,17 @@
 				<br />
 
 					Maintained by: Ninh Nguyen Viet<br />
+			</p>
+	<p>
+		<a href="http://www32.us.proftpd.org">http://www32.us.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.mirrors.borgnet.us/">http://proftpd.mirrors.borgnet.us/</a>
+		<br />
+
+		Location: United states					(Spokane, Washington)
+				<br />
+
+					Maintained by: Scott Grayban<br />
 			</p>
 
 #include "footer.epl"
