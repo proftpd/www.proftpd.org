@@ -15,7 +15,7 @@
 <div style="text-align: center;">
 
 
-	<a href="ftp://ftp.AR.proftpd.org/">AR</a>
+	<a href="ftp://ftp.ar.proftpd.org/">ar</a>
 	<a href="ftp://ftp.at.proftpd.org/">at</a>
 	<a href="ftp://ftp.au.proftpd.org/">au</a>
 	<a href="ftp://ftp.be.proftpd.org/">be</a>
@@ -129,6 +129,16 @@
 		Location: Germany				<br />
 
 					Maintained by: Harald Welte<br />
+			</p>
+	<p>
+		<a href="ftp://ftp7.de.proftpd.org">ftp://ftp7.de.proftpd.org/</a>
+        <br />
+		<a href="ftp://ftp.uasw.edu/pub/network/proftpd/ftp/">ftp://ftp.uasw.edu/pub/network/proftpd/ftp/</a>
+		<br />
+
+		Location: Germany				<br />
+
+					Maintained by: Thorsten Ludewig<br />
 			</p>
 	<p>
 		<a href="ftp://ftp1.dk.proftpd.org">ftp://ftp1.dk.proftpd.org/</a>
@@ -337,17 +347,6 @@
 					Maintained by: Gerald Combs<br />
 			</p>
 	<p>
-		<a href="ftp://ftp1.id.proftpd.org">ftp://ftp1.id.proftpd.org/</a>
-        <br />
-		<a href="ftp://public.cakraweb.com/pub/proftpd/">ftp://public.cakraweb.com/pub/proftpd/</a>
-		<br />
-
-		Location: Indonesia					(Jakarta)
-				<br />
-
-					Maintained by: Asfihani<br />
-			</p>
-	<p>
 		<a href="ftp://ftp0.ie.proftpd.org">ftp://ftp0.ie.proftpd.org/</a>
         <br />
 		<a href="ftp://ftp.esat.net/mirrors/ftp.proftpd.org/">ftp://ftp.esat.net/mirrors/ftp.proftpd.org/</a>
@@ -501,17 +500,6 @@
 					Maintained by: Leigh Jepson<br />
 			</p>
 	<p>
-		<a href="ftp://ftp2.pt.proftpd.org">ftp://ftp2.pt.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp2.zarco.org/pub/proftpd/">ftp://ftp2.zarco.org/pub/proftpd/</a>
-		<br />
-
-		Location: Portugal					(Madeira Island)
-				<br />
-
-					Maintained by: Carlos Filipe<br />
-			</p>
-	<p>
 		<a href="ftp://ftp1.pl.proftpd.org">ftp://ftp1.pl.proftpd.org/</a>
         <br />
 		<a href="ftp://fido.e-utp.net/mirror/proftpd.org/">ftp://fido.e-utp.net/mirror/proftpd.org/</a>
@@ -611,7 +599,7 @@
 					Maintained by: Jakub Cerveny<br />
 			</p>
 	<p>
-		<a href="ftp://ftp1.AR.proftpd.org">ftp://ftp1.AR.proftpd.org/</a>
+		<a href="ftp://ftp1.ar.proftpd.org">ftp://ftp1.ar.proftpd.org/</a>
         <br />
 		<a href="ftp://mirrors.localhost.net.ar/pub/mirrors/proftpd">ftp://mirrors.localhost.net.ar/pub/mirrors/proftpd</a>
 		<br />

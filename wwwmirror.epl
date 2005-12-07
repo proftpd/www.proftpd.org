@@ -29,10 +29,10 @@
 	<a href="http://www.au.proftpd.org/">au</a>
 	<a href="http://www.be.proftpd.org/">be</a>
 	<a href="http://www.bg.proftpd.org/">bg</a>
-	<a href="http://www.br.proftpd.org/">br</a>
 	<a href="http://www.ch.proftpd.org/">ch</a>
 	<a href="http://www.cn.proftpd.org/">cn</a>
 	<a href="http://www.cz.proftpd.org/">cz</a>
+	<a href="http://www.de.proftpd.org/">de</a>
 	<a href="http://www.dk.proftpd.org/">dk</a>
 	<a href="http://www.fr.proftpd.org/">fr</a>
 	<a href="http://www.gr.proftpd.org/">gr</a>
@@ -43,7 +43,6 @@
 	<a href="http://www.it.proftpd.org/">it</a>
 	<a href="http://www.nl.proftpd.org/">nl</a>
 	<a href="http://www.pl.proftpd.org/">pl</a>
-	<a href="http://www.pt.proftpd.org/">pt</a>
 	<a href="http://www.se.proftpd.org/">se</a>
 	<a href="http://www.sg.proftpd.org/">sg</a>
 	<a href="http://www.sk.proftpd.org/">sk</a>
@@ -66,6 +65,17 @@
 		Location: Australia				<br />
 
 					Maintained by: Jason Andrade<br />
+			</p>
+	<p>
+		<a href="http://www1.de.proftpd.org">http://www1.de.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.uasw.edu/">http://proftpd.uasw.edu/</a>
+		<br />
+
+		Location: Germany					(Wolfenbuettel)
+				<br />
+
+					Maintained by: Thorsten Ludewig<br />
 			</p>
 	<p>
 		<a href="http://www1.dk.proftpd.org">http://www1.dk.proftpd.org/</a>
@@ -351,17 +361,6 @@
 					Maintained by: Liu Kang<br />
 			</p>
 	<p>
-		<a href="http://www2.pt.proftpd.org">http://www2.pt.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.zarco.org/">http://proftpd.zarco.org/</a>
-		<br />
-
-		Location: Portugal					(Madeira Island)
-				<br />
-
-					Maintained by: Carlos Filipe<br />
-			</p>
-	<p>
 		<a href="http://www4.au.proftpd.org">http://www4.au.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.iridiumhosting.com">http://proftpd.iridiumhosting.com</a>
@@ -450,17 +449,6 @@
 					Maintained by: Avi hirsh<br />
 			</p>
 	<p>
-		<a href="http://www7.nl.proftpd.org">http://www7.nl.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.mirror.surfnow.nl/">http://proftpd.mirror.surfnow.nl/</a>
-		<br />
-
-		Location: Netherlands					(Amsterdam)
-				<br />
-
-					Maintained by: E. van Harten<br />
-			</p>
-	<p>
 		<a href="http://www2.id.proftpd.org">http://www2.id.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.ugm.ac.id">http://proftpd.ugm.ac.id</a>
@@ -481,17 +469,6 @@
 				<br />
 
 					Maintained by: Ugur GUNCER<br />
-			</p>
-	<p>
-		<a href="http://www2.br.proftpd.org">http://www2.br.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.ehdbrasil.net">http://proftpd.ehdbrasil.net</a>
-		<br />
-
-		Location: Brazil					(Brazil)
-				<br />
-
-					Maintained by: Diego Silva<br />
 			</p>
 	<p>
 		<a href="http://www1.sk.proftpd.org">http://www1.sk.proftpd.org/</a>
@@ -580,17 +557,6 @@
 				<br />
 
 					Maintained by: Jeremiah Tieman<br />
-			</p>
-	<p>
-		<a href="http://www30.us.proftpd.org">http://www30.us.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.favicon.info/">http://proftpd.favicon.info/</a>
-		<br />
-
-		Location: United states					(New York, NY)
-				<br />
-
-					Maintained by: Ionel Roiban<br />
 			</p>
 	<p>
 		<a href="http://www1.gr.proftpd.org">http://www1.gr.proftpd.org/</a>
