@@ -35,14 +35,15 @@
 	<a href="http://www.de.proftpd.org/">de</a>
 	<a href="http://www.dk.proftpd.org/">dk</a>
 	<a href="http://www.fr.proftpd.org/">fr</a>
-	<a href="http://www.gr.proftpd.org/">gr</a>
 	<a href="http://www.hk.proftpd.org/">hk</a>
 	<a href="http://www.id.proftpd.org/">id</a>
 	<a href="http://www.ie.proftpd.org/">ie</a>
 	<a href="http://www.il.proftpd.org/">il</a>
 	<a href="http://www.it.proftpd.org/">it</a>
+	<a href="http://www.lv.proftpd.org/">lv</a>
 	<a href="http://www.nl.proftpd.org/">nl</a>
 	<a href="http://www.pl.proftpd.org/">pl</a>
+	<a href="http://www.ro.proftpd.org/">ro</a>
 	<a href="http://www.se.proftpd.org/">se</a>
 	<a href="http://www.sg.proftpd.org/">sg</a>
 	<a href="http://www.sk.proftpd.org/">sk</a>
@@ -526,28 +527,6 @@
 					Maintained by: Onur BEKTAS<br />
 			</p>
 	<p>
-		<a href="http://www8.nl.proftpd.org">http://www8.nl.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.jlnetworks.co.uk/">http://proftpd.jlnetworks.co.uk/</a>
-		<br />
-
-		Location: Netherlands					(Netherlands)
-				<br />
-
-					Maintained by: James Louthan<br />
-			</p>
-	<p>
-		<a href="http://www29.us.proftpd.org">http://www29.us.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.linuxshop.us/">http://proftpd.linuxshop.us/</a>
-		<br />
-
-		Location: United states					(Clifton, NJ)
-				<br />
-
-					Maintained by: Scott Braynard<br />
-			</p>
-	<p>
 		<a href="http://www9.nl.proftpd.org">http://www9.nl.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.mirror.jt.org/">http://proftpd.mirror.jt.org/</a>
@@ -557,17 +536,6 @@
 				<br />
 
 					Maintained by: Jeremiah Tieman<br />
-			</p>
-	<p>
-		<a href="http://www1.gr.proftpd.org">http://www1.gr.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.techteam.gr">http://proftpd.techteam.gr</a>
-		<br />
-
-		Location: Greece					(Greece)
-				<br />
-
-					Maintained by: Techteam.gr<br />
 			</p>
 	<p>
 		<a href="http://www31.us.proftpd.org">http://www31.us.proftpd.org/</a>
@@ -601,6 +569,50 @@
 				<br />
 
 					Maintained by: Scott Grayban<br />
+			</p>
+	<p>
+		<a href="http://www2.lv.proftpd.org">http://www2.lv.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.insecure.lv">http://proftpd.insecure.lv</a>
+		<br />
+
+		Location: Latvia					(Riga, Latvia)
+				<br />
+
+					Maintained by: Krish<br />
+			</p>
+	<p>
+		<a href="http://www3.bg.proftpd.org">http://www3.bg.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.cbox.biz">http://proftpd.cbox.biz</a>
+		<br />
+
+		Location: Bulgaria					(Bulgaria)
+				<br />
+
+					Maintained by: Alexander Dulgerov<br />
+			</p>
+	<p>
+		<a href="http://www6.uk.proftpd.org">http://www6.uk.proftpd.org/</a>
+        <br />
+		<a href="http://downloads.debianhelp.co.uk/">http://downloads.debianhelp.co.uk/</a>
+		<br />
+
+		Location: United kingdom					(uk)
+				<br />
+
+					Maintained by: Sridhar Gogineni<br />
+			</p>
+	<p>
+		<a href="http://www4.ro.proftpd.org">http://www4.ro.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.zoel.ro">http://proftpd.zoel.ro</a>
+		<br />
+
+		Location: Romaina					(Craiova, Dolj, Romania)
+				<br />
+
+					Maintained by: Mihai Marinas<br />
 			</p>
 
 #include "footer.epl"

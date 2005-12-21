@@ -19,6 +19,7 @@
 	<a href="ftp://ftp.at.proftpd.org/">at</a>
 	<a href="ftp://ftp.au.proftpd.org/">au</a>
 	<a href="ftp://ftp.be.proftpd.org/">be</a>
+	<a href="ftp://ftp.bg.proftpd.org/">bg</a>
 	<a href="ftp://ftp.ca.proftpd.org/">ca</a>
 	<a href="ftp://ftp.ch.proftpd.org/">ch</a>
 	<a href="ftp://ftp.cz.proftpd.org/">cz</a>
@@ -32,6 +33,7 @@
 	<a href="ftp://ftp.ie.proftpd.org/">ie</a>
 	<a href="ftp://ftp.it.proftpd.org/">it</a>
 	<a href="ftp://ftp.jp.proftpd.org/">jp</a>
+	<a href="ftp://ftp.lv.proftpd.org/">lv</a>
 	<a href="ftp://ftp.nl.proftpd.org/">nl</a>
 	<a href="ftp://ftp.no.proftpd.org/">no</a>
 	<a href="ftp://ftp.pl.proftpd.org/">pl</a>
@@ -619,6 +621,39 @@
 				<br />
 
 					Maintained by: Scott Grayban<br />
+			</p>
+	<p>
+		<a href="ftp://ftp1.lv.proftpd.org">ftp://ftp1.lv.proftpd.org/</a>
+        <br />
+		<a href="ftp://insecure.lv/mirrors/proftpd/">ftp://insecure.lv/mirrors/proftpd/</a>
+		<br />
+
+		Location: Latvia					(Riga, Latvia)
+				<br />
+
+					Maintained by: Krish<br />
+			</p>
+	<p>
+		<a href="ftp://ftp4.bg.proftpd.org">ftp://ftp4.bg.proftpd.org/</a>
+        <br />
+		<a href="ftp://ftp.proftpd.cbox.biz/proftpd/">ftp://ftp.proftpd.cbox.biz/proftpd/</a>
+		<br />
+
+		Location: Bulgaria					(Bulgaria)
+				<br />
+
+					Maintained by: Alexander Dulgerov<br />
+			</p>
+	<p>
+		<a href="ftp://ftp3.ro.proftpd.org">ftp://ftp3.ro.proftpd.org/</a>
+        <br />
+		<a href="ftp://proftpd.zoel.ro/Linux/mirrors/proftpd.org/">ftp://proftpd.zoel.ro/Linux/mirrors/proftpd.org/</a>
+		<br />
+
+		Location: Romaina					(Craiova, Dolj, Romania)
+				<br />
+
+					Maintained by: Mihai Marinas<br />
 			</p>
 
 #include "footer.epl"
