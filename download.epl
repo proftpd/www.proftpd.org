@@ -37,7 +37,6 @@
 	<a href="ftp://ftp.nl.proftpd.org/">nl</a>
 	<a href="ftp://ftp.no.proftpd.org/">no</a>
 	<a href="ftp://ftp.pl.proftpd.org/">pl</a>
-	<a href="ftp://ftp.pt.proftpd.org/">pt</a>
 	<a href="ftp://ftp.ro.proftpd.org/">ro</a>
 	<a href="ftp://ftp.se.proftpd.org/">se</a>
 	<a href="ftp://ftp.sg.proftpd.org/">sg</a>
@@ -329,16 +328,6 @@
 					Maintained by: Ivari Horm<br />
 			</p>
 	<p>
-		<a href="ftp://ftp5.us.proftpd.org">ftp://ftp5.us.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.stikman.com/pub/proftpd/">ftp://ftp.stikman.com/pub/proftpd/</a>
-		<br />
-
-		Location: United states				<br />
-
-					Maintained by: Jeff Grossman<br />
-			</p>
-	<p>
 		<a href="ftp://ftp12.us.proftpd.org">ftp://ftp12.us.proftpd.org/</a>
         <br />
 		<a href="ftp://ftp.ethereal.com/mirrors/ftp.proftpd.org/">ftp://ftp.ethereal.com/mirrors/ftp.proftpd.org/</a>
@@ -445,17 +434,6 @@
 				<br />
 
 					Maintained by: Archive Manager<br />
-			</p>
-	<p>
-		<a href="ftp://ftp1.pt.proftpd.org">ftp://ftp1.pt.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.telepac.pt/pub/proftpd/">ftp://ftp.telepac.pt/pub/proftpd/</a>
-		<br />
-
-		Location: Portugal					(Portugal, Lisbon)
-				<br />
-
-					Maintained by: Marco Ramos<br />
 			</p>
 	<p>
 		<a href="ftp://ftp2.es.proftpd.org">ftp://ftp2.es.proftpd.org/</a>
