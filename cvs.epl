@@ -27,6 +27,8 @@ sites</a> in the <code>devel/source/</code> directory.</p>
         the tree is <code>proftpd</code>.</li>
     <li>The documentation directory is <code>/cvsroot/pdd</code> and
         the trees are <code>FAQ</code> and <code>Userguide</code>.</li>
+    <li>A <a href="http://sourceforge.net/cvs/?group_id=17793">web-based CVS
+        viewer</a> is also available.</li>
 </ul>
 
 <h2>Detailed Instructions</h2>
