@@ -29,6 +29,7 @@
 	<a href="http://www.au.proftpd.org/">au</a>
 	<a href="http://www.be.proftpd.org/">be</a>
 	<a href="http://www.bg.proftpd.org/">bg</a>
+	<a href="http://www.br.proftpd.org/">br</a>
 	<a href="http://www.ch.proftpd.org/">ch</a>
 	<a href="http://www.cn.proftpd.org/">cn</a>
 	<a href="http://www.cz.proftpd.org/">cz</a>
@@ -373,17 +374,6 @@
 					Maintained by: Roberto Leandrini<br />
 			</p>
 	<p>
-		<a href="http://www4.nl.proftpd.org">http://www4.nl.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.qwezz.nl">http://proftpd.qwezz.nl</a>
-		<br />
-
-		Location: Netherlands					(NL, Amsterdam)
-				<br />
-
-					Maintained by: Paul Engelen<br />
-			</p>
-	<p>
 		<a href="http://www27.us.proftpd.org">http://www27.us.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.mirror.wrpn.net/">http://proftpd.mirror.wrpn.net/</a>
@@ -404,17 +394,6 @@
 				<br />
 
 					Maintained by: Pascal<br />
-			</p>
-	<p>
-		<a href="http://www1.ar.proftpd.org">http://www1.ar.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.adcserver.com.ar/">http://proftpd.adcserver.com.ar/</a>
-		<br />
-
-		Location: Argentina					(Ciudad de Buenos Aires, Rep&uacute;blica Argentina)
-				<br />
-
-					Maintained by: Juan Mateo Cassiet<br />
 			</p>
 	<p>
 		<a href="http://www4.it.proftpd.org">http://www4.it.proftpd.org/</a>
@@ -516,17 +495,6 @@
 					Maintained by: Onur BEKTAS<br />
 			</p>
 	<p>
-		<a href="http://www9.nl.proftpd.org">http://www9.nl.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.mirror.jt.org/">http://proftpd.mirror.jt.org/</a>
-		<br />
-
-		Location: Netherlands					(Netherlands)
-				<br />
-
-					Maintained by: Jeremiah Tieman<br />
-			</p>
-	<p>
 		<a href="http://www31.us.proftpd.org">http://www31.us.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.mirrorgeek.com/">http://proftpd.mirrorgeek.com/</a>
@@ -582,17 +550,6 @@
 					Maintained by: Alexander Dulgerov<br />
 			</p>
 	<p>
-		<a href="http://www6.uk.proftpd.org">http://www6.uk.proftpd.org/</a>
-        <br />
-		<a href="http://downloads.debianhelp.co.uk/">http://downloads.debianhelp.co.uk/</a>
-		<br />
-
-		Location: United kingdom					(uk)
-				<br />
-
-					Maintained by: Sridhar Gogineni<br />
-			</p>
-	<p>
 		<a href="http://www4.ro.proftpd.org">http://www4.ro.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.zoel.ro">http://proftpd.zoel.ro</a>
@@ -602,6 +559,61 @@
 				<br />
 
 					Maintained by: Mihai Marinas<br />
+			</p>
+	<p>
+		<a href="http://www3.br.proftpd.org">http://www3.br.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.giga.com.br">http://proftpd.giga.com.br</a>
+		<br />
+
+		Location: Brazil					(Porto Alege)
+				<br />
+
+					Maintained by: Juliano Primavesi<br />
+			</p>
+	<p>
+		<a href="http://www9.fr.proftpd.org">http://www9.fr.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.worldakt.com">http://proftpd.worldakt.com</a>
+		<br />
+
+		Location: France					(France, Paris)
+				<br />
+
+					Maintained by: CHAILLAN Nicolas<br />
+			</p>
+	<p>
+		<a href="http://www3.ar.proftpd.org">http://www3.ar.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.bairesweb.com/">http://proftpd.bairesweb.com/</a>
+		<br />
+
+		Location: Argentina					(Buenos Aires, Argentina)
+				<br />
+
+					Maintained by: Pablo Arturi<br />
+			</p>
+	<p>
+		<a href="http://www4.br.proftpd.org">http://www4.br.proftpd.org/</a>
+        <br />
+		<a href="proftpd.oi.com.br">proftpd.oi.com.br</a>
+		<br />
+
+		Location: Brazil					(Rio de Janeiro - Brazil)
+				<br />
+
+					Maintained by: Oi Internet<br />
+			</p>
+	<p>
+		<a href="http://www3.lv.proftpd.org">http://www3.lv.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.linux.edu.lv/">http://proftpd.linux.edu.lv/</a>
+		<br />
+
+		Location: Latvia					(Riga, Latvia)
+				<br />
+
+					Maintained by: Leo Truksans<br />
 			</p>
 
 #include "footer.epl"

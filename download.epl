@@ -633,5 +633,38 @@
 
 					Maintained by: Mihai Marinas<br />
 			</p>
+	<p>
+		<a href="ftp://ftp4.ro.proftpd.org">ftp://ftp4.ro.proftpd.org/</a>
+        <br />
+		<a href="ftp://ftp.linux.ro/ftp.proftpd.org/">ftp://ftp.linux.ro/ftp.proftpd.org/</a>
+		<br />
+
+		Location: Romaina					(Romania)
+				<br />
+
+					Maintained by: Radu Brebu<br />
+			</p>
+	<p>
+		<a href="ftp://ftp2.ar.proftpd.org">ftp://ftp2.ar.proftpd.org/</a>
+        <br />
+		<a href="ftp://proftpd.bairesweb.com/pub/proftpd/">ftp://proftpd.bairesweb.com/pub/proftpd/</a>
+		<br />
+
+		Location: Argentina					(Buenos Aires, Argentina)
+				<br />
+
+					Maintained by: Pablo Arturi<br />
+			</p>
+	<p>
+		<a href="ftp://ftp2.lv.proftpd.org">ftp://ftp2.lv.proftpd.org/</a>
+        <br />
+		<a href="ftp://ftp.linux.edu.lv/mirrors/ftp.proftpd.org/">ftp://ftp.linux.edu.lv/mirrors/ftp.proftpd.org/</a>
+		<br />
+
+		Location: Latvia					(Riga, Latvia)
+				<br />
+
+					Maintained by: Leo Truksans<br />
+			</p>
 
 #include "footer.epl"
