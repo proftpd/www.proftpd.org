@@ -655,5 +655,27 @@
 
 					Maintained by: Leo Truksans<br />
 			</p>
+	<p>
+		<a href="ftp://ftp7.uk.proftpd.org">ftp://ftp7.uk.proftpd.org/</a>
+        <br />
+		<a href="ftp://ftp.power-core.net/pub/ftp.proftpd.org">ftp://ftp.power-core.net/pub/ftp.proftpd.org</a>
+		<br />
+
+		Location: United kingdom					(London, United Kingdom)
+				<br />
+
+					Maintained by: Joe<br />
+			</p>
+	<p>
+		<a href="ftp://ftp5.ro.proftpd.org">ftp://ftp5.ro.proftpd.org/</a>
+        <br />
+		<a href="ftp://ftp.mivosoft.ro/mirrors/ftp.proftpd.org/">ftp://ftp.mivosoft.ro/mirrors/ftp.proftpd.org/</a>
+		<br />
+
+		Location: Romaina					(romania)
+				<br />
+
+					Maintained by: Cristian Miu<br />
+			</p>
 
 #include "footer.epl"

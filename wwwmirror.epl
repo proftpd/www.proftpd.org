@@ -594,6 +594,17 @@
 					Maintained by: Oi Internet<br />
 			</p>
 	<p>
+		<a href="http://www2.ie.proftpd.org">http://www2.ie.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.oss-mirror.org">http://proftpd.oss-mirror.org</a>
+		<br />
+
+		Location: Ireland					(Dublin - Ireland)
+				<br />
+
+					Maintained by: Ralf Uhlemann<br />
+			</p>
+	<p>
 		<a href="http://www3.lv.proftpd.org">http://www3.lv.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.linux.edu.lv/">http://proftpd.linux.edu.lv/</a>
@@ -603,6 +614,28 @@
 				<br />
 
 					Maintained by: Leo Truksans<br />
+			</p>
+	<p>
+		<a href="http://www13.de.proftpd.org">http://www13.de.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.linux-mirror.org">http://proftpd.linux-mirror.org</a>
+		<br />
+
+		Location: Germany					(Cologne/K&ouml;ln - Germany)
+				<br />
+
+					Maintained by: Michael Mettmann<br />
+			</p>
+	<p>
+		<a href="http://www7.uk.proftpd.org">http://www7.uk.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.power-core.net">http://proftpd.power-core.net</a>
+		<br />
+
+		Location: United kingdom					(London, United Kingdom)
+				<br />
+
+					Maintained by: Joe<br />
 			</p>
 
 #include "footer.epl"
