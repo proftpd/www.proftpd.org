@@ -15,6 +15,7 @@
 <div style="text-align: center;">
 
 
+	<a href="ftp://ftp.am.proftpd.org/">am</a>
 	<a href="ftp://ftp.ar.proftpd.org/">ar</a>
 	<a href="ftp://ftp.at.proftpd.org/">at</a>
 	<a href="ftp://ftp.au.proftpd.org/">au</a>
@@ -46,6 +47,7 @@
 	<a href="ftp://ftp.ua.proftpd.org/">ua</a>
 	<a href="ftp://ftp.uk.proftpd.org/">uk</a>
 	<a href="ftp://ftp.us.proftpd.org/">us</a>
+	<a href="ftp://ftp.za.proftpd.org/">za</a>
 
 </div>
 <hr />
@@ -403,17 +405,6 @@
 					Maintained by: Onur BEKTAS<br />
 			</p>
 	<p>
-		<a href="ftp://ftp5.uk.proftpd.org">ftp://ftp5.uk.proftpd.org/</a>
-        <br />
-		<a href="ftp://proftpd.ulimit.org/proftpd/">ftp://proftpd.ulimit.org/proftpd/</a>
-		<br />
-
-		Location: United kingdom					(London)
-				<br />
-
-					Maintained by: Michael Pye<br />
-			</p>
-	<p>
 		<a href="ftp://ftp4.nl.proftpd.org">ftp://ftp4.nl.proftpd.org/</a>
         <br />
 		<a href="ftp://ftp.easynet.nl/mirror/proftp/">ftp://ftp.easynet.nl/mirror/proftp/</a>
@@ -467,17 +458,6 @@
 				<br />
 
 					Maintained by: Matt Mozur<br />
-			</p>
-	<p>
-		<a href="ftp://ftp6.uk.proftpd.org">ftp://ftp6.uk.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.midnightsoftware.co.uk/mirrors/ftp.proftpd.org/">ftp://ftp.midnightsoftware.co.uk/mirrors/ftp.proftpd.org/</a>
-		<br />
-
-		Location: United kingdom					(Warrington, Cheshire, UK)
-				<br />
-
-					Maintained by: Leigh Jepson<br />
 			</p>
 	<p>
 		<a href="ftp://ftp1.pl.proftpd.org">ftp://ftp1.pl.proftpd.org/</a>
@@ -656,17 +636,6 @@
 					Maintained by: Leo Truksans<br />
 			</p>
 	<p>
-		<a href="ftp://ftp7.uk.proftpd.org">ftp://ftp7.uk.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.power-core.net/pub/ftp.proftpd.org">ftp://ftp.power-core.net/pub/ftp.proftpd.org</a>
-		<br />
-
-		Location: United kingdom					(London, United Kingdom)
-				<br />
-
-					Maintained by: Joe<br />
-			</p>
-	<p>
 		<a href="ftp://ftp5.ro.proftpd.org">ftp://ftp5.ro.proftpd.org/</a>
         <br />
 		<a href="ftp://ftp.mivosoft.ro/mirrors/ftp.proftpd.org/">ftp://ftp.mivosoft.ro/mirrors/ftp.proftpd.org/</a>
@@ -676,6 +645,61 @@
 				<br />
 
 					Maintained by: Cristian Miu<br />
+			</p>
+	<p>
+		<a href="ftp://ftp30.us.proftpd.org">ftp://ftp30.us.proftpd.org/</a>
+        <br />
+		<a href="ftp://mirrors.24-7-solutions.net/pub/proftpd/">ftp://mirrors.24-7-solutions.net/pub/proftpd/</a>
+		<br />
+
+		Location: United states					(United states, New York, 24/7 Solutions (24-7-solutions.net))
+				<br />
+
+					Maintained by: Sergey Melnik<br />
+			</p>
+	<p>
+		<a href="ftp://ftp4.jp.proftpd.org">ftp://ftp4.jp.proftpd.org/</a>
+        <br />
+		<a href="ftp://ftp.yz.yamagata-u.ac.jp/pub/network/proftpd/">ftp://ftp.yz.yamagata-u.ac.jp/pub/network/proftpd/</a>
+		<br />
+
+		Location: Japan					(JAPAN)
+				<br />
+
+					Maintained by: Tomohiro Ito<br />
+			</p>
+	<p>
+		<a href="ftp://ftp1.za.proftpd.org">ftp://ftp1.za.proftpd.org/</a>
+        <br />
+		<a href="ftp://ftp.is.co.za/mirror/ftp.proftpd.org">ftp://ftp.is.co.za/mirror/ftp.proftpd.org</a>
+		<br />
+
+		Location: South africa					(South Africa)
+				<br />
+
+					Maintained by: FTP Admin<br />
+			</p>
+	<p>
+		<a href="ftp://ftp3.cz.proftpd.org">ftp://ftp3.cz.proftpd.org/</a>
+        <br />
+		<a href="ftp://proftpd.kn.vutbr.cz/pub/ftp.proftpd.org/">ftp://proftpd.kn.vutbr.cz/pub/ftp.proftpd.org/</a>
+		<br />
+
+		Location: Czech republic					(ftp://mirror.kn.vutbr.cz/pub/ftp.proftpd.org)
+				<br />
+
+					Maintained by: Zdenek Bill<br />
+			</p>
+	<p>
+		<a href="ftp://ftp2.am.proftpd.org">ftp://ftp2.am.proftpd.org/</a>
+        <br />
+		<a href="ftp://ftp.debian.am/pub/proftpd">ftp://ftp.debian.am/pub/proftpd</a>
+		<br />
+
+		Location: Armenia					(Armenia)
+				<br />
+
+					Maintained by: Vardan Gevorgyan<br />
 			</p>
 
 #include "footer.epl"

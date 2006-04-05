@@ -24,6 +24,7 @@
 <div style="text-align: center;">
 
 
+	<a href="http://www.am.proftpd.org/">am</a>
 	<a href="http://www.ar.proftpd.org/">ar</a>
 	<a href="http://www.at.proftpd.org/">at</a>
 	<a href="http://www.au.proftpd.org/">au</a>
@@ -37,7 +38,6 @@
 	<a href="http://www.dk.proftpd.org/">dk</a>
 	<a href="http://www.fr.proftpd.org/">fr</a>
 	<a href="http://www.hk.proftpd.org/">hk</a>
-	<a href="http://www.id.proftpd.org/">id</a>
 	<a href="http://www.ie.proftpd.org/">ie</a>
 	<a href="http://www.il.proftpd.org/">il</a>
 	<a href="http://www.it.proftpd.org/">it</a>
@@ -309,17 +309,6 @@
 					Maintained by: Matt Mozur<br />
 			</p>
 	<p>
-		<a href="http://www4.uk.proftpd.org">http://www4.uk.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.ulimit.org/">http://proftpd.ulimit.org/</a>
-		<br />
-
-		Location: United kingdom					(London)
-				<br />
-
-					Maintained by: Michael Pye<br />
-			</p>
-	<p>
 		<a href="http://www4.us.proftpd.org">http://www4.us.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.fasterline.net/">http://proftpd.fasterline.net/</a>
@@ -354,24 +343,13 @@
 	<p>
 		<a href="http://www4.au.proftpd.org">http://www4.au.proftpd.org/</a>
         <br />
-		<a href="http://proftpd.iridiumhosting.com">http://proftpd.iridiumhosting.com</a>
+		<a href="http://proftpd.iridiumhosting.com/">http://proftpd.iridiumhosting.com/</a>
 		<br />
 
 		Location: Australia					(Australia)
 				<br />
 
 					Maintained by: Adam Neat<br />
-			</p>
-	<p>
-		<a href="http://www3.it.proftpd.org">http://www3.it.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.ditalinux.it/">http://proftpd.ditalinux.it/</a>
-		<br />
-
-		Location: Italy					(Viterbo, Italy)
-				<br />
-
-					Maintained by: Roberto Leandrini<br />
 			</p>
 	<p>
 		<a href="http://www27.us.proftpd.org">http://www27.us.proftpd.org/</a>
@@ -387,7 +365,7 @@
 	<p>
 		<a href="http://www7.fr.proftpd.org">http://www7.fr.proftpd.org/</a>
         <br />
-		<a href="http://proftpd.psinformatique.net">http://proftpd.psinformatique.net</a>
+		<a href="http://proftpd.psinformatique.net/">http://proftpd.psinformatique.net/</a>
 		<br />
 
 		Location: France					(france)
@@ -418,17 +396,6 @@
 					Maintained by: Avi hirsh<br />
 			</p>
 	<p>
-		<a href="http://www2.id.proftpd.org">http://www2.id.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.ugm.ac.id">http://proftpd.ugm.ac.id</a>
-		<br />
-
-		Location: Indonesia					(Yogyakarta)
-				<br />
-
-					Maintained by: Taufik Suryawan Edyna<br />
-			</p>
-	<p>
 		<a href="http://www1.tr.proftpd.org">http://www1.tr.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.internetsepeti.com/">http://proftpd.internetsepeti.com/</a>
@@ -453,7 +420,7 @@
 	<p>
 		<a href="http://www2.ar.proftpd.org">http://www2.ar.proftpd.org/</a>
         <br />
-		<a href="http://proftpd.localhost.net.ar">http://proftpd.localhost.net.ar</a>
+		<a href="http://proftpd.localhost.net.ar/">http://proftpd.localhost.net.ar/</a>
 		<br />
 
 		Location: Argentina					(Capital Federal, Buenos Aires, Argentina)
@@ -464,7 +431,7 @@
 	<p>
 		<a href="http://www28.us.proftpd.org">http://www28.us.proftpd.org/</a>
         <br />
-		<a href="http://proftpd.hoxt.com">http://proftpd.hoxt.com</a>
+		<a href="http://proftpd.hoxt.com/">http://proftpd.hoxt.com/</a>
 		<br />
 
 		Location: United states					(Florida, US)
@@ -495,6 +462,39 @@
 					Maintained by: Onur BEKTAS<br />
 			</p>
 	<p>
+		<a href="http://www2.cz.proftpd.org">http://www2.cz.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.kn.vutbr.cz/">http://proftpd.kn.vutbr.cz/</a>
+		<br />
+
+		Location: Czech republic					(http://proftpd.kn.vutbr.cz)
+				<br />
+
+					Maintained by: Zdenek Bill<br />
+			</p>
+	<p>
+		<a href="http://www1.am.proftpd.org">http://www1.am.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.debian.am/">http://proftpd.debian.am/</a>
+		<br />
+
+		Location: Armenia					(Armenia)
+				<br />
+
+					Maintained by: Vardan Gevorgyan<br />
+			</p>
+	<p>
+		<a href="http://www2.sk.proftpd.org">http://www2.sk.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.nasieti.sk">http://proftpd.nasieti.sk</a>
+		<br />
+
+		Location: Slovakia (slovak republic)					(Slovakia, Bratislava)
+				<br />
+
+					Maintained by: Filip Hlavenka<br />
+			</p>
+	<p>
 		<a href="http://www31.us.proftpd.org">http://www31.us.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.mirrorgeek.com/">http://proftpd.mirrorgeek.com/</a>
@@ -508,7 +508,7 @@
 	<p>
 		<a href="http://www1.vn.proftpd.org">http://www1.vn.proftpd.org/</a>
         <br />
-		<a href="http://proftpd.annetco.com">http://proftpd.annetco.com</a>
+		<a href="http://proftpd.annetco.com/">http://proftpd.annetco.com/</a>
 		<br />
 
 		Location: Viet nam					(Vietnam)
@@ -530,7 +530,7 @@
 	<p>
 		<a href="http://www3.bg.proftpd.org">http://www3.bg.proftpd.org/</a>
         <br />
-		<a href="http://proftpd.cbox.biz">http://proftpd.cbox.biz</a>
+		<a href="http://proftpd.cbox.biz/">http://proftpd.cbox.biz/</a>
 		<br />
 
 		Location: Bulgaria					(Bulgaria)
@@ -541,7 +541,7 @@
 	<p>
 		<a href="http://www4.ro.proftpd.org">http://www4.ro.proftpd.org/</a>
         <br />
-		<a href="http://proftpd.zoel.ro">http://proftpd.zoel.ro</a>
+		<a href="http://proftpd.zoel.ro/">http://proftpd.zoel.ro/</a>
 		<br />
 
 		Location: Romaina					(Craiova, Dolj, Romania)
@@ -552,24 +552,13 @@
 	<p>
 		<a href="http://www3.br.proftpd.org">http://www3.br.proftpd.org/</a>
         <br />
-		<a href="http://proftpd.giga.com.br">http://proftpd.giga.com.br</a>
+		<a href="http://proftpd.giga.com.br/">http://proftpd.giga.com.br/</a>
 		<br />
 
 		Location: Brazil					(Porto Alege)
 				<br />
 
 					Maintained by: Juliano Primavesi<br />
-			</p>
-	<p>
-		<a href="http://www9.fr.proftpd.org">http://www9.fr.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.worldakt.com">http://proftpd.worldakt.com</a>
-		<br />
-
-		Location: France					(France, Paris)
-				<br />
-
-					Maintained by: CHAILLAN Nicolas<br />
 			</p>
 	<p>
 		<a href="http://www3.ar.proftpd.org">http://www3.ar.proftpd.org/</a>
@@ -596,7 +585,7 @@
 	<p>
 		<a href="http://www2.ie.proftpd.org">http://www2.ie.proftpd.org/</a>
         <br />
-		<a href="http://proftpd.oss-mirror.org">http://proftpd.oss-mirror.org</a>
+		<a href="http://proftpd.oss-mirror.org/">http://proftpd.oss-mirror.org/</a>
 		<br />
 
 		Location: Ireland					(Dublin - Ireland)
@@ -618,7 +607,7 @@
 	<p>
 		<a href="http://www13.de.proftpd.org">http://www13.de.proftpd.org/</a>
         <br />
-		<a href="http://proftpd.linux-mirror.org">http://proftpd.linux-mirror.org</a>
+		<a href="http://proftpd.linux-mirror.org/">http://proftpd.linux-mirror.org/</a>
 		<br />
 
 		Location: Germany					(Cologne/K&ouml;ln - Germany)
@@ -627,15 +616,15 @@
 					Maintained by: Michael Mettmann<br />
 			</p>
 	<p>
-		<a href="http://www7.uk.proftpd.org">http://www7.uk.proftpd.org/</a>
+		<a href="http://www30.us.proftpd.org">http://www30.us.proftpd.org/</a>
         <br />
-		<a href="http://proftpd.power-core.net">http://proftpd.power-core.net</a>
+		<a href="http://proftpd.mirrors.24-7-solutions.net/">http://proftpd.mirrors.24-7-solutions.net/</a>
 		<br />
 
-		Location: United kingdom					(London, United Kingdom)
+		Location: United states					(United states, New York, 24/7 Solutions (24-7-solutions.net))
 				<br />
 
-					Maintained by: Joe<br />
+					Maintained by: Sergey Melnik<br />
 			</p>
 
 #include "footer.epl"
