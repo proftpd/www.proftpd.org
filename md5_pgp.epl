@@ -8,55 +8,31 @@
 <h2>MD5 Digest Hashes</h2>
 
 <pre>
-5feb4a7348e12faefc25e34fd92efdd6 <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.2.10.tar.bz2">proftpd-1.2.10.tar.bz2</a>
-70c0188db00ed99f2df061d603ffff82 <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.2.10.tar.gz">proftpd-1.2.10.tar.gz</a>
-eee0d8a243d1d067c3b83290549fedc5 <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.3.0rc5.tar.bz2">proftpd-1.3.0rc5.tar.bz2</a>
-d7ca701386e8ebbe2b3a398b7b2d0e33 <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.3.0rc5.tar.gz">proftpd-1.3.0rc5.tar.gz</a>
+fae47d01b52e035eb6b7190e74c17722 <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.3.0.tar.bz2">proftpd-1.3.0.tar.bz2</a>
+0a4022991a428f0870c9a312b7367940 <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.3.0.tar.gz">proftpd-1.3.0.tar.gz</a>
 </pre>
 
 <h2>PGP Signatures</h2>
 
 <pre>
-<strong>proftpd-1.2.10.tar.bz2.asc</strong>
+<strong>proftpd-1.3.0.tar.bz2.asc</strong>
 -----BEGIN PGP SIGNATURE-----
 Version: PGP 6.5.8
 
-iQA/AwUAQToSbreOiT+lEZdqEQLRiACeP7QpF1pVM+0qAaxQw3TaKCEd3KUAoMSt
-cMtCLuuFA1Xf4O5i16U00oHj
-=Pn2Z
+iQA/AwUAREK60LeOiT+lEZdqEQI1NQCffnqIihdeynIqkwFym5Zsy70nZ5MAnjX0
+U3eF4VfLo5pRieHK6VrNmdUM
+=2FN3
 -----END PGP SIGNATURE-----
 </pre>
 
 <pre>
-<strong>proftpd-1.2.10.tar.gz.asc</strong>
+<strong>proftpd-1.3.0.tar.gz.asc</strong>
 -----BEGIN PGP SIGNATURE-----
 Version: PGP 6.5.8
 
-iQA/AwUAQToSZ7eOiT+lEZdqEQKcggCg5mTZsh8Xq79ksJ1NNmu3CEGRLmsAnRhc
-bKwwz3Jo2LGMI6R0j9WphoBs
-=lGh2
------END PGP SIGNATURE-----
-</pre>
-
-<pre>
-<strong>proftpd-1.3.0rc5.tar.bz2.asc</strong>
------BEGIN PGP SIGNATURE-----
-Version: PGP 6.5.8
-
-iQA/AwUARBxsgLeOiT+lEZdqEQKnsgCfcJKBEK2wXqOorVFjrPpjsvA+pfAAoJBf
-ctokjhDHn2QCj6ax8kOweulm
-=73I+
------END PGP SIGNATURE-----
-</pre>
-
-<pre>
-<strong>proftpd-1.3.0rc5.tar.gz.asc</strong>
------BEGIN PGP SIGNATURE-----
-Version: PGP 6.5.8
-
-iQA/AwUARBxsibeOiT+lEZdqEQJ09wCgkf1YHyChMtuduamgcBstxxN3iBEAnRNY
-s2imLbmkn8Yr2NEYefmHkyq9
-=CTUA
+iQA/AwUAREK6yreOiT+lEZdqEQJusQCg9mls9bCg8N+zPh/KyYQYKfXVeTAAoKDX
+z2VLNxSOW7xJ9tszPctOjs1q
+=6bGN
 -----END PGP SIGNATURE-----
 </pre>
 
