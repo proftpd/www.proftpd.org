@@ -19,14 +19,14 @@ C = Committed
         #2628 - SQLHomedirOnDemand should be deprecated
         #2651 - LogFormat should support variable for logging the response
                 message
-        #2654 - FEAT command should be subject to <Limit>
+     C  #2654 - FEAT command should be subject to <Limit>
         #2664 - Add 'delay info' ftpdctl action for showing DelayTable values
         #2686 - Allow CCC command but still require SSL/TLS protection during
                 authentication
         #2687 -	Support for more efficient group table schema
         #2713 - Ability to check a user's existing disk bytes/files usage
                 and update tally accordingly
-        #2714 - mod_auth_file munges AuthUserFile, AuthGroupFile records
+     C  #2714 - mod_auth_file munges AuthUserFile, AuthGroupFile records
         #2715 - Use session.notes table, rather than config tree, for storing
                 some data
         #2719 - ProFTPD should install its header files into the installation
