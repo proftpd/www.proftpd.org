@@ -11,17 +11,17 @@ C = Committed
                 parameters
         #2067 - Allow/Deny Filters should be supported in the <Limit> context
         #2447 - HAVE_OPENSSL should be managed in configure.in
-        #2599 - Support for using OpenSSL "engines"
+     C  #2599 - Support for using OpenSSL "engines"
         #2610 - Support for logging to /var/log/lastlog
-	#2611 - non root CreateHome
+     C  #2611 - non root CreateHome
         #2626 - "ERROR" macro collision can cause compiler errors on HP-UX.
-	#2627 - Support for RADIUS quotatab module
-        #2628 - SQLHomedirOnDemand should be deprecated
-        #2651 - LogFormat should support variable for logging the response
+     C  #2627 - Support for RADIUS quotatab module
+     C  #2628 - SQLHomedirOnDemand should be deprecated
+     C  #2651 - LogFormat should support variable for logging the response
                 message
      C  #2654 - FEAT command should be subject to <Limit>
-        #2664 - Add 'delay info' ftpdctl action for showing DelayTable values
-        #2686 - Allow CCC command but still require SSL/TLS protection during
+     C  #2664 - Add 'delay info' ftpdctl action for showing DelayTable values
+     C  #2686 - Allow CCC command but still require SSL/TLS protection during
                 authentication
         #2687 -	Support for more efficient group table schema
         #2713 - Ability to check a user's existing disk bytes/files usage
@@ -33,8 +33,11 @@ C = Committed
                 location
         #2731 - Add ability to set process priority for file transfers
         #2756 - Support for TLSPassPhraseProvider
+        Add mod_ban
+        Add mod_shaper
+        Add mod_wrap2
 
 TBD
-	Add mod_ban, mod_shaper, mod_md5, mod_wrap-2.0 modules to contrib/
+	Add mod_md5 module to contrib/
 	#2368 - Allow contrib modules to extend mod_sql's SQLAuthTypes
         #2013 - Track RFC2228 sessions in scoreboard
