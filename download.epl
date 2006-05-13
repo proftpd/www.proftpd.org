@@ -30,7 +30,6 @@
 	<a href="ftp://ftp.es.proftpd.org/">es</a>
 	<a href="ftp://ftp.fr.proftpd.org/">fr</a>
 	<a href="ftp://ftp.hu.proftpd.org/">hu</a>
-	<a href="ftp://ftp.id.proftpd.org/">id</a>
 	<a href="ftp://ftp.ie.proftpd.org/">ie</a>
 	<a href="ftp://ftp.it.proftpd.org/">it</a>
 	<a href="ftp://ftp.jp.proftpd.org/">jp</a>
@@ -330,16 +329,6 @@
 					Maintained by: Ivari Horm<br />
 			</p>
 	<p>
-		<a href="ftp://ftp12.us.proftpd.org">ftp://ftp12.us.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.ethereal.com/mirrors/ftp.proftpd.org/">ftp://ftp.ethereal.com/mirrors/ftp.proftpd.org/</a>
-		<br />
-
-		Location: United states				<br />
-
-					Maintained by: Gerald Combs<br />
-			</p>
-	<p>
 		<a href="ftp://ftp0.ie.proftpd.org">ftp://ftp0.ie.proftpd.org/</a>
         <br />
 		<a href="ftp://ftp.esat.net/mirrors/ftp.proftpd.org/">ftp://ftp.esat.net/mirrors/ftp.proftpd.org/</a>
@@ -537,17 +526,6 @@
 					Maintained by: Antonio Prado<br />
 			</p>
 	<p>
-		<a href="ftp://ftp2.id.proftpd.org">ftp://ftp2.id.proftpd.org/</a>
-        <br />
-		<a href="ftp://info.ugm.ac.id/proftpd/">ftp://info.ugm.ac.id/proftpd/</a>
-		<br />
-
-		Location: Indonesia					(Yogyakarta)
-				<br />
-
-					Maintained by: Taufik Suryawan Edyna<br />
-			</p>
-	<p>
 		<a href="ftp://ftp2.sk.proftpd.org">ftp://ftp2.sk.proftpd.org/</a>
         <br />
 		<a href="ftp://proftpd.x86.sk/pub/proftpd/">ftp://proftpd.x86.sk/pub/proftpd/</a>
@@ -700,6 +678,50 @@
 				<br />
 
 					Maintained by: Vardan Gevorgyan<br />
+			</p>
+	<p>
+		<a href="ftp://ftp6.nl.proftpd.org">ftp://ftp6.nl.proftpd.org/</a>
+        <br />
+		<a href="ftp.tuxor.nl/pub/proftpd">ftp.tuxor.nl/pub/proftpd</a>
+		<br />
+
+		Location: Netherlands					(Netherlands)
+				<br />
+
+					Maintained by: Dirk Kalkman<br />
+			</p>
+	<p>
+		<a href="ftp://ftp6.ro.proftpd.org">ftp://ftp6.ro.proftpd.org/</a>
+        <br />
+		<a href="ftp.kappa.ro/pub/mirrors/ftp.proftpd.org">ftp.kappa.ro/pub/mirrors/ftp.proftpd.org</a>
+		<br />
+
+		Location: Romaina					(Romania Bucharest)
+				<br />
+
+					Maintained by: FTP Admin<br />
+			</p>
+	<p>
+		<a href="ftp://ftp7.nl.proftpd.org">ftp://ftp7.nl.proftpd.org/</a>
+        <br />
+		<a href="ftp://proftpd.mirrors.webazilla.nl/">ftp://proftpd.mirrors.webazilla.nl/</a>
+		<br />
+
+		Location: Netherlands					(Amsterdam, Netherlands)
+				<br />
+
+					Maintained by: Network Operations Center<br />
+			</p>
+	<p>
+		<a href="ftp://ftp14.de.proftpd.org">ftp://ftp14.de.proftpd.org/</a>
+        <br />
+		<a href="ftp://ftp.hosting-studio.de/pub/proftpd/">ftp://ftp.hosting-studio.de/pub/proftpd/</a>
+		<br />
+
+		Location: Germany					(Germany)
+				<br />
+
+					Maintained by: JZ<br />
 			</p>
 
 #include "footer.epl"

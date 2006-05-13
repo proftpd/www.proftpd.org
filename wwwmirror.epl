@@ -41,6 +41,7 @@
 	<a href="http://www.ie.proftpd.org/">ie</a>
 	<a href="http://www.il.proftpd.org/">il</a>
 	<a href="http://www.it.proftpd.org/">it</a>
+	<a href="http://www.li.proftpd.org/">li</a>
 	<a href="http://www.lv.proftpd.org/">lv</a>
 	<a href="http://www.nl.proftpd.org/">nl</a>
 	<a href="http://www.pl.proftpd.org/">pl</a>
@@ -52,7 +53,6 @@
 	<a href="http://www.ua.proftpd.org/">ua</a>
 	<a href="http://www.uk.proftpd.org/">uk</a>
 	<a href="http://www.us.proftpd.org/">us</a>
-	<a href="http://www.vn.proftpd.org/">vn</a>
 
 </div>
 <hr />
@@ -154,17 +154,6 @@
 				<br />
 
 					Maintained by: fxp0<br />
-			</p>
-	<p>
-		<a href="http://www6.us.proftpd.org">http://www6.us.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.ethereal.com/">http://proftpd.ethereal.com/</a>
-		<br />
-
-		Location: United states					(Lenexa, KS)
-				<br />
-
-					Maintained by: Gerald Combs<br />
 			</p>
 	<p>
 		<a href="http://www1.bg.proftpd.org">http://www1.bg.proftpd.org/</a>
@@ -352,6 +341,17 @@
 					Maintained by: Adam Neat<br />
 			</p>
 	<p>
+		<a href="http://www1.li.proftpd.org">http://www1.li.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.lie-comtel.li/">http://proftpd.lie-comtel.li/</a>
+		<br />
+
+		Location: Liechtenstein					(Vaduz, Liechtenstein)
+				<br />
+
+					Maintained by: Roland Guthauser<br />
+			</p>
+	<p>
 		<a href="http://www27.us.proftpd.org">http://www27.us.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.mirror.wrpn.net/">http://proftpd.mirror.wrpn.net/</a>
@@ -396,14 +396,26 @@
 					Maintained by: Avi hirsh<br />
 			</p>
 	<p>
-		<a href="http://www33.us.proftpd.org">http://www33.us.proftpd.org/</a>
+		<a href="http://www10.nl.proftpd.org">http://www10.nl.proftpd.org/</a>
         <br />
-		<a href=""></a>
+		<a href="http://proftpd.tuxor.nl/">http://proftpd.tuxor.nl/</a>
 		<br />
 
-		Location: United states				<br />
+		Location: Netherlands					(Netherlands)
+				<br />
 
-					Maintained by: Leo<br />
+					Maintained by: Dirk Kalkman<br />
+			</p>
+	<p>
+		<a href="http://www33.us.proftpd.org">http://www33.us.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.internet-servers.info/">http://proftpd.internet-servers.info/</a>
+		<br />
+
+		Location: United states					(USA)
+				<br />
+
+					Maintained by: Ionel Roiban<br />
 			</p>
 	<p>
 		<a href="http://www1.tr.proftpd.org">http://www1.tr.proftpd.org/</a>
@@ -415,17 +427,6 @@
 				<br />
 
 					Maintained by: Ugur GUNCER<br />
-			</p>
-	<p>
-		<a href="http://www3.sk.proftpd.org">http://www3.sk.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.unknown.sk/">http://proftpd.unknown.sk/</a>
-		<br />
-
-		Location: Slovakia (slovak republic)					(bratislava)
-				<br />
-
-					Maintained by: stab<br />
 			</p>
 	<p>
 		<a href="http://www1.sk.proftpd.org">http://www1.sk.proftpd.org/</a>
@@ -525,17 +526,6 @@
 				<br />
 
 					Maintained by: Dmitriy<br />
-			</p>
-	<p>
-		<a href="http://www1.vn.proftpd.org">http://www1.vn.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.annetco.com/">http://proftpd.annetco.com/</a>
-		<br />
-
-		Location: Viet nam					(Vietnam)
-				<br />
-
-					Maintained by: Ninh Nguyen Viet<br />
 			</p>
 	<p>
 		<a href="http://www32.us.proftpd.org">http://www32.us.proftpd.org/</a>
