@@ -20,8 +20,8 @@ sites</a> in the <code>devel/source/</code> directory.</p>
 
 <h2>Quick Instructions</h2>
 <ul>
-    <li>The CVS server is <code>cvs.sourceforge.net</code>.</li>
-    <li><code>anonymous@cvs.sourceforge.net</code> is the user, the
+    <li>The CVS server is <code>proftp.cvs.sourceforge.net</code>.</li>
+    <li><code>anonymous@proftp.cvs.sourceforge.net</code> is the user, the
         password is blank.</li>
     <li>The source code directory is <code>/cvsroot/proftp</code> and
         the tree is <code>proftpd</code>.</li>
@@ -37,14 +37,14 @@ repository is fairly straightforward:</p>
 
 <ul>
     <li>Type the command <code>cvs -d
-        :pserver:anonymous@cvs.sourceforge.net:/cvsroot/proftp login</code>
-        (or <code>/cvsroot/pdd</code> for docs).
+        :pserver:anonymous@proftp.cvs.sourceforge.net:2401/cvsroot/proftp login</code>
+        (use <code>:pserver:anonymous@pdd.cvs.sourceforge.net:2401/cvsroot/pdd</code> for docs).
     </li>
     <li>Hit Enter when prompted for a password (there is no password
         for anonymous access).
     </li>
     <li>Next, type in <code>cvs -d
-        :pserver:anonymous@cvs.sourceforge.net:/cvsroot/proftp -z3 co
+        :pserver:anonymous@proftp.cvs.sourceforge.net:2401/cvsroot/proftp -z3 co
         proftpd</code>
     </li>
 </ul>
