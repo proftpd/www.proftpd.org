@@ -10,7 +10,7 @@ C = Committed
         #2062 - Enhance UserOwner/GroupOwner to take IDs as well as name
                 parameters
         #2067 - Allow/Deny Filters should be supported in the <Limit> context
-        #2447 - HAVE_OPENSSL should be managed in configure.in
+     C  #2447 - HAVE_OPENSSL should be managed in configure.in
      C  #2599 - Support for using OpenSSL "engines"
         #2610 - Support for logging to /var/log/lastlog
      C  #2611 - non root CreateHome
@@ -24,7 +24,7 @@ C = Committed
      C  #2686 - Allow CCC command but still require SSL/TLS protection during
                 authentication
         #2687 -	Support for more efficient group table schema
-        #2713 - Ability to check a user's existing disk bytes/files usage
+     C  #2713 - Ability to check a user's existing disk bytes/files usage
                 and update tally accordingly
      C  #2714 - mod_auth_file munges AuthUserFile, AuthGroupFile records
         #2715 - Use session.notes table, rather than config tree, for storing
@@ -33,7 +33,7 @@ C = Committed
                 location
         #2731 - Add ability to set process priority for file transfers
         #2756 - Support for TLSPassPhraseProvider
-        Add mod_ban
+     C  Add mod_ban
         Add mod_shaper
         Add mod_wrap2
 
