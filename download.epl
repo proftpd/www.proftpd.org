@@ -680,20 +680,9 @@
 					Maintained by: Vardan Gevorgyan<br />
 			</p>
 	<p>
-		<a href="ftp://ftp6.nl.proftpd.org">ftp://ftp6.nl.proftpd.org/</a>
-        <br />
-		<a href="ftp.tuxor.nl/pub/proftpd">ftp.tuxor.nl/pub/proftpd</a>
-		<br />
-
-		Location: Netherlands					(Netherlands)
-				<br />
-
-					Maintained by: Dirk Kalkman<br />
-			</p>
-	<p>
 		<a href="ftp://ftp6.ro.proftpd.org">ftp://ftp6.ro.proftpd.org/</a>
         <br />
-		<a href="ftp.kappa.ro/pub/mirrors/ftp.proftpd.org">ftp.kappa.ro/pub/mirrors/ftp.proftpd.org</a>
+		<a href="ftp://ftp.kappa.ro/pub/mirrors/ftp.proftpd.org/">ftp://ftp.kappa.ro/pub/mirrors/ftp.proftpd.org/</a>
 		<br />
 
 		Location: Romaina					(Romania Bucharest)
@@ -711,17 +700,6 @@
 				<br />
 
 					Maintained by: Network Operations Center<br />
-			</p>
-	<p>
-		<a href="ftp://ftp14.de.proftpd.org">ftp://ftp14.de.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.hosting-studio.de/pub/proftpd/">ftp://ftp.hosting-studio.de/pub/proftpd/</a>
-		<br />
-
-		Location: Germany					(Germany)
-				<br />
-
-					Maintained by: JZ<br />
 			</p>
 
 #include "footer.epl"
