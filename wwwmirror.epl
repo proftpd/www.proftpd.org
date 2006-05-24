@@ -189,17 +189,6 @@
 					Maintained by: fastorama.com<br />
 			</p>
 	<p>
-		<a href="http://www1.hk.proftpd.org">http://www1.hk.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.bylinux.net/">http://proftpd.bylinux.net/</a>
-		<br />
-
-		Location: Hong kong					(Hong Kong)
-				<br />
-
-					Maintained by: pyjamas<br />
-			</p>
-	<p>
 		<a href="http://www1.be.proftpd.org">http://www1.be.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.mirror.easynet.be/">http://proftpd.mirror.easynet.be/</a>
@@ -328,6 +317,17 @@
 				<br />
 
 					Maintained by: Liu Kang<br />
+			</p>
+	<p>
+		<a href="http://www14.de.proftpd.org">http://www14.de.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.bemirror.org">http://proftpd.bemirror.org</a>
+		<br />
+
+		Location: Germany					(Nuernberg (Bavaria), Germany)
+				<br />
+
+					Maintained by: Hans Braeunlein<br />
 			</p>
 	<p>
 		<a href="http://www4.au.proftpd.org">http://www4.au.proftpd.org/</a>
