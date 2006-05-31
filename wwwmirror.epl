@@ -51,7 +51,6 @@
 	<a href="http://www.sk.proftpd.org/">sk</a>
 	<a href="http://www.tr.proftpd.org/">tr</a>
 	<a href="http://www.ua.proftpd.org/">ua</a>
-	<a href="http://www.uk.proftpd.org/">uk</a>
 	<a href="http://www.us.proftpd.org/">us</a>
 
 </div>
@@ -143,17 +142,6 @@
 				<br />
 
 					Maintained by: Darrin Khan<br />
-			</p>
-	<p>
-		<a href="http://www3.uk.proftpd.org">http://www3.uk.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.networkedsystems.co.uk/">http://proftpd.networkedsystems.co.uk/</a>
-		<br />
-
-		Location: United kingdom					(Manchester (Telecity))
-				<br />
-
-					Maintained by: fxp0<br />
 			</p>
 	<p>
 		<a href="http://www1.bg.proftpd.org">http://www1.bg.proftpd.org/</a>
@@ -317,6 +305,28 @@
 				<br />
 
 					Maintained by: Liu Kang<br />
+			</p>
+	<p>
+		<a href="http://www11.nl.proftpd.org">http://www11.nl.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.osmirror.nl/">http://proftpd.osmirror.nl/</a>
+		<br />
+
+		Location: Netherlands					(Amsterdam)
+				<br />
+
+					Maintained by: Jur Rademakers<br />
+			</p>
+	<p>
+		<a href="http://www15.de.proftpd.org">http://www15.de.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.namesdir.com">http://proftpd.namesdir.com</a>
+		<br />
+
+		Location: Germany					(Bamberg, Germany)
+				<br />
+
+					Maintained by: Mihai Leonte<br />
 			</p>
 	<p>
 		<a href="http://www14.de.proftpd.org">http://www14.de.proftpd.org/</a>

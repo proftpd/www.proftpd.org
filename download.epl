@@ -26,7 +26,6 @@
 	<a href="ftp://ftp.cz.proftpd.org/">cz</a>
 	<a href="ftp://ftp.de.proftpd.org/">de</a>
 	<a href="ftp://ftp.dk.proftpd.org/">dk</a>
-	<a href="ftp://ftp.ee.proftpd.org/">ee</a>
 	<a href="ftp://ftp.es.proftpd.org/">es</a>
 	<a href="ftp://ftp.fr.proftpd.org/">fr</a>
 	<a href="ftp://ftp.hu.proftpd.org/">hu</a>
@@ -44,7 +43,6 @@
 	<a href="ftp://ftp.tr.proftpd.org/">tr</a>
 	<a href="ftp://ftp.tw.proftpd.org/">tw</a>
 	<a href="ftp://ftp.ua.proftpd.org/">ua</a>
-	<a href="ftp://ftp.uk.proftpd.org/">uk</a>
 	<a href="ftp://ftp.us.proftpd.org/">us</a>
 	<a href="ftp://ftp.za.proftpd.org/">za</a>
 
@@ -308,27 +306,6 @@
 					Maintained by: Ireneusz Weglewski<br />
 			</p>
 	<p>
-		<a href="ftp://ftp4.uk.proftpd.org">ftp://ftp4.uk.proftpd.org/</a>
-        <br />
-		<a href="ftp://proftpd.networkedsystems.co.uk/">ftp://proftpd.networkedsystems.co.uk/</a>
-		<br />
-
-		Location: United kingdom				<br />
-
-					Maintained by: fxp0<br />
-			</p>
-	<p>
-		<a href="ftp://ftp1.ee.proftpd.org">ftp://ftp1.ee.proftpd.org/</a>
-        <br />
-		<a href="ftp://mirror.estweb.ee/proftpd/">ftp://mirror.estweb.ee/proftpd/</a>
-		<br />
-
-		Location: Estonia					(Estonia)
-				<br />
-
-					Maintained by: Ivari Horm<br />
-			</p>
-	<p>
 		<a href="ftp://ftp0.ie.proftpd.org">ftp://ftp0.ie.proftpd.org/</a>
         <br />
 		<a href="ftp://ftp.esat.net/mirrors/ftp.proftpd.org/">ftp://ftp.esat.net/mirrors/ftp.proftpd.org/</a>
@@ -480,17 +457,6 @@
 				<br />
 
 					Maintained by: Wesley Haines<br />
-			</p>
-	<p>
-		<a href="ftp://ftp4.se.proftpd.org">ftp://ftp4.se.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.se.linux.org/pub/network/proftpd/">ftp://ftp.se.linux.org/pub/network/proftpd/</a>
-		<br />
-
-		Location: Sweden					(G&auml;vle, Sweden)
-				<br />
-
-					Maintained by: Svenska Linuxf&ouml;reningens driftgrupp<br />
 			</p>
 	<p>
 		<a href="ftp://ftp3.tw.proftpd.org">ftp://ftp3.tw.proftpd.org/</a>
@@ -700,6 +666,17 @@
 				<br />
 
 					Maintained by: Network Operations Center<br />
+			</p>
+	<p>
+		<a href="ftp://ftp9.nl.proftpd.org">ftp://ftp9.nl.proftpd.org/</a>
+        <br />
+		<a href="ftp://proftpdftp.osmirror.nl/pub/proftpd/ftp/">ftp://proftpdftp.osmirror.nl/pub/proftpd/ftp/</a>
+		<br />
+
+		Location: Netherlands					(Amsterdam)
+				<br />
+
+					Maintained by: Jur Rademakers<br />
 			</p>
 
 #include "footer.epl"
