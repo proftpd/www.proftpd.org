@@ -51,6 +51,7 @@
 	<a href="http://www.sk.proftpd.org/">sk</a>
 	<a href="http://www.tr.proftpd.org/">tr</a>
 	<a href="http://www.ua.proftpd.org/">ua</a>
+	<a href="http://www.uk.proftpd.org/">uk</a>
 	<a href="http://www.us.proftpd.org/">us</a>
 
 </div>
@@ -142,6 +143,17 @@
 				<br />
 
 					Maintained by: Darrin Khan<br />
+			</p>
+	<p>
+		<a href="http://www3.uk.proftpd.org">http://www3.uk.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.networkedsystems.co.uk/">http://proftpd.networkedsystems.co.uk/</a>
+		<br />
+
+		Location: United kingdom					(London)
+				<br />
+
+					Maintained by: Daniel Austin<br />
 			</p>
 	<p>
 		<a href="http://www1.bg.proftpd.org">http://www1.bg.proftpd.org/</a>
@@ -565,7 +577,7 @@
 		<a href="http://proftpd.zoel.ro/">http://proftpd.zoel.ro/</a>
 		<br />
 
-		Location: Romaina					(Craiova, Dolj, Romania)
+		Location: Romania					(Craiova, Dolj, Romania)
 				<br />
 
 					Maintained by: Mihai Marinas<br />
