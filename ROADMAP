@@ -23,7 +23,7 @@ C = Committed
      C  #2664 - Add 'delay info' ftpdctl action for showing DelayTable values
      C  #2686 - Allow CCC command but still require SSL/TLS protection during
                 authentication
-        #2687 -	Support for more efficient group table schema
+     C  #2687 -	Support for more efficient group table schema
      C  #2713 - Ability to check a user's existing disk bytes/files usage
                 and update tally accordingly
      C  #2714 - mod_auth_file munges AuthUserFile, AuthGroupFile records
