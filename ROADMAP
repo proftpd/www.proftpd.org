@@ -12,7 +12,7 @@ C = Committed
         #2067 - Allow/Deny Filters should be supported in the <Limit> context
      C  #2447 - HAVE_OPENSSL should be managed in configure.in
      C  #2599 - Support for using OpenSSL "engines"
-        #2610 - Support for logging to /var/log/lastlog
+     C  #2610 - Support for logging to /var/log/lastlog
      C  #2611 - non root CreateHome
         #2626 - "ERROR" macro collision can cause compiler errors on HP-UX.
      C  #2627 - Support for RADIUS quotatab module
