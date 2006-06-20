@@ -15,7 +15,6 @@
 <div style="text-align: center;">
 
 
-	<a href="ftp://ftp.am.proftpd.org/">am</a>
 	<a href="ftp://ftp.ar.proftpd.org/">ar</a>
 	<a href="ftp://ftp.at.proftpd.org/">at</a>
 	<a href="ftp://ftp.au.proftpd.org/">au</a>
@@ -43,6 +42,7 @@
 	<a href="ftp://ftp.tr.proftpd.org/">tr</a>
 	<a href="ftp://ftp.tw.proftpd.org/">tw</a>
 	<a href="ftp://ftp.ua.proftpd.org/">ua</a>
+	<a href="ftp://ftp.uk.proftpd.org/">uk</a>
 	<a href="ftp://ftp.us.proftpd.org/">us</a>
 	<a href="ftp://ftp.za.proftpd.org/">za</a>
 
@@ -306,6 +306,17 @@
 					Maintained by: Ireneusz Weglewski<br />
 			</p>
 	<p>
+		<a href="ftp://ftp4.uk.proftpd.org">ftp://ftp4.uk.proftpd.org/</a>
+        <br />
+		<a href="ftp://proftpd.networkedsystems.co.uk/">ftp://proftpd.networkedsystems.co.uk/</a>
+		<br />
+
+		Location: United kingdom					(London)
+				<br />
+
+					Maintained by: Daniel Austin<br />
+			</p>
+	<p>
 		<a href="ftp://ftp0.ie.proftpd.org">ftp://ftp0.ie.proftpd.org/</a>
         <br />
 		<a href="ftp://ftp.esat.net/mirrors/ftp.proftpd.org/">ftp://ftp.esat.net/mirrors/ftp.proftpd.org/</a>
@@ -380,17 +391,6 @@
 				<br />
 
 					Maintained by: Diederik<br />
-			</p>
-	<p>
-		<a href="ftp://ftp6.fr.proftpd.org">ftp://ftp6.fr.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.doc.cs.univ-paris8.fr/mirrors/ftp.proftpd.org/">ftp://ftp.doc.cs.univ-paris8.fr/mirrors/ftp.proftpd.org/</a>
-		<br />
-
-		Location: France					((France, Saint-Denis))
-				<br />
-
-					Maintained by: Archive Manager<br />
 			</p>
 	<p>
 		<a href="ftp://ftp2.es.proftpd.org">ftp://ftp2.es.proftpd.org/</a>
@@ -635,17 +635,6 @@
 					Maintained by: Zdenek Bill<br />
 			</p>
 	<p>
-		<a href="ftp://ftp2.am.proftpd.org">ftp://ftp2.am.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.debian.am/pub/proftpd">ftp://ftp.debian.am/pub/proftpd</a>
-		<br />
-
-		Location: Armenia					(Armenia)
-				<br />
-
-					Maintained by: Vardan Gevorgyan<br />
-			</p>
-	<p>
 		<a href="ftp://ftp6.ro.proftpd.org">ftp://ftp6.ro.proftpd.org/</a>
         <br />
 		<a href="ftp://ftp.kappa.ro/pub/mirrors/ftp.proftpd.org/">ftp://ftp.kappa.ro/pub/mirrors/ftp.proftpd.org/</a>
@@ -677,6 +666,17 @@
 				<br />
 
 					Maintained by: Jur Rademakers<br />
+			</p>
+	<p>
+		<a href="ftp://ftp9.pl.proftpd.org">ftp://ftp9.pl.proftpd.org/</a>
+        <br />
+		<a href="ftp://piotrkosoft.netinet.net/pub/mirrors/ftp.proftpd.org/">ftp://piotrkosoft.netinet.net/pub/mirrors/ftp.proftpd.org/</a>
+		<br />
+
+		Location: Poland					(Poland)
+				<br />
+
+					Maintained by: Piotr Maluty<br />
 			</p>
 
 #include "footer.epl"

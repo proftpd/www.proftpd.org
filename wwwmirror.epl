@@ -24,7 +24,6 @@
 <div style="text-align: center;">
 
 
-	<a href="http://www.am.proftpd.org/">am</a>
 	<a href="http://www.ar.proftpd.org/">ar</a>
 	<a href="http://www.at.proftpd.org/">at</a>
 	<a href="http://www.au.proftpd.org/">au</a>
@@ -121,17 +120,6 @@
 		Location: Singapore				<br />
 
 					Maintained by: Network Operations Center<br />
-			</p>
-	<p>
-		<a href="http://www1.ua.proftpd.org">http://www1.ua.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.dp.ua/">http://proftpd.dp.ua/</a>
-		<br />
-
-		Location: Ukraine					(Dnepropetrovsk)
-				<br />
-
-					Maintained by: Alexander Ryumshin<br />
 			</p>
 	<p>
 		<a href="http://www3.au.proftpd.org">http://www3.au.proftpd.org/</a>
@@ -287,17 +275,6 @@
 					Maintained by: Matt Mozur<br />
 			</p>
 	<p>
-		<a href="http://www4.us.proftpd.org">http://www4.us.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.fasterline.net/">http://proftpd.fasterline.net/</a>
-		<br />
-
-		Location: United states					(Dallas)
-				<br />
-
-					Maintained by: Martin S.<br />
-			</p>
-	<p>
 		<a href="http://www3.hk.proftpd.org">http://www3.hk.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.hknetworks.com/">http://proftpd.hknetworks.com/</a>
@@ -317,6 +294,28 @@
 				<br />
 
 					Maintained by: Liu Kang<br />
+			</p>
+	<p>
+		<a href="http://www4.ar.proftpd.org">http://www4.ar.proftpd.org/</a>
+        <br />
+		<a href="proftpd.wnpower.com">proftpd.wnpower.com</a>
+		<br />
+
+		Location: Argentina					(Argentina)
+				<br />
+
+					Maintained by: Federico Alvarez<br />
+			</p>
+	<p>
+		<a href="http://www16.de.proftpd.org">http://www16.de.proftpd.org/</a>
+        <br />
+		<a href="http://proftp.oslevel.de">http://proftp.oslevel.de</a>
+		<br />
+
+		Location: Germany					(Karlsruhe)
+				<br />
+
+					Maintained by: Mirko Hahn<br />
 			</p>
 	<p>
 		<a href="http://www11.nl.proftpd.org">http://www11.nl.proftpd.org/</a>
@@ -440,17 +439,6 @@
 					Maintained by: Ionel Roiban<br />
 			</p>
 	<p>
-		<a href="http://www1.tr.proftpd.org">http://www1.tr.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.internetsepeti.com/">http://proftpd.internetsepeti.com/</a>
-		<br />
-
-		Location: Turkey					(Istanbul/TURKEY)
-				<br />
-
-					Maintained by: Ugur GUNCER<br />
-			</p>
-	<p>
 		<a href="http://www1.sk.proftpd.org">http://www1.sk.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.x86.sk/">http://proftpd.x86.sk/</a>
@@ -515,17 +503,6 @@
 				<br />
 
 					Maintained by: Zdenek Bill<br />
-			</p>
-	<p>
-		<a href="http://www1.am.proftpd.org">http://www1.am.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.debian.am/">http://proftpd.debian.am/</a>
-		<br />
-
-		Location: Armenia					(Armenia)
-				<br />
-
-					Maintained by: Vardan Gevorgyan<br />
 			</p>
 	<p>
 		<a href="http://www2.sk.proftpd.org">http://www2.sk.proftpd.org/</a>
