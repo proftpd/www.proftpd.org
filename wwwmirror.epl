@@ -31,6 +31,7 @@
 	<a href="http://www.bg.proftpd.org/">bg</a>
 	<a href="http://www.br.proftpd.org/">br</a>
 	<a href="http://www.ch.proftpd.org/">ch</a>
+	<a href="http://www.cl.proftpd.org/">cl</a>
 	<a href="http://www.cn.proftpd.org/">cn</a>
 	<a href="http://www.cz.proftpd.org/">cz</a>
 	<a href="http://www.de.proftpd.org/">de</a>
@@ -296,9 +297,20 @@
 					Maintained by: Liu Kang<br />
 			</p>
 	<p>
+		<a href="http://www1.cl.proftpd.org">http://www1.cl.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.freeby.pctools.cl">http://proftpd.freeby.pctools.cl</a>
+		<br />
+
+		Location: Chile					(Chile)
+				<br />
+
+					Maintained by: Felipe Tornvall N.<br />
+			</p>
+	<p>
 		<a href="http://www4.ar.proftpd.org">http://www4.ar.proftpd.org/</a>
         <br />
-		<a href="proftpd.wnpower.com">proftpd.wnpower.com</a>
+		<a href="http://proftpd.wnpower.com/">http://proftpd.wnpower.com/</a>
 		<br />
 
 		Location: Argentina					(Argentina)
@@ -569,6 +581,17 @@
 				<br />
 
 					Maintained by: Juliano Primavesi<br />
+			</p>
+	<p>
+		<a href="http://www5.ro.proftpd.org">http://www5.ro.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.mivosoft.ro/">http://proftpd.mivosoft.ro/</a>
+		<br />
+
+		Location: Romania					(Bucharest)
+				<br />
+
+					Maintained by: Cristian Miu<br />
 			</p>
 	<p>
 		<a href="http://www3.ar.proftpd.org">http://www3.ar.proftpd.org/</a>
