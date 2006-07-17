@@ -5,6 +5,16 @@
 
 <h1><: print "$html_title" :></h1>
 
+<h2>Checksum module</h2>
+<i>Maintainer: Mathias Berchtold</i>
+<br /><a href="http://www.smartftp.com/oss/proftpd/">http://www.smartftp.com/oss/proftpd/</a>
+
+<p>
+The <code>mod_digest</code> is an add-on module for ProFTPD which offers
+several hash functions which can be used to verify the file integrity.  The
+module implements the following features: XCRC, XMD5, XSHA1 and XSHA256.</p>
+
+
 <h2>Virus filtering for uploaded files</h2>
 <i>Maintainer: Joseph Benden</i>
 <br /><a href="http://www.uglyboxindustries.com/mod_clamav.html">http://www.uglyboxindustries.com/mod_clamav.html</a>
