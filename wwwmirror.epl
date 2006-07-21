@@ -24,6 +24,7 @@
 <div style="text-align: center;">
 
 
+	<a href="http://www.am.proftpd.org/">am</a>
 	<a href="http://www.ar.proftpd.org/">ar</a>
 	<a href="http://www.at.proftpd.org/">at</a>
 	<a href="http://www.au.proftpd.org/">au</a>
@@ -38,6 +39,7 @@
 	<a href="http://www.dk.proftpd.org/">dk</a>
 	<a href="http://www.fr.proftpd.org/">fr</a>
 	<a href="http://www.hk.proftpd.org/">hk</a>
+	<a href="http://www.hu.proftpd.org/">hu</a>
 	<a href="http://www.ie.proftpd.org/">ie</a>
 	<a href="http://www.il.proftpd.org/">il</a>
 	<a href="http://www.it.proftpd.org/">it</a>
@@ -243,6 +245,28 @@
 					Maintained by: Andrey Lakhno<br />
 			</p>
 	<p>
+		<a href="http://www2.am.proftpd.org">http://www2.am.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.mirrors.arminco.com/">http://proftpd.mirrors.arminco.com/</a>
+		<br />
+
+		Location: Armenia					(Yerevan, Armenia)
+				<br />
+
+					Maintained by: Vahan Yerkanian<br />
+			</p>
+	<p>
+		<a href="http://www17.de.proftpd.org">http://www17.de.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.heilpraktiker-empfehlung.de">http://proftpd.heilpraktiker-empfehlung.de</a>
+		<br />
+
+		Location: Germany					(Frankfurt)
+				<br />
+
+					Maintained by: Tim Muthmann<br />
+			</p>
+	<p>
 		<a href="http://www4.fr.proftpd.org">http://www4.fr.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.crihan.fr/">http://proftpd.crihan.fr/</a>
@@ -263,6 +287,17 @@
 				<br />
 
 					Maintained by: Escario Julien<br />
+			</p>
+	<p>
+		<a href="http://www2.hu.proftpd.org">http://www2.hu.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.it-worx.hu/">http://proftpd.it-worx.hu/</a>
+		<br />
+
+		Location: Hungary					(Hungary)
+				<br />
+
+					Maintained by: Gabor Keve<br />
 			</p>
 	<p>
 		<a href="http://www21.us.proftpd.org">http://www21.us.proftpd.org/</a>
@@ -471,17 +506,6 @@
 				<br />
 
 					Maintained by: Nicolas Sigal<br />
-			</p>
-	<p>
-		<a href="http://www28.us.proftpd.org">http://www28.us.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.hoxt.com/">http://proftpd.hoxt.com/</a>
-		<br />
-
-		Location: United states					(Florida, US)
-				<br />
-
-					Maintained by: Son Nguyen<br />
 			</p>
 	<p>
 		<a href="http://www1.cz.proftpd.org">http://www1.cz.proftpd.org/</a>

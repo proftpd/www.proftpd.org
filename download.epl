@@ -15,6 +15,7 @@
 <div style="text-align: center;">
 
 
+	<a href="ftp://ftp.am.proftpd.org/">am</a>
 	<a href="ftp://ftp.ar.proftpd.org/">ar</a>
 	<a href="ftp://ftp.at.proftpd.org/">at</a>
 	<a href="ftp://ftp.au.proftpd.org/">au</a>
@@ -637,7 +638,7 @@
 	<p>
 		<a href="ftp://ftp6.nl.proftpd.org">ftp://ftp6.nl.proftpd.org/</a>
         <br />
-		<a href="ftp://ftp.tuxor.nl/pub/proftpd/">ftp://ftp.tuxor.nl/pub/proftpd/</a>
+		<a href="ftp://mirror.tuxor.nl/pub/proftpd/">ftp://mirror.tuxor.nl/pub/proftpd/</a>
 		<br />
 
 		Location: Netherlands					(Netherlands)
@@ -688,6 +689,17 @@
 				<br />
 
 					Maintained by: Piotr Maluty<br />
+			</p>
+	<p>
+		<a href="ftp://ftp3.am.proftpd.org">ftp://ftp3.am.proftpd.org/</a>
+        <br />
+		<a href="ftp://nas.arminco.com/pub/mirrors/proftpd/">ftp://nas.arminco.com/pub/mirrors/proftpd/</a>
+		<br />
+
+		Location: Armenia					(Yerevan, Armenia)
+				<br />
+
+					Maintained by: Vahan Yerkanian<br />
 			</p>
 
 #include "footer.epl"
