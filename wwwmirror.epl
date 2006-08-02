@@ -41,7 +41,6 @@
 	<a href="http://www.hk.proftpd.org/">hk</a>
 	<a href="http://www.hu.proftpd.org/">hu</a>
 	<a href="http://www.ie.proftpd.org/">ie</a>
-	<a href="http://www.il.proftpd.org/">il</a>
 	<a href="http://www.it.proftpd.org/">it</a>
 	<a href="http://www.li.proftpd.org/">li</a>
 	<a href="http://www.lv.proftpd.org/">lv</a>
@@ -69,17 +68,6 @@
 		Location: Australia				<br />
 
 					Maintained by: Jason Andrade<br />
-			</p>
-	<p>
-		<a href="http://www1.de.proftpd.org">http://www1.de.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.uasw.edu/">http://proftpd.uasw.edu/</a>
-		<br />
-
-		Location: Germany					(Wolfenbuettel)
-				<br />
-
-					Maintained by: Thorsten Ludewig<br />
 			</p>
 	<p>
 		<a href="http://www1.dk.proftpd.org">http://www1.dk.proftpd.org/</a>
@@ -180,6 +168,17 @@
 					Maintained by: fastorama.com<br />
 			</p>
 	<p>
+		<a href="http://www10.fr.proftpd.org">http://www10.fr.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.mirror.tyneo.net/">http://proftpd.mirror.tyneo.net/</a>
+		<br />
+
+		Location: France					(Paris, FRANCE)
+				<br />
+
+					Maintained by: Samuel Kauffmann<br />
+			</p>
+	<p>
 		<a href="http://www1.be.proftpd.org">http://www1.be.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.mirror.easynet.be/">http://proftpd.mirror.easynet.be/</a>
@@ -210,17 +209,6 @@
 		Location: Sweden				<br />
 
 					Maintained by: Patrik Forsberg<br />
-			</p>
-	<p>
-		<a href="http://www1.fr.proftpd.org">http://www1.fr.proftpd.org/</a>
-        <br />
-		<a href="http://www.proftpd.seasonfive.com/">http://www.proftpd.seasonfive.com/</a>
-		<br />
-
-		Location: France					(FR, Paris)
-				<br />
-
-					Maintained by: Yannick Lecaillez<br />
 			</p>
 	<p>
 		<a href="http://www2.at.proftpd.org">http://www2.at.proftpd.org/</a>
@@ -398,17 +386,6 @@
 					Maintained by: Hans Braeunlein<br />
 			</p>
 	<p>
-		<a href="http://www4.au.proftpd.org">http://www4.au.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.iridiumhosting.com/">http://proftpd.iridiumhosting.com/</a>
-		<br />
-
-		Location: Australia					(Australia)
-				<br />
-
-					Maintained by: Adam Neat<br />
-			</p>
-	<p>
 		<a href="http://www1.li.proftpd.org">http://www1.li.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.lie-comtel.li/">http://proftpd.lie-comtel.li/</a>
@@ -451,17 +428,6 @@
 				<br />
 
 					Maintained by: Antonio Prado<br />
-			</p>
-	<p>
-		<a href="http://www1.il.proftpd.org">http://www1.il.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.spd.co.il/">http://proftpd.spd.co.il/</a>
-		<br />
-
-		Location: Israel					(Israel)
-				<br />
-
-					Maintained by: Avi hirsh<br />
 			</p>
 	<p>
 		<a href="http://www10.nl.proftpd.org">http://www10.nl.proftpd.org/</a>
@@ -607,17 +573,6 @@
 					Maintained by: Juliano Primavesi<br />
 			</p>
 	<p>
-		<a href="http://www5.ro.proftpd.org">http://www5.ro.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.mivosoft.ro/">http://proftpd.mivosoft.ro/</a>
-		<br />
-
-		Location: Romania					(Bucharest)
-				<br />
-
-					Maintained by: Cristian Miu<br />
-			</p>
-	<p>
 		<a href="http://www3.ar.proftpd.org">http://www3.ar.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.bairesweb.com/">http://proftpd.bairesweb.com/</a>
@@ -638,17 +593,6 @@
 				<br />
 
 					Maintained by: Oi Internet<br />
-			</p>
-	<p>
-		<a href="http://www2.ie.proftpd.org">http://www2.ie.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.oss-mirror.org/">http://proftpd.oss-mirror.org/</a>
-		<br />
-
-		Location: Ireland					(Dublin - Ireland)
-				<br />
-
-					Maintained by: Ralf Uhlemann<br />
 			</p>
 	<p>
 		<a href="http://www3.lv.proftpd.org">http://www3.lv.proftpd.org/</a>

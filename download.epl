@@ -23,6 +23,7 @@
 	<a href="ftp://ftp.bg.proftpd.org/">bg</a>
 	<a href="ftp://ftp.ca.proftpd.org/">ca</a>
 	<a href="ftp://ftp.ch.proftpd.org/">ch</a>
+	<a href="ftp://ftp.cl.proftpd.org/">cl</a>
 	<a href="ftp://ftp.cz.proftpd.org/">cz</a>
 	<a href="ftp://ftp.de.proftpd.org/">de</a>
 	<a href="ftp://ftp.dk.proftpd.org/">dk</a>
@@ -700,6 +701,28 @@
 				<br />
 
 					Maintained by: Vahan Yerkanian<br />
+			</p>
+	<p>
+		<a href="ftp://ftp9.fr.proftpd.org">ftp://ftp9.fr.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.mirror.tyneo.net/pub">http://proftpd.mirror.tyneo.net/pub</a>
+		<br />
+
+		Location: France					(Paris, FRANCE)
+				<br />
+
+					Maintained by: Samuel Kauffmann<br />
+			</p>
+	<p>
+		<a href="ftp://ftp3.cl.proftpd.org">ftp://ftp3.cl.proftpd.org/</a>
+        <br />
+		<a href="ftp://mirrors.pctools.cl/proftpd">ftp://mirrors.pctools.cl/proftpd</a>
+		<br />
+
+		Location: Chile					(Chile)
+				<br />
+
+					Maintained by: Felipe Tornvall N.<br />
 			</p>
 
 #include "footer.epl"
