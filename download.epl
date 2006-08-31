@@ -21,6 +21,7 @@
 	<a href="ftp://ftp.au.proftpd.org/">au</a>
 	<a href="ftp://ftp.be.proftpd.org/">be</a>
 	<a href="ftp://ftp.bg.proftpd.org/">bg</a>
+	<a href="ftp://ftp.br.proftpd.org/">br</a>
 	<a href="ftp://ftp.ca.proftpd.org/">ca</a>
 	<a href="ftp://ftp.ch.proftpd.org/">ch</a>
 	<a href="ftp://ftp.cl.proftpd.org/">cl</a>
@@ -538,28 +539,6 @@
 					Maintained by: Alexander Dulgerov<br />
 			</p>
 	<p>
-		<a href="ftp://ftp3.ro.proftpd.org">ftp://ftp3.ro.proftpd.org/</a>
-        <br />
-		<a href="ftp://proftpd.zoel.ro/Linux/mirrors/proftpd.org/">ftp://proftpd.zoel.ro/Linux/mirrors/proftpd.org/</a>
-		<br />
-
-		Location: Romania					(Craiova, Dolj, Romania)
-				<br />
-
-					Maintained by: Mihai Marinas<br />
-			</p>
-	<p>
-		<a href="ftp://ftp4.ro.proftpd.org">ftp://ftp4.ro.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.linux.ro/ftp.proftpd.org/">ftp://ftp.linux.ro/ftp.proftpd.org/</a>
-		<br />
-
-		Location: Romania					(Romania)
-				<br />
-
-					Maintained by: Radu Brebu<br />
-			</p>
-	<p>
 		<a href="ftp://ftp2.ar.proftpd.org">ftp://ftp2.ar.proftpd.org/</a>
         <br />
 		<a href="ftp://proftpd.bairesweb.com/pub/proftpd/">ftp://proftpd.bairesweb.com/pub/proftpd/</a>
@@ -705,7 +684,7 @@
 	<p>
 		<a href="ftp://ftp9.fr.proftpd.org">ftp://ftp9.fr.proftpd.org/</a>
         <br />
-		<a href="http://proftpd.mirror.tyneo.net/pub">http://proftpd.mirror.tyneo.net/pub</a>
+		<a href="ftp://proftpd.mirror.tyneo.net/pub/proftpd/">ftp://proftpd.mirror.tyneo.net/pub/proftpd/</a>
 		<br />
 
 		Location: France					(Paris, FRANCE)
@@ -723,6 +702,39 @@
 				<br />
 
 					Maintained by: Felipe Tornvall N.<br />
+			</p>
+	<p>
+		<a href="ftp://ftp8.uk.proftpd.org">ftp://ftp8.uk.proftpd.org/</a>
+        <br />
+		<a href="ftp://ftp.operatelecom.com/pub/ftp.proftpd.org/">ftp://ftp.operatelecom.com/pub/ftp.proftpd.org/</a>
+		<br />
+
+		Location: United kingdom					(Birmingham, UK)
+				<br />
+
+					Maintained by: Joe Holden (Opera Telecom Limited)<br />
+			</p>
+	<p>
+		<a href="ftp://ftp1.br.proftpd.org">ftp://ftp1.br.proftpd.org/</a>
+        <br />
+		<a href="ftp://proftpd.oi.com.br/">ftp://proftpd.oi.com.br/</a>
+		<br />
+
+		Location: Brazil					(Rio de Janeiro)
+				<br />
+
+					Maintained by: Oi Internet<br />
+			</p>
+	<p>
+		<a href="ftp://ftp3.ro.proftpd.org">ftp://ftp3.ro.proftpd.org/</a>
+        <br />
+		<a href="ftp://ftp.hostingromania.ro/Linux/mirrors/proftpd.org">ftp://ftp.hostingromania.ro/Linux/mirrors/proftpd.org</a>
+		<br />
+
+		Location: Romania					(Craiova, Dolj, Romania, Europe)
+				<br />
+
+					Maintained by: Mihai Marinas<br />
 			</p>
 
 #include "footer.epl"

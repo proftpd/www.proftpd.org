@@ -92,6 +92,17 @@
 					Maintained by: Alexander Velin<br />
 			</p>
 	<p>
+		<a href="http://www5.pl.proftpd.org">http://www5.pl.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.geosdreams.info/">http://proftpd.geosdreams.info/</a>
+		<br />
+
+		Location: Poland					(Poland)
+				<br />
+
+					Maintained by: Piotr Chumicki<br />
+			</p>
+	<p>
 		<a href="http://www1.nl.proftpd.org">http://www1.nl.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.proserve.nl/">http://proftpd.proserve.nl/</a>
@@ -101,6 +112,17 @@
 				<br />
 
 					Maintained by: Peter Batenburg<br />
+			</p>
+	<p>
+		<a href="http://www11.fr.proftpd.org">http://www11.fr.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.multidist.com">http://proftpd.multidist.com</a>
+		<br />
+
+		Location: France					(France)
+				<br />
+
+					Maintained by: MULTIDIST SARL<br />
 			</p>
 	<p>
 		<a href="http://www1.sg.proftpd.org">http://www1.sg.proftpd.org/</a>
@@ -135,6 +157,17 @@
 					Maintained by: Daniel Austin<br />
 			</p>
 	<p>
+		<a href="http://www10.uk.proftpd.org">http://www10.uk.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.rewt.org.uk">http://proftpd.rewt.org.uk</a>
+		<br />
+
+		Location: United kingdom					(Birmingham, UK)
+				<br />
+
+					Maintained by: Joe Holden (Opera Telecom Limited)<br />
+			</p>
+	<p>
 		<a href="http://www1.bg.proftpd.org">http://www1.bg.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.fixity.net/">http://proftpd.fixity.net/</a>
@@ -166,6 +199,17 @@
 				<br />
 
 					Maintained by: fastorama.com<br />
+			</p>
+	<p>
+		<a href="http://www3.ua.proftpd.org">http://www3.ua.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.privat-online.net">http://proftpd.privat-online.net</a>
+		<br />
+
+		Location: Ukraine					(Ukraine (Dnipropetrovs'k))
+				<br />
+
+					Maintained by: Sergii Bolotin<br />
 			</p>
 	<p>
 		<a href="http://www10.fr.proftpd.org">http://www10.fr.proftpd.org/</a>
@@ -551,17 +595,6 @@
 					Maintained by: Alexander Dulgerov<br />
 			</p>
 	<p>
-		<a href="http://www4.ro.proftpd.org">http://www4.ro.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.zoel.ro/">http://proftpd.zoel.ro/</a>
-		<br />
-
-		Location: Romania					(Craiova, Dolj, Romania)
-				<br />
-
-					Maintained by: Mihai Marinas<br />
-			</p>
-	<p>
 		<a href="http://www3.br.proftpd.org">http://www3.br.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.giga.com.br/">http://proftpd.giga.com.br/</a>
@@ -626,6 +659,17 @@
 				<br />
 
 					Maintained by: Sergey Melnik<br />
+			</p>
+	<p>
+		<a href="http://www4.ro.proftpd.org">http://www4.ro.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.hostingromania.ro/">http://proftpd.hostingromania.ro/</a>
+		<br />
+
+		Location: Romania					(Craiova, Dolj, Romania, Europe)
+				<br />
+
+					Maintained by: Mihai Marinas<br />
 			</p>
 
 #include "footer.epl"
