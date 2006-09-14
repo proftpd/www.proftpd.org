@@ -31,7 +31,6 @@
 	<a href="http://www.be.proftpd.org/">be</a>
 	<a href="http://www.bg.proftpd.org/">bg</a>
 	<a href="http://www.br.proftpd.org/">br</a>
-	<a href="http://www.ch.proftpd.org/">ch</a>
 	<a href="http://www.cl.proftpd.org/">cl</a>
 	<a href="http://www.cn.proftpd.org/">cn</a>
 	<a href="http://www.cz.proftpd.org/">cz</a>
@@ -155,17 +154,6 @@
 				<br />
 
 					Maintained by: Daniel Austin<br />
-			</p>
-	<p>
-		<a href="http://www10.uk.proftpd.org">http://www10.uk.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.rewt.org.uk">http://proftpd.rewt.org.uk</a>
-		<br />
-
-		Location: United kingdom					(Birmingham, UK)
-				<br />
-
-					Maintained by: Joe Holden (Opera Telecom Limited)<br />
 			</p>
 	<p>
 		<a href="http://www1.bg.proftpd.org">http://www1.bg.proftpd.org/</a>
@@ -308,17 +296,6 @@
 				<br />
 
 					Maintained by: Alain Bidaud<br />
-			</p>
-	<p>
-		<a href="http://www1.ch.proftpd.org">http://www1.ch.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.azylog.net/">http://proftpd.azylog.net/</a>
-		<br />
-
-		Location: Switzerland					(Switzerland)
-				<br />
-
-					Maintained by: Escario Julien<br />
 			</p>
 	<p>
 		<a href="http://www2.hu.proftpd.org">http://www2.hu.proftpd.org/</a>
@@ -670,6 +647,28 @@
 				<br />
 
 					Maintained by: Mihai Marinas<br />
+			</p>
+	<p>
+		<a href="http://www12.fr.proftpd.org">http://www12.fr.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.fragtime.net">http://proftpd.fragtime.net</a>
+		<br />
+
+		Location: France					(Paris)
+				<br />
+
+					Maintained by: KmiKze<br />
+			</p>
+	<p>
+		<a href="http://www6.ro.proftpd.org">http://www6.ro.proftpd.org/</a>
+        <br />
+		<a href="proftpd.ran.ro">proftpd.ran.ro</a>
+		<br />
+
+		Location: Romania					(Bacau Romania)
+				<br />
+
+					Maintained by: Alin Claudiu<br />
 			</p>
 
 #include "footer.epl"

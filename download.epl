@@ -736,5 +736,38 @@
 
 					Maintained by: Mihai Marinas<br />
 			</p>
+	<p>
+		<a href="ftp://ftp10.fr.proftpd.org">ftp://ftp10.fr.proftpd.org/</a>
+        <br />
+		<a href="ftp://fragtime.net/mirrors/proftpd/">ftp://fragtime.net/mirrors/proftpd/</a>
+		<br />
+
+		Location: France					(Paris)
+				<br />
+
+					Maintained by: KmiKze<br />
+			</p>
+	<p>
+		<a href="ftp://ftp9.uk.proftpd.org">ftp://ftp9.uk.proftpd.org/</a>
+        <br />
+		<a href="ftp://ftp.mirror.ac.uk/mirror/ftp.proftpd.org">ftp://ftp.mirror.ac.uk/mirror/ftp.proftpd.org</a>
+		<br />
+
+		Location: United kingdom					(UK (Bath))
+				<br />
+
+					Maintained by: James Spencer<br />
+			</p>
+	<p>
+		<a href="ftp://ftp7.ro.proftpd.org">ftp://ftp7.ro.proftpd.org/</a>
+        <br />
+		<a href="ftp://ftp.ran.ro/pub/mirrors/ftp.proftpd.org/">ftp://ftp.ran.ro/pub/mirrors/ftp.proftpd.org/</a>
+		<br />
+
+		Location: Romania					(Bacau Romania)
+				<br />
+
+					Maintained by: Alin Claudiu<br />
+			</p>
 
 #include "footer.epl"
