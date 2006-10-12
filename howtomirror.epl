@@ -29,7 +29,7 @@ to the DNS.</p>
 want to call it using the following arguments, for example:</p>
 
 <tt>rsync --recursive --times --links --compress --delete \<br />
-    rsync.proftpd.org::proftpd-www /local/path/</tt>
+        rsync.proftpd.org::proftpd-www /local/path/</tt>
 
 
 <h2>Mirroring the FTP Site</h2>
@@ -39,7 +39,8 @@ want to call it using the following arguments, for example:</p>
 want to call it using the following arguments, for example:</p>
 
 <tt>rsync --recursive --times --links --compress --delete \<br />
-    rsync.proftpd.org::proftpd-ftp /local/path/</tt>
+        --exclude=README.MIRRORS rsync.proftpd.org::proftpd-ftp \<br />
+        /local/path/</tt>
 
 
 <h2>Let us know you're out there</h2>
