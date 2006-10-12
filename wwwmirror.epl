@@ -682,5 +682,27 @@
 
 					Maintained by: Marko Uskokovic<br />
 			</p>
+	<p>
+		<a href="http://www12.uk.proftpd.org">http://www12.uk.proftpd.org/</a>
+        <br />
+		<a href="proftpd.oregon.me.uk">proftpd.oregon.me.uk</a>
+		<br />
+
+		Location: United kingdom					(United Kingdom)
+				<br />
+
+					Maintained by: Bruce Martin<br />
+			</p>
+	<p>
+		<a href="http://www20.de.proftpd.org">http://www20.de.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.online-mirror.de/">http://proftpd.online-mirror.de/</a>
+		<br />
+
+		Location: Germany					(Cologne, Germany)
+				<br />
+
+					Maintained by: Michael Weber<br />
+			</p>
 
 #include "footer.epl"

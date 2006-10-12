@@ -792,5 +792,16 @@
 
 					Maintained by: Marko Uskokovic<br />
 			</p>
+	<p>
+		<a href="ftp://ftp12.fr.proftpd.org">ftp://ftp12.fr.proftpd.org/</a>
+        <br />
+		<a href="ftp://mirrors.ircam.fr/pub/proftpd">ftp://mirrors.ircam.fr/pub/proftpd</a>
+		<br />
+
+		Location: France					(Paris, France)
+				<br />
+
+					Maintained by: Arnaud Gomes<br />
+			</p>
 
 #include "footer.epl"
