@@ -551,6 +551,17 @@
 					Maintained by: Leo Truksans<br />
 			</p>
 	<p>
+		<a href="ftp://ftp5.ro.proftpd.org">ftp://ftp5.ro.proftpd.org/</a>
+        <br />
+		<a href="ftp://ftp.mivosoft.ro/mirrors/ftp.proftpd.org/">ftp://ftp.mivosoft.ro/mirrors/ftp.proftpd.org/</a>
+		<br />
+
+		Location: Romania					(romania)
+				<br />
+
+					Maintained by: Cristian Miu<br />
+			</p>
+	<p>
 		<a href="ftp://ftp30.us.proftpd.org">ftp://ftp30.us.proftpd.org/</a>
         <br />
 		<a href="ftp://mirrors.24-7-solutions.net/pub/proftpd/">ftp://mirrors.24-7-solutions.net/pub/proftpd/</a>
@@ -802,6 +813,28 @@
 				<br />
 
 					Maintained by: Arnaud Gomes<br />
+			</p>
+	<p>
+		<a href="ftp://ftp16.de.proftpd.org">ftp://ftp16.de.proftpd.org/</a>
+        <br />
+		<a href="ftp://proftpd.ckoepp.de/">ftp://proftpd.ckoepp.de/</a>
+		<br />
+
+		Location: Germany					(Germany / Bavaria / Fuerth)
+				<br />
+
+					Maintained by: Christian Koepp<br />
+			</p>
+	<p>
+		<a href="ftp://ftp10.nl.proftpd.org">ftp://ftp10.nl.proftpd.org/</a>
+        <br />
+		<a href="ftp.fillekes.com">ftp.fillekes.com</a>
+		<br />
+
+		Location: Netherlands					(Amsterdam)
+				<br />
+
+					Maintained by: Hugosch<br />
 			</p>
 
 #include "footer.epl"

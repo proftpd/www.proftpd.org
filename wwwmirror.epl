@@ -573,6 +573,17 @@
 					Maintained by: Juliano Primavesi<br />
 			</p>
 	<p>
+		<a href="http://www5.ro.proftpd.org">http://www5.ro.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.mivosoft.ro/">http://proftpd.mivosoft.ro/</a>
+		<br />
+
+		Location: Romania					(Bucharest)
+				<br />
+
+					Maintained by: Cristian Miu<br />
+			</p>
+	<p>
 		<a href="http://www3.ar.proftpd.org">http://www3.ar.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.bairesweb.com/">http://proftpd.bairesweb.com/</a>
@@ -685,7 +696,7 @@
 	<p>
 		<a href="http://www12.uk.proftpd.org">http://www12.uk.proftpd.org/</a>
         <br />
-		<a href="proftpd.oregon.me.uk">proftpd.oregon.me.uk</a>
+		<a href="http://proftpd.oregon.me.uk/">http://proftpd.oregon.me.uk/</a>
 		<br />
 
 		Location: United kingdom					(United Kingdom)
@@ -703,6 +714,17 @@
 				<br />
 
 					Maintained by: Michael Weber<br />
+			</p>
+	<p>
+		<a href="http://www21.de.proftpd.org">http://www21.de.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.ckoepp.de/">http://proftpd.ckoepp.de/</a>
+		<br />
+
+		Location: Germany					(Germany / Bavaria / Fuerth)
+				<br />
+
+					Maintained by: Christian Koepp<br />
 			</p>
 
 #include "footer.epl"
