@@ -24,7 +24,6 @@
 	<a href="ftp://ftp.br.proftpd.org/">br</a>
 	<a href="ftp://ftp.ca.proftpd.org/">ca</a>
 	<a href="ftp://ftp.ch.proftpd.org/">ch</a>
-	<a href="ftp://ftp.cl.proftpd.org/">cl</a>
 	<a href="ftp://ftp.cz.proftpd.org/">cz</a>
 	<a href="ftp://ftp.de.proftpd.org/">de</a>
 	<a href="ftp://ftp.dk.proftpd.org/">dk</a>
@@ -248,17 +247,6 @@
 					Maintained by: Wojtek Sylwestrzak<br />
 			</p>
 	<p>
-		<a href="ftp://ftp1.se.proftpd.org">ftp://ftp1.se.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.eagle.y.se/pub/proftpd/">ftp://ftp.eagle.y.se/pub/proftpd/</a>
-		<br />
-
-		Location: Sweden					(&Ouml;rnsk&ouml;ldsvik)
-				<br />
-
-					Maintained by: Martin Ostlund<br />
-			</p>
-	<p>
 		<a href="ftp://ftp3.se.proftpd.org">ftp://ftp3.se.proftpd.org/</a>
         <br />
 		<a href="ftp://mirror2.dataphone.se/pub/ProFTPD/">ftp://mirror2.dataphone.se/pub/ProFTPD/</a>
@@ -297,17 +285,6 @@
 		Location: Ukraine				<br />
 
 					Maintained by: Alexander Ryumshin<br />
-			</p>
-	<p>
-		<a href="ftp://ftp8.pl.proftpd.org">ftp://ftp8.pl.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.tpnet.pl/d1/proftpd/">ftp://ftp.tpnet.pl/d1/proftpd/</a>
-		<br />
-
-		Location: Poland					(Piotrkow Trybunalski)
-				<br />
-
-					Maintained by: Ireneusz Weglewski<br />
 			</p>
 	<p>
 		<a href="ftp://ftp4.uk.proftpd.org">ftp://ftp4.uk.proftpd.org/</a>
@@ -460,7 +437,7 @@
 		Location: Taiwan					(National Taiwan University)
 				<br />
 
-					Maintained by: Rong-En Fan<br />
+					Maintained by: FTP Admin<br />
 			</p>
 	<p>
 		<a href="ftp://ftp13.de.proftpd.org">ftp://ftp13.de.proftpd.org/</a>
@@ -573,17 +550,6 @@
 					Maintained by: Sergey Melnik<br />
 			</p>
 	<p>
-		<a href="ftp://ftp4.jp.proftpd.org">ftp://ftp4.jp.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.yz.yamagata-u.ac.jp/pub/network/proftpd/">ftp://ftp.yz.yamagata-u.ac.jp/pub/network/proftpd/</a>
-		<br />
-
-		Location: Japan					(JAPAN)
-				<br />
-
-					Maintained by: Tomohiro Ito<br />
-			</p>
-	<p>
 		<a href="ftp://ftp1.za.proftpd.org">ftp://ftp1.za.proftpd.org/</a>
         <br />
 		<a href="ftp://ftp.is.co.za/mirror/ftp.proftpd.org">ftp://ftp.is.co.za/mirror/ftp.proftpd.org</a>
@@ -681,28 +647,6 @@
 				<br />
 
 					Maintained by: Samuel Kauffmann<br />
-			</p>
-	<p>
-		<a href="ftp://ftp3.cl.proftpd.org">ftp://ftp3.cl.proftpd.org/</a>
-        <br />
-		<a href="ftp://mirrors.pctools.cl/proftpd">ftp://mirrors.pctools.cl/proftpd</a>
-		<br />
-
-		Location: Chile					(Chile)
-				<br />
-
-					Maintained by: Felipe Tornvall N.<br />
-			</p>
-	<p>
-		<a href="ftp://ftp8.uk.proftpd.org">ftp://ftp8.uk.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.operatelecom.com/pub/ftp.proftpd.org/">ftp://ftp.operatelecom.com/pub/ftp.proftpd.org/</a>
-		<br />
-
-		Location: United kingdom					(Birmingham, UK)
-				<br />
-
-					Maintained by: Joe Holden (Opera Telecom Limited)<br />
 			</p>
 	<p>
 		<a href="ftp://ftp1.br.proftpd.org">ftp://ftp1.br.proftpd.org/</a>
@@ -826,15 +770,26 @@
 					Maintained by: Christian Koepp<br />
 			</p>
 	<p>
-		<a href="ftp://ftp10.nl.proftpd.org">ftp://ftp10.nl.proftpd.org/</a>
+		<a href="ftp://ftp13.fr.proftpd.org">ftp://ftp13.fr.proftpd.org/</a>
         <br />
-		<a href="ftp.fillekes.com">ftp.fillekes.com</a>
+		<a href="ftp://miroir-francais.fr/pub/proftpd/ftp/">ftp://miroir-francais.fr/pub/proftpd/ftp/</a>
 		<br />
 
-		Location: Netherlands					(Amsterdam)
+		Location: France					(Paris, France)
 				<br />
 
-					Maintained by: Hugosch<br />
+					Maintained by: Kurt LeClerc<br />
+			</p>
+	<p>
+		<a href="ftp://ftp36.us.proftpd.org">ftp://ftp36.us.proftpd.org/</a>
+        <br />
+		<a href="ftp://demon.jmwpromotions.net/mirrors/proftpd">ftp://demon.jmwpromotions.net/mirrors/proftpd</a>
+		<br />
+
+		Location: United states					(Minnesota)
+				<br />
+
+					Maintained by: james paul woods<br />
 			</p>
 
 #include "footer.epl"
