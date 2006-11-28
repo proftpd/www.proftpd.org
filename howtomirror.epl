@@ -5,18 +5,19 @@
 
 <h1><: print "$html_title" :></h1>
 
-<p>ProFTPD has dozens of mirror sites around the world.  If you wish to add
-to this number and help spread the load, please read on and mirror the FTP
-site, web site, or both.</p>
+<p>ProFTPD has dozens of mirror sites around the world. At this time, the
+mirror network has very good geographic and network diversity, so we are
+declining offers of new public mirrors. Instructions for mirroring will
+remain here for existing mirrors and those who wish to maintain a local
+mirror for their own use.</p>
 
 
 <h2>Mirroring the Web Site</h2>
 
 <p>To join the ProFTPD Mirror Network, you'll need to make a couple of minor
 changes to your web server configuration. This will make it easier for end
-users to find the closest mirror. When you
-<a href="http://mirrors.proftpd.org/">submit your details</a>, we'll assign
-a site name within your geographic region (i.e.,
+users to find the closest mirror. After you have submitted your details,
+we'll assign a site name within your geographic region (i.e.,
 <tt>www1.uk.proftpd.org</tt>). Your web server needs to be configured to
 handle this hostname as well as the master entry for your country (i.e.,
 <tt>www.uk.proftpd.org</tt>). Apache users can achieve this by using the
@@ -43,10 +44,7 @@ want to call it using the following arguments, for example:</p>
         /local/path/</tt>
 
 
-<h2>Let us know you're out there</h2>
-
-<p>Please submit your details at
-<a href="http://mirrors.proftpd.org/">mirrors.proftpd.org</a>.</p>
+<h2>Mailing List</h2>
 
 <p>Once you become a ProFTPD mirror site, it is <em>highly recommended</em>
 that you subscribe to the <tt>proftpd-mirror</tt> mailing list. We use this
