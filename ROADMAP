@@ -5,7 +5,7 @@ Version: $Id$
 C = Committed
 
 1.3.1
-        I18N/L10N (including RFC2640)
+     C  I18N/L10N (including RFC2640)
         #2052 - ProFTPD "unused parameters" cleanup
         #2062 - Enhance UserOwner/GroupOwner to take IDs as well as name
                 parameters
@@ -32,7 +32,7 @@ C = Committed
      C  #2719 - ProFTPD should install its header files into the installation
                 location
         #2731 - Add ability to set process priority for file transfers
-        #2756 - Support for TLSPassPhraseProvider
+     C  #2756 - Support for TLSPassPhraseProvider
      C  Add mod_ban
         Add mod_shaper
      C  Add mod_wrap2
