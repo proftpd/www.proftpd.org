@@ -31,14 +31,13 @@
 	<a href="http://www.be.proftpd.org/">be</a>
 	<a href="http://www.bg.proftpd.org/">bg</a>
 	<a href="http://www.br.proftpd.org/">br</a>
-	<a href="http://www.cl.proftpd.org/">cl</a>
 	<a href="http://www.cz.proftpd.org/">cz</a>
 	<a href="http://www.de.proftpd.org/">de</a>
 	<a href="http://www.dk.proftpd.org/">dk</a>
 	<a href="http://www.fr.proftpd.org/">fr</a>
 	<a href="http://www.hk.proftpd.org/">hk</a>
-	<a href="http://www.hu.proftpd.org/">hu</a>
 	<a href="http://www.ie.proftpd.org/">ie</a>
+	<a href="http://www.il.proftpd.org/">il</a>
 	<a href="http://www.it.proftpd.org/">it</a>
 	<a href="http://www.jp.proftpd.org/">jp</a>
 	<a href="http://www.li.proftpd.org/">li</a>
@@ -48,6 +47,7 @@
 	<a href="http://www.ro.proftpd.org/">ro</a>
 	<a href="http://www.se.proftpd.org/">se</a>
 	<a href="http://www.sg.proftpd.org/">sg</a>
+	<a href="http://www.si.proftpd.org/">si</a>
 	<a href="http://www.sk.proftpd.org/">sk</a>
 	<a href="http://www.tr.proftpd.org/">tr</a>
 	<a href="http://www.ua.proftpd.org/">ua</a>
@@ -299,17 +299,6 @@
 					Maintained by: Alain Bidaud<br />
 			</p>
 	<p>
-		<a href="http://www2.hu.proftpd.org">http://www2.hu.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.it-worx.hu/">http://proftpd.it-worx.hu/</a>
-		<br />
-
-		Location: Hungary					(Hungary)
-				<br />
-
-					Maintained by: Gabor Keve<br />
-			</p>
-	<p>
 		<a href="http://www21.us.proftpd.org">http://www21.us.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.sourwood.net/">http://proftpd.sourwood.net/</a>
@@ -329,28 +318,6 @@
 		Location: Hong kong				<br />
 
 					Maintained by: Stanley Au<br />
-			</p>
-	<p>
-		<a href="http://www1.cl.proftpd.org">http://www1.cl.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.freeby.pctools.cl">http://proftpd.freeby.pctools.cl</a>
-		<br />
-
-		Location: Chile					(Chile)
-				<br />
-
-					Maintained by: Felipe Tornvall N.<br />
-			</p>
-	<p>
-		<a href="http://www4.ar.proftpd.org">http://www4.ar.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.wnpower.com/">http://proftpd.wnpower.com/</a>
-		<br />
-
-		Location: Argentina					(Argentina)
-				<br />
-
-					Maintained by: Federico Alvarez<br />
 			</p>
 	<p>
 		<a href="http://www16.de.proftpd.org">http://www16.de.proftpd.org/</a>
@@ -485,17 +452,6 @@
 					Maintained by: Nicolas Sigal<br />
 			</p>
 	<p>
-		<a href="http://www1.cz.proftpd.org">http://www1.cz.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.ni.cz/">http://proftpd.ni.cz/</a>
-		<br />
-
-		Location: Czech republic					(http://proftpd.ni.cz)
-				<br />
-
-					Maintained by: Michal Jursa<br />
-			</p>
-	<p>
 		<a href="http://www2.tr.proftpd.org">http://www2.tr.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.ulak.net.tr/">http://proftpd.ulak.net.tr/</a>
@@ -560,28 +516,6 @@
 				<br />
 
 					Maintained by: Alexander Dulgerov<br />
-			</p>
-	<p>
-		<a href="http://www3.br.proftpd.org">http://www3.br.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.giga.com.br/">http://proftpd.giga.com.br/</a>
-		<br />
-
-		Location: Brazil					(Porto Alege)
-				<br />
-
-					Maintained by: Juliano Primavesi<br />
-			</p>
-	<p>
-		<a href="http://www5.ro.proftpd.org">http://www5.ro.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.mivosoft.ro/">http://proftpd.mivosoft.ro/</a>
-		<br />
-
-		Location: Romania					(Bucharest)
-				<br />
-
-					Maintained by: Cristian Miu<br />
 			</p>
 	<p>
 		<a href="http://www3.ar.proftpd.org">http://www3.ar.proftpd.org/</a>
@@ -725,6 +659,39 @@
 				<br />
 
 					Maintained by: Christian Koepp<br />
+			</p>
+	<p>
+		<a href="http://www2.si.proftpd.org">http://www2.si.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.paknet.org">http://proftpd.paknet.org</a>
+		<br />
+
+		Location: Slovenia					(Slovenia)
+				<br />
+
+					Maintained by: Miha Novak<br />
+			</p>
+	<p>
+		<a href="http://www13.fr.proftpd.org">http://www13.fr.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.miroir-francais.fr/">http://proftpd.miroir-francais.fr/</a>
+		<br />
+
+		Location: France					(Paris, France)
+				<br />
+
+					Maintained by: Kurt LeClerc<br />
+			</p>
+	<p>
+		<a href="http://www2.il.proftpd.org">http://www2.il.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.interhost.co.il">http://proftpd.interhost.co.il</a>
+		<br />
+
+		Location: Israel					(ISRAEL)
+				<br />
+
+					Maintained by: Dmitry Sherman<br />
 			</p>
 
 #include "footer.epl"
