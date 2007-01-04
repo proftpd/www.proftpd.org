@@ -53,7 +53,6 @@
 	<a href="http://www.ua.proftpd.org/">ua</a>
 	<a href="http://www.uk.proftpd.org/">uk</a>
 	<a href="http://www.us.proftpd.org/">us</a>
-	<a href="http://www.yu.proftpd.org/">yu</a>
 
 </div>
 <hr />
@@ -275,17 +274,6 @@
 				<br />
 
 					Maintained by: Vahan Yerkanian<br />
-			</p>
-	<p>
-		<a href="http://www17.de.proftpd.org">http://www17.de.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.heilpraktiker-empfehlung.de">http://proftpd.heilpraktiker-empfehlung.de</a>
-		<br />
-
-		Location: Germany					(Frankfurt)
-				<br />
-
-					Maintained by: Tim Muthmann<br />
 			</p>
 	<p>
 		<a href="http://www4.fr.proftpd.org">http://www4.fr.proftpd.org/</a>
@@ -615,17 +603,6 @@
 				<br />
 
 					Maintained by: Ryo Kato<br />
-			</p>
-	<p>
-		<a href="http://www1.yu.proftpd.org">http://www1.yu.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.etf.bg.ac.yu">http://proftpd.etf.bg.ac.yu</a>
-		<br />
-
-		Location: Yugoslavia					(Belgrade, Serbia)
-				<br />
-
-					Maintained by: Marko Uskokovic<br />
 			</p>
 	<p>
 		<a href="http://www12.uk.proftpd.org">http://www12.uk.proftpd.org/</a>

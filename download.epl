@@ -44,7 +44,6 @@
 	<a href="ftp://ftp.tw.proftpd.org/">tw</a>
 	<a href="ftp://ftp.uk.proftpd.org/">uk</a>
 	<a href="ftp://ftp.us.proftpd.org/">us</a>
-	<a href="ftp://ftp.yu.proftpd.org/">yu</a>
 	<a href="ftp://ftp.za.proftpd.org/">za</a>
 
 </div>
@@ -671,17 +670,6 @@
 					Maintained by: Ryo Kato<br />
 			</p>
 	<p>
-		<a href="ftp://ftp1.yu.proftpd.org">ftp://ftp1.yu.proftpd.org/</a>
-        <br />
-		<a href="ftp://mirror.etf.bg.ac.yu/proftpd/">ftp://mirror.etf.bg.ac.yu/proftpd/</a>
-		<br />
-
-		Location: Yugoslavia					(Belgrade, Serbia)
-				<br />
-
-					Maintained by: Marko Uskokovic<br />
-			</p>
-	<p>
 		<a href="ftp://ftp12.fr.proftpd.org">ftp://ftp12.fr.proftpd.org/</a>
         <br />
 		<a href="ftp://mirrors.ircam.fr/pub/proftpd">ftp://mirrors.ircam.fr/pub/proftpd</a>
@@ -713,17 +701,6 @@
 				<br />
 
 					Maintained by: Kurt LeClerc<br />
-			</p>
-	<p>
-		<a href="ftp://ftp36.us.proftpd.org">ftp://ftp36.us.proftpd.org/</a>
-        <br />
-		<a href="ftp://zinc.jmwpromotions.net/mirrors/proftpd/">ftp://zinc.jmwpromotions.net/mirrors/proftpd/</a>
-		<br />
-
-		Location: United states					(Minnesota)
-				<br />
-
-					Maintained by: james paul woods<br />
 			</p>
 
 #include "footer.epl"
