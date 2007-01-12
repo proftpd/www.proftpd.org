@@ -3,6 +3,14 @@
 
 #include "header.epl"
 
+<h1>1.3.1rc2 released</h1>
+[<i>12/Jan/2007</i>]
+<p>The ProFTPD Project team is pleased to make the 1.3.1rc2 release to the
+community. Highlights include mod_sql bugfixes, fixed handling of certain
+configurations, and mod_radius enhancments.  Please read the
+<a href="docs/RELEASE_NOTES-1.3.1rc2">RELEASE_NOTES</a> and
+<a href="docs/NEWS-1.3.1rc2">NEWS</a> files for the full details.</p>
+
 <h1>1.3.1rc1 released</h1>
 [<i>12/Dec/2006</i>]
 <p>The ProFTPD Project team is pleased to make the 1.3.1rc1 release to the
