@@ -254,16 +254,6 @@
 					Maintained by: Network Operations Center<br />
 			</p>
 	<p>
-		<a href="ftp://ftp2.tw.proftpd.org">ftp://ftp2.tw.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.fhl.net/pub/proftpd/">ftp://ftp.fhl.net/pub/proftpd/</a>
-		<br />
-
-		Location: Taiwan				<br />
-
-					Maintained by: Jer-Min Tsai<br />
-			</p>
-	<p>
 		<a href="ftp://ftp4.uk.proftpd.org">ftp://ftp4.uk.proftpd.org/</a>
         <br />
 		<a href="ftp://proftpd.networkedsystems.co.uk/">ftp://proftpd.networkedsystems.co.uk/</a>
@@ -426,17 +416,6 @@
 				<br />
 
 					Maintained by: Antonio Prado<br />
-			</p>
-	<p>
-		<a href="ftp://ftp2.sk.proftpd.org">ftp://ftp2.sk.proftpd.org/</a>
-        <br />
-		<a href="ftp://proftpd.x86.sk/pub/proftpd/">ftp://proftpd.x86.sk/pub/proftpd/</a>
-		<br />
-
-		Location: Slovakia (slovak republic)					(Slovakia)
-				<br />
-
-					Maintained by: Jakub Cerveny<br />
 			</p>
 	<p>
 		<a href="ftp://ftp1.ar.proftpd.org">ftp://ftp1.ar.proftpd.org/</a>
@@ -626,17 +605,6 @@
 					Maintained by: Mihai Marinas<br />
 			</p>
 	<p>
-		<a href="ftp://ftp10.fr.proftpd.org">ftp://ftp10.fr.proftpd.org/</a>
-        <br />
-		<a href="ftp://fragtime.net/mirrors/proftpd/">ftp://fragtime.net/mirrors/proftpd/</a>
-		<br />
-
-		Location: France					(Paris)
-				<br />
-
-					Maintained by: KmiKze<br />
-			</p>
-	<p>
 		<a href="ftp://ftp35.us.proftpd.org">ftp://ftp35.us.proftpd.org/</a>
         <br />
 		<a href="ftp://proftpd.mirrors.tds.net/pub/ProFTPD">ftp://proftpd.mirrors.tds.net/pub/ProFTPD</a>
@@ -701,6 +669,17 @@
 				<br />
 
 					Maintained by: Kurt LeClerc<br />
+			</p>
+	<p>
+		<a href="ftp://ftp11.nl.proftpd.org">ftp://ftp11.nl.proftpd.org/</a>
+        <br />
+		<a href="ftp://mirror.hostfuss.com/proftpd/">ftp://mirror.hostfuss.com/proftpd/</a>
+		<br />
+
+		Location: Netherlands					(Amsterdam)
+				<br />
+
+					Maintained by: Frederik Timmerman<br />
 			</p>
 
 #include "footer.epl"

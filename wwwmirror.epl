@@ -134,17 +134,6 @@
 					Maintained by: Network Operations Center<br />
 			</p>
 	<p>
-		<a href="http://www3.au.proftpd.org">http://www3.au.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.dknss.com/">http://proftpd.dknss.com/</a>
-		<br />
-
-		Location: Australia					(Gosford)
-				<br />
-
-					Maintained by: Darrin Khan<br />
-			</p>
-	<p>
 		<a href="http://www3.uk.proftpd.org">http://www3.uk.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.networkedsystems.co.uk/">http://proftpd.networkedsystems.co.uk/</a>
@@ -220,17 +209,6 @@
 				<br />
 
 					Maintained by: Iyi Dogan Claude<br />
-			</p>
-	<p>
-		<a href="http://www4.pl.proftpd.org">http://www4.pl.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.tpnet.pl/">http://proftpd.tpnet.pl/</a>
-		<br />
-
-		Location: Poland					(Piotrkow Trybunalski)
-				<br />
-
-					Maintained by: Ireneusz Weglewski<br />
 			</p>
 	<p>
 		<a href="http://www1.se.proftpd.org">http://www1.se.proftpd.org/</a>
@@ -572,17 +550,6 @@
 					Maintained by: Mihai Marinas<br />
 			</p>
 	<p>
-		<a href="http://www12.fr.proftpd.org">http://www12.fr.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.fragtime.net">http://proftpd.fragtime.net</a>
-		<br />
-
-		Location: France					(Paris)
-				<br />
-
-					Maintained by: KmiKze<br />
-			</p>
-	<p>
 		<a href="http://www1.jp.proftpd.org">http://www1.jp.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.sakuretsu.net/">http://proftpd.sakuretsu.net/</a>
@@ -603,17 +570,6 @@
 				<br />
 
 					Maintained by: Ryo Kato<br />
-			</p>
-	<p>
-		<a href="http://www12.uk.proftpd.org">http://www12.uk.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.oregon.me.uk/">http://proftpd.oregon.me.uk/</a>
-		<br />
-
-		Location: United kingdom					(United Kingdom)
-				<br />
-
-					Maintained by: Bruce Martin<br />
 			</p>
 	<p>
 		<a href="http://www20.de.proftpd.org">http://www20.de.proftpd.org/</a>
@@ -669,6 +625,17 @@
 				<br />
 
 					Maintained by: Dmitry Sherman<br />
+			</p>
+	<p>
+		<a href="http://www12.nl.proftpd.org">http://www12.nl.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.mirror.hostfuss.com/">http://proftpd.mirror.hostfuss.com/</a>
+		<br />
+
+		Location: Netherlands					(Amsterdam)
+				<br />
+
+					Maintained by: Frederik Timmerman<br />
 			</p>
 
 #include "footer.epl"
