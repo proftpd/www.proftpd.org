@@ -32,6 +32,12 @@ for allowing themselves to be listed.</p>
       ftp.slackware.com.
   </li>
 
+  <li><a href="http://ibiblio.org/">ibiblio.org</a><br />
+      ibiblio.org is using ProFTPD to distribute Linux distributions,
+      open source packages, academic texts, public domain books and music
+      collections.
+  </li>
+
   <li><a href="ftp://ftp.freeradius.org/">ftp.freeradius.org</a><br />
       The FreeRADIUS Server Project is an attempt to create a
       high-performance and highly configurable GPL'd free RADIUS server.
