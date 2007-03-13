@@ -51,7 +51,6 @@
 	<a href="http://www.sk.proftpd.org/">sk</a>
 	<a href="http://www.tr.proftpd.org/">tr</a>
 	<a href="http://www.ua.proftpd.org/">ua</a>
-	<a href="http://www.uk.proftpd.org/">uk</a>
 	<a href="http://www.us.proftpd.org/">us</a>
 
 </div>
@@ -134,15 +133,15 @@
 					Maintained by: Network Operations Center<br />
 			</p>
 	<p>
-		<a href="http://www3.uk.proftpd.org">http://www3.uk.proftpd.org/</a>
+		<a href="http://www3.au.proftpd.org">http://www3.au.proftpd.org/</a>
         <br />
-		<a href="http://proftpd.networkedsystems.co.uk/">http://proftpd.networkedsystems.co.uk/</a>
+		<a href="http://proftpd.dknss.com/">http://proftpd.dknss.com/</a>
 		<br />
 
-		Location: United kingdom					(London)
+		Location: Australia					(Gosford)
 				<br />
 
-					Maintained by: Daniel Austin<br />
+					Maintained by: Darrin Khan<br />
 			</p>
 	<p>
 		<a href="http://www1.bg.proftpd.org">http://www1.bg.proftpd.org/</a>
@@ -376,7 +375,7 @@
 	<p>
 		<a href="http://www10.nl.proftpd.org">http://www10.nl.proftpd.org/</a>
         <br />
-		<a href="http://proftpd.tuxor.nl/">http://proftpd.tuxor.nl/</a>
+		<a href="http://proftpd.tuxor-solutions.nl/">http://proftpd.tuxor-solutions.nl/</a>
 		<br />
 
 		Location: Netherlands					(Netherlands)
@@ -394,17 +393,6 @@
 				<br />
 
 					Maintained by: Ionel Roiban<br />
-			</p>
-	<p>
-		<a href="http://www1.sk.proftpd.org">http://www1.sk.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.x86.sk/">http://proftpd.x86.sk/</a>
-		<br />
-
-		Location: Slovakia (slovak republic)					(Slovakia)
-				<br />
-
-					Maintained by: Jakub Cerveny<br />
 			</p>
 	<p>
 		<a href="http://www2.ar.proftpd.org">http://www2.ar.proftpd.org/</a>
@@ -583,17 +571,6 @@
 					Maintained by: Michael Weber<br />
 			</p>
 	<p>
-		<a href="http://www21.de.proftpd.org">http://www21.de.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.ckoepp.de/">http://proftpd.ckoepp.de/</a>
-		<br />
-
-		Location: Germany					(Germany / Bavaria / Fuerth)
-				<br />
-
-					Maintained by: Christian Koepp<br />
-			</p>
-	<p>
 		<a href="http://www2.si.proftpd.org">http://www2.si.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.paknet.org">http://proftpd.paknet.org</a>
@@ -625,17 +602,6 @@
 				<br />
 
 					Maintained by: Dmitry Sherman<br />
-			</p>
-	<p>
-		<a href="http://www12.nl.proftpd.org">http://www12.nl.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.mirror.hostfuss.com/">http://proftpd.mirror.hostfuss.com/</a>
-		<br />
-
-		Location: Netherlands					(Amsterdam)
-				<br />
-
-					Maintained by: Frederik Timmerman<br />
 			</p>
 
 #include "footer.epl"
