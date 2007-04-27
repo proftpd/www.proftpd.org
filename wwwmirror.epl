@@ -48,7 +48,6 @@
 	<a href="http://www.se.proftpd.org/">se</a>
 	<a href="http://www.sg.proftpd.org/">sg</a>
 	<a href="http://www.si.proftpd.org/">si</a>
-	<a href="http://www.sk.proftpd.org/">sk</a>
 	<a href="http://www.tr.proftpd.org/">tr</a>
 	<a href="http://www.ua.proftpd.org/">ua</a>
 	<a href="http://www.us.proftpd.org/">us</a>
@@ -188,17 +187,6 @@
 					Maintained by: Sergii Bolotin<br />
 			</p>
 	<p>
-		<a href="http://www10.fr.proftpd.org">http://www10.fr.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.mirror.tyneo.net/">http://proftpd.mirror.tyneo.net/</a>
-		<br />
-
-		Location: France					(Paris, FRANCE)
-				<br />
-
-					Maintained by: Samuel Kauffmann<br />
-			</p>
-	<p>
 		<a href="http://www1.be.proftpd.org">http://www1.be.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.mirror.easynet.be/">http://proftpd.mirror.easynet.be/</a>
@@ -228,7 +216,7 @@
 		Location: Austria					(Vienna Univ. of Technology, Austria)
 				<br />
 
-					Maintained by: Antonin<br />
+					Maintained by: Rudi (Rudolf Ladner)<br />
 			</p>
 	<p>
 		<a href="http://www2.ua.proftpd.org">http://www2.ua.proftpd.org/</a>
@@ -428,28 +416,6 @@
 					Maintained by: Zdenek Bill<br />
 			</p>
 	<p>
-		<a href="http://www2.sk.proftpd.org">http://www2.sk.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.nasieti.sk">http://proftpd.nasieti.sk</a>
-		<br />
-
-		Location: Slovakia (slovak republic)					(Slovakia, Bratislava)
-				<br />
-
-					Maintained by: Filip Hlavenka<br />
-			</p>
-	<p>
-		<a href="http://www31.us.proftpd.org">http://www31.us.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.mirrorgeek.com/">http://proftpd.mirrorgeek.com/</a>
-		<br />
-
-		Location: United states					(servermatrix.com Dallas, TX, USA)
-				<br />
-
-					Maintained by: Dmitriy<br />
-			</p>
-	<p>
 		<a href="http://www32.us.proftpd.org">http://www32.us.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.mirrors.borgnet.us/">http://proftpd.mirrors.borgnet.us/</a>
@@ -602,6 +568,17 @@
 				<br />
 
 					Maintained by: Dmitry Sherman<br />
+			</p>
+	<p>
+		<a href="http://www12.nl.proftpd.org">http://www12.nl.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.mirror.hostfuss.com/">http://proftpd.mirror.hostfuss.com/</a>
+		<br />
+
+		Location: Netherlands					(Amsterdam)
+				<br />
+
+					Maintained by: Frederik Timmerman<br />
 			</p>
 
 #include "footer.epl"

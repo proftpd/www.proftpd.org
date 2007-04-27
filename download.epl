@@ -181,7 +181,7 @@
 	<p>
 		<a href="ftp://ftp5.no.proftpd.org">ftp://ftp5.no.proftpd.org/</a>
         <br />
-		<a href="ftp://ftp.tomt.net/pub/proftpd/">ftp://ftp.tomt.net/pub/proftpd/</a>
+		<a href="ftp://ftp.tomt.net/pub/software/proftpd/">ftp://ftp.tomt.net/pub/software/proftpd/</a>
 		<br />
 
 		Location: Norway				<br />
@@ -220,16 +220,6 @@
 				<br />
 
 					Maintained by: lubos klokner<br />
-			</p>
-	<p>
-		<a href="ftp://ftp3.pl.proftpd.org">ftp://ftp3.pl.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.icm.edu.pl/pub/unix/ftp/proftpd/">ftp://ftp.icm.edu.pl/pub/unix/ftp/proftpd/</a>
-		<br />
-
-		Location: Poland				<br />
-
-					Maintained by: Wojtek Sylwestrzak<br />
 			</p>
 	<p>
 		<a href="ftp://ftp3.se.proftpd.org">ftp://ftp3.se.proftpd.org/</a>
@@ -547,17 +537,6 @@
 				<br />
 
 					Maintained by: Vahan Yerkanian<br />
-			</p>
-	<p>
-		<a href="ftp://ftp9.fr.proftpd.org">ftp://ftp9.fr.proftpd.org/</a>
-        <br />
-		<a href="ftp://proftpd.mirror.tyneo.net/pub/proftpd/">ftp://proftpd.mirror.tyneo.net/pub/proftpd/</a>
-		<br />
-
-		Location: France					(Paris, FRANCE)
-				<br />
-
-					Maintained by: Samuel Kauffmann<br />
 			</p>
 	<p>
 		<a href="ftp://ftp1.br.proftpd.org">ftp://ftp1.br.proftpd.org/</a>
