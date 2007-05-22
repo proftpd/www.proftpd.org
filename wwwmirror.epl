@@ -43,7 +43,6 @@
 	<a href="http://www.li.proftpd.org/">li</a>
 	<a href="http://www.lv.proftpd.org/">lv</a>
 	<a href="http://www.nl.proftpd.org/">nl</a>
-	<a href="http://www.pl.proftpd.org/">pl</a>
 	<a href="http://www.ro.proftpd.org/">ro</a>
 	<a href="http://www.se.proftpd.org/">se</a>
 	<a href="http://www.sg.proftpd.org/">sg</a>
@@ -87,17 +86,6 @@
 				<br />
 
 					Maintained by: Alexander Velin<br />
-			</p>
-	<p>
-		<a href="http://www5.pl.proftpd.org">http://www5.pl.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.geosdreams.info/">http://proftpd.geosdreams.info/</a>
-		<br />
-
-		Location: Poland					(Poland)
-				<br />
-
-					Maintained by: Piotr Chumicki<br />
 			</p>
 	<p>
 		<a href="http://www1.nl.proftpd.org">http://www1.nl.proftpd.org/</a>
@@ -337,17 +325,6 @@
 				<br />
 
 					Maintained by: Wesley Haines<br />
-			</p>
-	<p>
-		<a href="http://www7.fr.proftpd.org">http://www7.fr.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.psinformatique.net/">http://proftpd.psinformatique.net/</a>
-		<br />
-
-		Location: France					(france)
-				<br />
-
-					Maintained by: Pascal<br />
 			</p>
 	<p>
 		<a href="http://www4.it.proftpd.org">http://www4.it.proftpd.org/</a>
