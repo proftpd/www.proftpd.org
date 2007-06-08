@@ -583,17 +583,6 @@
 					Maintained by: Tom Laermans<br />
 			</p>
 	<p>
-		<a href="ftp://ftp15.de.proftpd.org">ftp://ftp15.de.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.nullstelle.de/proftpd.org/">ftp://ftp.nullstelle.de/proftpd.org/</a>
-		<br />
-
-		Location: Germany					(Germany)
-				<br />
-
-					Maintained by: Ryo Kato<br />
-			</p>
-	<p>
 		<a href="ftp://ftp12.fr.proftpd.org">ftp://ftp12.fr.proftpd.org/</a>
         <br />
 		<a href="ftp://mirrors.ircam.fr/pub/proftpd">ftp://mirrors.ircam.fr/pub/proftpd</a>
@@ -636,6 +625,17 @@
 				<br />
 
 					Maintained by: Frederik Timmerman<br />
+			</p>
+	<p>
+		<a href="ftp://ftp37.us.proftpd.org">ftp://ftp37.us.proftpd.org/</a>
+        <br />
+		<a href="ftp://proftpd.mirror.facebook.com/">ftp://proftpd.mirror.facebook.com/</a>
+		<br />
+
+		Location: United states					(San Francisco, CA United States)
+				<br />
+
+					Maintained by: Lucas Nealan<br />
 			</p>
 
 #include "footer.epl"

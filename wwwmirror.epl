@@ -492,17 +492,6 @@
 					Maintained by: Katsuji Ishikawa<br />
 			</p>
 	<p>
-		<a href="http://www19.de.proftpd.org">http://www19.de.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.mirror.nullstelle.de/">http://proftpd.mirror.nullstelle.de/</a>
-		<br />
-
-		Location: Germany					(Germany)
-				<br />
-
-					Maintained by: Ryo Kato<br />
-			</p>
-	<p>
 		<a href="http://www20.de.proftpd.org">http://www20.de.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.online-mirror.de/">http://proftpd.online-mirror.de/</a>
@@ -556,6 +545,17 @@
 				<br />
 
 					Maintained by: Frederik Timmerman<br />
+			</p>
+	<p>
+		<a href="http://www36.us.proftpd.org">http://www36.us.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.mirror.facebook.com/">http://proftpd.mirror.facebook.com/</a>
+		<br />
+
+		Location: United states					(San Francisco, CA United States)
+				<br />
+
+					Maintained by: Lucas Nealan<br />
 			</p>
 
 #include "footer.epl"
