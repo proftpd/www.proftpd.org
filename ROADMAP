@@ -6,10 +6,6 @@ C = Committed
 
 1.3.1
      C  I18N/L10N (including RFC2640)
-        #2052 - ProFTPD "unused parameters" cleanup
-        #2062 - Enhance UserOwner/GroupOwner to take IDs as well as name
-                parameters
-        #2067 - Allow/Deny Filters should be supported in the <Limit> context
      C  #2447 - HAVE_OPENSSL should be managed in configure.in
      C  #2599 - Support for using OpenSSL "engines"
      C  #2610 - Support for logging to /var/log/lastlog
@@ -31,13 +27,17 @@ C = Committed
                 some data
      C  #2719 - ProFTPD should install its header files into the installation
                 location
-        #2731 - Add ability to set process priority for file transfers
      C  #2756 - Support for TLSPassPhraseProvider
      C  Add mod_ban
-        Add mod_shaper
      C  Add mod_wrap2
 
 TBD
 	Add mod_md5 module to contrib/
-	#2368 - Allow contrib modules to extend mod_sql's SQLAuthTypes
+        Add mod_shaper
         #2013 - Track RFC2228 sessions in scoreboard
+        #2052 - ProFTPD "unused parameters" cleanup
+        #2062 - Enhance UserOwner/GroupOwner to take IDs as well as name
+                parameters
+        #2067 - Allow/Deny Filters should be supported in the <Limit> context
+	#2368 - Allow contrib modules to extend mod_sql's SQLAuthTypes
+        #2731 - Add ability to set process priority for file transfers
