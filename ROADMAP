@@ -32,8 +32,8 @@ C = Committed
      C  Add mod_wrap2
 
 TBD
-	Add mod_md5 module to contrib/
         Add mod_shaper
+	Add mod_dynmasq
         #2013 - Track RFC2228 sessions in scoreboard
         #2052 - ProFTPD "unused parameters" cleanup
         #2062 - Enhance UserOwner/GroupOwner to take IDs as well as name
