@@ -28,7 +28,6 @@
 	<a href="ftp://ftp.de.proftpd.org/">de</a>
 	<a href="ftp://ftp.dk.proftpd.org/">dk</a>
 	<a href="ftp://ftp.fr.proftpd.org/">fr</a>
-	<a href="ftp://ftp.hu.proftpd.org/">hu</a>
 	<a href="ftp://ftp.ie.proftpd.org/">ie</a>
 	<a href="ftp://ftp.it.proftpd.org/">it</a>
 	<a href="ftp://ftp.jp.proftpd.org/">jp</a>
@@ -158,16 +157,6 @@
 				<br />
 
 					Maintained by: MrJacK<br />
-			</p>
-	<p>
-		<a href="ftp://ftp1.hu.proftpd.org">ftp://ftp1.hu.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.fsn.hu/pub/proftpd/">ftp://ftp.fsn.hu/pub/proftpd/</a>
-		<br />
-
-		Location: Hungary				<br />
-
-					Maintained by: Attila Nagy<br />
 			</p>
 	<p>
 		<a href="ftp://ftp1.nl.proftpd.org">ftp://ftp1.nl.proftpd.org/</a>
@@ -440,17 +429,6 @@
 					Maintained by: Leo Truksans<br />
 			</p>
 	<p>
-		<a href="ftp://ftp30.us.proftpd.org">ftp://ftp30.us.proftpd.org/</a>
-        <br />
-		<a href="ftp://mirrors.24-7-solutions.net/pub/proftpd/">ftp://mirrors.24-7-solutions.net/pub/proftpd/</a>
-		<br />
-
-		Location: United states					(United states, New York, 24/7 Solutions (24-7-solutions.net))
-				<br />
-
-					Maintained by: Sergey Melnik<br />
-			</p>
-	<p>
 		<a href="ftp://ftp1.za.proftpd.org">ftp://ftp1.za.proftpd.org/</a>
         <br />
 		<a href="ftp://ftp.is.co.za/mirror/ftp.proftpd.org">ftp://ftp.is.co.za/mirror/ftp.proftpd.org</a>
@@ -482,17 +460,6 @@
 				<br />
 
 					Maintained by: Dirk Kalkman<br />
-			</p>
-	<p>
-		<a href="ftp://ftp6.ro.proftpd.org">ftp://ftp6.ro.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.kappa.ro/pub/mirrors/ftp.proftpd.org/">ftp://ftp.kappa.ro/pub/mirrors/ftp.proftpd.org/</a>
-		<br />
-
-		Location: Romania					(Romania Bucharest)
-				<br />
-
-					Maintained by: FTP Admin<br />
 			</p>
 	<p>
 		<a href="ftp://ftp7.nl.proftpd.org">ftp://ftp7.nl.proftpd.org/</a>
