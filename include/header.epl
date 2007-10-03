@@ -77,9 +77,9 @@
   <h1>Mailing Lists</h1>
   <ul>
     <li><a href="/lists.html">Available Lists</a></li>
-    <li><a href="http://sourceforge.net/mailarchive/forum.php?forum_id=2625">Announce Archive</a></li>
-    <li><a href="http://sourceforge.net/mailarchive/forum.php?forum_id=2637">Users Archive</a></li>
-    <li><a href="http://sourceforge.net/mailarchive/forum.php?forum_id=2638">Development Archive</a></li>
+    <li><a href="http://sourceforge.net/mailarchive/forum.php?forum_name=proftp-announce">Announce Archive</a></li>
+    <li><a href="http://sourceforge.net/mailarchive/forum.php?forum_name=proftp-user">Users Archive</a></li>
+    <li><a href="http://sourceforge.net/mailarchive/forum.php?forum_name=proftp-devel">Development Archive</a></li>
   </ul>
 
   <div id="footer">
