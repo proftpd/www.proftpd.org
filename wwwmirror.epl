@@ -44,7 +44,6 @@
 	<a href="http://www.lv.proftpd.org/">lv</a>
 	<a href="http://www.nl.proftpd.org/">nl</a>
 	<a href="http://www.ro.proftpd.org/">ro</a>
-	<a href="http://www.se.proftpd.org/">se</a>
 	<a href="http://www.sg.proftpd.org/">sg</a>
 	<a href="http://www.si.proftpd.org/">si</a>
 	<a href="http://www.tr.proftpd.org/">tr</a>
@@ -184,16 +183,6 @@
 				<br />
 
 					Maintained by: Iyi Dogan Claude<br />
-			</p>
-	<p>
-		<a href="http://www1.se.proftpd.org">http://www1.se.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.mirror2.dataphone.se/">http://proftpd.mirror2.dataphone.se/</a>
-		<br />
-
-		Location: Sweden				<br />
-
-					Maintained by: Patrik Forsberg<br />
 			</p>
 	<p>
 		<a href="http://www2.at.proftpd.org">http://www2.at.proftpd.org/</a>
@@ -446,17 +435,6 @@
 				<br />
 
 					Maintained by: Leo Truksans<br />
-			</p>
-	<p>
-		<a href="http://www13.de.proftpd.org">http://www13.de.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.linux-mirror.org/">http://proftpd.linux-mirror.org/</a>
-		<br />
-
-		Location: Germany					(Cologne/K&ouml;ln - Germany)
-				<br />
-
-					Maintained by: Michael Mettmann<br />
 			</p>
 	<p>
 		<a href="http://www4.ro.proftpd.org">http://www4.ro.proftpd.org/</a>

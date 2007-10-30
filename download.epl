@@ -36,7 +36,6 @@
 	<a href="ftp://ftp.no.proftpd.org/">no</a>
 	<a href="ftp://ftp.pl.proftpd.org/">pl</a>
 	<a href="ftp://ftp.ro.proftpd.org/">ro</a>
-	<a href="ftp://ftp.se.proftpd.org/">se</a>
 	<a href="ftp://ftp.sk.proftpd.org/">sk</a>
 	<a href="ftp://ftp.tr.proftpd.org/">tr</a>
 	<a href="ftp://ftp.tw.proftpd.org/">tw</a>
@@ -211,16 +210,6 @@
 					Maintained by: lubos klokner<br />
 			</p>
 	<p>
-		<a href="ftp://ftp3.se.proftpd.org">ftp://ftp3.se.proftpd.org/</a>
-        <br />
-		<a href="ftp://mirror2.dataphone.se/pub/ProFTPD/">ftp://mirror2.dataphone.se/pub/ProFTPD/</a>
-		<br />
-
-		Location: Sweden				<br />
-
-					Maintained by: Mirror Admin<br />
-			</p>
-	<p>
 		<a href="ftp://ftp0.ie.proftpd.org">ftp://ftp0.ie.proftpd.org/</a>
         <br />
 		<a href="ftp://ftp.esat.net/mirrors/ftp.proftpd.org/">ftp://ftp.esat.net/mirrors/ftp.proftpd.org/</a>
@@ -230,17 +219,6 @@
 				<br />
 
 					Maintained by: Dave Burke<br />
-			</p>
-	<p>
-		<a href="ftp://ftp7.fr.proftpd.org">ftp://ftp7.fr.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.seasonfive.com/mirrors/ftp.proftpd.org/">ftp://ftp.seasonfive.com/mirrors/ftp.proftpd.org/</a>
-		<br />
-
-		Location: France					(FR, Paris)
-				<br />
-
-					Maintained by: Yannick Lecaillez<br />
 			</p>
 	<p>
 		<a href="ftp://ftp2.at.proftpd.org">ftp://ftp2.at.proftpd.org/</a>
@@ -559,17 +537,6 @@
 				<br />
 
 					Maintained by: Arnaud Gomes<br />
-			</p>
-	<p>
-		<a href="ftp://ftp16.de.proftpd.org">ftp://ftp16.de.proftpd.org/</a>
-        <br />
-		<a href="ftp://proftpd.ckoepp.de/">ftp://proftpd.ckoepp.de/</a>
-		<br />
-
-		Location: Germany					(Germany / Bavaria / Fuerth)
-				<br />
-
-					Maintained by: Christian Koepp<br />
 			</p>
 	<p>
 		<a href="ftp://ftp13.fr.proftpd.org">ftp://ftp13.fr.proftpd.org/</a>
