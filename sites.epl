@@ -128,10 +128,17 @@ for allowing themselves to be listed.</p>
       they have chosen to use ProFTPD as the ftp server.
   </li>
 
-  <!--  Contact: Chris Nizzardini <chris.n@xnsolutions.net> -->
+  <!-- Contact: Chris Nizzardini <chris.n@xnsolutions.net> -->
   <li><a href="http://www.xnsolutions.net/">XN Solutions</a><br />
       Web hosting and web design company powered by ProFTPD and other
       open source solutions.
+  </li>
+
+  <!-- Contact: Jens Fredlund <jens.f@loomit.se> -->
+  <li><a href="http://www.loomit.se/">Loomit</a><br />
+      Swedish hosting company located in Stockholm. Offers high quality
+      services like webbhosting, domain registration, and co-location with
+      redundant connectivity.
   </li>
 </ul>
 
