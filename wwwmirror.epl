@@ -39,7 +39,6 @@
 	<a href="http://www.ie.proftpd.org/">ie</a>
 	<a href="http://www.il.proftpd.org/">il</a>
 	<a href="http://www.it.proftpd.org/">it</a>
-	<a href="http://www.jp.proftpd.org/">jp</a>
 	<a href="http://www.li.proftpd.org/">li</a>
 	<a href="http://www.lv.proftpd.org/">lv</a>
 	<a href="http://www.nl.proftpd.org/">nl</a>
@@ -424,17 +423,6 @@
 				<br />
 
 					Maintained by: Mihai Marinas<br />
-			</p>
-	<p>
-		<a href="http://www1.jp.proftpd.org">http://www1.jp.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.sakuretsu.net/">http://proftpd.sakuretsu.net/</a>
-		<br />
-
-		Location: Japan					(Japan (Tokyo))
-				<br />
-
-					Maintained by: Katsuji Ishikawa<br />
 			</p>
 	<p>
 		<a href="http://www20.de.proftpd.org">http://www20.de.proftpd.org/</a>
