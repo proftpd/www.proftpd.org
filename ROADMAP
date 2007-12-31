@@ -4,40 +4,22 @@ Version: $Id$
 
 C = Committed
 
-1.3.1
-     C  I18N/L10N (including RFC2640)
-     C  #2447 - HAVE_OPENSSL should be managed in configure.in
-     C  #2599 - Support for using OpenSSL "engines"
-     C  #2610 - Support for logging to /var/log/lastlog
-     C  #2611 - non root CreateHome
-     C  #2626 - "ERROR" macro collision can cause compiler errors on HP-UX.
-     C  #2627 - Support for RADIUS quotatab module
-     C  #2628 - SQLHomedirOnDemand should be deprecated
-     C  #2651 - LogFormat should support variable for logging the response
-                message
-     C  #2654 - FEAT command should be subject to <Limit>
-     C  #2664 - Add 'delay info' ftpdctl action for showing DelayTable values
-     C  #2686 - Allow CCC command but still require SSL/TLS protection during
-                authentication
-     C  #2687 -	Support for more efficient group table schema
-     C  #2713 - Ability to check a user's existing disk bytes/files usage
-                and update tally accordingly
-     C  #2714 - mod_auth_file munges AuthUserFile, AuthGroupFile records
-        #2715 - Use session.notes table, rather than config tree, for storing
-                some data
-     C  #2719 - ProFTPD should install its header files into the installation
-                location
-     C  #2756 - Support for TLSPassPhraseProvider
-     C  Add mod_ban
-     C  Add mod_wrap2
+1.3.2
+     C  MLSD/MLST support (RFC3659)
+     C  Add mod_dynmasq
+        Bug#2067 - Allow/Deny Filters should be supported in the <Limit> context
+        Bug#2840 - OCSP support
+        Bug#2871 - Remove ftpshut and the /etc/shutmsg file
+        Bug#2991 - Need a `prxs' (ProFTPD Extensions) command-line tool for
+                   building shared modules without proftpd source.
 
 TBD
         Add mod_shaper
-	Add mod_dynmasq
-        #2013 - Track RFC2228 sessions in scoreboard
-        #2052 - ProFTPD "unused parameters" cleanup
-        #2062 - Enhance UserOwner/GroupOwner to take IDs as well as name
-                parameters
-        #2067 - Allow/Deny Filters should be supported in the <Limit> context
-	#2368 - Allow contrib modules to extend mod_sql's SQLAuthTypes
-        #2731 - Add ability to set process priority for file transfers
+        Bug#2013 - Track RFC2228 sessions in scoreboard
+        Bug#2052 - ProFTPD "unused parameters" cleanup
+        Bug#2062 - Enhance UserOwner/GroupOwner to take IDs as well as name
+                   parameters
+	Bug#2368 - Allow contrib modules to extend mod_sql's SQLAuthTypes
+        Bug#2715 - Use session.notes table, rather than config tree, for storing
+                   some data
+        Bug#2731 - Add ability to set process priority for file transfers
