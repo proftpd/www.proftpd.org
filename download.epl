@@ -21,7 +21,6 @@
 	<a href="ftp://ftp.au.proftpd.org/">au</a>
 	<a href="ftp://ftp.be.proftpd.org/">be</a>
 	<a href="ftp://ftp.bg.proftpd.org/">bg</a>
-	<a href="ftp://ftp.br.proftpd.org/">br</a>
 	<a href="ftp://ftp.ca.proftpd.org/">ca</a>
 	<a href="ftp://ftp.ch.proftpd.org/">ch</a>
 	<a href="ftp://ftp.cz.proftpd.org/">cz</a>
@@ -147,17 +146,6 @@
 					Maintained by: Rasmus<br />
 			</p>
 	<p>
-		<a href="ftp://ftp4.fr.proftpd.org">ftp://ftp4.fr.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.fastorama.com/mirrors/ftp.proftpd.org/">ftp://ftp.fastorama.com/mirrors/ftp.proftpd.org/</a>
-		<br />
-
-		Location: France					(France, Alsace)
-				<br />
-
-					Maintained by: MrJacK<br />
-			</p>
-	<p>
 		<a href="ftp://ftp1.nl.proftpd.org">ftp://ftp1.nl.proftpd.org/</a>
         <br />
 		<a href="ftp://ftp.nl.uu.net/pub/unix/ftp/proftpd/ftp/">ftp://ftp.nl.uu.net/pub/unix/ftp/proftpd/ftp/</a>
@@ -262,17 +250,6 @@
 				<br />
 
 					Maintained by: Onur BEKTAS<br />
-			</p>
-	<p>
-		<a href="ftp://ftp4.nl.proftpd.org">ftp://ftp4.nl.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.easynet.nl/mirror/proftp/">ftp://ftp.easynet.nl/mirror/proftp/</a>
-		<br />
-
-		Location: Netherlands					(Hoofddorp)
-				<br />
-
-					Maintained by: Diederik<br />
 			</p>
 	<p>
 		<a href="ftp://ftp3.jp.proftpd.org">ftp://ftp3.jp.proftpd.org/</a>
@@ -471,17 +448,6 @@
 				<br />
 
 					Maintained by: Vahan Yerkanian<br />
-			</p>
-	<p>
-		<a href="ftp://ftp1.br.proftpd.org">ftp://ftp1.br.proftpd.org/</a>
-        <br />
-		<a href="ftp://proftpd.oi.com.br/">ftp://proftpd.oi.com.br/</a>
-		<br />
-
-		Location: Brazil					(Rio de Janeiro)
-				<br />
-
-					Maintained by: Oi Internet<br />
 			</p>
 	<p>
 		<a href="ftp://ftp3.ro.proftpd.org">ftp://ftp3.ro.proftpd.org/</a>
