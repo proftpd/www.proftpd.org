@@ -8,6 +8,7 @@ C = Committed
      C  MLSD/MLST support (RFC3659)
      C  Add mod_dynmasq
         Bug#2067 - Allow/Deny Filters should be supported in the <Limit> context
+     C  Bug#2731 - Add ability to set process priority for file transfers
         Bug#2840 - OCSP support
         Bug#2871 - Remove ftpshut and the /etc/shutmsg file
         Bug#2991 - Need a `prxs' (ProFTPD Extensions) command-line tool for
@@ -22,4 +23,3 @@ TBD
 	Bug#2368 - Allow contrib modules to extend mod_sql's SQLAuthTypes
         Bug#2715 - Use session.notes table, rather than config tree, for storing
                    some data
-        Bug#2731 - Add ability to set process priority for file transfers
