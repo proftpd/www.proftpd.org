@@ -33,7 +33,6 @@
 	<a href="http://www.br.proftpd.org/">br</a>
 	<a href="http://www.cz.proftpd.org/">cz</a>
 	<a href="http://www.de.proftpd.org/">de</a>
-	<a href="http://www.dk.proftpd.org/">dk</a>
 	<a href="http://www.fr.proftpd.org/">fr</a>
 	<a href="http://www.hk.proftpd.org/">hk</a>
 	<a href="http://www.ie.proftpd.org/">ie</a>
@@ -42,7 +41,6 @@
 	<a href="http://www.li.proftpd.org/">li</a>
 	<a href="http://www.lv.proftpd.org/">lv</a>
 	<a href="http://www.nl.proftpd.org/">nl</a>
-	<a href="http://www.ro.proftpd.org/">ro</a>
 	<a href="http://www.sg.proftpd.org/">sg</a>
 	<a href="http://www.si.proftpd.org/">si</a>
 	<a href="http://www.tr.proftpd.org/">tr</a>
@@ -62,17 +60,6 @@
 		Location: Australia				<br />
 
 					Maintained by: Jason Andrade<br />
-			</p>
-	<p>
-		<a href="http://www1.dk.proftpd.org">http://www1.dk.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.jaquet.dk/">http://proftpd.jaquet.dk/</a>
-		<br />
-
-		Location: Denmark					(DK, Copenhagen)
-				<br />
-
-					Maintained by: Rasmus Andersen<br />
 			</p>
 	<p>
 		<a href="http://www1.nl.proftpd.org">http://www1.nl.proftpd.org/</a>
@@ -138,17 +125,6 @@
 				<br />
 
 					Maintained by: Dave Burke<br />
-			</p>
-	<p>
-		<a href="http://www3.ua.proftpd.org">http://www3.ua.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.privat-online.net">http://proftpd.privat-online.net</a>
-		<br />
-
-		Location: Ukraine					(Ukraine (Dnipropetrovs'k))
-				<br />
-
-					Maintained by: Sergii Bolotin<br />
 			</p>
 	<p>
 		<a href="http://www1.be.proftpd.org">http://www1.be.proftpd.org/</a>
@@ -249,17 +225,6 @@
 					Maintained by: Jur Rademakers<br />
 			</p>
 	<p>
-		<a href="http://www15.de.proftpd.org">http://www15.de.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.namesdir.com">http://proftpd.namesdir.com</a>
-		<br />
-
-		Location: Germany					(Bamberg, Germany)
-				<br />
-
-					Maintained by: Mihai Leonte<br />
-			</p>
-	<p>
 		<a href="http://www1.li.proftpd.org">http://www1.li.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.lie-comtel.li/">http://proftpd.lie-comtel.li/</a>
@@ -337,17 +302,6 @@
 					Maintained by: Zdenek Bill<br />
 			</p>
 	<p>
-		<a href="http://www32.us.proftpd.org">http://www32.us.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.mirrors.borgnet.us/">http://proftpd.mirrors.borgnet.us/</a>
-		<br />
-
-		Location: United states					(Spokane, Washington)
-				<br />
-
-					Maintained by: Scott Grayban<br />
-			</p>
-	<p>
 		<a href="http://www3.bg.proftpd.org">http://www3.bg.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.cbox.biz/">http://proftpd.cbox.biz/</a>
@@ -390,17 +344,6 @@
 				<br />
 
 					Maintained by: Leo Truksans<br />
-			</p>
-	<p>
-		<a href="http://www4.ro.proftpd.org">http://www4.ro.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.hostingromania.ro/">http://proftpd.hostingromania.ro/</a>
-		<br />
-
-		Location: Romania					(Craiova, Dolj, Romania, Europe)
-				<br />
-
-					Maintained by: Mihai Marinas<br />
 			</p>
 	<p>
 		<a href="http://www20.de.proftpd.org">http://www20.de.proftpd.org/</a>

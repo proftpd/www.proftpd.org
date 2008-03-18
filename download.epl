@@ -25,7 +25,6 @@
 	<a href="ftp://ftp.ch.proftpd.org/">ch</a>
 	<a href="ftp://ftp.cz.proftpd.org/">cz</a>
 	<a href="ftp://ftp.de.proftpd.org/">de</a>
-	<a href="ftp://ftp.dk.proftpd.org/">dk</a>
 	<a href="ftp://ftp.fr.proftpd.org/">fr</a>
 	<a href="ftp://ftp.ie.proftpd.org/">ie</a>
 	<a href="ftp://ftp.it.proftpd.org/">it</a>
@@ -34,8 +33,6 @@
 	<a href="ftp://ftp.nl.proftpd.org/">nl</a>
 	<a href="ftp://ftp.no.proftpd.org/">no</a>
 	<a href="ftp://ftp.pl.proftpd.org/">pl</a>
-	<a href="ftp://ftp.ro.proftpd.org/">ro</a>
-	<a href="ftp://ftp.sk.proftpd.org/">sk</a>
 	<a href="ftp://ftp.tr.proftpd.org/">tr</a>
 	<a href="ftp://ftp.tw.proftpd.org/">tw</a>
 	<a href="ftp://ftp.us.proftpd.org/">us</a>
@@ -136,16 +133,6 @@
 					Maintained by: Thorsten Ludewig<br />
 			</p>
 	<p>
-		<a href="ftp://ftp1.dk.proftpd.org">ftp://ftp1.dk.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.jaquet.dk/pub/proftp/">ftp://ftp.jaquet.dk/pub/proftp/</a>
-		<br />
-
-		Location: Denmark				<br />
-
-					Maintained by: Rasmus<br />
-			</p>
-	<p>
 		<a href="ftp://ftp1.nl.proftpd.org">ftp://ftp1.nl.proftpd.org/</a>
         <br />
 		<a href="ftp://ftp.nl.uu.net/pub/unix/ftp/proftpd/ftp/">ftp://ftp.nl.uu.net/pub/unix/ftp/proftpd/ftp/</a>
@@ -187,17 +174,6 @@
 					Maintained by: ibiblio<br />
 			</p>
 	<p>
-		<a href="ftp://ftp1.sk.proftpd.org">ftp://ftp1.sk.proftpd.org/</a>
-        <br />
-		<a href="ftp://spirit.bentel.sk/mirrors/Proftpd/ftp/">ftp://spirit.bentel.sk/mirrors/Proftpd/ftp/</a>
-		<br />
-
-		Location: Slovakia (slovak republic)					(Bratislava, Slovakia)
-				<br />
-
-					Maintained by: lubos klokner<br />
-			</p>
-	<p>
 		<a href="ftp://ftp0.ie.proftpd.org">ftp://ftp0.ie.proftpd.org/</a>
         <br />
 		<a href="ftp://ftp.esat.net/mirrors/ftp.proftpd.org/">ftp://ftp.esat.net/mirrors/ftp.proftpd.org/</a>
@@ -229,16 +205,6 @@
 				<br />
 
 					Maintained by: Alain Bidaud<br />
-			</p>
-	<p>
-		<a href="ftp://ftp2.ro.proftpd.org">ftp://ftp2.ro.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.iasi.roedu.net/pub/mirrors/ftp.proftpd.org/">ftp://ftp.iasi.roedu.net/pub/mirrors/ftp.proftpd.org/</a>
-		<br />
-
-		Location: Romania				<br />
-
-					Maintained by: SUBREDU Manuel<br />
 			</p>
 	<p>
 		<a href="ftp://ftp2.tr.proftpd.org">ftp://ftp2.tr.proftpd.org/</a>
@@ -340,17 +306,6 @@
 					Maintained by: Nicolas Sigal<br />
 			</p>
 	<p>
-		<a href="ftp://ftp28.us.proftpd.org">ftp://ftp28.us.proftpd.org/</a>
-        <br />
-		<a href="ftp://proftpd.mirrors.borgnet.us/">ftp://proftpd.mirrors.borgnet.us/</a>
-		<br />
-
-		Location: United states					(Spokane, Washington)
-				<br />
-
-					Maintained by: Scott Grayban<br />
-			</p>
-	<p>
 		<a href="ftp://ftp4.bg.proftpd.org">ftp://ftp4.bg.proftpd.org/</a>
         <br />
 		<a href="ftp://ftp.proftpd.cbox.biz/proftpd/">ftp://ftp.proftpd.cbox.biz/proftpd/</a>
@@ -448,17 +403,6 @@
 				<br />
 
 					Maintained by: Vahan Yerkanian<br />
-			</p>
-	<p>
-		<a href="ftp://ftp3.ro.proftpd.org">ftp://ftp3.ro.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.hostingromania.ro/Linux/mirrors/proftpd.org">ftp://ftp.hostingromania.ro/Linux/mirrors/proftpd.org</a>
-		<br />
-
-		Location: Romania					(Craiova, Dolj, Romania, Europe)
-				<br />
-
-					Maintained by: Mihai Marinas<br />
 			</p>
 	<p>
 		<a href="ftp://ftp35.us.proftpd.org">ftp://ftp35.us.proftpd.org/</a>
