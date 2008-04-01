@@ -43,7 +43,6 @@
 	<a href="http://www.nl.proftpd.org/">nl</a>
 	<a href="http://www.sg.proftpd.org/">sg</a>
 	<a href="http://www.si.proftpd.org/">si</a>
-	<a href="http://www.tr.proftpd.org/">tr</a>
 	<a href="http://www.ua.proftpd.org/">ua</a>
 	<a href="http://www.us.proftpd.org/">us</a>
 
@@ -51,16 +50,6 @@
 <hr />
 
 
-	<p>
-		<a href="http://www2.au.proftpd.org">http://www2.au.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.planetmirror.com/">http://proftpd.planetmirror.com/</a>
-		<br />
-
-		Location: Australia				<br />
-
-					Maintained by: Jason Andrade<br />
-			</p>
 	<p>
 		<a href="http://www1.nl.proftpd.org">http://www1.nl.proftpd.org/</a>
         <br />
@@ -258,17 +247,6 @@
 					Maintained by: Antonio Prado<br />
 			</p>
 	<p>
-		<a href="http://www33.us.proftpd.org">http://www33.us.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.internet-servers.info/">http://proftpd.internet-servers.info/</a>
-		<br />
-
-		Location: United states					(USA)
-				<br />
-
-					Maintained by: Ionel Roiban<br />
-			</p>
-	<p>
 		<a href="http://www2.ar.proftpd.org">http://www2.ar.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.localhost.net.ar/">http://proftpd.localhost.net.ar/</a>
@@ -278,17 +256,6 @@
 				<br />
 
 					Maintained by: Nicolas Sigal<br />
-			</p>
-	<p>
-		<a href="http://www2.tr.proftpd.org">http://www2.tr.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.ulak.net.tr/">http://proftpd.ulak.net.tr/</a>
-		<br />
-
-		Location: Turkey					(Ankara)
-				<br />
-
-					Maintained by: Onur BEKTAS<br />
 			</p>
 	<p>
 		<a href="http://www2.cz.proftpd.org">http://www2.cz.proftpd.org/</a>
