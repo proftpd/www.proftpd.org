@@ -3,6 +3,14 @@
 
 #include "header.epl"
 
+<h1>1.3.2rc1 released</h1>
+[<i>15/Apr/2008</i>]
+<p>The ProFTPD Project team is pleased to release 1.3.2rc1 to the community.
+Highlights include support for the MLST/MLSD commands, FIPS and OCSP support
+in mod_tls, a new Italian translation, and many bugfixes.  Please read the
+<a href="docs/RELEASE_NOTES-1.3.2rc1">RELEASE_NOTES</a> and
+<a href="docs/NEWS-1.3.2rc1">NEWS</a> files for the full details.</p>
+
 <h1>1.3.1 released</h1>
 [<i>05/Oct/2007</i>]
 <p>The ProFTPD Project team is delighted to release 1.3.1 to the community.
@@ -33,21 +41,5 @@ community. Highlights include NLS support, new mod_ban and mod_wrap2 modules,
 and enhanced mod_tls and mod_quotatab modules. Please read the
 <a href="docs/RELEASE_NOTES-1.3.1rc1">RELEASE_NOTES</a> and
 <a href="docs/NEWS-1.3.1rc1">NEWS</a> files for the full details.</p>
-
-<h1>1.3.0a released</h1>
-[<i>27/Nov/2006</i>]
-<p>
-The ProFTPD Project team has released 1.3.0a to address
-<a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5815">CVE-2006-5815</a>.
-Please see
-<a href="http://bugs.proftpd.org/show_bug.cgi?id=2858">Bug #2858</a> for the
-full details.</p>
-
-<h1>1.3.0 released</h1>
-[<i>16/Apr/2006</i>]
-<p>The ProFTPD Project team is delighted to release 1.3.0 to the community.
-Please read
-<a href="docs/RELEASE_NOTES-1.3.0">RELEASE_NOTES</a> and
-<a href="docs/NEWS-1.3.0">NEWS</a> files for the full details.</p>
 
 #include "footer.epl"
