@@ -6,9 +6,9 @@
 <h1><: print "$html_title" :></h1>
 <p>The core documentation is held on SourceForge (project pdd), if you have
 patches or changes please submit them as a diff against those souces where
-possible. All updates should be directed to (<a
-href="mailto:hamster@vom.org.uk">Mark Lowes</a> and they will be dealt with
-as quickly as possible)</p>
+possible. All updates should be directed to <a
+href="mailto:core@proftpd.org">ProFTPD Core</a> and they will be dealt with
+as quickly as possible.</p>
 
 <ul>
   <li>Directives list 
