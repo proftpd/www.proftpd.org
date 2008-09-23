@@ -33,7 +33,6 @@
 	<a href="http://www.br.proftpd.org/">br</a>
 	<a href="http://www.cz.proftpd.org/">cz</a>
 	<a href="http://www.de.proftpd.org/">de</a>
-	<a href="http://www.fr.proftpd.org/">fr</a>
 	<a href="http://www.hk.proftpd.org/">hk</a>
 	<a href="http://www.ie.proftpd.org/">ie</a>
 	<a href="http://www.il.proftpd.org/">il</a>
@@ -61,17 +60,6 @@
 				<br />
 
 					Maintained by: Peter Batenburg<br />
-			</p>
-	<p>
-		<a href="http://www11.fr.proftpd.org">http://www11.fr.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.multidist.com">http://proftpd.multidist.com</a>
-		<br />
-
-		Location: France					(France)
-				<br />
-
-					Maintained by: MULTIDIST SARL<br />
 			</p>
 	<p>
 		<a href="http://www1.sg.proftpd.org">http://www1.sg.proftpd.org/</a>
@@ -159,17 +147,6 @@
 				<br />
 
 					Maintained by: Vahan Yerkanian<br />
-			</p>
-	<p>
-		<a href="http://www4.fr.proftpd.org">http://www4.fr.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.crihan.fr/">http://proftpd.crihan.fr/</a>
-		<br />
-
-		Location: France					(Rouen)
-				<br />
-
-					Maintained by: Alain Bidaud<br />
 			</p>
 	<p>
 		<a href="http://www21.us.proftpd.org">http://www21.us.proftpd.org/</a>
