@@ -17,6 +17,7 @@
 
 	<a href="ftp://ftp.ar.proftpd.org/">ar</a>
 	<a href="ftp://ftp.at.proftpd.org/">at</a>
+	<a href="ftp://ftp.au.proftpd.org/">au</a>
 	<a href="ftp://ftp.be.proftpd.org/">be</a>
 	<a href="ftp://ftp.bg.proftpd.org/">bg</a>
 	<a href="ftp://ftp.ca.proftpd.org/">ca</a>
@@ -79,16 +80,6 @@
 		Location: Switzerland				<br />
 
 					Maintained by: Erich Hohermuth<br />
-			</p>
-	<p>
-		<a href="ftp://ftp1.cz.proftpd.org">ftp://ftp1.cz.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.its.cz/MIRRORS/ftp.proftpd.org/">ftp://ftp.its.cz/MIRRORS/ftp.proftpd.org/</a>
-		<br />
-
-		Location: Czech republic				<br />
-
-					Maintained by: Lumir<br />
 			</p>
 	<p>
 		<a href="ftp://ftp2.de.proftpd.org">ftp://ftp2.de.proftpd.org/</a>
@@ -226,6 +217,17 @@
 				<br />
 
 					Maintained by: Matt Mozur<br />
+			</p>
+	<p>
+		<a href="ftp://ftp2.au.proftpd.org">ftp://ftp2.au.proftpd.org/</a>
+        <br />
+		<a href="ftp://proftpd.dknss.com/pub/proftpd/">ftp://proftpd.dknss.com/pub/proftpd/</a>
+		<br />
+
+		Location: Australia					(Gosford)
+				<br />
+
+					Maintained by: Darrin Khan<br />
 			</p>
 	<p>
 		<a href="ftp://ftp25.us.proftpd.org">ftp://ftp25.us.proftpd.org/</a>
@@ -402,17 +404,6 @@
 				<br />
 
 					Maintained by: Frederik Timmerman<br />
-			</p>
-	<p>
-		<a href="ftp://ftp37.us.proftpd.org">ftp://ftp37.us.proftpd.org/</a>
-        <br />
-		<a href="ftp://mirror.facebook.com/proftpd/ftp">ftp://mirror.facebook.com/proftpd/ftp</a>
-		<br />
-
-		Location: United states					(San Francisco, CA United States)
-				<br />
-
-					Maintained by: Lucas Nealan<br />
 			</p>
 
 #include "footer.epl"
