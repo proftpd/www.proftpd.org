@@ -34,7 +34,9 @@
 	<a href="ftp://ftp.pl.proftpd.org/">pl</a>
 	<a href="ftp://ftp.tr.proftpd.org/">tr</a>
 	<a href="ftp://ftp.tw.proftpd.org/">tw</a>
+	<a href="ftp://ftp.uk.proftpd.org/">uk</a>
 	<a href="ftp://ftp.us.proftpd.org/">us</a>
+	<a href="ftp://ftp.vn.proftpd.org/">vn</a>
 	<a href="ftp://ftp.za.proftpd.org/">za</a>
 
 </div>
@@ -404,6 +406,28 @@
 				<br />
 
 					Maintained by: Frederik Timmerman<br />
+			</p>
+	<p>
+		<a href="ftp://ftp1.vn.proftpd.org">ftp://ftp1.vn.proftpd.org/</a>
+        <br />
+		<a href="ftp://mirror-fpt-telecom.fpt.net/proftpd/">ftp://mirror-fpt-telecom.fpt.net/proftpd/</a>
+		<br />
+
+		Location: Viet nam					(FPT Telecom - Ho Chi Minh - Viet Nam)
+				<br />
+
+					Maintained by: Tong Minh Vu<br />
+			</p>
+	<p>
+		<a href="ftp://ftp1.uk.proftpd.org">ftp://ftp1.uk.proftpd.org/</a>
+        <br />
+		<a href="ftp://proftpd.maytech.net/">ftp://proftpd.maytech.net/</a>
+		<br />
+
+		Location: United kingdom					(London)
+				<br />
+
+					Maintained by: Mike Futerko<br />
 			</p>
 
 #include "footer.epl"
