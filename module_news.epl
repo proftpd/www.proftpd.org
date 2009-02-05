@@ -5,6 +5,16 @@
 
 <h1><: print "$html_title" :></h1>
 
+<h2>SFTP module</h2>
+<i>Maintainer: TJ Saunders</i>
+<br /><a href="http://www.castaglia.org/proftpd/modules/mod_sftp.html">http://www.castaglia.org/proftpd/modules/mod_sftp.html</a>
+
+<p>The <code>mod_sftp</code> module implements the SSH2, SFTP and SCP protocols,
+allowing SCP and SFTP clients to be used with ProFTPD.  ProFTPD's existing
+features such as flexible logging, chrooted logins, SQL/LDAP/RADIUS support,
+quotas, <i>etc</i> can be used for SCP and SFTP clients.
+
+
 <h2>Checksum module</h2>
 <i>Maintainer: Mathias Berchtold</i>
 <br /><a href="http://www.smartftp.com/oss/proftpd/">http://www.smartftp.com/oss/proftpd/</a>
@@ -35,8 +45,7 @@ work around these inefficiencies.</p>
 
 
 <h2>Automatic updating of <code>MasqueradeAddress</code></h2>
-<i>Maintainer: TJ Saunders</i>
-<br /><a href="http://www.castaglia.org/proftpd/modules/mod_dynmasq.html">http://www.castaglia.org/proftpd/modules/mod_dynmasq.html</a>
+<br /><a href="http://www.proftpd.org/docs/contrib/mod_dynmasq.html">http://www.proftpd.org/docs/contrib/mod_dynmasq.html</a>
 
 <p>For sites that use the <code>MasqueradeAddress</code> and which have
 dynamic IP addresses, <code>mod_dynmasq</code> is very useful.</p>
@@ -51,8 +60,7 @@ directories.</p>
 
 
 <h2>FTP server bans</h2>
-<i>Maintainer: TJ Saunders</i>
-<br /><a href="http://www.castaglia.org/proftpd/modules/mod_ban.html">http://www.castaglia.org/proftpd/modules/mod_ban.html</a>
+<br /><a href="http://www.proftpd.org/docs/contrib/mod_ban.html">http://www.proftpd.org/docs/contrib/mod_ban.html</a>
 
 <p><code>mod_ban</code> allows the ability to dynamically ban clients by
 user name, by host IP address or DNS name, and by class name.  In addition,
@@ -124,8 +132,7 @@ of conditions, during the course of an FTP session.</p>
 
 
 <h2>Quota module</h2>
-<i>Maintainer: TJ Saunders</i>
-<br /><a href="http://www.castaglia.org/proftpd/modules/mod_quotatab.html">http://www.castaglia.org/proftpd/modules/mod_quotatab.html</a>
+<br /><a href="http://www.proftpd.org/docs/contrib/mod_quotatab.html">http://www.proftpd.org/docs/contrib/mod_quotatab.html</a>
 
 <p><code>mod_quotatab</code> implements FTP quotas in a manner different
 from the now-deprecated <code>mod_quota</code>.  Current versions support
