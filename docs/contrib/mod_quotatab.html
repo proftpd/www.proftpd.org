@@ -251,6 +251,14 @@ The currently implemented options are:
     the tally entry for that user, if any, with the number of bytes and
     files found.  <b>Note</b> that these scans <i>will</i> cause a longer
     login time for the user, depending on the size of their home directory.
+
+    <p>
+    Note that this scanning will <b>only</b> happen <i>if</i> the configured
+    limits for the user have either a bytes-in value greater than zero or
+    a files-in value greater than zero.  (These are the only two limits
+    related to upload, hence why <code>ScanOnLogin</code> only goes into
+    effect based on them.)
+  </li>
 </ul>
 
 <p>
@@ -382,22 +390,48 @@ applications, but rather for other criteria:
 <p>
 This module maintains its quotas based solely on FTP commands - it does not
 enforce quotas based on files that may have been added, deleted, or moved
-via shell access or any mechanism other than through the proftpd server.
+via shell access or any mechanism other than through the <code>proftpd</code>
+server.
 
-<p>
+<p><a name="QuotaLookup"></a>
 When a client logs in, assuming <code>QuotaEngine</code> is <em>on</em>,
 <code>mod_quotatab</code> will check the limit table for the record most
 appropriate for that client.  This check first examines the table for records
-of type <code>user</code> that match the client's login name.  If no such
-matching records are found, it checks for records of type <code>group</code>
-that match any of the user's groups (both primary and supplemental). Failing
-that, it will check for records of type <code>class</code> that belong to the
-class (if enabled) from which the client is connecting.  If still no matching
-records are found, the table will be searched for a record of type
-<code>all</code>; if absent, the module will assume that no quotas apply to
-the client.  Note that there is only <b>one</b> type of limit in effect at a
-given time; <code>mod_quotatab</code> does <b>not</b> combine multiple
-user/group/class/all limits for the same client.
+of type <code>user</code> that match the client's login name.
+
+<p>
+If no such matching records are found, it checks for records of type
+<code>group</code> that match any of the user's groups (both primary and
+supplemental).  If there are multiple <code>group</code>-type limits
+available and applicable to the user's groups, which one is used?  The
+<code>mod_quotatab</code> module first checks for a quota limit for the
+user's <i>primary</i> group.  If there is a <code>group</code> limit for
+the user's primary group, that limit is used.  Otherwise, the supplemental
+groups for the user are checked, in the order returned by the authenticating
+module (<i>e.g.</i> <code>mod_auth_unix</code>, <code>mod_sql</code>,
+<code>mod_ldap</code>, <i>etc</i>).
+
+<p>
+If no such matching <code>group</code> quotas are found, the
+<code>mod_quotatab</code> will check for records of type <code>class</code>
+that belong to the class (if enabled) from which the client is connecting.
+The order of classes matched is the order in which the classes are defined
+in the <code>proftpd.conf</code> file.
+
+<p>
+If still no matching records are found, the table will be searched for a
+record of type <code>all</code>; if absent, the module will assume that no
+quotas apply to the client.
+
+<p>
+<b>Note</b> that there is only <b>one</b> type of limit in effect at a given
+time; <code>mod_quotatab</code> does <b>not</b> combine multiple
+user/group/class/all limits for the same client.  The module was designed
+such that only one limit (and its corresponding tally) would be enforced/used
+for a given session.  In the case of multiple applicable <code>group</code>
+or <code>class</code> type quotas, only the <i>matching</i> quota limit and
+tally will be used and updated.  Currently, there is no support for multiple
+simultaneous (or "layered") limits/tallies.
 
 <p>
 Once the limits for the current session have been established,

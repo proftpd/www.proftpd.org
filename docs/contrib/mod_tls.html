@@ -15,8 +15,8 @@
 <hr><br>
 
 This module is contained in the <code>mod_tls.c</code> file for ProFTPD
-1.2.<i>x</i>, and is not compiled by default.  Installation instructions
-are discussed <a href="#Installation">here</a>.
+1.2.<i>x</i>/1.3.<i>x</i>, and is not compiled by default.  Installation
+instructions are discussed <a href="#Installation">here</a>.
 
 <p>
 The most current version of <code>mod_tls</code> is distributed with the
@@ -67,6 +67,7 @@ is based.  His module can be found here:
   <li><a href="#TLSTimeoutHandshake">TLSTimeoutHandshake</a>
   <li><a href="#TLSVerifyClient">TLSVerifyClient</a>
   <li><a href="#TLSVerifyDepth">TLSVerifyDepth</a>
+  <li><a href="#TLSVerifyOrder">TLSVerifyOrder</a>
 </ul>
 
 <hr>
@@ -486,6 +487,11 @@ The <code>TLSLog</code> directive is used to specify a log file for
 parameter given must be the full path to the file to use for logging.
 
 <p>
+Note that this path must <b>not</b> be to a world-writable directory and,
+unless <code>AllowLogSymlinks</code> is explicitly set to <em>on</em>
+(generally a bad idea), the path must <b>not</b> be a symbolic link.
+
+<p>
 <hr>
 <h2><a name="TLSOptions">TLSOptions</a></h2>
 <strong>Syntax:</strong> TLSOptions <em>opt1 ...</em><br>
@@ -541,7 +547,7 @@ The currently implemented options are:
     <b>Important</b>: if <code>AllowPerUser</code> is used, even if
     <code>TLSRequired on</code> or <code>TLSRequired ctrl</code> are in
     effect, it will be possible for the connecting client to send
-    usernames and passsword <i>unprotected</i> before <code>mod_tls</code>
+    usernames and password <i>unprotected</i> before <code>mod_tls</code>
     rejects the connection.  This results in a slightly weaker security
     policy enforcement; please consider carefully if this tradeoff is
     acceptable for your site.
@@ -550,6 +556,13 @@ The currently implemented options are:
     However, <code>TLSRequired auth</code> and
     <code>TLSRequired auth+data</code> configurations will override the
     <code>AllowPerUser</code> option.
+
+  <p>
+  <li><code>EnableDiags</code><br>
+    Sets callbacks in the OpenSSL library such that <b>a lot</b> of
+    SSL/TLS protcol information is logged to the
+    <a href="#TLSLog"><code>TLSLog</code></a> file.  This option is very
+    useful when debugging strange interactions with FTPS clients.
 
   <p>
   <li><code>ExportCertData</code><br>
@@ -816,8 +829,8 @@ Example:
 <p>
 <hr>
 <h2><a name="TLSProtocol">TLSProtocol</a></h2>
-<strong>Syntax:</strong> TLSProtocol <em>protocol</em><br>
-<strong>Default:</strong> SSLv23<br>
+<strong>Syntax:</strong> TLSProtocol <em>protocol1</em> ... <em>protocolN</em><br>
+<strong>Default:</strong> SSLv3 TLSv1<br>
 <strong>Context:</strong> server config<br>
 <strong>Module:</strong> mod_tls<br>
 <strong>Compatibility:</strong> 1.2.7rc1 and later
@@ -838,11 +851,6 @@ The allowed protocols are:
 <p>
 <table>
   <tr>
-    <td><code>SSLv23</code></td>
-    <td>Compatibility mode, used to allow both SSLv3 and TLSv1</td>
-  </tr>
-
-  <tr>
     <td><code>SSLv3</code></td>
     <td>Allow only SSLv3</td>
   </tr>
@@ -852,6 +860,15 @@ The allowed protocols are:
     <td>Allow only TLSv1</td>
   </tr>
 </table>
+To support both SSLv3 and TLSv1, simply list both parameters for the
+<code>TLSProtocol</code> directive, <i>e.g.</i>:
+<pre>
+  TLSProtocol SSLv3 TLSv1
+</pre>
+
+<p>
+Note that the parameter "SSLv23" is supported as a legacy style for saying
+"all versions".
 
 <p>
 All use of SSLv2 is disabled.  SSLv2 <b>should not</b> be used.
@@ -955,7 +972,7 @@ Examples:
 <p>
 <hr>
 <h2><a name="TLSRequired">TLSRequired</a></h2>
-<strong>Syntax:</strong> TLSRequired <em>on|off|ctrl|data|auth|auth+data</em><br>
+<strong>Syntax:</strong> TLSRequired <em>on|off|ctrl|[!]data|auth|auth+[!]data</em><br>
 <strong>Default:</strong> off<br>
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code>, <code>&lt;Anonymous&gt;</code><br>
 <strong>Module:</strong> mod_tls<br>
@@ -1004,6 +1021,29 @@ control channel.  This policy allows clients to use the <code>CCC</code>
 (<b>C</b>lear <b>C</b>ommand <b>C</b>hannel) command, which in turn enables
 SSL/TLS protected data transfers that are operate better with firewalls that
 monitor the FTP control channel.
+
+<p>
+It is <i>also</i> possible to configure a policy which <i>rejects</i> use
+of SSL/TLS for protecting the data channel.  Some sites may wish to use
+such a policy in order to protect the control channels of their clients, but
+to prevent the data transfers from consuming too much CPU.  The
+<code>TLSRequired</code> directive can be set such that an FTPS client
+requesting protection of the data channel, using the <code>PROT</code> command,
+will have that command refused.  To configure such a policy, use one of
+the following:
+<pre>
+  # If the client wishes to protect the control channel, allow it; but reject
+  # any attempt to protect the data channel
+  TLSRequired !data
+
+  # <b>Require</b> protection on the control channel, but reject protection of the
+  # data channel
+  TLSRequired ctrl+!data
+
+  # <b>Require</b> protection on the control channel for <i>authentication</i> (but not
+  # after), and reject protection of the data channel
+  TLSRequired auth+!data
+</pre>
 
 <p>
 <hr>
@@ -1126,6 +1166,52 @@ Example:
 
 <p>
 <hr>
+<h2><a name="TLSVerifyOrder">TLSVerifyOrder</a></h2>
+<strong>Syntax:</strong> TLSVerifyOrder <em>crl|ocsp</em><br>
+<strong>Default:</strong> crl<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
+<strong>Module:</strong> mod_tls<br>
+<strong>Compatibility:</strong> 1.3.2rc1 and later
+
+<p>
+The <code>TLSVerifyOrder</code> directive configures how the
+<code>mod_tls</code> will verify the certificates presented by clients, if
+at all.  Unless <code>TLSVerifyClient</code> is <em>on</em>, the
+<code>TLSVerifyOrder</code> directive is not needed.
+
+<p>
+By default, the <code>mod_tls</code> module will include any CRLs (Certificate
+Revocation List) that may have been configured via the
+<code>TLSCARevocationFile</code> and/or <code>TLSCARevocationPath</code>
+directives.  This default behavior is the equivalent of configuring the
+<code>TLSVerifyOrder</code> to use CRLs, <i>e.g.</i>:
+<pre>
+  TLSVerifyOrder crl
+</pre>
+
+<p>
+Another way of checking the validity of the client certificate is to use
+the Online Certificate Status Protocol (OCSP), defined in
+<a href="http://www.faqs.org/rfcs/rfc2560.html">RFC 2560</a>.  To configure
+the <code>mod_tls</code> module to use OCSP when verifying, use:
+<pre>
+  TLSVerifyOrder ocsp
+</pre>
+Note that at is possible for <code>mod_tls</code> to use both CRLs <i>and</i>
+OCSP when verifying certificates.  Simply use <code>TLSVerifyOrder</code>
+to configure the order in which <code>mod_tls</code> should use the various
+verification mechanisms:
+<pre>
+  TLSVerifyOrder ocsp crl
+</pre>
+Verification ends when a mechanism can successfully verify the certificate.
+
+<p>
+See also: <a href="#TLSCARevocationFile"><code>TLSCARevocationFile</code></a>,
+<a href="#TLSCARevocationPath"><code>TLSCARevocationPath</code></a>
+
+<p>
+<hr>
 <h2><a name="Usage">Usage</a></h2>
 Much of the documentation for Apache's <code>mod_ssl</code>, concerning
 certificates, OpenSSL usage, <i>etc</i> applies to this module as well:
@@ -1176,7 +1262,7 @@ Last Updated: <i>$Date$</i><br>
 <br><hr>
 
 <font size=2><b><i>
-&copy; Copyright 2002-2003 TJ Saunders<br>
+&copy; Copyright 2002-2009 TJ Saunders<br>
  All Rights Reserved<br>
 </i></b></font>
 

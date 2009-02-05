@@ -157,12 +157,14 @@ option.
 </pre>
 <font color=blue>Answer</font>: This warning is coming from the use of the
 libcap library.  A newer version of the libcap library (called the
-"libcap2-dev" package on some Linux distributions) is now available.
+"libcap2" or "libcap2-dev" package on some Linux distributions) is now
+available.
 
 <p>
 To remove the above warning, you will need to update/install the newer libcap2
-package on your system, and re-build proftpd (using version 1.3.2rc1 or later)
-in order to compile and link against the newer libcap library.
+or libcap2-dev package on your system, and re-build proftpd (using version
+1.3.2rc1 or later) in order to compile and link against the newer libcap
+library.
 
 <p>
 <hr><br>

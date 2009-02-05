@@ -265,16 +265,6 @@ password).  If all of the configured authentication methods fail,
 <code>mod_sql</code> will fail to authenticate the user.
 
 <p>
-<i>Note</i>: this directive deprecates the following configuration directives:
-<ul>
-  <li><code>SQLEmptyPasswords</code>
-  <li><code>SQLEncryptedPasswords</code>
-  <li><code>SQLPlaintextPasswords</code>
-  <li><code>SQLScrambledPasswords</code>
-  <li><code>SQLSSLHashedPasswords</code>
-</ul>
-
-<p>
 <hr>
 <h2><a name="SQLBackend">SQLBackend</a></h2>
 <strong>Syntax:</strong> SQLBackend <em>backend</em><br>
@@ -359,7 +349,7 @@ three options:
   </li>
   <br>
 
-  <li><i>number</i> (<b>TIMED</b>)<br>
+  <li><i>number</i> (<b>"timed"</b>)<br>
     Timed database connections that close themselves after <i>number</i>
     seconds of inactivity.<br>
   </li>
@@ -409,17 +399,19 @@ From the PostgreSQL documentation:
 </blockquote>
 
 <p>
-If you plan to use the <code>TIMED</code> connection policy, consider the
+If you plan to use the <code>"timed"</code> connection policy, consider the
 effect of directives such as <code>DefaultRoot</code> on local socket
 communication: once a user has been <code>chroot()</code>ed, the local socket
 file will probably not be available within the <code>chroot</code> directory
 tree, and attempts to reopen communication will fail.  One way around this may
-be to use hardlinks within the user's directory tree.  <code>PERSESSION</code>
-connections are not affected by this because the database will be opened
-prior to the <code>chroot()</code> call, and held open for the life of the
-session.  Network communications are not affected by this problem.
-For example, while <code>localhost</code> would not work for MySQL since the
-MySQL client library will try to use socket communications for that host,
+be to use hardlinks within the user's directory tree; another is to use
+network (<i>e.g.</i> TCP sockets, not Unix domain sockets) connections to
+connect to the database.  <code>PERSESSION</code> connections are not affected
+by this because the database will be opened prior to the <code>chroot()</code>
+call, and held open for the life of the session.  Network communications are
+not affected by this <code>chroot()</code> problem.  For example, while
+<code>localhost</code> would <i>not</i> work for MySQL since the MySQL client
+library will try to use Unix domain socket communications for that host,
 <code>127.0.0.1</code> will work (as long as your database is setup to accept
 these connections).
 
@@ -450,14 +442,6 @@ Backends may require different information in the <em>connection-info</em>
 field; check your backend module for more detailed information.
 
 <p>
-<i>Note</i>: this directive deprecates the following configuration directives:
-<ul>
-  <li><code>MySQLInfo</code>
-  <li><code>PostgresInfo</code>
-  <li><code>PostgresPort</code>
-</ul>
-
-<p>
 <hr>
 <h2><a name="SQLDefaultGID">SQLDefaultGID</a></h2>
 <strong>Syntax:</strong> SQLDefaultGID <em>default-gid</em><br>
@@ -484,9 +468,8 @@ See also: <a href="#SQLMinUserGID"><code>SQLMinUserGID</code></a>
 
 <p>
 The <code>SQLDefaultHomedir</code> directive configures a default home
-directory for all users authenticated with this module, overriding any
-(deprecated) <code>SQLHomedirField</code> directive.  If no home directory is
-set with either directive, authentication fails.  This directive does not
+directory for all users authenticated with this module.  If no home directory
+is set with either directive, authentication fails.  This directive does not
 change the data retrieved from the database: if you specify a home directory
 field to <code>SQLUserInfo</code>, that field's data will be returned as the
 user's home directory, whether that data is a legal directory, or an empty
@@ -608,6 +591,11 @@ would be appended to every group-related query as the string:
 </pre>
 
 <p>
+As of ProFTPD 1.3.1rc2, the configured <code>SQLGroupWhereClause</code>
+parameter can use the same set of variables as supported by the
+<a href="#SQLNamedQuery"><code>SQLNamedQuery</code></a> directive.
+
+<p>
 <hr>
 <h2><a name="SQLLog">SQLLog</a></h2>
 <strong>Syntax:</strong> SQLLog <em>cmd-set query-name [&quot;IGNORE_ERRORS&quot;]</em><br>
@@ -675,9 +663,7 @@ Examples:
   SQLLog PASS updatecount
   SQLNamedQuery updatecount UPDATE "count=count+1 WHERE userid='%u'" users
 </pre>
-together, these replicate the deprecated
-&quot;<code>SQLLoginCountField</code> count&quot; directive; if the current
-user was &quot;joe&quot;, this would translate into the query
+If the current user was &quot;joe&quot;, this would translate into the query
 &quot;UPDATE users SET count=count+1 WHERE userid='joe'&quot;.  This query
 would run whenever a user was first authenticated.
 
@@ -685,10 +671,9 @@ would run whenever a user was first authenticated.
   SQLLog CWD updatedir
   SQLNamedQuery updatedir UPDATE "cwd='%d' where userid='%u'" users
 </pre>
-together these replicate the logging side of the deprecated
-&quot;<code>SQLLogDirs</code> cwd&quot; directive; if the current user was
-&quot;joe&quot; and the current working directory were <code>/tmp</code>, this
-would translate into the query &quot;UPDATE users SET cwd='/tmp' WHERE userid='joe'&quot;.  This query would run whenever a user changed directories.
+If the current user was &quot;joe&quot; and the current working directory were
+<code>/tmp</code>, this would translate into the query &quot;UPDATE users SET cwd='/tmp' WHERE userid='joe'&quot;.  This query would run whenever a user
+changed directories.
 
 <pre>
   SQLLog RETR,STOR insertfileinfo
@@ -755,6 +740,9 @@ retrieved value for GID is less than the value of <code>SQLMinUserGID</code>,
 it is reported as the value of <code>SQLDefaultGID</code>.
 
 <p>
+See also: <a href="#SQLDefaultGID"><code>SQLDefaultGID</code></a>
+
+<p>
 <hr>
 <h2><a name="SQLMinUserUID">SQLMinUserUID</a></h2>
 <strong>Syntax:</strong> SQLMinUserUID <em>minimum-uid</em><br>
@@ -767,6 +755,9 @@ it is reported as the value of <code>SQLDefaultGID</code>.
 <code>SQLMinUserUID</code> is checked whenever retrieving a user's UID.  If the
 retrieved value for UID is less than the value of <code>SQLMinUserUID</code>,
 it is reported as the value of <code>SQLDefaultUID</code>.
+
+<p>
+See also: <a href="#SQLDefaultUID"><code>SQLDefaultUID</code></a>
 
 <p>
 <hr>
@@ -814,6 +805,11 @@ the following <b><i>are not</i></b> accepted:
     <b><i>are not</i></b> available in <code>mod_sql</code>.  Your database
     undoubtedly provides another way to get the time; for example, MySQL
     provides the <code>now()</code> function.<br>
+
+    <p>
+    However, a <code>%{time:<em>format</em>}</code> meta-sequence <i>is</i>
+    supported.  This sequence allows for formatting time strings according
+    to the rules of the <code>strftime(3)</code> function.
   </li>
   <br>
 </ul>
@@ -1164,6 +1160,11 @@ would be appended to every user-related query as the string:
 </pre>
 
 <p>
+As of ProFTPD 1.3.1rc2, the configured <code>SQLUserWhereClause</code>
+parameter can use the same set of variables as supported by the
+<a href="#SQLNamedQuery"><code>SQLNamedQuery</code></a> directive.
+
+<p>
 <hr>
 <h2><a name="Installation">Installation</a></h2>
 The <code>mod_sql</code> module is distributed with ProFTPD.  Simply
@@ -1204,7 +1205,7 @@ Last Updated: <i>$Date$</i><br>
 <br><hr>
 
 <font size=2><b><i>
-&copy; Copyright 2000-2004 The ProFTPD Project<br>
+&copy; Copyright 2000-2008 The ProFTPD Project<br>
  All Rights Reserved<br>
 </i></b></font>
 

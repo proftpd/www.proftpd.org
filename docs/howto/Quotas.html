@@ -263,8 +263,9 @@ to handle the specifics of storage formats.  Every backend module
 
 <p><a name="QuotasGroupQuotas" title="#QuotasGroupQuotas"></a>
 <font color=red>Question</font>: How do group quotas work?  If a user is in multiple groups, what happens?<br>
-<font color=blue>Answer</font>: The <code>mod_quotatab</code> module searches
-for applicable quotas, by type, in the following order:
+<font color=blue>Answer</font>: The <code>mod_quotatab</code> module
+<a href="../contrib/mod_quotatab.html#QuotaLookup">searches</a> for applicable
+quotas, by type, in the following order:
 <ul>
   <li>user quotas
   <li>group quotas
@@ -285,6 +286,12 @@ the user's <i>supplemental</i> groups.  The order in which these groups
 are checked is dependent up on the order in which the groups are returned
 from the auth module providing them, <i>e.g.</i> <code>mod_sql</code>,
 <code>mod_ldap</code>, or perhaps <code>mod_auth_unix</code>.
+
+<p><a name="QuotasOverwrites" title="#QuotasOverwrites"></a><font color=red>Question</font>: Does <code>mod_quotatab</code> handle the case where a client might append to/overwrite an existing file, in terms of tracking bytes?<br>
+<font color=blue>Answer</font>: Yes.  The <code>mod_quotatab</code> module
+checks the size of the file before the upload/append starts, and then checks
+the size of the file again after the upload/append completes.  The difference
+in file sizes is used for tracking the byte-related tallies.
 
 <p>
 <hr>
