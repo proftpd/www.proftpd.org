@@ -8,55 +8,31 @@
 <h2>MD5 Digest Hashes</h2>
 
 <pre>
-175958df8de92d5209b7b1e2e23a5a28 <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.3.1.tar.bz2">proftpd-1.3.1.tar.bz2</a>
-3eab497e5d3a50ff012cac6759127cf8 <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.3.1.tar.gz">proftpd-1.3.1.tar.gz</a>
-d3dc40a21968ed0b315bf76a9022d1c4 <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.3.2rc4.tar.bz2">proftpd-1.3.2rc4.tar.bz2</a>
-9d8180a3b6308bdd644979612feafc70 <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.3.2rc4.tar.gz">proftpd-1.3.2rc4.tar.gz</a>
+89f5e31fc3d3e02b66424dfc6cc5892d <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.3.2.tar.bz2">proftpd-1.3.2.tar.bz2</a>
+756f762883cc8eed03d99dc3b1c56a8e <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.3.2.tar.gz">proftpd-1.3.2.tar.gz</a>
 </pre>
 
 <h2>PGP Signatures</h2>
 
 <pre>
-<strong>proftpd-1.3.1.tar.bz2.asc</strong>
+<strong>proftpd-1.3.2.tar.bz2.asc</strong>
 -----BEGIN PGP SIGNATURE-----
 Version: PGP 6.5.8
 
-iQA/AwUARwZcsbeOiT+lEZdqEQItxgCgvjyoJ96SJp3SE8vZH7N+4F/9//oAni+S
-7MFR/mkQKj5iKC180Tbr80ax
-=R/1i
+iQA/AwUASYs3zLeOiT+lEZdqEQK9EwCgsV2rI3O2XEq7x7adQB2u08yeZc4An1bK
+u7PxZQ/dIlkYnHk2oBbQ0C2G
+=9Fme
 -----END PGP SIGNATURE-----
 </pre>
 
 <pre>
-<strong>proftpd-1.3.1.tar.gz.asc</strong>
+<strong>proftpd-1.3.2.tar.gz.asc</strong>
 -----BEGIN PGP SIGNATURE-----
 Version: PGP 6.5.8
 
-iQA/AwUARwZcubeOiT+lEZdqEQIrxQCgpDGotBls00LDi/y7BSnjTgmfhZ0AoMCV
-35AXw5xwd6xdX8HCmZZ3xcO3
-=/p2o
------END PGP SIGNATURE-----
-</pre>
-
-<pre>
-<strong>proftpd-1.3.2rc4.tar.bz2.asc</strong>
------BEGIN PGP SIGNATURE-----
-Version: PGP 6.5.8
-
-iQA/AwUASXpS67eOiT+lEZdqEQItCQCfXcWi+N0ofN2sAZWnq4dsUaLKv24AoIIh
-XdX60VvKJs5z2PIEdvO3CvAq
-=iOjG
------END PGP SIGNATURE-----
-</pre>
-
-<pre>
-<strong>proftpd-1.3.2rc4.tar.gz.asc</strong>
------BEGIN PGP SIGNATURE-----
-Version: PGP 6.5.8
-
-iQA/AwUASXpS5LeOiT+lEZdqEQLrFACdGRz9Hpl/3gFV5exSzee5AJVe0J4AoO0w
-XLBA6NDJX6Fsjk6LDou3GVEd
-=i95L
+iQA/AwUASYs3vLeOiT+lEZdqEQINLgCglb0HJIH8uEbrkcm6KLdwJ+7hGu4AoK58
+XuiOmnUqleKQOIkeE1SklEgN
+=sR7w
 -----END PGP SIGNATURE-----
 </pre>
 

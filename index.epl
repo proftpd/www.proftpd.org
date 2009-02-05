@@ -3,6 +3,13 @@
 
 #include "header.epl"
 
+<h1>1.3.2 released</h1>
+[<i>5/Feb/2009</i>]
+<p>The ProFTPD Project team is happy to release 1.3.2 to the community.
+This is a bugfix release, including a SQL injection vulnerability fix.
+The <a href="docs/RELEASE_NOTES-1.3.2">RELEASE_NOTES</a> and
+<a href="docs/NEWS-1.3.2">NEWS</a> files contain the full details.</p>
+
 <h1>1.3.2rc4 released</h1>
 [<i>23/Jan/2009</i>]
 <p>The ProFTPD Project team is pleased to release 1.3.2rc4 to the community.
