@@ -149,7 +149,7 @@
 		<a href="ftp://ftp.ibiblio.org/pub/mirrors/proftpd/">ftp://ftp.ibiblio.org/pub/mirrors/proftpd/</a>
 		<br />
 
-		Location: United states					(Chapel Hill, NC)
+		Location: United States					(Chapel Hill, NC)
 				<br />
 
 					Maintained by: ibiblio<br />
@@ -215,7 +215,7 @@
 		<a href="ftp://ftp.sourwood.net/pub/ProFTPD/">ftp://ftp.sourwood.net/pub/ProFTPD/</a>
 		<br />
 
-		Location: United states					(Danvers, Massachusetts  USA)
+		Location: United States					(Danvers, Massachusetts  USA)
 				<br />
 
 					Maintained by: Matt Mozur<br />
@@ -237,7 +237,7 @@
 		<a href="ftp://mirror.wrpn.net/proftpd/">ftp://mirror.wrpn.net/proftpd/</a>
 		<br />
 
-		Location: United states					(Columbus, Ohio)
+		Location: United States					(Columbus, Ohio)
 				<br />
 
 					Maintained by: Wesley Haines<br />
@@ -369,7 +369,7 @@
 		<a href="ftp://proftpd.mirrors.tds.net/pub/ProFTPD">ftp://proftpd.mirrors.tds.net/pub/ProFTPD</a>
 		<br />
 
-		Location: United states					(Madison Wisconsin)
+		Location: United States					(Madison Wisconsin)
 				<br />
 
 					Maintained by: Shane Brath<br />
@@ -397,6 +397,17 @@
 					Maintained by: Arnaud Gomes<br />
 			</p>
 	<p>
+		<a href="ftp://ftp2.vn.proftpd.org">ftp://ftp2.vn.proftpd.org/</a>
+        <br />
+		<a href="http://mirror-fpt-telecom.fpt.net/proftpd/ftp/">http://mirror-fpt-telecom.fpt.net/proftpd/ftp/</a>
+		<br />
+
+		Location: Viet nam					(FPT Telecom - Ho Chi Minh - Viet Nam)
+				<br />
+
+					Maintained by: Tong Minh Vu<br />
+			</p>
+	<p>
 		<a href="ftp://ftp11.nl.proftpd.org">ftp://ftp11.nl.proftpd.org/</a>
         <br />
 		<a href="ftp://mirror.hostfuss.com/proftpd/">ftp://mirror.hostfuss.com/proftpd/</a>
@@ -408,23 +419,12 @@
 					Maintained by: Frederik Timmerman<br />
 			</p>
 	<p>
-		<a href="ftp://ftp1.vn.proftpd.org">ftp://ftp1.vn.proftpd.org/</a>
-        <br />
-		<a href="ftp://mirror-fpt-telecom.fpt.net/proftpd/">ftp://mirror-fpt-telecom.fpt.net/proftpd/</a>
-		<br />
-
-		Location: Viet nam					(FPT Telecom - Ho Chi Minh - Viet Nam)
-				<br />
-
-					Maintained by: Tong Minh Vu<br />
-			</p>
-	<p>
 		<a href="ftp://ftp1.uk.proftpd.org">ftp://ftp1.uk.proftpd.org/</a>
         <br />
 		<a href="ftp://proftpd.maytech.net/">ftp://proftpd.maytech.net/</a>
 		<br />
 
-		Location: United kingdom					(London)
+		Location: United Kingdom					(London)
 				<br />
 
 					Maintained by: Mike Futerko<br />

@@ -47,7 +47,6 @@
 	<a href="http://www.ua.proftpd.org/">ua</a>
 	<a href="http://www.uk.proftpd.org/">uk</a>
 	<a href="http://www.us.proftpd.org/">us</a>
-	<a href="http://www.vn.proftpd.org/">vn</a>
 
 </div>
 <hr />
@@ -157,7 +156,7 @@
 		<a href="http://proftpd.sourwood.net/">http://proftpd.sourwood.net/</a>
 		<br />
 
-		Location: United states					(USA (Danvers, MA))
+		Location: United States					(USA (Danvers, MA))
 				<br />
 
 					Maintained by: Matt Mozur<br />
@@ -200,7 +199,7 @@
 		<a href="http://proftpd.mirror.wrpn.net/">http://proftpd.mirror.wrpn.net/</a>
 		<br />
 
-		Location: United states					(Columbus, Ohio)
+		Location: United States					(Columbus, Ohio)
 				<br />
 
 					Maintained by: Wesley Haines<br />
@@ -305,20 +304,9 @@
 					Maintained by: Miha Novak<br />
 			</p>
 	<p>
-		<a href="http://www1.vn.proftpd.org">http://www1.vn.proftpd.org/</a>
-        <br />
-		<a href="http://mirror-fpt-telecom.fpt.net/proftpd/">http://mirror-fpt-telecom.fpt.net/proftpd/</a>
-		<br />
-
-		Location: Viet nam					(Ho Chi Minh - Viet Nam)
-				<br />
-
-					Maintained by: Tong Minh Vu<br />
-			</p>
-	<p>
 		<a href="http://www1.ar.proftpd.org">http://www1.ar.proftpd.org/</a>
         <br />
-		<a href="proftpd.patan.com.ar">proftpd.patan.com.ar</a>
+		<a href="http://proftpd.patan.com.ar">http://proftpd.patan.com.ar</a>
 		<br />
 
 		Location: Argentina					(Buenos Aires, Argentina)
@@ -354,7 +342,7 @@
 		<a href="http://proftpd.mirror.facebook.com/">http://proftpd.mirror.facebook.com/</a>
 		<br />
 
-		Location: United states					(San Francisco, CA United States)
+		Location: United States					(San Francisco, CA United States)
 				<br />
 
 					Maintained by: Lucas Nealan<br />
@@ -376,7 +364,7 @@
 		<a href="http://proftpd.maytech.net/">http://proftpd.maytech.net/</a>
 		<br />
 
-		Location: United kingdom					(London)
+		Location: United Kingdom					(London)
 				<br />
 
 					Maintained by: Mike Futerko<br />
