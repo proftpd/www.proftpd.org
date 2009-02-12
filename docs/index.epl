@@ -33,8 +33,8 @@ as quickly as possible.</p>
   </li>
   <li><a href="/cvs.html">CVS Howto and FAQ</a></li>
   <li><a href="http://www.castaglia.org/proftpd/doc/devel-guide/">ProFTPD Developer's Guide</a> (by TJ Saunders)</li>
-  <li><a href="http://www.castaglia.org/proftpd/doc/contrib/ProFTPD-mini-HOWTO-NAT.html">Configuring ProFTPD and NAT</a> (by Tobias Ekbom)</li>
-  <li><a href="http://www.castaglia.org/proftpd/doc/contrib/ProFTPD-mini-HOWTO-SSH.html">Configuring FTP over SSH</a> (by TJ Saunders)</li>
+  <li><a href="howto/NAT.html">Configuring ProFTPD and NAT</a> (by Tobias Ekbom)</li>
+  <li><a href="howto/SSH.html">Configuring FTP over SSH</a> (by TJ Saunders)</li>
 </ul>
 
 <h1>Other sites</h1>
@@ -52,12 +52,12 @@ additional modules and where to find further help in configuring the
 features they offer.</p>
 
 <ul>
-  <li><a href="http://www.castaglia.org/proftpd/doc/contrib/ProFTPD-mini-HOWTO-TLS.html">SSL/TLS</a> support (mod_tls)</li>
+  <li><a href="http://www.proftpd.org/docs/howto/TLS.html">SSL/TLS</a> support (mod_tls)</li>
   <li><a href="http://horde.net/~jwm/software/mod_ldap/">LDAP</a> support (mod_ldap)</li>
   <li>POSIX capabilities (mod_cap)</li>
-  <li><a href="http://www.castaglia.org/proftpd/doc/contrib/ProFTPD-mini-HOWTO-SQL.html">SQL</a> support (mod_sql)</li>
+  <li><a href="http://www.proftpd.org/docs/howto/SQL.html">SQL</a> support (mod_sql)</li>
   <li>RADIUS support (mod_radius)</li>
-  <li><a href="http://www.castaglia.org/proftpd/">TCP wrappers</a> support (mod_wrap)</li>
+  <li><TCP wrappers support (mod_wrap)</li>
   <li>mod_readme</li>
   <li>mod_ratio (Maintained by: James Dogopoulos &lt;jd@dynw.com&gt;)</li>
 </ul>
