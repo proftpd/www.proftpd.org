@@ -57,7 +57,7 @@ features they offer.</p>
   <li>POSIX capabilities (mod_cap)</li>
   <li><a href="http://www.proftpd.org/docs/howto/SQL.html">SQL</a> support (mod_sql)</li>
   <li>RADIUS support (mod_radius)</li>
-  <li><TCP wrappers support (mod_wrap)</li>
+  <li>TCP wrappers support (mod_wrap)</li>
   <li>mod_readme</li>
   <li>mod_ratio (Maintained by: James Dogopoulos &lt;jd@dynw.com&gt;)</li>
 </ul>
