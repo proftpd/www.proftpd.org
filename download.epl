@@ -17,7 +17,6 @@
 
 	<a href="ftp://ftp.ar.proftpd.org/">ar</a>
 	<a href="ftp://ftp.at.proftpd.org/">at</a>
-	<a href="ftp://ftp.au.proftpd.org/">au</a>
 	<a href="ftp://ftp.be.proftpd.org/">be</a>
 	<a href="ftp://ftp.bg.proftpd.org/">bg</a>
 	<a href="ftp://ftp.ca.proftpd.org/">ca</a>
@@ -36,7 +35,6 @@
 	<a href="ftp://ftp.tw.proftpd.org/">tw</a>
 	<a href="ftp://ftp.uk.proftpd.org/">uk</a>
 	<a href="ftp://ftp.us.proftpd.org/">us</a>
-	<a href="ftp://ftp.vn.proftpd.org/">vn</a>
 	<a href="ftp://ftp.za.proftpd.org/">za</a>
 
 </div>
@@ -221,17 +219,6 @@
 					Maintained by: Matt Mozur<br />
 			</p>
 	<p>
-		<a href="ftp://ftp2.au.proftpd.org">ftp://ftp2.au.proftpd.org/</a>
-        <br />
-		<a href="ftp://proftpd.dknss.com/pub/proftpd/">ftp://proftpd.dknss.com/pub/proftpd/</a>
-		<br />
-
-		Location: Australia					(Gosford)
-				<br />
-
-					Maintained by: Darrin Khan<br />
-			</p>
-	<p>
 		<a href="ftp://ftp25.us.proftpd.org">ftp://ftp25.us.proftpd.org/</a>
         <br />
 		<a href="ftp://mirror.wrpn.net/proftpd/">ftp://mirror.wrpn.net/proftpd/</a>
@@ -395,17 +382,6 @@
 				<br />
 
 					Maintained by: Arnaud Gomes<br />
-			</p>
-	<p>
-		<a href="ftp://ftp2.vn.proftpd.org">ftp://ftp2.vn.proftpd.org/</a>
-        <br />
-		<a href="http://mirror-fpt-telecom.fpt.net/proftpd/ftp/">http://mirror-fpt-telecom.fpt.net/proftpd/ftp/</a>
-		<br />
-
-		Location: Viet nam					(FPT Telecom - Ho Chi Minh - Viet Nam)
-				<br />
-
-					Maintained by: Tong Minh Vu<br />
 			</p>
 	<p>
 		<a href="ftp://ftp11.nl.proftpd.org">ftp://ftp11.nl.proftpd.org/</a>
