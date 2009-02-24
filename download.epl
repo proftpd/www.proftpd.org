@@ -17,6 +17,7 @@
 
 	<a href="ftp://ftp.ar.proftpd.org/">ar</a>
 	<a href="ftp://ftp.at.proftpd.org/">at</a>
+	<a href="ftp://ftp.au.proftpd.org/">au</a>
 	<a href="ftp://ftp.be.proftpd.org/">be</a>
 	<a href="ftp://ftp.bg.proftpd.org/">bg</a>
 	<a href="ftp://ftp.ca.proftpd.org/">ca</a>
@@ -102,16 +103,6 @@
 					Maintained by: Harald Welte<br />
 			</p>
 	<p>
-		<a href="ftp://ftp7.de.proftpd.org">ftp://ftp7.de.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.uasw.edu/pub/network/proftpd/ftp/">ftp://ftp.uasw.edu/pub/network/proftpd/ftp/</a>
-		<br />
-
-		Location: Germany				<br />
-
-					Maintained by: Thorsten Ludewig<br />
-			</p>
-	<p>
 		<a href="ftp://ftp1.nl.proftpd.org">ftp://ftp1.nl.proftpd.org/</a>
         <br />
 		<a href="ftp://ftp.nl.uu.net/pub/unix/ftp/proftpd/ftp/">ftp://ftp.nl.uu.net/pub/unix/ftp/proftpd/ftp/</a>
@@ -129,17 +120,6 @@
 		Location: Norway				<br />
 
 					Maintained by: Andre Tomt<br />
-			</p>
-	<p>
-		<a href="ftp://ftp1.tw.proftpd.org">ftp://ftp1.tw.proftpd.org/</a>
-        <br />
-		<a href="ftp://ftp.isu.edu.tw/pub/Unix/FTP/proftpd/">ftp://ftp.isu.edu.tw/pub/Unix/FTP/proftpd/</a>
-		<br />
-
-		Location: Taiwan					(I-SHOU University (TW, Kaohsiung))
-				<br />
-
-					Maintained by: KTH<br />
 			</p>
 	<p>
 		<a href="ftp://ftp1.us.proftpd.org">ftp://ftp1.us.proftpd.org/</a>
@@ -208,26 +188,15 @@
 					Maintained by: Motohiro Sunouchi<br />
 			</p>
 	<p>
-		<a href="ftp://ftp24.us.proftpd.org">ftp://ftp24.us.proftpd.org/</a>
+		<a href="ftp://ftp2.au.proftpd.org">ftp://ftp2.au.proftpd.org/</a>
         <br />
-		<a href="ftp://ftp.sourwood.net/pub/ProFTPD/">ftp://ftp.sourwood.net/pub/ProFTPD/</a>
+		<a href="ftp://proftpd.dknss.com/pub/proftpd/">ftp://proftpd.dknss.com/pub/proftpd/</a>
 		<br />
 
-		Location: United States					(Danvers, Massachusetts  USA)
+		Location: Australia					(Gosford)
 				<br />
 
-					Maintained by: Matt Mozur<br />
-			</p>
-	<p>
-		<a href="ftp://ftp25.us.proftpd.org">ftp://ftp25.us.proftpd.org/</a>
-        <br />
-		<a href="ftp://mirror.wrpn.net/proftpd/">ftp://mirror.wrpn.net/proftpd/</a>
-		<br />
-
-		Location: United States					(Columbus, Ohio)
-				<br />
-
-					Maintained by: Wesley Haines<br />
+					Maintained by: Darrin Khan<br />
 			</p>
 	<p>
 		<a href="ftp://ftp3.tw.proftpd.org">ftp://ftp3.tw.proftpd.org/</a>
