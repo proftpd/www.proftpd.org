@@ -80,10 +80,10 @@
            alt="Valid XHTML 1.0!" height="31" width="88" />
     </a>
     <a href="http://sourceforge.net/">
-      <img src="http://sourceforge.net/sflogo.php?group_id=17793"
-           alt="[SourceForge Logo]" width="88" height="31" />
+    <a href="http://sourceforge.net/projects/proftp">
+      <img src="http://sflogo.sourceforge.net/sflogo.php?group_id=17793&type=10" width="80" height="15" border="0" alt="Get ProFTPD Server Software at SourceForge.net. Fast, secure and Free Open Source software downloads" />
     </a>
-    Copyright &copy; 1999, 2000-8, The ProFTPD Project.
+    Copyright &copy; 1999, 2000-9, The ProFTPD Project.
   </div>
 </div>
 
