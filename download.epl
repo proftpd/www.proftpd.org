@@ -32,6 +32,7 @@
 	<a href="ftp://ftp.nl.proftpd.org/">nl</a>
 	<a href="ftp://ftp.no.proftpd.org/">no</a>
 	<a href="ftp://ftp.pl.proftpd.org/">pl</a>
+	<a href="ftp://ftp.se.proftpd.org/">se</a>
 	<a href="ftp://ftp.tr.proftpd.org/">tr</a>
 	<a href="ftp://ftp.tw.proftpd.org/">tw</a>
 	<a href="ftp://ftp.uk.proftpd.org/">uk</a>
@@ -199,6 +200,17 @@
 					Maintained by: Darrin Khan<br />
 			</p>
 	<p>
+		<a href="ftp://ftp25.us.proftpd.org">ftp://ftp25.us.proftpd.org/</a>
+        <br />
+		<a href="ftp://mirror.wrpn.net/proftpd/">ftp://mirror.wrpn.net/proftpd/</a>
+		<br />
+
+		Location: United States					(Columbus, Ohio)
+				<br />
+
+					Maintained by: Wesley Haines<br />
+			</p>
+	<p>
 		<a href="ftp://ftp3.tw.proftpd.org">ftp://ftp3.tw.proftpd.org/</a>
         <br />
 		<a href="ftp://ftp.ntu.edu.tw/proftpd/">ftp://ftp.ntu.edu.tw/proftpd/</a>
@@ -351,6 +363,17 @@
 				<br />
 
 					Maintained by: Arnaud Gomes<br />
+			</p>
+	<p>
+		<a href="ftp://ftp1.se.proftpd.org">ftp://ftp1.se.proftpd.org/</a>
+        <br />
+		<a href="ftp://mirror2.dataphone.se/pub/ProFTPD">ftp://mirror2.dataphone.se/pub/ProFTPD</a>
+		<br />
+
+		Location: Sweden					(Sweden)
+				<br />
+
+					Maintained by: Mirror Staff<br />
 			</p>
 	<p>
 		<a href="ftp://ftp11.nl.proftpd.org">ftp://ftp11.nl.proftpd.org/</a>

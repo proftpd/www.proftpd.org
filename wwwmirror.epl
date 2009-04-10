@@ -42,6 +42,7 @@
 	<a href="http://www.lv.proftpd.org/">lv</a>
 	<a href="http://www.nl.proftpd.org/">nl</a>
 	<a href="http://www.rs.proftpd.org/">rs</a>
+	<a href="http://www.se.proftpd.org/">se</a>
 	<a href="http://www.sg.proftpd.org/">sg</a>
 	<a href="http://www.si.proftpd.org/">si</a>
 	<a href="http://www.tw.proftpd.org/">tw</a>
@@ -195,6 +196,17 @@
 					Maintained by: Roland Guthauser<br />
 			</p>
 	<p>
+		<a href="http://www27.us.proftpd.org">http://www27.us.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.mirror.wrpn.net/">http://proftpd.mirror.wrpn.net/</a>
+		<br />
+
+		Location: United States					(Columbus, Ohio)
+				<br />
+
+					Maintained by: Wesley Haines<br />
+			</p>
+	<p>
 		<a href="http://www4.it.proftpd.org">http://www4.it.proftpd.org/</a>
         <br />
 		<a href="http://www.proftpd.topnet.it/">http://www.proftpd.topnet.it/</a>
@@ -281,6 +293,17 @@
 				<br />
 
 					Maintained by: Michael Weber<br />
+			</p>
+	<p>
+		<a href="http://www1.se.proftpd.org">http://www1.se.proftpd.org/</a>
+        <br />
+		<a href="http://www.proftpd.mirror2.dataphone.se">http://www.proftpd.mirror2.dataphone.se</a>
+		<br />
+
+		Location: Sweden					(Sweden)
+				<br />
+
+					Maintained by: Mirror Staff<br />
 			</p>
 	<p>
 		<a href="http://www1.rs.proftpd.org">http://www1.rs.proftpd.org/</a>
