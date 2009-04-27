@@ -24,10 +24,11 @@ planned</a>):</p>
   <li>Anonymous FTP root directories do not require any specific
       directory structure, system binaries or other system files.
   </li>
-  <li>No SITE EXEC command. In modern Internet environments, such
-      commands are a security nightmare. ProFTPD does not execute any
-      external programs at any time. The source is available (and must
-      always be available) for administrators to audit.
+  <li>No SITE EXEC command. In modern Internet environments, such commands are
+      a security nightmare.
+  </li>
+  <li>Source code is available (and must always be available) for
+      administrators and developers to audit.
   </li>
   <li>Hidden directories and files, based on Unix-style permissions or
       user/group ownership.
