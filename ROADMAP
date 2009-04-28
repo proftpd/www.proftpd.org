@@ -5,17 +5,17 @@ Version: $Id$
 C = Committed
 
 1.3.3
-        Add mod_exec
+     C  Add mod_exec
         Add mod_vroot
      C  Add mod_sftp et al
-        Add mod_shaper
+     C  Add mod_shaper
      C  Bug#2067 - Allow/Deny Filters should be supported in the <Limit> context
 	Bug#2368 - Allow contrib modules to extend mod_sql's SQLAuthTypes
-        Bug#2715 - Use session.notes table, rather than config tree, for storing
+     C  Bug#2715 - Use session.notes table, rather than config tree, for storing
                    some data
         Bug#2871 - Remove ftpshut and the /etc/shutmsg file
         Bug#3079 - Support modules written in C++
-        Bug#3086 - mod_quotatab write locking is ineffective
+     C  Bug#3086 - mod_quotatab write locking is ineffective
  
 TBD
 
