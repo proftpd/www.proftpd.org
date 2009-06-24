@@ -30,7 +30,6 @@
 	<a href="http://www.au.proftpd.org/">au</a>
 	<a href="http://www.be.proftpd.org/">be</a>
 	<a href="http://www.bg.proftpd.org/">bg</a>
-	<a href="http://www.br.proftpd.org/">br</a>
 	<a href="http://www.cz.proftpd.org/">cz</a>
 	<a href="http://www.de.proftpd.org/">de</a>
 	<a href="http://www.hk.proftpd.org/">hk</a>
@@ -251,17 +250,6 @@
 					Maintained by: Pablo Arturi<br />
 			</p>
 	<p>
-		<a href="http://www4.br.proftpd.org">http://www4.br.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.oi.com.br/">http://proftpd.oi.com.br/</a>
-		<br />
-
-		Location: Brazil					(Rio de Janeiro - Brazil)
-				<br />
-
-					Maintained by: Oi Internet<br />
-			</p>
-	<p>
 		<a href="http://www3.lv.proftpd.org">http://www3.lv.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.linux.edu.lv/">http://proftpd.linux.edu.lv/</a>
@@ -271,6 +259,17 @@
 				<br />
 
 					Maintained by: Leo Truksans<br />
+			</p>
+	<p>
+		<a href="http://www4.ar.proftpd.org">http://www4.ar.proftpd.org/</a>
+        <br />
+		<a href="proftpd.patan.com.ar">proftpd.patan.com.ar</a>
+		<br />
+
+		Location: Argentina					(Buenos Aires, Argentina)
+				<br />
+
+					Maintained by: John Knoll<br />
 			</p>
 	<p>
 		<a href="http://www20.de.proftpd.org">http://www20.de.proftpd.org/</a>
@@ -341,7 +340,7 @@
 	<p>
 		<a href="http://www36.us.proftpd.org">http://www36.us.proftpd.org/</a>
         <br />
-		<a href="http://proftpd.mirror.facebook.com/">http://proftpd.mirror.facebook.com/</a>
+		<a href="http://proftpd.mirror.facebook.net/">http://proftpd.mirror.facebook.net/</a>
 		<br />
 
 		Location: United States					(San Francisco, CA United States)
