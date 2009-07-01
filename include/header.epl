@@ -17,16 +17,24 @@
 
 <div id="menu">
   <h1>Current Versions</h1>
-  Stable: <strong>1.3.2</strong>
+  Stable: <strong>1.3.2a</strong>
   <div class="indent">
-    <span class="nowrap">[ <a href="/docs/RELEASE_NOTES-1.3.2">RELEASE_NOTES</a> ]</span>
+    <span class="nowrap">[ <a href="/docs/RELEASE_NOTES-1.3.2a">RELEASE_NOTES</a> ]</span>
   </div>
   <div class="indent">
-    <span class="nowrap">[ <a href="/docs/NEWS-1.3.2">NEWS</a> ]</span>
-    <span class="nowrap">[ <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.2.tar.gz">gz</a> ]</span>
-    <span class="nowrap">[ <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.2.tar.bz2">bz2</a> ]</span>
+    <span class="nowrap">[ <a href="/docs/NEWS-1.3.2a">NEWS</a> ]</span>
+    <span class="nowrap">[ <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.2a.tar.gz">gz</a> ]</span>
+    <span class="nowrap">[ <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.2a.tar.bz2">bz2</a> ]</span>
   </div>
-  Release Candidate: <strong>None</strong>
+  Release Candidate: <strong>1.3.3rc1</strong>
+  <div class="indent">
+    <span class="nowrap">[ <a href="/docs/RELEASE_NOTES-1.3.3rc1">RELEASE_NOTES</a> ]</span>
+  </div>
+  <div class="indent">
+    <span class="nowrap">[ <a href="/docs/NEWS-1.3.3rc1">NEWS</a> ]</span>
+    <span class="nowrap">[ <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.3rc1.tar.gz">gz</a> ]</span>
+    <span class="nowrap">[ <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.3rc1.tar.bz2">bz2</a> ]</span>
+  </div>
 
   <h1>Mirrors and Downloads</h1>
   <ul>

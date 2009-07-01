@@ -3,6 +3,21 @@
 
 #include "header.epl"
 
+<h1>1.3.2a, 1.3.3rc1 released</h1>
+[<i>30/Jun/2009</i>]
+<p>The ProFTPD Project team is happy to release 1.3.2a to the community.
+This is a maintenance release, containing backported fixes for bugs found
+in the 1.3.2 release.  The <a href="docs/RELEASE_NOTES-1.3.2a">RELEASE_NOTES</a>
+and <a href="docs/NEWS-1.3.2a">NEWS</a> files contain the full details.</p>
+
+<p>We are also pleased to release 1.3.3rc1 to the community.  This is the
+first release candidate of the 1.3.3 development cycle, and contains
+numerous new features, including the <code>mod_exec</code>,
+<code>mod_shaper</code>, and <code>mod_tls_shmcache</code> modules and
+SSH2, SFTP, and SCP support (via the <code>mod_sftp</code> module).
+The <a href="docs/RELEASE_NOTES-1.3.3rc1">RELEASE_NOTES</a>
+and <a href="docs/NEWS-1.3.3rc1">NEWS</a> files contain the full details.</p>
+
 <h1>1.3.2 released</h1>
 [<i>5/Feb/2009</i>]
 <p>The ProFTPD Project team is happy to release 1.3.2 to the community.

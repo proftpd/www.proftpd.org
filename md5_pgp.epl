@@ -8,31 +8,55 @@
 <h2>MD5 Digest Hashes</h2>
 
 <pre>
-89f5e31fc3d3e02b66424dfc6cc5892d <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.3.2.tar.bz2">proftpd-1.3.2.tar.bz2</a>
-756f762883cc8eed03d99dc3b1c56a8e <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.3.2.tar.gz">proftpd-1.3.2.tar.gz</a>
+ad3cbb5db30c5ae39e09b308892392b3 <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.3.2a.tar.bz2">proftpd-1.3.2a.tar.bz2</a>
+def477c4a9c1a5599f2e5aeed550c4a3 <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.3.2a.tar.gz">proftpd-1.3.2a.tar.gz</a>
+23b8674208cceba595512c5d188a5f5d <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.3.3rc1.tar.bz2">proftpd-1.3.3rc1.tar.bz2</a>
+2cd1dfb30e526d5a1905d44ff8816da8 <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.3.3rc1.tar.gz">proftpd-1.3.3rc1.tar.gz</a>
 </pre>
 
 <h2>PGP Signatures</h2>
 
 <pre>
-<strong>proftpd-1.3.2.tar.bz2.asc</strong>
+<strong>proftpd-1.3.2a.tar.bz2.asc</strong>
 -----BEGIN PGP SIGNATURE-----
-Version: PGP 6.5.8
+Version: GnuPG v1.4.9 (GNU/Linux)
 
-iQA/AwUASYs3zLeOiT+lEZdqEQK9EwCgsV2rI3O2XEq7x7adQB2u08yeZc4An1bK
-u7PxZQ/dIlkYnHk2oBbQ0C2G
-=9Fme
+iEYEABECAAYFAkpKw8kACgkQt46JP6URl2p7GgCg1pbFpbOh+dTPrcsSEedNaju1
+LYMAoK69y+8yp6fReHs1IKB3kisUL/Gw
+=kIzP
 -----END PGP SIGNATURE-----
 </pre>
 
 <pre>
-<strong>proftpd-1.3.2.tar.gz.asc</strong>
+<strong>proftpd-1.3.2a.tar.gz.asc</strong>
 -----BEGIN PGP SIGNATURE-----
-Version: PGP 6.5.8
+Version: GnuPG v1.4.9 (GNU/Linux)
 
-iQA/AwUASYs3vLeOiT+lEZdqEQINLgCglb0HJIH8uEbrkcm6KLdwJ+7hGu4AoK58
-XuiOmnUqleKQOIkeE1SklEgN
-=sR7w
+iEYEABECAAYFAkpKw74ACgkQt46JP6URl2ocfACgzcd6EW5eJAl+hf03njGgjeMA
+kyoAniK0xDWCEsjzXlo0JdFAoV9tfsKv
+=DKvJ
+-----END PGP SIGNATURE-----
+</pre>
+
+<pre>
+<strong>proftpd-1.3.3rc1.tar.bz2.asc</strong>
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (GNU/Linux)
+
+iEYEABECAAYFAkpK0HgACgkQt46JP6URl2pwmQCgg6K9KBBhoNQzFyCduVfwsSca
+r/QAnRyIUUJ3+UcfY+Zg27OVZXGXfKpF
+=dqSx
+-----END PGP SIGNATURE-----
+</pre>
+
+<pre>
+<strong>proftpd-1.3.3rc1.tar.gz.asc</strong>
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (GNU/Linux)
+
+iEYEABECAAYFAkpK0H8ACgkQt46JP6URl2phUgCgwt79NOdS3cOFbVC7gr6nxXvF
+FMUAoM5mAz7wzoVWN5Xwa9Yn9RS1MGRF
+=aPJa
 -----END PGP SIGNATURE-----
 </pre>
 
