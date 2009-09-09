@@ -9,8 +9,9 @@ C = Committed
         Add mod_vroot
      C  Add mod_sftp et al
      C  Add mod_shaper
+     C  Bug#2013 - Track RFC2228 sessions in scoreboard
      C  Bug#2067 - Allow/Deny Filters should be supported in the <Limit> context
-	Bug#2368 - Allow contrib modules to extend mod_sql's SQLAuthTypes
+     C  Bug#2368 - Allow contrib modules to extend mod_sql's SQLAuthTypes
      C  Bug#2715 - Use session.notes table, rather than config tree, for storing
                    some data
         Bug#2871 - Remove ftpshut and the /etc/shutmsg file
@@ -18,8 +19,6 @@ C = Committed
      C  Bug#3086 - mod_quotatab write locking is ineffective
  
 TBD
-
-        Bug#2013 - Track RFC2228 sessions in scoreboard
         Bug#2052 - ProFTPD "unused parameters" cleanup
         Bug#2062 - Enhance UserOwner/GroupOwner to take IDs as well as name
                    parameters
