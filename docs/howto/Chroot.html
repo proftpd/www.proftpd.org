@@ -186,6 +186,70 @@ partition, then you need to make sure that root privileges are <b>not</b>
 blocked (<i>e.g.</i> often referred to as "root squash") by the NFS
 mount.  Otherwise, the chroot will fail.
 
+<p><a name="FAQ"></a>
+<b>Frequently Asked Questions</b><br>
+
+<p>
+<font color=red>Question</font>: I am using the <code>DefaultRoot</code>
+directive, but my logins are failing.  The debug logging shows the following:
+<pre>
+  USER <i>user</i>: Login successful.
+  Preparing to chroot to directory '/home/users/<i>user</i>'
+  <i>user</i> chroot("/home/users/<i>user</i>"): Permission denied
+  error: unable to set default root directory
+</pre>
+I am starting <code>proftpd</code> with root privileges, so why is the
+<code>chroot()</code> failing with "Permission denied"?<br>
+<font color=blue>Answer</font>: The above situation can happen in cases
+where even root privileges are insufficient.  There have been reports of
+this happening for security-hardened systems (<i>e.g.</i> SELinux, OpenWall,
+<i>etc</i>); it can <i>also</i> happen when NFS is involved.
+
+<p>
+If the <code>DefaultRoot</code> directory in question is mounted via NFS, make
+sure that the NFS configuration mounts the directory with root privileges.  The
+<code>chroot(2)</code> system call <i>requires</i> root privileges; a
+no-root-privs mounted NFS directory does not allow the <code>chroot(2)</code>
+to succeed.
+
+<p>
+Similarly, instead of "Permission denied", you might see "No such file or
+directory":
+<pre>
+  <i>user</i> chroot("~"): No such file or directory
+</pre>
+The reasons for this error are explained
+<a href="Authentication.html#homedir">here</a>.
+
+<p><a name="MultipleRoots">
+<font color=red>Question</font>: Is it possible to configure <code>DefaultRoot</code> for all users <i>except</i> some special users, which will have a different root directory?<br>
+<font color=blue>Answer</font>: Yes, this is possible.  ProFTPD supports
+having multiple <code>DefaultRoot</code> directives in the proftpd.conf at the
+same time; <code>proftpd</code> checks all of them
+<i>in the order they appear</i>.  The first one which matches the logging-in
+user is applied.
+
+<p>
+To illustrate, here's an example.  Keep in mind that the optional parameters to
+the <code>DefaultRoot</code> directive are <i>group</i> names, <b>not</b> user
+names.
+<pre>
+  DefaultRoot /path/to/admin/dir admin-group
+  DefaultRoot /path/to/special/dir special-group
+  DefaultRoot ~  <font color=blue># everyone else</font>
+</pre>
+
+<p>
+If the logging-in user is a member of group 'admin-group', then
+<code>proftpd</code> will chroot to the <code>/path/to/admin/dir</code>
+directory.  If the logging-in user is not a member of group 'admin-group' but
+<b>is</b> a member of group 'special-group', then
+<code>/path/to/special/dir</code> is used for the chroot.  And if the user
+is not a member of either of these groups, then the normal home directory is
+used for the chroot.  It's always a good idea of have a "applies to everyone"
+<code>DefaultRoot</code> directive in your proftpd.conf, at the
+<i>end of the list</i> of <code>DefaultRoot</code>s, as a catch-all.
+
 <p>
 <hr>
 Last Updated: $Date$<br>
