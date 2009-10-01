@@ -16,7 +16,6 @@ C = Committed
      C  Bug#3086 - mod_quotatab write locking is ineffective
         Bug#3214 - ftpwho/ftptop truncate UTF8 strings due to byte, versus
                    character, lengths 
-        Bug#3289 - Support the HOST command
         Bug#3290 - Change default mod_sql connection policy to open database
                    connection on authentication
  
@@ -27,3 +26,4 @@ TBD
                    parameters
         Bug#2871 - Remove ftpshut and the /etc/shutmsg file
         Bug#3079 - Support modules written in C++
+        Bug#3289 - Support the HOST command
