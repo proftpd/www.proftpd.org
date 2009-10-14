@@ -32,7 +32,6 @@
 	<a href="http://www.bg.proftpd.org/">bg</a>
 	<a href="http://www.cz.proftpd.org/">cz</a>
 	<a href="http://www.de.proftpd.org/">de</a>
-	<a href="http://www.hk.proftpd.org/">hk</a>
 	<a href="http://www.ie.proftpd.org/">ie</a>
 	<a href="http://www.il.proftpd.org/">il</a>
 	<a href="http://www.it.proftpd.org/">it</a>
@@ -46,7 +45,6 @@
 	<a href="http://www.sg.proftpd.org/">sg</a>
 	<a href="http://www.si.proftpd.org/">si</a>
 	<a href="http://www.tw.proftpd.org/">tw</a>
-	<a href="http://www.ua.proftpd.org/">ua</a>
 	<a href="http://www.uk.proftpd.org/">uk</a>
 	<a href="http://www.us.proftpd.org/">us</a>
 
@@ -131,17 +129,6 @@
 					Maintained by: Rudi (Rudolf Ladner)<br />
 			</p>
 	<p>
-		<a href="http://www2.ua.proftpd.org">http://www2.ua.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.dnepr.net/">http://proftpd.dnepr.net/</a>
-		<br />
-
-		Location: Ukraine					(Dnepropetrovsk)
-				<br />
-
-					Maintained by: Andrey Lakhno<br />
-			</p>
-	<p>
 		<a href="http://www2.am.proftpd.org">http://www2.am.proftpd.org/</a>
         <br />
 		<a href="http://proftpd.mirrors.arminco.com/">http://proftpd.mirrors.arminco.com/</a>
@@ -162,16 +149,6 @@
 				<br />
 
 					Maintained by: Matt Mozur<br />
-			</p>
-	<p>
-		<a href="http://www3.hk.proftpd.org">http://www3.hk.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.hknetworks.com/">http://proftpd.hknetworks.com/</a>
-		<br />
-
-		Location: Hong kong				<br />
-
-					Maintained by: Stanley Au<br />
 			</p>
 	<p>
 		<a href="http://www1.li.proftpd.org">http://www1.li.proftpd.org/</a>
@@ -205,17 +182,6 @@
 				<br />
 
 					Maintained by: Antonio Prado<br />
-			</p>
-	<p>
-		<a href="http://www2.ar.proftpd.org">http://www2.ar.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.localhost.net.ar/">http://proftpd.localhost.net.ar/</a>
-		<br />
-
-		Location: Argentina					(Capital Federal, Buenos Aires, Argentina)
-				<br />
-
-					Maintained by: Nicolas Sigal<br />
 			</p>
 	<p>
 		<a href="http://www2.cz.proftpd.org">http://www2.cz.proftpd.org/</a>
