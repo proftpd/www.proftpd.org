@@ -14,9 +14,7 @@
 
 <p>
 The following is a collection of mini-HOWTOs that cover most of the common
-questions asked about ProFTPD and how to configure it.  These files are
-also available under the <code>doc/howto/</code> directory of the
-ProFTPD source distribution.
+questions asked about ProFTPD and how to configure it.
 
 <p>
 Recommended order of reading:
@@ -106,12 +104,6 @@ Recommended order of reading:
   </dd>
 
   <p>
-  <dt>On <a href="Sendfile.html"><code>sendfile()</code></a>
-  <dd>Covers the <code>sendfile(2)</code> function and when it should (and
-      should not) be used
-  </dd>
-
-  <p>
   <dt>On the <a href="ListOptions.html"><code>ListOptions</code></a> directive
   <dd>Covers how the <code>ListOptions</code> directive can be used to
       specify the directory listing options for clients, including showing
@@ -152,6 +144,12 @@ Recommended order of reading:
   </dd>
 
   <p>
+  <dt>On <a href="Sendfile.html">sendfile support</a>
+  <dd>Describes what the <code>sendfile(2)</code> function does, and some
+      cases where it should not be used
+  </dd>
+
+  <p>
   <dt>On the <a href="FTP.html"><code>FTP</code></a> commands supported
   <dd>Provides descriptions of the FTP commands supported by the daemon,
       including some common <code>SITE</code> commands
@@ -167,13 +165,6 @@ Recommended order of reading:
   <dt>On <a href="SQL.html">SQL</a> configurations
   <dd>Covers configuring <code>mod_sql</code> and how to set up your SQL
       tables, and some of the common questions about using <code>mod_sql</code>
-  </dd>
-
-  <p>
-  <dt>On using <a href="Rewrite.html">mod_rewrite</code></a>
-  <dd>Covers various configuration tricks and use cases where using
-      <code>mod_rewrite</code> to rewrite FTP commands can be extremely
-      useful
   </dd>
 
   <p>
@@ -220,6 +211,12 @@ Recommended order of reading:
   </dd>
 
   <p>
+  <dt>On <a href="Rewrite.html">rewriting</a> commands using <code>mod_rewrite</code>
+  <dd>Contains a collection of examples of <code>mod_rewrite</code>
+    configurations that solve a variety of different problems
+  </dd>
+
+  <p>
   <dt>On <a href="Tracing.html">Tracing</a>
   <dd>Covers trace logging
   </dd>
@@ -242,9 +239,19 @@ Recommended order of reading:
   </dd>
 
   <p>
+  <dt>On running proftpd as a <a href="Nonroot.html">nonroot user</a>
+  <dd>Covers configuring proftpd to run as a nonroot user
+  </dd>
+
+  <p>
   <dt>On <a href="Globbing.html">globbing</a>
   <dd>Covers what globbing is, how it can cause problems, and how to
       configure the daemon to defend against globbing attacks
+  </dd>
+
+  <p>
+  <dt>On <a href="Testing.html">testing</a> of <code>proftpd</code>
+  <dd>Covers functional, integration, and regression tests of <code>proftpd</code>, and how to run the testsuite
   </dd>
 
   <p>
