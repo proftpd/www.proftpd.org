@@ -17,7 +17,6 @@
 
 	<a href="ftp://ftp.ar.proftpd.org/">ar</a>
 	<a href="ftp://ftp.at.proftpd.org/">at</a>
-	<a href="ftp://ftp.au.proftpd.org/">au</a>
 	<a href="ftp://ftp.be.proftpd.org/">be</a>
 	<a href="ftp://ftp.bg.proftpd.org/">bg</a>
 	<a href="ftp://ftp.ca.proftpd.org/">ca</a>
@@ -187,17 +186,6 @@
 				<br />
 
 					Maintained by: Motohiro Sunouchi<br />
-			</p>
-	<p>
-		<a href="ftp://ftp2.au.proftpd.org">ftp://ftp2.au.proftpd.org/</a>
-        <br />
-		<a href="ftp://proftpd.dknss.com/pub/proftpd/">ftp://proftpd.dknss.com/pub/proftpd/</a>
-		<br />
-
-		Location: Australia					(Gosford)
-				<br />
-
-					Maintained by: Darrin Khan<br />
 			</p>
 	<p>
 		<a href="ftp://ftp25.us.proftpd.org">ftp://ftp25.us.proftpd.org/</a>
@@ -385,6 +373,28 @@
 				<br />
 
 					Maintained by: Mike Futerko<br />
+			</p>
+	<p>
+		<a href="ftp://ftp1.pl.proftpd.org">ftp://ftp1.pl.proftpd.org/</a>
+        <br />
+		<a href="ftp://ftp.tpnet.pl/pub/linux/proftpd/">ftp://ftp.tpnet.pl/pub/linux/proftpd/</a>
+		<br />
+
+		Location: Poland					(Poland, Warsaw)
+				<br />
+
+					Maintained by: Ireneusz Weglewski<br />
+			</p>
+	<p>
+		<a href="ftp://ftp2.pl.proftpd.org">ftp://ftp2.pl.proftpd.org/</a>
+        <br />
+		<a href="ftp://ftp.tpnet.pl/pub/linux/proftpd/ ; rsync://ftp.tpnet.pl/pub/linux/proftpd/">ftp://ftp.tpnet.pl/pub/linux/proftpd/ ; rsync://ftp.tpnet.pl/pub/linux/proftpd/</a>
+		<br />
+
+		Location: Poland					(Poland, Warsaw)
+				<br />
+
+					Maintained by: Ireneusz Weglewski<br />
 			</p>
 
 #include "footer.epl"
