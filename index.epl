@@ -3,6 +3,20 @@
 
 #include "header.epl"
 
+<h1>1.3.2c, 1.3.3rc3 released</h1>
+[<i>10/Dec/2009</i>]
+<p>The ProFTPD Project team is happy to release 1.3.2c to the community.
+This is a maintenance release, containing backported fixes for bugs found
+in the 1.3.2 release.  The <a href="docs/RELEASE_NOTES-1.3.2c">RELEASE_NOTES</a>
+and <a href="docs/NEWS-1.3.2c">NEWS</a> files contain the full details.</p>
+
+<p>We are also pleased to release 1.3.3rc3 to the community.  This is the
+third release candidate of the 1.3.3 development cycle, and contains
+new SFTP features, a fix for the SSL/TLS renegotiation vulnerability
+(CVE-2009-355), and an updated version of libtool.  The
+<a href="docs/RELEASE_NOTES-1.3.3rc3">RELEASE_NOTES</a>
+and <a href="docs/NEWS-1.3.3rc3">NEWS</a> files contain the full details.</p>
+
 <h1>1.3.2b, 1.3.3rc2 released</h1>
 [<i>20/Oct/2009</i>]
 <p>The ProFTPD Project team is happy to release 1.3.2b to the community.
@@ -13,8 +27,8 @@ and <a href="docs/NEWS-1.3.2b">NEWS</a> files contain the full details.</p>
 <p>We are also pleased to release 1.3.3rc2 to the community.  This is the
 second release candidate of the 1.3.3 development cycle, and contains
 numerous new features, including many SSH/SFTP fixes, a new
-<code>mod_sql_passwd</code>, support for "implicit" FTPS, and better handling
-of lost database connections.  As always, the
+<code>mod_sql_passwd</code> module, support for "implicit" FTPS, and better
+handling of lost database connections.  As always, the
 <a href="docs/RELEASE_NOTES-1.3.3rc2">RELEASE_NOTES</a>
 and <a href="docs/NEWS-1.3.3rc2">NEWS</a> files contain the full details.</p>
 
