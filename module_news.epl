@@ -5,6 +5,17 @@
 
 <h1><: print "$html_title" :></h1>
 
+<h2>Versioning module</h2>
+<i>Maintainer: TJ Saunders</i>
+<br /><a href="http://www.castaglia.org/proftpd/modules/mod_ifversion.html">http://www.castaglia.org/proftpd/modules/mod_ifversion.html</a>
+
+<p>The <code>mod_ifversion</code> module allows for ProFTPD configuration
+files which have version-dependent sections.  For configuration files which
+need to be used with different proftpd versions, and for configurations which
+may use directives which have been deprecated or changed in later proftpd
+versions, this module is useful.
+
+
 <h2>SFTP module</h2>
 <i>Maintainer: TJ Saunders</i>
 <br /><a href="http://www.castaglia.org/proftpd/modules/mod_sftp.html">http://www.castaglia.org/proftpd/modules/mod_sftp.html</a>
