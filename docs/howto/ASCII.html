@@ -61,6 +61,24 @@ An FTP client will usually use <code>SIZE</code> when it wants to resume
 downloading file.  However, clients in general should not be resuming downloads
 in ASCII mode.  Resuming downloads in binary mode is the recommended way.
 
+<p><a name="FAQ">
+<b>Frequently Asked Questions</b>
+
+<p>
+<font color=red>Question</font>: The <code>SIZE</code> <i>used</i> to work,
+regardless of the ASCII/binary mode, in 1.2.10.  Why was it changed?<br>
+<font color=blue>Answer</font>: The restriction on the <code>SIZE</code>
+command first appeared in 1.3.0rc1.
+
+<p>
+Prior to the restriction, the file size reported by <code>proftpd</code>
+via <code>SIZE</code> did not take into account any possible CRLF translation
+(as mandated by RFC959 for ASCII mode transfers); this means that the
+reported size could be misleading.  The reported size might not match the
+actual number of bytes that a client might download.  Now, <code>proftpd</code>
+would rather provide no answer at all to a <code>SIZE</code> over providing
+a wrong answer.
+
 <p>
 <hr>
 <i>$Date$</i><br>
