@@ -18,10 +18,18 @@ general, straightforward.  However, there are a few caveats of which to
 be aware.
 
 <p>
-First, it is not necessary to nest <code>&lt;Directory&gt;</code>; the
-daemon will not let one do this, in fact.  The daemon will determine
-automatically the relations of <code>&lt;Directory&gt;</code> paths,
-depending on the path given and surrounding configuration context.
+First, it is not necessary to nest <code>&lt;Directory&gt;</code> sections,
+like:
+<pre>
+  &lt;Directory /path/to/dir&gt;
+    &lt;Directory /path/to/dir/subdir&gt;
+      ...
+    &lt;/Directory&gt;
+  &lt;/Directory&gt;
+</pre>
+The daemon will not let one do this, in fact.  The daemon will determine
+automatically the relations of <code>&lt;Directory&gt;</code> paths, depending
+on the path given and surrounding configuration context.
 
 <p>
 Always use the normal, absolute path for a <code>&lt;Directory&gt;</code>
@@ -41,6 +49,18 @@ directory name in quotations, <i>e.g.</i>:
 <pre>
   &lt;Directory &quot;/path/to/My Directory&quot;&gt;
 </pre>
+
+<p>
+Any configuration directives in a <code>&lt;Directory&gt;</code> section
+will apply to that directory <i>and to all of the contents of that directory
+recursively</i>.  Thus if you use:
+<pre>
+  &lt;Directory /path/to/dir&gt;
+    Umask 022
+  &lt;/Directory&gt;
+</pre>
+Then that <code>Umask</code> value will be used within the
+"/path/to/dir/subdir/" directory as well.
 
 <p>
 As noted in the documentation, use of a <code>/*</code> suffix on a path
@@ -136,6 +156,161 @@ In some cases, using <code>.ftpaccess</code> files might be more convenient.
 The <code>AllowOverride</code> configuration directive (which first appeared
 in the 1.2.7rc1 release) will provide fine-grained control over when
 <code>.ftpaccess</code> files will be honored.
+
+<p>
+The fact that <code>&lt;Directory&gt;</code> sections can be used to
+refer to specific <i>files</i>, in addition to directories, is not obvious.
+However, there are some cases where it can be useful to use this feature.
+One proftpd user used this feature in the following way: the
+<code>DirFakeMode</code> was used to make all files look read-only (mostly
+so that FTP mirroring tools would create a read-only mirror of the site).
+However, a particular file on the site needed have execute permissions,
+even in the FTP mirrored site.  A <code>&lt;Directorygt;</code> section
+was used just for this one file, <i>e.g.</i>:
+<pre>
+  # Make all files look read-only to clients, regardless of the actual
+  # permissions on the filesystem
+  DirFakeMode 0444
+
+  &lt;Anonymous /var/ftpd&gt;
+
+    # However, for this script, we need it to look like it is executable, too
+    &lt;Directory /var/ftpd/bin/script&gt;
+      DirFakeMode 0555
+    &lt;/Directory&gt;
+
+  &lt;/Anonymous&gt;
+</pre>
+
+<p><a name="FAQ"></a>
+<b>Frequently Asked Questions</b><br>
+
+<p><a name="MultipleDirectoriesSamePath">
+<font color=red>Question</font>: What happens if I configure two <code>&lt;Directory&gt;</code> sections for the exact same path?<br>
+<font color=blue>Answer</font>: If you use explicit paths, then the config
+parser will choke on the duplicate <code>&lt;Directory&gt;</code> sections.
+For example, if you tried:
+<pre>
+  &lt;Directory /path/to/dir&gt;
+    &lt;Limit ALL&gt;
+      DenyAll
+    &lt;/Limit&gt;
+  &lt/Directory&gt;
+
+  &lt;Directory /path/to/dir&gt;
+    &lt;Limit ALL&gt;
+      AllowAll
+    &lt;/Limit&gt;
+
+    &lt;Limit WRITE&gt;
+      DenyAll
+    &lt;/Limit&gt;
+  &lt/Directory&gt;
+</pre>
+When starting <code>proftpd</code>, you would see something like:
+<pre>
+ - Fatal: <Directory>: <Directory> section already configured for '/path/to/dir' on line 39 of '/etc/ftpd/proftpd.conf'
+</pre>
+
+<p>
+But what if you have the two <code>&lt;Directory&gt;</code> sections, but
+one of the sections uses a wildcard character which would still match the
+same path?  For example:
+<pre>
+  &lt;Directory /path/to/dir&gt;
+    &lt;Limit ALL&gt;
+      DenyAll
+    &lt;/Limit&gt;
+  &lt/Directory&gt;
+
+  &lt;Directory /path/*/dir&gt;
+    &lt;Limit ALL&gt;
+      AllowAll
+    &lt;/Limit&gt;
+
+    &lt;Limit WRITE&gt;
+      DenyAll
+    &lt;/Limit&gt;
+  &lt/Directory&gt;
+</pre>
+This time, the config parser would not choke; <code>proftpd</code> would start
+up normally.  When it came time to look up the <code>&lt;Directory&gt;</code>
+section to use, <i>e.g.</i> for uploading to "/path/to/dir/test.txt",
+the matching <code>&lt;Directory&gt;</code> section <i>which appears later in
+the config file</i> wins.  In the above example, the upload to
+"/path/to/dir/test.txt" would be denied (because the wildcard-using
+<code>&lt;Directory&gt;</code> section appears later, and it has a
+<code>&lt;Limit WRITE&gt;</code> section denying writes).
+
+<p>
+However, if you simply reversed the order of the above
+<code>&lt;Directory&gt;</code> sections and tried to upload to
+"/path/to/subdir/test.txt", <i>e.g.</i>:
+<pre>
+  &lt;Directory /path/*/dir&gt;
+    &lt;Limit ALL&gt;
+      AllowAll
+    &lt;/Limit&gt;
+
+    &lt;Limit WRITE&gt;
+      DenyAll
+    &lt;/Limit&gt;
+  &lt/Directory&gt;
+
+  &lt;Directory /path/to/dir&gt;
+    &lt;Limit ALL&gt;
+      DenyAll
+    &lt;/Limit&gt;
+  &lt/Directory&gt;
+</pre>
+the upload would succeed, since the non-wildcard-using
+<code>&lt;Directory&gt;</code> section appeared later in the config.
+
+<p><a name="PreventDirectoryRename">
+<font color=red>Question</font>: How can I prevent a specific directory from
+being renamed?  I am currently trying:
+<pre>
+  &lt;Directory /dir/*&gt;
+    &lt;Limit CWD XCWD RNFR RNTO&gt;
+      AllowAll
+    &lt;/Limit&gt;
+
+    &lt;Limit ALL&gt;
+      DenyAll
+    &lt;/Limit&gt;
+  &lt;/Directory&gt;
+
+  &lt;Directory /dir/subdir&gt;
+    &lt;Limit WRITE&gt;
+      DenyAll
+    &lt;/Limit&gt;
+  &lt;/Directory&gt;
+</pre>
+to keep "/dir/subdir" from being renamed, but it doesn't work!<br>
+<font color=blue>Answer</font>: The trick is to block the <code>RNFR</code>
+command within the <code>&lt;Directory&gt;</code> section for that
+specific directory, <i>i.e.</i>:
+<pre>
+  &lt;Directory /dir/subdir&gt;
+    &lt;Limit RNFR WRITE&gt;
+      DenyAll
+    &lt;/Limit&gt;
+  &lt;/Directory&gt;
+</pre>
+
+<p>
+The reason the original config did not work as expected is that
+<code>proftpd</code>, when handling the <code>RNTO</code> command (<i>e.g.</i> "<code>RNTO subdir2</code>"), would <b>not</b> match the
+<code>&lt;Directory /dir/subdir&gt;</code> section for the path "/dir/subdir2",
+but instead matches the <code>&lt;Directory /dir/*&gt;</code> section.
+
+<p>
+Renaming of files via FTP is done by first sending the <code>RNFR</code>
+command (for the old filename), then sending <code>RNFTO</code> (with the
+new filename).  By placing <code>RNFR</code> in the
+<code>&lt;Directory /dir/subdir&gt;</code> section's <code>&lt;Limit&gt;</code>
+list, we make sure that the <code><i>RNFR</i></code> <i>does</i> match the
+<code>&lt;Directory /dir/subdir&gt;</code> section, and is thus denied.
 
 <p>
 <hr>
