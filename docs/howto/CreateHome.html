@@ -41,7 +41,7 @@ configuration directive.
 <b>How to use <code>CreateHome</code></b><br>
 The description for this configuration directive shows its parameters to be:
 <pre>
-  CreateHome off|on [&lt;mode&gt;] [skel &lt;path&gt;] [dirmode &lt;mode&gt;]
+  CreateHome off|on [&lt;mode&gt;] [skel &lt;path&gt;] [dirmode &lt;mode&gt;] [uid &lt;uid&gt;] [gid &lt;gid&gt;]
 </pre>
 The first parameter is a simple Boolean, enabling or disabling the
 <code>proftpd</code> daemon's run-time support for home directory creation.
@@ -98,6 +98,12 @@ for there are some restrictions and caveats to both the <code>dirmode</code>
 and <code>skel</code> parameters.
 
 <p>
+The <code>uid</code> and <code>gid</code> parameters can be used to set the
+ownership of the newly created parent directories, up to be <b>not</b>
+including the home directory.  By default, those created parent directories
+are owned by root (UID 0 and GID 0).
+
+<p>
 Here are some examples (from the documentation) to help illustrate how one
 might use the <code>CreateHome</code> configuration directive:
 <pre>
@@ -107,8 +113,11 @@ might use the <code>CreateHome</code> configuration directive:
   <font color=green># Specify a mode of 711 for the created home directory</font>
   CreateHome on 711
 
-  <font color=green># Specify a mode of 711, and have the parent directories owned by a non-root UID/GID</font>
+  <font color=green># Specify a mode of 711, and have the parent directories owned by a specific non-root UID/GID</font>
   CreateHome on 711 uid 100 gid 100
+
+  <font color=green># Specify a mode of 711, and have the parent directories owned by the UID/GID of the logging-in user</font>
+  CreateHome on 711 uid ~ gid ~
 
   <font color=green># Specify a skeleton directory</font>
   CreateHome on skel /etc/ftpd/skel
@@ -135,6 +144,25 @@ directives may well be deprecated in the future, in favor of
 reinvent this particular wheel.  <code>CreateHome</code> was designed for
 large sites in mind, but can be used any time home-on-demand creation is
 desired from the FTP daemon.
+
+<p><a name="FAQ"></a>
+<b>FAQ</b>
+
+<p>
+<font color=red>Question</font>: Is it possible to have different permissions
+for the <code>CreateHome</code> <em>mode</em> and <em>dirmode</em> based on the
+group of the connecting user?<br>
+<font color=blue>Answer</font>: Yes, if you use the <a href="http://www.proftpd.org/docs/contrib/mod_ifsession.html"><code>mod_ifsession</code></a> module.
+For example:
+<pre>
+  &lt;IfGroup special&gt;
+    CreateHome on 755 dirmode 755
+  &lt;/IfGroup&gt;
+
+  &lt;IfGroup !special&gt;
+    CreateHome on 711 dirmode 711
+  &lt;/IfGroup&gt;
+</pre>
 
 <p>
 <hr>
