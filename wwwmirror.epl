@@ -26,7 +26,6 @@
 
 	<a href="http://www.am.proftpd.org/">am</a>
 	<a href="http://www.ar.proftpd.org/">ar</a>
-	<a href="http://www.at.proftpd.org/">at</a>
 	<a href="http://www.be.proftpd.org/">be</a>
 	<a href="http://www.bg.proftpd.org/">bg</a>
 	<a href="http://www.cz.proftpd.org/">cz</a>
@@ -104,17 +103,6 @@
 				<br />
 
 					Maintained by: Iyi Dogan Claude<br />
-			</p>
-	<p>
-		<a href="http://www2.at.proftpd.org">http://www2.at.proftpd.org/</a>
-        <br />
-		<a href="http://proftpd.gds.tuwien.ac.at/">http://proftpd.gds.tuwien.ac.at/</a>
-		<br />
-
-		Location: Austria					(Vienna Univ. of Technology, Austria)
-				<br />
-
-					Maintained by: Rudi (Rudolf Ladner)<br />
 			</p>
 	<p>
 		<a href="http://www2.am.proftpd.org">http://www2.am.proftpd.org/</a>
