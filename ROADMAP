@@ -8,6 +8,9 @@ C = Committed
         Add mod_deflate
         Add mod_tar
         Add memcache support
+        Add 'core.shutdown' event
+        Support prepared SQL statements
+        Use separate tables for auth, command, config, hook handlers
         Bug#3079 - Support modules written in C++
  
 TBD
