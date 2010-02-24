@@ -519,6 +519,22 @@ the process for every session.
 The above holds true for the <em>groupset</em> and <em>groupsetfast</em>
 <code>SQLAuthenticate</code> options as well.
 
+<p><a name="SQLEncryptedDBConn"></a>
+<font color=red>Question</font>: How do I configure <code>mod_sql</code> so
+that it will use encrypted connections (<i>e.g.</i> SSL/TLS) to the
+backend database server?<br>
+<font color=blue>Answer</font>: This sort of configuration depends on the
+backend database server you are using.
+
+<p>
+If you are using MySQL, then you can configure this in the "[client]" section
+of your <code>my.cnf</code> configuration file.
+
+<p>
+If you are using Postgres, then this will happen automatically, by default,
+as long as your <code>libpq</code> Postgres client library has been
+compiled with SSL support.
+
 <p>
 <hr>
 Last Updated: <i>$Date$</i><br>
