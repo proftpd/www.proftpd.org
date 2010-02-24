@@ -196,8 +196,9 @@ To guard against the above situation, there are two possible solutions.
 First, you can disable the <code>mod_delay</code> module entirely (see above);
 if the timing information leak is not of concern for your FTP site, this is
 the recommended approach.  Second, you can use the
-<a href="http://www.proftpd.org/docs/contrib/mod_ifsession.html"><code>mod_ifsession</code></a> module and its <code>&lt;IfClass&gt;</code> sections so that
-the <code>mod_delay</code> module applies only to certain DNS names and
+<a href="../contrib/mod_ifsession.html"><code>mod_ifsession</code></a> module
+and its <code>&lt;IfClass&gt;</code> sections so that the
+<code>mod_delay</code> module applies only to certain DNS names and
 IP address ranges.  For example:
 <pre>
   # Define a class which identifies trusted clients
@@ -216,7 +217,29 @@ IP address ranges.  For example:
     &lt;/IfClass&gt;
   &lt;/IfModule&gt;
 </pre>
-More information on defining classes can be found <a href="http://www.proftpd.org/docs/howto/Classes.html">here</a>.
+More information on defining classes can be found <a href="../howto/Classes.html">here</a>.
+
+<p><a name="FAQ">
+<b>Frequently Asked Questions</b><br>
+
+<p>
+<font color=red>Question</font>: My client times out, after a couple of minutes,
+after sending the <code>USER</code> command.  After disabling <code>mod_delay</code>, the login succeeds quickly.  Isn't this a bug in <code>mod_delay</code>?<br>
+<font color=blue>Answer</font>: No.
+
+<p>
+The <code>DelayTable</code> file can, over time, build up a store of long
+delay values.  A series of logins which take a while (<i>e.g.</i> SSL/TLS
+handshakes over slow network connections) can cause this sort of behavior.
+You can delete the <code>DelayTable</code> file or use the <a href="#delay_reset"><code>delay reset</code></a> ftpdctl action to clear the stored data.
+
+<p>
+<font color=red>Question</font>: Shouldn't <code>mod_delay</code> have some
+sort of maximum delay value, so that it doesn't cause timeouts?<br>
+<font color=blue>Answer</font>:  No.  There is no single value, hardcoded
+or configurable, that will work well for all sites <i>and</i> achieve
+<code>mod_delay</code>'s purpose at the same time.  What seems like a normal
+delay time for one site will be unacceptably long for another site.
 
 <p>
 <hr>
@@ -232,7 +255,7 @@ Last Updated: <i>$Date$</i><br>
 <br><hr>
 
 <font size=2><b><i>
-&copy; Copyright 2004-2007 TJ Saunders<br>
+&copy; Copyright 2004-2009 TJ Saunders<br>
  All Rights Reserved<br>
 </i></b></font>
 

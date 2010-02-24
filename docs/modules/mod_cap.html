@@ -114,27 +114,33 @@ The <code>CapabilitiesSet</code> directive is used to manipulate the set of
 capabilities that <code>mod_cap</code> grants.
 
 <p>
-By default, <code>mod_cap</code> removes all but two capabilities
+By default, <code>mod_cap</code> removes all but a few capabilities
 from the session-handling process: <code>CAP_NET_BIND_SERVICE</code>, for
 binding to ports lower than 1024 (required for active data transfers), and
 <code>CAP_CHOWN</code>, for allowing a process to change a file's ownership
 to a different user.  The <code>CAP_CHOWN</code> capability is only strictly
 necessary if the <code>UserOwner</code> configuration directive is in use; if
 not being used, the <code>CAP_CHOWN</code> capability is best removed.
+Additionally, <code>CAP_AUDIT_WRITE</code> is retained if
+the <code>mod_auth_pam</code> module is present, as this capability is needed
+for some PAM modules such as <code>pam_loginuid</code>. 
 
 <p>
 To remove a capability, prefix the name with a '-'; to enable a capability,
-use '+'.  This directive only supports the following capabilities:
-<code>CAP_CHOWN</code>, <code>CAP_DAC_OVERRIDE</code> (override all directory
-access controls), and <code>CAP_DAC_READ_SEARCH</code> (allow read and search
-directory access).
+use '+'.  This directive supports the following capabilities:
+<ul>
+  <li><code>CAP_CHOWN</code>
+  <li><code>CAP_DAC_OVERRIDE</code> (override all directory access controls)
+  <li><code>CAP_DAC_READ_SEARCH</code> (allow read and search directory access)
+  <li><code>CAP_FOWNER</code>
+</ul>
 
 <p>
 Example:
 <pre>
   &lt;IfModule mod_cap.c&gt;
     CapabilitiesEngine on
-    CapabilitiesSet -CAP_CHOWN +CAP_DAC_READ_SEARCH
+    CapabilitiesSet -CAP_CHOWN +CAP_DAC_READ_SEARCH +CAP_FOWNER
   &lt;/IfModule&gt;
 </pre>
 
@@ -167,13 +173,35 @@ or libcap2-dev package on your system, and re-build proftpd (using version
 library.
 
 <p>
+<font color=red>Question</font>: What does the following mean?
+<pre>
+  chown() as root failed: Operation not permitted
+</pre>
+<font color=blue>Answer</font>: The purpose of the <code>mod_cap</code>
+module is to restrict the capabilities of the all-powerful <code>root</code>
+user.  Thus when <code>mod_cap</code> is in effect, operations like
+<code>chown()</code> are restricted.
+
+<p>
+The message above usually happens when your configuration uses the
+<code>UserOwner</code> or <code>GroupOwner</code> configuration directives.
+To enable those directives to function and still use <code>mod_cap</code>,
+you will need to use a configuration such as:
+<pre>
+  &lt;IfModule mod_cap.c&gt;
+    # Allow root to use chown(2)
+    CapabilitiesSet -CAP_CHOWN
+  &lt;/IfModule&gt;
+</pre>
+
+<p>
 <hr><br>
 Author: <i>$Author$</i><br>
 Last Updated: <i>$Date$</i><br>
 <br><hr>
 
 <font size=2><b><i>
-&copy; Copyright 2000-2008 TJ Saunders<br>
+&copy; Copyright 2000-2009 TJ Saunders<br>
  All Rights Reserved<br>
 </i></b></font>
 
