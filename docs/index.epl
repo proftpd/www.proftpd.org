@@ -58,7 +58,8 @@ features they offer.</p>
   <li><a href="http://www.proftpd.org/docs/howto/SQL.html">SQL</a> support (mod_sql)</li>
   <li><a href="http://www.proftpd.org/docs/howto/Quotas.html">Quota</a> support (mod_quotatab)</li>
   <li><a href="http://www.proftpd.org/docs/contrib/mod_ban.html">Dynamic blacklist</a> support (mod_ban)</li>
-  <li>RADIUS support (mod_radius)</li>
+  <li><a href="http://www.proftpd.org/docs/contrib/mod_shaper.html">Traffic shaping</a> support (mod_shaper)</li>
+  <li><a href="http://www.proftpd.org/docs/contrib/mod_radius.html">RADIUS</a> support (mod_radius)</li>
   <li>POSIX capabilities (mod_cap)</li>
   <li>TCP wrappers support (mod_wrap)</li>
   <li>mod_readme</li>
