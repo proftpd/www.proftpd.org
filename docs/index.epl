@@ -52,11 +52,14 @@ additional modules and where to find further help in configuring the
 features they offer.</p>
 
 <ul>
+  <li><a href="http://www.proftpd.org/docs/contrib/mod_sftp.html">SFTP</a> support (mod_sftp)</li>
   <li><a href="http://www.proftpd.org/docs/howto/TLS.html">SSL/TLS</a> support (mod_tls)</li>
   <li><a href="http://horde.net/~jwm/software/mod_ldap/">LDAP</a> support (mod_ldap)</li>
-  <li>POSIX capabilities (mod_cap)</li>
   <li><a href="http://www.proftpd.org/docs/howto/SQL.html">SQL</a> support (mod_sql)</li>
+  <li><a href="http://www.proftpd.org/docs/howto/Quotas.html">Quota</a> support (mod_quotatab)</li>
+  <li><a href="http://www.proftpd.org/docs/contrib/mod_ban.html">Dynamic blacklist</a> support (mod_ban)</li>
   <li>RADIUS support (mod_radius)</li>
+  <li>POSIX capabilities (mod_cap)</li>
   <li>TCP wrappers support (mod_wrap)</li>
   <li>mod_readme</li>
   <li>mod_ratio (Maintained by: James Dogopoulos &lt;jd@dynw.com&gt;)</li>
