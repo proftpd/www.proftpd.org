@@ -31,6 +31,7 @@
 	<a href="http://www.cz.proftpd.org/">cz</a>
 	<a href="http://www.de.proftpd.org/">de</a>
 	<a href="http://www.ie.proftpd.org/">ie</a>
+	<a href="http://www.il.proftpd.org/">il</a>
 	<a href="http://www.it.proftpd.org/">it</a>
 	<a href="http://www.kr.proftpd.org/">kr</a>
 	<a href="http://www.li.proftpd.org/">li</a>
@@ -267,6 +268,17 @@
 				<br />
 
 					Maintained by: Piotr Maluty<br />
+			</p>
+	<p>
+		<a href="http://www2.il.proftpd.org">http://www2.il.proftpd.org/</a>
+        <br />
+		<a href="http://proftpd.interhost.co.il">http://proftpd.interhost.co.il</a>
+		<br />
+
+		Location: Israel					(ISRAEL)
+				<br />
+
+					Maintained by: Dmitry Sherman<br />
 			</p>
 	<p>
 		<a href="http://www1.tw.proftpd.org">http://www1.tw.proftpd.org/</a>
