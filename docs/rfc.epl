@@ -7,37 +7,24 @@
 <p>This page lists current Internet RFCs and Drafts that define or are
 closely related to the FTP protocol.</p>
 
-<p> ProFTPD 1.2 conforms to the FTP protocol standard as defined in RFC-959
-(STD-9) and RFC-1123 (STD-3).  It also implements RFC-2389 ("Feature
+<p> ProFTPD 1.3.<i>x</i> conforms to the FTP protocol standard as defined in
+RFC-959 (STD-9) and RFC-1123 (STD-3).  It also implements RFC-2389 ("Feature
 negotiation mechanism for the File Transfer Protocol"). All the required
 commands are implemented, as are most of the optional commands appropriate
 for FTP servers hosted on POSIX (IEEE-1003.1) style operating systems. 
 However, the ACCT (Account) command is not implemented.</p>
 
-<p>ProFTPD 1.2 implements the extended protocol commands MDTM (Modification
-Time) and size, and extends the REST (Restart) command to STREAM mode
-transfers. These extensions are for resuming interrupted file transfers and
-represent common existing practice, which is being codified in the IETF
-Draft "Extensions to FTP."</p>
+<p>ProFTPD 1.3.<i>x</i> implements the extended protocol commands MDTM
+(Modification Time) and size, and extends the REST (Restart) command to STREAM
+mode transfers. These extensions are for resuming interrupted file transfers and
+represent common existing practice, now codified in RFC-3659 "Extensions to FTP."</p>
 
-<p>Future plans for ProFTPD include the gradual implementation of the recent
-standards track RFCs developed by the IETF CAT and FTPEXT Working Groups. It
-is likely that attention will first focus on RFC-2228 "FTP Security
-Extensions", and the MLST and MLSD commands from the IETF Draft "Extensions
-to FTP." RFC-2640 "Internationalization of the File Transfer Protocol" also
-may receive early attention.</p>
-
-<p>The <a href="http://www.ietf.org/html.charters/cat-charter.html">IETF
-Common Authentication Technology (CAT) Working Group </a> has produced
-RFC-2228 and RFC-2773. The CAT WG has produced numerous other RFCs about
-various authentication and authorization topics, including Kerberos-5, SASL
-and GSS-API.</p>
-
-<p>The <a href="http://www.ietf.org/html.charters/ftpext-charter.html">
-IETF Extensions to FTP (FTPEXT) Working Group</a> has produced RFC-2389,
-RFC-2428, RFC-2577, RFC-2640, and the "Extensions to FTP" Internet Draft,
-draft-ietf-ftpext-mlst-12.txt.</p>
-
+<p>In addition, ProFTPD 1.3.<i>x</i> implements other commands from RFC-3659,
+and supports RFC-2428 "FTP Extensions for IPv6 and NATs".  RFC-2650
+"Internationaliztion of FTP" is optionally supported via the
+<code>mod_lang</code> module.  An implementation of RFC-4217 "Securing FTP
+with TLS" is available in the <code>mod_tls</code> module.
+ 
 <hr />
 <a name="rfcsummaries"></a>
 <h1>RFC Summaries</h1>
