@@ -10,8 +10,8 @@
 <pre>
 018e0eb1757d9cea2a0e17f2c9b1ca2d <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.3.2e.tar.bz2">proftpd-1.3.2e.tar.bz2</a>
 4ecb82cb1050c0e897d5343f6d2cc1ed <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.3.2e.tar.gz">proftpd-1.3.2e.tar.gz</a>
-3951244f1940f0a40e8af142a9cf67fe <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.3.3.tar.bz2">proftpd-1.3.3.tar.bz2</a>
-97ad29f31f4fe633a9f8d021bab2df20 <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.3.3.tar.gz">proftpd-1.3.3.tar.gz</a>
+55ae8b32c9f5c00340188b7094c36ffc <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.3.3a.tar.bz2">proftpd-1.3.3a.tar.bz2</a>
+841205173526af20c120208d4ae9446d <a href="ftp://ftp.proftpd.org/distrib/sources/proftpd-1.3.3a.tar.gz">proftpd-1.3.3a.tar.gz</a>
 </pre>
 
 <h2>PGP Signatures</h2>
@@ -39,24 +39,24 @@ iEYEABECAAYFAkuFYuAACgkQt46JP6URl2pTVQCeJ7HM7ltLwJwb4TQ3AwT9j36n
 </pre>
 
 <pre>
-<strong>proftpd-1.3.3.tar.bz2.asc</strong>
+<strong>proftpd-1.3.3a.tar.bz2.asc</strong>
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.9 (GNU/Linux)
 
-iEYEABECAAYFAkuFajoACgkQt46JP6URl2ofMgCgwRGr6uIeypVlmuem8/Agxc/Q
-L9QAn0fNQ6qzt3Th1MLHI6CEobkUvFCA
-=kRcc
+iEYEABECAAYFAkwssfUACgkQt46JP6URl2qazwCfRlEHMbLln01o057zvMCSQ4jA
+/LgAoND72xcNJKUzlhoHGJqIce89/LTw
+=QuDn
 -----END PGP SIGNATURE-----
 </pre>
 
 <pre>
-<strong>proftpd-1.3.3.tar.gz.asc</strong>
+<strong>proftpd-1.3.3a.tar.gz.asc</strong>
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.9 (GNU/Linux)
 
-iEYEABECAAYFAkuFakAACgkQt46JP6URl2pgqwCfRBdul/Rt6REHJ6fqVBBhinmm
-mwQAn1LtacIL9TEj+fRc1zICa9jD1/+7
-=PNjF
+iEYEABECAAYFAkwssgAACgkQt46JP6URl2rehwCfe48fN8ny5D4xT0O+3y0Ibo0C
+gqYAoP1AzX9MPCTCPLxuYn0N5VSv0+7U
+=ax4f
 -----END PGP SIGNATURE-----
 </pre>
 
