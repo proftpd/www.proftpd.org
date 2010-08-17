@@ -40,7 +40,6 @@
 	<a href="http://www.rs.proftpd.org/">rs</a>
 	<a href="http://www.se.proftpd.org/">se</a>
 	<a href="http://www.sg.proftpd.org/">sg</a>
-	<a href="http://www.si.proftpd.org/">si</a>
 	<a href="http://www.tw.proftpd.org/">tw</a>
 	<a href="http://www.uk.proftpd.org/">uk</a>
 	<a href="http://www.us.proftpd.org/">us</a>
@@ -223,17 +222,6 @@
 				<br />
 
 					Maintained by: Sinisa Burina<br />
-			</p>
-	<p>
-		<a href="http://www2.si.proftpd.org">http://www2.si.proftpd.org/</a>
-        <br />
-		<a href="http://mirrors.paknet.org/proftpd/">http://mirrors.paknet.org/proftpd/</a>
-		<br />
-
-		Location: Slovenia					(Slovenia)
-				<br />
-
-					Maintained by: Miha Novak<br />
 			</p>
 	<p>
 		<a href="http://www1.pl.proftpd.org">http://www1.pl.proftpd.org/</a>
