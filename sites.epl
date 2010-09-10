@@ -140,6 +140,11 @@ for allowing themselves to be listed.</p>
       services like webbhosting, domain registration, and co-location with
       redundant connectivity.
   </li>
+
+  <!-- Contact: "acrux @ CRUX PPC" <acrux@clinker.cruxppc.org> -->
+  <li><a href="http://cruxppc.org/">CRUX PPC</a><br />
+      GNU/Linux on Power Architecture.
+  </li>
 </ul>
 
 #include "footer.epl"
