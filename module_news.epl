@@ -5,6 +5,17 @@
 
 <h1><: print "$html_title" :></h1>
 
+<h2>Geolocation module</h2>
+<i>Maintainer: TJ Saunders</i>
+<br /><a href="http://www.castaglia.org/proftpd/modules/mod_geoip.html">http://www.castaglia.org/proftpd/modules/mod_geoip.html</a>
+
+<p>The <code>mod_geoip</code> module allows sites to quickly look up
+geolocation information such as country, continent, region, timezone,
+<i>etc</i> based on the connecting client's IP address.  This information can
+be logged for tracking purposes, and used to configure access controls in
+order to reduce/prevent connections from locations unauthorized by site policy.
+
+
 <h2>Versioning module</h2>
 <i>Maintainer: TJ Saunders</i>
 <br /><a href="http://www.castaglia.org/proftpd/modules/mod_ifversion.html">http://www.castaglia.org/proftpd/modules/mod_ifversion.html</a>
