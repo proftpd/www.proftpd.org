@@ -3,6 +3,18 @@
 
 #include "header.epl"
 
+<h1>ftp.proftpd.org compromised</h1>
+[<i>01/Dec/2010</i>]
+The ProFTPD Project team is sorry to announce that the Project's main FTP
+server, as well as all of the mirror servers, have carried compromised
+versions of the ProFTPD 1.3.3c source code, from the November 28 2010 to
+December 2 2010.  All users who run versions of ProFTPD which have been
+downloaded and compiled in this time window are strongly advised to check their
+systems for security compromises and install unmodified versions of ProFTPD.
+
+To verify the integrity of your source files, use the PGP signatures which can
+be found <a href="md5_pgp.html">here</a> as well as on the FTP servers.
+
 <h1>1.3.3c released</h1>
 [<i>29/Oct/2010</i>]
 <p>The ProFTPD Project team has released 1.3.3c to the community.
