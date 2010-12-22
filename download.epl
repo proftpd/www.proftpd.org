@@ -435,6 +435,4 @@
 			Maintained by: Ireneusz Weglewski<br />
 		</p>
     
-
-    #include "footer.epl"
-
+#include "footer.epl"

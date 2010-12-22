@@ -328,6 +328,4 @@
 			Maintained by: Daniel Austin<br />
 		</p>
     
-
-    #include "footer.epl"
-
+#include "footer.epl"
