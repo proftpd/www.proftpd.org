@@ -175,7 +175,7 @@
 		<p>
 			<a href="ftp://ftp1.us.proftpd.org">ftp://ftp1.us.proftpd.org/</a>
             <br />
-			<a href="ftp://ftp.ibiblio.org/pub/mirrors/proftpd/">ftp://ftp.ibiblio.org/pub/mirrors/proftpd/</a>
+			<a href="ftp://mirrors.ibiblio.org/proftpd/">ftp://mirrors.ibiblio.org/proftpd/</a>
 			<br />
 			Location: (United States) (Chapel Hill, NC)
 			<br />
