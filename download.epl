@@ -318,7 +318,7 @@
 		<p>
 			<a href="ftp://ftp1.za.proftpd.org">ftp://ftp1.za.proftpd.org/</a>
             <br />
-			<a href="ftp://ftp.is.co.za/mirror/ftp.proftpd.org">ftp://ftp.is.co.za/mirror/ftp.proftpd.org</a>
+			<a href="ftp://ftp.is.co.za/mirror/ftp.proftpd.org/">ftp://ftp.is.co.za/mirror/ftp.proftpd.org/</a>
 			<br />
 			Location: (South africa) (South Africa)
 			<br />
