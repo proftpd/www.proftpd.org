@@ -44,6 +44,9 @@
     	<a href="ftp://ftp.fr.proftpd.org/">fr</a>
    	
 
+    	<a href="ftp://ftp.hk.proftpd.org/">hk</a>
+   	
+
     	<a href="ftp://ftp.ie.proftpd.org/">ie</a>
    	
 
@@ -136,17 +139,6 @@
 			Location: (Germany) 
 			<br />
 			Maintained by: Adrian Reber<br />
-		</p>
-    
-
-		<p>
-			<a href="ftp://ftp5.de.proftpd.org">ftp://ftp5.de.proftpd.org/</a>
-            <br />
-			<a href="ftp://ftp.franken.de/pub/Linux/proftpd/">ftp://ftp.franken.de/pub/Linux/proftpd/</a>
-			<br />
-			Location: (Germany) 
-			<br />
-			Maintained by: Harald Welte<br />
 		</p>
     
 
@@ -404,17 +396,6 @@
     
 
 		<p>
-			<a href="ftp://ftp11.nl.proftpd.org">ftp://ftp11.nl.proftpd.org/</a>
-            <br />
-			<a href="ftp://mirror.hostfuss.com/proftpd/">ftp://mirror.hostfuss.com/proftpd/</a>
-			<br />
-			Location: (Netherlands) (Amsterdam)
-			<br />
-			Maintained by: Frederik Timmerman<br />
-		</p>
-    
-
-		<p>
 			<a href="ftp://ftp1.uk.proftpd.org">ftp://ftp1.uk.proftpd.org/</a>
             <br />
 			<a href="ftp://proftpd.maytech.net/">ftp://proftpd.maytech.net/</a>
@@ -433,6 +414,17 @@
 			Location: (Poland) (Poland, Warsaw)
 			<br />
 			Maintained by: Ireneusz Weglewski<br />
+		</p>
+    
+
+		<p>
+			<a href="ftp://ftp1.hk.proftpd.org">ftp://ftp1.hk.proftpd.org/</a>
+            <br />
+			<a href="ftp://mirror.communilink.net/proftpd">ftp://mirror.communilink.net/proftpd</a>
+			<br />
+			Location: (Hong kong) (Hong Kong)
+			<br />
+			Maintained by: Jay<br />
 		</p>
     
 #include "footer.epl"
