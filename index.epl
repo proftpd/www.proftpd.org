@@ -3,6 +3,24 @@
 
 #include "header.epl"
 
+<h1>Update to the ProFTPD Compromise Report</h1>
+[<i>16/Feb/2011</i>]
+<p>By analyzing log files recovered from the compromised server, we can confirm
+that the primary FTP site was compromised earlier than originally announced.</p>
+
+<p>In addition to the previously reported period from 2010-Nov-28 to 2010-Dec-02,
+ftp.proftpd.org and the ProFTPD mirror network distributed files with malicious
+content on 2010-Nov-16 between about 08:00 UTC and 13:00 UTC.</p>
+
+<p>In the weeks since, we've made several changes to restore and improve the
+security of our software distribution sites. We've rebuilt the compromised
+server from scratch, and implemented automated daily signature checks for
+current releases on ftp.proftpd.org and all official mirrors.</p>
+
+<p>We'd like to thank everyone who offered and provided assistance, especially
+those who reported suspicious files downloaded during the earlier time
+window.</p>
+
 <h1>1.3.3d, 1.3.4rc1 released</h1>
 [<i>17/Dec/2010</i>]
 <p>The ProFTPD Project team is happy to release 1.3.3d to the community.
