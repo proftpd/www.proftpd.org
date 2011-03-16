@@ -279,6 +279,10 @@ password).  If all of the configured authentication methods fail,
 <code>mod_sql</code> will fail to authenticate the user.
 
 <p>
+Note that the <a href="mod_sql_passwd.html"><code>mod_sql_passwd</code></a>
+module also provides other <code>SQLAuthTypes</code> values.
+
+<p>
 <hr>
 <h2><a name="SQLBackend">SQLBackend</a></h2>
 <strong>Syntax:</strong> SQLBackend <em>backend</em><br>
@@ -590,21 +594,28 @@ need to specify <b>all</b> of them.
 As of <code>1.3.3rc1</code>, the <code>SQLGroupInfo</code> directive accepts
 an alternate syntax:
 <pre>
-  SQLGroupInfo custom:/<i>group-by-name</i>/<i>group-by-id</i>/<i>group-by-member</i>
+  SQLGroupInfo custom:/<i>get-group-by-name</i>/<i>get-group-by-id</i>/<i>get-group-by-member</i>
 </pre>
-where <i>group-by-name</i> refers to a configured SELECT
+where <i>get-group-by-name</i> refers to a configured SELECT
 <code>SQLNamedQuery</code>.  This named query <b>must</b> return one row, and
 return the following columns, in this order: <code>groupname, gid,
 members</code>.  The configured query may make use of the variables mentioned
 in the <code>SQLLog</code> description.  The <code>%{0}</code> variable will
 be populated with the group name for which info is being retrieved.  The
-<i>group-by-id</i> here refers to a <code>SQLNamedQuery</code> which is
-<i>just</i> like the lookup given a group name, only the <i>group-by-id</i>
+<i>get-group-by-id</i> here refers to a <code>SQLNamedQuery</code> which is
+<i>just</i> like the lookup given a group name, only the <i>get-group-by-id</i>
 query needs to return group information given a GID.  For the
-<i>group-by-id</i> query, the <code>%{0}</code> variable is populated with
-the GID in question.  Last, the <i>group-by-member</i> query returns group
+<i>get-group-by-id</i> query, the <code>%{0}</code> variable is populated with
+the GID in question.  Last, the <i>get-group-by-member</i> query returns group
 information given a user member; again, the <code>%{0}</code> will contain
 the member/user name by which to look up the group information.
+
+<p>
+<b><i>If</i></b> your custom <em>get-group-by-name</em> query references a table
+other than the default groups table, then you <b>must</b> also supply a
+custom <em>get-group-by-id</em> query as well.  Otherwise, <code>mod_sql</code>
+will fail with a "Table not found" error, and disconnect the client, whenever
+the client asks for a directory listing.
 
 <p>
 <b>Note</b>, however, that if you use the <em>groupset</em> or
@@ -1116,7 +1127,10 @@ The second parameter, <em>numeric</em>, specifies the numeric value of the
 message returned to the FTP client.  <b><i>Do not</i></b> choose a number
 blindly: message numbers may be parsed by clients.  In most cases you will
 want to use <code>214</code>, the &quot;Help message&quot; numeric.  It
-specifies that the information is only meant to be human readable.
+specifies that the information is only meant to be human readable.  Note
+that FTP clients can be <i>very</i> picky about these response codes; choosing
+the wrong code can cause clients not to work.  Section 5.4 of <a href="http://www.faqs.org/rfcs/rfc959.html">RFC959</a> defines the acceptable response codes
+for each FTP command.
 
 <p>
 The third parameter, <em>query-string</em>, is exactly equivalent to the
@@ -1136,7 +1150,7 @@ NULL first value, will be replaced with the string &quot;{null}&quot;.
 For example:
 <pre>
   SQLNamedQuery count SELECT "count from users where userid='%u'"
-  SQLShowInfo PASS "230" "You've logged on %{count} times, %u"
+  SQLShowInfo PASS 230 "You've logged on %{count} times, %u"
 </pre>
 As long as the information is in the database, these two directives specify
 that the user will be greeted with their login count each time they
@@ -1240,6 +1254,11 @@ a user name.  For example:
 
   SQLUserInfo custom:/get-user-by-name/get-user-by-id
 </pre>
+<b><i>If</i></b> your custom <em>get-user-by-name</em> query references a table
+other than the default users table, then you <b>must</b> also supply a
+custom <em>get-user-by-id</em> query as well.  Otherwise, <code>mod_sql</code>
+will fail with a "Table not found" error, and disconnect the client, whenever
+the client asks for a directory listing.
 
 <p>
 <b>Note</b>, however, that if you use the <em>userset</em> or
@@ -1348,7 +1367,7 @@ Last Updated: <i>$Date$</i><br>
 <br><hr>
 
 <font size=2><b><i>
-&copy; Copyright 2000-2008 The ProFTPD Project<br>
+&copy; Copyright 2000-2011 The ProFTPD Project<br>
  All Rights Reserved<br>
 </i></b></font>
 
