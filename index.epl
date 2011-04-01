@@ -3,6 +3,21 @@
 
 #include "header.epl"
 
+<h1>1.3.3e, 1.3.4rc2 released</h1>
+[<i>01/Apr/2011</i>]
+<p>The ProFTPD Project team is happy to release 1.3.3e to the community.
+This is a maintenance release, containing backported fixes for bugs found
+in the 1.3.3 release.  The <a href="docs/RELEASE_NOTES-1.3.3e">RELEASE_NOTES</a>
+and <a href="docs/NEWS-1.3.3e">NEWS</a> files contain the full details.</p>
+
+<p>We are also pleased to release 1.3.4rc2 to the community.  This is the
+second release candidate of the 1.3.4 development cycle, and contains
+numerous new features, including the <code>mod_memcache</code> and
+<code>mod_tls_memcache</code> modules, Memcache support, PCRE support, and
+many <code>mod_sftp</code> bugfixes.  The
+<a href="docs/RELEASE_NOTES-1.3.4rc2">RELEASE_NOTES</a>
+and <a href="docs/NEWS-1.3.4rc2">NEWS</a> files contain the full details.</p>
+
 <h1>Update to the ProFTPD Compromise Report</h1>
 [<i>16/Feb/2011</i>]
 <p>By analyzing log files recovered from the compromised server, we can confirm
