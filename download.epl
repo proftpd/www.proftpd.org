@@ -165,17 +165,6 @@
     
 
 		<p>
-			<a href="ftp://ftp1.us.proftpd.org">ftp://ftp1.us.proftpd.org/</a>
-            <br />
-			<a href="ftp://mirrors.ibiblio.org/proftpd/">ftp://mirrors.ibiblio.org/proftpd/</a>
-			<br />
-			Location: (United States) (Chapel Hill, NC)
-			<br />
-			Maintained by: ibiblio<br />
-		</p>
-    
-
-		<p>
 			<a href="ftp://ftp0.ie.proftpd.org">ftp://ftp0.ie.proftpd.org/</a>
             <br />
 			<a href="ftp://ftp.esat.net/mirrors/ftp.proftpd.org/">ftp://ftp.esat.net/mirrors/ftp.proftpd.org/</a>
