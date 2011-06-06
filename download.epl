@@ -29,9 +29,6 @@
     	<a href="ftp://ftp.bg.proftpd.org/">bg</a>
    	
 
-    	<a href="ftp://ftp.ca.proftpd.org/">ca</a>
-   	
-
     	<a href="ftp://ftp.ch.proftpd.org/">ch</a>
    	
 
@@ -110,17 +107,6 @@
     
 
 		<p>
-			<a href="ftp://ftp1.ca.proftpd.org">ftp://ftp1.ca.proftpd.org/</a>
-            <br />
-			<a href="ftp://ftp.samurai.com/pub/proftpd/">ftp://ftp.samurai.com/pub/proftpd/</a>
-			<br />
-			Location: (Canada) 
-			<br />
-			Maintained by: Bryan Fullerton<br />
-		</p>
-    
-
-		<p>
 			<a href="ftp://ftp1.ch.proftpd.org">ftp://ftp1.ch.proftpd.org/</a>
             <br />
 			<a href="ftp://ftp.solnet.ch/mirror/proftpd.org/">ftp://ftp.solnet.ch/mirror/proftpd.org/</a>
@@ -172,17 +158,6 @@
 			Location: (Ireland) (Dublin, Ireland)
 			<br />
 			Maintained by: Dave Burke<br />
-		</p>
-    
-
-		<p>
-			<a href="ftp://ftp2.at.proftpd.org">ftp://ftp2.at.proftpd.org/</a>
-            <br />
-			<a href="ftp://gd.tuwien.ac.at/infosys/servers/ftp/proftpd/">ftp://gd.tuwien.ac.at/infosys/servers/ftp/proftpd/</a>
-			<br />
-			Location: (Austria) (Vienna Univ. of Technology, Austria)
-			<br />
-			Maintained by: Antonin<br />
 		</p>
     
 
