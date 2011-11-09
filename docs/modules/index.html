@@ -3,20 +3,19 @@
 
 <html>
 <head>
-<title>ProFTPD Standard Module Documentation</title>
+<title>ProFTPD Core Module Documentation</title>
 </head>
 
 <body bgcolor=white>
 
 <hr>
-<center><h2><b>ProFTPD Standard Module Documentation</b></h2></center>
+<center><h2><b>ProFTPD Core Module Documentation</b></h2></center>
 <hr>
 
 <p>
 The following is a collection of HTML documentation for modules and
 tools in the <code>modules/</code> directory of the ProFTPD source
-distribution.  This documentation itself appears in the ProFTPD source
-distribution, under the <code>doc/modules/</code> directory.
+distribution.
 
 <p>
 <ul>
@@ -26,14 +25,13 @@ distribution, under the <code>doc/modules/</code> directory.
 
   <p>
   <dt>The <a href="mod_auth_file.html"><code>mod_auth_file</code></a> module
-  <dd>For defining "virtual" users via flat files. Virtual users are covered
-      in more detail in the
-      <a href="../howto/VirtualUsers.html">virtual users</a> mini-HOWTO
+  <dd>Handles authentication using <code>AuthUserFile</code> and
+      <code>AuthGroupFile</code>
   </dd>
 
   <p>
   <dt>The <a href="mod_auth_pam.html"><code>mod_auth_pam</code></a> module
-  <dd>For using the PAM API when authenticating users
+  <dd>Provides additional authentication checks via PAM
   </dd>
 
   <p>
@@ -44,45 +42,86 @@ distribution, under the <code>doc/modules/</code> directory.
 
   <p>
   <dt>The <a href="mod_cap.html"><code>mod_cap</code></a> module
-  <dd>For restricting process privileges using Linux "capabilities"
+  <dd>Adds additional privilege restrictions based on Linux capabilities and
+      the <code>libcap</code> library
+  </dd>
+
+  <p>
+  <dt>The <a href="mod_core.html"><code>mod_core</code></a> module
+  <dd>Handles the core configuration directives and FTP commands
   </dd>
 
   <p>
   <dt>The <a href="mod_ctrls.html"><code>mod_ctrls</code></a> module
-  <dd>Implements the Controls feature. Controls are covered in more detail
-      in the <a href="../howto/Controls.html">Controls</a> mini-HOWTO
+  <dd>Implements the configuration and handling of control actions;
+      see the <a href="../howto/Controls.html">Controls</a> documentation
+      for more details
   </dd>
 
   <p>
   <dt>The <a href="mod_delay.html"><code>mod_delay</code></a> module
-  <dd>Provides protection against information leaks due to timing-based
-      attacks
+  <dd>Helps mitigate timing-based information leaks by automatically
+      adding tuned delays to the login process
   </dd>
 
   <p>
   <dt>The <a href="mod_dso.html"><code>mod_dso</code></a> module
-  <dd>Implements support for the DSO feature.  More information on the
-      DSO feature is availabe in the <a href="../howto/DSO.html">DSO</a>
-      mini-HOWTO
+  <dd>Handles the configuration of <a href="../howto/DSO.html">DSO</a> modules
   </dd>
 
   <p>
   <dt>The <a href="mod_facl.html"><code>mod_facl</code></a> module
-  <dd>Responsible for handling POSIX ACLs, if supported by the system
+  <dd>Implements POSIX ACL support
   </dd>
 
   <p>
   <dt>The <a href="mod_facts.html"><code>mod_facts</code></a> module
-  <dd>Implements the <code>MLSD</code> and <code>MLST</code> commands,
-      as well as <code>MFF</code> and <code>MFMT</code>.
+  <dd>Handles the <code>MFF</code>, <code>MFMT</code>, <code>MLSD</code>
+      and <code>MLST</code> FTP commands
+  </dd>
+
+  <p>
+  <dt>The <a href="mod_ident.html"><code>mod_ident</code></a> module
+  <dd>Handles the <code>IdentLookups</code> configuration directive and
+      <code>IDENTD</code> protocol lookups
   </dd>
 
   <p>
   <dt>The <a href="mod_lang.html"><code>mod_lang</code></a> module
-  <dd>Provides support for the <code>LANG</code> command, and i18n support
+  <dd>Provides UTF8 and localised response string support, and handles
+      the <code>LANG</code> FTP command
+  </dd>
+
+  <p>
+  <dt>The <a href="mod_log.html"><code>mod_log</code></a> module
+  <dd>Handles logging via <code>syslog</code> and directly to log files
+  </dd>
+
+  <p>
+  <dt>The <a href="mod_ls.html"><code>mod_ls</code></a> module
+  <dd>Handles directory listings via the <code>LIST</code>, <code>NLST</code>,
+      and <code>STAT</code> FTP commands
+  </dd>
+
+  <p>
+  <dt>The <a href="mod_memcache.html"><code>mod_memcache</code></a> module
+  <dd>Handles memcache configuration
+  </dd>
+
+  <p>
+  <dt>The <a href="mod_site.html"><code>mod_site</code></a> module
+  <dd>Handles basic FTP <code>SITE</code> commands: <code>SITE CHGRP</code>,
+      <code>SITE CHMOD</code>, and <code>SITE HELP</code>
+  </dd>
+
+  <p>
+  <dt>The <a href="mod_xfer.html"><code>mod_xfer</code></a> module
+  <dd>Handles FTP uploads and downloads via the <code>APPE</code>,
+      <code>RETR</code>, <code>STOR</code>, and <code>STOU</code> FTP commands
   </dd>
 </ul>
 
+<p>
 If your question or issue is not covered by any of these pages, please
 send a request to the ProFTPD documentation list.  Directions for subscribing
 to the docs list, as well as the other ProFTPD mailing lists, are at:
