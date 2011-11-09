@@ -113,6 +113,14 @@ can also be obtained by running:
                           to be included, as an attachment, in the generated
                           email.
 
+    --auth $path          Configures the path to a file containing SMTP
+                          authentication information.
+
+                          The configured file should look like this:
+
+                              user = $user
+                              password = $password
+
     --fifo $path          Indicates the path to the FIFO to which proftpd is
                           writing its TransferLog.  That is, this is the path
                           that you used for the TransferLog directive in your
@@ -194,7 +202,7 @@ Last Updated: <i>$Date$</i><br>
 <br><hr>
 
 <font size=2><b><i>
-&copy; Copyright 2008 TJ Saunders<br>
+&copy; Copyright 2008-2010 TJ Saunders<br>
  All Rights Reserved<br>
 </i></b></font>
 

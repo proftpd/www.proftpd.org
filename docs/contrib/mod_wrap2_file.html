@@ -69,13 +69,10 @@ in the <code>host_access(5)</code> man page.
 <p>
 Examples:
 <pre>
-  # Using file-based access tables
-  WrapTables file:/etc/hosts.allow file:/etc/hosts.deny
-</pre>
-
-Example:
-<pre>
   # Server-wide access files
+  WrapTables file:/etc/hosts.allow file:/etc/hosts.deny
+
+  # FTP server-specific access files
   WrapTables file:/etc/ftpd.allow file:/etc/ftpd.deny
 
   # Per-user access files, which are to be found in the user's home directory
@@ -140,7 +137,7 @@ Last Updated: <i>$Date$</i><br>
 <br><hr>
 
 <font size=2><b><i>
-&copy; Copyright 2000-2006 TJ Saunders<br>
+&copy; Copyright 2000-2008 TJ Saunders<br>
  All Rights Reserved<br>
 </i></b></font>
 
