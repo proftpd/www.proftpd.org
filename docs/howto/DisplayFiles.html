@@ -36,13 +36,6 @@ whose contents should be displayed to connected clients at various times:
 
   <p>
   <li>
-    <dt><code>DisplayGoAway</code>
-    <dd>Displayed to a client when it cannot connect because the maximum
-        number of connections from its <code>Class</code> has been reached</dd>
-  </li>
-
-  <p>
-  <li>
     <dt><code>DisplayFileTransfer</code>
     <dd>Displayed to the client whenever a file is successfully transfer,
         either uploaded or downloaded</dd>
@@ -232,6 +225,20 @@ as well; please consult their documentation for more information.
     <td>Uses <i>format</i> (as per the <code>strftime(3)</code> function) to format a timestamp</td>
   </tr>
 </table>
+
+<p><a name="FAQ"></a>
+<b>Frequently Asked Questions</b><br>
+
+<p><a name="DisplayPathsWithSpaces">
+<font color=red>Question</font>: I configured path which contains spaces for
+<code>DisplayLogin</code>, and it doesn't work.  Why not?<br>
+<font color=blue>Answer</font>: If using paths/files which contains spaces,
+make sure that you enclose the path in quotation marks, <i>e.g.</i>:
+<pre>
+  DisplayLogin "/path/to/display login.txt"
+</pre>
+Otherwise, the configuration file parser will treat the space-separated
+portions of the path as separate directive parameters.
 
 <p>
 <hr>
