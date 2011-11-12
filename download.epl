@@ -32,9 +32,6 @@
     	<a href="ftp://ftp.ch.proftpd.org/">ch</a>
    	
 
-    	<a href="ftp://ftp.cz.proftpd.org/">cz</a>
-   	
-
     	<a href="ftp://ftp.de.proftpd.org/">de</a>
    	
 
@@ -42,9 +39,6 @@
    	
 
     	<a href="ftp://ftp.hk.proftpd.org/">hk</a>
-   	
-
-    	<a href="ftp://ftp.ie.proftpd.org/">ie</a>
    	
 
     	<a href="ftp://ftp.it.proftpd.org/">it</a>
@@ -56,13 +50,7 @@
     	<a href="ftp://ftp.nl.proftpd.org/">nl</a>
    	
 
-    	<a href="ftp://ftp.no.proftpd.org/">no</a>
-   	
-
     	<a href="ftp://ftp.pl.proftpd.org/">pl</a>
-   	
-
-    	<a href="ftp://ftp.se.proftpd.org/">se</a>
    	
 
     	<a href="ftp://ftp.tr.proftpd.org/">tr</a>
@@ -136,28 +124,6 @@
 			Location: (Netherlands) 
 			<br />
 			
-		</p>
-    
-
-		<p>
-			<a href="ftp://ftp5.no.proftpd.org">ftp://ftp5.no.proftpd.org/</a>
-            <br />
-			<a href="ftp://ftp.tomt.net/pub/software/proftpd/">ftp://ftp.tomt.net/pub/software/proftpd/</a>
-			<br />
-			Location: (Norway) 
-			<br />
-			Maintained by: Andre Tomt<br />
-		</p>
-    
-
-		<p>
-			<a href="ftp://ftp0.ie.proftpd.org">ftp://ftp0.ie.proftpd.org/</a>
-            <br />
-			<a href="ftp://ftp.esat.net/mirrors/ftp.proftpd.org/">ftp://ftp.esat.net/mirrors/ftp.proftpd.org/</a>
-			<br />
-			Location: (Ireland) (Dublin, Ireland)
-			<br />
-			Maintained by: Dave Burke<br />
 		</p>
     
 
@@ -283,17 +249,6 @@
     
 
 		<p>
-			<a href="ftp://ftp3.cz.proftpd.org">ftp://ftp3.cz.proftpd.org/</a>
-            <br />
-			<a href="ftp://proftpd.kn.vutbr.cz/pub/proftpd">ftp://proftpd.kn.vutbr.cz/pub/proftpd</a>
-			<br />
-			Location: (Czech republic) (ftp://mirror.kn.vutbr.cz/pub/ftp.proftpd.org)
-			<br />
-			Maintained by: Zdenek Bill<br />
-		</p>
-    
-
-		<p>
 			<a href="ftp://ftp7.nl.proftpd.org">ftp://ftp7.nl.proftpd.org/</a>
             <br />
 			<a href="ftp://proftpd.mirrors.webazilla.nl/">ftp://proftpd.mirrors.webazilla.nl/</a>
@@ -301,17 +256,6 @@
 			Location: (Netherlands) (Amsterdam, Netherlands)
 			<br />
 			Maintained by: Network Operations Center<br />
-		</p>
-    
-
-		<p>
-			<a href="ftp://ftp9.pl.proftpd.org">ftp://ftp9.pl.proftpd.org/</a>
-            <br />
-			<a href="ftp://ftp.piotrkosoft.net/pub/mirrors/ftp.proftpd.org/">ftp://ftp.piotrkosoft.net/pub/mirrors/ftp.proftpd.org/</a>
-			<br />
-			Location: (Poland) (Poland)
-			<br />
-			Maintained by: Piotr Maluty<br />
 		</p>
     
 
@@ -345,17 +289,6 @@
 			Location: (France) (Paris, France)
 			<br />
 			Maintained by: Arnaud Gomes<br />
-		</p>
-    
-
-		<p>
-			<a href="ftp://ftp1.se.proftpd.org">ftp://ftp1.se.proftpd.org/</a>
-            <br />
-			<a href="ftp://mirror2.dataphone.se/pub/ProFTPD">ftp://mirror2.dataphone.se/pub/ProFTPD</a>
-			<br />
-			Location: (Sweden) (Sweden)
-			<br />
-			Maintained by: Mirror Staff<br />
 		</p>
     
 
