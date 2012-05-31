@@ -38,7 +38,7 @@ repository is fairly straightforward:</p>
 <ul>
     <li>Type the command <code>cvs -d
         :pserver:anonymous@proftp.cvs.sourceforge.net:2401/cvsroot/proftp login</code>
-        (use <code>:pserver:anonymous@pdd.cvs.sourceforge.net:2401/cvsroot/pdd</code> for docs).
+        (use <code>:pserver:anonymous@pdd.cvs.sourceforge.net:/cvsroot/pdd</code> for docs).
     </li>
     <li>Hit Enter when prompted for a password (there is no password
         for anonymous access).
@@ -46,6 +46,10 @@ repository is fairly straightforward:</p>
     <li>Next, type in <code>cvs -d
         :pserver:anonymous@proftp.cvs.sourceforge.net:2401/cvsroot/proftp -z3 co
         proftpd</code>
+    </li>
+    <li>Or, for docs, type in <code>cvs -d
+        :pserver:anonymous@pdd.cvs.sourceforge.net:/cvsroot/pdd -z3 co
+        Userguide</code>
     </li>
 </ul>
 
