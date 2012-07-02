@@ -13,9 +13,9 @@ thoroughly tested. For production environments, it is recommended that the
 distribution tarballs or packages are used unless you really know what
 you're doing.</p>
 
-<p>There are no mirror sites for the CVS server. Nightly tarballs of the
-latest source from CVS are available from <a href="download.html">the FTP
-sites</a> in the <code>devel/source/</code> directory.</p>
+<p>Nightly tarballs of the latest source from CVS are available from <a
+href="download.html">the FTP sites</a> in the <code>devel/source</code>
+directory.</p>
 
 
 <h2>Quick Instructions</h2>

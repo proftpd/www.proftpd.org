@@ -30,12 +30,10 @@
 
   <h1>Mirrors and Downloads</h1>
   <ul>
-    <li><a href="/download.html">Download servers</a></li>
-    <li><a href="/wwwmirror.html">Web site mirrors</a></li>
     <li><a href="/pgp.html">PGP public keys</a></li>
     <li><a href="/md5_pgp.html">MD5 &amp; PGP signatures</a></li>
+    <li><a href="http://proftpd.github.com/">Alternate Download Site</a></li>
     <li><a href="/cvs.html">CVS Repository</a></li>
-    <li><a href="/howtomirror.html">How to become a mirror</a></li>
   </ul>
 
   <h1>Newsroom</h1>

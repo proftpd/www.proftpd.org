@@ -62,12 +62,4 @@ hitting -devel).</p>
 <p>Subscribe via <a href="mailto:proftpd-committers-request@proftpd.org?subject=subscribe">e-mail</a> or
 visit the <a href="https://lists.sourceforge.net/lists/listinfo/proftp-committers">web interface</a>.</p>
 
-
-<h2>Mirror Admins</h2>
-<p>This list is intended for administrators mirroring or interested in
-mirroring the ProFTPD FTP and web site.</p>
-
-<p>Subscribe via <a href="mailto:proftpd-mirrors-request@proftpd.org?subject=subscribe">e-mail</a> or
-visit the <a href="https://lists.sourceforge.net/lists/listinfo/proftp-mirrors">web interface</a>.</p>
-
 #include "footer.epl"
