@@ -3,6 +3,13 @@
 
 #include "header.epl"
 
+<h1>1.3.4b released</h1>
+[<i>31/Jul/2012</i>]
+<p>The ProFTPD Project team is pleased to release 1.3.4b to the community.
+This is a maintenance release, containing backported fixes for issues found
+in the 1.3.4 release.  The <a href="docs/RELEASE_NOTES-1.3.4b">RELEASE_NOTES</a>
+and <a href="docs/NEWS-1.3.4b">NEWS</a> files contain the full details.
+
 <h1>1.3.4a released</h1>
 [<i>11/Nov/2011</i>]
 <p>The ProFTPD Project team is ready to release 1.3.4a to the community.
