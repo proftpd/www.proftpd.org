@@ -272,6 +272,14 @@ loaded:
 Then restart <code>proftpd</code>, and your custom module will be in use.
 
 <p>
+For example, you might use <code>prxs</code> to compile the
+<code>mod_sql_sqlite</code> module like so, from the top level of the
+ProFTPD source directory:
+<pre>
+  # prxs -c -i -d contrib/mod_sql_sqlite.c
+</pre>
+
+<p>
 The following options are also supported:
 <pre>
  -n, --name             Tells prxs the name of the module being compiled.
