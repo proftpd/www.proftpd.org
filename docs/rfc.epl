@@ -32,7 +32,7 @@ with TLS" is available in the <code>mod_tls</code> module.
 <h2>RFC-959 File Transfer Protocol (FTP)</h2>
 <a href="http://www.rfc-editor.org/rfc/rfc959.txt">[http]</a>
 <a href="ftp://ftp.rfc-editor.org/in-notes/rfc959.txt">[ftp]</a>
-<i>Errata:</i> <a href="http://www.rfc-editor.org/errata.html">[http]</a>
+<i>Errata:</i> <a href="http://www.rfc-editor.org/errata_search.php?rfc=959&rec_status=15&presentation=table">[http]</a>
 
 <table cellspacing="0" cellpadding="0" border="0">
   <tr>
