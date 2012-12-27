@@ -1,5 +1,5 @@
-<!-- $Id$ -->
-<!-- $Source$ -->
+<!-- $Id: TLS.html,v 1.34 2012/12/27 19:15:44 castaglia Exp $ -->
+<!-- $Source: /cvsroot/proftp/proftpd/doc/howto/TLS.html,v $ -->
 
 <html>
 <head>
@@ -1091,8 +1091,22 @@ To do this, you would use a combination of
 </pre>
 
 <p>
+<font color=red>Question</font>: I have configured my <code>proftpd</code>
+server for FTPS.  When I use FileZilla to try to connect to it, though, I
+see this error in the FileZilla logs:
+<pre>
+  GnuTLS error -9: A TLS packet with unexpected length was received
+</pre>
+Is there a ProFTPD directive to fix this error?<br>
+<font color=blue>Answer</font>: In most cases, the above client error indicates
+an <i>error unrelated to SSL/TLS</i> on your server.  Check the proftpd
+<a href="Debugging.html">debug</a> logging, the
+<a href="../contrib/mod_sql.html#SQLLogFile"><code>SQLLogFile</code></a> if
+you are using the <code>mod_sql</code> module, <i>etc</i>.
+
+<p>
 <hr>
-Last Updated: <i>$Date$</i><br>
+Last Updated: <i>$Date: 2012/12/27 19:15:44 $</i><br>
 <hr>
 
 </body>
