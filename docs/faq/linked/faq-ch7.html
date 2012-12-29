@@ -1,0 +1,586 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML
+><HEAD
+><TITLE
+>User Authentication</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.7"><LINK
+REL="HOME"
+TITLE="Professional FTP Daemon FAQ"
+HREF="faq.html"><LINK
+REL="PREVIOUS"
+TITLE="Security"
+HREF="faq-ch6.html"></HEAD
+><BODY
+CLASS="CHAPTER"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Professional FTP Daemon FAQ</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="faq-ch6.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+>&nbsp;</TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="AEN699"
+></A
+>Chapter 7. User Authentication</H1
+><DIV
+CLASS="QANDASET"
+><DL
+><DT
+>1. <A
+HREF="faq-ch7.html#AEN704"
+>Why is PAM the default authentication system?</A
+></DT
+><DT
+>2. <A
+HREF="faq-ch7.html#AEN709"
+>Authentication methods supported</A
+></DT
+><DT
+>3. <A
+HREF="faq-ch7.html#AEN727"
+>Problems with non-PAM authentication</A
+></DT
+><DT
+>4. <A
+HREF="faq-ch7.html#AEN733"
+>AuthPAMAuthorative is an unknown directive!</A
+></DT
+><DT
+>5. <A
+HREF="faq-ch7.html#AEN738"
+>Configuring PAM</A
+></DT
+><DT
+>6. <A
+HREF="faq-ch7.html#AEN753"
+>Normal users can't login, only anon.</A
+></DT
+><DT
+>7. <A
+HREF="faq-ch7.html#AEN758"
+>AuthPAMAuthoritative</A
+></DT
+><DT
+>8. <A
+HREF="faq-ch7.html#AEN766"
+>LDAP</A
+></DT
+><DT
+>9. <A
+HREF="faq-ch7.html#AEN771"
+>One time passwords</A
+></DT
+><DT
+>10. <A
+HREF="faq-ch7.html#AEN780"
+>RADIUS</A
+></DT
+><DT
+>11. <A
+HREF="faq-ch7.html#AEN785"
+>Anonymous password checking</A
+></DT
+><DT
+>12. <A
+HREF="faq-ch7.html#AEN790"
+>Why do I see "PAM(name): Authentication failure", but I can login
+     anyway?</A
+></DT
+></DL
+><P
+>This section is being re-written due to major structural changes to the SQL module prior to 1.2.0</P
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN704"
+></A
+><B
+>1. </B
+>Why is PAM the default authentication system?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Security, pure and simple.  PAM is the most secure (or securable)
+of the available authentication systems.  Many of the issues and
+configuration hints for PAM are contained in README.PAM which is
+bundled with the server source and in the various packaged builds.  To 
+use /etc/passwd manual compilation will be required with the configure 
+script being run with the --without-pam flag.  Unless the PAM
+subsystem is properly configured authentication will fail.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN709"
+></A
+><B
+>2. </B
+>Authentication methods supported</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+><LI
+><P
+>PAM</P
+></LI
+><LI
+><P
+>Standard /etc/passwd lookups</P
+></LI
+><LI
+><P
+>NIS</P
+></LI
+><LI
+><P
+>Shadow passwords</P
+></LI
+><LI
+><P
+>Indvidual passwd/group files for each virtual</P
+></LI
+><LI
+><P
+>SQL databases</P
+></LI
+></P
+><P
+>If these don't fit in with your system then writing a custom module
+or using such as the "ld.so.preload" approach to intercept
+getpwbynam() system calls works happily with ProFTPD.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN727"
+></A
+><B
+>3. </B
+>Problems with non-PAM authentication</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Generally these problems will be cured by either disabling PAM
+completely or by ensuring that these directives are set</P
+><PRE
+CLASS="PROGRAMLISTING"
+>PersistentPasswd   off
+AuthPAMAuthoritative off
+          </PRE
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN733"
+></A
+><B
+>4. </B
+>AuthPAMAuthorative is an unknown directive!</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Check the spelling it should be AuthPAMAuthoritative not
+AuthPAMAuthorative or any other variation.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN738"
+></A
+><B
+>5. </B
+>Configuring PAM</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>There is a README.Pam in the top directory of the ProFTPD install
+directory :</P
+><A
+NAME="AEN742"
+></A
+><BLOCKQUOTE
+CLASS="BLOCKQUOTE"
+><H2
+CLASS="BRIDGEHEAD"
+><A
+NAME="AEN743"
+></A
+>Redhat Linux</H2
+><PRE
+CLASS="PROGRAMLISTING"
+>#%PAM-1.0
+auth       required     /lib/security/pam_listfile.so item=user
+sense=deny file=/etc/ftpusers onerr=succeed
+auth       required     /lib/security/pam_pwdb.so shadow nullok
+account    required     /lib/security/pam_pwdb.so
+session    required     /lib/security/pam_pwdb.so
+          </PRE
+><H2
+CLASS="BRIDGEHEAD"
+><A
+NAME="AEN745"
+></A
+>SuSE Linux</H2
+><P
+>SuSE appears to uses pam_unix rather than pam_pwdb which is the
+Redhat approach.  All references to pam_pwdb should be replaced with
+"pam_unix" on SuSE systems.</P
+><P
+>The following fragment is reported to work fine on SuSE 6.2</P
+><PRE
+CLASS="PROGRAMLISTING"
+>/etc/pam.d/ftpd
+#%PAM-1.0
+
+# Uncomment this to achieve what used to be ftpd -A.
+# auth       required     /lib/security/pam_listfile.so item=user sense=allow file=/etc/ftpchroot onerr=fail
+
+auth     required       /lib/security/pam_listfile.so item=user
+sense=deny file=/etc/ftpusers onerr=succeed
+auth     sufficient     /lib/security/pam_ftp.so
+auth     required       /lib/security/pam_unix.so
+auth     required       /lib/security/pam_shells.so
+account  required       /lib/security/pam_unix.so
+password required       /lib/security/pam_unix.so
+session  required       /lib/security/pam_unix.so
+          </PRE
+><H2
+CLASS="BRIDGEHEAD"
+><A
+NAME="AEN749"
+></A
+>FreeBSD</H2
+><P
+>FreeBSD does not support PAM session directives. If you remove the
+following line from the FreeBSD section of README.PAM, PAM should work
+properly under recent versions of FreeBSD.</P
+><PRE
+CLASS="PROGRAMLISTING"
+> ftp session required    pam_unix.so         try_first_pass
+          </PRE
+></BLOCKQUOTE
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN753"
+></A
+><B
+>6. </B
+>Normal users can't login, only anon.</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Check that the /etc/pam.d/ftp file exists on the system and is
+configured as detailed in README.PAM</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN758"
+></A
+><B
+>7. </B
+>AuthPAMAuthoritative</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Currently AuthPAMAuthoritative defaults on "ON" resulting in login
+failures if PAM cannot authenticate the user.  This breaks the
+AuthUserFile directive as it never gets a chance to authenticate the
+user unless the AuthPAMAuthoritative directive is set to "OFF"</P
+><P
+>The reasoning behind the current default is to ensure that the
+system is secure by default requiring that the admin explicitly and
+knowingly has to disable it.  There are discussions underway which
+may result in the directive flipping to a default of "Off" if
+AuthUserFile is specified.</P
+><P
+><SPAN
+CLASS="emphasis"
+><I
+CLASS="EMPHASIS"
+>Note:</I
+></SPAN
+> as of the current CVS and the forthcoming pre9
+release the default has changed to "Off"</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN766"
+></A
+><B
+>8. </B
+>LDAP</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>mod_ldap is part of the core distribution.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN771"
+></A
+><B
+>9. </B
+>One time passwords</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>This is possible using either PAM or the Opie modules.  The module
+passes back a challenge which the user puts into a key generator along
+with their "pass phrase" and it gives them back 5 words which get sent
+as the password.  As long as you do it correctly it will never repeat.</P
+><P
+>It requires <A
+HREF="http://inner.net/opie/"
+TARGET="_top"
+>http://inner.net/opie/</A
+> to be installed on the server. There are key gen clients for win95/98, *nix, mac.</P
+><P
+><A
+HREF="ftp://ftp.urbanrage.com/pub/c/mod_opie.c"
+TARGET="_top"
+>ftp://ftp.urbanrage.com/pub/c/mod_opie.c</A
+></P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN780"
+></A
+><B
+>10. </B
+>RADIUS</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>The new mod_radius module provides RADIUS authentication
+	  and accounting support to ProFTPD.  </P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN785"
+></A
+><B
+>11. </B
+>Anonymous password checking</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Is it possible to check an offered email address in an anonymous
+login before allowing access.  Simple answer, not a hope in hell,
+anonymous access is pretty much designed to be freely open without
+checks and restrictions other than those placed on upload/download
+from the site.  The best that can be hoped for is decent logging and
+tracking of accesses, and the requesting IP.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN790"
+></A
+><B
+>12. </B
+>Why do I see "PAM(name): Authentication failure", but I can login
+     anyway?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>If the operating system supports PAM (Pluggable Authentication Modules)
+   proftpd will perform PAM authentication by default.  However, this
+   authentication is not "authoritative" by default, meaning that
+   a PAM authentication failure will not necessary cause a login to
+   fail.  The use of PAM can be configured using the AuthPAM configuration
+   directive; the "authoritativeness" of any PAM checks is controlled via
+   the AuthPAMAuthoritative configuration directive.</P
+></DIV
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="faq-ch6.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="faq.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&nbsp;</TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Security</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&nbsp;</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

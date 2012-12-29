@@ -1,0 +1,372 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML
+><HEAD
+><TITLE
+>Compatibility and Integration</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.7"><LINK
+REL="HOME"
+TITLE="Professional FTP Daemon FAQ"
+HREF="faq.html"><LINK
+REL="PREVIOUS"
+TITLE="Compilation and installing"
+HREF="faq-ch2.html"><LINK
+REL="NEXT"
+TITLE="Common Running problems"
+HREF="faq-ch4.html"></HEAD
+><BODY
+CLASS="CHAPTER"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Professional FTP Daemon FAQ</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="faq-ch2.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="faq-ch4.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="AEN167"
+></A
+>Chapter 3. Compatibility and Integration</H1
+><DIV
+CLASS="QANDASET"
+><DL
+><DT
+>1. <A
+HREF="faq-ch3.html#AEN171"
+>SQL</A
+></DT
+><DT
+>2. <A
+HREF="faq-ch3.html#AEN176"
+>SSH</A
+></DT
+><DT
+>3. <A
+HREF="faq-ch3.html#AEN182"
+>sendfile()</A
+></DT
+><DT
+>4. <A
+HREF="faq-ch3.html#AEN198"
+>IPv6</A
+></DT
+><DT
+>5. <A
+HREF="faq-ch3.html#AEN204"
+>Filename case sensitivity</A
+></DT
+><DT
+>6. <A
+HREF="faq-ch3.html#AEN209"
+>FXP</A
+></DT
+></DL
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN171"
+></A
+><B
+>1. </B
+>SQL</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>ProFTPD has support for authentication and logging via SQL
+databases using the mod_sql module as supplied in the main
+distribution.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN176"
+></A
+><B
+>2. </B
+>SSH</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>There is a mini-HOWTO at <A
+HREF="http://www.castaglia.org/proftpd/doc/"
+TARGET="_top"
+>http://www.castaglia.org/proftpd/doc/</A
+> detailing how to tunnel ftp connections over ssh.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN182"
+></A
+><B
+>3. </B
+>sendfile()</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>sendfile() is a system call which streamlines the copying of data
+between the disk and the tcp socket.  The call copied from the page
+cache directly rather than requiring a kernel -&#62; user space -&#62; kernel
+space copy for every read() and write() call.  Generally the
+advantages are only felt on heavily loaded servers.  The call is
+supported in ProFTPD for Linux and FreeBSD.</P
+><A
+NAME="AEN186"
+></A
+><BLOCKQUOTE
+CLASS="BLOCKQUOTE"
+><H2
+CLASS="BRIDGEHEAD"
+><A
+NAME="AEN187"
+></A
+>Linux 2.0.x</H2
+><P
+>sendfile is not supported under 2.0.x, this is not an issue when
+compiling for 2.0.x on a 2.0.x system. However when compiling on a
+2.2.x system for use on 2.0.x use the --disable-sendfile flag.</P
+><H2
+CLASS="BRIDGEHEAD"
+><A
+NAME="AEN189"
+></A
+>Runtime detection of sendfile()</H2
+><P
+>Johnie Ingram (aka netgod)'s:
+<A
+HREF="http://www.proftpd.org/proftpd-devel-archive/99-10/msg00073.html"
+TARGET="_top"
+>http://www.proftpd.org/proftpd-devel-archive/99-10/msg00073.html</A
+></P
+><P
+>John Pierce &lt;hawkfan@pyrotechnics.com&gt;
+<A
+HREF="http://www.proftpd.org/proftpd-devel-archive/99-10/msg00112.html"
+TARGET="_top"
+>http://www.proftpd.org/proftpd-devel-archive/99-10/msg00112.html</A
+></P
+><H2
+CLASS="BRIDGEHEAD"
+><A
+NAME="AEN194"
+></A
+>Problems with sendfile</H2
+><P
+>There appear to be a number of problems with sendfile()
+particularly with the directives and features which require accurate
+determination of filesize.  Such as the Rate* functions and
+downloading large files, the best advice at the moment appears to be
+to disable sendfile by default ( --disable-sendfile ).</P
+><P
+>Sendfile() also appears to be the source of a number of file corruption problems.</P
+></BLOCKQUOTE
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN198"
+></A
+><B
+>4. </B
+>IPv6</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>There is currently no official support for IPv6 within the 1.2.x
+code tree, however there is an <A
+HREF="http://www.t17.ds.pwr.wroc.pl/~misiek/ipv6/"
+TARGET="_top"
+>http://www.t17.ds.pwr.wroc.pl/~misiek/ipv6/</A
+> and more comprehensive support will probably be developed
+during the 1.3.x development cycle.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN204"
+></A
+><B
+>5. </B
+>Filename case sensitivity</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>ProFTPD is utterly dependant on the underlying OS to handle
+filename case sensitivity.  If the underlying OS is case sensitive
+then ProFTPD will be, there are currently no plans for a module to
+handle this.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN209"
+></A
+><B
+>6. </B
+>FXP</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>FXP is capable of bouncing data between websites.  There have been
+a number of reports of problems in configuring ProFTPD to function
+cleanly with this program (http://flashfxp.skuz.net/).</P
+><P
+>To support FXP when connecting as a user place "AllowForeignAddress 
+on" in the Global or VirtualHost context.</P
+><P
+>To support FXP when connecting as anon "AllowForeignAddress on"
+must be placed in the Anonymous context.</P
+><P
+>The config will happily support "AllowForeignAddress on" in
+multiple places within the config.</P
+></DIV
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="faq-ch2.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="faq.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="faq-ch4.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Compilation and installing</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Common Running problems</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

@@ -1,0 +1,1293 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML
+><HEAD
+><TITLE
+>Common Running problems</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.7"><LINK
+REL="HOME"
+TITLE="Professional FTP Daemon FAQ"
+HREF="faq.html"><LINK
+REL="PREVIOUS"
+TITLE="Compatibility and Integration"
+HREF="faq-ch3.html"><LINK
+REL="NEXT"
+TITLE="Configuration problems"
+HREF="faq-ch5.html"></HEAD
+><BODY
+CLASS="CHAPTER"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Professional FTP Daemon FAQ</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="faq-ch3.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="faq-ch5.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="AEN216"
+></A
+>Chapter 4. Common Running problems</H1
+><DIV
+CLASS="QANDASET"
+><DL
+><DT
+>1. <A
+HREF="faq-ch4.html#AEN220"
+>ProFTPD doesn't seem to work.</A
+></DT
+><DT
+>2. <A
+HREF="faq-ch4.html#AEN253"
+>"inet_create_connection() failed: Operation not permitted".</A
+></DT
+><DT
+>3. <A
+HREF="faq-ch4.html#AEN258"
+>Unable to bind to port/Address already in use</A
+></DT
+><DT
+>4. <A
+HREF="faq-ch4.html#AEN267"
+>"(Login failed): Invalid shell"</A
+></DT
+><DT
+>5. <A
+HREF="faq-ch4.html#AEN273"
+>"Fatal: Socket operation on non-socket"</A
+></DT
+><DT
+>6. <A
+HREF="faq-ch4.html#AEN279"
+>"Fatal: unable to determine IP address of "hostname:</A
+></DT
+><DT
+>7. <A
+HREF="faq-ch4.html#AEN284"
+>I'm having problems with FTP clients behind firewalls</A
+></DT
+><DT
+>8. <A
+HREF="faq-ch4.html#AEN295"
+>Can I run more that one VirtualHost on a single IP?</A
+></DT
+><DT
+>9. <A
+HREF="faq-ch4.html#AEN305"
+>How do I run ProFTPD from inetd?</A
+></DT
+><DT
+>10. <A
+HREF="faq-ch4.html#AEN316"
+>Can I use tcp-wrappers with ProFTPD?</A
+></DT
+><DT
+>11. <A
+HREF="faq-ch4.html#AEN322"
+>Can I run an FTP server on a non-standard port?</A
+></DT
+><DT
+>12. <A
+HREF="faq-ch4.html#AEN328"
+>Can control upload/download ratios?</A
+></DT
+><DT
+>13. <A
+HREF="faq-ch4.html#AEN341"
+>Slow logins</A
+></DT
+><DT
+>14. <A
+HREF="faq-ch4.html#AEN348"
+>Lots of "FTP session closed" messages</A
+></DT
+><DT
+>15. <A
+HREF="faq-ch4.html#AEN355"
+>How do I see who is connected?</A
+></DT
+><DT
+>16. <A
+HREF="faq-ch4.html#AEN360"
+>Can I force ProFTPD to listen on only one IP?</A
+></DT
+><DT
+>17. <A
+HREF="faq-ch4.html#AEN373"
+>"FTP server shut down ... please try again later."</A
+></DT
+><DT
+>18. <A
+HREF="faq-ch4.html#AEN378"
+>How do I shutdown the server without killing proftpd?</A
+></DT
+><DT
+>19. <A
+HREF="faq-ch4.html#AEN383"
+>Is is possible to shutdown a single VirtualHost?</A
+></DT
+><DT
+>20. <A
+HREF="faq-ch4.html#AEN388"
+>How do I restart/reload the server?</A
+></DT
+><DT
+>21. <A
+HREF="faq-ch4.html#AEN398"
+>503 No PORT command issued</A
+></DT
+><DT
+>22. <A
+HREF="faq-ch4.html#AEN403"
+>Fatal: unable to determine IP address of</A
+></DT
+><DT
+>23. <A
+HREF="faq-ch4.html#AEN408"
+>451 append/restart not permitted, try again</A
+></DT
+><DT
+>24. <A
+HREF="faq-ch4.html#AEN413"
+>501 REST not compatible with server configuration</A
+></DT
+><DT
+>25. <A
+HREF="faq-ch4.html#AEN418"
+>The time being displayed is wrong</A
+></DT
+><DT
+>26. <A
+HREF="faq-ch4.html#AEN424"
+>Corrupted files</A
+></DT
+><DT
+>27. <A
+HREF="faq-ch4.html#AEN429"
+>Can I upgrade ProFTPD without terminating the current sessions?</A
+></DT
+><DT
+>28. <A
+HREF="faq-ch4.html#AEN434"
+>No such group "nogroup"</A
+></DT
+><DT
+>29. <A
+HREF="faq-ch4.html#AEN439"
+>Why do I see "unable to set groups: Invalid argument"? </A
+></DT
+></DL
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN220"
+></A
+><B
+>1. </B
+>ProFTPD doesn't seem to work.</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Starting ProFTPD in standalone mode it doesn't show in "ps" It
+could be many things, possibly something like not running ProFTPD as
+root (it needs to be run as root initially, but will switch to a
+non-privileged user). Regardless, ProFTPD logs all errors via the
+standard syslog mechanism. You need to check your system logs in order
+to determine what the problem is.</P
+><A
+NAME="AEN224"
+></A
+><BLOCKQUOTE
+CLASS="BLOCKQUOTE"
+><H2
+CLASS="BRIDGEHEAD"
+><A
+NAME="AEN225"
+></A
+>It doesn't work!</H2
+><P
+>There are many times when there's a completely random problem which
+appears to be insoluble.  The best place to ask for help is definately
+the mailing list (proftpd-l) but it's not productive to ask for help
+without giving enough information for intelligent debugging.</P
+><P
+>Have you?</P
+><P
+></P
+><UL
+><LI
+><P
+>Checked your logs</P
+></LI
+><LI
+><P
+>Tried the server in debug mode</P
+></LI
+><LI
+><P
+>Read the FAQ?</P
+></LI
+><LI
+><P
+>Checked the mailing list archive?</P
+></LI
+><LI
+><P
+>Are you running the latest version?</P
+></LI
+></UL
+></BLOCKQUOTE
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>When posting try giving enough information, this might include but
+not be limited to.</P
+><P
+></P
+><UL
+><LI
+><P
+>OS and server version (proftpd -vv)</P
+></LI
+><LI
+><P
+>List of included modules (proftpd -l)</P
+></LI
+><LI
+><P
+>Appropriate log extracts</P
+></LI
+><LI
+><P
+>Output fom debug mode</P
+></LI
+><LI
+><P
+>Configration fragment</P
+></LI
+></UL
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN253"
+></A
+><B
+>2. </B
+>"inet_create_connection() failed: Operation not permitted".</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>You aren't starting ProFTPD as root, or you have inetd configured
+to run ProFTPD as a user other than root. The ProFTPD daemon must be
+started as root in order to bind to tcp ports lower than 1024, or to
+open your shadow password file when authenticating users. The daemon
+switches uid/gids to the user and group specified by the User/Group
+directives during normal operation, so a "ps" will show it running as
+the user you specified.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN258"
+></A
+><B
+>3. </B
+>Unable to bind to port/Address already in use</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>0.0.0.0 is INADDR_ANY, which means to bind to any interface.  The
+"address in use" will normally mean that something has already bound
+to that address.</P
+><P
+>Under linux it is possible to run:</P
+><PRE
+CLASS="PROGRAMLISTING"
+>fuser -n tcp 21
+            </PRE
+><P
+>to get the PID of the process currently bound to port ProFTPD is
+configured to run as.</P
+><P
+>The most common cause is that ProFTPD is configured standalone and
+inetd is still configured for port 21.  Comment out the line starting
+"ftp" in /etc/inetd.conf and restart (killall -HUP inetd or something
+similar should do the trick) and try again.  </P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN267"
+></A
+><B
+>4. </B
+>"(Login failed): Invalid shell"</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>The user attempting to login has been given a shell that is
+not listed in the system's /etc/shells file.  By default, proftpd will require
+that users logging in have valid shells.  Use the RequireValidShell directive
+to turn off this requirement:</P
+><PRE
+CLASS="PROGRAMLISTING"
+>RequireValidShell off
+	    </PRE
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN273"
+></A
+><B
+>5. </B
+>"Fatal: Socket operation on non-socket"</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>You have ProFTPD configured to run in inetd mode rather than
+standalone. In this mode, ProFTPD expects that it will be run from the
+inetd super-server, which implies that stdin/stdout will be sockets
+instead of terminals. As a result, socket operations will fail and the
+above error will be printed. If you wish to run ProFTPD from the
+shell, in standalone mode, you'll need to modify your proftpd.conf
+configuration file and add or edit the ServerType directive to read:</P
+><PRE
+CLASS="PROGRAMLISTING"
+>ServerType standalone
+            </PRE
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN279"
+></A
+><B
+>6. </B
+>"Fatal: unable to determine IP address of "hostname:</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>The hosting machine has a poorly configured hostname setup to the
+point where the resolver library cannot determine the IP from the
+name.  Solutions include, fixing the DNS for the domain, fixing the
+hostname, fixing the /etc/hosts file.  Which one works for you will
+largely depend on your OS and exactly what is wrong.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN284"
+></A
+><B
+>7. </B
+>I'm having problems with FTP clients behind firewalls</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>The FTP Specification defines that two sockets should be used for
+all communications.  The first runs over port 21 and is the control
+channel over which all commands and response codes are sent.  Whenever 
+data is required to be transfered, for example for a file download, a
+directory listing etc etc.  A second channel is created on demand,
+this socket can take one of two forms.</P
+><A
+NAME="AEN288"
+></A
+><BLOCKQUOTE
+CLASS="BLOCKQUOTE"
+><H2
+CLASS="BRIDGEHEAD"
+><A
+NAME="AEN289"
+></A
+>non-Passive</H2
+><P
+>The server end of the data socket uses port 20.  This is nice and
+easy to work into a firewall configuration.</P
+><H2
+CLASS="BRIDGEHEAD"
+><A
+NAME="AEN291"
+></A
+>Passive</H2
+><P
+>The port at either end is dynamically allocated.  This is virtually 
+impossible to cater for in a firewall configuration given that the
+port mapping will be different for every data connection.</P
+><P
+>The solution is to force the users to configure their clients to
+use the non-passive mode (ie port 20)</P
+></BLOCKQUOTE
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN295"
+></A
+><B
+>8. </B
+>Can I run more that one VirtualHost on a single IP?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>No, or at least not in the HTTP/1.1 manner of virtual hosting.
+This is an inbuilt limitation of the current FTP RFC., unlike the
+HTTP/1.1 spec there is no mechanism comparable to the "Host:
+foo.bar.com" HTTP header for specifying which host the connection is
+for.  Therefore the only method for determining which VirtualHost the
+connection is destined for is by the destination IP.</P
+><P
+>The one exception to this is if you host multiple servers on the same
+IP but using different ports, however this requires that the connecting
+client uses a non-standard port and therefore is probably not a good
+solution for mass hosting.</P
+><A
+NAME="AEN300"
+></A
+><BLOCKQUOTE
+CLASS="BLOCKQUOTE"
+><H2
+CLASS="BRIDGEHEAD"
+><A
+NAME="AEN301"
+></A
+>Is there anything in the pipeline to fix this?</H2
+><P
+>There is a draft standard <A
+HREF="http://search.ietf.org/internet-drafts/draft-ietf-ftpext-mlst-12.txt"
+TARGET="_top"
+>http://search.ietf.org/internet-drafts/draft-ietf-ftpext-mlst-12.txt</A
+> with the IETF which extends and improves on the FTP specification including support for a HOST command.  However given that the IP crunch is coming from websites and not virtual ftp servers this is unlikely to be pushed through any time soon.</P
+></BLOCKQUOTE
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN305"
+></A
+><B
+>9. </B
+>How do I run ProFTPD from inetd?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Find the line in /etc/inetd.conf that looks something like this:</P
+><A
+NAME="AEN309"
+></A
+><BLOCKQUOTE
+CLASS="BLOCKQUOTE"
+><P
+>ftp stream tcp nowait root in.ftpd in.ftpd</P
+></BLOCKQUOTE
+><P
+>Replace it with:</P
+><A
+NAME="AEN312"
+></A
+><BLOCKQUOTE
+CLASS="BLOCKQUOTE"
+><P
+>ftp stream tcp nowait root in.proftpd in.proftpd</P
+></BLOCKQUOTE
+><P
+>Then, find your inetd process in the process listing and send it
+the SIGHUP signal so that it will rehash and reconfigure itself.  You
+may also need to add in.ProFTPD to hosts.allow on your system.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN316"
+></A
+><B
+>10. </B
+>Can I use tcp-wrappers with ProFTPD?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Yup. Although ProFTPD has built-in IP access control (see the Deny
+and Allow directives), many admins choose to consolidate IP access
+control in one place via in.tcpd. Just configure ProFTPD to run from
+inetd as any other tcp-wrapper wrapped daemon and add the
+appropriate lines to hosts.allow/deny files.</P
+><P
+>If running ProFTPD in standalone mode, mod_wrap can be used to direct the
+server to use the normal hosts.allow/deny files.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN322"
+></A
+><B
+>11. </B
+>Can I run an FTP server on a non-standard port?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Yes. Use a &lt;VirtualHost&gt; block with your machine's FQDN
+(Fully Qualified Domain Name) or IP address, and a Port directive
+inside the &lt;VirtualHost&gt; block. For example, if your host is
+named "myhost.mydomain.com" and you want to run an additional FTP
+server on port 2001, you would:</P
+><PRE
+CLASS="PROGRAMLISTING"
+>...
+&lt;VirtualHost myhost.mydomain.com&gt;
+Port 2001
+...
+&lt;/VirtualHost&gt;
+            </PRE
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN328"
+></A
+><B
+>12. </B
+>Can control upload/download ratios?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Yes the mod_ratio module provides for doing just this.</P
+><P
+>The ratio directives take four numbers: file ratio, initial file
+credit, byte ratio, and initial byte credit.  Setting either ratio
+to 0 disables that check.</P
+><P
+>The directives are HostRatio (matches FQDN, wildcards allowed),
+AnonRatio (matches password entered at login), UserRatio (accepts "*"
+for "any user"), and GroupRatio. </P
+><PRE
+CLASS="PROGRAMLISTING"
+>Ratios on                                    # enable module
+UserRatio ftp 0 0 0 0
+HostRatio master.debian.org 0 0 0 0          # leech access (default)
+GroupRatio proftpd 100 10 5 100000           # 100:1 files, 10 file cred 5:1 bytes, 100k byte cred
+AnonRatio billg@microsoft.com 1 0 1 0        # 1:1 ratio, no credits
+UserRatio * 5 5 5 50000                      # special default case
+              </PRE
+><P
+>This example is for someone who (1) has downloaded 1 file of 82k,
+(2) has uploaded nothing, (3) has a ratio of 5:1 files and 5:1
+bytes, (4) has 4 files and 17k credit remaining, and (5) is now
+changing directory to /art/nudes/young/carla.  The initial credit,
+not shown, was 5 files and 100k (UserRatio * 5 5 5 100000).</P
+><P
+>Version 2.0 and above of this module integrate with mod_sql.</P
+><A
+NAME="AEN337"
+></A
+><BLOCKQUOTE
+CLASS="BLOCKQUOTE"
+><H2
+CLASS="BRIDGEHEAD"
+><A
+NAME="AEN338"
+></A
+>Limitations of mod_ratio</H2
+><P
+>It appears that the ratio limits in mod_ratio are only maintained
+on a per session basis and there is no ongoing tracking of usage.</P
+></BLOCKQUOTE
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN341"
+></A
+><B
+>13. </B
+>Slow logins</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>This is probably caused by a firewall or DNS timeout.  By default
+ProFTPD will try to do both DNS and ident lookups against the incoming 
+connection.  If these are blocked or excessively delayed a slower than 
+normal login will result.  To turn off DNS and ident use:</P
+><PRE
+CLASS="PROGRAMLISTING"
+>UseReverseDNS off
+IdentLookups                    off
+            </PRE
+><P
+>IdentLookups and tcpwrappers
+***</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN348"
+></A
+><B
+>14. </B
+>Lots of "FTP session closed" messages</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Oct  7 12:30:48 salvage2 proftpd[8874]: FTP session closed.
+Oct  7 12:30:48 salvage2 proftpd[8874]: FTP session closed.
+Oct  7 12:30:48 salvage2 proftpd[8874]: FTP session closed.
+Oct  7 12:30:48 salvage2 proftpd[8874]: FTP session closed.
+            </P
+><P
+>The above log extract is likely to be caused by a local monitoring
+system or a particularly aggressive DoS attack.  Most service
+monitoring systems try opening the ftp port on the target server to
+detect whether it is active and running.  Most of the time these tests 
+are followed by an immediate "QUIT" or disconnection.</P
+><P
+>TCPdump/TCPshow on the server in question should show which machine
+on your network is is generating these connections.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN355"
+></A
+><B
+>15. </B
+>How do I see who is connected?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>The ftpwho command lists the state of each ftp connection to the
+server and what it's current activity is.  However this does not
+detail the connection information on a virtual by virtual basis.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN360"
+></A
+><B
+>16. </B
+>Can I force ProFTPD to listen on only one IP?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Sort, of it's not quite as clean as the socket binding under Apache 
+but the principle works something like this.</P
+><A
+NAME="AEN364"
+></A
+><BLOCKQUOTE
+CLASS="BLOCKQUOTE"
+><H2
+CLASS="BRIDGEHEAD"
+><A
+NAME="AEN365"
+></A
+>Standalone mode</H2
+><P
+>To listen on the primary IP of a host use the SocketBindTight directive</P
+><P
+>To listen on a interfaces which are not the primary host interface use the SocketBindTight directive, place your server configuration in a &lt;VirtualHost ftp.mydomain.com&gt; block and use "Port 0" for the main host configuration and and "Port 21" inside the VirtualHost block.</P
+><H2
+CLASS="BRIDGEHEAD"
+><A
+NAME="AEN368"
+></A
+>inetd</H2
+><P
+>There are two approaches possible, the first is to use the patch
+from Daniel Roesen &lt;droesen@entire-systems.com&gt; (check
+the mailing list archives).</P
+><P
+>The second method is to run ProFTPD from xinetd
+(http://synack.net/xinetd/), a more advanced replacement of inetd. An
+entry for this in xinetd.conf would be something like this:</P
+><PRE
+CLASS="PROGRAMLISTING"
+>service ftp
+{
+        disable = no
+        flags			= REUSE
+        socket_type             = stream
+        wait                    = no
+        user                    = root
+        server                  = /usr/sbin/proftpd
+        log_on_success          += DURATION USERID
+        log_on_failure          += USERID
+        nice                    = 10
+	#bind			= [IP to bind to]
+}
+            </PRE
+></BLOCKQUOTE
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN373"
+></A
+><B
+>17. </B
+>"FTP server shut down ... please try again later."</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Check for /etc/shutmsg and delete it.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN378"
+></A
+><B
+>18. </B
+>How do I shutdown the server without killing proftpd?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>ftpshut, allows the server to disallow connections with a message
+without actually taking down the service.  The shutdown can be
+scheduled for a point in the future or right now, existing connections
+can be allowed to finish, or be terminated now.  Re-enabling is done
+by removing the /etc/shutmsg file.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN383"
+></A
+><B
+>19. </B
+>Is is possible to shutdown a single VirtualHost?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>No, the shutmsg file works at a daemon level not at a virtual host
+level.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN388"
+></A
+><B
+>20. </B
+>How do I restart/reload the server?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>This depends on the mode you're running the server in.</P
+><A
+NAME="AEN392"
+></A
+><BLOCKQUOTE
+CLASS="BLOCKQUOTE"
+><H2
+CLASS="BRIDGEHEAD"
+><A
+NAME="AEN393"
+></A
+>inetd</H2
+><P
+>Unless you're making a configuration change to inetd itself nothing 
+needs doing.  The server reloads the configuration everytime a new
+connection is made.</P
+><H2
+CLASS="BRIDGEHEAD"
+><A
+NAME="AEN395"
+></A
+>Standalone</H2
+><P
+>Either stop and start the server completely (a little aggressive
+for most admins tastes) or send a SIGHUP to the master daemon
+process.</P
+></BLOCKQUOTE
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN398"
+></A
+><B
+>21. </B
+>503 No PORT command issued</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>A bug was introduced in 1.2.0rc2 which prevented the PORT command
+working properly and therefore breaking the data socket under certain
+conditions.  The bug was documented as bug 240 and has been fixed in
+CVS.  A rc3 release is due before the end of Jan 2001.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN403"
+></A
+><B
+>22. </B
+>Fatal: unable to determine IP address of</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Proftpd was unable to work out what IP is associated with the
+hostname in the VirtualHost block.  Normally caused by a problem
+with the DNS resolution of the host, check the resolv.conf file
+and that your chosen nameservers are functional.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN408"
+></A
+><B
+>23. </B
+>451 append/restart not permitted, try again</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>AllowStoreRestart is disabled by default because it will allow any
+writable file to be corrupted by a malicious user.  It is recommended
+that this option is only used with authenticated users and then only
+in certain directories.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN413"
+></A
+><B
+>24. </B
+>501 REST not compatible with server configuration</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>As mentioned in the description of the HiddenStores configuration directive,
+use of that directive is incompatible with the FTP command REST.  Either
+disable use of REST with the AllowRetrieveRestart and AllowStoreRestart
+directives, or do not use HiddenStores.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN418"
+></A
+><B
+>25. </B
+>The time being displayed is wrong</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>The default behaviour for ProFTPD is to display all times relative
+to GMT.  To use local time set "TimesGMT off" in the server section of
+the config.  There is a known issue with Redhat 7, with regard to time
+handling.
+<A
+HREF="http://www.redhat.com/support/rh7-errata-bugfixes.html"
+TARGET="_top"
+>http://www.redhat.com/support/errata/rh7-errata-bugfixes.html</A
+></P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN424"
+></A
+><B
+>26. </B
+>Corrupted files</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>There appear to be some problems with both the use of sendfile()
+in ProFTPD and with the implementation within certain operating systems.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN429"
+></A
+><B
+>27. </B
+>Can I upgrade ProFTPD without terminating the current sessions?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Short answer, no.  Longer answer is no, but you can minimise the
+effects.  The cleanest approach on servers which have significant
+amounts of traffic appears to be to use ftpshut to block new
+connections and terminate existing ones after a pre-determined time
+period and then to upgrade and restart.  This approach limits the
+number of downloads which are terminated part way through.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN434"
+></A
+><B
+>28. </B
+>No such group "nogroup"</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>The default ProFTPD configuration file uses the user "nouser" and
+the group "nogroup", some systems / distributions do not have the
+group "nogroup" defined.  The solution is to either add the group
+"nogroup" to /etc/groups or to change the "nogroup" entry in the
+proftpd.conf to a group which does exist.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN439"
+></A
+><B
+>29. </B
+>Why do I see "unable to set groups: Invalid argument"? </P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>The setting of the group privileges for a process uses the setgroups(2)
+   system call.  This call will fail with the above error message for
+   one of two reasons: there is a negative GID value for one of the
+   groups, or the maximum number of groups for a single user has been
+   exceeded.</P
+><P
+>Ideally, all IDs, both UID and GID, will be positive.  Unfortunately,
+   it is common on many systems to use -1 or -2, especially for such
+   users as 'nobody', or group 'nogroup'.  Use of these values uses C's
+   treatment of data types to make the actual numeric value very high;
+   some functions, like setgroups(), do not like this, though.  In
+   general, always use positive ID numbers.</P
+><P
+>The other limitation is the number of supplemental groups for a user
+   (eg non-primary groups, the ones configured in /etc/group).  The
+   maximum number of supplemental groups to which a user may belong
+   is defined by the operating system constant NGROUPS_MAX.  On
+   some operating systems, such as Solaris, this limitation may be
+   tunable.</P
+><P
+>Some other applications may not encounter this error if they use the
+   initgroups(3) function, which reads the /etc/group file for a user's
+   supplemental group memberships, and sets those groups.  This function,
+   however, silently ignores any supplemental groups for user greater than
+   NGROUPS_MAX, unlike setgroups(2), which complains.</P
+><P
+>   If this is the cause of your error message, any solution will most
+   likely involve reducing the number of groups your users are members of,
+   or tuning the NGROUPS_MAX value, if your operating system allows it.</P
+></DIV
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="faq-ch3.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="faq.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="faq-ch5.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Compatibility and Integration</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Configuration problems</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>
