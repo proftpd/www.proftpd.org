@@ -1,0 +1,379 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>&#13;SQLNamedQuery</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Configuration Directive List"
+HREF="configuration.html"><LINK
+REL="UP"
+TITLE="List of Directives"
+HREF="by-name.html"><LINK
+REL="PREVIOUS"
+TITLE="
+SQLMinUserUID"
+HREF="config_ref_SQLMinUserUID.html"><LINK
+REL="NEXT"
+TITLE="			
+			SQLNegativeCache
+		"
+HREF="config_ref_SQLNegativeCache.html"></HEAD
+><BODY
+CLASS="REFENTRY"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Configuration Directive List</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="config_ref_SQLMinUserUID.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="config_ref_SQLNegativeCache.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><H1
+><A
+NAME="SQLNAMEDQUERY"
+></A
+>
+SQLNamedQuery</H1
+><DIV
+CLASS="REFNAMEDIV"
+><A
+NAME="AEN9329"
+></A
+><H2
+>Name</H2
+>SQLNamedQuery&nbsp;--&nbsp;Specify a query and an identifier for SQLShowInfo and SQLLog</DIV
+><DIV
+CLASS="REFSYNOPSISDIV"
+><A
+NAME="AEN9332"
+></A
+><H2
+>Synopsis</H2
+><P
+><B
+CLASS="COMMAND"
+>SQLNamedQuery</B
+>  [  <CODE
+CLASS="OPTION"
+>"name" limit|regex|ip value</CODE
+>]</P
+><P
+></P
+><DIV
+CLASS="VARIABLELIST"
+><P
+><B
+></B
+></P
+><DL
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Default</PRE
+></DT
+><DD
+><P
+>(docs incomplete)</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Context</PRE
+></DT
+><DD
+><P
+>server config, &lt;Global&gt;, &lt;VirtualHost&gt;, &lt;Anonymous&gt;, &lt;Limit&gt;, .ftpaccess</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Module</PRE
+></DT
+><DD
+><P
+>mod_sql</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Compatibility</PRE
+></DT
+><DD
+><P
+>1.2.5rc1 and later</P
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN9359"
+></A
+><H2
+>Description</H2
+><P
+>SQLNamedQuery specifies a query and an identifier (name) for later use by
+SQLShowInfo and SQLLog.</P
+><P
+>It is strongly recommended that you read documentation on the LogFormat
+and ExtendedLog directives, as the meta-sequences available to SQLNamedQuery
+are largely equivalent.</P
+><P
+>The first parameter, name, should be unique across all named queries and
+must not contain spaces. The result of re-using a name is undefined.</P
+><P
+>The second parameter, type, is the type of query, either "SELECT", "UPDATE",
+"INSERT", or "FREEFORM". See the note below for information on FREEFORM type
+queries.</P
+><P
+>The third parameter is the substance of the database query itself; this
+should match the form of the second parameter. The meta-sequences accepted
+are exactly equivalent to the LogFormat directive except the following are
+not accepted:</P
+><P
+></P
+><UL
+><LI
+STYLE="list-style-type: disc"
+><P
+>%{FOOBAR}e</P
+><P
+>For LogFormat, this logs the content of environment variable "FOOBAR". This
+is not bavailable in mod_sql.</P
+></LI
+><LI
+STYLE="list-style-type: disc"
+><P
+>%{format}t and %t</P
+><P
+>These two meta-sequences logged the local server time; they are not available
+in mod_sql. Your database undoubtedly provides another way to get the time;
+for example, MySQL provides the now() function.</P
+></LI
+></UL
+><P
+>and the following is in addition to the LogFormat meta-sequences:</P
+><P
+>&#13;<P
+></P
+><UL
+><LI
+STYLE="list-style-type: disc"
+><P
+>%d</P
+><P
+>The current working directory or "-" if none.</P
+></LI
+><LI
+STYLE="list-style-type: disc"
+><P
+>%{n}</P
+><P
+>This meta-sequence is used internally by mod_sql and other third-party
+modules and patches to pass information to the database. Using this
+meta-sequence in anything other than an INSERT or UPDATE query is an
+error, and using this meta-sequence unless directed to by a third-party
+module or patch is also an error.</P
+></LI
+><LI
+STYLE="list-style-type: disc"
+><P
+>%{env:VAR}</P
+><P
+>Starting with ProFTPD 1.3.1rc1 the SQLNamedQuery directive is able to make
+use of environment variables in the format &quot;%{env:VAR}&quot;. The value
+of the environment variable VAR will be substituted into the SQL statement.</P
+></LI
+></UL
+>&#13;</P
+><P
+>The correct form of a query will be built from the directive arguments,
+except in the case of FREEFORM queries which will be sent directly to the
+database. The examples below show the way queries are built from the arguments.</P
+><P
+>The fourth parameter, table, is only necessary for UPDATE or INSERT type
+queries, but is required for those types.</P
+><P
+>Note: FREEFORM queries are a necessary evil; the simplistic query semantics
+of the UPDATE, INSERT, and SELECT type queries do not sufficiently expose
+the capabilities of most backend databases. At the same time, using a
+FREEFORM query makes it impossible for mod_sql to check whether the query
+type is appropriate, making sure that a SELECT query is not used in a SQLLog
+directive, for instance. Wherever possible, it is recommended that a specific
+query type be used.</P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN9388"
+></A
+><H2
+>See also</H2
+><P
+><A
+HREF="config_ref_SQLShowInfo.html"
+>SQLShowInfo</A
+>
+<A
+HREF="config_ref_SQLLog.html"
+>SQLLog</A
+>
+<A
+HREF="config_ref_LogFormat.html"
+>LogFormat</A
+>
+<A
+HREF="config_ref_ExtendedLog.html"
+>ExtendedLog</A
+></P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN9395"
+></A
+><H2
+>Examples</H2
+><P
+CLASS="LITERALLAYOUT"
+>SQLNamedQuery&nbsp;count&nbsp;SELECT&nbsp;"count&nbsp;from&nbsp;users&nbsp;where&nbsp;userid='%u'"</P
+><P
+>creates a query named "count" which could be used by SQLShowInfo to inform
+a user of their login count. The actual query would look something like
+"SELECT count FROM users WHERE userid='matilda'" for user "matilda".</P
+><P
+CLASS="LITERALLAYOUT"
+>SQLNamedQuery&nbsp;updatecount&nbsp;UPDATE&nbsp;"count=count+1&nbsp;WHERE&nbsp;userid='%u'"&nbsp;users</P
+><P
+>creates a query named "updatecount" which could be used by SQLLog to update
+a user login counter in the table users. The actual query would look something
+like "UPDATE users SET count=count+1 WHERE userid='persephone'" for user
+"persephone".</P
+><P
+CLASS="LITERALLAYOUT"
+>SQLNamedQuery&nbsp;accesslog&nbsp;INSERT&nbsp;"now(),&nbsp;'%u'"&nbsp;accesslog</P
+><P
+>creates a query named "accesslog" which could be used by SQLLog to track
+access times by clients. The actual query would look something like "INSERT
+INTO accesslog VALUES (now(), 'pandora')" for user "pandora". Note that this
+may be too simplistic for your table structure, since most databases require
+data for all columns to be provided in an INSERT statement of this form. See
+the following FREEFORM query for an example of something which may suit your
+needs better.</P
+><P
+CLASS="LITERALLAYOUT"
+>SQLNamedQuery&nbsp;accesslog&nbsp;FREEFORM&nbsp;"INSERT&nbsp;INTO&nbsp;accesslog(date,&nbsp;user)&nbsp;VALUES&nbsp;(now(),&nbsp;'%u')"</P
+><P
+>creates a query named "accesslog" which could be used by SQLLog to track
+access times by clients. The actual query would look something like "INSERT
+INTO accesslog(date, user) VALUES (now(), 'tilda')" for user "tilda".</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="config_ref_SQLMinUserUID.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="configuration.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="config_ref_SQLNegativeCache.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&#13;SQLMinUserUID</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="by-name.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&#13;			SQLNegativeCache</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

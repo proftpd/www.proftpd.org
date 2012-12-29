@@ -1,0 +1,255 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>&#13;ShowSymlinks</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Configuration Directive List"
+HREF="configuration.html"><LINK
+REL="UP"
+TITLE="List of Directives"
+HREF="by-name.html"><LINK
+REL="PREVIOUS"
+TITLE="
+SetEnv"
+HREF="config_ref_SetEnv.html"><LINK
+REL="NEXT"
+TITLE="
+SocketBindTight"
+HREF="config_ref_SocketBindTight.html"></HEAD
+><BODY
+CLASS="REFENTRY"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Configuration Directive List</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="config_ref_SetEnv.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="config_ref_SocketBindTight.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><H1
+><A
+NAME="SHOWSYMLINKS"
+></A
+>
+ShowSymlinks</H1
+><DIV
+CLASS="REFNAMEDIV"
+><A
+NAME="AEN8295"
+></A
+><H2
+>Name</H2
+>ShowSymlinks&nbsp;--&nbsp;Toggle the display of symlinks</DIV
+><DIV
+CLASS="REFSYNOPSISDIV"
+><A
+NAME="AEN8298"
+></A
+><H2
+>Synopsis</H2
+><P
+><B
+CLASS="COMMAND"
+>ShowSymlinks</B
+>  [  <CODE
+CLASS="OPTION"
+>ShowSymlinks on|off</CODE
+>]</P
+><P
+></P
+><DIV
+CLASS="VARIABLELIST"
+><P
+><B
+></B
+></P
+><DL
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Default</PRE
+></DT
+><DD
+><P
+>(versions 1.1.5 and beyond) ShowSymlinks On</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Context</PRE
+></DT
+><DD
+><P
+>server config, &lt;VirtualHost&gt;, &lt;Anonymous&gt;, &lt;Global&gt;</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Module</PRE
+></DT
+><DD
+><P
+>mod_ls</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Compatibility</PRE
+></DT
+><DD
+><P
+></P
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN8325"
+></A
+><H2
+>Description</H2
+><P
+>Compatibility: 0.99.0pl6 and later
+Symbolic links (if supported on the host OS and filesystem) can be either 
+shown in directory listings (including the target of the link) or can be &quot;hidden&quot; 
+(proftpd dereferences symlinks and reports the target's permissions and ownership). 
+The default behavior is to show all symbolic links when normal users are logged 
+in, and hide them for anonymous sessions. If a symbolic link cannot be dereferenced 
+for any reason (permissions, target does not exist, etc) and ShowSymlinks 
+is off, proftpd displays the link as a directory entry of type 'l' (link) 
+with the ownership and permissions of the actual link.
+Under ProFTPD versions 1.1.5 and higher, the default behavior in regard to 
+ShowSymlinks has been changed so that symbolic links are always displayed 
+as such (in all cases), unless ShowSymlinks off is explicitly set.</P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN8328"
+></A
+><H2
+>See also</H2
+><P
+></P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN8331"
+></A
+><H2
+>Examples</H2
+><P
+></P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="config_ref_SetEnv.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="configuration.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="config_ref_SocketBindTight.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&#13;SetEnv</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="by-name.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&#13;SocketBindTight</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

@@ -1,0 +1,253 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>&#13;HiddenStores</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Configuration Directive List"
+HREF="configuration.html"><LINK
+REL="UP"
+TITLE="List of Directives"
+HREF="by-name.html"><LINK
+REL="PREVIOUS"
+TITLE="
+HiddenStor"
+HREF="config_ref_HiddenStor.html"><LINK
+REL="NEXT"
+TITLE="
+HideFiles"
+HREF="config_ref_HideFiles.html"></HEAD
+><BODY
+CLASS="REFENTRY"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Configuration Directive List</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="config_ref_HiddenStor.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="config_ref_HideFiles.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><H1
+><A
+NAME="HIDDENSTORES"
+></A
+>
+HiddenStores</H1
+><DIV
+CLASS="REFNAMEDIV"
+><A
+NAME="AEN3581"
+></A
+><H2
+>Name</H2
+>HiddenStores&nbsp;--&nbsp;Enables more safe file uploads</DIV
+><DIV
+CLASS="REFSYNOPSISDIV"
+><A
+NAME="AEN3584"
+></A
+><H2
+>Synopsis</H2
+><P
+><B
+CLASS="COMMAND"
+>HiddenStores</B
+>  [  <CODE
+CLASS="OPTION"
+>HiddenStores on|off</CODE
+>]</P
+><P
+></P
+><DIV
+CLASS="VARIABLELIST"
+><P
+><B
+></B
+></P
+><DL
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Default</PRE
+></DT
+><DD
+><P
+>HiddenStores off</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Context</PRE
+></DT
+><DD
+><P
+>server config, &lt;Global&gt;, &lt;VirtualHost&gt;, &lt;Anonymous&gt;, &gt;</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Module</PRE
+></DT
+><DD
+><P
+>mod_xfer</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Compatibility</PRE
+></DT
+><DD
+><P
+>1.2.7rc1 and later</P
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN3611"
+></A
+><H2
+>Description</H2
+><P
+>The HiddenStores directive enables two-step file uploads: files are
+uploaded as &quot;.in.filename.&quot; and once the upload is complete, 
+renamed to just &quot;filename&quot;. This provides a degree of
+atomicity and helps prevent 1) incomplete uploads and 2) files being
+used while they're still in the progress of being uploaded.</P
+><P
+> Note: 
+if the temporary file name is already in use (e.g., a server crash
+during upload), it will prevent the file from being uploaded</P
+><P
+>The REST (Restart STOR) command is automatically blocked when
+HiddenStores is enabled, with the server returning a 501 error code to
+the client.</P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN3616"
+></A
+><H2
+>See also</H2
+><P
+><A
+HREF="config_ref_AllowStoreRestart.html"
+>AllowStoreRestart</A
+>
+<A
+HREF="config_ref_DeleteAbortedStores.html"
+>DeleteAbortedStores</A
+></P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="config_ref_HiddenStor.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="configuration.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="config_ref_HideFiles.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&#13;HiddenStor</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="by-name.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&#13;HideFiles</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

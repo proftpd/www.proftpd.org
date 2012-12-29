@@ -1,0 +1,659 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>&#13;RewriteMap</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Configuration Directive List"
+HREF="configuration.html"><LINK
+REL="UP"
+TITLE="List of Directives"
+HREF="by-name.html"><LINK
+REL="PREVIOUS"
+TITLE="
+RewriteLog"
+HREF="config_ref_RewriteLog.html"><LINK
+REL="NEXT"
+TITLE="
+RewriteRule"
+HREF="config_ref_RewriteRule.html"></HEAD
+><BODY
+CLASS="REFENTRY"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Configuration Directive List</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="config_ref_RewriteLog.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="config_ref_RewriteRule.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><H1
+><A
+NAME="REWRITEMAP"
+></A
+>
+RewriteMap</H1
+><DIV
+CLASS="REFNAMEDIV"
+><A
+NAME="AEN7477"
+></A
+><H2
+>Name</H2
+>RewriteMap&nbsp;--&nbsp;Define a rewrite map</DIV
+><DIV
+CLASS="REFSYNOPSISDIV"
+><A
+NAME="AEN7480"
+></A
+><H2
+>Synopsis</H2
+><P
+><B
+CLASS="COMMAND"
+>RewriteMap</B
+>  [  <CODE
+CLASS="OPTION"
+>map-name map-type:map-soure</CODE
+>]</P
+><P
+></P
+><DIV
+CLASS="VARIABLELIST"
+><P
+><B
+></B
+></P
+><DL
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Default</PRE
+></DT
+><DD
+><P
+>None</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Context</PRE
+></DT
+><DD
+><P
+>server config, &lt;Global&gt;, &lt;VirtualHost&gt;</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Module</PRE
+></DT
+><DD
+><P
+>mod_rewrite</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Compatibility</PRE
+></DT
+><DD
+><P
+>1.2.6rc1 and later</P
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN7507"
+></A
+><H2
+>Description</H2
+><P
+>The RewriteMap directive defines a rewriting map which can be used inside
+rule substitution strings by the mapping-functions to insert/substitute
+fields through a key lookup. The source of this lookup can be of various types.</P
+><P
+>The map-name is the name of the map and will be used to specify a
+mapping-function for the substitution strings of a rewriting rule via
+one of the following constructs:</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="EMPHASIS"
+>${ map-name :  lookup-key }</B
+></SPAN
+></P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="EMPHASIS"
+>${ map-name :  lookup-key</B
+></SPAN
+>
+ | 
+<SPAN
+CLASS="bold"
+><B
+CLASS="EMPHASIS"
+>default-value</B
+></SPAN
+></P
+><P
+>When such a construct occurs the map map-name is consulted and the key
+lookup-key is resolved. If the key is found, the map-function construct
+is substituted by subst-value. If the key is not found then it is
+substituted by default-value or by the empty string if no default-value
+was specified.</P
+><P
+>The following combinations for map-type and map-src can be used:</P
+><P
+></P
+><UL
+><LI
+STYLE="list-style-type: disc"
+><P
+>			<SPAN
+CLASS="bold"
+><B
+CLASS="EMPHASIS"
+>Standard Plain Text</B
+></SPAN
+>
+		</P
+><P
+>			map-type: txt, map-src: Unix filesystem path to
+			valid regular file.
+		</P
+><P
+>		This is the standard rewriting map feature where
+		the map-src is a plain ASCII file containing either blank
+		lines, comment lines (starting with a '#' character) or
+		pairs like the following - one per line.
+		</P
+><P
+>			<SPAN
+CLASS="bold"
+><B
+CLASS="EMPHASIS"
+>matching-key subst-value</B
+></SPAN
+>
+		</P
+><DIV
+CLASS="EXAMPLE"
+><A
+NAME="EXAMPLE-USERMAP"
+></A
+><P
+><B
+>Example 1-1. Example Usermap</B
+></P
+><PRE
+CLASS="PROGRAMLISTING"
+>		    # --------------------------------------------
+    		    # usermap.txt -- map for rewriting user names
+    		    # --------------------------------------------
+
+    		    Dave.Admin      dave       # The Uber-admin
+    		    root            anonymous  # no one should be logging in as root anyway
+		</PRE
+></DIV
+><P
+>			And, to configure this map to be used:
+		</P
+><PRE
+CLASS="PROGRAMLISTING"
+>			RewriteMap real-to-user txt:/path/to/file/usermap.txt
+		</PRE
+></LI
+><LI
+STYLE="list-style-type: disc"
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="EMPHASIS"
+>FIFO/Named Pipe</B
+></SPAN
+></P
+><P
+>			map-type: fifo, map-src: Unix filesystem path
+			to valid FIFO.
+		</P
+><P
+>		For this rewriting map, map-src is a FIFO (a.k.a. named pipe).
+		To create it, you can use the mkfifo(1) command. An
+		external program that opens the FIFO for reading and
+		writing <SPAN
+CLASS="bold"
+><B
+CLASS="EMPHASIS"
+>must</B
+></SPAN
+>  be started
+		before proftpd is started. This program can communicate
+		with the rewriting engine via the FIFO. For each mapping
+		lookup, it can read the key to lookup as a newline-terminated
+		string from the FIFO. It then has to write back to the FIFO
+		the looked-up value as a newline-terminated string, or just
+		simply newline character (denoting an empty string) if there
+		is no corresponding value for the given key).
+		</P
+><P
+>		An example program which will implement a 1:1 mapping
+		(i.e., key == value) could be:
+		</P
+><DIV
+CLASS="EXAMPLE"
+><A
+NAME="EXAMPLE-FIFONAMEDPIPE"
+></A
+><P
+><B
+>Example 1-2. Example FIFO/Named Pipe 1:1 mapping</B
+></P
+><PRE
+CLASS="PROGRAMLISTING"
+>#!/usr/bin/perl
+    use strict;
+
+    use File::Basename qw(basename);
+    use Getopt::Long;
+    use IO::Handle;
+    use IO::Select;
+
+    my $default_delay = 0.5;
+    my $program = basename($0);
+    my %opts = ();
+
+    GetOptions(\%opts, 'delay=f', 'fifo=s', 'help', 'verbose');
+
+    usage() if $opts{'help'};
+
+    my $delay = $opts{'delay'} ? $opts{'delay'} : $default_delay;
+
+    die "$program: missing required --fifo parameter\n" unless $opts{'fifo'};
+    my $fifo = $opts{'fifo'};
+
+    my $verbose = $opts{'verbose'} ? 1 : 0;
+
+    open(my $fifo_fh, "+&#62; $fifo") or die "$program: unable to open $fifo: $!\n";
+
+    # Instantiate a Select object for knowing when to read from and write to
+    # the FIFO.
+    my $sel = IO::Select-&#62;new();
+
+    while (1) {
+
+      # Blocking select() for reading.
+      $sel-&#62;add($fifo_fh);
+
+      print STDERR "$program: selecting for reading\n" if $verbose;
+      my ($rfh) = $sel-&#62;can_read();
+
+      my $key = &lt;$rfh&gt;;
+      print STDERR "$program: read '$key'\n" if $verbose;
+
+      # Lookup a value for the given key.
+      my $value = lookup_value($key);
+
+      # Clear the Select object's filehandles.
+      $sel-&#62;remove();
+
+      print $fifo_fh "$value\n" if $verbose;
+      $fifo_fh-&#62;flush();
+
+      print STDERR "$program: wrote '$value'\n" if $verbose;
+
+      # Wait for the buffer's byte to be cleared before reading again.
+      wait_fifo($fifo_fh);
+    }
+
+    close($fifo_fh);
+    print STDOUT "$program: done\n" if $verbose;
+
+    exit 0;
+
+    # --------------------------------------------------------------------------
+    sub lookup_value {
+      my ($key) = @_;
+
+      # NOTE: do something to obtain a value for the given key here.
+      chomp(my $value = $key);
+
+      return $value;
+    }
+
+    # --------------------------------------------------------------------------
+    sub usage {
+      print STDOUT &lt;&lt;END_OF_USAGE;
+
+    usage: $program [options]
+
+      --delay         Configure the buffer check delay.
+                      The default is $default_delay seconds.
+
+      --fifo          Configure the path to the FIFO.  Required.
+
+      --help          Displays this message.
+
+      --verbose       Enables verbose output while $program runs.
+
+    END_OF_USAGE
+
+      exit 0;
+    }
+
+    # --------------------------------------------------------------------------
+    sub wait_fifo {
+      my ($fh) = @_;
+
+      # Now we get tricky.  Use ioctl(2) to poll the number of bytes to
+      # be read from the FIFO filehandle.  When the number drops to zero,
+      # it means that the data we just wrote has been read from the buffer
+      # by some other process, so we can go back to the top of this loop.
+      # Otherwise, if this program loops faster than the reader/writer on
+      # the other end of the FIFO, we'd end up reading the data we just
+      # wrote.  Quite annoying, actually.
+      #
+      # Note: this value must be manually extracted from the system header files
+      # using the following program:
+      #
+      # -------- fionread.c -------------------
+      #  #include &lt;sys/ioctl.h&gt;
+      #
+      #  int main(int argc, char *argv[]) {
+      #   printf("%#08x\n", FIONREAD);
+      #   return 0;
+      # }
+      # ---------------------------------------
+      #
+      # &#62; cc -o fionread fionread.c
+      # &#62; ./fionread
+
+      my $FIONREAD = 0x00541b;
+
+      my $size = pack('L', 0);
+      ioctl($fh, $FIONREAD, $size) or die "$program: unable to use ioctl: $!\n";
+      $size = unpack('L', $size);
+
+      while ($size != 0) {
+        print STDERR "$program: waiting for buffer to be read\n" if $verbose;
+        select(undef, undef, undef, $delay);
+
+        $size = pack('L', 0);
+        ioctl($fh, $FIONREAD, $size) or die "$program: unable to use ioctl: $!\n";
+        $size = unpack('L', $size);
+      }
+    }
+
+		</PRE
+></DIV
+><P
+>		To make use of this example script, simply implement your
+		lookup code in the lookup_value() subroutine. Be very
+		careful with such scripts, though:
+		</P
+><P
+></P
+><OL
+TYPE="1"
+><LI
+STYLE="list-style-type: disc"
+><P
+>			     "Keep it simple, stupid" (KISS), because if
+			      this program hangs it will hang proftpd when
+			      the rule occurs. Well, keep it as simple as
+			      possible...
+			     </P
+></LI
+><LI
+STYLE="list-style-type: disc"
+><P
+>			     Avoid one common mistake: avoid buffered I/O
+			     if possible. This can cause a deadloop. If
+			     necessary, be sure to flush the filehandle
+			     before reading, and after writing.
+			     </P
+></LI
+><LI
+STYLE="list-style-type: disc"
+><P
+>			     Use the RewriteLock directive to define a
+			     lockfile mod_rewrite can use to synchronize
+			     the communication to the FIFO program. By
+			     default no such synchronization takes place.
+			     </P
+></LI
+></OL
+></LI
+><LI
+STYLE="list-style-type: disc"
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="EMPHASIS"
+>Internal Function</B
+></SPAN
+></P
+><P
+>			map-type: int, map-src: Internal mod_rewrite function.
+		</P
+><P
+>		Here the map-src is a mod_rewrite built-in function.
+		Currently you cannot create your own, but the following
+		functions already exist:
+		</P
+><P
+></P
+><UL
+><LI
+STYLE="list-style-type: disc"
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="EMPHASIS"
+>toupper</B
+></SPAN
+></P
+><P
+>			Converts the looked up key to all upper case.
+			</P
+></LI
+><LI
+STYLE="list-style-type: disc"
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="EMPHASIS"
+>tolower</B
+></SPAN
+></P
+><P
+>			Converts the looked up key to all lower case.
+			</P
+></LI
+><LI
+STYLE="list-style-type: disc"
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="EMPHASIS"
+>unescape</B
+></SPAN
+></P
+><P
+>			Translates hex-encodings in the looked up key back
+			to special characters.
+			</P
+></LI
+><LI
+STYLE="list-style-type: disc"
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="EMPHASIS"
+>utf8trans</B
+></SPAN
+></P
+><P
+>			Translates UTF-8 encodings in the lookup up key into
+			Latin-1 characters.
+			</P
+></LI
+></UL
+></LI
+></UL
+><P
+>The RewriteMap directive can occur more than once. For each mapping-function
+use one RewriteMap directive to declare its rewriting map name.</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="EMPHASIS"
+>Note:</B
+></SPAN
+> For plain text files the looked-up
+keys are cached in-core until the mtime of the text map file changes or
+the server does a restart. This way you can have map-functions in rules
+which are used for <SPAN
+CLASS="bold"
+><B
+CLASS="EMPHASIS"
+>every</B
+></SPAN
+> request. This
+is no problem, because the parsing of the text files only happens once!</P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN7575"
+></A
+><H2
+>See also</H2
+><P
+><A
+HREF="config_ref_RewriteCondition.html"
+>RewriteCondition</A
+></P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="config_ref_RewriteLog.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="configuration.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="config_ref_RewriteRule.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&#13;RewriteLog</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="by-name.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&#13;RewriteRule</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

@@ -1,0 +1,267 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>&#13;TransferRate</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Configuration Directive List"
+HREF="configuration.html"><LINK
+REL="UP"
+TITLE="List of Directives"
+HREF="by-name.html"><LINK
+REL="PREVIOUS"
+TITLE="
+TransferLog"
+HREF="config_ref_TransferLog.html"><LINK
+REL="NEXT"
+TITLE="
+Umask"
+HREF="config_ref_Umask.html"></HEAD
+><BODY
+CLASS="REFENTRY"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Configuration Directive List</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="config_ref_TransferLog.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="config_ref_Umask.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><H1
+><A
+NAME="TRANSFERRATE"
+></A
+>
+TransferRate</H1
+><DIV
+CLASS="REFNAMEDIV"
+><A
+NAME="AEN11824"
+></A
+><H2
+>Name</H2
+>TransferRate&nbsp;--&nbsp;Configure upload, download transfer rates</DIV
+><DIV
+CLASS="REFSYNOPSISDIV"
+><A
+NAME="AEN11827"
+></A
+><H2
+>Synopsis</H2
+><P
+><B
+CLASS="COMMAND"
+>TransferRate</B
+>  [  <CODE
+CLASS="OPTION"
+>cmds</CODE
+>] [  <CODE
+CLASS="OPTION"
+>kilobytes-per-sec[:free-bytes]</CODE
+>] [  <CODE
+CLASS="OPTION"
+>["user"|"group"|"class" expression]</CODE
+>]</P
+><P
+></P
+><DIV
+CLASS="VARIABLELIST"
+><P
+><B
+></B
+></P
+><DL
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Default</PRE
+></DT
+><DD
+><P
+>None</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Context</PRE
+></DT
+><DD
+><P
+>server config, &lt;VirtualHost&gt;, &lt;Global&gt;, &lt;Anonymous&gt;, &lt;Directory&gt;, .ftpaccess</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Module</PRE
+></DT
+><DD
+><P
+>mod_xfer</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Compatibility</PRE
+></DT
+><DD
+><P
+>1.2.8rc1 and later</P
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN11858"
+></A
+><H2
+>Description</H2
+><P
+>The TransferRate directive is used to set transfer rates limits on the transfer
+of data.  This directive allows for transfer rates to be set in a wide variety
+of contexts, on a per-command basis, and for certain subsets of users.  Note
+that this limit only applies to a single connection, and not to the overall
+transfer rate of the server.</P
+><P
+>The cmds parameter may be an comma-separated list of any of the following
+commands: APPE, RETR, STOR, and STOU.</P
+><P
+>The kilobytes-per-sec parameter is the actual transfer rate to be applied.</P
+><P
+>The free-bytes parameter, if configured, allows that many bytes to be
+transferred before the rate controls are applied. This allows for clients
+transferring small files to be unthrottled, but for larger files, such as
+MP3s and ISO images, to be throttled.</P
+><P
+>The optional parameters are used to restrict the application of the rate
+controls only to specific users.  If the "user" restriction is given, then
+expression is a user-expression specifying to which users the rate applies. 
+Similarly for the "group" restriction.  For the "class" restriction, the
+expression is simply the name of connection class for whom the rate will apply.</P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN11865"
+></A
+><H2
+>Examples</H2
+><P
+>  # Limit downloads for everyone except the special group of users
+  TransferRate RETR 1.5 group !special-users</P
+><P
+>  # Limit uploads (and appends!) to the prolific users in the 
+  # lotsofuploadfiles.net domain.  This presumes that a Class has been defined
+  # for that domain, and that that Class has been named "uploaders".  Let them
+  # upload small files without throttling, though.
+  TransferRate APPE,STOR 8.0:1024 class uploaders</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="config_ref_TransferLog.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="configuration.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="config_ref_Umask.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&#13;TransferLog</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="by-name.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&#13;Umask</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

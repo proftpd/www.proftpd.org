@@ -1,0 +1,295 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>&#13;SQLShowInfo</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Configuration Directive List"
+HREF="configuration.html"><LINK
+REL="UP"
+TITLE="List of Directives"
+HREF="by-name.html"><LINK
+REL="PREVIOUS"
+TITLE="
+SQLRatioStats"
+HREF="config_ref_SQLRatioStats.html"><LINK
+REL="NEXT"
+TITLE="
+SQLUserInfo"
+HREF="config_ref_SQLUserInfo.html"></HEAD
+><BODY
+CLASS="REFENTRY"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Configuration Directive List</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="config_ref_SQLRatioStats.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="config_ref_SQLUserInfo.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><H1
+><A
+NAME="SQLSHOWINFO"
+></A
+>
+SQLShowInfo</H1
+><DIV
+CLASS="REFNAMEDIV"
+><A
+NAME="AEN9555"
+></A
+><H2
+>Name</H2
+>SQLShowInfo&nbsp;--&nbsp;Create a message to be sent to the user after any successful command</DIV
+><DIV
+CLASS="REFSYNOPSISDIV"
+><A
+NAME="AEN9558"
+></A
+><H2
+>Synopsis</H2
+><P
+><B
+CLASS="COMMAND"
+>SQLShowInfo</B
+>  [  <CODE
+CLASS="OPTION"
+>cmd-set numeric query-string</CODE
+>]</P
+><P
+></P
+><DIV
+CLASS="VARIABLELIST"
+><P
+><B
+></B
+></P
+><DL
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Default</PRE
+></DT
+><DD
+><P
+>None</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Context</PRE
+></DT
+><DD
+><P
+>server config, &lt;Global&gt;, &lt;VirtualHost&gt;</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Module</PRE
+></DT
+><DD
+><P
+>mod_sql</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Compatibility</PRE
+></DT
+><DD
+><P
+>1.2.5rc1 and later</P
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN9585"
+></A
+><H2
+>Description</H2
+><P
+>This directive creates a message to be sent to the user after any successful
+command.</P
+><P
+>The first parameter, the cmd-set, is a comma separated (no spaces) list of
+FTP commands for which this log command will trigger. The list of commands
+is too long to list in entirety; commands include: CWD, DELE, HELP, LIST,
+MKD, MODE, NLST, PASS, PASV, PORT and many more. For the complete list check
+the FTP RFCs.</P
+><P
+>FTP commands in the command set will only be triggered if they complete
+successfully. Prefixing any command with "ERR_" will show information only
+if there was an error in command processing. To send a message on both
+errors and successfull completion of a given command X, therefore, you'll
+need both "X" and "ERR_X" in your cmd-set.</P
+><P
+>The special command "*" matches all FTP commands, while "ERR_*" matches
+all errors.</P
+><P
+>The second parameter, numeric, specifies the numeric value of the message
+returned to the FTP client. Do not choose a number blindly: message numbers
+may be parsed by clients. In most cases you will want to use 214, the "Help
+message" numeric. It specifies that the information is only meant to be human
+readable.</P
+><P
+>The third parameter, query-string, is exactly equivalent to the query-string
+parameter to the SQLLog directive, with one addition:</P
+><P
+></P
+><UL
+><LI
+STYLE="list-style-type: disc"
+><P
+>%{name}</P
+><P
+>The first return value from the SQLNamedQuery  identified by "name". There
+is currently no way to retrieve more than one value from the database at
+a time.</P
+></LI
+></UL
+><P
+>Any references to non-existent named queries, non-SELECT or -FREEFORM type
+queries, or references to queries which return a NULL first value, will be
+replaced with the string "{null}".</P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN9598"
+></A
+><H2
+>See also</H2
+><P
+></P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN9601"
+></A
+><H2
+>Examples</H2
+><P
+CLASS="LITERALLAYOUT"
+>&nbsp;&nbsp;SQLNamedQuery&nbsp;count&nbsp;SELECT&nbsp;"count&nbsp;from&nbsp;users&nbsp;where&nbsp;userid='%u'"<br>
+&nbsp;&nbsp;SQLShowInfo&nbsp;PASS&nbsp;"230"&nbsp;"You've&nbsp;logged&nbsp;on&nbsp;%{count}&nbsp;times,&nbsp;%u"</P
+><P
+>As long as the information is in the database, these two directives specify
+that the user will be greeted with their login count each time they
+successfully login. Note the use of the "230" numeric, which means "User
+logged in, proceed". "230" is appropriate in this case because the message
+will be sent immediately after their password has been accepted and the
+session has started.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="config_ref_SQLRatioStats.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="configuration.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="config_ref_SQLUserInfo.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&#13;SQLRatioStats</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="by-name.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&#13;SQLUserInfo</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

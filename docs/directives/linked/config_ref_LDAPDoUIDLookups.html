@@ -1,0 +1,285 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>      
+      LDAPDoUIDLookups
+    </TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Configuration Directive List"
+HREF="configuration.html"><LINK
+REL="UP"
+TITLE="List of Directives"
+HREF="by-name.html"><LINK
+REL="PREVIOUS"
+TITLE="			
+			LDAPDoQuotaLookups
+		"
+HREF="config_ref_LDAPDoQuotaLookups.html"><LINK
+REL="NEXT"
+TITLE="			
+			LDAPForceDefaultGID
+		"
+HREF="config_ref_LDAPForceDefaultGID.html"></HEAD
+><BODY
+CLASS="REFENTRY"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Configuration Directive List</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="config_ref_LDAPDoQuotaLookups.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="config_ref_LDAPForceDefaultGID.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><H1
+><A
+NAME="LDAPDOUIDLOOKUPS"
+></A
+>
+      LDAPDoUIDLookups</H1
+><DIV
+CLASS="REFNAMEDIV"
+><A
+NAME="AEN4630"
+></A
+><H2
+>Name</H2
+>LDAPDoUIDLookups&nbsp;--&nbsp;      Enable LDAP lookups for UIDs in directory listings
+    </DIV
+><DIV
+CLASS="REFSYNOPSISDIV"
+><A
+NAME="AEN4633"
+></A
+><H2
+>Synopsis</H2
+><P
+><B
+CLASS="COMMAND"
+>LDAPDoUIDLookups</B
+>  [        <CODE
+CLASS="OPTION"
+>on</CODE
+>
+        <CODE
+CLASS="OPTION"
+>off</CODE
+>
+      ] [        <CODE
+CLASS="OPTION"
+>"uid-base-dn"</CODE
+>
+      ] [        <CODE
+CLASS="OPTION"
+>"uid-filter-template"</CODE
+>
+      ]</P
+><P
+></P
+><DIV
+CLASS="VARIABLELIST"
+><P
+><B
+></B
+></P
+><DL
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Default</PRE
+></DT
+><DD
+><P
+>        LDAPDoUIDLookups off
+      </P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Context</PRE
+></DT
+><DD
+><P
+>        server config, &lt;VirtualHost&gt;, &lt;Global&gt;
+      </P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Module</PRE
+></DT
+><DD
+><P
+>mod_ldap
+      </P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Compatibility</PRE
+></DT
+><DD
+><P
+>        mod_ldap v2.0 and later
+      </P
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN4665"
+></A
+><H2
+>Description</H2
+><P
+>	This configuration directive activates LDAP UID-to-name
+	lookups in directory listings. The second argument to this directive
+	is the LDAP base DN to use for UID-to-name lookups. The third
+	argument is a template to be used for the search filter; %v will be
+	replaced with the UID that is being looked up. By default, the
+	search filter template
+	"(&amp;(LDAPAttr_uidNumber=%v)(objectclass=posixAccount))" is used.
+	The uid for the the search filter is taken from the
+	<A
+HREF="config_ref_LDAPAttr.html"
+>LDAPAttr</A
+> directive
+	Search
+	filter templates are only supported in mod_ldap v2.7 and
+	later.
+	</P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN4669"
+></A
+><H2
+>See also</H2
+><P
+>		<A
+HREF="config_ref_LDAPAttr.html"
+>LDAPAttr</A
+>
+	</P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN4673"
+></A
+><H2
+>Examples</H2
+><P
+></P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="config_ref_LDAPDoQuotaLookups.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="configuration.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="config_ref_LDAPForceDefaultGID.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&#13;			LDAPDoQuotaLookups</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="by-name.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&#13;			LDAPForceDefaultGID</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

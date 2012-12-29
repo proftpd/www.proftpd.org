@@ -1,0 +1,246 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>&#13;UseSendfile</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Configuration Directive List"
+HREF="configuration.html"><LINK
+REL="UP"
+TITLE="List of Directives"
+HREF="by-name.html"><LINK
+REL="PREVIOUS"
+TITLE="
+UserRatio"
+HREF="config_ref_UserRatio.html"><LINK
+REL="NEXT"
+TITLE="
+UseUTF8"
+HREF="config_ref_UseUTF8.html"></HEAD
+><BODY
+CLASS="REFENTRY"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Configuration Directive List</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="config_ref_UserRatio.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="config_ref_UseUTF8.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><H1
+><A
+NAME="USESENDFILE"
+></A
+>
+UseSendfile</H1
+><DIV
+CLASS="REFNAMEDIV"
+><A
+NAME="AEN12444"
+></A
+><H2
+>Name</H2
+>UseSendfile&nbsp;--&nbsp;Toggles use of sendfile() functionality</DIV
+><DIV
+CLASS="REFSYNOPSISDIV"
+><A
+NAME="AEN12447"
+></A
+><H2
+>Synopsis</H2
+><P
+><B
+CLASS="COMMAND"
+>UseSendfile</B
+>  [  <CODE
+CLASS="OPTION"
+>on|off</CODE
+>]</P
+><P
+></P
+><DIV
+CLASS="VARIABLELIST"
+><P
+><B
+></B
+></P
+><DL
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Default</PRE
+></DT
+><DD
+><P
+>UseSendfile on</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Context</PRE
+></DT
+><DD
+><P
+>server config, &lt;VirtualHost&gt;, &lt;Global&gt;</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Module</PRE
+></DT
+><DD
+><P
+>mod_xfer</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Compatibility</PRE
+></DT
+><DD
+><P
+>1.3.0rc1 and later</P
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN12474"
+></A
+><H2
+>Description</H2
+><P
+>The UseSendfile directive controls use of sendfile functionality, which is
+an optimization for sending files to clients.  Use of sendfile functionality
+avoids separate read and send operations, and buffer allocations.  But on some
+platforms or within some filesystems, it is better to disable this feature to
+avoid operational problems:</P
+><PRE
+CLASS="PROGRAMLISTING"
+> *  Some platforms may have broken sendfile support that the build system
+    did not detect, especially if the binaries were built on another box
+    and moved to such a machine with broken sendfile support.
+
+ * On Linux the use of sendfile triggers TCP-checksum offloading bugs on
+   certain networking cards when using IPv6.
+
+ * With a network-mounted directories (e.g. NFS or SMB), the kernel may be
+   unable to serve the network file through its own cache.</PRE
+><P
+>Note that if sendfile support is enabled, tools like ftpwho and ftptop
+will not show the transfer rate for downloads.  These tools work by reading
+the ScoreboardFile, and the ScoreboardFile is updated periodically during
+uploads and downloads.  However, when sendfile support is used, the
+ScoreboardFile does not have a chance to be updated.  This is only true for
+downloads; the tools will continue to show the transfer rate for uploads.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="config_ref_UserRatio.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="configuration.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="config_ref_UseUTF8.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&#13;UserRatio</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="by-name.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&#13;UseUTF8</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

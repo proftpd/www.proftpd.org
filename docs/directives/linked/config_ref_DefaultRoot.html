@@ -1,0 +1,296 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>&#13;DefaultRoot</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Configuration Directive List"
+HREF="configuration.html"><LINK
+REL="UP"
+TITLE="List of Directives"
+HREF="by-name.html"><LINK
+REL="PREVIOUS"
+TITLE="
+DefaultChdir"
+HREF="config_ref_DefaultChdir.html"><LINK
+REL="NEXT"
+TITLE="
+DefaultServer"
+HREF="config_ref_DefaultServer.html"></HEAD
+><BODY
+CLASS="REFENTRY"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Configuration Directive List</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="config_ref_DefaultChdir.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="config_ref_DefaultServer.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><H1
+><A
+NAME="DEFAULTROOT"
+></A
+>
+DefaultRoot</H1
+><DIV
+CLASS="REFNAMEDIV"
+><A
+NAME="AEN1905"
+></A
+><H2
+>Name</H2
+>DefaultRoot&nbsp;--&nbsp;Sets default chroot directory</DIV
+><DIV
+CLASS="REFSYNOPSISDIV"
+><A
+NAME="AEN1908"
+></A
+><H2
+>Synopsis</H2
+><P
+><B
+CLASS="COMMAND"
+>DefaultRoot</B
+>  [  <CODE
+CLASS="OPTION"
+>directory [group-expression]</CODE
+>]</P
+><P
+></P
+><DIV
+CLASS="VARIABLELIST"
+><P
+><B
+></B
+></P
+><DL
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Default</PRE
+></DT
+><DD
+><P
+>DefaultRoot /</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Context</PRE
+></DT
+><DD
+><P
+>server config, &lt;VirtualHost&gt;, &lt;Global&gt;</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Module</PRE
+></DT
+><DD
+><P
+>mod_auth</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Compatibility</PRE
+></DT
+><DD
+><P
+>0.99.0pl7 and later</P
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN1935"
+></A
+><H2
+>Description</H2
+><P
+>The DefaultRoot directive controls the default root directory assigned
+to a user upon login. If DefaultRoot is set to a directory other than
+&quot;/&quot;, a chroot operation is performed immediately after a client
+authenticates. This can be used to effectively isolate the client from
+a portion of the host system filespace. The specified root directory
+must begin with a / or can be the magic character '~'; meaning that the
+client is chroot jailed into their home directory.</P
+><P
+>When the specified chroot directory is a symlink this will be resolved
+to it's parent first before setting up the chroot.  This can have
+unwanted side effects.  For example if a user has write access to the
+symlink he could modify it so that it points to '/'.  Thus the chroot
+would be the root directory of the server, resulting in insufficient or no
+restrictions.</P
+><P
+>If the DefaultRoot directive specifies a directory which disallows
+access to the logged-in user's home directory, the user's current
+working directory after login is set to the DefaultRoot instead of their
+normal home directory. DefaultRoot cannot be used in &lt;Anonymous&gt;
+configuration blocks, as the &lt;Anonymous&gt; directive explicitly
+contains a root directory used for Anonymous logins.  The special
+character '~' is replaced with the authenticating user's home directory
+immediately after login. Note that the default root may be a subdirectory
+of the home directory, such as &quot;~/anon-ftp&quot;.</P
+><P
+>The optional group-expression argument can be used to restrict the
+DefaultRoot directive to a unix group, groups or subset of groups. The
+expression takes the format: [!]group-name1[,[!]group-name2[,...]]. The
+expression is parsed in a logical boolean AND fashion, such that each
+member of the expression must evaluate to logically TRUE in order for
+the DefaultRoot directive to apply. The special character '!' is used
+to negate group membership.</P
+><P
+>Care should be taken when using DefaultRoot. Chroot &quot;jails&quot;
+should not be used as methods for implementing general system security
+as there are potentially ways that a user can &quot;escape&quot; the jail.</P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN1942"
+></A
+><H2
+>See also</H2
+><P
+></P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN1945"
+></A
+><H2
+>Examples</H2
+><PRE
+CLASS="PROGRAMLISTING"
+>Example of a DefaultRoot configuration:
+
+ServerName &quot;A test ProFTPD Server&quot;
+ServerType inetd
+User ftp
+Group ftp
+#
+# This causes proftpd to perform a chroot into the authenticating user's directory 
+# immediately after login.
+# Once this happens, the user is unable to &quot;see&quot; higher level directories.
+# Because a group-expression is included, only users who are a member of
+# the group 'users' and NOT a member of 'staff' will have their default
+# root directory set to '~'.
+DefaultRoot ~ users,!staff
+... </PRE
+><P
+></P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="config_ref_DefaultChdir.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="configuration.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="config_ref_DefaultServer.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&#13;DefaultChdir</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="by-name.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&#13;DefaultServer</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

@@ -1,0 +1,381 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>&#13;SQLConnectInfo</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Configuration Directive List"
+HREF="configuration.html"><LINK
+REL="UP"
+TITLE="List of Directives"
+HREF="by-name.html"><LINK
+REL="PREVIOUS"
+TITLE="
+SQLBackend"
+HREF="config_ref_SQLBackend.html"><LINK
+REL="NEXT"
+TITLE="
+SQLDefaultGID"
+HREF="config_ref_SQLDefaultGID.html"></HEAD
+><BODY
+CLASS="REFENTRY"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Configuration Directive List</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="config_ref_SQLBackend.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="config_ref_SQLDefaultGID.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><H1
+><A
+NAME="SQLCONNECTINFO"
+></A
+>
+SQLConnectInfo</H1
+><DIV
+CLASS="REFNAMEDIV"
+><A
+NAME="AEN8660"
+></A
+><H2
+>Name</H2
+>SQLConnectInfo&nbsp;--&nbsp;Specify connection information for the backend</DIV
+><DIV
+CLASS="REFSYNOPSISDIV"
+><A
+NAME="AEN8663"
+></A
+><H2
+>Synopsis</H2
+><P
+><B
+CLASS="COMMAND"
+>SQLConnectInfo</B
+>  [  <CODE
+CLASS="OPTION"
+>connection-info</CODE
+>] [  <CODE
+CLASS="OPTION"
+>[username]</CODE
+>] [  <CODE
+CLASS="OPTION"
+>[password]</CODE
+>] [  <CODE
+CLASS="OPTION"
+>[policy]</CODE
+>]</P
+><P
+></P
+><DIV
+CLASS="VARIABLELIST"
+><P
+><B
+></B
+></P
+><DL
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Default</PRE
+></DT
+><DD
+><P
+>None</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Context</PRE
+></DT
+><DD
+><P
+>server config, &lt;Global&gt;, &lt;VirtualHost&gt;</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Module</PRE
+></DT
+><DD
+><P
+>mod_sql</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Compatibility</PRE
+></DT
+><DD
+><P
+>1.2.0 and later</P
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN8696"
+></A
+><H2
+>Description</H2
+><P
+>This directive deprecates 'MySQLInfo', 'PostgresInfo', and
+'PostgresPort'.</P
+><P
+>The SQLConnectInfo directive configures the information necessary to
+connect to the backend database. The connection-info parameter specifies
+the database, host, port, and other backend-specific information. The
+optional username and password parameters specify a username and password
+to use when connecting to the database. Both default to NULL, which the
+backend will treat in some backend-specific manner. If you specify a
+password, you <SPAN
+CLASS="bold"
+><B
+CLASS="EMPHASIS"
+>must</B
+></SPAN
+> specify a username.
+If no SQLConnectInfo directive is specified, mod_sql will disable itself.</P
+><P
+>Any given database backend has the opportunity, though not necessarily
+the responsibility, to check for syntax errors in the connection-info
+field at server startup, but you should not expect semantic errors
+(i.e., cannot connect to the database) to be caught until mod_sql 
+attempts to connect for a given host.</P
+><P
+>A given database connection is governed by a connection policy that
+specifies when a connection should be opened and when it should be
+closed. There are three options:</P
+><P
+></P
+><UL
+><LI
+STYLE="list-style-type: disc"
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="EMPHASIS"
+>PERSESSION</B
+></SPAN
+></P
+><P
+>		Open a database connection at the start of the session
+		and close the database connection at the end of the session.
+              </P
+></LI
+><LI
+STYLE="list-style-type: disc"
+><P
+>number (<SPAN
+CLASS="bold"
+><B
+CLASS="EMPHASIS"
+>TIMED</B
+></SPAN
+>)</P
+><P
+>		Timed database connections that close themselves
+		after number seconds of inactivity.
+              </P
+></LI
+></UL
+><P
+>If a connection policy is not specified, if the policy is not a number or
+is a number less than 1, or if the policy is the string "PERSESSION",
+the PERSESSION policy will be used.</P
+><P
+>If the connection policy is any number greater than 0, it specifies the
+number of seconds that a connection will be held open without activity.
+After that many seconds of database inactivity, the connection to the
+database will be closed. As soon as database activity starts again,
+the connection will be opened and the timer will restart.</P
+><P
+>The MySQL and Postgres backends' connection-info is expected to be of the form:</P
+><P
+>database[@hostname][:port]</P
+><P
+>hostname will default to a backend-specific hostname (which happens to be
+'localhost' for both the MySQL and Postgres backends), and port will default
+to a backend-specific default port (3306 for the MySQL backend, 5432 for
+the Postgres backend).</P
+><P
+>From the MySQL documentation:</P
+><P
+>the value of host may be either a hostname or an IP address. If host is
+NULL or the string "localhost", a connection to the local host is assumed.
+If the OS supports sockets (Unix) or named pipes (Windows), they are used
+instead of TCP/IP to connect to the server.</P
+><P
+>From the PostgreSQL documentation:</P
+><P
+>If [the hostname] begins with a slash, it specifies Unix-domain
+communication rather than TCP/IP communication; the value is the
+name of the directory in which the socket file is stored. The default
+is to connect to a Unix-domain socket in /tmp.</P
+><P
+>If you plan to use the TIMED connection policy, consider the effect of
+directives such as DefaultRoot on local socket communication: once a user
+has been chroot()ed, the local socket file will probably not be available
+within the chroot directory tree, and attempts to reopen communication will
+fail. One way around this may be to use hardlinks within the user's
+directory tree. PERSESSION connections are not affected by this because
+the database will be opened prior to the chroot() call, and held open
+for the life of the session. Network communications are not affected by
+this problem. For example, while localhost would not work for MySQL since
+the MySQL client library will try to use socket communications for that
+host, 127.0.0.1 will work (as long as your database is setup to accept
+these connections).</P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN8722"
+></A
+><H2
+>See also</H2
+><P
+></P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN8725"
+></A
+><H2
+>Examples</H2
+><P
+CLASS="LITERALLAYOUT"
+>&nbsp;&nbsp;#&nbsp;Connect&nbsp;to&nbsp;the&nbsp;database&nbsp;'ftpusers'&nbsp;via&nbsp;the&nbsp;default&nbsp;port&nbsp;at&nbsp;host<br>
+&nbsp;&nbsp;#&nbsp;'foo.com'.&nbsp;&nbsp;Use&nbsp;a&nbsp;NULL&nbsp;username&nbsp;and&nbsp;NULL&nbsp;password&nbsp;when&nbsp;connecting.<br>
+&nbsp;&nbsp;#&nbsp;A&nbsp;connection&nbsp;policy&nbsp;of&nbsp;PERSESSION&nbsp;is&nbsp;used.<br>
+&nbsp;&nbsp;SQLConnectInfo&nbsp;ftpusers@foo.com<br>
+<br>
+&nbsp;&nbsp;#&nbsp;Connect&nbsp;to&nbsp;the&nbsp;database&nbsp;'ftpusers'&nbsp;via&nbsp;port&nbsp;3000&nbsp;at&nbsp;host&nbsp;'localhost'.<br>
+&nbsp;&nbsp;#&nbsp;Use&nbsp;the&nbsp;username&nbsp;'admin'&nbsp;and&nbsp;a&nbsp;NULL&nbsp;password&nbsp;when&nbsp;connecting.<br>
+&nbsp;&nbsp;#&nbsp;A&nbsp;connection&nbsp;policy&nbsp;of&nbsp;PERSESSION&nbsp;is&nbsp;used.<br>
+&nbsp;&nbsp;SQLConnectInfo&nbsp;ftpusers:3000&nbsp;admin<br>
+<br>
+&nbsp;&nbsp;#&nbsp;Connect&nbsp;to&nbsp;the&nbsp;database&nbsp;'ftpusers'&nbsp;via&nbsp;port&nbsp;3000&nbsp;at&nbsp;host&nbsp;'foo.com'.<br>
+&nbsp;&nbsp;#&nbsp;Use&nbsp;the&nbsp;username&nbsp;'admin'&nbsp;and&nbsp;password&nbsp;'mypassword'&nbsp;when&nbsp;connecting.<br>
+&nbsp;&nbsp;#&nbsp;A&nbsp;connection&nbsp;policy&nbsp;of&nbsp;PERSESSION&nbsp;is&nbsp;used.<br>
+&nbsp;&nbsp;SQLConnectInfo&nbsp;ftpusers@foo.com:3000&nbsp;admin&nbsp;mypassword<br>
+<br>
+&nbsp;&nbsp;#&nbsp;Connect&nbsp;to&nbsp;the&nbsp;database&nbsp;'ftpusers'&nbsp;via&nbsp;port&nbsp;3000&nbsp;at&nbsp;host&nbsp;'foo.com'.<br>
+&nbsp;&nbsp;#&nbsp;Use&nbsp;a&nbsp;username&nbsp;of&nbsp;'admin'&nbsp;and&nbsp;a&nbsp;password&nbsp;of&nbsp;'mypassword'&nbsp;when<br>
+&nbsp;&nbsp;#&nbsp;connecting.&nbsp;&nbsp;A&nbsp;30&nbsp;second&nbsp;timer&nbsp;of&nbsp;connection&nbsp;inactivity&nbsp;is&nbsp;activated.<br>
+&nbsp;&nbsp;SQLConnectInfo&nbsp;ftpusers@foo.com:3000&nbsp;admin&nbsp;mypassword&nbsp;30</P
+><P
+>Backends may require different information in the connection-info field;
+check your backend module for more detailed information.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="config_ref_SQLBackend.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="configuration.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="config_ref_SQLDefaultGID.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&#13;SQLBackend</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="by-name.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&#13;SQLDefaultGID</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

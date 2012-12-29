@@ -1,0 +1,452 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>    
+    SQLAuthenticate
+  </TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Configuration Directive List"
+HREF="configuration.html"><LINK
+REL="UP"
+TITLE="List of Directives"
+HREF="by-name.html"><LINK
+REL="PREVIOUS"
+TITLE="
+SocketOptions"
+HREF="config_ref_SocketOptions.html"><LINK
+REL="NEXT"
+TITLE="
+SQLAuthTypes"
+HREF="config_ref_SQLAuthTypes.html"></HEAD
+><BODY
+CLASS="REFENTRY"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Configuration Directive List</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="config_ref_SocketOptions.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="config_ref_SQLAuthTypes.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><H1
+><A
+NAME="SQLAUTHENTICATE"
+></A
+>
+    SQLAuthenticate</H1
+><DIV
+CLASS="REFNAMEDIV"
+><A
+NAME="AEN8431"
+></A
+><H2
+>Name</H2
+>SQLAuthenticate&nbsp;--&nbsp;    Specify authentication methods and what to authenticate 
+  </DIV
+><DIV
+CLASS="REFSYNOPSISDIV"
+><A
+NAME="AEN8434"
+></A
+><H2
+>Synopsis</H2
+><P
+><B
+CLASS="COMMAND"
+>SQLAuthenticate</B
+>  {on | off}</P
+><P
+>&nbsp;&nbsp;or</P
+><P
+><B
+CLASS="COMMAND"
+>SQLAuthenticate</B
+>  [      users
+    ] [      groups
+    ] [      userset [fast]
+    ] [      groupset [fast]
+    ]</P
+><P
+></P
+><DIV
+CLASS="VARIABLELIST"
+><P
+><B
+></B
+></P
+><DL
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Default</PRE
+></DT
+><DD
+><P
+>          SQLAuthenticate <SAMP
+CLASS="COMPUTEROUTPUT"
+>on</SAMP
+> 
+        </P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Context</PRE
+></DT
+><DD
+><P
+>          server config, &lt;Global&gt;, &lt;VirtualHost&gt;
+        </P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Module</PRE
+></DT
+><DD
+><P
+>          mod_sql
+        </P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Compatibility</PRE
+></DT
+><DD
+><P
+>          1.2.5rc1 and later
+        </P
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN8472"
+></A
+><H2
+>Description</H2
+><P
+>The SQLAuthenticate directive configures mod_sql's authentication behavior,
+controlling whether to provide user and/or group information during
+authentication, and how that provisioning is performed. The parameters may
+appear in any order.</P
+><P
+>The available parameter values are:</P
+><P
+></P
+><UL
+><LI
+STYLE="list-style-type: disc"
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="EMPHASIS"
+>on</B
+></SPAN
+></P
+><P
+>		Shorthand for SQLAuthenticate users groups userset groupset.
+	      </P
+></LI
+><LI
+STYLE="list-style-type: disc"
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="EMPHASIS"
+>off</B
+></SPAN
+></P
+><P
+>		Disables all mod_sql authentication functions.
+	      </P
+></LI
+><LI
+STYLE="list-style-type: disc"
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="EMPHASIS"
+>users</B
+></SPAN
+></P
+><P
+>		If present, mod_sql will do user lookups. If not present,
+		mod_sql will do no user lookups at all, including the
+		{set|get|end}pwent() calls (see below).
+	      </P
+></LI
+><LI
+STYLE="list-style-type: disc"
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="EMPHASIS"
+>groups</B
+></SPAN
+></P
+><P
+>		If present, mod_sql will do group lookups. If not present,
+		mod_sql will do no group lookups at all, including the
+		{set|get|end}grent() calls (see below).
+	      </P
+></LI
+><LI
+STYLE="list-style-type: disc"
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="EMPHASIS"
+>userset[fast]</B
+></SPAN
+></P
+><P
+>		If present, mod_sql will process the potentially expensive
+		{set|get|end}pwent() calls. If not present, mod_sql will
+		not process these calls. Adding the suffix "fast" tells
+		mod_sql to process the users as a single large query, rather
+		than making a query per user. This may significantly reduce
+		the number of queries against the database at the expense
+		of increased memory use. This parameter will have no effect
+		if "users" is not specified.
+	      </P
+></LI
+><LI
+STYLE="list-style-type: disc"
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="EMPHASIS"
+>groupset[fast]</B
+></SPAN
+></P
+><P
+>		If present, mod_sql will process the potentially expensive
+		{set|get|end}grent() calls. If not present, mod_sql will
+		not process these calls. Adding the suffix "fast" tells
+		mod_sql to process the groups as a single large query, 
+		rather than making a query per group. This may significantly
+		reduce the number of queries against the database at the
+		expense of increased memory use. This parameter will have no
+		effect if "groups" is not specified.
+	      </P
+></LI
+></UL
+><P
+>The SQLLog and SQLShowInfo directives will always be processed by mod_sql.
+The SQLAuthenticate directive only affects the user and group
+lookup/authentication portions of the module.</P
+><P
+>Turning off (i.e. by not including) the userset or groupset parameters
+affects the functionality of mod_sql. Not allowing these lookups may remove
+the ability to control access or control functionality by group membership,
+depending on your other authentication handlers and the data available to
+them. At the same time, choosing not to do these lookups may dramatically
+speed login for many large sites.</P
+><P
+>The "fast" suffix is not appropriate for every site. Normally, mod_sql will
+retrieve a list of users and groups, and get information from the database
+on a per-user or per-group basis. This is query intensive: it requires
+(nn + 1) queries, where n is the number of users or groups to lookup. By 
+choosing "fast" lookups, mod_sql will make a single SELECT query to get
+information from the database.</P
+><P
+>In exchange for the radical reduction in the number of queries, the single
+query will increase the memory consumption of the process; all group or user
+information will be read at once rather than in discrete chunks.</P
+></DIV
+><DIV
+CLASS="REFSECT2"
+><A
+NAME="AEN8505"
+></A
+><H3
+>Group Table Structure</H3
+><P
+>Normally <SPAN
+CLASS="bold"
+><B
+CLASS="EMPHASIS"
+>mod_sql</B
+></SPAN
+> allows multiple group
+members per row, and multiple rows per group. If you use the "fast"
+option for groupset, you <SPAN
+CLASS="bold"
+><B
+CLASS="EMPHASIS"
+>must</B
+></SPAN
+> use only one
+row per group. For example, normally mod_sql treats the following three
+tables in exactly the same way:</P
+><P
+CLASS="LITERALLAYOUT"
+>|--------------------------------------------------|<br>
+|&nbsp;&nbsp;GROUPNAME&nbsp;&nbsp;|&nbsp;&nbsp;GID&nbsp;&nbsp;|&nbsp;&nbsp;MEMBERS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+|--------------------------------------------------|<br>
+|&nbsp;group1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;1000&nbsp;&nbsp;|&nbsp;naomi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+|&nbsp;group1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;1000&nbsp;&nbsp;|&nbsp;priscilla&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+|&nbsp;group1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;1000&nbsp;&nbsp;|&nbsp;gertrude&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+|--------------------------------------------------|<br>
+<br>
+|--------------------------------------------------|<br>
+|&nbsp;&nbsp;GROUPNAME&nbsp;&nbsp;|&nbsp;&nbsp;GID&nbsp;&nbsp;|&nbsp;&nbsp;MEMBERS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+|--------------------------------------------------|<br>
+|&nbsp;group1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;1000&nbsp;&nbsp;|&nbsp;naomi,&nbsp;priscilla&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+|&nbsp;group1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;1000&nbsp;&nbsp;|&nbsp;gertrude&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+|--------------------------------------------------|<br>
+<br>
+|--------------------------------------------------|<br>
+|&nbsp;&nbsp;GROUPNAME&nbsp;&nbsp;|&nbsp;&nbsp;GID&nbsp;&nbsp;|&nbsp;&nbsp;MEMBERS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+|--------------------------------------------------|<br>
+|&nbsp;group1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;1000&nbsp;&nbsp;|&nbsp;naomi,&nbsp;priscilla,&nbsp;gertrude&nbsp;|<br>
+|--------------------------------------------------|</P
+><P
+>If you use the "fast" option, mod_sql assumes that all entries are 
+structured like the last example.</P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN8512"
+></A
+><H2
+>See also</H2
+><P
+>      <A
+HREF="config_ref_SQLUserInfo.html"
+>SQLUserInfo</A
+> 
+      <A
+HREF="config_ref_SQLGroupInfo.html"
+>SQLGroupInfo</A
+>
+    </P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN8517"
+></A
+><H2
+>Examples</H2
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="config_ref_SocketOptions.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="configuration.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="config_ref_SQLAuthTypes.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&#13;SocketOptions</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="by-name.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&#13;SQLAuthTypes</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

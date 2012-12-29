@@ -1,0 +1,299 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>&#13;Anonymous</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Configuration Directive List"
+HREF="configuration.html"><LINK
+REL="UP"
+TITLE="List of Directives"
+HREF="by-name.html"><LINK
+REL="PREVIOUS"
+TITLE="
+AnonRequirePassword"
+HREF="config_ref_AnonRequirePassword.html"><LINK
+REL="NEXT"
+TITLE="
+AnonymousGroup"
+HREF="config_ref_AnonymousGroup.html"></HEAD
+><BODY
+CLASS="REFENTRY"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Configuration Directive List</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="config_ref_AnonRequirePassword.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="config_ref_AnonymousGroup.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><H1
+><A
+NAME="ANONYMOUS"
+></A
+>
+Anonymous</H1
+><DIV
+CLASS="REFNAMEDIV"
+><A
+NAME="AEN843"
+></A
+><H2
+>Name</H2
+>Anonymous&nbsp;--&nbsp;Define an anonymous server</DIV
+><DIV
+CLASS="REFSYNOPSISDIV"
+><A
+NAME="AEN846"
+></A
+><H2
+>Synopsis</H2
+><P
+><B
+CLASS="COMMAND"
+>Anonymous</B
+>  [  <CODE
+CLASS="OPTION"
+>root-directory</CODE
+>]</P
+><P
+></P
+><DIV
+CLASS="VARIABLELIST"
+><P
+><B
+></B
+></P
+><DL
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Default</PRE
+></DT
+><DD
+><P
+>None</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Context</PRE
+></DT
+><DD
+><P
+>server config,&lt;VirtualHost&gt;, &lt;Global&gt;</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Module</PRE
+></DT
+><DD
+><P
+>mod_core</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Compatibility</PRE
+></DT
+><DD
+><P
+>0.99.0 and later</P
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN873"
+></A
+><H2
+>Description</H2
+><P
+>The Anonymous configuration block is used to create an anonymous FTP
+login, and is terminated by a matching &lt;/Anonymous&gt; directive. The
+root-directory parameters specifies which directory the daemon will
+first chdir to, and then chroot, immediately after login. Once the chroot
+operation successfully completes, higher level directories are no longer
+accessible to the running child daemon (and thus the logged in user). By
+default, proftpd assumes an anonymous login if the remote client attempts
+to login as the currently running user; unless the current user is root,
+in which case anonymous logins are not allowed regardless of the presence
+of an &lt;Anonymous&gt; block. To force anonymous logins to be bound to
+a user other than the current user, see the User and Group directives. In
+addition, if a User or Group directive is present in an &lt;Anonymous&gt;
+block, the daemon permanently switches to the specified uid/gid before
+chroot()ing.  Normally, anonymous logins are not required to authenticate
+with a password, but are expected to enter a valid e-mail address in place
+of a normal password (which is logged). If this behavior is undesirable
+for a given &lt;Anonymous&gt; configuration block, it can be overridden
+via the AnonRequirePassword directive.</P
+><P
+>Note: Chroot()ed anonymous directories do not need to have supplemental
+system files in them, nor do they need to have any sort of specific
+directory structure. This is because proftpd is designed to acquire as
+much system information as possible before the chroot, and to leave open
+those files which are needed for normal operation and reside outside
+the new root directory.</P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN877"
+></A
+><H2
+>See also</H2
+><P
+></P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN880"
+></A
+><H2
+>Examples</H2
+><PRE
+CLASS="PROGRAMLISTING"
+>Example of a typical anonymous FTP configuration:
+
+&lt;Anonymous /home/ftp&gt;
+  # After anonymous login, daemon runs as user/group ftp.
+  User ftp
+  Group ftp
+
+  # The client login 'anonymous' is aliased to the "real" user 'ftp'.
+  UserAlias anonymous ftp
+
+  # Deny write operations to all directories, except for 'incoming' where 
+  # 'STOR' is allowed (but 'READ' operations are prohibited)
+
+  &lt;Directory *&gt;
+    &lt;Limit WRITE&gt;
+      DenyAll
+    &lt;/Limit&gt;
+  &lt;/Directory&gt;
+
+  &lt;Directory incoming&gt;
+    &lt;Limit READ &gt;
+      DenyAll
+    &lt;/Limit&gt;
+    &lt;Limit STOR&gt;
+      AllowAll
+    &lt;/Limit&gt;
+  &lt;/Directory&gt;
+
+&lt;/Anonymous&gt;</PRE
+><P
+></P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="config_ref_AnonRequirePassword.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="configuration.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="config_ref_AnonymousGroup.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&#13;AnonRequirePassword</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="by-name.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&#13;AnonymousGroup</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

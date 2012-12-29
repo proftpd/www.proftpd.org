@@ -1,0 +1,281 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>&#13;SocketBindTight</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Configuration Directive List"
+HREF="configuration.html"><LINK
+REL="UP"
+TITLE="List of Directives"
+HREF="by-name.html"><LINK
+REL="PREVIOUS"
+TITLE="
+ShowSymlinks"
+HREF="config_ref_ShowSymlinks.html"><LINK
+REL="NEXT"
+TITLE="
+SocketOptions"
+HREF="config_ref_SocketOptions.html"></HEAD
+><BODY
+CLASS="REFENTRY"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Configuration Directive List</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="config_ref_ShowSymlinks.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="config_ref_SocketOptions.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><H1
+><A
+NAME="SOCKETBINDTIGHT"
+></A
+>
+SocketBindTight</H1
+><DIV
+CLASS="REFNAMEDIV"
+><A
+NAME="AEN8342"
+></A
+><H2
+>Name</H2
+>SocketBindTight&nbsp;--&nbsp;Controls how TCP/IP sockets are created</DIV
+><DIV
+CLASS="REFSYNOPSISDIV"
+><A
+NAME="AEN8345"
+></A
+><H2
+>Synopsis</H2
+><P
+><B
+CLASS="COMMAND"
+>SocketBindTight</B
+>  [  <CODE
+CLASS="OPTION"
+>SocketBindTight on|off</CODE
+>]</P
+><P
+></P
+><DIV
+CLASS="VARIABLELIST"
+><P
+><B
+></B
+></P
+><DL
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Default</PRE
+></DT
+><DD
+><P
+>SocketBindTight off</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Context</PRE
+></DT
+><DD
+><P
+>server config</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Module</PRE
+></DT
+><DD
+><P
+>mod_core</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Compatibility</PRE
+></DT
+><DD
+><P
+>0.99.0pl6 and later</P
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN8372"
+></A
+><H2
+>Description</H2
+><P
+>The SocketBindTight directive controls how proftpd creates and binds its 
+initial tcp listen sockets in standalone mode (see 
+ServerType). The directive has no effect upon servers 
+running in inetd mode, because listen sockets are 
+not needed or created. When SocketBindTight is set to off 
+(the default), a single listening socket is created for each port that the 
+server must listen on, regardless of the number of IP addresses being used 
+by &lt;VirtualHost&gt; configurations. This has 
+the benefit of typically requiring a relatively small number of file descriptors 
+for the master daemon process, even if a large number of virtual servers are 
+configured. If SocketBindTight is set to on, a listen 
+socket is created and bound to a specific IP address for the master server 
+and all configured virtual servers. This allows for situations where an administrator 
+may wish to have a particular port be used by both proftpd (on one IP address) 
+and another daemon (on a different IP address). The drawback is that considerably 
+more file descriptors will be required if a large number of virtual servers 
+must be supported.
+Example: Two servers have been configured (one master and one virtual), with 
+the IP addresses 10.0.0.1 and 10.0.0.2, respectively. The 10.0.0.1 server 
+runs on port 21, while 10.0.0.2 runs on port 2001.
+SocketBindTight off #default
+# proftpd creates two sockets, both bound to ALL available addresses.
+# one socket listens on port 21, the other on 2001. Because each socket is
+# bound to all available addresses, no other daemon or user process will be
+# allowed to bind to ports 21 or 2001.
+...
+SocketBindTight on
+# proftpd creates two sockets again, however one is bound to 10.0.0.1, port 
+21
+# and the other to 10.0.0.2, port 2001. Because these sockets are &quot;tightly&quot;
+# bound to IP addresses, port 21 can be reused on any address OTHER than
+# 10.0.0.1, and visa-versa with 10.0.0.2, port 2001.
+One side-effect of setting SocketBindTight to on 
+is that connections to non-bound addresses will result in a &quot;connection 
+refused&quot; message rather than the typical &quot;500 Sorry, no server available 
+to handle request on xxx.xxx.xxx.xxx.&quot;, due to the fact that no listen 
+socket has been bound to the particular address/port pair. This may or may 
+not be aesthetically desirable, depending on your circumstances.</P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN8375"
+></A
+><H2
+>See also</H2
+><P
+></P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN8378"
+></A
+><H2
+>Examples</H2
+><P
+></P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="config_ref_ShowSymlinks.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="configuration.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="config_ref_SocketOptions.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&#13;ShowSymlinks</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="by-name.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&#13;SocketOptions</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

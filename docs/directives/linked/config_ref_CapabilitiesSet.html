@@ -1,0 +1,248 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>&#13;CapabilitiesSet</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Configuration Directive List"
+HREF="configuration.html"><LINK
+REL="UP"
+TITLE="List of Directives"
+HREF="by-name.html"><LINK
+REL="PREVIOUS"
+TITLE="
+CapabilitiesEngine"
+HREF="config_ref_CapabilitiesEngine.html"><LINK
+REL="NEXT"
+TITLE="
+CDPath"
+HREF="config_ref_CDPath.html"></HEAD
+><BODY
+CLASS="REFENTRY"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Configuration Directive List</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="config_ref_CapabilitiesEngine.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="config_ref_CDPath.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><H1
+><A
+NAME="CAPABILITIESSET"
+></A
+>
+CapabilitiesSet</H1
+><DIV
+CLASS="REFNAMEDIV"
+><A
+NAME="AEN1425"
+></A
+><H2
+>Name</H2
+>CapabilitiesSet&nbsp;--&nbsp;Configure the set of Linux capabilities processed</DIV
+><DIV
+CLASS="REFSYNOPSISDIV"
+><A
+NAME="AEN1428"
+></A
+><H2
+>Synopsis</H2
+><P
+><B
+CLASS="COMMAND"
+>CapabilitiesSet</B
+>  [  <CODE
+CLASS="OPTION"
+>[+/-]capability</CODE
+>...]</P
+><P
+></P
+><DIV
+CLASS="VARIABLELIST"
+><P
+><B
+></B
+></P
+><DL
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Default</PRE
+></DT
+><DD
+><P
+>CapabilitiesSet +CAP_CHOWN</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Context</PRE
+></DT
+><DD
+><P
+>server config, &lt;VirtualHost&gt;, &lt;Global&gt;</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Module</PRE
+></DT
+><DD
+><P
+>mod_cap</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Compatibility</PRE
+></DT
+><DD
+><P
+>1.2.8rc1 and later</P
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN1455"
+></A
+><H2
+>Description</H2
+><P
+>By default, mod_cap removes all but two capabilities from the
+  session-handling process: CAP_NET_BIND_SERVICE, for binding to ports lower
+  than 1024 (required for active data transfers), and CAP_CHOWN, for
+  allowing a process to change a file's ownership to a different user. The
+  latter capability is only strictly necessary if the UserOwner
+  configuration directive is in use; if not being used, the CAP_CHOWN
+  capability is best removed. The CapabilitiesSet directive is used to
+  manipulate the set of capabilities that mod_cap grants.</P
+><P
+>To remove a capability, prefix the name with a '-'; to enable a
+  capability, use '+'. At present, this directive only supports one
+  capability: CAP_CHOWN.</P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN1459"
+></A
+><H2
+>Example</H2
+><P
+>  &lt;IfModule mod_cap.c&gt;
+    CapabilitiesEngine on
+    CapabilitiesSet -CAP_CHOWN
+  &lt;/IfModule&gt;</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="config_ref_CapabilitiesEngine.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="configuration.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="config_ref_CDPath.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&#13;CapabilitiesEngine</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="by-name.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&#13;CDPath</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

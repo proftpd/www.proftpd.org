@@ -1,0 +1,280 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>			
+			LDAPHomedirOnDemandSuffix
+		</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Configuration Directive List"
+HREF="configuration.html"><LINK
+REL="UP"
+TITLE="List of Directives"
+HREF="by-name.html"><LINK
+REL="PREVIOUS"
+TITLE="
+LDAPHomedirOnDemandPrefixNoUsername"
+HREF="config_ref_LDAPHomedirOnDemandPrefixNoUsername.html"><LINK
+REL="NEXT"
+TITLE="			
+			LDAPNegativeCache
+		"
+HREF="config_ref_LDAPNegativeCache.html"></HEAD
+><BODY
+CLASS="REFENTRY"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Configuration Directive List</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="config_ref_LDAPHomedirOnDemandPrefixNoUsername.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="config_ref_LDAPNegativeCache.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><H1
+><A
+NAME="LDAPHOMEDIRONDEMANDSUFFIX"
+></A
+>
+			LDAPHomedirOnDemandSuffix</H1
+><DIV
+CLASS="REFNAMEDIV"
+><A
+NAME="AEN5201"
+></A
+><H2
+>Name</H2
+>LDAPHomedirOnDemandSuffix&nbsp;--&nbsp;			Specify an additional directory to be created inside a user's
+			home directory on demand. [deprecated]
+		</DIV
+><DIV
+CLASS="REFSYNOPSISDIV"
+><A
+NAME="AEN5204"
+></A
+><H2
+>Synopsis</H2
+><P
+><B
+CLASS="COMMAND"
+>LDAPHomedirOnDemandSuffix</B
+>  [				<CODE
+CLASS="OPTION"
+>additional-directory1</CODE
+>
+				<CODE
+CLASS="OPTION"
+>additional-directory2</CODE
+>
+				<CODE
+CLASS="OPTION"
+>additional-directory3</CODE
+>
+			]</P
+><P
+></P
+><DIV
+CLASS="VARIABLELIST"
+><P
+><B
+></B
+></P
+><DL
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Default</PRE
+></DT
+><DD
+><P
+>				LDAPHomedirOnDemandSuffix ""
+			</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Context</PRE
+></DT
+><DD
+><P
+>				server config, &lt;VirtualHost&gt;, &lt;Global&gt;
+			</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Module</PRE
+></DT
+><DD
+><P
+>mod_ldap
+			</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Compatibility</PRE
+></DT
+><DD
+><P
+>				mod_ldap v2.6 and later.
+			</P
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN5233"
+></A
+><H2
+>Description</H2
+><P
+>		This directive is deprecated and was removed from mod_ldap v2.8.13.
+		It has no replacement option.
+		</P
+><P
+>to be created within a user's home directory when it is
+		created on demand. For example, if a user's home directory is
+		"/home/user", setting this configuration directive to "public_html"
+		will also create "/home/user/public_html" on demand. In mod_ldap
+		v2.7.6 and earlier, you must also activate LDAPHomedirOnDemand in
+		your configuration.</P
+><P
+>mod_ldap &#62;= 2.8 supports multiple suffix arguments and does
+		not require LDAPHomedirOnDemand to be enabled.</P
+><P
+>mod_ldap &#62;= 2.8.11 supports additional mode information;
+		you can add ":octal-mode" to a directory argument to have it created
+		with that mode. For example,
+		LDAPHomedirOnDemandSuffix foo:700 will create the
+		suffix directory foo with the mode 700.</P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN5239"
+></A
+><H2
+>See also</H2
+><P
+></P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN5242"
+></A
+><H2
+>Examples</H2
+><P
+></P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="config_ref_LDAPHomedirOnDemandPrefixNoUsername.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="configuration.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="config_ref_LDAPNegativeCache.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&#13;LDAPHomedirOnDemandPrefixNoUsername</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="by-name.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&#13;			LDAPNegativeCache</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

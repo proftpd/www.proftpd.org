@@ -1,0 +1,308 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>&#13;ListOptions</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Configuration Directive List"
+HREF="configuration.html"><LINK
+REL="UP"
+TITLE="List of Directives"
+HREF="by-name.html"><LINK
+REL="PREVIOUS"
+TITLE="
+Limit"
+HREF="config_ref_Limit.html"><LINK
+REL="NEXT"
+TITLE="
+LogFormat"
+HREF="config_ref_LogFormat.html"></HEAD
+><BODY
+CLASS="REFENTRY"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Configuration Directive List</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="config_ref_Limit.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="config_ref_LogFormat.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><H1
+><A
+NAME="LISTOPTIONS"
+></A
+>
+ListOptions</H1
+><DIV
+CLASS="REFNAMEDIV"
+><A
+NAME="AEN5634"
+></A
+><H2
+>Name</H2
+>ListOptions&nbsp;--&nbsp;Configure options used when listing directories</DIV
+><DIV
+CLASS="REFSYNOPSISDIV"
+><A
+NAME="AEN5637"
+></A
+><H2
+>Synopsis</H2
+><P
+><B
+CLASS="COMMAND"
+>ListOptions</B
+>  [  <CODE
+CLASS="OPTION"
+>"options string"</CODE
+>] [  <CODE
+CLASS="OPTION"
+>["strict"]</CODE
+>]</P
+><P
+></P
+><DIV
+CLASS="VARIABLELIST"
+><P
+><B
+></B
+></P
+><DL
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Default</PRE
+></DT
+><DD
+><P
+>None</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Context</PRE
+></DT
+><DD
+><P
+>server config, &lt;VirtualHost&gt;, &lt;Anonymous&gt;, &lt;Global&gt;, &lt;Directory&gt;, .ftpaccess</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Module</PRE
+></DT
+><DD
+><P
+>mod_ls</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Compatibility</PRE
+></DT
+><DD
+><P
+>1.2.8rc1 and later</P
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN5666"
+></A
+><H2
+>Description</H2
+><P
+>Normally, FTP commands involving directory listings (NLST, LIST and STAT) 
+use the arguments (options) passed by the client to determine what files are 
+displayed and the format they are displayed in.  The ListOptions directive
+can alter the behaviour of such listings by making it such that a certain
+option (or options) is always in effect, or is always disabled.</P
+><P
+>In addition to the normal dash-prefixed options that the builtin ls takes,
+the directive allows for plus-prefixed options.  The plus-prefixed options
+allow for their dash-prefixed equivalents, potentially given by a user, to
+be disabled, while still allowing other options to function normally.</P
+><PRE
+CLASS="PROGRAMLISTING"
+>      -1 List one file per line
+
+      -A List all files except "." and ".."
+    
+      -a List all files including those whose names start with "."
+    
+      -C List entries by columns
+    
+      -d List directory entries instead of directory contents
+    
+      -F Append file type indicator (one of "*", "/", "=", "@" or "|") to names
+    
+      -h Print file sizes in human-readable format (e.g. 1K, 234M, 2G)
+    
+      -L List files pointed to by symlinks
+    
+      -l Use a long listing format
+    
+      -n List numeric UIDs/GIDs instead of user/group names
+    
+      -R List subdirectories recursively
+    
+      -r Sort filenames in reverse order
+    
+      -S Sort by file size
+    
+      -t Sort by modification time </PRE
+><P
+>If the optional "strict" keyword is used, then the configured options will
+override any options given by the user (i.e. the user's options will be
+ignored). In addition to "strict" the following keywords are supported:</P
+><PRE
+CLASS="PROGRAMLISTING"
+>      maxfiles Sets a maximum limit on the number of files listed in one directory listing
+
+      maxdirs Sets a maximum limit on the number of directories listed in one directory listing
+
+      maxdepth Sets a maximum recursion depth, if the -R option is allowed </PRE
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN5673"
+></A
+><H2
+>See also</H2
+><P
+></P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN5676"
+></A
+><H2
+>Examples</H2
+><P
+>  # Force directory listings to always show dotfiles
+  ListOptions "-a"</P
+><P
+>  # To prevent anyone from doing recursive listings, but still allowing
+  # other user options, use +R to disable any -R option given by users
+  ListOptions "+R"</P
+><P
+>  # To allow only the basic listing, no options, always
+  ListOptions "" strict</P
+><P
+>	#limit maximum files given back to 2000 and recurse in to a max
+	#depth of 3 directories
+	ListOptions -a maxfiles 2000 maxdepth 3</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="config_ref_Limit.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="configuration.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="config_ref_LogFormat.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&#13;Limit</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="by-name.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&#13;LogFormat</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

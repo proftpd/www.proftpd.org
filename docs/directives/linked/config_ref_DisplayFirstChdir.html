@@ -1,0 +1,333 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>&#13;DisplayFirstChdir</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Configuration Directive List"
+HREF="configuration.html"><LINK
+REL="UP"
+TITLE="List of Directives"
+HREF="by-name.html"><LINK
+REL="PREVIOUS"
+TITLE="
+DisplayFileTransfer"
+HREF="config_ref_DisplayFileTransfer.html"><LINK
+REL="NEXT"
+TITLE="
+DisplayGoAway"
+HREF="config_ref_DisplayGoAway.html"></HEAD
+><BODY
+CLASS="REFENTRY"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Configuration Directive List</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="config_ref_DisplayFileTransfer.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="config_ref_DisplayGoAway.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><H1
+><A
+NAME="DISPLAYFIRSTCHDIR"
+></A
+>
+DisplayFirstChdir</H1
+><DIV
+CLASS="REFNAMEDIV"
+><A
+NAME="AEN2948"
+></A
+><H2
+>Name</H2
+>DisplayFirstChdir&nbsp;--&nbsp;Set the file to display when first entering a directory [deprecated]</DIV
+><DIV
+CLASS="REFSYNOPSISDIV"
+><A
+NAME="AEN2951"
+></A
+><H2
+>Synopsis</H2
+><P
+><B
+CLASS="COMMAND"
+>DisplayFirstChdir</B
+>  [  <CODE
+CLASS="OPTION"
+>DisplayFirstChdir filename</CODE
+>]</P
+><P
+></P
+><DIV
+CLASS="VARIABLELIST"
+><P
+><B
+></B
+></P
+><DL
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Default</PRE
+></DT
+><DD
+><P
+>None</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Context</PRE
+></DT
+><DD
+><P
+>server config, &lt;VirtualHost&gt;, &lt;Anonymous&gt;, &lt;Directory&gt;, &lt;Global&gt;</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Module</PRE
+></DT
+><DD
+><P
+>mod_core</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Compatibility</PRE
+></DT
+><DD
+><P
+>0.99.0 and later, magic cookies only in 0.99.0pl10 and later up to 1.3.1rc1</P
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN2978"
+></A
+><H2
+>Description</H2
+><P
+>This directive has been deprecated with ProFTPD 1.3.1rc1.
+Please use <A
+HREF="config_ref_DisplayChdir.html"
+>DisplayChdir</A
+> instead.</P
+><P
+>The DisplayFirstChdir directive configures an ASCII text filename which will
+be displayed to the user the first time they change into a directory (via
+CWD)  per a given session. The file will also be displayed if proftpd detects
+that its last modification time has changed since the previous CWD into a
+given directory. If the filename is relative, it is looked for in the new
+directory that the user has changed into. Note that for anonymous ftp logins
+(see &lt;Anonymous&gt;), the file must reside inside the chroot()ed file
+system space. If the file cannot be found or accessed, no error occurs and
+nothing is logged or displayed to the client.</P
+><P
+>DisplayFirstChdir, DisplayConnect, DisplayLogin and DisplayQuit support the
+following &quot;magic cookies&quot; (only in 0.99.0pl10 and later), which are
+replaced with their respective strings before being displayed to the user.</P
+><PRE
+CLASS="PROGRAMLISTING"
+>%C	Current working directory
+
+%E	Server admin's e-mail address
+
+%F	Available space on file system, in bytes
+
+%f      Available space on file system, with units
+
+%i      The number of files uploaded (input) in this session
+
+%K	Total number of bytes transferred
+
+%k	Total number of bytes transferred, in units
+
+%L	Local host name
+
+%M	Max number of authenticated clients
+
+%N	Current number of authenticated clients
+
+%o      The number of files downloaded (output) in this session
+
+%R	Remote host name
+
+%T	Current Time
+
+%t      The number of files transfered (uploaded and downloaded) in this session
+
+%U	Username originally used in login
+
+%u	Username reported by ident protocol
+
+%V	Name of virtual host (if any)
+
+%x	The name of the user's class
+
+%y	Current number of connections from the user's class
+
+%z	Max number of connections from the user's class
+
+%{total_bytes_in} The number of bytes uploaded (input) in this session
+
+%{total_bytes_out} The number of bytes downloaded (output) in this session
+
+%{total_bytes_xfer} The number of bytes transferred (uploaded and downloaded) in this session
+
+%(total_files_in} The number of files uploaded (input) in this session
+
+%(total_files_out} The number of files downloaded (output) in this session
+
+%(total_files_xfer} The number of files transferred (uploaded and downloaded) in this session&#13;</PRE
+><P
+>NOTE: not all of these may have a rational value, depending on the context in
+which they're used (e.g., %u if ident lookups are off).</P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN2986"
+></A
+><H2
+>See also</H2
+><P
+><A
+HREF="config_ref_DisplayChdir.html"
+>DisplayChdir</A
+>
+<A
+HREF="config_ref_DisplayConnect.html"
+>DisplayConnect</A
+>
+<A
+HREF="config_ref_DisplayLogin.html"
+>DisplayLogin</A
+>
+<A
+HREF="config_ref_DisplayQuit.html"
+>DisplayQuit</A
+></P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN2993"
+></A
+><H2
+>Examples</H2
+><P
+></P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="config_ref_DisplayFileTransfer.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="configuration.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="config_ref_DisplayGoAway.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&#13;DisplayFileTransfer</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="by-name.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&#13;DisplayGoAway</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

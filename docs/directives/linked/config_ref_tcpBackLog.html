@@ -1,0 +1,267 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>&#13;tcpBackLog</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Configuration Directive List"
+HREF="configuration.html"><LINK
+REL="UP"
+TITLE="List of Directives"
+HREF="by-name.html"><LINK
+REL="PREVIOUS"
+TITLE="
+TCPAccessSyslogLevels"
+HREF="config_ref_TCPAccessSyslogLevels.html"><LINK
+REL="NEXT"
+TITLE="
+TCPGroupAccessFiles"
+HREF="config_ref_TCPGroupAccessFiles.html"></HEAD
+><BODY
+CLASS="REFENTRY"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Configuration Directive List</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="config_ref_TCPAccessSyslogLevels.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="config_ref_TCPGroupAccessFiles.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><H1
+><A
+NAME="TCPBACKLOG"
+></A
+>
+tcpBackLog</H1
+><DIV
+CLASS="REFNAMEDIV"
+><A
+NAME="AEN10031"
+></A
+><H2
+>Name</H2
+>tcpBackLog&nbsp;--&nbsp;Control the tcp backlog in standalone mode</DIV
+><DIV
+CLASS="REFSYNOPSISDIV"
+><A
+NAME="AEN10034"
+></A
+><H2
+>Synopsis</H2
+><P
+><B
+CLASS="COMMAND"
+>tcpBackLog</B
+>  [  <CODE
+CLASS="OPTION"
+>tcpBackLog backlog-size</CODE
+>]</P
+><P
+></P
+><DIV
+CLASS="VARIABLELIST"
+><P
+><B
+></B
+></P
+><DL
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Default</PRE
+></DT
+><DD
+><P
+>tcpBackLog 5</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Context</PRE
+></DT
+><DD
+><P
+>server config</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Module</PRE
+></DT
+><DD
+><P
+>mod_core</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Compatibility</PRE
+></DT
+><DD
+><P
+>0.99.0 and later</P
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN10061"
+></A
+><H2
+>Description</H2
+><P
+>The tcpBackLog directive controls the tcp &quot;backlog queue&quot; when 
+listening for connections in standalone mode (see 
+ServerType). It has no affect upon 
+servers in inetd mode. When a tcp connection is 
+established by the tcp/ip stack inside the kernel, there is a short period 
+of time between the actual establishment of the connection and the acceptance 
+of the connection by a user-space program. The duration of this latency period 
+is widely variable, and can depend upon several factors (hardware, system 
+load, etc). During this period tcp connections cannot be accepted, as the 
+port that was previously &quot;listening&quot; has become filled with the 
+new connection. Under heavy connection load this can result in occasional 
+(or even frequent!) &quot;connection refused&quot; messages returned to the 
+incoming client, even when there is a service available to handle requests. 
+To eliminate this problem, most modern tcp/ip stacks implement a &quot;backlog 
+queue&quot; which is simply a pre-allocation of resources necessary to handle 
+backlog-size connections during the latency period. 
+The larger the backlog queue, the more connections can be established in a 
+very short time period. The trade-off, of course, is kernel memory and/or 
+other kernel resources.
+Generally it is not necessary to use a tcpBackLog directive, unless you intend 
+to service a large number of virtual hosts (see &lt;VirtualHost&gt;), 
+or have a consistently heavy system load. If you begin to notice or hear of 
+&quot;connection refused&quot; messages from remote clients, try setting a 
+slightly higher value to this directive.</P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN10064"
+></A
+><H2
+>See also</H2
+><P
+></P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN10067"
+></A
+><H2
+>Examples</H2
+><P
+></P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="config_ref_TCPAccessSyslogLevels.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="configuration.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="config_ref_TCPGroupAccessFiles.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&#13;TCPAccessSyslogLevels</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="by-name.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&#13;TCPGroupAccessFiles</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

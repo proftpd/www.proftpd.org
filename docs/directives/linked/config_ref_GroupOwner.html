@@ -1,0 +1,257 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>&#13;GroupOwner</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Configuration Directive List"
+HREF="configuration.html"><LINK
+REL="UP"
+TITLE="List of Directives"
+HREF="by-name.html"><LINK
+REL="PREVIOUS"
+TITLE="
+Group"
+HREF="config_ref_Group.html"><LINK
+REL="NEXT"
+TITLE="
+GroupPassword"
+HREF="config_ref_GroupPassword.html"></HEAD
+><BODY
+CLASS="REFENTRY"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Configuration Directive List</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="config_ref_Group.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="config_ref_GroupPassword.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><H1
+><A
+NAME="GROUPOWNER"
+></A
+>
+GroupOwner</H1
+><DIV
+CLASS="REFNAMEDIV"
+><A
+NAME="AEN3391"
+></A
+><H2
+>Name</H2
+>GroupOwner&nbsp;--&nbsp;Change default group for new files and directories</DIV
+><DIV
+CLASS="REFSYNOPSISDIV"
+><A
+NAME="AEN3394"
+></A
+><H2
+>Synopsis</H2
+><P
+><B
+CLASS="COMMAND"
+>GroupOwner</B
+>  [  <CODE
+CLASS="OPTION"
+>GroupOwner groupname</CODE
+>]</P
+><P
+></P
+><DIV
+CLASS="VARIABLELIST"
+><P
+><B
+></B
+></P
+><DL
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Default</PRE
+></DT
+><DD
+><P
+>None</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Context</PRE
+></DT
+><DD
+><P
+>&lt;Anonymous&gt;, &lt;Directory&gt;, .ftpaccess</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Module</PRE
+></DT
+><DD
+><P
+>mod_core</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Compatibility</PRE
+></DT
+><DD
+><P
+>0.99.0 and later</P
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN3421"
+></A
+><H2
+>Description</H2
+><P
+>The GroupOwner directive configures which group all newly created directories 
+and files will be owned by, within the context that GroupOwner is applied to. 
+The group ID of groupname cannot be 0.
+Note that GroupOwner cannot be used to override the host OS/file system user/group 
+paradigm. If the current user is not a member of the specified group, new files 
+and directories will not be able to be chown()ed to the GroupOwner group. If 
+this happens, file STOR (send file from client to server) and MKD/XMKD (mkdir) operations 
+will succeed normally, however the new directory entries will be owned by the 
+current user's default group (a warning message is also logged) instead of by 
+the desired group.  If you also use UserOwner
+in the same context, this restriction is lifted.</P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN3424"
+></A
+><H2
+>See also</H2
+><P
+><A
+HREF="config_ref_UserOwner.html"
+>UserOwner</A
+></P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN3428"
+></A
+><H2
+>Examples</H2
+><P
+></P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="config_ref_Group.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="configuration.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="config_ref_GroupPassword.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&#13;Group</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="by-name.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&#13;GroupPassword</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

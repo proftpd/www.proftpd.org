@@ -1,0 +1,281 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>&#13;Allow</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Configuration Directive List"
+HREF="configuration.html"><LINK
+REL="UP"
+TITLE="List of Directives"
+HREF="by-name.html"><LINK
+REL="PREVIOUS"
+TITLE="
+AccessGrantMsg"
+HREF="config_ref_AccessGrantMsg.html"><LINK
+REL="NEXT"
+TITLE="
+AllowAll"
+HREF="config_ref_AllowAll.html"></HEAD
+><BODY
+CLASS="REFENTRY"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Configuration Directive List</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="config_ref_AccessGrantMsg.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="config_ref_AllowAll.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><H1
+><A
+NAME="ALLOW"
+></A
+>
+Allow</H1
+><DIV
+CLASS="REFNAMEDIV"
+><A
+NAME="AEN108"
+></A
+><H2
+>Name</H2
+>Allow&nbsp;--&nbsp;Access control directive</DIV
+><DIV
+CLASS="REFSYNOPSISDIV"
+><A
+NAME="AEN111"
+></A
+><H2
+>Synopsis</H2
+><P
+><B
+CLASS="COMMAND"
+>Allow</B
+>  [  <CODE
+CLASS="OPTION"
+>[&quot;from&quot;] &quot;all&quot;|&quot;none&quot;|host|network[,host|network[,...]]</CODE
+>]</P
+><P
+></P
+><DIV
+CLASS="VARIABLELIST"
+><P
+><B
+></B
+></P
+><DL
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Default</PRE
+></DT
+><DD
+><P
+>Allow from all</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Context</PRE
+></DT
+><DD
+><P
+>&lt;Limit&gt;</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Module</PRE
+></DT
+><DD
+><P
+>mod_core</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Compatibility</PRE
+></DT
+><DD
+><P
+>0.99.0pl6 and later</P
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN138"
+></A
+><H2
+>Description</H2
+><P
+>The Allow directive is used inside a &lt;Limit&gt; context to explicitly
+specify which hosts and/or networks have access to the commands or
+operations being limited. Allow is typically used in conjunction
+with Order and Deny in order to create sophisticated (or perhaps
+not-so-sophisticated) access control rules. Allow takes an optional
+first argument; the keyword from. Using from is purely cosmetic. The
+remaining arguments are expected to be a list of hosts and networks which
+will be explicitly granted access. The magic keyword all can be used to
+indicate that all hosts will explicitly be granted access (analogous to
+the AllowAll directive, except with a lower priority). Additionally, the
+magic keyword none can be used to indicate that no hosts or networks
+will be explicitly granted access (although this does not prevent
+them from implicitly being granted access). If all or none is used,
+no other hosts or networks can be supplied.  Host and network addresses
+can be specified by name or numeric address. For security reasons, it is
+recommended that all address information be supplied numerically. Relying
+solely on named addresses causes security to depend a great deal upon
+DNS servers which may themselves be vulnerable to attack or spoofing.
+Numeric addresses which specify an entire network should end in a
+trailing period (i.e. 10.0.0. for the entire 10.0.0 subnet). Named
+addresses which specify an entire network should begin with a leading
+period (i.e. .proftpd.net for the entire proftpd.net domain).</P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN141"
+></A
+><H2
+>See also</H2
+><P
+><A
+HREF="config_ref_Allow.html"
+>Allow</A
+>
+<A
+HREF="config_ref_Order.html"
+>Order</A
+>
+<A
+HREF="config_ref_Limit.html"
+>Limit</A
+></P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN147"
+></A
+><H2
+>Examples</H2
+><PRE
+CLASS="PROGRAMLISTING"
+>&lt;Limit LOGIN&gt;
+Order allow,deny
+Allow from 128.44.26.,128.44.26.,myhost.mydomain.edu,.trusted-domain.org
+Deny from all
+&lt;/Limit&gt;</PRE
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="config_ref_AccessGrantMsg.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="configuration.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="config_ref_AllowAll.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&#13;AccessGrantMsg</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="by-name.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&#13;AllowAll</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

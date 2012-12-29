@@ -1,0 +1,282 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>&#13;TCPAccessFiles</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Configuration Directive List"
+HREF="configuration.html"><LINK
+REL="UP"
+TITLE="List of Directives"
+HREF="by-name.html"><LINK
+REL="PREVIOUS"
+TITLE="
+SystemLog"
+HREF="config_ref_SystemLog.html"><LINK
+REL="NEXT"
+TITLE="
+TCPAccessSyslogLevels"
+HREF="config_ref_TCPAccessSyslogLevels.html"></HEAD
+><BODY
+CLASS="REFENTRY"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Configuration Directive List</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="config_ref_SystemLog.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="config_ref_TCPAccessSyslogLevels.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><H1
+><A
+NAME="TCPACCESSFILES"
+></A
+>
+TCPAccessFiles</H1
+><DIV
+CLASS="REFNAMEDIV"
+><A
+NAME="AEN9930"
+></A
+><H2
+>Name</H2
+>TCPAccessFiles&nbsp;--&nbsp;Sets the access files to use</DIV
+><DIV
+CLASS="REFSYNOPSISDIV"
+><A
+NAME="AEN9933"
+></A
+><H2
+>Synopsis</H2
+><P
+><B
+CLASS="COMMAND"
+>TCPAccessFiles</B
+>  [  <CODE
+CLASS="OPTION"
+>allow-filename deny-filename</CODE
+>]</P
+><P
+></P
+><DIV
+CLASS="VARIABLELIST"
+><P
+><B
+></B
+></P
+><DL
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Default</PRE
+></DT
+><DD
+><P
+>none</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Context</PRE
+></DT
+><DD
+><P
+>server config, &lt;VirtualHost&gt;, &lt;Global&gt;, &lt;Anonymous&gt;</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Module</PRE
+></DT
+><DD
+><P
+>mod_wrap</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Compatibility</PRE
+></DT
+><DD
+><P
+>1.2.1 and later</P
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN9960"
+></A
+><H2
+>Description</H2
+><P
+>TCPAccessFiles specifies two files, an allow and a deny file, each
+of which contain the IP addresses, networks or name-based masks to be
+allowed or denied connections to the server. The files have the same
+format as the standard tcpwrappers hosts.allow/deny files.</P
+><P
+>Both file names are required. Also, the paths to both files must
+be the full path, with two exceptions: if the path starts with ~/, the
+check of that path will be delayed until a user requests a connection,
+at which time the path will be resolved to that user's home directory;
+or if the path starts with ~user/, where user is some system user. In
+this latter case, mod_wrap will attempt to resolve and verify the given
+user's home directory on start-up.</P
+><P
+>The service name for which mod_wrap will look in the indicated
+access files is proftpd by default; this can be configured via the
+TCPServiceName directive.  There is a built-in precedence to the
+TCPAccessFiles, TCPGroupAccessFiles, and TCPUserAccessFiles directives,
+if all are used. mod_wrap will look for applicable TCPUserAccessFiles
+for the connecting user first. If no applicable TCPUserAccessFiles is
+found, mod_wrap will search for TCPGroupAccessFiles which pertain to
+the connecting user.  If not found, mod_wrap will then look for the
+server-wide TCPAccessFiles directive. This allows for access control to
+be set on a per-server basis, and allow for per-user or per-group access
+control to be handled without interfering with the server access rules.</P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN9965"
+></A
+><H2
+>See also</H2
+><P
+><A
+HREF="config_ref_TCPGroupAccessFiles.html"
+>TCPGroupAccessFiles</A
+>,
+<A
+HREF="config_ref_TCPServiceName.html"
+>TCPServiceName</A
+>,
+<A
+HREF="config_ref_TCPUserAccessFiles.html"
+>TCPUserAccessFiles</A
+></P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN9971"
+></A
+><H2
+>Examples</H2
+><P
+># server-wide access files
+TCPAccessFiles /etc/ftpd.allow /etc/ftpd.deny
+
+# per-user access files, which are to be found in the user's home directory
+TCPAccessFiles ~/my.allow ~/my.deny</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="config_ref_SystemLog.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="configuration.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="config_ref_TCPAccessSyslogLevels.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&#13;SystemLog</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="by-name.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&#13;TCPAccessSyslogLevels</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

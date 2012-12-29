@@ -1,0 +1,282 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>&#13;TLSRequired</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Configuration Directive List"
+HREF="configuration.html"><LINK
+REL="UP"
+TITLE="List of Directives"
+HREF="by-name.html"><LINK
+REL="PREVIOUS"
+TITLE="
+TLSRenegotiate"
+HREF="config_ref_TLSRenegotiate.html"><LINK
+REL="NEXT"
+TITLE="
+TLSRSACertificateFile"
+HREF="config_ref_TLSRSACertificateFile.html"></HEAD
+><BODY
+CLASS="REFENTRY"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Configuration Directive List</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="config_ref_TLSRenegotiate.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="config_ref_TLSRSACertificateFile.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><H1
+><A
+NAME="TLSREQUIRED"
+></A
+>
+TLSRequired</H1
+><DIV
+CLASS="REFNAMEDIV"
+><A
+NAME="AEN11531"
+></A
+><H2
+>Name</H2
+>TLSRequired&nbsp;--&nbsp;Require SSL/TLS on the control and/or data channel</DIV
+><DIV
+CLASS="REFSYNOPSISDIV"
+><A
+NAME="AEN11534"
+></A
+><H2
+>Synopsis</H2
+><P
+><B
+CLASS="COMMAND"
+>TLSRequired</B
+>  [  <CODE
+CLASS="OPTION"
+>on | off | ctrl | data | auth | auth+data</CODE
+>]</P
+><P
+></P
+><DIV
+CLASS="VARIABLELIST"
+><P
+><B
+></B
+></P
+><DL
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Default</PRE
+></DT
+><DD
+><P
+>off</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Context</PRE
+></DT
+><DD
+><P
+>server config, &lt;Global&gt;, &lt;VirtualHost&gt;</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Module</PRE
+></DT
+><DD
+><P
+>mod_tls</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Compatibility</PRE
+></DT
+><DD
+><P
+>1.2.7rc1 and later</P
+><P
+></P
+><P
+>1.3.1rc1 and later provide the auth and auth+data options
+ </P
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN11563"
+></A
+><H2
+>Description</H2
+><P
+>The TLSRequired directive is used to define a basic security policy, one that
+dictates whether the control channel, or data channel, or both, of an FTP
+session must occur over SSL/TLS.</P
+><P
+>The &quot;on&quot; parameter enables SSL/TLS requirements on both control
+and data channels; &quot;off&quot; disables the requirements on both channels.
+Use &quot;ctrl&quot; and &quot;data&quot; to require SSL/TLS on either
+channel individually. </P
+><P
+>The &quot;auth&quot; parameter requires that SSL/TLS be used on the control
+channel, but only for authentication. To use this setting and require SSL/TLS
+for data transfers, use the &quot;auth+data&quot; parameter.</P
+><P
+>This &quot;auth+data&quot; parameter allows a very specific security policy:
+authentication via the USER/PASS commands must be protected via SSL/TLS, as
+must the data channel, but after authenticating, the client can request that
+protection be removed from the control channel. This policy allows clients to
+use the CCC (Clear Command Channel) command, which in turn enables SSL/TLS
+protected data transfers that are operate better with firewalls that monitor
+the FTP control channel.</P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN11569"
+></A
+><H2
+>See also</H2
+><P
+></P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN11572"
+></A
+><H2
+>Examples</H2
+><P
+CLASS="LITERALLAYOUT"
+>&nbsp;&nbsp;#&nbsp;Require&nbsp;SSL/TLS&nbsp;on&nbsp;the&nbsp;control&nbsp;channel,&nbsp;so&nbsp;that&nbsp;passwords&nbsp;are&nbsp;not&nbsp;sent<br>
+&nbsp;&nbsp;#&nbsp;in&nbsp;the&nbsp;clear.<br>
+&nbsp;&nbsp;TLSRequired&nbsp;ctrl<br>
+<br>
+&nbsp;&nbsp;#&nbsp;Require&nbsp;SSL/TLS&nbsp;on&nbsp;both&nbsp;channels.<br>
+&nbsp;&nbsp;TLSRequired&nbsp;on<br>
+<br>
+&nbsp;&nbsp;#&nbsp;Allow&nbsp;the&nbsp;client&nbsp;to&nbsp;use&nbsp;the&nbsp;CCC&nbsp;command&nbsp;to&nbsp;remove&nbsp;SSL/TLS&nbsp;from&nbsp;the<br>
+&nbsp;&nbsp;#&nbsp;control&nbsp;channel,&nbsp;but&nbsp;only&nbsp;after&nbsp;authentication&nbsp;has&nbsp;been&nbsp;performed.<br>
+&nbsp;&nbsp;#&nbsp;Still&nbsp;enforce&nbsp;the&nbsp;policy&nbsp;of&nbsp;using&nbsp;SSL/TLS&nbsp;for&nbsp;data&nbsp;transfers.<br>
+&nbsp;&nbsp;#<br>
+&nbsp;&nbsp;#&nbsp;Note&nbsp;that&nbsp;if&nbsp;we&nbsp;did&nbsp;not&nbsp;need&nbsp;to&nbsp;protect&nbsp;data&nbsp;transfers,&nbsp;we&nbsp;would<br>
+&nbsp;&nbsp;#&nbsp;set&nbsp;'TLSRequired&nbsp;auth'&nbsp;instead&nbsp;of&nbsp;using&nbsp;'TLSRequired&nbsp;auth+data'.<br>
+&nbsp;&nbsp;TLSRequired&nbsp;auth+data</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="config_ref_TLSRenegotiate.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="configuration.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="config_ref_TLSRSACertificateFile.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&#13;TLSRenegotiate</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="by-name.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&#13;TLSRSACertificateFile</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

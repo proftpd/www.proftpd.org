@@ -1,0 +1,272 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>&#13;MaxStoreFileSize</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Configuration Directive List"
+HREF="configuration.html"><LINK
+REL="UP"
+TITLE="List of Directives"
+HREF="by-name.html"><LINK
+REL="PREVIOUS"
+TITLE="
+MaxRetrieveFileSize"
+HREF="config_ref_MaxRetrieveFileSize.html"><LINK
+REL="NEXT"
+TITLE="
+MultilineRFC2228"
+HREF="config_ref_MultilineRFC2228.html"></HEAD
+><BODY
+CLASS="REFENTRY"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Configuration Directive List</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="config_ref_MaxRetrieveFileSize.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="config_ref_MultilineRFC2228.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><H1
+><A
+NAME="MAXSTOREFILESIZE"
+></A
+>
+MaxStoreFileSize</H1
+><DIV
+CLASS="REFNAMEDIV"
+><A
+NAME="AEN6324"
+></A
+><H2
+>Name</H2
+>MaxStoreFileSize&nbsp;--&nbsp;Restrict size of uploaded files</DIV
+><DIV
+CLASS="REFSYNOPSISDIV"
+><A
+NAME="AEN6327"
+></A
+><H2
+>Synopsis</H2
+><P
+><B
+CLASS="COMMAND"
+>MaxStoreFileSize</B
+>  [  <CODE
+CLASS="OPTION"
+>number|"*" units ["user"|"group"|"class" expression]</CODE
+>]</P
+><P
+></P
+><DIV
+CLASS="VARIABLELIST"
+><P
+><B
+></B
+></P
+><DL
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Default</PRE
+></DT
+><DD
+><P
+>None</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Context</PRE
+></DT
+><DD
+><P
+>server config, &lt;Global&gt;, &lt;VirtualHost&gt;, &lt;Anonymous&gt;, &lt;Directory&gt;, .ftpaccess</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Module</PRE
+></DT
+><DD
+><P
+>mod_xfer</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Compatibility</PRE
+></DT
+><DD
+><P
+>1.2.7rc1 and later</P
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN6354"
+></A
+><H2
+>Description</H2
+><P
+>When uploading files from a client (eg serving a STOR request), the
+server will check for any configured limit against the size of the file
+being sent, and abort any transfers if/when the given file's size
+exceeds the configured limit.</P
+><P
+>A single "*" argument configures unlimited file sizes, and is used
+primarily to override any inherited restrictions from higher contexts.
+The given number is the number of bytes for the limit, and is followed
+by a units specifier of (case-insensitive) "Gb" (Gigabytes),
+"Mb" (Megabytes), "Kb" (Kilobytes), or "B" (bytes).  The given number of
+bytes is multiplied by the appropriate factor.</P
+><P
+>The optional parameters are used to restrict the file size limits only
+to specific users.  If the "user" restriction is given, then expression is a
+user-expression specifying to which users the rule applies.  Similarly for the
+"group" restriction.  For the "class" restriction, the expression is simply
+the name of connection class for whom the rule will apply.  If no matching
+user, group, or class expression is found for the current user (in that
+order), then a limit with no expression (ie no "user", "group", or "class"
+identifier) is applied.</P
+><P
+>See Also: MaxRetrieveFileSize</P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN6360"
+></A
+><H2
+>See also</H2
+><P
+></P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN6363"
+></A
+><H2
+>Examples</H2
+><P
+CLASS="LITERALLAYOUT"
+>&nbsp;&nbsp;#&nbsp;Restrict&nbsp;upload&nbsp;to&nbsp;only&nbsp;3&nbsp;megabytes<br>
+&nbsp;&nbsp;MaxStoreFileSize&nbsp;3&nbsp;Mb<br>
+<br>
+&nbsp;&nbsp;#&nbsp;Restrict&nbsp;anonymous&nbsp;uploads&nbsp;to&nbsp;50k,&nbsp;but&nbsp;allow&nbsp;unlimited&nbsp;upload&nbsp;size&nbsp;for<br>
+&nbsp;&nbsp;#&nbsp;everyone&nbsp;else<br>
+&nbsp;&nbsp;MaxStoreFileSize&nbsp;50&nbsp;Kb&nbsp;user&nbsp;anonymous<br>
+&nbsp;&nbsp;MaxStoreFileSize&nbsp;*</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="config_ref_MaxRetrieveFileSize.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="configuration.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="config_ref_MultilineRFC2228.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&#13;MaxRetrieveFileSize</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="by-name.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&#13;MultilineRFC2228</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

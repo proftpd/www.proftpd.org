@@ -1,0 +1,336 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>&#13;SQLUserInfo</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="Configuration Directive List"
+HREF="configuration.html"><LINK
+REL="UP"
+TITLE="List of Directives"
+HREF="by-name.html"><LINK
+REL="PREVIOUS"
+TITLE="
+SQLShowInfo"
+HREF="config_ref_SQLShowInfo.html"><LINK
+REL="NEXT"
+TITLE="
+SQLUserWhereClause"
+HREF="config_ref_SQLUserWhereClause.html"></HEAD
+><BODY
+CLASS="REFENTRY"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Configuration Directive List</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="config_ref_SQLShowInfo.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="config_ref_SQLUserWhereClause.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><H1
+><A
+NAME="SQLUSERINFO"
+></A
+>
+SQLUserInfo</H1
+><DIV
+CLASS="REFNAMEDIV"
+><A
+NAME="AEN9613"
+></A
+><H2
+>Name</H2
+>SQLUserInfo&nbsp;--&nbsp;Configure the user table and fields that hold user information</DIV
+><DIV
+CLASS="REFSYNOPSISDIV"
+><A
+NAME="AEN9616"
+></A
+><H2
+>Synopsis</H2
+><P
+><B
+CLASS="COMMAND"
+>SQLUserInfo</B
+>  [  <CODE
+CLASS="OPTION"
+>user-table user-name passwd uid gid home-dir shell</CODE
+>]</P
+><P
+></P
+><DIV
+CLASS="VARIABLELIST"
+><P
+><B
+></B
+></P
+><DL
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Default</PRE
+></DT
+><DD
+><P
+>&quot;users userid passwd uid gid homedir shell&quot;</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Context</PRE
+></DT
+><DD
+><P
+>server config, &lt;Global&gt;, &lt;VirtualHost&gt;</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Module</PRE
+></DT
+><DD
+><P
+>mod_sql</P
+></DD
+><DT
+><PRE
+CLASS="SYNOPSIS"
+>Compatibility</PRE
+></DT
+><DD
+><P
+>1.2.5rc1 and later</P
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN9643"
+></A
+><H2
+>Description</H2
+><P
+>The SQLUserInfo directive configures the user table and fields that hold
+user information. If you need to change any of these field names from the
+default, you must specify all of them, whether NULL or not. The parameters
+are described below:</P
+><P
+></P
+><UL
+><LI
+STYLE="list-style-type: disc"
+><P
+>usertable</P
+><P
+>Specifies the name of the table that holds user information.</P
+></LI
+><LI
+STYLE="list-style-type: disc"
+><P
+>username</P
+><P
+>Specifies the field in the user table that holds the username.</P
+></LI
+><LI
+STYLE="list-style-type: disc"
+><P
+>passwd</P
+><P
+>Specifies the field in the user table that holds the user's password.</P
+></LI
+><LI
+STYLE="list-style-type: disc"
+><P
+>uid</P
+><P
+>Specifies the field in the user table that holds the user's UID. When a
+UID is retrieved from the database it is checked against the value of
+SQLMinUserUID. If the field name is specified as "NULL" the database will
+not be queried for this value and the user's UID will be set to the value
+of SQLDefaultUID.</P
+></LI
+><LI
+STYLE="list-style-type: disc"
+><P
+>gid</P
+><P
+>Specifies the field in the user table that holds the user's GID. When a GID
+is retrieved from the database it is checked against the value of
+SQLMinUserGID. If the field name is specified as "NULL" the database will
+not be queried for this value and the user's GID will be set to the value
+of SQLDefaultGID.</P
+></LI
+><LI
+STYLE="list-style-type: disc"
+><P
+>homedir</P
+><P
+>Specifies the field in the user table that holds the user's home directory.
+If the fieldname is specified as "NULL" the database will not be queried for
+this value and the user's home directory will be set to the value of
+SQLDefaultHomedir. If no home directory is set with either directive, user
+authentication will be automatically turned off.</P
+></LI
+><LI
+STYLE="list-style-type: disc"
+><P
+>shell</P
+><P
+>Specifies the field in the user table that holds the user's shell. If the 
+fieldname is specified as "NULL" the database will not be queried and the
+shell will be reported as an empty string ("").</P
+></LI
+></UL
+><P
+>As of 1.2.9rc1, the SQLUserInfo directive accepts an alternate syntax:</P
+><P
+CLASS="LITERALLAYOUT"
+>&nbsp;&nbsp;SQLUserInfo&nbsp;custom:/name</P
+><P
+>where name refers to a configured SELECT SQLNamedQuery. This named query
+must return one row, and return the following columns, in this order:
+username, passwd, uid, gid, homedir, shell. The configured query may make use
+of the variables mentioned in the SQLLog description. This syntax allows the
+administrator a flexible way of constructing queries as needed. Note that if
+you want use the given USER name, you should use the %U variable, not %u; the
+latter requires the locally authenticated user name, which is exactly what
+SQLUserInfo is meant to provide.</P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN9671"
+></A
+><H2
+>See also</H2
+><P
+><A
+HREF="config_ref_SQLLog.html"
+>SQLLog</A
+>
+<A
+HREF="config_ref_SQLNamedQuery.html"
+>SQLNamedQuery</A
+></P
+></DIV
+><DIV
+CLASS="REFSECT1"
+><A
+NAME="AEN9676"
+></A
+><H2
+>Examples</H2
+><P
+CLASS="LITERALLAYOUT"
+></P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="config_ref_SQLShowInfo.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="configuration.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="config_ref_SQLUserWhereClause.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&#13;SQLShowInfo</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="by-name.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&#13;SQLUserWhereClause</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>
