@@ -684,7 +684,7 @@ The currently implemented options are:
     <p>
     In order to prevent certain attacks (<i>e.g.</i> the so-called
     <a href="http://www.kb.cert.org/vuls/id/864643">&quotBEAST&quot;
-    attack</a>), the <code>mod_tls/code> module was changed to use OpenSSL's
+    attack</a>), the <code>mod_tls</code> module was changed to use OpenSSL's
     builtin countermeasure of inserting <a href="http://www.openssl.org/~bodo/tls-cbc.txt">empty fragments</a>.  However, some browsers/clients may not handle
     such empty fragments well.  Use this <code>NoEmptyFragaments</code>
     TLSOption in order to interoperate with such clients, with risk of losing
@@ -1592,7 +1592,7 @@ Last Updated: <i>$Date$</i><br>
 
 <hr>
 <font size=2><b><i>
-&copy; Copyright 2002-2011 TJ Saunders<br>
+&copy; Copyright 2002-2012 TJ Saunders<br>
  All Rights Reserved<br>
 </i></b></font>
 
