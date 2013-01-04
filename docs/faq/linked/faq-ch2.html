@@ -1,0 +1,370 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML
+><HEAD
+><TITLE
+>Compilation and installing</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.7"><LINK
+REL="HOME"
+TITLE="Professional FTP Daemon FAQ"
+HREF="faq.html"><LINK
+REL="PREVIOUS"
+TITLE="Introduction to ProFTPD"
+HREF="faq-ch1.html"><LINK
+REL="NEXT"
+TITLE="Compatibility and Integration"
+HREF="faq-ch3.html"></HEAD
+><BODY
+CLASS="CHAPTER"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Professional FTP Daemon FAQ</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="faq-ch1.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="faq-ch3.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="AEN122"
+></A
+>Chapter 2. Compilation and installing</H1
+><DIV
+CLASS="QANDASET"
+><DL
+><DT
+>1. <A
+HREF="faq-ch2.html#AEN126"
+>What platforms will it compile on?</A
+></DT
+><DT
+>2. <A
+HREF="faq-ch2.html#AEN131"
+>CVS</A
+></DT
+><DT
+>3. <A
+HREF="faq-ch2.html#AEN143"
+>How do I get debug output</A
+></DT
+><DT
+>4. <A
+HREF="faq-ch2.html#AEN150"
+>Patches</A
+></DT
+><DT
+>5. <A
+HREF="faq-ch2.html#AEN157"
+>Using non-default modules</A
+></DT
+><DT
+>6. <A
+HREF="faq-ch2.html#AEN163"
+>New features/modules</A
+></DT
+></DL
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN126"
+></A
+><B
+>1. </B
+>What platforms will it compile on?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>ProFTPD has been reported as compiling and running
+on Linux, all BSD variants, Solaris and a number of other similar
+operating systems.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN131"
+></A
+><B
+>2. </B
+>CVS</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>CVS (Concurrent Versions System), is a version control system which
+allows multiple developers (scattered across the same room or across
+the world) to maintain a single codebase and keep a record of all
+changes to the work.</P
+><P
+>The CVS repository for ProFTPD is available for non-developers in
+read-only mode, however this code is right on the bleeding edge and is 
+not guaranteed to even compile let alone work.  Access to CVS is given 
+to allow important security patches out into the wild and to allow
+users and interested users to test out the latest changes on real
+systems. </P
+><P
+>Nightly tarballs of the current CVS are available on
+            ftp.proftpd.org, these are built at approx 1am UK time.</P
+><A
+NAME="AEN137"
+></A
+><BLOCKQUOTE
+CLASS="BLOCKQUOTE"
+><H2
+CLASS="BRIDGEHEAD"
+><A
+NAME="AEN138"
+></A
+>Recommended ~/.cvsrc settings</H2
+><PRE
+CLASS="PROGRAMLISTING"
+>cvs -z 3
+update -Pd
+diff -u
+            </PRE
+><H2
+CLASS="BRIDGEHEAD"
+><A
+NAME="AEN140"
+></A
+>Where can I get information on cvs?</H2
+><P
+>CVS is produced by Cyclic Software (http://www.cyclic.com/) and
+details on CVS can be found on their website.  The CVS documentation
+is clear, detailed and above all heavy when printed.  I'd recommend
+reading it if you're planning on using CVS a lot.</P
+></BLOCKQUOTE
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN143"
+></A
+><B
+>3. </B
+>How do I get debug output</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>The easiest way is to fire up proftpd manually from the command
+line with the debug level cranked up.</P
+><PRE
+CLASS="PROGRAMLISTING"
+>/usr/local/sbin/proftpd -d9 -n
+            </PRE
+><P
+>This will result in maximal debug output direct to the
+console. Warning, this can get messy on a busy server, for testing I
+would suggest copying the config and altering the port the server
+binds to and then testing.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN150"
+></A
+><B
+>4. </B
+>Patches</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Any patches should be submitted in Universal format, this makes
+integrating them into the main cvs source a lot easier.  When
+generating a diff against the current cvs source use "cvs diff -uw" to
+generate the patch.</P
+><PRE
+CLASS="PROGRAMLISTING"
+>cvs diff -u filename &#62; filename.patch
+
+  or
+
+cvs diff -u &#62; bigger.patch
+            </PRE
+><P
+>Patches that add configuration directives without proper
+documentation.  Will be rejected.  New features without documentation
+are less than useless to the community at large.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN157"
+></A
+><B
+>5. </B
+>Using non-default modules</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Simply configure ProFTPD with </P
+><PRE
+CLASS="PROGRAMLISTING"
+>./configure --with-modules=mod_module1:mod_module2:mod_module3
+make
+make install
+            </PRE
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN163"
+></A
+><B
+>6. </B
+>New features/modules</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>While anything new is welcomed it's probably better
+	    to at least float the idea first on the devel mailing list
+	    to ensure that someone else isn't already hacking on it.
+	    Also when submitting the patch or module for inclusion into
+	    the ProFTPD source full documentation is needed.</P
+></DIV
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="faq-ch1.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="faq.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="faq-ch3.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Introduction to ProFTPD</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Compatibility and Integration</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

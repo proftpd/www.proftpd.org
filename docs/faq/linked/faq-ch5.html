@@ -1,0 +1,1124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML
+><HEAD
+><TITLE
+>Configuration problems</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.7"><LINK
+REL="HOME"
+TITLE="Professional FTP Daemon FAQ"
+HREF="faq.html"><LINK
+REL="PREVIOUS"
+TITLE="Common Running problems"
+HREF="faq-ch4.html"><LINK
+REL="NEXT"
+TITLE="Security"
+HREF="faq-ch6.html"></HEAD
+><BODY
+CLASS="CHAPTER"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Professional FTP Daemon FAQ</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="faq-ch4.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="faq-ch6.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="AEN447"
+></A
+>Chapter 5. Configuration problems</H1
+><DIV
+CLASS="QANDASET"
+><DL
+><DT
+>1. <A
+HREF="faq-ch5.html#AEN452"
+>How do I add another anonymous login or guest account?</A
+></DT
+><DT
+>2. <A
+HREF="faq-ch5.html#AEN459"
+>How do I ftp as root?</A
+></DT
+><DT
+>3. <A
+HREF="faq-ch5.html#AEN466"
+>How do I provide a secure upload facility?</A
+></DT
+><DT
+>4. <A
+HREF="faq-ch5.html#AEN473"
+>How can I stop my users from using their space as a warez repository</A
+></DT
+><DT
+>5. <A
+HREF="faq-ch5.html#AEN478"
+>Can I rotate files out of an upload directory after upload?</A
+></DT
+><DT
+>6. <A
+HREF="faq-ch5.html#AEN483"
+>How can I hide a directory from anonymous clients.</A
+></DT
+><DT
+>7. <A
+HREF="faq-ch5.html#AEN491"
+>File/Directory hiding isn't working for me!</A
+></DT
+><DT
+>8. <A
+HREF="faq-ch5.html#AEN496"
+>I want to prevent users from accessing a hidden directory</A
+></DT
+><DT
+>9. <A
+HREF="faq-ch5.html#AEN501"
+>How do I setup a virtual FTP server?</A
+></DT
+><DT
+>10. <A
+HREF="faq-ch5.html#AEN508"
+>I only want to allow anonymous access to a virtual server.</A
+></DT
+><DT
+>11. <A
+HREF="faq-ch5.html#AEN514"
+>How does &lt;Limit LOGIN&gt; work, and where should I use it?</A
+></DT
+><DT
+>12. <A
+HREF="faq-ch5.html#AEN524"
+>How can I limit users to a particular directory tree?</A
+></DT
+><DT
+>13. <A
+HREF="faq-ch5.html#AEN545"
+>How do I create individual anonymous FTP sites for my users?</A
+></DT
+><DT
+>14. <A
+HREF="faq-ch5.html#AEN559"
+>I want to support normal login and Anonymous under a particular 
+user</A
+></DT
+><DT
+>15. <A
+HREF="faq-ch5.html#AEN567"
+>Why doesn't Anonymous ftp work (550 login incorrect)?</A
+></DT
+><DT
+>16. <A
+HREF="faq-ch5.html#AEN581"
+>Bandwidth control</A
+></DT
+><DT
+>17. <A
+HREF="faq-ch5.html#AEN587"
+>CHMOD isn't working</A
+></DT
+><DT
+>18. <A
+HREF="faq-ch5.html#AEN592"
+>How can I limit the size of uploaded files?</A
+></DT
+><DT
+>19. <A
+HREF="faq-ch5.html#AEN597"
+>Can I disable Anonymous logins?</A
+></DT
+><DT
+>20. <A
+HREF="faq-ch5.html#AEN602"
+>Limiting the connections per loginID</A
+></DT
+><DT
+>21. <A
+HREF="faq-ch5.html#AEN607"
+>How do I configure proftpd to allow transfer
+	  resumption (for downloads and uploads)?</A
+></DT
+></DL
+><P
+>Problems encountered in trying to make the server behave 
+exactly as required after compilation and installation are 
+complete and the server is running.</P
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN452"
+></A
+><B
+>1. </B
+>How do I add another anonymous login or guest account?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>You should look in the sample-configurations/ directory from
+your distribution tarball. Basically, you'll need to create another
+user on your system for the guest/anonymous ftp login. For security
+reasons, it's very important that you make sure the user account
+either has a password or has an "unmatchable" password. The root
+directory of the guest/anonymous account doesn't have to be the user's
+directory, but it makes sense to do so. After you have created the
+account, put something like the following in your /etc/proftpd.conf
+file (assuming the new user/group name is private/private):</P
+><PRE
+CLASS="PROGRAMLISTING"
+>&lt;Anonymous ~private&gt;
+AnonRequirePassword off
+User private
+Group private
+RequireValidShell off
+&lt;Directory *&gt;
+&lt;Limit WRITE&gt;
+DenyAll
+&lt;/Limit&gt;
+&lt;/Directory&gt;
+&lt;/Anonymous&gt;
+          </PRE
+><P
+>This will allow ftp clients to login to your site with the username
+"private" and their e-mail address as a password. You can change the
+AnonRequirePassword directive to "on" if you want clients to be
+forced to transmit the correct password for the "private" account.
+This sample configuration allows clients to change into, list and read
+all directories, but denies write access of any kind.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN459"
+></A
+><B
+>2. </B
+>How do I ftp as root?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>First off this is a <SPAN
+CLASS="emphasis"
+><I
+CLASS="EMPHASIS"
+>bad</I
+></SPAN
+> idea ftping as root is insecure,
+there are better more secure ways of shifting files as root.</P
+><P
+>To enable root ftp ensure that the directive "RootLogin on" is
+included in your configuration.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN466"
+></A
+><B
+>3. </B
+>How do I provide a secure upload facility?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>The following snippet from a sample configuration file
+illustrates how to protect an "upload" directory in such a fashion
+(which is a very good idea if you don't want people using your site
+for "warez"):</P
+><PRE
+CLASS="PROGRAMLISTING"
+>&lt;Anonymous /home/ftp&gt;
+  # All files uploaded are set to username.usergroup ownership
+  User username
+  Group usergroup
+  UserAlias ftp username
+  AuthAliasOnly on
+  RequireValidShell off
+
+  &lt;Directory pub/incoming/&gt;
+     &lt;Limit STOR CWD&gt;
+        AllowAll
+     &lt;/Limit&gt;
+     &lt;Limit READ RMD DELE MKD&gt;
+        DenyAll
+     &lt;/Limit&gt;
+  &lt;/Directory&gt;
+&lt;/Anonymous&gt;
+          </PRE
+><P
+>This denies all write operations to the anonymous root directory
+and sub-directories, except "incoming/" where the permissions are
+reversed and the client can store but not read. If you used &lt;Limit
+WRITE&gt; instead of &lt;Limit STOR&gt; on &lt;Directory incoming&gt;,
+ftp clients would be allowed to perform all write operations to the
+sub-dir, including deleting, renaming and creating directories.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN473"
+></A
+><B
+>4. </B
+>How can I stop my users from using their space as a warez repository</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>The above fragment will control anonymous users however if a local
+user with a full account with up and download capability is abusing
+their space then the technical measures which can be taken are
+limited.  Applying a sane system quota is a good start, using the
+mod_quota and mod_ratio modules may control the rates of
+upload/download making it less useful as a warez repository.  In the
+end it comes down to system monitoring and good site AUP's and
+enforcement.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN478"
+></A
+><B
+>5. </B
+>Can I rotate files out of an upload directory after upload?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Yes.  You'll need to write a script which either checks the
+contents of the directory regularly and moves once it's detected no
+size change in a file for xyz seconds.  Or a script which monitors an
+upload log.  There is no automatic method for doing this.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN483"
+></A
+><B
+>6. </B
+>How can I hide a directory from anonymous clients.</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Use the HideUser or HideGroup directive in combination with the
+proper user/group ownership on the directive. For example, if you
+have the follow directory in your anonymous ftp directory tree:</P
+><PRE
+CLASS="PROGRAMLISTING"
+>drwxrwxr-x 3 ftp staff 6144 Apr 21 16:40 private
+          </PRE
+><P
+>You can use a directive such as "HideGroup staff" to hide the private
+directory from a directory listing. For example:</P
+><PRE
+CLASS="PROGRAMLISTING"
+>&lt;Anonymous ~ftp&gt;
+...
+&lt;Directory Private&gt;
+HideGroup staff
+&lt;/Directory&gt;
+...
+&lt;/Anonymous&gt;
+          </PRE
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN491"
+></A
+><B
+>7. </B
+>File/Directory hiding isn't working for me!</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>You need to make sure that the group you are hiding isn't the
+anonymous ftp user's primary group, or HideGroup won't apply.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN496"
+></A
+><B
+>8. </B
+>I want to prevent users from accessing a hidden directory</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>You can either change the permissions on the directory to prevent
+the anonymous FTP user from accessing it, or if you want to make it
+appear completely invisible (as though there is no such directory),
+use the IgnoreHidden directive inside a &lt;Limit&gt; block for one or
+more commands that you want to completely ignore the hidden directory
+entries (ignore = act as if the directory entry does not exist).</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN501"
+></A
+><B
+>9. </B
+>How do I setup a virtual FTP server?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>You'll need to configure your host to be able to handle multiple IP
+addresses. This is often called "aliasing", and can generally be
+configured through an IP alias or dummy interface. You need to read
+your operating system documentation to figure out how to do this. Once
+your have the host configured to accept the additional IP address that
+you wish to offer a virtual FTP server on, use the &lt;VirtualHost&gt;
+configuration directive to create the virtual server:</P
+><PRE
+CLASS="PROGRAMLISTING"
+>&lt;VirtualHost 10.0.0.1&gt;
+ServerName "My virtual FTP server"
+&lt;/VirtualHost&gt;
+          </PRE
+><P
+>You can add additional directive blocks into the &lt;VirtualHost&gt; block
+in order to create anonymous/guest logins and the like which are only
+available on the virtual host.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN508"
+></A
+><B
+>10. </B
+>I only want to allow anonymous access to a virtual server.</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Use a &lt;Limit LOGIN&gt; block to deny access at the top-level of
+the virtual host, then use &lt;Limit LOGIN&gt; again in your
+&lt;Anonymous&gt; block to allow access to the anonymous login. This
+permits logins to a virtual anonymous server, but denies to everything
+else. Example:</P
+><PRE
+CLASS="PROGRAMLISTING"
+>&lt;VirtualHost 10.0.0.1&gt;
+ServerName "My virtual FTP server"
+&lt;Limit LOGIN&gt;
+DenyAll
+&lt;/Limit&gt;
+&lt;Anonymous /usr/local/private&gt;
+User private
+Group private
+&lt;Limit LOGIN&gt;
+AllowAll
+&lt;/Limit&gt;
+...
+&lt;/Anonymous&gt;
+&lt;/VirtualHost&gt;
+          </PRE
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN514"
+></A
+><B
+>11. </B
+>How does &lt;Limit LOGIN&gt; work, and where should I use it?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>The &lt;LOGIN&gt; directive is used to control connection or login
+access to a particular context (the directive block which contains
+it). When a client initially connects to ProFTPD, the daemon searches
+the configuration tree for &lt;Limit LOGIN&gt; directives, and
+attached parameters (such as Allow, Deny, etc). If it determines that
+there is no possible way for the client to ever be allowed to login,
+such as a "Deny from" matching the client's source address, without an
+overriding "Allow from" at a lower level, the client is disconnected
+without being offered the opportunity to transmit a user and password.</P
+><P
+>However, if it is possible for the client to be allowed a login,
+ProFTPD continues as per normal, allowing the client to login only if
+the proper &lt;Limit LOGIN&gt; applies. Normally, &lt;Limit&gt; directive blocks
+are allowed in the server config, &lt;VirtualHost&gt;, &lt;Anonymous&gt;
+and &lt;Directory&gt; contexts. However, &lt;Limit LOGIN&gt; should not be
+used in a &lt;Directory&gt; context, as clients do not connect/login to a
+directory (and thus it is meaningless).</P
+><P
+>By way of example, the following configuration snippet illustrates a
+&lt;Limit LOGIN&gt; deny which will cause any incoming connections from the
+10.1.1.x subnet to be immediately disconnected, without a welcome
+message:</P
+><PRE
+CLASS="PROGRAMLISTING"
+>...
+&lt;Limit LOGIN&gt;
+Order deny,allow
+Deny from 10.1.1.
+Allow from all
+&lt;/Limit&gt;
+...
+          </PRE
+><P
+>Next, an example of a configuration using &lt;Limit LOGIN&gt; that will not
+immediately disconnect an incoming client, but will return "Login
+invalid" for all login attempts except anonymous.</P
+><PRE
+CLASS="PROGRAMLISTING"
+>...
+&lt;Limit LOGIN&gt;
+DenyAll
+&lt;/Limit&gt;
+&lt;Anonymous ~ftp&gt;
+...
+&lt;Limit LOGIN&gt;
+AllowAll
+&lt;/Limit&gt;
+...
+          </PRE
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN524"
+></A
+><B
+>12. </B
+>How can I limit users to a particular directory tree?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>For general open access you can use an &lt;Anonymous&gt; directive context block,
+possibly in combination with a UserPassword/AnonRequirePassword directive. </P
+><P
+>However if you wish to jail an entire group (or groups) of users,
+you can use the DefaultRoot directive.  DefaultRoot lets you specify a
+root jailed directory (or "~" for the user's home directory), and an
+optional group-expression argument which can be used to control which
+groups of users the jail will be applied to. For example:</P
+><PRE
+CLASS="PROGRAMLISTING"
+>...
+&lt;VirtualHost myhost.mynet.foo&gt;
+DefaultRoot ~
+...
+&lt;/VirtualHost&gt;
+          </PRE
+><P
+>This creates a configuration where all users who log into
+myhost.mynet.foo are jailed into their home directories (cannot chdir
+into a higher level directory). Alternatively, you could:</P
+><PRE
+CLASS="PROGRAMLISTING"
+>...
+&lt;VirtualHost myhost.mynet.foo&gt;
+DefaultRoot /u2/public users,!staff
+...
+&lt;/VirtualHost&gt;
+          </PRE
+><P
+>In this example, all users who are members of group "users", but
+not members of group "staff" are jailed into /u2/public. If a user
+does not meet the group-expression requirements, they login as per
+normal (not jailed, default directory is their home).  You can use
+multiple DefaultRoot directives to create multiple jails inside the
+same directive context. If two DefaultRoot directives apply to the
+same user, ProFTPD arbitrarily chooses one (based on how the
+configuration file was parsed).</P
+><A
+NAME="AEN533"
+></A
+><BLOCKQUOTE
+CLASS="BLOCKQUOTE"
+><H2
+CLASS="BRIDGEHEAD"
+><A
+NAME="AEN534"
+></A
+>Security Implications</H2
+><P
+>The DefaultRoot directive is implemented using the chroot(2) system
+call.  This moves the "/" (or root) directory to a specified point
+within the file system and jails the user into this sub-tree.  However
+this is not the holy grail of security, a chroot jail can be broken,
+it is not a trivial matter but it's nowhere near impossible.
+DefaultRoot should be used as part of a general system of security not
+the only security measure.</P
+><P
+>A more detailed <A
+HREF="http://www.bpfh.net/simes/computing/chroot-break.html"
+TARGET="_top"
+>http://www.bpfh.net/simes/computing/chroot-break.html</A
+> on this subject and on the breaking of chroot jails has been written by Simon Burr</P
+><H2
+CLASS="BRIDGEHEAD"
+><A
+NAME="AEN538"
+></A
+>Non-root server issues</H2
+><P
+>The chroot() system call will not work under a non-root ftp server
+process, the call requires root privaliges.  Without them it simply
+doesn't work, there doesn't appear to be any checking in the code of
+the uid/gid before calling chroot so using DefaultRoot in such a setup 
+will cause the server to fail.</P
+><H2
+CLASS="BRIDGEHEAD"
+><A
+NAME="AEN540"
+></A
+>Symlinks</H2
+><P
+>Symlinks will not work from within a chrooted area.  The reason
+	    should be clear from a casual inspection of the nature of
+	    the chroot command.  It is not possible to have a symbolic
+	    link to a directory which can"t be reached beacuse it's
+	    outside of the current chroot.  Work arounds to allow
+	    access to other parts of the file system include exporting
+	    the part of the filesystem to be accessed from inside the
+	    chroot and mounting via NFS, using hard file links or (on
+	    Solaris) using lofs to mount the directory via the loopback.
+          </P
+><PRE
+CLASS="PROGRAMLISTING"
+>mount -Flofs /home/data1 /ftp/data1
+mount -Flofs /home/data2 /ftp/data2
+          </PRE
+><P
+>As of the 2.4.x Linux kernel tree it is possible to mount filesystems
+multiple times and to mount subdirectories of filesystems elsewhere on
+the filesystem.</P
+></BLOCKQUOTE
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN545"
+></A
+><B
+>13. </B
+>How do I create individual anonymous FTP sites for my users?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>There are two methods of accomplishing this (possibly more).
+First, you can create a directory structure inside your anonymous FTP
+root directory, creating a single directory for each user and setting
+ownership/permissions as appropriate. Then, either create a symlink
+from each user's home directory into the FTP site, or instruct your
+users on how to access their directory.</P
+><P
+>The alternate method (and more versatile) of accomplishing per-user
+anonymous FTP is to use AnonymousGroup in combination with the
+DefaultRoot directory. You'll probably want to do this inside a
+&lt;VirtualHost&gt;, otherwise none of your users will be able to access
+your system without being stuck inside their per-user FTP site.
+Additionally, you'll want to use a deferred &lt;Directory&gt; block to
+carefully limit outside access to each user's site.</P
+><P
+></P
+><OL
+TYPE="1"
+><LI
+><P
+>Create a new unix group on your system named `anonftp". Please
+each user who will have per-user anonymous FTP in this group.</P
+></LI
+><LI
+><P
+>Create an `anon-ftp" and `anon-ftp/incoming" directory in each
+user's home directory.</P
+></LI
+><LI
+><P
+>Modify your /etc/proftpd.conf file to look something like this
+(you'll probably want to customize this to your needs):</P
+><PRE
+CLASS="PROGRAMLISTING"
+> &lt;VirtualHost my.per-user.virtual.host.address&gt;
+ 
+ # the next line limits all logins to this virtual host, so that only
+ anonftp users can connect
+ 
+ &lt;Limit LOGIN&gt;
+ DenyGroup !anonftp
+ &lt;/Limit&gt;
+ 
+ # limit access to each user's anon-ftp directory, we want read-only
+ except on incoming
+ 
+ &lt;Directory ~/anon-ftp&gt;
+ 
+ &lt;Limit WRITE&gt;
+ DenyAll
+ &lt;/Limit&gt;
+ 
+ &lt;/Directory&gt;
+ 
+ # permit stor access to each user's anon-ftp/incoming directory,
+ but deny everything else
+ 
+ &lt;Directory ~/anon-ftp/incoming&gt;
+ 
+ &lt;Limit STOR&gt;
+ AllowAll
+ &lt;/Limit&gt;
+ &lt;Limit READ WRITE&gt;
+ DenyAll
+ &lt;/Limit&gt;
+ 
+ &lt;/Directory&gt;
+ 
+ # provide a default root for all logins to this virtual host.
+ DefaultRoot ~/anon-ftp
+ # Finally, force all logins to be anonymous for the anonftp group
+ AnonymousGroup anonftp
+ 
+ &lt;/VirtualHost&gt;
+              </PRE
+></LI
+></OL
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN559"
+></A
+><B
+>14. </B
+>I want to support normal login and Anonymous under a particular 
+user</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>You can use the AuthAliasOnly directive to control how and
+where real usernames get authenticated (as opposed to aliased names,
+via the UserAlias directive). Note that it is still impossible to
+have two identical aliased names login to different anonymous sites;
+for that you would need &lt;VirtualHost&gt;.</P
+><P
+>Example:</P
+><PRE
+CLASS="PROGRAMLISTING"
+>...
+&lt;Anonymous ~jrluser&gt;
+
+ User jrluser
+ Group jrluser
+ UserAlias ftp jrluser
+ UserAlias anonymous jrluser
+ AuthAliasOnly on
+ ...
+ 
+&lt;/Anonymous&gt;
+          </PRE
+><P
+>Here, the &lt;Anonymous&gt; configuration for ~jrluser is set to allow
+alias authentication only. Thus, if a client attempts to authenticate
+as "jrluser", the anonymous config will be ignored and the client will
+be authenticated as if they were a normal user (typically resulting in
+`jrluser" logging in normally). However, if the client uses the
+aliased username `ftp" or `anonymous", the anonymous block is applied.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN567"
+></A
+><B
+>15. </B
+>Why doesn't Anonymous ftp work (550 login incorrect)?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Things to check</P
+><P
+></P
+><P
+><B
+>Check the following first:</B
+></P
+><UL
+><LI
+><P
+>Make sure the user/group you specified inside the &lt;Anonymous&gt;
+block actually exists. This must be a real user and group, as it is
+used to control whom the daemon runs as and authenticates as.</P
+></LI
+><LI
+><P
+>If RequireValidShell is not specifically turned off, make sure
+that your "ftp user" (as specified by the User directive inside an
+&lt;Anonymous&gt; block), has a valid shell listed in /etc/shells. If you do
+not wish to give the user a valid shell, you can always use
+"RequireValidShell off" to disable this check.</P
+></LI
+><LI
+><P
+>If UseFtpUsers is not specifically turned off, make sure that
+your "ftp user" is not listed in /etc/ftpusers.</P
+></LI
+></UL
+><P
+>If all else fails, you should check your syslog. When authentication
+fails for any reason, ProFTPD uses the syslog mechanism to log the
+reason for failure; using the AUTH (or AUTHPRIV) facility. If you need
+further assistance, you can send email, including related syslog
+entries and your configuration file, to the ProFTPD mailing list
+mentioned elsewhere in this FAQ.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN581"
+></A
+><B
+>16. </B
+>Bandwidth control</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>A new patch providing the TransferRate directive has
+	  been provided and is slated for inclusion in 1.2.8, this
+	  gives per-connection bandwidth limits with Class support.
+	  The limits are more effective against downloads than
+	  uploads.</P
+><P
+>There is no method to control the total bandwidth a
+          single VirtualHost context can use.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN587"
+></A
+><B
+>17. </B
+>CHMOD isn't working</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>AllowChmod is deprecated and has been replaced with
+	  the SITE_CHMOD expansion for controlling this
+	  functionality.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN592"
+></A
+><B
+>18. </B
+>How can I limit the size of uploaded files?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>As of 1.2.7rc1 there are two new directives
+	  MaxRetrieveFileSize and MaxStoreFileSize to control the
+	  maximum size of files being transfered to or from the
+	  server.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN597"
+></A
+><B
+>19. </B
+>Can I disable Anonymous logins?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Yes, just remove all the &lt;Anonymous&gt; sections
+	  from your configuration file and reload the daemon.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN602"
+></A
+><B
+>20. </B
+>Limiting the connections per loginID</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>As of 1.2.7rc1 MaxClientsPerUser has been
+	  implemented.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN607"
+></A
+><B
+>21. </B
+>How do I configure proftpd to allow transfer
+	  resumption (for downloads and uploads)?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>To allow downloads to be resumed, you need to use the
+   AllowRetrieveRestart configuration directive.</P
+><P
+>To allow uploads to be resumed, you need to use both the
+   AllowOverwrite and AllowStoreRestart directives.  The reason that both
+   need to be allowed is that a restarted/resumed upload is a form of
+   overwriting the file.</P
+><P
+>Also note that using HiddenStores and AllowStoreRestart is incompatible,
+   as mentioned in the documentation for the AllowStoreRestart
+   and HiddenStores directives.</P
+></DIV
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="faq-ch4.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="faq.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="faq-ch6.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Common Running problems</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Security</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

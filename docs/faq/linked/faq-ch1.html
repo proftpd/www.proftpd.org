@@ -1,0 +1,534 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML
+><HEAD
+><TITLE
+>Introduction to ProFTPD</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.7"><LINK
+REL="HOME"
+TITLE="Professional FTP Daemon FAQ"
+HREF="faq.html"><LINK
+REL="PREVIOUS"
+TITLE="Preface"
+HREF="faq-preface.html"><LINK
+REL="NEXT"
+TITLE="Compilation and installing"
+HREF="faq-ch2.html"></HEAD
+><BODY
+CLASS="CHAPTER"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Professional FTP Daemon FAQ</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="faq-preface.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="faq-ch2.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="AEN33"
+></A
+>Chapter 1. Introduction to ProFTPD</H1
+><DIV
+CLASS="QANDASET"
+><DL
+><DT
+>1. <A
+HREF="faq-ch1.html#AEN37"
+>What is ProFTPD?</A
+></DT
+><DT
+>2. <A
+HREF="faq-ch1.html#AEN42"
+>Website &#38; documentation</A
+></DT
+><DT
+>3. <A
+HREF="faq-ch1.html#AEN48"
+>Bug reporting</A
+></DT
+><DT
+>4. <A
+HREF="faq-ch1.html#AEN54"
+>I've found a security hole</A
+></DT
+><DT
+>5. <A
+HREF="faq-ch1.html#AEN62"
+>Downloading</A
+></DT
+><DT
+>6. <A
+HREF="faq-ch1.html#AEN77"
+>Mailing lists</A
+></DT
+><DT
+>7. <A
+HREF="faq-ch1.html#AEN118"
+>Copyright Issues</A
+></DT
+></DL
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN37"
+></A
+><B
+>1. </B
+>What is ProFTPD?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>ProFTPD is a ftp server written for use on Unix and
+Unix-a-like operating systems, there is no support for native use
+under Microsoft Windows.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN42"
+></A
+><B
+>2. </B
+>Website &#38; documentation</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+><A
+HREF="http://www.proftpd.org/"
+TARGET="_top"
+>http://www.proftpd.org/</A
+>
+	      is the primary source for all information about the
+	      project including documentation and security alerts.
+	      There are a number of geographic mirror sites,
+	      see the mirror pages on www.proftpd.org for more
+	      details or try www.&lt;isocode&gt;.proftpd.org (ie
+	      www.uk.proftpd.org).</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN48"
+></A
+><B
+>3. </B
+>Bug reporting</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Bug reports should be made via <A
+HREF="http://bugs.proftpd.org/"
+TARGET="_top"
+>http://bugs.proftpd.org/</A
+>
+	  which uses the bugzilla tracking system.  Patches should be
+	  attached to the appropriate bug and not mailed directly to
+	  the mailing lists or any given team member.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN54"
+></A
+><B
+>4. </B
+>I've found a security hole</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Please report all security problems with the code to
+<CODE
+CLASS="EMAIL"
+>&#60;<A
+HREF="mailto:security@proftpd.org"
+>security@proftpd.org</A
+>&#62;</CODE
+> before releasing the information into the public
+domain.  It would be appreciated if you give the core team a few days
+to put together a patch and/or new release to address the issue.</P
+><P
+>Please adhere to the proceedures and timescales given in the RF
+Policy document <A
+HREF="http://www.wiretrip.net/rfp/policy.html"
+TARGET="_top"
+>http://www.wiretrip.net/rfp/policy.html</A
+>, this will give the core development team a chance to get a fix or workaround in place before the problem becomes fully public domain.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN62"
+></A
+><B
+>5. </B
+>Downloading</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>There are two main methods of getting the software.  Downloading a
+compressed tarball or rpm (there is also a Debian package available in the main distribution) from proftpd.org or from a mirror site, alternatively if you wish to run the latest bleeding edge code then collecting from the cvs server is the best method.</P
+><A
+NAME="AEN66"
+></A
+><BLOCKQUOTE
+CLASS="BLOCKQUOTE"
+><H2
+CLASS="BRIDGEHEAD"
+><A
+NAME="AEN67"
+></A
+>Mirror sites</H2
+><P
+>There is a complete and maintained list of ftp mirror sites available
+from <A
+HREF="http://www.proftpd.org/download.html"
+TARGET="_top"
+>http://www.proftpd.org/download.html</A
+></P
+><H2
+CLASS="BRIDGEHEAD"
+><A
+NAME="AEN70"
+></A
+>CVS</H2
+><P
+> cvs -d :pserver:anonymous@cvs.proftp.sourceforge.net:/cvsroot/proftp
+login (Hit Enter when prompted for a password.)</P
+><P
+>Then do:</P
+><P
+>cvs -d :pserver:anonymous@cvs.proftp.sourceforge.net:/cvsroot/proftp -z3 co proftpd</P
+><P
+>To obtain the latest/greatest updates, just hop into the
+proftpd directory and do: cvs update</P
+><P
+>A couple of sites generate downloadable tarballs of the latest CVS
+code to make obtaining the test code easier.</P
+></BLOCKQUOTE
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN77"
+></A
+><B
+>6. </B
+>Mailing lists</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>There are a number of mailing lists for ProFTPD</P
+><A
+NAME="AEN81"
+></A
+><BLOCKQUOTE
+CLASS="BLOCKQUOTE"
+><H2
+CLASS="BRIDGEHEAD"
+><A
+NAME="AEN82"
+></A
+>Announce</H2
+><P
+>proftpd-announce@proftpd.org</P
+><P
+>This is a very low traffic list where only ProFTPD announcements/changes
+will be announced.  Subscribe by sending a message to <CODE
+CLASS="EMAIL"
+>&#60;<A
+HREF="mailto:proftpd-announce-request@proftpd.org"
+>proftpd-announce-request@proftpd.org</A
+>&#62;</CODE
+> with
+"subscribe" in the subject.</P
+><P
+>Web interface: 
+                <A
+HREF="https://lists.sourceforge.net/lists/listinfo/proftp-announce"
+TARGET="_top"
+>                  https://lists.sourceforge.net/lists/listinfo/proftp-announce
+                </A
+>
+              </P
+><H2
+CLASS="BRIDGEHEAD"
+><A
+NAME="AEN88"
+></A
+>Users</H2
+><P
+>proftp-user@proftpd.org</P
+><P
+>This is intended to the the user support channel for the software,
+in most likelihood this is going to be a high traffic list and
+slightly chatty.  Please read the FAQ, the documentation and the list
+archives before posting a question.</P
+><P
+>Subscribe by sending a message to <CODE
+CLASS="EMAIL"
+>&#60;<A
+HREF="mailto:proftpd-user-request@proftpd.org"
+>proftpd-user-request@proftpd.org</A
+>&#62;</CODE
+> with
+"subscribe" in the subject.</P
+><P
+>Web interface: <A
+HREF="https://lists.sourceforge.net/lists/listinfo/proftp-user"
+TARGET="_top"
+>https://lists.sourceforge.net/lists/listinfo/proftp-user</A
+></P
+><H2
+CLASS="BRIDGEHEAD"
+><A
+NAME="AEN95"
+></A
+>Development</H2
+><P
+>proftpd-devel@proftpd.org</P
+><P
+>This list is intended for discussion of development-related issues
+of ProFTPD, and feature design.  It is NOT intended to be a "user
+help" group.</P
+><P
+>Subscribe by sending a message to <CODE
+CLASS="EMAIL"
+>&#60;<A
+HREF="mailto:proftpd-devel-request@proftpd.org"
+>proftpd-devel-request@proftpd.org</A
+>&#62;</CODE
+>
+with "subscribe" in the subject.</P
+><P
+>Web interface: 
+                <A
+HREF="https://lists.sourceforge.net/lists/listinfo/proftp-devel"
+TARGET="_top"
+>                  https://lists.sourceforge.net/lists/listinfo/proftp-devel
+                </A
+>
+              </P
+><H2
+CLASS="BRIDGEHEAD"
+><A
+NAME="AEN102"
+></A
+>Archives</H2
+><P
+>The mailing list archives can be found at:</P
+><P
+></P
+><UL
+><LI
+><P
+><A
+HREF="http://www.proftpd.org/proftpd-announce-archive/"
+TARGET="_top"
+>                  http://www.proftpd.org/proftpd-announce-archive/</A
+></P
+></LI
+><LI
+><P
+><A
+HREF="http://www.proftpd.org/proftpd-l-archive/"
+TARGET="_top"
+>                  http://www.proftpd.org/proftpd-l-archive/</A
+></P
+></LI
+><LI
+><P
+><A
+HREF="http://www.proftpd.org/proftpd-devel-archive/"
+TARGET="_top"
+>                  http://www.proftpd.org/proftpd-devel-archive/</A
+></P
+></LI
+></UL
+><H2
+CLASS="BRIDGEHEAD"
+><A
+NAME="AEN114"
+></A
+>Unsubscribing</H2
+><P
+>Before posting to any of the lists or mailing the list admins
+please try and remove yourself first.  Either by emailing
+&lt;listname&gt;-request@lists.sourceforge.net with the subject "unsubscribe" or
+visiting the web interface and unsubscribing from there.</P
+><P
+>I've (lost / never had) a password to the interface.  Easy,
+enter the address you are subscribed to the list as into the form and
+hit the "email me my password" button.</P
+></BLOCKQUOTE
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN118"
+></A
+><B
+>7. </B
+>Copyright Issues</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>The software is currently distributed under the GNU General Public License
+(version 2 or later) as published by the Free Software Foundation.
+Copyright is held by Public Flood Software.</P
+></DIV
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="faq-preface.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="faq.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="faq-ch2.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Preface</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Compilation and installing</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

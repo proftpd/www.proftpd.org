@@ -1,0 +1,542 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML
+><HEAD
+><TITLE
+>Security</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.7"><LINK
+REL="HOME"
+TITLE="Professional FTP Daemon FAQ"
+HREF="faq.html"><LINK
+REL="PREVIOUS"
+TITLE="Configuration problems"
+HREF="faq-ch5.html"><LINK
+REL="NEXT"
+TITLE="User Authentication"
+HREF="faq-ch7.html"></HEAD
+><BODY
+CLASS="CHAPTER"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Professional FTP Daemon FAQ</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="faq-ch5.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="faq-ch7.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="CHAPTER"
+><H1
+><A
+NAME="AEN613"
+></A
+>Chapter 6. Security</H1
+><DIV
+CLASS="QANDASET"
+><DL
+><DT
+>1. <A
+HREF="faq-ch6.html#AEN617"
+>General</A
+></DT
+><DT
+>2. <A
+HREF="faq-ch6.html#AEN627"
+>Surely running ProFTPD as non-root will help?</A
+></DT
+><DT
+>3. <A
+HREF="faq-ch6.html#AEN634"
+>How can I control what commands the server accepts?</A
+></DT
+><DT
+>4. <A
+HREF="faq-ch6.html#AEN639"
+>How can I prevent the server version from being displayed?</A
+></DT
+><DT
+>5. <A
+HREF="faq-ch6.html#AEN645"
+>I want to show a message prior to login</A
+></DT
+><DT
+>6. <A
+HREF="faq-ch6.html#AEN651"
+>I want to display a message after login</A
+></DT
+><DT
+>7. <A
+HREF="faq-ch6.html#AEN657"
+>Can I have a custom welcome response?</A
+></DT
+><DT
+>8. <A
+HREF="faq-ch6.html#AEN664"
+>External Programs</A
+></DT
+><DT
+>9. <A
+HREF="faq-ch6.html#AEN669"
+>Why do I see "No certificates found!"? </A
+></DT
+><DT
+>10. <A
+HREF="faq-ch6.html#AEN677"
+>I can delete files owned by root. Why is this?</A
+></DT
+></DL
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN617"
+></A
+><B
+>1. </B
+>General</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>As with all software there have been a number of security issues
+during the life of the project.  The most recent information can
+always be found on http://www.proftpd.org/security.html</P
+><P
+>Versions 1.2.0 and above should be considered to be production code
+and few if any new features will be added to this code branch to
+maintain stability.</P
+><A
+NAME="AEN622"
+></A
+><BLOCKQUOTE
+CLASS="BLOCKQUOTE"
+><H2
+CLASS="BRIDGEHEAD"
+><A
+NAME="AEN623"
+></A
+>What about using Stackguard?</H2
+><P
+>Stackguard (<A
+HREF="http://immunix.org"
+TARGET="_top"
+>http://immunix.org</A
+>) is a gcc variant which can protect programs from stack-smashing attacks, programs compiled using Stackguard dies without executing the stack code.  While this approach is a good first line of defense against future problems it"s not a complete cure-all.  Some of the buffer overflows were found on static variables, which are not protected by stack protection mechanisms. </P
+></BLOCKQUOTE
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN627"
+></A
+><B
+>2. </B
+>Surely running ProFTPD as non-root will help?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Running ProFTPD as a non-root user gives only a marginal security
+improvement on the normal case and adds some functional problems.
+Such as not being able to bind to ports 20 or 21, unless it's spawned
+from inetd.</P
+><P
+>ProFTPD takes a middle road in terms of security.  It only uses
+root privileges where required and drops to the UID defined in the
+config file at all other times.  Times when root is required include,
+binding to ports &#60; 1024, setting resource limits, reading
+configuration information and some network code.</P
+><P
+>For Linux 2.2.x kernel systems there is the POSIX style
+mod_linuxprivs module which allows very fine grain control over
+privileges.  This is highly recommended for security-conscious admins.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN634"
+></A
+><B
+>3. </B
+>How can I control what commands the server accepts?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Use a sane Allow/DenyFilter, these directives use regular
+expressions to control all text sent over the control socket.  (If
+anyone has some good examples please let me know.)&#13;</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN639"
+></A
+><B
+>4. </B
+>How can I prevent the server version from being displayed?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Setting SeverIdent to "off" should turn off the information about
+what type of server is running.  To have maximum effect this directive 
+should either be in the Global context or included in every virtual
+host block and the default block.</P
+><PRE
+CLASS="PROGRAMLISTING"
+>ServerIdent  On "Linux.co.uk server"
+
+ServerIdent  Off
+          </PRE
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN645"
+></A
+><B
+>5. </B
+>I want to show a message prior to login</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Use the DisplayConnect directive to specify a file containing a
+message to be displayed prior to login.</P
+><PRE
+CLASS="PROGRAMLISTING"
+>DisplayConnect /ftp/ftp.virtualhost/login.msg
+          </PRE
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN651"
+></A
+><B
+>6. </B
+>I want to display a message after login</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Use the DisplayLogin directive, this sends a specified ASCII file to the
+connected user.</P
+><PRE
+CLASS="PROGRAMLISTING"
+>DisplayLogin       /etc/proftp.msg
+          </PRE
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN657"
+></A
+><B
+>7. </B
+>Can I have a custom welcome response?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>Use the AccessGrantMsg directive, this sends a simple single line
+message back to the user after a successful authentication.  Magic
+cookies appear to be honoured in this directive.</P
+><PRE
+CLASS="PROGRAMLISTING"
+>AccessGrantMsg "Guest access granted for %u."
+          </PRE
+><P
+>Note, this directive has an overriding default and needs to be
+specified in both VirtualHost and Anonymous blocks.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN664"
+></A
+><B
+>8. </B
+>External Programs</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>ProFTPD has been designed to run as a secure ftp server, this means 
+that it tries to keep as much as possible under it's control.  An
+external program is a security risk in itself because it's behaviour
+is not controllable from within the ftpd code.</P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN669"
+></A
+><B
+>9. </B
+>Why do I see "No certificates found!"? </P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>This message is generated by mod_tls, the third-party module that can
+   be used to encrypt both the control and data connections with TLS
+   (Transport Layer Security), the next generation of SSL.  Certificates
+   are used to establish the security context for this secure transport.</P
+><P
+>Generation of certifications is beyond the scope of this document;
+   however, more information can be found here:</P
+><P
+>    <A
+HREF="http://en.tldp.org/HOWTO/SSL-Certificates-HOWTO/"
+TARGET="_top"
+>http://en.tldp.org/HOWTO/SSL-Certificates-HOWTO/</A
+></P
+></DIV
+></DIV
+><DIV
+CLASS="QANDAENTRY"
+><DIV
+CLASS="QUESTION"
+><P
+><A
+NAME="AEN677"
+></A
+><B
+>10. </B
+>I can delete files owned by root. Why is this?</P
+></DIV
+><DIV
+CLASS="ANSWER"
+><P
+><B
+> </B
+>ProPTPD follows the UNIX file permission rules when determining the level of access and/or control a user is granted when working with a file.  UNIX systems divide the world into three classes when determining the permissions that a user is granted for a particular file:
+<P
+></P
+><UL
+><LI
+><P
+>User - the owner of the file</P
+></LI
+><LI
+><P
+>Group - a collection of users defined in /etc/group</P
+></LI
+><LI
+><P
+>Others - neither the owner, nor a member of the group</P
+></LI
+></UL
+></P
+><P
+>Every file in a Unix filesystem has a permission definition associated with it. At a minimum, the permission established for a file will determine whether a particular user may READ, WRITE, or EXECUTE the file in question.  A directory listing will show the permissions associated with a file in the format shown below:
+<PRE
+CLASS="PROGRAMLISTING"
+>&#13;  rwx  r-x  r-x
+   |    |    |
+   |    |    |_____________ Others:  READ/NO WRITE/EXECUTE
+   |    |__________________ Group:   READ/NO WRITE/EXECUTE
+   |_______________________ User:    READ/WRITE/EXECUTE&#13;</PRE
+></P
+><P
+>In the sample directory listing shown below, READ/WRITE/EXECUTE privileges are granted to the owner of the directory, and READ/EXECUTE privileges are granted to members of the <SAMP
+CLASS="COMPUTEROUTPUT"
+>users</SAMP
+> group and everyone else.  Note the letter "d" at the beginning of each entry, denoting that the entry is actually a directory.
+
+<PRE
+CLASS="PROGRAMLISTING"
+>  prince&#62; ls -l /home/ftp
+
+  total 8
+  drwxr-xr-x    2 andrea   users        4096 May  3 00:40 andrea
+  drwxr-xr-x    2 eve      users        4096 May  3 00:40 eve
+
+  prince&#62; ls -l /home/ftp/andrea 
+
+  total 156
+  -rw-r--r--    1 andrea   users       85991 May  3 01:12 bland.txt
+  -rwxr-xr-x    1 root     root        65107 May  3 01:12 secret.txt&#13;</PRE
+></P
+><P
+>The answer to this question is shown in the above example.  When describing the permissions associated with a directory, WRITE means that permission is granted to modify the contents of a directory by adding or deleting files.  Thus, the user <SAMP
+CLASS="COMPUTEROUTPUT"
+>andrea</SAMP
+> may delete the file <SAMP
+CLASS="COMPUTEROUTPUT"
+>secret.txt</SAMP
+>, even though she cannot modify the file itself.</P
+><P
+>Refer to the documentation for the <SPAN
+CLASS="emphasis"
+><I
+CLASS="EMPHASIS"
+>IgnoreHidden</I
+></SPAN
+> and <SPAN
+CLASS="emphasis"
+><I
+CLASS="EMPHASIS"
+>HideNoAccess</I
+></SPAN
+> directives for a method to mitigate this hazard.</P
+></DIV
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="faq-ch5.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="faq.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="faq-ch7.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Configuration problems</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>User Authentication</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>
