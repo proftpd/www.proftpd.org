@@ -3,6 +3,14 @@
 
 #include "header.epl"
 
+<h1>1.3.5rc1 released</h1>
+[<i>04/Jan/2013</i>]
+<p>At long last, the ProFTPD Project team is pleased to release 1.3.5rc1 to the
+community.  This is a release candidate, containing numerous fixes, new
+directives and modules, and other functionality.  The
+<a href="docs/RELEASE_NOTES-1.3.5rc1">RELEASE_NOTES</a> and
+<a href="docs/NEWS-1.3.5rc1">NEWS</a> files contain the full details.
+
 <h1>1.3.4b released</h1>
 [<i>31/Jul/2012</i>]
 <p>The ProFTPD Project team is pleased to release 1.3.4b to the community.
