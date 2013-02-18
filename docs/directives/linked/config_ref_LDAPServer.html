@@ -21,9 +21,9 @@ TITLE="
 HREF="config_ref_LDAPSearchScope.html"><LINK
 REL="NEXT"
 TITLE="			
-			LDAPUseTLS
+			LDAPUsers
 		"
-HREF="config_ref_LDAPUseTLS.html"></HEAD
+HREF="config_ref_LDAPUsers.html"></HEAD
 ><BODY
 CLASS="REFENTRY"
 BGCOLOR="#FFFFFF"
@@ -65,7 +65,7 @@ WIDTH="10%"
 ALIGN="right"
 VALIGN="bottom"
 ><A
-HREF="config_ref_LDAPUseTLS.html"
+HREF="config_ref_LDAPUsers.html"
 ACCESSKEY="N"
 >Next</A
 ></TD
@@ -83,7 +83,7 @@ NAME="LDAPSERVER"
 ><DIV
 CLASS="REFNAMEDIV"
 ><A
-NAME="AEN5444"
+NAME="AEN5349"
 ></A
 ><H2
 >Name</H2
@@ -91,7 +91,7 @@ NAME="AEN5444"
 ><DIV
 CLASS="REFSYNOPSISDIV"
 ><A
-NAME="AEN5447"
+NAME="AEN5352"
 ></A
 ><H2
 >Synopsis</H2
@@ -159,7 +159,7 @@ CLASS="SYNOPSIS"
 ><DIV
 CLASS="REFSECT1"
 ><A
-NAME="AEN5474"
+NAME="AEN5379"
 ></A
 ><H2
 >Description</H2
@@ -168,11 +168,16 @@ NAME="AEN5474"
 		port(s) of the LDAP server(s) to use for LDAP authentication. If no
 		LDAPServer configuration directive is present, the default LDAP
 		servers specified by your LDAP API will be used.</P
+><P
+>Note that the default search scope for LDAP URLs is 'base' if
+		a scope is not explicitly specified in the URL. This behavior
+		differs from the LDAPSearchScope directive, which defaults to
+		'subtree'.</P
 ></DIV
 ><DIV
 CLASS="REFSECT1"
 ><A
-NAME="AEN5477"
+NAME="AEN5383"
 ></A
 ><H2
 >See also</H2
@@ -182,7 +187,7 @@ NAME="AEN5477"
 ><DIV
 CLASS="REFSECT1"
 ><A
-NAME="AEN5480"
+NAME="AEN5386"
 ></A
 ><H2
 >Examples</H2
@@ -223,7 +228,7 @@ WIDTH="33%"
 ALIGN="right"
 VALIGN="top"
 ><A
-HREF="config_ref_LDAPUseTLS.html"
+HREF="config_ref_LDAPUsers.html"
 ACCESSKEY="N"
 >Next</A
 ></TD
@@ -247,7 +252,7 @@ ACCESSKEY="U"
 WIDTH="33%"
 ALIGN="right"
 VALIGN="top"
->&#13;			LDAPUseTLS</TD
+>&#13;			LDAPUsers</TD
 ></TR
 ></TABLE
 ></DIV

@@ -252,11 +252,6 @@ HREF="config_ref_CreateHome.html"
 >&nbsp;--&nbsp;Create and populate users' home directories as needed</DT
 ><DT
 ><A
-HREF="config_ref_CreateHome.html"
->&#13;CreateHome</A
->&nbsp;--&nbsp;Create and populate users' home directories as needed</DT
-><DT
-><A
 HREF="config_ref_CwdRatioMsg.html"
 >&#13;CwdRatioMsg</A
 >&nbsp;--&nbsp;Ratio directive</DT
@@ -315,7 +310,7 @@ table</DT
 ><A
 HREF="config_ref_DeleteAbortedStores.html"
 >&#13;DeleteAbortedStores</A
->&nbsp;--&nbsp;Enable automatic deletion of partially uploaded files</DT
+>&nbsp;--&nbsp;Enable automatic deletion of partially uploaded HiddenStores files</DT
 ><DT
 ><A
 HREF="config_ref_Deny.html"
@@ -383,11 +378,6 @@ HREF="config_ref_DisplayFileTransfer.html"
 >&nbsp;--&nbsp;FIXFIXFIX</DT
 ><DT
 ><A
-HREF="config_ref_DisplayFirstChdir.html"
->&#13;DisplayFirstChdir</A
->&nbsp;--&nbsp;Set the file to display when first entering a directory [deprecated]</DT
-><DT
-><A
 HREF="config_ref_DisplayGoAway.html"
 >&#13;DisplayGoAway</A
 >&nbsp;--&nbsp;Set the file to display to a rejected connection</DT
@@ -441,11 +431,6 @@ HREF="config_ref_GroupPassword.html"
 HREF="config_ref_GroupRatio.html"
 >&#13;GroupRatio</A
 >&nbsp;--&nbsp;Ratio directive</DT
-><DT
-><A
-HREF="config_ref_HiddenStor.html"
->&#13;HiddenStor</A
->&nbsp;--&nbsp;Enables more safe file uploads [deprecated]</DT
 ><DT
 ><A
 HREF="config_ref_HiddenStores.html"
@@ -609,6 +594,13 @@ HREF="config_ref_LDAPGenerateHomedirPrefixNoUsername.html"
 >&nbsp;--&nbsp;(docs incomplete)</DT
 ><DT
 ><A
+HREF="config_ref_LDAPGroups.html"
+>&#13;			LDAPGroups</A
+>&nbsp;--&nbsp;			Enable LDAP lookups for user group membership and GIDs in
+			directory listings
+		</DT
+><DT
+><A
 HREF="config_ref_LDAPHomedirOnDemand.html"
 >&#13;			LDAPHomedirOnDemand</A
 >&nbsp;--&nbsp;			Enable the creation of user home directories on demand [deprecated]
@@ -656,6 +648,11 @@ HREF="config_ref_LDAPSearchScope.html"
 HREF="config_ref_LDAPServer.html"
 >&#13;			LDAPServer</A
 >&nbsp;--&nbsp;Specify the LDAP server to use for lookups</DT
+><DT
+><A
+HREF="config_ref_LDAPUsers.html"
+>&#13;			LDAPUsers</A
+>&nbsp;--&nbsp;Enable LDAP authentication/user lookups</DT
 ><DT
 ><A
 HREF="config_ref_LDAPUseTLS.html"
@@ -999,11 +996,6 @@ HREF="config_ref_SQLGroupWhereClause.html"
 >&nbsp;--&nbsp;Configure a WHERE clause for every group query</DT
 ><DT
 ><A
-HREF="config_ref_SQLHomedirOnDemand.html"
->&#13;SQLHomedirOnDemand</A
->&nbsp;--&nbsp;Have mod_sql create home directories as needed [deprecated]</DT
-><DT
-><A
 HREF="config_ref_SQLLog.html"
 >&#13;SQLLog</A
 >&nbsp;--&nbsp;Log information to a database table</DT
@@ -1146,7 +1138,7 @@ HREF="config_ref_TimeoutSession.html"
 ><A
 HREF="config_ref_TimeoutStalled.html"
 >&#13;TimeoutStalled</A
->&nbsp;--&nbsp;Sets the timeout on stalled downloads</DT
+>&nbsp;--&nbsp;Sets the timeout on stalled data transfers</DT
 ><DT
 ><A
 HREF="config_ref_TimesGMT.html"

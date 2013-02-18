@@ -79,7 +79,7 @@ DirFakeMode</H1
 ><DIV
 CLASS="REFNAMEDIV"
 ><A
-NAME="AEN2700"
+NAME="AEN2654"
 ></A
 ><H2
 >Name</H2
@@ -87,7 +87,7 @@ NAME="AEN2700"
 ><DIV
 CLASS="REFSYNOPSISDIV"
 ><A
-NAME="AEN2703"
+NAME="AEN2657"
 ></A
 ><H2
 >Synopsis</H2
@@ -150,7 +150,7 @@ CLASS="SYNOPSIS"
 ><DIV
 CLASS="REFSECT1"
 ><A
-NAME="AEN2730"
+NAME="AEN2684"
 ></A
 ><H2
 >Description</H2
@@ -162,12 +162,15 @@ is added in listings if the "read" permission is specified by this directive.
 
 As with DirFakeUser, and DirFakeGroup, the "fake" permissions shown in
 directory listings are cosmetic only, they do not affect real permissions or
-access control in any way.</P
+access control in any way on the server.  Note that DirFakeMode can affect
+the real permissions, for example, for FTP mirroring tools.  Such tools tend
+to create a mirror from what the tool sees (e.g. DirFakeMode permissions)
+on the source FTP server.</P
 ></DIV
 ><DIV
 CLASS="REFSECT1"
 ><A
-NAME="AEN2733"
+NAME="AEN2687"
 ></A
 ><H2
 >See also</H2
@@ -184,7 +187,7 @@ HREF="config_ref_DirFakeGroup.html"
 ><DIV
 CLASS="REFSECT1"
 ><A
-NAME="AEN2738"
+NAME="AEN2692"
 ></A
 ><H2
 >Examples</H2

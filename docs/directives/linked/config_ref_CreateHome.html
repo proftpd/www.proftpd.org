@@ -14,8 +14,8 @@ TITLE="List of Directives"
 HREF="by-name.html"><LINK
 REL="PREVIOUS"
 TITLE="
-CreateHome"
-HREF="config_ref_CreateHome.html"><LINK
+CommandBufferSize"
+HREF="config_ref_CommandBufferSize.html"><LINK
 REL="NEXT"
 TITLE="
 CwdRatioMsg"
@@ -47,7 +47,7 @@ WIDTH="10%"
 ALIGN="left"
 VALIGN="bottom"
 ><A
-HREF="config_ref_CreateHome.html"
+HREF="config_ref_CommandBufferSize.html"
 ACCESSKEY="P"
 >Prev</A
 ></TD
@@ -79,7 +79,7 @@ CreateHome</H1
 ><DIV
 CLASS="REFNAMEDIV"
 ><A
-NAME="AEN1670"
+NAME="AEN1622"
 ></A
 ><H2
 >Name</H2
@@ -87,7 +87,7 @@ NAME="AEN1670"
 ><DIV
 CLASS="REFSYNOPSISDIV"
 ><A
-NAME="AEN1673"
+NAME="AEN1625"
 ></A
 ><H2
 >Synopsis</H2
@@ -97,7 +97,7 @@ CLASS="COMMAND"
 >CreateHome</B
 >  [  <CODE
 CLASS="OPTION"
->off | on [&lt;mode&gt;] [skel &lt;path&gt;] [dirmode &lt;mode&gt;]</CODE
+>off|on [&lt;mode&gt;] [skel &lt;path&gt;] [dirmode &lt;mode&gt;] [uid &lt;uid&gt;] [gid &lt;gid&gt;]</CODE
 >]</P
 ><P
 ></P
@@ -144,13 +144,17 @@ CLASS="SYNOPSIS"
 ><P
 >1.2.8rc2 and later</P
 ></DD
+><DD
+><P
+>1.3.1rc1 and later for uid, gid arguments</P
+></DD
 ></DL
 ></DIV
 ></DIV
 ><DIV
 CLASS="REFSECT1"
 ><A
-NAME="AEN1700"
+NAME="AEN1654"
 ></A
 ><H2
 >Description</H2
@@ -170,16 +174,17 @@ will have the UID and GID of the logging-in user.  Note that sockets and FIFOs
 in the skeleton directory will not be copied; any setuid or setgid bits on
 files will be removed from the copied files in the target home directory.</P
 ><P
->The optional dirmode parameter can be used to specify the mode for intermediate
-directories that may need to be created in order to create the target home
-directory.  By default, the mode for such intermediate directories will be 711.
-NOTE: using a mode that does not allow for the execute bit to be enabled can
-cause havoc.  You have been warned.</P
+>The optional dirmode, uid, and gid parameters can be used to specify the
+mode, owner, and group for intermediate directories that may need to be
+created in order to create the target home directory. By default, the mode
+for such intermediate directories will be 711. NOTE: using a mode that does
+not allow for the execute bit to be enabled can cause havoc. You have been
+warned.</P
 ></DIV
 ><DIV
 CLASS="REFSECT1"
 ><A
-NAME="AEN1706"
+NAME="AEN1660"
 ></A
 ><H2
 >Examples</H2
@@ -213,7 +218,7 @@ WIDTH="33%"
 ALIGN="left"
 VALIGN="top"
 ><A
-HREF="config_ref_CreateHome.html"
+HREF="config_ref_CommandBufferSize.html"
 ACCESSKEY="P"
 >Prev</A
 ></TD
@@ -241,7 +246,7 @@ ACCESSKEY="N"
 WIDTH="33%"
 ALIGN="left"
 VALIGN="top"
->&#13;CreateHome</TD
+>&#13;CommandBufferSize</TD
 ><TD
 WIDTH="34%"
 ALIGN="center"
