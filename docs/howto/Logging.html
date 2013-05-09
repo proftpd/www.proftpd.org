@@ -1,4 +1,4 @@
-<!-- $Id: Logging.html,v 1.8 2012/12/27 18:50:24 castaglia Exp $ -->
+<!-- $Id: Logging.html,v 1.11 2013/05/09 04:19:04 castaglia Exp $ -->
 <!-- $Source: /cvsroot/proftp/proftpd/doc/howto/Logging.html,v $ -->
 
 <html>
@@ -332,8 +332,63 @@ that <b>nothing</b> is logged for certain clients/IP addresses?<br>
 </pre>
 
 <p>
+<font color=red>Question</font>: How can I configure <code>proftpd</code> so
+that it does <em>no logging at all</em>?  I have a very small embedded system
+for development/testing, and so do not need or want the logging.<br>
+<font color=blue>Answer</font>: To do this, you will need to disable much
+of the builtin, default logging that <code>proftpd</code> does, <i>e.g.</i>:
+<pre>
+  # Discard the normal logging
+  SystemLog none
+
+  # Disable xferlog(5) logging
+  TransferLog none
+
+  # Disable logging to b/u/wtmp files
+  WtmpLog off
+</pre>
+In addition, you may need to go through your <code>proftpd.conf</code> file
+(as well as any <code>Include</code> config files), and remove all
+<code>ExtendedLog</code> and <code>TraceLog</code> directives.  Also remove
+any per-module <code><i>*</i>Log</code> directives like <code>BanLog</code>,
+<code>SFTPLog</code>, <code>SQLLogFile</code>, <code>TLSLog</code>, <i>etc</i>.
+
+<p>
+You might be tempted to symlink the log files configured to
+<code>/dev/null</code>, rather than changing the <code>proftpd.conf</code>.
+This approach can work, <b><i>if you also use the <code>AllowLogSymlinks</code> directive</i></b>, <i>i.e.</i>:
+<pre>
+  # Allow proftpd to write logs to symlinks; note that this is insecure,
+  # as the symlinks might be changed to point to other files such that
+  # proftpd will overwrite them.
+  AllowLogSymlinks on
+</pre>
+
+<p>
+<font color=red>Question</font>: I see:
+<pre>
+  wtmp /var/log/wtmp: No such file or directory
+</pre>
+in my logs.  What is <code>WtmpLog</code> logging?  The description in the
+documentation is quite vague.<br>
+<font color=blue>Answer</font>: The <code>wtmp</code> logging support is
+<b>not</b> specific to <code>proftpd</code>, and instead is a more general Unix
+facility; this is why the ProFTPD documentation does not cover it in great
+detail.  To learn more about <code>wtmp</code> (or any of its other
+incarnations: <code>wtmpx</code>, <code>utmp</code>, <code>utmpx</code>),
+please find their related man pages.
+
+<p>
+Now to make the "No such file or directory" log message go away, simply tell
+<code>proftpd</code> to stop trying to use <code>wtmp</code> logging by using:
+<pre>
+  WtmpLog off
+</pre>
+in your <code>proftpd.conf</code>.
+
+<p>
 <hr>
-Last Updated: <i>$Date: 2012/12/27 18:50:24 $</i><br>
+Last Updated: <i>$Date: 2013/05/09 04:19:04 $</i><br>
 <hr>
 
 </body>
