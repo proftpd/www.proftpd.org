@@ -151,6 +151,13 @@ for allowing themselves to be listed.</p>
   <li><a href="http://cruxppc.org/">CRUX PPC</a><br />
       GNU/Linux on Power Architecture.
   </li>
+
+  <!-- Contact: "Unihost Brasil - Suporte" <suporte@unihostbrasil.com.br> -->
+  <li><a href="http://unihostbrasil.com.br/">Unihost Brasil</a><br />
+      Brazilian webhosting company that uses ProFTPD in all its servers and
+      with thousands of users successfully.
+  </li>
+
 </ul>
 
 #include "footer.epl"
