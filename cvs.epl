@@ -14,7 +14,7 @@ distribution tarballs or packages are used unless you really know what
 you're doing.</p>
 
 <p>Nightly tarballs of the latest source from CVS are available from <a
-href="download.html">the FTP sites</a> in the <code>devel/source</code>
+href="ftp://ftp.proftpd.org/devel/source">the FTP sites</a> in the <code>devel/source</code>
 directory.</p>
 
 
