@@ -3,6 +3,18 @@
 
 #include "header.epl"
 
+<h1>1.3.4d, 1.3.5rc3 released</h1>
+[<i>14/Jun/2013</i>]
+<p>The ProFTPD Project team is pleased to release 1.3.4d to the community.
+This is a maintenance release, containing backported fixes for issues found
+in the 1.3.4 release.  The <a href="docs/RELEASE_NOTES-1.3.4d">RELEASE_NOTES</a>
+and <a href="docs/NEWS-1.3.4d">NEWS</a> files contain the full details.
+
+<p>We are also happy to release 1.3.5rc3 to the community.  This is the
+third release candidate of the 1.3.5 development cycle, containing new
+features and several minor bugfixes.  The <a href="docs/RELEASE_NOTES-1.3.5rc3">RELEASE_NOTES</a> and <a href="docs/NEWS-1.3.5rc3">NEWS</a> files contain the full
+details.</p>
+
 <h1>1.3.4c, 1.3.5rc2 released</h1>
 [<i>06/Mar/2013</i>]
 <p>The ProFTPD Project team is pleased to release 1.3.4c to the community.
@@ -49,16 +61,5 @@ Note that this will be the last maintenance release from the 1.3.3 branch.</p>
 release of the 1.3.4 development cycle, containing multiple minor
 bugfixes and updates from the last RC.  The <a href="docs/RELEASE_NOTES-1.3.4">RELEASE_NOTES</a> and <a href="docs/NEWS-1.3.4">NEWS</a> files contain, as 
 always, the full details.</p>
-
-<h1>1.3.3f, 1.3.4rc3 released</h1>
-[<i>26/Sep/2011</i>]
-<p>The ProFTPD Project team is happy to release 1.3.3f to the community.
-This is a maintenance release, containing backported fixes for bugs found
-in the 1.3.3 release.  The <a href="docs/RELEASE_NOTES-1.3.3f">RELEASE_NOTES</a>
-and <a href="docs/NEWS-1.3.3f">NEWS</a> files contain the full details.</p>
-
-<p>We are also pleased to release 1.3.4rc3 to the community.  This is the third
-release candidate of the 1.3.4 development cycle, containing multiple minor
-bugfixes and updates.  The <a href="docs/RELEASE_NOTES-1.3.4rc3">RELEASE_NOTES</a> and <a href="docs/NEWS-1.3.4rc3">NEWS</a> files contain the full details.</p>
 
 #include "footer.epl"
