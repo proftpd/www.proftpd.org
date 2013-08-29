@@ -38,7 +38,8 @@
   <ul>
     <li><a href="/pgp.html">PGP public keys</a></li>
     <li><a href="/md5_pgp.html">MD5 &amp; PGP signatures</a></li>
-    <li><a href="http://proftpd.github.com/">Alternate Download Site</a></li>
+    <!-- To be renabled once we have better alternate sites figured out -->
+    <!--<li><a href="http://proftpd.github.com/">Alternate Download Site</a></li>-->
     <li><a href="/cvs.html">CVS Repository</a></li>
   </ul>
 
