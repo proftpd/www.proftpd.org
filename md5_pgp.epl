@@ -8,31 +8,31 @@
 <h2>MD5 Digest Hashes</h2>
 
 <pre>
-0871e0b93c9c3c88ca950b6d9a04aed2 <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.4b.tar.gz">proftpd-1.3.4b.tar.gz</a>
-4dc547903d812054867b649d7f8755e1 <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.5rc1.tar.gz">proftpd-1.3.5rc1.tar.gz</a>
+13c6fd7ce320886adc371c81a3e23f07 <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.4d.tar.gz">proftpd-1.3.4d.tar.gz</a>
+decb4b686a876f15f1a243449666133b <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.5rc3.tar.gz">proftpd-1.3.5rc3.tar.gz</a>
 </pre>
 
 <h2>PGP Signatures</h2>
 
 <pre>
-<strong>proftpd-1.3.4b.tar.gz.asc</strong>
+<strong>proftpd-1.3.4d.tar.gz.asc</strong>
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.9 (GNU/Linux)
 
-iEYEABECAAYFAlAYE/wACgkQt46JP6URl2pIgQCgwqPzMUsUx++mlK/MFTzSRL1g
-e1cAoNuD1fHAQ7eQppw0hSUp7vam416k
-=Za9N
+iEYEABECAAYFAlG7UkEACgkQt46JP6URl2rkugCg3f2dkMdkHjrplr2P4bq04pzS
+oVIAoI69AFTzGVjsAReiU1lIh8q4Qojo
+=f/F/
 -----END PGP SIGNATURE-----
 </pre>
 
 <pre>
-<strong>proftpd-1.3.5rc1.tar.gz.asc</strong>
+<strong>proftpd-1.3.5rc3.tar.gz.asc</strong>
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.9 (GNU/Linux)
 
-iEYEABECAAYFAlDnVqEACgkQt46JP6URl2o5ygCdGaiGYdgXcpwiLgUMl5nezoxK
-nq8AoNCaL1UOQ0lWW3sOXBOncPba/TRD
-=bmdO
+iEYEABECAAYFAlG7WBAACgkQt46JP6URl2oqcQCg0PaZMWzlYFHzHB3VGYFAWY7d
+j6UAoNM9Hfhq7c8UlOa0xdiJTXlvXRVQ
+=VIlF
 -----END PGP SIGNATURE-----
 </pre>
 

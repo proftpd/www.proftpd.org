@@ -162,18 +162,16 @@ order in which they will be checked when authenticating a user.</P
 that can be listed.  The listed module names must the full name of the source
 file, e.g. "mod_auth_unix.c".  To see a full list of module names, use
 "proftpd -l".  Do not use "mod_auth.c", as that module is the authentication
-front end module, and is necessary.  Also, do not use "mod_auth_pam.c", as
-that module does not provide, by itself, all of the information proftpd needs.</P
+front end module, and is necessary. </P
 ><P
 >You can make an auth module be "authoritative" by appending an asterisk (*)
 after the module name.  Usually this is done for the "mod_auth_pam.c" module,
 to ensure that the login fails if the PAM check fails.</P
->
-</DIV
+></DIV
 ><DIV
 CLASS="REFSECT1"
 ><A
-NAME="AEN1077"
+NAME="AEN1078"
 ></A
 ><H2
 >Examples</H2
@@ -195,6 +193,7 @@ CLASS="PROGRAMLISTING"
 >  # Use the normal system /etc/passwd and PAM, but make sure that PAM is
   # authoritative about accepting or rejecting the login
   AuthOrder mod_auth_pam.c* mod_auth_unix.c</PRE
+></DIV
 ><DIV
 CLASS="NAVFOOTER"
 ><HR
