@@ -1,15 +1,15 @@
-<!-- $Id: Logging.html,v 1.11 2013/05/09 04:19:04 castaglia Exp $ -->
+<!-- $Id: Logging.html,v 1.13 2013/10/09 16:46:37 castaglia Exp $ -->
 <!-- $Source: /cvsroot/proftp/proftpd/doc/howto/Logging.html,v $ -->
 
 <html>
 <head>
-<title>ProFTPD mini-HOWTO - Logging</title>
+<title>ProFTPD Logging</title>
 </head>
 
 <body bgcolor=white>
 
 <hr>
-<center><h2><b><i>Logging</i></b></h2></center>
+<center><h2><b><i>ProFTPD Logging</i></b></h2></center>
 <hr>
 
 <p>
@@ -62,7 +62,8 @@ your <code>/etc/syslog.conf</code> configuration.
 
 <p>
 You can fine-tune your <code>proftpd</code>'s syslog-based logging via the
-<a href="../modules/mod_core.html#SyslogFacility"><code>SyslogFacility</code></a> and <a href="../modules/mod_core.html#SyslogLevel"><code>SyslogLevel</code></a> directives.
+<a href="../modules/mod_core.html#SyslogFacility"><code>SyslogFacility</code></a> and <a href="../modules/mod_core.html#SyslogLevel"><code>SyslogLevel</code></a> directives.  See the <a href="LogLevels.html">log level</a> documentation for
+more details on these settings.
 
 <p><a name="LogFiles"></a>
 <b>Log Files</b><br>
@@ -76,7 +77,7 @@ is the most common log kept, recording file transfers.  Its format is described
 in the <code>xferlog(5)</code> man page,
 also available <a href="http://www.castaglia.org/proftpd/doc/xferlog.html">here</a>.
 
-<p><a name="SystemLog"</a>
+<p><a name="SystemLog"></a>
 If the site administrator wants to have <code>proftpd</code> log its messages
 to a file rather than going through <code>syslogd</code>, the
 <a href="../modules/mod_log.html#SystemLog"><code>SystemLog</code></a>
@@ -99,7 +100,7 @@ Multiple <code>ExtendedLogs</code> can be configured, each with a different
 
 <!-- Add note/chunk about FTP response codes, from RFC959, for ExtendedLog? -->
 
-<p><a name="SyslogVSFileLog">
+<p><a name="SyslogVSFileLog"></a>
 <b>Use of syslog versus file logging</b><br>
 Most sites will choose to have <code>proftpd</code> log via syslog (which is
 the default) or to a file (via the <code>SystemLog</code> directive).  In
@@ -388,7 +389,7 @@ in your <code>proftpd.conf</code>.
 
 <p>
 <hr>
-Last Updated: <i>$Date: 2013/05/09 04:19:04 $</i><br>
+Last Updated: <i>$Date: 2013/10/09 16:46:37 $</i><br>
 <hr>
 
 </body>

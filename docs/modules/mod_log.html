@@ -1,5 +1,5 @@
-<!-- $Id$ -->
-<!-- $Source$ -->
+<!-- $Id: mod_log.html,v 1.17 2014/01/02 16:43:54 castaglia Exp $ -->
+<!-- $Source: /cvsroot/proftp/proftpd/doc/modules/mod_log.html,v $ -->
 
 <html>
 <head>
@@ -96,7 +96,7 @@ This table shows the supported command classes:
 
   <tr>
     <td><code>ALL</code></td>
-    <td>All commands (<i>default</i>)</td>
+    <td>All commands <i>except</i> the <code>EXIT</code> pseudo-command (<i>default</i>)</td>
   </tr>
 
   <tr>
@@ -156,7 +156,10 @@ This table shows the supported command classes:
 
   <tr>
     <td><code>EXIT</code></td>
-    <td>Logs the configured <code>LogFormat</code> at session exit</td>
+    <td>Logs the configured <code>LogFormat</code> at session exit.<br>
+        <b>NOTE</b>: <code>EXIT</code> is <b>not</b> part of the
+        <code>ALL</code> command class, in order to preserve
+        backward-compatible <code>ALL</code> behavior.</td>
   </tr>
 </table>
 
@@ -224,6 +227,11 @@ indicated when logging.
   </tr>
 
   <tr>
+    <td>&nbsp;<code>%{basename}</code>&nbsp;</td>
+    <td>Last component of path, <i>i.e.</i> just the file or directory name.</td>
+  </tr>
+
+  <tr>
     <td>&nbsp;<code>%b</code>&nbsp;</td>
     <td>Number of bytes sent for this command</td>
   </tr>
@@ -236,15 +244,17 @@ indicated when logging.
   <tr>
     <td>&nbsp;<code>%d</code>&nbsp;</td>
     <td>Directory name (<i>not</i> full path) for: <code>CDUP</code>,
-      <code>CWD</code>, <code>MKD</code>, <code>RMD</code>, <code>XCWD</code>,
-      <code>XCUP</code>, <code>XMKD</code>, <code>XRMD</code></td>
+      <code>CWD</code>, <code>LIST</code>, <code>MLSD</code>, <code>MKD</code>,
+      <code>NLST</code>, <code>RMD</code>, <code>XCWD</code>, <code>XCUP</code>,
+      <code>XMKD</code>, <code>XRMD</code></td>
   </tr>
 
   <tr>
     <td>&nbsp;<code>%D</code>&nbsp;</td>
-    <td>Directory name (full path) for: <code>CDUP</code>,
-      <code>CWD</code>, <code>MKD</code>, <code>RMD</code>, <code>XCWD</code>,
-      <code>XCUP</code>, <code>XMKD</code>, <code>XRMD</code></td>
+    <td>Directory path (full path) for: <code>CDUP</code>,
+      <code>CWD</code>, <code>LIST</code>, <code>MLSD</code>, <code>MKD</code>,
+      <code>NLST</code>, <code>RMD</code>, <code>XCWD</code>, <code>XCUP</code>,
+      <code>XMKD</code>, <code>XRMD</code></td>
   </tr>
 
   <tr>
@@ -278,6 +288,11 @@ indicated when logging.
   </tr>
 
   <tr>
+    <td>&nbsp;<code>%g</code>&nbsp;</td>
+    <td>Primary group of authenticated user</td>
+  </tr>
+
+  <tr>
     <td>&nbsp;<code>%h</code>&nbsp;</td>
     <td>Remote client DNS name</td>
   </tr>
@@ -290,6 +305,11 @@ indicated when logging.
   <tr>
     <td>&nbsp;<code>%I</code>&nbsp;</td>
     <td>Total number of "raw" bytes read in from network</td>
+  </tr>
+
+  <tr>
+    <td>&nbsp;<code>%{iso8601}</code>&nbsp;</td>
+    <td>shorthand form of <code>%{%Y-%m-%d %H:%M:%S}t,%{millisecs}</code>, <i>e.g.</i> "2013-01-30 20:14:05,670"</td>
   </tr>
 
   <tr>
@@ -311,6 +331,16 @@ indicated when logging.
   <tr>
     <td>&nbsp;<code>%m</code>&nbsp;</td>
     <td>Command (method) name received from client, <i>e.g.</i> <code>RETR</code></td>
+  </tr>
+
+  <tr>
+    <td>&nbsp;<code>%{microsecs}</code>&nbsp;</td>
+    <td>6 digit value of the microseconds of the current time</td>
+  </tr>
+
+  <tr>
+    <td>&nbsp;<code>%{millisecs}</code>&nbsp;</td>
+    <td>3 digit value of the milliseconds of the current time</td>
   </tr>
 
   <tr>
@@ -361,6 +391,16 @@ indicated when logging.
   <tr>
     <td>&nbsp;<code>%T</code>&nbsp;</td>
     <td>Time taken to send/receive file, in seconds</td>
+  </tr>
+
+  <tr>
+    <td>&nbsp;<code>%{transfer-failure}</code>&nbsp;</td>
+    <td>Reason for data transfer failure (if applicable), or "-"</td>
+  </tr>
+
+  <tr>
+    <td>&nbsp;<code>%{transfer-status}</code>&nbsp;</td>
+    <td>Status of data transfer: "success", "failed", "cancelled", "timeout", or "-"</td>
   </tr>
 
   <tr>
@@ -455,8 +495,8 @@ The <code>mod_log</code> module is compiled by default.
 <p>
 <hr><br>
 
-Author: <i>$Author$</i><br>
-Last Updated: <i>$Date$</i><br>
+Author: <i>$Author: castaglia $</i><br>
+Last Updated: <i>$Date: 2014/01/02 16:43:54 $</i><br>
 
 <br><hr>
 

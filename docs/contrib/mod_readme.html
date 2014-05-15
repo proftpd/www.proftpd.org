@@ -1,5 +1,5 @@
-<!-- $Id$ -->
-<!-- $Source$ -->
+<!-- $Id: mod_readme.html,v 1.2 2013/08/14 21:40:18 castaglia Exp $ -->
+<!-- $Source: /cvsroot/proftp/proftpd/doc/contrib/mod_readme.html,v $ -->
 
 <html>
 <head>
@@ -74,7 +74,14 @@ To install <code>mod_readme</code>, follow the usual steps for using
 third-party modules in <code>proftpd</code>:
 <pre>
   ./configure --with-modules=mod_readme ...
-  make
+</pre>
+To build <code>mod_readme</code> as a DSO module:
+<pre>
+  ./configure --enable-dso --with-shared=mod_readme
+</pre>
+Then follow the usual steps:
+<pre>
+  make 
   make install
 </pre>
 
@@ -89,13 +96,13 @@ a shared module:
 <p>
 <hr><br>
 
-Author: <i>$Author$</i><br>
-Last Updated: <i>$Date$</i><br>
+Author: <i>$Author: castaglia $</i><br>
+Last Updated: <i>$Date: 2013/08/14 21:40:18 $</i><br>
 
 <br><hr>
 
 <font size=2><b><i>
-&copy; Copyright 2011 TJ Saunders<br>
+&copy; Copyright 2011-2013 TJ Saunders<br>
  All Rights Reserved<br>
 </i></b></font>
 
