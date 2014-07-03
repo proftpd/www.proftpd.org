@@ -1,5 +1,5 @@
-<!-- $Id: mod_xfer.html,v 1.10 2013/03/13 18:08:28 castaglia Exp $ -->
-<!-- $Source: /cvsroot/proftp/proftpd/doc/modules/mod_xfer.html,v $ -->
+<!-- $Id: mod_xfer.html,v 1.10 2013-03-13 18:08:28 castaglia Exp $ -->
+<!-- $Source: /home/proftpd-core/backup/proftp-cvsroot/proftpd/doc/modules/mod_xfer.html,v $ -->
 
 <html>
 <head>
@@ -169,6 +169,17 @@ a suffix:
 prefix as well.
 
 <p>
+In <code>proftpd-1.3.6rc1</code> and later, the <em>prefix</em> and
+<em>suffix</em> values can use the <code>%P</code> variable, which will
+be substituted with the session PID.  This can help to reduce issues
+encountered when an FTP upload fails in such a way that proftpd cannot properly
+clean up the <code>HiddenStores</code> temporary file.  For example:
+<pre>
+  # Use the session PID as part of the name
+  HiddenStores .in. .%P
+</pre>
+
+<p>
 <b><i>Discussion</i></b><br>
 When would you want or need to specify different prefix and suffix values
 for <code>HiddenStores</code>?  You might need this when, for example, your
@@ -289,6 +300,100 @@ over the network.
 
 <p>
 See also: <a href="#MaxRetrieveFileSize"><code>MaxRetrieveFileSize</code></a>
+
+<p>
+<hr>
+<h2><a name="MaxTransfersPerHost">MaxTransfersPerHost</a></h2>
+<strong>Syntax:</strong> MaxTransfersPerHost <em>cmd-list count [message]</em><br>
+<strong>Default:</strong> None<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code>, <code>&lt;Anonymous&gt;</code>, <code>&lt;Directory&gt;</code>, <code>.ftpaccess</code><br>
+<strong>Module:</strong> mod_xfer<br>
+<strong>Compatibility:</strong> 1.3.2rc1 and later
+
+<p>
+The <code>MaxTransfersPerHost</code> directive limits the number of data
+transfers happening at the same time <i>from the same host</i>.  The
+<em>cmd-list</em> parameter is a comma-separated list of the data transfer FTP
+commands (APPE, RETR, STOR, and/or STOU) to which the limit applies.  The
+optional <em>message</em> parameter may be used, which will be displayed to a
+client attempting to exceed the maximum value.  If <em>message</em> is
+<i>not</i> supplied, the following message is used by default:
+<pre>
+  "Sorry, the maximum number of data transfers (%m) from your host are currently being used."
+</pre>
+
+<p>
+For example:
+<pre>
+  MaxTransfersPerHost RETR 2
+</pre>
+will result in the following FTP response to a client exceeding the download
+limit:
+<pre>
+  "451 Sorry, the maximum number of data transfers (2) from your host are currently being used."
+</pre>
+And for uploads, you might using something like:
+<pre>
+  MaxTransferPerHost APPE,STOR,STOU 1
+</pre>
+
+<p>
+See also: <a href="#MaxTransfersPerUser"><code>MaxTransfersPerUser</code></a>
+
+<p>
+<hr>
+<h2><a name="MaxTransfersPerUser">MaxTransfersPerUser</a></h2>
+<strong>Syntax:</strong> MaxTransfersPerUser <em>cmd-list count [message]</em><br>
+<strong>Default:</strong> None<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code>, <code>&lt;Anonymous&gt;</code>, <code>&lt;Directory&gt;</code>, <code>.ftpaccess</code><br>
+<strong>Module:</strong> mod_xfer<br>
+<strong>Compatibility:</strong> 1.3.2rc1 and later
+
+<p>
+The <code>MaxTransfersPerUser</code> directive limits the number of data
+transfers happening at the same time <i>for the same user name</i>.  The
+<em>cmd-list</em> parameter is a comma-separated list of the data transfer FTP
+commands (APPE, RETR, STOR, and/or STOU) to which the limit applies.  The
+optional <em>message</em> parameter may be used, which will be displayed to a
+client attempting to exceed the maximum value.  If <em>message</em> is
+<i>not</i> supplied, the following message is used by default:
+<pre>
+  "Sorry, the maximum number of data transfers (%m) from this user are currently being used."
+</pre>
+
+<p>
+For example:
+<pre>
+  MaxTransfersPerUser RETR 2
+</pre>
+will result in the following FTP response to a client exceeding the download
+limit:
+<pre>
+  "451 Sorry, the maximum number of data transfers (2) from this user are currently being used."
+</pre>
+And for uploads, you might using something like:
+<pre>
+  MaxTransferPerUser APPE,STOR,STOU 1
+</pre>
+
+<p>
+See also: <a href="#MaxTransfersPerHost"><code>MaxTransfersPerHost</code></a>
+
+<p>
+<hr>
+<h2><a name="StoreUniquePrefix">StoreUniquePrefix</a></h2>
+<strong>Syntax:</strong> StoreUniquePrefix <em>prefix</em><br>
+<strong>Default:</strong> None<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code>, <code>&lt;Anonymous&gt;</code>, <code>&lt;Directory&gt;</code>, <code>.ftpaccess</code><br>
+<strong>Module:</strong> mod_xfer<br>
+<strong>Compatibility:</strong> 1.2.6rc1 and later
+
+<p>
+The <code>StoreUniquePrefix</code> directive is used to configure a
+<em>prefix</em> for the generated unique random filenames used for the STOU
+FTP command.  The last six characters of the filename will be random.
+<b>Note</b>: Slash (/) characters are <b>not</b> allowed in the <em>prefix</em>
+value.
 
 <p>
 <hr>
@@ -435,12 +540,12 @@ The <code>mod_xfer</code>module is <b>always</b> installed.
 <hr><br>
 
 Author: <i>$Author: castaglia $</i><br>
-Last Updated: <i>$Date: 2013/03/13 18:08:28 $</i><br>
+Last Updated: <i>$Date: 2013-03-13 18:08:28 $</i><br>
 
 <br><hr>
 
 <font size=2><b><i>
-&copy; Copyright 2000-2013 The ProFTPD Project<br>
+&copy; Copyright 2000-2014 The ProFTPD Project<br>
  All Rights Reserved<br>
 </i></b></font>
 
