@@ -1,0 +1,23 @@
+<: # $Id$ :>//
+<: $html_title = "Accessing the Git Repository" :>//
+
+#include "header.epl"
+
+<h1><: print "$html_title" :></h1>
+
+<p>The most recent version of the code is available via
+<a href="https://github.com/proftpd/proftpd/">GitHub</a>:
+<pre>
+  <a href="https://github.com/proftpd/proftpd/">https://github.com/proftpd/proftpd/</a>
+</pre>
+While this gives access to the very latest code, it is
+<em>development</em>-grade code.  We try to make sure it will always compile
+and that basic functions work, but it is usually not thoroughly tested.  For
+production environments, it is recommended that the distribution tarballs or
+packages are used unless you really know what you're doing.</p>
+
+<p>Nightly tarballs of the latest source from GitHub are available from <a
+href="ftp://ftp.proftpd.org/devel/source">the FTP sites</a> in the <code>devel/source</code>
+directory.</p>
+
+#include "footer.epl"

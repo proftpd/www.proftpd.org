@@ -31,7 +31,7 @@ as quickly as possible.</p>
       <br />
       (See Also: <code>doc/</code> directory of the source distribution)
   </li>
-  <li><a href="/cvs.html">CVS Howto and FAQ</a></li>
+  <li><a href="/git.html">Git Howto and FAQ</a></li>
   <li><a href="http://www.castaglia.org/proftpd/doc/devel-guide/">ProFTPD Developer's Guide</a> (by TJ Saunders)</li>
   <li><a href="howto/NAT.html">Configuring ProFTPD and NAT</a> (by Tobias Ekbom)</li>
   <li><a href="howto/SSH.html">Configuring FTP over SSH</a> (by TJ Saunders)</li>

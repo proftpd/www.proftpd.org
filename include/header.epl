@@ -40,7 +40,7 @@
     <li><a href="/md5_pgp.html">MD5 &amp; PGP signatures</a></li>
     <!-- To be renabled once we have better alternate sites figured out -->
     <!--<li><a href="http://proftpd.github.com/">Alternate Download Site</a></li>-->
-    <li><a href="/cvs.html">CVS Repository</a></li>
+    <li><a href="/git.html">Git Repository</a></li>
   </ul>
 
   <h1>Newsroom</h1>
