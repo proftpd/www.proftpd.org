@@ -4,7 +4,7 @@
   <link rel="stylesheet" type="text/css" href="/proftpd.css" />
   <title>The ProFTPD Project: <: print $html_title :></title>
   <meta name="description" content="The Official ProFTPD web site.  ProFTPD is a high-performance, extremely configurable, and most of all a secure FTP server, featuring Apache-like configuration and blazing performance." />
-  <meta name="keywords" content="ProFTPD, ftp, file, transfer, wuftpd, ftpd, server, protocol, apache, download" />
+  <meta name="keywords" content="ProFTPD, ftp, ftps, sftp, scp, ssl, tls, file, transfer, wuftpd, pureftpd, vsftpd, ftpd, server, protocol, apache, download" />
 </head>
 
 <body>
