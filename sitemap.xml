@@ -1,0 +1,2074 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://www.proftpd.org/</loc>
+  <lastmod>2015-05-29T16:06:40+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/pgp.html</loc>
+  <lastmod>2015-05-28T01:12:26+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/md5_pgp.html</loc>
+  <lastmod>2015-05-28T01:12:26+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/git.html</loc>
+  <lastmod>2015-05-28T01:12:26+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/index.html</loc>
+  <lastmod>2015-05-29T16:06:40+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/module_news.html</loc>
+  <lastmod>2015-05-28T01:12:26+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/goals.html</loc>
+  <lastmod>2015-05-28T01:12:26+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/features.html</loc>
+  <lastmod>2015-05-28T01:12:26+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/bugs.html</loc>
+  <lastmod>2015-05-28T01:12:25+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/sites.html</loc>
+  <lastmod>2015-05-28T01:12:26+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/</loc>
+  <lastmod>2015-05-28T01:12:27+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/rfc.html</loc>
+  <lastmod>2015-05-28T01:12:27+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/faq/linked/faq.html</loc>
+  <lastmod>2012-12-29T00:49:43+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/index.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/modules/index.html</loc>
+  <lastmod>2014-08-26T08:20:02+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/index.html</loc>
+  <lastmod>2014-08-20T16:20:04+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/example-conf.html</loc>
+  <lastmod>2015-05-28T01:12:27+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/lists.html</loc>
+  <lastmod>2015-05-28T01:12:26+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_dynmasq.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_ban.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_quotatab.html</loc>
+  <lastmod>2014-01-28T18:07:20+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/by-name.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/by-modules.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/by-context.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/configuration_full.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/faq/faq_full.html</loc>
+  <lastmod>2012-12-28T21:45:27+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/faq/faq.ps</loc>
+  <lastmod>2012-12-28T21:45:27+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/faq/faq.pdf</loc>
+  <lastmod>2012-12-28T21:45:27+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/NAT.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/SSH.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_sftp.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/TLS.html</loc>
+  <lastmod>2015-05-22T16:20:03+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/SQL.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/Quotas.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_shaper.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_radius.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/faq/linked/faq-preface.html</loc>
+  <lastmod>2012-12-29T00:49:43+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/faq/linked/faq-ch1.html</loc>
+  <lastmod>2012-12-29T00:49:43+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/faq/linked/faq-ch2.html</loc>
+  <lastmod>2012-12-29T00:49:43+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/faq/linked/faq-ch3.html</loc>
+  <lastmod>2012-12-29T00:49:43+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/faq/linked/faq-ch4.html</loc>
+  <lastmod>2012-12-29T00:49:43+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/faq/linked/faq-ch5.html</loc>
+  <lastmod>2012-12-29T00:49:43+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/faq/linked/faq-ch6.html</loc>
+  <lastmod>2012-12-29T00:49:43+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/faq/linked/faq-ch7.html</loc>
+  <lastmod>2012-12-29T00:49:43+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/Compiling.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/ConfigFile.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/ServerType.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/Authentication.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/Chroot.html</loc>
+  <lastmod>2014-10-05T18:20:03+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/AuthFiles.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/Umask.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/Debugging.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/Versioning.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/Vhost.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/VirtualUsers.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/Directory.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/Limit.html</loc>
+  <lastmod>2013-05-23T16:20:06+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/Timestamps.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/ListOptions.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/Upgrade.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/DSO.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/ConnectionACLs.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/ASCII.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/FXP.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/DNS.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/Sendfile.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/FTP.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/Logging.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/Radius.html</loc>
+  <lastmod>2014-01-27T02:20:02+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/Memcache.html</loc>
+  <lastmod>2013-05-09T16:20:03+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/KeepAlives.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/Stopping.html</loc>
+  <lastmod>2013-07-02T16:20:03+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/Scoreboard.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/Classes.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/DisplayFiles.html</loc>
+  <lastmod>2014-08-11T18:20:03+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/CreateHome.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/Controls.html</loc>
+  <lastmod>2013-01-09T21:04:30+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/Rewrite.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/Tracing.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/Filters.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/ConfigurationTricks.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/Regex.html</loc>
+  <lastmod>2012-12-21T22:35:37+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/Nonroot.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/Globbing.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/Testing.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/Translations.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/BCP.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/ECCN.html</loc>
+  <lastmod>2013-07-09T17:43:26+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/modules/mod_auth.html</loc>
+  <lastmod>2014-07-03T18:14:10+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/modules/mod_auth_file.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/modules/mod_auth_pam.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/modules/mod_auth_unix.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/modules/mod_cap.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/modules/mod_core.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/modules/mod_ctrls.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/modules/mod_delay.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/modules/mod_dso.html</loc>
+  <lastmod>2013-05-09T16:20:03+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/modules/mod_facl.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/modules/mod_facts.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/modules/mod_ident.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/modules/mod_lang.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/modules/mod_log.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/modules/mod_ls.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/modules/mod_memcache.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/modules/mod_rlimit.html</loc>
+  <lastmod>2014-08-26T08:20:02+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/modules/mod_site.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/modules/mod_xfer.html</loc>
+  <lastmod>2014-07-03T18:14:10+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/ftpasswd.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/ftpquota.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/ftpmail.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_ctrls_admin.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_deflate.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_dnsbl.html</loc>
+  <lastmod>2014-08-20T16:20:04+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_exec.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_geoip.html</loc>
+  <lastmod>2014-11-29T20:20:03+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_ifsession.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_ifversion.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_load.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_qos.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_quotatab_file.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_quotatab_ldap.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_quotatab_sql.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_readme.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_rewrite.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_sftp_pam.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_sftp_sql.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_site_misc.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_sql.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_sql_passwd.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_tls.html</loc>
+  <lastmod>2014-09-10T21:44:03+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_tls_memcache.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_tls_shmcache.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_unique_id.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_wrap.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_wrap2.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_wrap2_file.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_wrap2_sql.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/list-unsub.html</loc>
+  <lastmod>2015-05-28T01:12:26+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_quotatab_radius.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_ServerAdmin.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/configuration.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_AccessDenyMsg.html</loc>
+  <lastmod>2013-02-17T23:57:02+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_AccessGrantMsg.html</loc>
+  <lastmod>2013-02-17T23:56:31+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_Allow.html</loc>
+  <lastmod>2013-02-17T23:56:36+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_AllowAll.html</loc>
+  <lastmod>2013-02-17T23:56:58+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_AllowClass.html</loc>
+  <lastmod>2013-02-17T23:56:35+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_AllowFilter.html</loc>
+  <lastmod>2013-02-17T23:56:12+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_AllowForeignAddress.html</loc>
+  <lastmod>2013-02-17T23:56:55+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_AllowGroup.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_AllowLogSymlinks.html</loc>
+  <lastmod>2013-02-17T23:55:50+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_AllowOverride.html</loc>
+  <lastmod>2013-02-17T23:56:22+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_AllowOverwrite.html</loc>
+  <lastmod>2013-02-17T23:56:13+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_AllowRetrieveRestart.html</loc>
+  <lastmod>2013-02-17T23:56:12+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_AllowStoreRestart.html</loc>
+  <lastmod>2013-02-17T23:56:26+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_AllowUser.html</loc>
+  <lastmod>2013-02-17T23:57:03+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_AnonRatio.html</loc>
+  <lastmod>2013-02-17T23:56:04+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_AnonRejectPasswords.html</loc>
+  <lastmod>2013-02-17T23:56:10+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_AnonRequirePassword.html</loc>
+  <lastmod>2013-02-17T23:56:37+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_Anonymous.html</loc>
+  <lastmod>2013-02-17T23:56:28+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_AnonymousGroup.html</loc>
+  <lastmod>2013-02-17T23:56:33+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_AuthAliasOnly.html</loc>
+  <lastmod>2013-02-17T23:56:33+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_AuthGroupFile.html</loc>
+  <lastmod>2013-02-17T23:56:45+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_AuthOrder.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_AuthPAM.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_AuthPAMConfig.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_AuthUserFile.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_AuthUsingAlias.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_Bind.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_ByteRatioErrMsg.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_CapabilitiesEngine.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_CapabilitiesSet.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_CDPath.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_Class.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_CommandBufferSize.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_CreateHome.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_CwdRatioMsg.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_DebugLevel.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_DefaultAddress.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_DefaultChdir.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_DefaultRoot.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_DefaultServer.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_DefaultTransferMode.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_DeferWelcome.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_Define.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_DelayEngine.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_DelayTable.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_DeleteAbortedStores.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_Deny.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_DenyAll.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_DenyClass.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_DenyFilter.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_DenyGroup.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_DenyUser.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_Directory.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_DirFakeGroup.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_DirFakeMode.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_DirFakeUser.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_DisplayChdir.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_DisplayConnect.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_DisplayFileTransfer.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_DisplayGoAway.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_DisplayLogin.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_DisplayQuit.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_DisplayReadme.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_ExtendedLog.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_FileRatioErrMsg.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_Global.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_Group.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_GroupOwner.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_GroupPassword.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_GroupRatio.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_HiddenStores.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_HideFiles.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_HideGroup.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_HideNoAccess.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_HideUser.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_HostRatio.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_IdentLookups.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_IfDefine.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_IfModule.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_IgnoreHidden.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_Include.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LDAPAliasDereference.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LDAPAttr.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LDAPAuthBinds.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LDAPDefaultAuthScheme.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LDAPDefaultGID.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LDAPDefaultUID.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LDAPDNInfo.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LDAPDoAuth.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LDAPDoGIDLookups.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LDAPDoQuotaLookups.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LDAPDoUIDLookups.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LDAPForceDefaultGID.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LDAPForceDefaultUID.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LDAPForceGeneratedHomedir.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LDAPForceHomedirOnDemand.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LDAPGenerateHomedir.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LDAPGenerateHomedirPrefix.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LDAPGenerateHomedirPrefixNoUsername.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LDAPGroups.html</loc>
+  <lastmod>2013-02-17T23:56:06+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LDAPHomedirOnDemand.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LDAPHomedirOnDemandPrefix.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LDAPHomedirOnDemandPrefixNoUsername.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LDAPHomedirOnDemandSuffix.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LDAPNegativeCache.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LDAPProtocolVersion.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LDAPQueryTimeout.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LDAPSearchScope.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LDAPServer.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LDAPUsers.html</loc>
+  <lastmod>2013-02-17T23:55:58+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LDAPUseTLS.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LeechRatioMsg.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_Limit.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_ListOptions.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LogFormat.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_LoginPasswordPrompt.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_MasqueradeAddress.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_MaxClients.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_MaxClientsPerClass.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_MaxClientsPerHost.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_MaxClientsPerUser.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_MaxConnectionRate.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_MaxConnectionsPerHost.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_MaxHostsPerUser.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_MaxInstances.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_MaxLoginAttempts.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_MaxRetrieveFileSize.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_MaxStoreFileSize.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_MultilineRFC2228.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_Order.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_PassivePorts.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_PathAllowFilter.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_PathDenyFilter.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_PersistentPasswd.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_PidFile.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_Port.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_RadiusAcctServer.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_RadiusAuthServer.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_RadiusEngine.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_RadiusLog.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_RadiusRealm.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_RadiusUserInfo.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_RatioFile.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_Ratios.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_RatioTempFile.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_RequireValidShell.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_RewriteCondition.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_RewriteEngine.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_RewriteLock.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_RewriteLog.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_RewriteMap.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_RewriteRule.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_RLimitCPU.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_RLimitMemory.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_RLimitOpenFiles.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_RootLogin.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_RootRevoke.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_SaveRatios.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_ScoreboardFile.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_ServerIdent.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_ServerLog.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_ServerName.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_ServerType.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_SetEnv.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_ShowSymlinks.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_SocketBindTight.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_SocketOptions.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_SQLAuthenticate.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_SQLAuthTypes.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_SQLBackend.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_SQLConnectInfo.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_SQLDefaultGID.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_SQLDefaultHomedir.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_SQLDefaultUID.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_SQLEngine.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_SQLGroupInfo.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_SQLGroupWhereClause.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_SQLLog.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_SQLLogFile.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_SQLMinID.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_SQLMinUserGID.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_SQLMinUserUID.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_SQLNamedQuery.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_SQLNegativeCache.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_SQLRatios.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_SQLRatioStats.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_SQLShowInfo.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_SQLUserInfo.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_SQLUserWhereClause.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_StoreUniquePrefix.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_SyslogFacility.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_SyslogLevel.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_SystemLog.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TCPAccessFiles.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TCPAccessSyslogLevels.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_tcpBackLog.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TCPGroupAccessFiles.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_tcpNoDelay.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TCPServiceName.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TCPUserAccessFiles.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TimeoutIdle.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TimeoutLinger.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TimeoutLogin.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TimeoutNoTransfer.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TimeoutSession.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TimeoutStalled.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TimesGMT.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TLSCACertificateFile.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TLSCACertificatePath.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TLSCARevocationFile.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TLSCARevocationPath.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TLSCertificateChainFile.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TLSCipherSuite.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TLSDHParamFile.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TLSDSACertificateFile.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TLSDSACertificateKeyFile.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TLSEngine.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TLSLog.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TLSOptions.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TLSPassPhraseProvider.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TLSProtocol.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TLSRandomSeed.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TLSRenegotiate.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TLSRequired.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TLSRSACertificateFile.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TLSRSACertificateKeyFile.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TLSVerifyClient.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TLSVerifyDepth.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TransferLog.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_TransferRate.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_Umask.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_UnsetEnv.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_UseFtpUsers.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_UseGlobbing.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_UseIPv6.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_User.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_UserAlias.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_UserDirRoot.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_UseReverseDNS.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_UserOwner.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_UserPassword.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_UserRatio.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_UseSendfile.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_UseUTF8.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_VirtualHost.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_WtmpLog.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_mod_auth.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_mod_core.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_mod_delay.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_mod_ldap.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_mod_log.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_mod_ls.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_mod_radius.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_mod_ratio.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_mod_readme.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_mod_sql.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_mod_tls.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_mod_wrap.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_mod_xfer.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_context_serverconfig.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_context_Global.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_context_VirtualHost.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_context_Anonymous.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_context_Limit.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/directives/linked/config_ref_context_ftpaccess.html</loc>
+  <lastmod>2013-02-18T00:22:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib//mod_quotatab.html</loc>
+  <lastmod>2014-01-28T18:07:20+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/contrib/mod_ldap.html</loc>
+  <lastmod>2014-05-15T20:38:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/howto/LogLevels.html</loc>
+  <lastmod>2015-04-16T04:20:03+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/utils/ftpwho.html</loc>
+  <lastmod>2012-12-21T22:35:37+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/utils/ftpcount.html</loc>
+  <lastmod>2012-12-21T22:35:37+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/docs/utils/ftpasswd.html</loc>
+  <lastmod>2012-12-21T22:35:37+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.proftpd.org/.</loc>
+  <lastmod>2015-05-29T16:06:40+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+</urlset>
