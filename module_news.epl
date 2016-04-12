@@ -5,46 +5,20 @@
 
 <h1><: print "$html_title" :></h1>
 
-<h2>Geolocation module</h2>
+<h2>AWS configuration module</h2>
 <i>Maintainer: TJ Saunders</i>
-<br /><a href="http://www.castaglia.org/proftpd/modules/mod_geoip.html">http://www.castaglia.org/proftpd/modules/mod_geoip.html</a>
+<br /><a href="https://github.com/Castaglia/proftpd-mod_aws/">https://github.com/Castaglia/proftpd-mod_aws/</a>
 
-<p>The <code>mod_geoip</code> module allows sites to quickly look up
-geolocation information such as country, continent, region, timezone,
-<i>etc</i> based on the connecting client's IP address.  This information can
-be logged for tracking purposes, and used to configure access controls in
-order to reduce/prevent connections from locations unauthorized by site policy.
+<p>The <code>mod_aws</code> module can be used to diagnose/configure your
+AWS EC2 instance for running ProFTPD.
 
 
-<h2>Versioning module</h2>
+<h2>FTP/FTPS Proxy module</h2>
 <i>Maintainer: TJ Saunders</i>
-<br /><a href="http://www.castaglia.org/proftpd/modules/mod_ifversion.html">http://www.castaglia.org/proftpd/modules/mod_ifversion.html</a>
+<br /><a href="https://github.com/Castaglia/proftpd-mod_proxy/">https://github.com/Castaglia/proftpd-mod_proxy/</a>
 
-<p>The <code>mod_ifversion</code> module allows for ProFTPD configuration
-files which have version-dependent sections.  For configuration files which
-need to be used with different proftpd versions, and for configurations which
-may use directives which have been deprecated or changed in later proftpd
-versions, this module is useful.
-
-
-<h2>SFTP module</h2>
-<i>Maintainer: TJ Saunders</i>
-<br /><a href="http://www.castaglia.org/proftpd/modules/mod_sftp.html">http://www.castaglia.org/proftpd/modules/mod_sftp.html</a>
-
-<p>The <code>mod_sftp</code> module implements the SSH2, SFTP and SCP protocols,
-allowing SCP and SFTP clients to be used with ProFTPD.  ProFTPD's existing
-features such as flexible logging, chrooted logins, SQL/LDAP/RADIUS support,
-quotas, <i>etc</i> can be used for SCP and SFTP clients.
-
-
-<h2>Checksum module</h2>
-<i>Maintainer: Mathias Berchtold</i>
-<br /><a href="http://www.smartftp.com/oss/proftpd/">http://www.smartftp.com/oss/proftpd/</a>
-
-<p>
-The <code>mod_digest</code> is an add-on module for ProFTPD which offers
-several hash functions which can be used to verify the file integrity.  The
-module implements the following features: XCRC, XMD5, XSHA1 and XSHA256.</p>
+<p>The <code>mod_proxy</code> module supports forward and reverse proxying
+of FTP/FTPS connections.
 
 
 <h2>Virus filtering for uploaded files</h2>
@@ -66,28 +40,12 @@ mixing reads and writes to the disk. <code>mod_fsync</code> was written to
 work around these inefficiencies.</p>
 
 
-<h2>Automatic updating of <code>MasqueradeAddress</code></h2>
-<br /><a href="http://www.proftpd.org/docs/contrib/mod_dynmasq.html">http://www.proftpd.org/docs/contrib/mod_dynmasq.html</a>
-
-<p>For sites that use the <code>MasqueradeAddress</code> and which have
-dynamic IP addresses, <code>mod_dynmasq</code> is very useful.</p>
-
-
 <h2>LDAP-based configuration module</h2>
 <i>Maintainer: TJ Saunders</i>
 <br /><a href="http://www.castaglia.org/proftpd/modules/mod_conf_ldap.html">http://www.castaglia.org/proftpd/modules/mod_conf_ldap.html</a>
 
 <p>Support for storing <code>proftpd.conf</code> configuration data in LDAP
 directories.</p>
-
-
-<h2>FTP server bans</h2>
-<br /><a href="http://www.proftpd.org/docs/contrib/mod_ban.html">http://www.proftpd.org/docs/contrib/mod_ban.html</a>
-
-<p><code>mod_ban</code> allows the ability to dynamically ban clients by
-user name, by host IP address or DNS name, and by class name.  In addition,
-it has support for automatically banning clients based on configurable
-rules.</p>
 
 
 <h2>Alternative TLS module</h2>
@@ -98,13 +56,6 @@ rules.</p>
 which uses GnuTLS instead, and supports several alternative authentication
 methods by taking advantage of the TLS-SRP and TLS with OpenPGP keys
 features of GnuTLS.</p>
-
-
-<h2>FTP traffic shaping</h2> 
-<i>Maintainer: TJ Saunders</i>
-<br /><a href="http://www.castaglia.org/proftpd/modules/mod_shaper.html">http://www.castaglia.org/proftpd/modules/mod_shaper.html</a>
-
-<p>Adds ability to configure overall bandwidth control for ProFTPD.</p>
 
 
 <h2>Send messages to connected clients</h2> 
@@ -145,23 +96,6 @@ tables.</p>
 as described in RFC2228.</p>
 
 
-<h2>Script-executing module</h2>
-<i>Maintainer: TJ Saunders</i>
-<br /><a href="http://www.castaglia.org/proftpd/modules/mod_exec.html">http://www.castaglia.org/proftpd/modules/mod_exec.html</a>
-
-<p>Support for executing external scripts and commands, based on a variety
-of conditions, during the course of an FTP session.</p>
-
-
-<h2>Quota module</h2>
-<br /><a href="http://www.proftpd.org/docs/contrib/mod_quotatab.html">http://www.proftpd.org/docs/contrib/mod_quotatab.html</a>
-
-<p><code>mod_quotatab</code> implements FTP quotas in a manner different
-from the now-deprecated <code>mod_quota</code>.  Current versions support
-reading quota limits from flat files, LDAP servers, or SQL tables, and
-storing quota tallies in flat files or SQL tables.</p>
-
-
 <h2>TDS SQL backend module</h2>
 <i>Maintainer: Patrick Muldoon</i>
 <br /><a href="http://labratsoftware.com/mod_sql_tds/mod_sql_tds-4.0.tar.gz">http://labratsoftware.com/mod_sql_tds/mod_sql_tds-4.0.tar.gz</a>
@@ -169,14 +103,6 @@ storing quota tallies in flat files or SQL tables.</p>
 <p><code>mod_sql_tds</code> provides SQL backend support for servers which
 speak TDS, i.e. MS SQL Server and Sybase. This module should be considered
 beta (maybe even alpha).</p>
-
-
-<h2>LDAP authentication module</h2>
-<i>Maintainer: John Morrissey</i>
-<br /><a href="http://horde.net/~jwm/software/mod_ldap/">http://horde.net/~jwm/software/mod_ldap/</a>
-
-<p>Authentication support using the Lightweight Directory Access
-Protocol.</p>
 
 
 <h2>CDB authentication module</h2>
