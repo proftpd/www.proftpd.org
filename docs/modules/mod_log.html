@@ -1,6 +1,3 @@
-<!-- $Id: mod_log.html,v 1.17 2014/01/02 16:43:54 castaglia Exp $ -->
-<!-- $Source: /cvsroot/proftp/proftpd/doc/modules/mod_log.html,v $ -->
-
 <html>
 <head>
 <title>ProFTPD module mod_log</title>
@@ -283,6 +280,11 @@ indicated when logging.
   </tr>
 
   <tr>
+    <td>&nbsp;<code>%{file-size}</code>&nbsp;</td>
+    <td>Indicates the file size <b>after</b> data transfer, or "-" if not applicable</td>
+  </tr>
+
+  <tr>
     <td>&nbsp;<code>%{gid}</code>&nbsp;</td>
     <td>GID of authenticated user</td>
   </tr>
@@ -369,6 +371,11 @@ indicated when logging.
   </tr>
 
   <tr>
+    <td>&nbsp;<code>%R</code>&nbsp;</td>
+    <td>Response time, in milliseconds</td>
+  </tr>
+
+  <tr>
     <td>&nbsp;<code>%s</code>&nbsp;</td>
     <td>Numeric FTP response code (status); see <a href="http://www.faqs.org/rfcs/rfc959.html">RFC 959</a> Section 4.2.1</td>
   </tr>
@@ -390,7 +397,7 @@ indicated when logging.
 
   <tr>
     <td>&nbsp;<code>%T</code>&nbsp;</td>
-    <td>Time taken to send/receive file, in seconds</td>
+    <td>Time taken to transfer file, in seconds</td>
   </tr>
 
   <tr>
@@ -399,8 +406,18 @@ indicated when logging.
   </tr>
 
   <tr>
+    <td>&nbsp;<code>%{transfer-millisecs}</code>&nbsp;</td>
+    <td>Time taken to transfer file, in milliseconds</td>
+  </tr>
+
+  <tr>
     <td>&nbsp;<code>%{transfer-status}</code>&nbsp;</td>
     <td>Status of data transfer: "success", "failed", "cancelled", "timeout", or "-"</td>
+  </tr>
+
+  <tr>
+    <td>&nbsp;<code>%{transfer-type}</code>&nbsp;</td>
+    <td>Data transfer type: "binary" or "ASCII" (if applicable), or "-"</td>
   </tr>
 
   <tr>
@@ -493,15 +510,79 @@ A <em>path</em> value of "none" will disable logging for the entire daemon.
 The <code>mod_log</code> module is compiled by default.
 
 <p>
+<hr>
+<h2><a name="Usage">Usage</a></h2>
+<p>
+
+<p><a name="FAQ">
+<b>Frequently Asked Questions</b><br>
+
+<p>
+<font color=red>Question</font>: I have configured ProFTPD to use DNS names
+in my <code>proftpd.conf</code> using:
+<pre>
+  UseReverseDNS on
+</pre>
+But in my <code>ExtendedLog</code>, I still see IP addresses rather than the
+DNS names I expect to see.  How can that happen?<br>
+<font color=blue>Answer</font>: The
+<a href="#LogFormat"><code>LogFormat</code></a> <code>%h</code> is what is used
+to log DNS names.  The logged value might be an IP address if ProFTPD cannot
+properly verify that the client IP address resolves to a DNS name.
+
+<p>
+"Properly verifying" an IP address, in this case, means resolving the DNS name
+for an IP address <em>and then resolving that DNS name back to its IP
+addresses</em>:
+<pre>
+  $ host 10.1.2.3
+  3.2.1.10.in-addr.arpa domain name pointer host.domain.example.com.
+  $ host host.domain.example.com
+  host.domain.example.com has address 10.4.5.6
+</pre>
+In this example, the IP address 10.1.2.3 does not resolve back to itself via
+DNS, but rather to a <i>different</i> IP address.
+
+<p>
+If the DNS name does not resolve back to the original IP address, then that
+DNS name is <b>not used</b>, as that DNS name is considered "unreliable"; only
+<em>reliable</em> information is logged (and used elsewhere).  Thus ProFTPD
+resorts to logging just the client IP address for the <code>%h</code> variable,
+rather than the DNS name, in these situations.
+
+<p>
+<font color=red>Question</font>: How can I get the reason a client was
+disconnected, for whatever reason, logged to my <code>ExtendedLog</code>?<br>
+<font color=blue>Answer</font>: You can use the <code>%E</code>
+<a href="#LogFormat"><code>LogFormat</code></a> variable for this, <b>in
+conjunction with</b> the <code>EXIT</code> log class.
+
+<p>
+For example, assume you have configured the following:
+<pre>
+  MaxConnectionsPerUser 2
+</pre>
+and you would like your <code>ExtendedLog</code> to record when this limit
+is reached.  To do this, you would use something like the following:
+<pre>
+  LogFormat eos "%a: user=%U disconnect_reason=\"%E\""
+  ExtendedLog /var/log/proftpd/ext.log EXIT eos
+</pre>
+Of course, you can include other logging classes than just <code>EXIT</code>;
+the above is just an example.
+
+<p>
+With the above, when the <code>MaxConnectionsPerUser</code> is reached,
+your log would have a line like:
+<pre>
+  127.0.0.1: user=tj disconnect_reason="Denied by MaxConnectionsPerUser"
+</pre>
+
+<p>
 <hr><br>
 
-Author: <i>$Author: castaglia $</i><br>
-Last Updated: <i>$Date: 2014/01/02 16:43:54 $</i><br>
-
-<br><hr>
-
 <font size=2><b><i>
-&copy; Copyright 2002-2014<br>
+&copy; Copyright 2002-2016<br>
  All Rights Reserved<br>
 </i></b></font>
 
