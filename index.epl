@@ -3,7 +3,7 @@
 
 #include "header.epl"
 
-<h1>1.3.6rc3 released</h1>
+<h1>1.3.6rc3, 1.3.5c released</h1>
 [<i>14/Jan/2017</i>]
 <p>The ProFTPD Project team is pleased to announce the availability of
 1.3.6rc3 to the community.  This is the third release candidate of the 1.3.6
@@ -11,6 +11,11 @@ development cycle, containing multiple major bugfixes and features.  The
 <a href="docs/RELEASE_NOTES-1.3.6rc3">RELEASE_NOTES</a> and
 <a href="docs/NEWS-1.3.6rc3">NEWS</a> files contain, as always, the full
 details.</p>
+
+<p>We are also happy to release 1.3.5c to the community.  This is a maintenance
+release, containing backported fixes for bugs found in the 1.3.5 release.  The
+<a href="docs/RELEASE_NOTES-1.3.5c">RELEASE_NOTES</a> and
+<a href="docs/NEWS-1.3.5c">NEWS</a> files contain the full details.</p>
 
 <h1>1.3.6rc2, 1.3.5b released</h1>
 [<i>10/Mar/2016</i>]
