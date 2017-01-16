@@ -17,21 +17,21 @@
 
 <div id="menu">
   <h1>Current Versions</h1>
-  Maintenance: <strong>1.3.5c</strong>
+  Maintenance: <strong>1.3.5d</strong>
   <div class="indent">
-    <span class="nowrap">[ <a href="/docs/RELEASE_NOTES-1.3.5c">RELEASE_NOTES</a> ]</span>
+    <span class="nowrap">[ <a href="/docs/RELEASE_NOTES-1.3.5d">RELEASE_NOTES</a> ]</span>
   </div>
   <div class="indent">
-    <span class="nowrap">[ <a href="/docs/NEWS-1.3.5c">NEWS</a> ]</span>
-    <span class="nowrap">[ <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.5c.tar.gz">gz</a> ]</span>
+    <span class="nowrap">[ <a href="/docs/NEWS-1.3.5d">NEWS</a> ]</span>
+    <span class="nowrap">[ <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.5d.tar.gz">gz</a> ]</span>
   </div>
-  Release Candidate: <strong>1.3.6rc3</strong>
+  Release Candidate: <strong>1.3.6rc4</strong>
   <div class="indent">
-    <span class="nowrap">[ <a href="/docs/RELEASE_NOTES-1.3.6rc3">RELEASE_NOTES</a> ]</span>
+    <span class="nowrap">[ <a href="/docs/RELEASE_NOTES-1.3.6rc4">RELEASE_NOTES</a> ]</span>
   </div>
   <div class="indent">
-    <span class="nowrap">[ <a href="/docs/NEWS-1.3.6rc3">NEWS</a> ]</span>
-    <span class="nowrap">[ <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.6rc3.tar.gz">gz</a> ]</span>
+    <span class="nowrap">[ <a href="/docs/NEWS-1.3.6rc4">NEWS</a> ]</span>
+    <span class="nowrap">[ <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.6rc4.tar.gz">gz</a> ]</span>
   </div>
 
   <h1>Downloads</h1>
