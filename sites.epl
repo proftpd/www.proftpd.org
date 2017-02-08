@@ -158,6 +158,12 @@ for allowing themselves to be listed.</p>
       with thousands of users successfully.
   </li>
 
+  <!-- Contact: "RoseHosting Marketing" <marketing@rosehosting.com> -->
+  <li><a href="https://www.rosehosting.com/">RoseHosting</a><br />
+      US-based web hosting provider offering Managed Linux VPS Hosting with
+      free 24/7 technical support. They will install and configure ProFTPD for
+      their customers, free of charge.
+  </li>
 </ul>
 
 #include "footer.epl"
