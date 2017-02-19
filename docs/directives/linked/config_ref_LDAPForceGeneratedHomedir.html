@@ -21,9 +21,9 @@ TITLE="
 HREF="config_ref_LDAPForceDefaultUID.html"><LINK
 REL="NEXT"
 TITLE="      
-      LDAPForceHomedirOnDemand
+      LDAPGenerateHomedir
     "
-HREF="config_ref_LDAPForceHomedirOnDemand.html"></HEAD
+HREF="config_ref_LDAPGenerateHomedir.html"></HEAD
 ><BODY
 CLASS="REFENTRY"
 BGCOLOR="#FFFFFF"
@@ -65,7 +65,7 @@ WIDTH="10%"
 ALIGN="right"
 VALIGN="bottom"
 ><A
-HREF="config_ref_LDAPForceHomedirOnDemand.html"
+HREF="config_ref_LDAPGenerateHomedir.html"
 ACCESSKEY="N"
 >Next</A
 ></TD
@@ -87,8 +87,7 @@ NAME="AEN4635"
 ></A
 ><H2
 >Name</H2
->LDAPForceGeneratedHomedir&nbsp;--&nbsp;      Force all LDAP-authenticated users to use the default HomeDironDemand
-      prefix/suffix.
+>LDAPForceGeneratedHomedir&nbsp;--&nbsp;      Force all LDAP-authenticated users to use the LDAPGenerateHomedir home directory
     </DIV
 ><DIV
 CLASS="REFSYNOPSISDIV"
@@ -108,10 +107,6 @@ CLASS="OPTION"
         <CODE
 CLASS="OPTION"
 >off</CODE
->
-      ] [        <CODE
-CLASS="OPTION"
->directory-mode</CODE
 >
       ]</P
 ><P
@@ -172,17 +167,41 @@ NAME="AEN4668"
 ></A
 ><H2
 >Description</H2
-><P
->Even when a
-    <A
-HREF="config_ref_LDAPGenerateHomedirPrefix.html"
->LDAPGenerateHomedirPrefix</A
->
-    is configured, mod_ldap will allow individual users to have
-    homeDirectory attributes that will override the default. With
-    LDAPForceHomeDironDemand enabled, all LDAP-authenticated users are given
-    the default prefix and/or suffix; homedirs may not be overridden by LDAP
-    homeDirectory attributes.</P
+><P>
+When no <code>homeDirectory</code> attribute is found, the <code>mod_ldap</code>
+module can be configured to <em>generate</em> a home directory using the
+<a href="config_ref_LDAPGenerateHomedir.html"><code>LDAPGenerateHomedir</code></a> directive.
+If there <i>is</i> a <code>homeDirectory</code> attribute present, however,
+the <code>mod_ldap</code> module will use that attribute value as the home
+directory.
+
+<p>
+However, there may be cases where the administrator wishes to <em>override</em>
+the <code>homeDirectory</code> attribute, and thus to <i>always</i> use the
+home directory value that <code>mod_ldap</code> would generate.  The
+<code>LDAPForceGeneratedHomedir</code> directive is used in such cases.
+
+<p>
+For example, assume that the user logging in is named "tj", and has an
+LDAP object whose <code>homeDirectory</code> attribute value is "/home/tj".
+To <em>force</em> the use of <code>mod_ldap</code>'s generated home directory
+instead of that <code>homeDirectory</code> value, the configuration might
+look like:
+<pre>
+  LDAPForceGeneratedHomedir on
+  LDAPGenerateHomedir on
+  LDAPGenerateHomedirPrefix /var/ftp
+</pre>
+Using the above configuration, the home directory that the
+<code>mod_ldap</code> module would use is <code>/var/ftp/tj</code>, despite
+what <code>homeDirectory</code> attribute may be in the LDAP directory.
+
+<p>
+<b>Note</b> that if <code>LDAPForceGeneratedHomedir</code> is enabled, then
+<code>LDAPGenerateHomedir</code> must <b>also</b> be enabled.  It is an error
+to enable <code>LDAPForceGeneratedHomedir</code> without also enabling
+<code>LDAPGenerateHomdir</code>.
+
 ></DIV
 ><DIV
 CLASS="REFSECT1"
@@ -250,7 +269,7 @@ WIDTH="33%"
 ALIGN="right"
 VALIGN="top"
 ><A
-HREF="config_ref_LDAPForceHomedirOnDemand.html"
+HREF="config_ref_LDAPGenerateHomedir.html"
 ACCESSKEY="N"
 >Next</A
 ></TD
@@ -274,7 +293,7 @@ ACCESSKEY="U"
 WIDTH="33%"
 ALIGN="right"
 VALIGN="top"
->&#13;      LDAPForceHomedirOnDemand</TD
+>&#13;      LDAPGenerateHomedir</TD
 ></TR
 ></TABLE
 ></DIV

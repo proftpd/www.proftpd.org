@@ -16,9 +16,9 @@ TITLE="List of Directives"
 HREF="by-name.html"><LINK
 REL="PREVIOUS"
 TITLE="      
-      LDAPForceHomedirOnDemand
+      LDAPForceGeneratedHomedir
     "
-HREF="config_ref_LDAPForceHomedirOnDemand.html"><LINK
+HREF="config_ref_LDAPForceGeneratedHomedir.html"><LINK
 REL="NEXT"
 TITLE="			
 			LDAPGenerateHomedirPrefix
@@ -51,7 +51,7 @@ WIDTH="10%"
 ALIGN="left"
 VALIGN="bottom"
 ><A
-HREF="config_ref_LDAPForceHomedirOnDemand.html"
+HREF="config_ref_LDAPForceGeneratedHomedir.html"
 ACCESSKEY="P"
 >Prev</A
 ></TD
@@ -87,7 +87,7 @@ NAME="AEN4743"
 ></A
 ><H2
 >Name</H2
->LDAPGenerateHomedir&nbsp;--&nbsp;			Enable the creation of user home directories on demand
+>LDAPGenerateHomedir&nbsp;--&nbsp;			Enable the generation of user home directories on demand
 		</DIV
 ><DIV
 CLASS="REFSYNOPSISDIV"
@@ -107,10 +107,6 @@ CLASS="OPTION"
 				<CODE
 CLASS="OPTION"
 >off</CODE
->
-			] [				<CODE
-CLASS="OPTION"
->directory-mode</CODE
 >
 			]</P
 ><P
@@ -172,23 +168,33 @@ NAME="AEN4776"
 ></A
 ><H2
 >Description</H2
-><P
->LDAPGenerateHomedir activates on-demand home directory creation.
-		If a user logs in and does not yet have a home directory, a home
-		directory is created automatically.</P
-><P
->In mod_ldap &#60;= 2.7.6, the home directory will be owned by the
-		same user and group that ProFTPD runs as (see the User and Group
-		configuration directives). mod_ldap &#62;= 2.8 can create home
-		directories for users with any UID/GID, not just those with the same
-		UID/GID as the main ProFTPD server.</P
-><P
->The second argument allows you to specify the mode (default
-		permissions) to use when creating home directories on demand,
-		subject to ProFTPD's umask (see the Umask directive). If no
-		directory mode is specified, the default of 0755 is used. Directory
-		mode setting is only supported in mod_ldap v2.7 or later.</P
-></DIV
+>
+<p>
+By default, the <code>mod_ldap</code> module uses the <code>homeDirectory</code>
+attribute to determine what home directory to use for the session.  Sometimes,
+however, an administrator will want to use a <i>different</i> home directory
+for these FTP/SFTP sessions, something other than the path in the
+<code>homeDirectory</code> attribute.  The <code>LDAPGenerateHomedir</code>
+directive is used for situations like this.
+
+<p>
+The <code>LDAPGenerateHomedir</code> directive configures the
+<code>mod_ldap</code> module to "generate" a new home directory value,
+<em>overriding</em> the value from the <code>homeDirectory</code> attribute.
+The generated home directory value <b>requires</b> that a starting point
+for the new home directory, a "prefix", also be provided using the
+<a href="config_ref_LDAPGenerateHomedirPrefix.html"><code>LDAPGenerateHomedirPrefix</code></a>
+directive.
+
+<p>
+The <code>LDAPGenerateHomedir</code> directives does <b>not</b> cause the
+new home directory to be <em>created on the filesystem</em>.  It only changes
+the home directory value that the <code>mod_ldap</code> module provides to
+the ProFTPD engine.  The <i>creation</i> of the home directory, if it does
+not already exist, is done using the
+<a href="http://www.proftpd.org/docs/howto/CreateHome.html"><code>CreateHome</code></a> directive.
+
+</DIV
 ><DIV
 CLASS="REFSECT1"
 ><A
@@ -237,7 +243,7 @@ WIDTH="33%"
 ALIGN="left"
 VALIGN="top"
 ><A
-HREF="config_ref_LDAPForceHomedirOnDemand.html"
+HREF="config_ref_LDAPForceGeneratedHomedir.html"
 ACCESSKEY="P"
 >Prev</A
 ></TD
@@ -265,7 +271,7 @@ ACCESSKEY="N"
 WIDTH="33%"
 ALIGN="left"
 VALIGN="top"
->&#13;      LDAPForceHomedirOnDemand</TD
+>&#13;      LDAPForceGeneratedHomedir</TD
 ><TD
 WIDTH="34%"
 ALIGN="center"
