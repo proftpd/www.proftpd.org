@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <title>ProFTPD: Quotas</title>
@@ -68,7 +69,7 @@ quotas via file tables and SQL tables.  <b>This is an example only</b>.
       QuotaLimitTable sql:/get-quota-limit
       QuotaTallyTable sql:/get-quota-tally/update-quota-tally/insert-quota-tally
     &lt;/IfModule&gt;
-  &lt/IfModule&gt;
+  &lt;/IfModule&gt;
 </pre>
 
 <p><a name="FAQ" title="#FAQ"></a>
@@ -329,12 +330,18 @@ I want to use this to prevent a user from uploading/download files.<br>
 <p>
 <font color=blue>Answer</font>:  If you wish to prevent users from uploading
 or downloading, then you should use
-<a href="Limits.html"><code>&lt;Limit&gt;</code></a> sections in your
+<a href="Limit.html"><code>&lt;Limit&gt;</code></a> sections in your
 ProFTPD configuration; that is what they are designed to do.  The
 <code>ftpquota</code> tool was <em>explicitly designed</em> to not allow
 being used to prevent uploads/downloads; it is for managing <em>quotas</em>.
 
 <p>
 <hr>
+<font size=2><b><i>
+&copy; Copyright 2017 The ProFTPD Project<br>
+ All Rights Reserved<br>
+</i></b></font>
+<hr>
+
 </body>
 </html>
