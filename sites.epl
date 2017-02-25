@@ -164,6 +164,14 @@ for allowing themselves to be listed.</p>
       free 24/7 technical support. They will install and configure ProFTPD for
       their customers, free of charge.
   </li>
+
+  <!-- Contact: "Nick Reiner" <nickreiner@thishosting.rocks> -->
+  <li><a href="https://thishosting.rocks/support/">THR Support</a><br />
+      Linux server management and support services from expert Linux admins.
+      They offer ProFTPD services, including installation, configuration,
+      optimization, customization and maintenance of ProFTPD for your Linux
+      servers.
+  </li>
 </ul>
 
 #include "footer.epl"
