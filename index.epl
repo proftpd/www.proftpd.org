@@ -4,7 +4,7 @@
 #include "header.epl"
 
 <h1>1.3.5e released</h1>
-[<i>09/apr/2017</i>]
+[<i>09/Apr/2017</i>]
 <p>The ProFTPD Project team has released 1.3.5e to the community.  This
 is a maintenance release, containing backported fixes for the 1.3.5 release.
 The <a href="docs/RELEASE_NOTES-1.3.5e">RELEASE_NOTES</a> and
