@@ -8,20 +8,20 @@
 <h2>MD5 Digest Hashes</h2>
 
 <pre>
-bcd2846edf0dad4c4d49a7c8c176d83a <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.5d.tar.gz">proftpd-1.3.5d.tar.gz</a>
+0df72d7bb47e1918c3bfced5cc852e71 <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.5e.tar.gz">proftpd-1.3.5e.tar.gz</a>
 fcc5dbaa6dd315c2326c581ee1a0f7b9 <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.6rc4.tar.gz">proftpd-1.3.6rc4.tar.gz</a>
 </pre>
 
 <h2>PGP Signatures</h2>
 
 <pre>
-<strong>proftpd-1.3.5d.tar.gz.asc</strong>
+<strong>proftpd-1.3.5e.tar.gz.asc</strong>
 -----BEGIN PGP SIGNATURE-----
 Comment: GPGTools - https://gpgtools.org
 
-iEYEABECAAYFAlh8H14ACgkQt46JP6URl2p0IgCeMBKtSUR8imfqKRQWohWqNi5b
-3qYAoOt6bdwbszl0njyGYtQpnWkWpqD6
-=j3a6
+iEYEABECAAYFAljqnpEACgkQt46JP6URl2perACgjwSNGXCRyoRFQRsIY2s+1aXd
+IZgAoPP5fcWOlP0i2/Dl8tnQrYFtI0gG
+=wGie
 -----END PGP SIGNATURE-----
 </pre>
 

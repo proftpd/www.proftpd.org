@@ -3,7 +3,15 @@
 
 #include "header.epl"
 
+<h1>1.3.5e released</h1>
+[<i>09/apr/2017</i>]
+<p>The ProFTPD Project team has released 1.3.5e to the community.  This
+is a maintenance release, containing backported fixes for the 1.3.5 release.
+The <a href="docs/RELEASE_NOTES-1.3.5e">RELEASE_NOTES</a> and
+<a href="docs/NEWS-1.3.5e">NEWS</a> files contain the full details.</p>
+
 <h1>1.3.6rc4, 1.3.5d released</h1>
+[<i>15/Jan/2017</i>]
 <p>The ProFTPD Project team has released 1.3.6rc4 to the community.  This
 fourth release candidate of the 1.3.6 development cycle contains the
 fix for a major regression in the previous RC.  The
@@ -11,7 +19,7 @@ fix for a major regression in the previous RC.  The
 <a href="docs/NEWS-1.3.6rc4">NEWS</a> files contain more details.</p>
 
 <p>Similarly, a new 1.3.5d maintenance release is now available to the
-community.  This release containing a backported fixe for the same regression
+community.  This release containing a backported fixes for the same regression
 mentioned above.  The
 <a href="docs/RELEASE_NOTES-1.3.5d">RELEASE_NOTES</a> and
 <a href="docs/NEWS-1.3.5d">NEWS</a> files contain the full details.</p>
