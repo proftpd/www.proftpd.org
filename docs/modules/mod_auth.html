@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <title>ProFTPD module mod_auth</title>
@@ -11,11 +12,14 @@
 </center>
 <hr><br>
 
+<p>
 This module is contained in the <code>mod_auth.c</code> file for
 ProFTPD 1.3.<i>x</i>, and is compiled by default.
 
 <h2>Directives</h2>
 <ul>
+  <li><a href="#AccessDenyMsg">AccessDenyMsg</a>
+  <li><a href="#AccessGrantMsg">AccessGrantMsg</a>
   <li><a href="#AllowChrootSymlinks">AllowChrootSymlinks</a>
   <li><a href="#AllowEmptyPasswords">AllowEmptyPasswords</a>
   <li><a href="#AnonAllowRobots">AnonAllowRobots</a>
@@ -24,11 +28,14 @@ ProFTPD 1.3.<i>x</i>, and is compiled by default.
   <li><a href="#AuthAliasOnly">AuthAliasOnly</a>
   <li><a href="#AuthUsingAlias">AuthUsingAlias</a>
   <li><a href="#CreateHome">CreateHome</a>
+  <li><a href="#DefaultChdir">DefaultChdir</a>
   <li><a href="#DefaultRoot">DefaultRoot</a>
+  <li><a href="#DisplayLogin">DisplayLogin</a>
   <li><a href="#MaxClients">MaxClients</a>
   <li><a href="#MaxClientsPerClass">MaxClientsPerClass</a>
   <li><a href="#MaxClientsPerHost">MaxClientsPerHost</a>
   <li><a href="#MaxClientsPerUser">MaxClientsPerUser</a>
+  <li><a href="#MaxConnectionsPerHost">MaxConnectionsPerHost</a>
   <li><a href="#MaxHostsPerUser">MaxHostsPerUser</a>
   <li><a href="#MaxLoginAttempts">MaxLoginAttempts</a>
   <li><a href="#MaxPasswordSize">MaxPasswordSize</a>
@@ -39,12 +46,63 @@ ProFTPD 1.3.<i>x</i>, and is compiled by default.
   <li><a href="#TimeoutLogin">TimeoutLogin</a>
   <li><a href="#TimeoutSession">TimeoutSession</a>
   <li><a href="#UseFtpUsers">UseFtpUsers</a>
+  <li><a href="#UseLastlog">UseLastlog</a>
   <li><a href="#UserAlias">UserAlias</a>
   <li><a href="#UserPassword">UserPassword</a>
+  <li><a href="#WtmpLog">WtmpLog</a>
 </ul>
 
+<p>
 <hr>
-<h2><a name="AllowChrootSymlinks">AllowChrootSymlinks</a></h2>
+<h3><a name="AccessDenyMsg">AccessDenyMsg</a></h3>
+<strong>Syntax:</strong> AccessDenyMsg <em>message</em><br>
+<strong>Default:</strong> None<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code>, <code>&lt;Anonymous&gt;</code><br>
+<strong>Module:</strong> mod_auth<br>
+<strong>Compatibility:</strong> 1.2.2 and later
+
+<p>
+When an FTP client attempts to authenticate and fails, the client is sent the
+following FTP response:
+<pre>
+  530 Login failed
+</pre>
+This "Login failed" response message can be replaced/customized by using this
+<code>AccessDenyMsg</code> directive.  In the configured <em>message</em>
+text, the <code>%u</code> variable will be resolved to the user name used by
+the FTP client in its authentication attempt.
+
+<p>
+Example:
+<pre>
+  AccessDenyMsg "%u is not authorized"
+</pre>
+
+<p>
+<hr>
+<h3><a name="AccessGrantMsg">AccessGrantMsg</a></h3>
+<strong>Syntax:</strong> AccessGrantMsg <em>message</em><br>
+<strong>Default:</strong> None<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code>, <code>&lt;Anonymous&gt;</code><br>
+<strong>Module:</strong> mod_auth<br>
+<strong>Compatibility:</strong> 1.2.2 and later
+
+<p>
+When an FTP client succeeds in authenticating, it will receive an FTP response
+with the 230 response code, and a message.  This successful authentication
+response message can be replaced/customized by using this
+<code>AccessGrantMsg</code> directive.  In the configured <em>message</em>
+text, the <code>%u</code> variable will be resolved to the user name used by
+the FTP client in its authentication attempt.
+
+<p>
+Example:
+<pre>
+  AccessGrantMsg "Welcome, %u!"
+</pre>
+
+<hr>
+<h3><a name="AllowChrootSymlinks">AllowChrootSymlinks</a></h3>
 <strong>Syntax:</strong> AllowChrootSymlinks <em>on|off</em><br>
 <strong>Default:</strong> AllowChrootSymlinks on<br>
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
@@ -72,7 +130,7 @@ users to run their untrusted webapps (<i>e.g.</i> PHP, Perl, Ruby, Python,
 
 <p>
 <hr>
-<h2><a name="AllowEmptyPasswords">AllowEmptyPasswords</a></h2>
+<h3><a name="AllowEmptyPasswords">AllowEmptyPasswords</a></h3>
 <strong>Syntax:</strong> AllowEmptyPasswords <em>on|off</em><br>
 <strong>Default:</strong> AllowEmptyPasswords on<br>
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code>, <code>&lt;Anonymous&gt;</code><br>
@@ -90,7 +148,7 @@ as well.
 
 <p>
 <hr>
-<h2><a name="AnonAllowRobots">AnonAllowRobots</a></h2>
+<h3><a name="AnonAllowRobots">AnonAllowRobots</a></h3>
 <strong>Syntax:</strong> AnonAllowRobots <em>on|off</em><br>
 <strong>Default:</strong> AnonAllowRobots off<br>
 <strong>Context:</strong> <code>&lt;Anonymous&gt;</code><br>
@@ -128,7 +186,7 @@ expected.  Alternatively, you can disable this behavior using:
 
 <p>
 <hr>
-<h2><a name="AnonRejectPasswords">AnonRejectPasswords</a></h2>
+<h3><a name="AnonRejectPasswords">AnonRejectPasswords</a></h3>
 <strong>Syntax:</strong> AnonRejectPasswords <em>pattern [flags]</em><br>
 <strong>Default:</strong> None<br>
 <strong>Context:</strong> <code>&lt;Anonymous&gt;</code><br>
@@ -180,8 +238,10 @@ to <b>require</b> that your anonymous logins use email-like passwords:
   #  <a href="http://www.regular-expressions.info/email.html">http://www.regular-expressions.info/email.html</a>
   AnonRejectPasswords !^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$ [NC]
 </pre>
-=======
-<h2><a name="AnonRequirePassword">AnonRequirePassword</a></h2>
+
+<p>
+<hr>
+<h3><a name="AnonRequirePassword">AnonRequirePassword</a></h3>
 <strong>Syntax:</strong> AnonRequirePassword <em>off|on</em><br>
 <strong>Default:</strong> AnonRequirePassword off<br>
 <strong>Context:</strong> <code>&lt;Anonymous&gt;</code><br>
@@ -207,7 +267,7 @@ See also: <a href="#AuthUsingAlias"><code>AuthUsingAlias</code></a>, <a href="#U
 
 <p>
 <hr>
-<h2><a name="AuthAliasOnly">AuthAliasOnly</a></h2>
+<h3><a name="AuthAliasOnly">AuthAliasOnly</a></h3>
 <strong>Syntax:</strong> AuthAliasOnly <em>off|on</em><br>
 <strong>Default:</strong> AuthAliasOnly off<br>
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
@@ -227,7 +287,7 @@ See also: <a href="#AuthUsingAlias"><code>AuthUsingAlias</code></a>, <a href="#U
 
 <p>
 <hr>
-<h2><a name="AuthUsingAlias">AuthUsingAlias</a></h2>
+<h3><a name="AuthUsingAlias">AuthUsingAlias</a></h3>
 <strong>Syntax:</strong> AuthUsingAlias <em>off|on</em><br>
 <strong>Default:</strong> AuthUsingAlias off<br>
 <strong>Context:</strong> <code>&lt;Anonymous&gt;</code><br>
@@ -279,7 +339,7 @@ See also: <a href="#AnonRequirePassword"><code>AnonRequirePassword</code></a>, <
 
 <p>
 <hr>
-<h2><a name="CreateHome">CreateHome</a></h2>
+<h3><a name="CreateHome">CreateHome</a></h3>
 <strong>Syntax:</strong> CreateHome <em>off|on [mode] [skel path] [dirmode mode]</em><br>
 <strong>Default:</strong> None<br>
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
@@ -335,7 +395,40 @@ with more examples, can be read <a href="../howto/CreateHome.html">here</a>.
 
 <p>
 <hr>
-<h2><a name="DefaultRoot">DefaultRoot</a></h2>
+<h3><a name="DefaultChdir">DefaultChdir</a></h3>
+<strong>Syntax:</strong> DefaultChdir <em>path [group-expression]</em><br>
+<strong>Default:</strong> None<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
+<strong>Module:</strong> mod_auth<br>
+<strong>Compatibility:</strong> 1.2.0rc1
+
+<p>
+The <code>DefaultChdir</code> directive determines the directory <em>path</em>
+into which a user is placed, after logging in.
+
+<p>
+By default, the user is put into their home directory.  The specified
+<em>path</em> can be relative to the user's home directory.  <b>Note</b> that
+if the specified <em>path</em> is not available, then <code>DefaultChdir</code>
+will be ignored; the direction in which the user is placed will be determined
+by other directives.
+
+<p>
+Examples:
+<pre>
+  # Admin users start off in /var/www
+  DefaultChdir /var/www admin
+
+  # ..and others start off in their respective public FTP folders
+  DefaultChdir ~/public_ftp
+</pre>
+
+<p>
+See also: <a href="#DefaultRoot"><code>DefaultRoot</code></a>
+
+<p>
+<hr>
+<h3><a name="DefaultRoot">DefaultRoot</a></h3>
 <strong>Syntax:</strong> DefaultRoot <em>path [group-expression]</em><br>
 <strong>Default:</strong> None<br>
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
@@ -349,7 +442,30 @@ found in the <a href="../howto/Chroot.html">Chroot</a> howto.
 
 <p>
 <hr>
-<h2><a name="MaxClients">MaxClients</a></h2>
+<h3><a name="DisplayLogin">DisplayLogin</a></h3>
+<strong>Syntax:</strong> DisplayLogin <em>path</em><br>
+<strong>Default:</strong> None<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code>, <code>&lt;Anonymous&gt;</code><br>
+<strong>Module:</strong> mod_auth<br>
+<strong>Compatibility:</strong> 0.99.0
+
+<p>
+The <code>DisplayLogin</code> directive specifies a file <em>path</em> which
+will be displayed to the user when they initially login.  The <em>path</em>
+can be either relative or absolute.  For relative <em>paths</em>, the file is
+searched for in the initial directory in which a user is placed immediately
+after authentication, <i>e.g.</i> the home directory for normal users, or
+the <code>&lt;Anonymous&gt;</code> directory for anonymous logins.  If the file
+cannot be found or accessed, no error occurs and nothing is displayed to the
+client.
+
+<p>
+The <a href="../howto/DisplayFiles.html">DisplayFiles</a> howto covers such
+files in greater detail.
+
+<p>
+<hr>
+<h3><a name="MaxClients">MaxClients</a></h3>
 <strong>Syntax:</strong> MaxClients <em>count|"none" [message]</em><br>
 <strong>Default:</strong> None<br>
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code>, <code>&lt;Anonymous&gt;</code><br>
@@ -385,14 +501,14 @@ will result in this FTP response, when the limit is reached:
 </pre>
 
 <p>
-See also: <a href="#MaxClientsPerClass">MaxClientsPerClass</code></a>,
+See also: <a href="#MaxClientsPerClass"><code>MaxClientsPerClass</code></a>,
 <a href="#MaxClientsPerHost"><code>MaxClientsPerHost</code></a>,
 <a href="#MaxClientsPerUser"><code>MaxClientsPerUser</code></a>,
 <a href="#MaxHostsPerUser"><code>MaxHostsPerUser</code></a>
 
 <p>
 <hr>
-<h2><a name="MaxClientsPerClass">MaxClientsPerClass</a></h2>
+<h3><a name="MaxClientsPerClass">MaxClientsPerClass</a></h3>
 <strong>Syntax:</strong> MaxClientsPerClass <em>class count|"none" [message]</em><br>
 <strong>Default:</strong> None<br>
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
@@ -428,7 +544,7 @@ See also: <a href="#MaxClients"><code>MaxClients</code></a>,
 
 <p>
 <hr>
-<h2><a name="MaxClientsPerHost">MaxClientsPerHost</a></h2>
+<h3><a name="MaxClientsPerHost">MaxClientsPerHost</a></h3>
 <strong>Syntax:</strong> MaxClientsPerHost <em>count|"none" [message]</em><br>
 <strong>Default:</strong> None<br>
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code>, <code>&lt;Anonymous&gt;</code><br>
@@ -463,7 +579,7 @@ See also: <a href="#MaxClients"><code>MaxClients</code></a>,
 
 <p>
 <hr>
-<h2><a name="MaxClientsPerUser">MaxClientsPerUser</a></h2>
+<h3><a name="MaxClientsPerUser">MaxClientsPerUser</a></h3>
 <strong>Syntax:</strong> MaxClientsPerUser <em>count|"none" [message]</em><br>
 <strong>Default:</strong> None<br>
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code>, <code>&lt;Anonymous&gt;</code><br>
@@ -498,7 +614,34 @@ See also: <a href="#MaxClients"><code>MaxClients</code></a>,
 
 <p>
 <hr>
-<h2><a name="MaxHostsPerUser">MaxHostsPerUser</a></h2>
+<h3><a name="MaxConnectionsPerHost">MaxConnectionsPerHost</a></h3>
+<strong>Syntax:</strong> MaxConnectionsPerHost <em>count|"none" [message]</em><br>
+<strong>Default:</strong> None<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
+<strong>Module:</strong> mod_auth<br>
+<strong>Compatibility:</strong> 1.2.11 and later
+
+<p>
+The <code>MaxConnectionsPerHost</code> directive configures the maximum number
+of <b>unauthenticated</b> clients allowed to connect from a given host.  The
+optional <em>message</em> parameter may be used, to be displayed to a client
+attempting to exceed the maximum value.   If <em>message</em> is not supplied,
+a default message of "Sorry, the maximum number of connections (%m) from your host are already connected." is used.
+
+<p>
+For example:
+<pre>
+  MaxConnectionsPerHost 1 "Sorry, you may not connect more than one time."
+</pre>
+results in additional FTP login attempts from that same host to receive
+the following FTP response:
+<pre>
+  530 Sorry, you may not connect more than one time.
+</pre>
+
+<p>
+<hr>
+<h3><a name="MaxHostsPerUser">MaxHostsPerUser</a></h3>
 <strong>Syntax:</strong> MaxHostsPerUser <em>count|"none" [message]</em><br>
 <strong>Default:</strong> None<br>
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code>, <code>&lt;Anonymous&gt;</code><br>
@@ -531,7 +674,7 @@ See also: <a href="#MaxClients"><code>MaxClients</code></a>, <a href="#MaxClient
 
 <p>
 <hr>
-<h2><a name="MaxLoginAttempts">MaxLoginAttempts</a></h2>
+<h3><a name="MaxLoginAttempts">MaxLoginAttempts</a></h3>
 <strong>Syntax:</strong> MaxLoginAttempts <em>count</em><br>
 <strong>Default:</strong> 3<br>
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
@@ -547,7 +690,7 @@ logged.
 
 <p>
 <hr>
-<h2><a name="MaxPasswordSize">MaxPasswordSize</a></h2>
+<h3><a name="MaxPasswordSize">MaxPasswordSize</a></h3>
 <strong>Syntax:</strong> MaxPasswordSize <em>length</em><br>
 <strong>Default:</strong> 1024<br>
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
@@ -566,7 +709,7 @@ the <code>crypt(3)</code> function.
 
 <p>
 <hr>
-<h2><a name="RequireValidShell">RequireValidShell</a></h2>
+<h3><a name="RequireValidShell">RequireValidShell</a></h3>
 <strong>Syntax:</strong> RequireValidShell <em>on|off</em><br>
 <strong>Default:</strong> RequireValidShell on<br>
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code>, <code>&lt;Anonymous&gt;</code><br>
@@ -583,7 +726,7 @@ default shells are assumed to be valid.
 
 <p>
 <hr>
-<h2><a name="RewriteHome">RewriteHome</a></h2>
+<h3><a name="RewriteHome">RewriteHome</a></h3>
 <strong>Syntax:</strong> RewriteHome <em>on|off</em><br>
 <strong>Default:</strong> None<br>
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
@@ -621,7 +764,7 @@ home directories is "REWRITE_HOME".  Thus would you use:
 
 <p>
 <hr>
-<h2><a name="RootLogin">RootLogin</a></h2>
+<h3><a name="RootLogin">RootLogin</a></h3>
 <strong>Syntax:</strong> RootLogin <em>on|off</em><br>
 <strong>Default:</strong> RootLogin off<br>
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code>, <code>&lt;Anonymous&gt;</code><br>
@@ -651,7 +794,7 @@ in the <code>&lt;Anonymous&gt;</code> section is set to 'root'.
 
 <p>
 <hr>
-<h2><a name="RootRevoke">RootRevoke</a></h2>
+<h3><a name="RootRevoke">RootRevoke</a></h3>
 <strong>Syntax:</strong> RootRevoke <em>on|off|UseNonCompliantActiveTransfers</em><br>
 <strong>Default:</strong> None<br>
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code>, <code>&lt;Anonymous&gt;</code><br>
@@ -710,7 +853,7 @@ have been dropped completely.
 
 <p>
 <hr>
-<h2><a name="TimeoutLogin">TimeoutLogin</a></h2>
+<h3><a name="TimeoutLogin">TimeoutLogin</a></h3>
 <strong>Syntax:</strong> TimeoutLogin <em>seconds</em><br>
 <strong>Default:</strong> 300 seconds<br>
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
@@ -733,7 +876,7 @@ See also: <a href="mod_core.html#TimeoutIdle"><code>TimeoutIdle</code></a>,
 
 <p>
 <hr>
-<h2><a name="TimeoutSession">TimeoutSession</a></h2>
+<h3><a name="TimeoutSession">TimeoutSession</a></h3>
 <strong>Syntax:</strong> TimeoutSessions <em>seconds</em><br>
 <strong>Default:</strong> None<br>
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code>, <code>&lt;Anonymous&gt;</code><br>
@@ -750,7 +893,7 @@ indefinitely; this is the default.  There is no maxium value for the
 
 <p>
 <hr>
-<h2><a name="UseFtpUsers">UseFtpUsers</a></h2>
+<h3><a name="UseFtpUsers">UseFtpUsers</a></h3>
 <strong>Syntax:</strong> UseFtpUsers <em>on|off</em><br>
 <strong>Default:</strong> UseFtpUsers on<br>
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code>, <code>&lt;Anonymous&gt;</code><br>
@@ -771,7 +914,27 @@ using the <code>UseFtpUsers</code> directive, <i>e.g.</i>:
 
 <p>
 <hr>
-<h2><a name="UserAlias">UserAlias</a></h2>
+<h3><a name="UseLastlog">UseLastlog</a></h3>
+<strong>Syntax:</strong> UseLastlog <em>on|off</em><br>
+<strong>Default:</strong> UseLastlog off<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
+<strong>Module:</strong> mod_auth<br>
+<strong>Compatibility:</strong> 1.3.1 and later
+
+<p>
+The <code>UseLastlog</code> directive configures whether ProFTPD will update
+the <a href="https://en.wikipedia.org/wiki/Lastlog"><code>/var/log/lastlog</code></a> file for FTP logins.
+
+<p>
+Example:
+<pre>
+  # Enable recording FTP logins in /var/log/lastlog
+  UseLastlog on
+</pre>
+
+<p>
+<hr>
+<h3><a name="UserAlias">UserAlias</a></h3>
 <strong>Syntax:</strong> UserAlias <em>alias real-user</em><br>
 <strong>Default:</strong> None<br>
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code>, <code>&lt;Anonymous&gt;</code><br>
@@ -802,7 +965,7 @@ by using the following in the config file:
 
 <p>
 <hr>
-<h2><a name="UserPassword">UserPassword</a></h2>
+<h3><a name="UserPassword">UserPassword</a></h3>
 <strong>Syntax:</strong> UserPassword <em>user encrypted-password</em><br>
 <strong>Default:</strong> None<br>
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code>, <code>&lt;Anonymous&gt;</code><br>
@@ -823,7 +986,7 @@ cleartext password</b>.  To obtain this <em>encrypted-password</em> value,
 you can use the <a href="../utils/ftpasswd.html"><code>ftpasswd</code></a>
 script's <code>--hash</code> option, <i>e.g.</i>:
 <pre>
-  # ftpasswd --hash
+  $ ftpasswd --hash
 
   Password: 
   Re-type password: 
@@ -840,13 +1003,28 @@ Example configuration:
 
 <p>
 <hr>
+<h3><a name="WtmpLog">WtmpLog</a></h3>
+<strong>Syntax:</strong> WtmpLog <em>on|off</em><br>
+<strong>Default:</strong> WtmpLog on<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code>, <code>&lt;Anonymous&gt;</code><br>
+<strong>Module:</strong> mod_auth<br>
+<strong>Compatibility:</strong> 1.1.7 and later
+
+<p>
+The <code>WtmpLog</code> directive controls the logging of connections to the
+host system <a href="https://en.wikipedia.org/wiki/Utmp"><code>wtmp</code></a>
+file, which used by such commands as <code>last</code>.  By default, <b>all</b>
+connections are logged via <code>wtmp</code>.
+
+<p>
+<hr>
 <h2><a name="Installation">Installation</a></h2>
 The <code>mod_auth</code> module is compiled by default.
 
 <p>
 <hr>
 <font size=2><b><i>
-&copy; Copyright 2002-2016<br>
+&copy; Copyright 2002-2017<br>
  All Rights Reserved<br>
 </i></b></font>
 <hr>

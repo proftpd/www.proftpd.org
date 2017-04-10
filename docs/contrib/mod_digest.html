@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <title>ProFTPD module mod_digest</title>
@@ -54,6 +55,7 @@ version is based.
 <ul>
   <li><a href="#DigestAlgorithms">DigestAlgorithms</a>
   <li><a href="#DigestCache">DigestCache</a>
+  <li><a href="#DigestDefaultAlgorithm">DigestDefaultAlgorithm</a>
   <li><a href="#DigestEnable">DigestEnable</a>
   <li><a href="#DigestEngine">DigestEngine</a>
   <li><a href="#DigestMaxSize">DigestMaxSize</a>
@@ -127,6 +129,30 @@ If <em>on</em> is used, <code>mod_digest</code> will use the default
 <pre>
   DigestCache on
 </pre>
+
+<p>
+<hr>
+<h3><a name="DigestDefaultAlgorithm">DigestDefaultAlgorithm</a></h3>
+<strong>Syntax:</strong> DigestDefaultAlgorithm <em>algo</em><br>
+<strong>Default:</strong> DigestDefaultAlgorithm sha1<br>
+<strong>Context:</strong> server config, &lt;VirtualHost&gt;, &lt;Global&gt;<br>
+<strong>Module:</strong> mod_digest<br>
+<strong>Compatibility:</strong> 1.3.6rc3 or later
+
+<p>
+The default digest algorithm that the <code>mod_digest</code> module uses,
+for <i>e.g.</i> opportunistic digesting of file transfers, is SHA1.  For
+selecting a different default algorithm, use the
+<code>DigestDefaultAlgorithm</code> directive:
+<pre>
+  # Use MD5 rather than SHA1 as the default algorithm
+  DigestDefaultAlgorithm md5
+</pre>
+
+<p>
+<b>Note</b> that the <code>DigestAlgorithms</code> directive takes precedence;
+if the <code>DigestDefaultAlgorithm</code> is not included in the
+<code>DigestAlgorithms</code>, the default algorithm setting will be ignored.
 
 <p>
 <hr>
@@ -226,12 +252,8 @@ The currently implemented options are:
 <p>
 <hr>
 <h2><a name="Installation">Installation</a></h2>
-To install <code>mod_digest</code>, unpack the latest proftpd-1.3.<i>x</i>
-source code, and copy the <code>mod_digest.c</code> file into that directory:
-<pre>
-  $ cp mod_digest.c /path/to/proftpd-1.3.<i>x</i>/contrib/
-</pre>
-Then follow the normal steps for using third-party modules in proftpd:
+The <code>mod_digest</code> module is distributed with ProFTPD.  Follow the
+normal steps for using third-party modules in ProFTPD:
 <pre>
   $ ./configure --enable-openssl --with-modules=mod_digest
 </pre>
@@ -260,8 +282,70 @@ Example Configuration
 <pre>
   &lt;IfModule mod_digest.c&gt;
     # Set a limit on file sizes that can be digested
-    DigestMaxSize 1GB
+    DigestMaxSize 1 GB
   &lt;/IfModule&gt;
+</pre>
+
+<p>
+<b>Recording Uploaded/Downloaded File Checksums</b><br>
+One particular use case that comes up is whether the <code>mod_digest</code>
+can be used to record the digests ("checksums") of uploaded/downloaded files
+in <i>e.g.</i> a SQL database.  The answer is "yes", with some caveats.
+
+<p>
+First, here is a configuration excerpt showing show such functionality might
+be implemented, using <code>mod_digest</code> and <code>mod_sql</code>:
+<pre>
+  &lt;IfModule mod_digest.c&gt;
+  &lt;/IfModule&gt;
+
+  &lt;IfModule mod_sql.c&gt;
+    ...
+    SQLNamedQuery log-file-checksum FREEFORM "INSERT INTO file_checksums (user, file, algo, checksum) VALUES ('%u', '%f', '%{note:mod_digest.algo}', '%{note:mod_digest.digest}')"
+    SQLLog RETR,STOR log-file-checksum
+    ...
+  &lt;/IfModule&gt;
+</pre>
+As you can see, this makes use of the <code>%{note:...}</code> syntax of
+the <code>SQLLog</code> directive; the same syntax <em>also</em> works for
+<code>LogFormat</code> definitions as well.  The <code>mod_digest</code> module
+uses the following notes:
+<ul>
+  <li><em>mod_digest.algo</em>
+    <p>
+    Name of the digest algorithm used, <i>e.g.</i> "SHA1".
+  </li>
+
+  <p>
+  <li><em>mod_digest.digest</em>
+    <p>
+    Calculated digest of the file as a hex-encoded lowercase string.
+  </li>
+</ul>
+
+<p>
+Now, the caveats with this technique:
+<ul>
+  <li>Does <b>not</b> work if the <code>NoTransferCache</code> <a href="#DigestOption">DigestOption</a> is used.
+  <li>Only works for binary, not ASCII, FTP uploads/downloads currently.
+  <li>Only works for uploads (<code>STOR</code>) and downloads (<code>RETR</code>), but not for appends (<code>APPE</code>) <b>or</b> resumed uploads/downloads (<code>REST</code> + <code>RETR/STOR</code>).
+  <li>Does <b>not</b> work for FTP downloads if <code>UseSendfile</code> is in effect.
+</ul>
+In addition, the order in which the <code>mod_digest</code> and
+<code>mod_sql</code> appear in your build command is important;
+<code>mod_digest</code> <em>must come <b>after</b></em> <code>mod_sql</code>,
+otherwise the note values will <b>not</b> be populated properly in the
+<code>SQLLog</code> statement.  Thus, if you are building static modules,
+your <code>--with-modules</code> parameter would look something like:
+<pre>
+  $ ./configure --with-modules=mod_sql:mod_sql_mysql:mod_digest ...
+</pre>
+Or, if you are using shared modules, then your <code>LoadModule</code>
+directives must look like:
+<pre>
+  LoadModule mod_sql.c
+  LoadModule mod_sql_mysql.c
+  LoadModule mod_digest.c
 </pre>
 
 <!--
@@ -300,13 +384,11 @@ It's also recommended to disable all features within the &lt;Anonymous&gt; conte
 
 <p>
 <hr>
-
 <font size=2><b><i>
 &copy; Copyright 2016 TJ Saunders<br>
  All Rights Reserved<br>
 </i></b></font>
-
-<hr><br>
+<hr>
 
 </body>
 </html>

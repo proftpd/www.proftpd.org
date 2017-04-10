@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <title>ProFTPD module mod_sftp</title>
@@ -146,11 +147,10 @@ questions, concerns, or suggestions regarding this module.
 
 <p>
 <hr>
-<h2><a name="SFTPAcceptEnv">SFTPAcceptEnv</a></h2>
+<h3><a name="SFTPAcceptEnv">SFTPAcceptEnv</a></h3>
 <strong>Syntax:</strong> SFTPAcceptEnv <em>env1 ...</em><br>
 <strong>Default:</strong> <em>LANG</em><br>
-<strong>Context:</strong> &quot;server config&quot;, &lt;VirtualHost&gt;, &lt;Gl
-obal&gt;<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
 <strong>Module:</strong> mod_sftp<br>
 <strong>Compatibility:</strong> 1.3.3rc3 and later
 
@@ -168,10 +168,10 @@ underlying libraries; care should be taken in the use of this directive.
 
 <p>
 <hr>
-<h2><a name="SFTPAuthMethods">SFTPAuthMethods</a></h2>
+<h3><a name="SFTPAuthMethods">SFTPAuthMethods</a></h3>
 <strong>Syntax:</strong> SFTPAuthMethods <em>meth1 ...</em><br>
 <strong>Default:</strong> <em>publickey password</em><br>
-<strong>Context:</strong> &quot;server config&quot;, &lt;VirtualHost&gt;, &lt;Global&gt;<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
 <strong>Module:</strong> mod_sftp<br>
 <strong>Compatibility:</strong> 1.3.2rc2 and later
 
@@ -240,10 +240,10 @@ RSA and a DSA public key, or multiple different RSA/DSA keys) using:
 
 <p>
 <hr>
-<h2><a name="SFTPAuthorizedHostKeys">SFTPAuthorizedHostKeys</a></h2>
+<h3><a name="SFTPAuthorizedHostKeys">SFTPAuthorizedHostKeys</a></h3>
 <strong>Syntax:</strong> SFTPAuthorizedHostKeys <em>store1 ...</em><br>
 <strong>Default:</strong> <em>None</em><br>
-<strong>Context:</strong> &quot;server config&quot;, &lt;VirtualHost&gt;, &lt;Global&gt;<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
 <strong>Module:</strong> mod_sftp<br>
 <strong>Compatibility:</strong> 1.3.2rc2 and later
 
@@ -271,10 +271,10 @@ The output from this command can then be added to the
 
 <p>
 <hr>
-<h2><a name="SFTPAuthorizedUserKeys">SFTPAuthorizedUserKeys</a></h2>
+<h3><a name="SFTPAuthorizedUserKeys">SFTPAuthorizedUserKeys</a></h3>
 <strong>Syntax:</strong> SFTPAuthorizedUserKeys <em>store1 ...</em><br>
 <strong>Default:</strong> <em>None</em><br>
-<strong>Context:</strong> &quot;server config&quot;, &lt;VirtualHost&gt;, &lt;Global&gt;<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
 <strong>Module:</strong> mod_sftp<br>
 <strong>Compatibility:</strong> 1.3.2rc2 and later
 
@@ -313,10 +313,10 @@ users to manage their own authorized keys.  For example:
 
 <p>
 <hr>
-<h2><a name="SFTPCiphers">SFTPCiphers</a></h2>
+<h3><a name="SFTPCiphers">SFTPCiphers</a></h3>
 <strong>Syntax:</strong> SFTPCiphers <em>algo1 ...</em><br>
 <strong>Default:</strong> <em>None</em><br>
-<strong>Context:</strong> &quot;server config&quot;, &lt;VirtualHost&gt;, &lt;Global&gt;<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
 <strong>Module:</strong> mod_sftp<br>
 <strong>Compatibility:</strong> 1.3.2rc2 and later
 
@@ -385,10 +385,10 @@ cipher algorithms as OpenSSH, you would use:
 
 <p>
 <hr>
-<h2><a name="SFTPClientAlive">SFTPClientAlive</a></h2>
+<h3><a name="SFTPClientAlive">SFTPClientAlive</a></h3>
 <strong>Syntax:</strong> SFTPClientAlive <em>count</em> <em>interval</em><br>
 <strong>Default:</strong> None<br>
-<strong>Context:</strong> &quot;server config&quot;, &lt;VirtualHost&gt;, &lt;Global&gt;<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
 <strong>Module:</strong> mod_sftp<br>
 <strong>Compatibility:</strong> 1.3.4rc1 and later
 
@@ -411,10 +411,10 @@ seconds.
 
 <p>
 <hr>
-<h2><a name="SFTPClientMatch">SFTPClientMatch</a></h2>
+<h3><a name="SFTPClientMatch">SFTPClientMatch</a></h3>
 <strong>Syntax:</strong> SFTPClientMatch <em>pattern key1 val1 ...</em><br>
 <strong>Default:</strong> None<br>
-<strong>Context:</strong> &quot;server config&quot;, &lt;VirtualHost&gt;, &lt;Global&gt;<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
 <strong>Module:</strong> mod_sftp<br>
 <strong>Compatibility:</strong> 1.3.2rc2 and later
 
@@ -493,10 +493,10 @@ size, <i>e.g.</i>:
 
 <p>
 <hr>
-<h2><a name="SFTPCompression">SFTPCompression</a></h2>
+<h3><a name="SFTPCompression">SFTPCompression</a></h3>
 <strong>Syntax:</strong> SFTPCompression <em>on|off|delayed</em><br>
 <strong>Default:</strong> <em>off</em><br>
-<strong>Context:</strong> &quot;server config&quot;, &lt;VirtualHost&gt;, &lt;Global&gt;<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
 <strong>Module:</strong> mod_sftp<br>
 <strong>Compatibility:</strong> 1.3.2rc2 and later
 
@@ -512,10 +512,10 @@ after the client has successfully authenticated.
 
 <p>
 <hr>
-<h2><a name="SFTPCryptoDevice">SFTPCryptoDevice</a></h2>
+<h3><a name="SFTPCryptoDevice">SFTPCryptoDevice</a></h3>
 <strong>Syntax:</strong> SFTPCryptoDevice <em>driver|"all"|"none"</em><br>
 <strong>Default:</strong> <em>None</em><br>
-<strong>Context:</strong> &quot;server config&quot;, &lt;VirtualHost&gt;, &lt;Global&gt;<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
 <strong>Module:</strong> mod_sftp<br>
 <strong>Compatibility:</strong> 1.3.2rc2 and later
 
@@ -547,10 +547,10 @@ may be used to list all of the engine drivers supported by OpenSSL.
 
 <p>
 <hr>
-<h2><a name="SFTPDHParamFile">SFTPDHParamFile</a></h2>
+<h3><a name="SFTPDHParamFile">SFTPDHParamFile</a></h3>
 <strong>Syntax:</strong> SFTPDHParamFile <em>path</em><br>
 <strong>Default:</strong> <em>dhparams.pem</em><br>
-<strong>Context:</strong> &quot;server config&quot;, &lt;VirtualHost&gt;, &lt;Global&gt;<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
 <strong>Module:</strong> mod_sftp<br>
 <strong>Compatibility:</strong> 1.3.2rc2 and later
 
@@ -580,10 +580,10 @@ The <em>nbits</em> value used should vary between 1024 and 8192, inclusive.
 
 <p>
 <hr>
-<h2><a name="SFTPDigests">SFTPDigests</a></h2>
+<h3><a name="SFTPDigests">SFTPDigests</a></h3>
 <strong>Syntax:</strong> SFTPDigests <em>algo1 ...</em><br>
 <strong>Default:</strong> <em>None</em><br>
-<strong>Context:</strong> &quot;server config&quot;, &lt;VirtualHost&gt;, &lt;Global&gt;<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
 <strong>Module:</strong> mod_sftp<br>
 <strong>Compatibility:</strong> 1.3.2rc2 and later
 
@@ -641,10 +641,10 @@ MAC algorithms as OpenSSH, you would use:
 
 <p>
 <hr>
-<h2><a name="SFTPDisplayBanner">SFTPDisplayBanner</a></h2>
+<h3><a name="SFTPDisplayBanner">SFTPDisplayBanner</a></h3>
 <strong>Syntax:</strong> SFTPDisplayBanner <em>path</em><br>
 <strong>Default:</strong> <em>None</em><br>
-<strong>Context:</strong> &quot;server config&quot;, &lt;VirtualHost&gt;, &lt;Global&gt;<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
 <strong>Module:</strong> mod_sftp<br>
 <strong>Compatibility:</strong> 1.3.2rc2 and later
 
@@ -661,10 +661,10 @@ more information on the variables that can be used in an
 
 <p>
 <hr>
-<h2><a name="SFTPEngine">SFTPEngine</a></h2>
+<h3><a name="SFTPEngine">SFTPEngine</a></h3>
 <strong>Syntax:</strong> SFTPEngine <em>on|off</em><br>
 <strong>Default:</strong> <em>off</em><br>
-<strong>Context:</strong> &quot;server config&quot;, &lt;VirtualHost&gt;, &lt;Global&gt;<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
 <strong>Module:</strong> mod_sftp<br>
 <strong>Compatibility:</strong> 1.3.2rc2 and later
 
@@ -677,10 +677,10 @@ the main server and all configured virtual hosts.
 
 <p>
 <hr>
-<h2><a name="SFTPExtensions">SFTPExtensions</a></h2>
+<h3><a name="SFTPExtensions">SFTPExtensions</a></h3>
 <strong>Syntax:</strong> SFTPExtensions <em>ext1 ... extN</em><br>
 <strong>Default:</strong> None<br>
-<strong>Context:</strong> &quot;server config&quot;, &lt;VirtualHost&gt;, &lt;Global&gt;<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
 <strong>Module:</strong> mod_sftp<br>
 <strong>Compatibility:</strong> 1.3.3rc3 and later
 
@@ -713,10 +713,10 @@ to disable the extension, use a '-' (minus) character prefix.  For example:
 
 <p>
 <hr>
-<h2><a name="SFTPHostKey">SFTPHostKey</a></h2>
+<h3><a name="SFTPHostKey">SFTPHostKey</a></h3>
 <strong>Syntax:</strong> SFTPHostKey <em>file</em>|agent:<em>/path</em>|"NoRSA"|"NoDSA"|"NoECDSA"<br>
 <strong>Default:</strong> <em>None</em><br>
-<strong>Context:</strong> &quot;server config&quot;, &lt;VirtualHost&gt;, &lt;Global&gt;<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
 <strong>Module:</strong> mod_sftp<br>
 <strong>Compatibility:</strong> 1.3.2rc2 and later
 
@@ -779,10 +779,10 @@ you wish to disable in all vhosts, you might use the "NoRSA" flag, <i>e.g.</i>:
 
 <p>
 <hr>
-<h2><a name="SFTPKeyBlacklist">SFTPKeyBlacklist</a></h2>
+<h3><a name="SFTPKeyBlacklist">SFTPKeyBlacklist</a></h3>
 <strong>Syntax:</strong> SFTPKeyBlacklist <em>"none"|path</em><br>
 <strong>Default:</strong> <em>None</em><br>
-<strong>Context:</strong> &quot;server config&quot;, &lt;VirtualHost&gt;, &lt;Global&gt;<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
 <strong>Module:</strong> mod_sftp<br>
 <strong>Compatibility:</strong> 1.3.2rc2 and later
 
@@ -812,10 +812,10 @@ need to generate your own <code>SFTPDKeyBlacklist</code>, use the
 
 <p>
 <hr>
-<h2><a name="SFTPKeyExchanges">SFTPKeyExchanges</a></h2>
+<h3><a name="SFTPKeyExchanges">SFTPKeyExchanges</a></h3>
 <strong>Syntax:</strong> SFTPKeyExchanges <em>algo1 ...</em><br>
 <strong>Default:</strong> <em>None</em><br>
-<strong>Context:</strong> &quot;server config&quot;, &lt;VirtualHost&gt;, &lt;Global&gt;<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
 <strong>Module:</strong> mod_sftp<br>
 <strong>Compatibility:</strong> 1.3.2rc2 and later
 
@@ -825,9 +825,12 @@ key exchange algorithms that <code>mod_sftp</code> should use.  The current list
 of supported key exchange algorithms is:
 <ul>
   <li>curve25519-sha256@libssh.org
-  <li>ecdh-sha2-nistp256
-  <li>ecdh-sha2-nistp384
   <li>ecdh-sha2-nistp521
+  <li>ecdh-sha2-nistp384
+  <li>ecdh-sha2-nistp256
+  <li>diffie-hellman-group18-sha512
+  <li>diffie-hellman-group16-sha512
+  <li>diffie-hellman-group14-sha256
   <li>diffie-hellman-group-exchange-sha256
   <li>diffie-hellman-group-exchange-sha1
   <li>diffie-hellman-group14-sha1
@@ -843,10 +846,10 @@ key exchange algorithm must be used.
 
 <p>
 <hr>
-<h2><a name="SFTPKeyLimits">SFTPKeyLimits</a></h2>
+<h3><a name="SFTPKeyLimits">SFTPKeyLimits</a></h3>
 <strong>Syntax:</strong> SFTPKeyLimits <em>limit1 ...</em><br>
 <strong>Default:</strong> MinimumRSASize 768 MiniumumDSASize 384 MinimumECSize 160<em>None</em><br>
-<strong>Context:</strong> &quot;server config&quot;, &lt;VirtualHost&gt;, &lt;Global&gt;<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
 <strong>Module:</strong> mod_sftp<br>
 <strong>Compatibility:</strong> 1.3.6rc3 and later
 
@@ -872,10 +875,10 @@ Examples:
 
 <p>
 <hr>
-<h2><a name="SFTPLog">SFTPLog</a></h2>
+<h3><a name="SFTPLog">SFTPLog</a></h3>
 <strong>Syntax:</strong> SFTPLog <em>file|"none"</em><br>
 <strong>Default:</strong> <em>None</em><br>
-<strong>Context:</strong> &quot;server config&quot;, &lt;VirtualHost&gt;, &lt;Global&gt;<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
 <strong>Module:</strong> mod_sftp<br>
 <strong>Compatibility:</strong> 1.3.2rc2 and later
 
@@ -891,7 +894,7 @@ unless <code>AllowLogSymlinks</code> is explicitly set to <em>on</em>
 
 <p>
 <hr>
-<h2><a name="SFTPMaxChannels">SFTPMaxChannels</a></h2>
+<h3><a name="SFTPMaxChannels">SFTPMaxChannels</a></h3>
 <strong>Syntax:</strong> SFTPMaxChannels <em>count</em><br>
 <strong>Default:</strong> 10<br>
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
@@ -910,7 +913,7 @@ SSH2 clients only ever open one channel.
 
 <p>
 <hr>
-<h2><a name="SFTPOptions">SFTPOptions</a></h2>
+<h3><a name="SFTPOptions">SFTPOptions</a></h3>
 <strong>Syntax:</strong> SFTPOptions <em>opt1 ...</em><br>
 <strong>Default:</strong> None<br>
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
@@ -1130,7 +1133,7 @@ The currently implemented options are:
 
 <p>
 <hr>
-<h2><a name="SFTPPassPhraseProvider">SFTPPassPhraseProvider</a></h2>
+<h3><a name="SFTPPassPhraseProvider">SFTPPassPhraseProvider</a></h3>
 <strong>Syntax:</strong> SFTPPassPhraseProvider <em>path</em><br>
 <strong>Default:</strong> <em>None</em><br>
 <strong>Context:</strong> server config<br>
@@ -1165,10 +1168,10 @@ Example:
 
 <p>
 <hr>
-<h2><a name="SFTPRekey">SFTPRekey</a></h2>
+<h3><a name="SFTPRekey">SFTPRekey</a></h3>
 <strong>Syntax:</strong> SFTPRekey <em>"none"|"required" [[interval bytes] timeout]</em><br>
 <strong>Default:</strong> <em>None</em><br>
-<strong>Context:</strong> &quot;server config&quot;, &lt;VirtualHost&gt;, &lt;Global&gt;<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
 <strong>Module:</strong> mod_sftp<br>
 <strong>Compatibility:</strong> 1.3.2rc2 and later
 
@@ -1233,10 +1236,10 @@ Note that normally such rekey timeouts are not necessary.
 
 <p>
 <hr>
-<h2><a name="SFTPTrafficPolicy">SFTPTrafficPolicy</a></h2>
+<h3><a name="SFTPTrafficPolicy">SFTPTrafficPolicy</a></h3>
 <strong>Syntax:</strong> SFTPTrafficPolicy <em>policy</em><br>
 <strong>Default:</strong> <em>None</em><br>
-<strong>Context:</strong> &quot;server config&quot;, &lt;VirtualHost&gt;, &lt;Global&gt;<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
 <strong>Module:</strong> mod_sftp<br>
 <strong>Compatibility:</strong> 1.3.2rc2 and later
 
@@ -1259,7 +1262,7 @@ of policies; the chances columns list the probability that
 <code>mod_sftp</code> will send an <code>SSH_MSG_IGNORE</code> message.
 
 <p>
-<table border=1>
+<table border=1 summary="SFTP Traffic Policies">
   <tr>
     <td><b>Policy Name</b></td>
     <td><b>Chances</b></td>
@@ -1317,14 +1320,8 @@ a <code>SFTPTrafficPolicy</code> setting in your configuration, <i>e.g.</i>
 <p>
 <hr>
 <h2><a name="Installation">Installation</a></h2>
-To install <code>mod_sftp</code>, go to the third-party module area in
-the proftpd source code and unpack the <code>mod_sftp</code> source tarball:
-<pre>
-  cd <i>proftpd-dir</i>/contrib/
-  tar zxvf /path/to/mod_sftp-<i>version</i>.tar.gz
-</pre>
-after unpacking the latest proftpd-1.3.2 source code.  For including
-<code>mod_sftp</code> as a staticly linked module:
+The <code>mod_sftp</code> module is distributed with ProFTPD.  For including
+<code>mod_sftp</code> as a staticly linked module, use:
 <pre>
   $ ./configure --enable-openssl --with-modules=mod_sftp ...
 </pre>
@@ -1710,7 +1707,7 @@ mode, it will refuse to advertise support for the following cipher algorithms:
   <li><code>cast128-cbc</code>
 </ul>
 and for the following digest algorithms:
-</ul>
+<ul>
   <li><code>hmac-md5</code>
   <li><code>hmac-md5-96</code>
   <li><code>hmac-ripemd160</code>
@@ -1950,6 +1947,11 @@ configuration, listening on the address and port that you wish, <i>e.g.</i>:
     &lt;/VirtualHost&gt;
   &lt;/IfModule&gt;
 </pre>
+<b>Note</b> that if you use the above configuration, and you wish to handle
+<b><i>any</i></b> address requested by incoming connections, use
+<code>0.0.0.0</code> as the <i>a.b.c.d</i> IP address.  <code>0.0.0.0</code>
+is known as the "wildcard address", and indicates that ProFTPD wants to listen
+on any/all addresses, on those ports.
 
 <p><a name="SFTPOnly">
 <font color=red>Question</font>: How can I configure <code>proftpd</code>
@@ -2029,6 +2031,59 @@ format using <code>ssh-keygen</code>, <em>before</em> adding it to your
 </pre>
 See the <a href="#UsageRFC4716Format">Usage</a> documentation for more
 information.
+
+<p><a name="SFTPBrokenMaxFileSize">
+<font color=red>Question</font>: I'm using the <a href="../modules/mod_xfer.html"><code>MaxStoreFileSize</code></a> directive in my <code>mod_sftp</code>
+configuration, but when I upload a file using <i>e.g.</i> OpenSSH's
+<code>sftp</code> client, I see the file uploaded past my configured limit.  Is
+this a bug?<br>
+<font color=blue>Answer</font>: No.  The <code>mod_sftp</code> module honors
+a configured <code>MaxStoreFileSize</code> limit properly.  <i>However</i>,
+what you see <i>in the SFTP client</i> may not reflect this as you would expect.
+Some SFTP clients, like that from OpenSSH, will only reflect the failure
+<i>after the entire file has been uploaded</i>:
+<pre>
+  sftp&gt; put /path/to/file.dat
+  Uploading /path/to/file.dat to /file.dat
+  /path/to/file.dat                           100%  704KB 704.1KB/s   00:00
+  Couldn't write to remote file "/file.dat": Failure
+</pre>
+In the <code>SFTPLog</code> for the above situation, you would most likely
+see log messages about the SFTP <code>WRITE</code> requests being rejected:
+<pre>
+  mod_sftp/0.9.9[32297]: error writing 32768 bytes to '/file.dat': File too large (MaxStoreFileSize 204800 exceeded)
+  mod_sftp/0.9.9[32297]: error writing 32768 bytes to '/file.dat': File too large (MaxStoreFileSize 204800 exceeded)
+</pre>
+
+<p>
+<b>There is a discrepancy between what the client shows the user, and what the
+server is actually doing.</b>  The <code>mod_sftp</code> module, when handling
+SFTP uploads, checks the size of the file on disk, after receiving the buffer
+of data from the network, but <i>before</i> writing that data to disk.  If the
+size of the file on disk exceeds the <code>MaxStoreFileSize</code> limit, then
+that SFTP <code>WRITE</code> request is denied.
+
+<p>
+Many SFTP clients will send multiple SFTP <code>WRITE</code> requests
+concurrently, optimistically hoping that they will succeed; this makes for
+faster SFTP uploads.  This is why you might see multiple "File too large"
+messages logged by <code>mod_sftp</code>.  And it also means that the client
+<i>thinks</i> it has sent more data to the server than has actually been
+written to disk.
+
+<p>
+Now, this may lead you to ask "Due to SFTP protocol itself, there is no way to
+control the file size uploaded by a client, right?"  This is not quite correct.
+
+<p>
+There's no way <em>for an SFTP server</em> to control how much data the
+SFTP client will send.  But there <em>is</em> a way to control how much data is
+written to disk by the SFTP server; that is what <code>MaxStoreFileSize</code>
+does.  But this means that the SFTP client may report how much data it sent
+over the network, which <b>is not the same</b> as how much data was actually
+stored by the SFTP server.  Believing what your client shows you, though, is
+always suspect, since what the client shows may not actually reflect the
+reality of things on the server side of things.
 
 <p><a name="SFTPPCBCModeAttacks">
 <font color=red>Question</font>: Is it true that using CBC mode ciphers in
@@ -2290,6 +2345,30 @@ configure option is required to enable NLS support, which includes support
 for UTF8.  SFTP protocol versions 4-6 require UTF8 support, which is why
 the <code>--enable-nls</code> configure option is needed.
 
+<p><a name="SFTPExtraREADs">
+<font color=red>Question</font>: Why is my <code>SFTPLog</code> often spammed
+with lots of messages that look like:
+<pre>
+  requested read offset (20480 bytes) greater than size of '/some/path/to.file' (20307 bytes)
+</pre>
+Is there something wrong with my SFTP client, or my configuration?<br>
+<font color=blue>Answer</font>: The short answer is that these extraneous
+<code>READ</code> requests <i>are</i> normal, and do <i>not</i> indicate any
+problem or issue.
+
+<p>
+Many SFTP clients try to improve their download speed by issuing many
+concurrent <code>READ</code> requests, each request with a different
+<em>offset</em>. Thus the client can read multiple "chunks" simultaneously,
+and do the reassembly of the "chunks" into the file itself.  However, sometimes
+these SFTP clients do not necessarily know how <i>many</i> such
+<code>READ</code> requests are needed before the end-of-file is reached.  So
+the SFTP client sends more <code>READ</code>s that might be necessary; the
+server will reply with an error if the requested <em>offset</em> is beyond the
+end of the file.  When this "end of file" reply is received by the SFTP client,
+it will know that it is done downloading.  On the server side, though, this
+behavior results in the above log messages.
+
 <p><a name="SFTPNotUnderstood">
 <font color=red>Question</font>: When I use my SFTP client, I see something
 like this when I try to connect to <code>proftpd</code> with
@@ -2344,7 +2423,7 @@ capability).
 <pre>
   WARNING: unable to read SFTPDHParamFile '<i>path</i>': Permission denied
   unable to open SFTPKeyBlacklist '<i>path</i>': Permission denied
-<pre>
+</pre>
 What can I do to fix this?<br>
 <font color=blue>Answer</font>: This indicates that the files are not
 readable (usually <i>world</i>-readable) by the users logging in,
@@ -2357,15 +2436,12 @@ cannot read either the <code>SFTPDHParamFile</code> or the
 <code>SFTPKeyBlacklist</code> files.
 
 <p>
-<hr><br>
-
+<hr>
 <font size=2><b><i>
-&copy; Copyright 2008-2016 TJ Saunders<br>
+&copy; Copyright 2008-2017 TJ Saunders<br>
  All Rights Reserved<br>
 </i></b></font>
-
-<hr><br>
+<hr>
 
 </body>
 </html>
-

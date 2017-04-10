@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <title>ProFTPD: Directory Lists and ListOptions</title>
@@ -122,6 +123,8 @@ The following keywords are supported, in addition to &quot;strict&quot;:
       <dd>Applies the <code>ListOptions</code> only to <code>NLST</code> commands (and not <code>LIST</code> or <code>STAT</code> commands)
   <li><dt>NoErrorIfAbsent</dt>
       <dd>Causes a 226 response code to be returned for <code>LIST/NLST</code> commands for files which do not exist, rather than 450
+  <li><dt>SortedNLST</dt>
+      <dd>Causes the <code>NLST</code> results to be sorted by name
 </ul>
 These keywords were added for finer-grained control over directory listings.
 They make it possible to allow recursive listings and yet still apply limits,
@@ -145,6 +148,14 @@ would thus use something like:
 <p>
 Note that <code><a href="Limit.html">&lt;Limit&gt;</a></code> sections can be
 used to block the <code>LIST</code> and <code>NLST</code> commands altogether.
+
+<p>
+<hr>
+<font size=2><b><i>
+&copy; Copyright 2017 The ProFTPD Project<br>
+ All Rights Reserved<br>
+</i></b></font>
+<hr>
 
 </body>
 </html>
