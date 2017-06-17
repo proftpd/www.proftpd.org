@@ -5,6 +5,14 @@
 
 <h1><: print "$html_title" :></h1>
 
+<h2>Statsd logging module</h2>
+<i>Maintainer: TJ Saunders</i>
+<br /><a href="https://github.com/Castaglia/proftpd-mod_statsd/">https://github.com/Castaglia/proftpd-mod_statsd/</a>
+
+<p>The <code>mod_statsd</code> module can be used to have ProFTPD emit
+metrics about FTP/FTPS/SFTP/SCP usage to a <code>statsd</code> server.
+
+
 <h2>AWS configuration module</h2>
 <i>Maintainer: TJ Saunders</i>
 <br /><a href="https://github.com/Castaglia/proftpd-mod_aws/">https://github.com/Castaglia/proftpd-mod_aws/</a>
