@@ -1088,6 +1088,23 @@ The currently implemented options are:
     permissions in an upload.) If you need more FTP-like functionality for any
     reason and wish to have <code>mod_sftp</code> silently ignore any
     permissions sent by the SFTP client, use this option.
+  </li>
+
+  <p>
+  <li><code>IncludeSFTPTimes</code><br>
+    <p>
+    Some SFTP clients (<i>e.g.</i> the Rebex SFTP library) do not implement
+    SFTP protocol versions 4+ well, and do not <em>request</em> the
+    access/modify time attributes but <em>expect/assume</em> that those
+    time attributes will be present in the <code>STAT</code> responses.
+    Use this option to tell <code>mod_sftp</code> to always include the
+    access and modify time attributes in <code>STAT</code> responses for
+    clients using SFTP protocol version 4 and higher.
+
+    <p>
+    <b>Note</b> that this option first appeared in
+    <code>proftpd-1.3.7rc1</code>.
+  </li>
 
   <p>
   <li><code>InsecureHostKeyPerms</code><br>
@@ -1516,13 +1533,18 @@ values), once the client has successfully exchanged keys with
   <li><code>SFTP_SERVER_COMPRESSION_ALGO</code>
   <li><code>SFTP_SERVER_MAC_ALGO</code>
 </ul>
-And after the client has successfully authenticated, the following variables
-<i>may</i> be set, depending on the authentication mechanism used:
+When a client attempts to use publickey authentication, the following variables
+<i>may</i> be set:
 <ul>
+  <li><code>SFTP_USER_AUTH_METHOD</code>
   <li><code>SFTP_USER_PUBLICKEY_ALGO</code>
   <li><code>SFTP_USER_PUBLICKEY_FINGERPRINT</code>
   <li><code>SFTP_USER_PUBLICKEY_FINGERPRINT_ALGO</code>
 </ul>
+<b>Note</b> that the above variables may be present even if the user was
+authenticated by a mechanism <i>other than publickey authentication</i>.  This
+is intentional; the logs may be used to help troubleshoot <i>failed</i>
+authentication attempts, as well as successful authentications.
 
 <p>
 These environment variables are intended for informational purposes,
