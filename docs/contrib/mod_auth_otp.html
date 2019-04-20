@@ -447,6 +447,12 @@ the normal steps for using third-party modules in ProFTPD.  For including
 <pre>
   $ ./configure --enable-openssl --with-modules=mod_sql:mod_sql_sqlite:mod_auth_otp:...
 </pre>
+Note the order, <code>mod_sql</code> must preceed <code>mod_auth_otp</code>, otherwise 
+  you'll receive an error like 
+  <pre>
+  mod_auth_otp/0.2: Missing required 'mod_sql.c'; HOTP/TOTP logins will FAIL
+  </pre>
+  
 To build <code>mod_auth_otp</code> as a DSO module:
 <pre>
   $ ./configure --enable-dso --enable-openssl --with-shared=mod_auth_otp:...
