@@ -8,22 +8,11 @@
 <h2>MD5 Digest Hashes</h2>
 
 <pre>
-0df72d7bb47e1918c3bfced5cc852e71 <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.5e.tar.gz">proftpd-1.3.5e.tar.gz</a>
 13270911c42aac842435f18205546a1b <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.6.tar.gz">proftpd-1.3.6.tar.gz</a>
+1103b2d37e31628fd04b00e3e4446613 <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.7rc1.tar.gz">proftpd-1.3.7rc1.tar.gz</a>
 </pre>
 
 <h2>PGP Signatures</h2>
-
-<pre>
-<strong>proftpd-1.3.5e.tar.gz.asc</strong>
------BEGIN PGP SIGNATURE-----
-Comment: GPGTools - https://gpgtools.org
-
-iEYEABECAAYFAljqnpEACgkQt46JP6URl2perACgjwSNGXCRyoRFQRsIY2s+1aXd
-IZgAoPP5fcWOlP0i2/Dl8tnQrYFtI0gG
-=wGie
------END PGP SIGNATURE-----
-</pre>
 
 <pre>
 <strong>proftpd-1.3.6.tar.gz.asc</strong>
@@ -33,6 +22,16 @@ Comment: GPGTools - https://gpgtools.org
 iEYEABECAAYFAljq8/4ACgkQt46JP6URl2oeRgCgnSKx9AkHLREqrmWZo+3i6moP
 IjYAn1UICZqevlqSkXr9dFBbI1850pTv
 =mcPy
+-----END PGP SIGNATURE-----
+</pre>
+
+<pre>
+-----BEGIN PGP SIGNATURE-----
+Comment: GPGTools - https://gpgtools.org
+
+iEYEABECAAYFAl2iV7gACgkQt46JP6URl2o4mwCg9VAHhmAVFT4EbA0S5TbKPEHM
+oroAnA3mDnk2bSIQFjLghESIpLO7CBW7
+=tNag
 -----END PGP SIGNATURE-----
 </pre>
 
