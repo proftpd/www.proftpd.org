@@ -8,24 +8,25 @@
 <h2>MD5 Digest Hashes</h2>
 
 <pre>
-13270911c42aac842435f18205546a1b <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.6.tar.gz">proftpd-1.3.6.tar.gz</a>
+43d0b9c4107fb91d360a3c813d7a9e29 <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.6a.tar.gz">proftpd-1.3.6a.tar.gz</a>
 1103b2d37e31628fd04b00e3e4446613 <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.7rc1.tar.gz">proftpd-1.3.7rc1.tar.gz</a>
 </pre>
 
 <h2>PGP Signatures</h2>
 
 <pre>
-<strong>proftpd-1.3.6.tar.gz.asc</strong>
+<strong>proftpd-1.3.6a.tar.gz.asc</strong>
 -----BEGIN PGP SIGNATURE-----
 Comment: GPGTools - https://gpgtools.org
 
-iEYEABECAAYFAljq8/4ACgkQt46JP6URl2oeRgCgnSKx9AkHLREqrmWZo+3i6moP
-IjYAn1UICZqevlqSkXr9dFBbI1850pTv
-=mcPy
+iEYEABECAAYFAl2iY2QACgkQt46JP6URl2r9uQCg65o3ynA+a8iVJwvQxPQ0Bcl4
+4TYAn1aFnXf3F6V7hMaknGE3MXdWU5/4
+=KJHp
 -----END PGP SIGNATURE-----
 </pre>
 
 <pre>
+<strong>proftpd-1.3.7rc1.tar.gz.asc</strong>
 -----BEGIN PGP SIGNATURE-----
 Comment: GPGTools - https://gpgtools.org
 
