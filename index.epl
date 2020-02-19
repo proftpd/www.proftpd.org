@@ -3,7 +3,7 @@
 
 #include "header.epl"
 
-<h1>1.3.7rc3 released</h1>
+<h1>1.3.7rc3, 1.3.6c released</h1>
 [<i>18/Feb/2020</i>]
 <p>The ProFTPD Project is happy to announce the release of 1.3.7rc3 to the
 community.  This is the third release candidate of the 1.3.7 development
@@ -12,6 +12,11 @@ use-after-free memory issue.  The
 <a href="docs/RELEASE_NOTES-1.3.7rc3">RELEASE_NOTES</a> and
 <a href="docs/NEWS-1.3.7rc3">NEWS</a> files contain, as always, the full
 details.</p>
+
+<p>We are also pleased to release 1.3.6c to the community.  This is a
+maintenance release, containing backported fixes from the 1.3.7 release.  The
+<a href="docs/RELEASE_NOTES-1.3.6c">RELEASE_NOTES</a> and
+<a href="docs/NEWS-1.3.6c">NEWS</a> files have more information.</p>
 
 <h1>1.3.7rc2, 1.3.6b released</h1>
 [<i>19/Oct/2019</i>]
@@ -51,33 +56,5 @@ The <a href="docs/RELEASE_NOTES-1.3.5e">RELEASE_NOTES</a> and
 <p>We are also pleased to announce the stable release of 1.3.6 to the
 community.  The <a href="docs/RELEASE_NOTES-1.3.6">RELEASE_NOTES</a> and
 <a href="docs/NEWS-1.3.6">NEWS</a> files contain the full details.</p>
-
-<h1>1.3.6rc4, 1.3.5d released</h1>
-[<i>15/Jan/2017</i>]
-<p>The ProFTPD Project team has released 1.3.6rc4 to the community.  This
-fourth release candidate of the 1.3.6 development cycle contains the
-fix for a major regression in the previous RC.  The
-<a href="docs/RELEASE_NOTES-1.3.6rc4">RELEASE_NOTES</a> and
-<a href="docs/NEWS-1.3.6rc4">NEWS</a> files contain more details.</p>
-
-<p>Similarly, a new 1.3.5d maintenance release is now available to the
-community.  This release containing a backported fixes for the same regression
-mentioned above.  The
-<a href="docs/RELEASE_NOTES-1.3.5d">RELEASE_NOTES</a> and
-<a href="docs/NEWS-1.3.5d">NEWS</a> files contain the full details.</p>
-
-<h1>1.3.6rc2, 1.3.5b released</h1>
-[<i>10/Mar/2016</i>]
-<p>The ProFTPD Project team is pleased to announce the availability of
-1.3.6rc2 to the community.  This is the second release candidate of the 1.3.6
-development cycle, containing multiple major bugfixes and features.  The
-<a href="docs/RELEASE_NOTES-1.3.6rc2">RELEASE_NOTES</a> and
-<a href="docs/NEWS-1.3.6rc2">NEWS</a> files contain, as always, the full
-details.</p>
-
-<p>We are also happy to release 1.3.5b to the community.  This is a maintenance
-release, containing backported fixes for bugs found in the 1.3.5 release.  The
-<a href="docs/RELEASE_NOTES-1.3.5b">RELEASE_NOTES</a> and
-<a href="docs/NEWS-1.3.5b">NEWS</a> files contain the full details.</p>
 
 #include "footer.epl"
