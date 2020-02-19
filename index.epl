@@ -3,6 +3,16 @@
 
 #include "header.epl"
 
+<h1>1.3.7rc3 released</h1>
+[<i>18/Feb/2020</i>]
+<p>The ProFTPD Project is happy to announce the release of 1.3.7rc3 to the
+community.  This is the third release candidate of the 1.3.7 development
+cycle, containing support for OpenSSH-formatted private keys, and a major
+use-after-free memory issue.  The
+<a href="docs/RELEASE_NOTES-1.3.7rc3">RELEASE_NOTES</a> and
+<a href="docs/NEWS-1.3.7rc3">NEWS</a> files contain, as always, the full
+details.</p>
+
 <h1>1.3.7rc2, 1.3.6b released</h1>
 [<i>19/Oct/2019</i>]
 <p>The ProFTPD Project team is pleased to announce the release of 1.3.7rc2
