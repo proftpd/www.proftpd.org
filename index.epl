@@ -3,6 +3,16 @@
 
 #include "header.epl"
 
+<h1>1.3.7rc4 released</h1>
+[<i>30/May/2020</i>]
+<p>The ProFTPD Project is proud to announce the release of 1.3.7rc4 to the
+community.  This is the fourth release candidate of the 1.3.7 development
+cycle, containing improved support for TLS SNI and TLSv1.3, LDAP SASL
+mechanisms, and other fixes.  The
+<a href="docs/RELEASE_NOTES-1.3.7rc4">RELEASE_NOTES</a> and
+<a href="docs/NEWS-1.3.7rc4">NEWS</a> files contain, as always, the full
+details.</p>
+
 <h1>1.3.7rc3, 1.3.6c released</h1>
 [<i>18/Feb/2020</i>]
 <p>The ProFTPD Project is happy to announce the release of 1.3.7rc3 to the
