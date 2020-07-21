@@ -9,7 +9,7 @@
 
 <pre>
 ed5580e9e02c5308dc9283fc83434530 <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.6d.tar.gz">proftpd-1.3.6d.tar.gz</a>
-0036ad20b2dff9391ef728a5f54b0898 <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.7rc4.tar.gz">proftpd-1.3.7rc4.tar.gz</a>
+c3c39796c16314b962c7444b2f1040c2 <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.7.tar.gz">proftpd-1.3.7.tar.gz</a>
 </pre>
 
 <h2>PGP Signatures</h2>
@@ -26,13 +26,13 @@ iUAAoMzew8rPEryN15UlKqQUWSgmEOtd
 </pre>
 
 <pre>
-<strong>proftpd-1.3.7rc4.tar.gz.asc</strong>
+<strong>proftpd-1.3.7.tar.gz.asc</strong>
 -----BEGIN PGP SIGNATURE-----
 Comment: GPGTools - https://gpgtools.org
 
-iEYEABECAAYFAl7S0b0ACgkQt46JP6URl2ogoQCfW38rOEeeVsze3O3mocLRz/r8
-aiMAoMoMn4hRrP8mMQz9MRQu+qV1RVtB
-=KzeN
+iEYEABECAAYFAl8WbaQACgkQt46JP6URl2rrUQCfcmk0kWBR/jZX0o83JyYci4Vq
+ZSEAnA6f3WVp8MDTbs/7bPZex5LPmr5o
+=kZww
 -----END PGP SIGNATURE-----
 </pre>
 
