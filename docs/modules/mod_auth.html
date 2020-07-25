@@ -340,7 +340,7 @@ See also: <a href="#AnonRequirePassword"><code>AnonRequirePassword</code></a>, <
 <p>
 <hr>
 <h3><a name="CreateHome">CreateHome</a></h3>
-<strong>Syntax:</strong> CreateHome <em>off|on [mode] [skel path] [dirmode mode]</em><br>
+<strong>Syntax:</strong> CreateHome <em>off|on [mode] [skel path] [dirmode mode]...</em><br>
 <strong>Default:</strong> None<br>
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
 <strong>Module:</strong> mod_auth<br>
@@ -776,7 +776,7 @@ Normally, <code>proftpd</code> does <b>not allow</b> root logins under any
 circumstance.  If a client attempts to login as root, using the correct
 password, a special security message is logged:
 <pre>
-  SECURITY VIOLATION: root login attempted. 
+  SECURITY VIOLATION: Root login attempted
 </pre>
 
 When <code>RootLogin on</code> is used, the root user may authenticate just as
@@ -832,9 +832,10 @@ If not for that requirement, then with "RootRevoke on" in the
 to use root privileges for binding to a privileged port like port 20.
 
 <p>
-Thus the <code>RootRevoke</code> directive also accepts (as of <code>proftpd-1.3.5rc1</code>) a parameter of "UseNonCompliantActiveTransfers", <i>e.g.</i>:
+Thus the <code>RootRevoke</code> directive also accepts (as of ProFTPD 1.3.5rc1)
+a parameter of "UseNonCompliantActiveTransfers", <i>e.g.</i>:
 <pre>
-  # Drop root privs, but allow active data tranfers (only use a non-standard
+  # Drop root privs, but allow active data transfers (only use a non-standard
   # source port for the active data connection).
   RootRevoke UseNonCompliantActiveTranfers
 </pre>
@@ -850,6 +851,14 @@ getting <code>proftpd</code> to drop root privileges for sessions more often,
 which is a <b>far more secure configuration</b>.  Exploits such as the
 "Roaring Beast" attack would not be possible in a session where root privileges
 have been dropped completely.
+
+<p>
+<b>Note</b>: In ProFTPD 1.3.7rc1 and later, the default value for
+<code>RootRevoke</code> became <em>on</em>, meaning that root privileges are
+dropped by default, unless explicitly configured via this directive.  The
+default behavior is that of the <code>UseNonCompliantActiveTransfers</code>
+parameter, so that <code>PORT</code> and <code>EPRT</code> commands are not
+rejected.
 
 <p>
 <hr>
@@ -888,7 +897,7 @@ The <code>TimeoutSession</code> directive sets the maximum number of
 <em>seconds</em> a control connection between the proftpd server and client
 can exist, after the client has successfully authenticated.  If the
 <em>seconds</em> argument is set to zero, sessions are allowed to last
-indefinitely; this is the default.  There is no maxium value for the
+indefinitely; this is the default.  There is no maximum value for the
 <em>seconds</em> parameter.
 
 <p>
@@ -1024,7 +1033,7 @@ The <code>mod_auth</code> module is compiled by default.
 <p>
 <hr>
 <font size=2><b><i>
-&copy; Copyright 2002-2017<br>
+&copy; Copyright 2002-2020<br>
  All Rights Reserved<br>
 </i></b></font>
 <hr>

@@ -63,7 +63,12 @@ For those wishing to learn more about the SSH2 and SFTP protocols, see:
   <li><a href="http://www.faqs.org/rfcs/rfc4716.html">SSH Public Key File Format (RFC 4716)</a>
   <li><a href="http://www.vandyke.com/technology/draft-ietf-secsh-filexfer.txt">SFTP Draft</a>
   <li><a href="http://tools.ietf.org/html/draft-ietf-secsh-filexfer-extensions-00">SFTP Extensions Draft</a>
-  <li><a href="http://www.faqs.org/rfcs/rfc5656.html">SSH Elliptic Curve Algorithms (RF C5656)</a>
+  <li><a href="http://www.faqs.org/rfcs/rfc5656.html">SSH Elliptic Curve Algorithms (RFC 5656)</a>
+  <li><a href="http://www.faqs.org/rfcs/rfc6668.html">SSH SHA-2 HMACs (RFC 6668)</a>
+  <li><a href="http://www.faqs.org/rfcs/rfc8270.html">SSH Increased Minimum DH Group Size (RFC 8270)</a>
+  <li><a href="http://www.faqs.org/rfcs/rfc8308.html">SSH Extension Negotiation (RFC 8308)</a>
+  <li><a href="http://www.faqs.org/rfcs/rfc8332.html">Use of RSA Keys with SHA-256 and SHA-512 in the SSH Protocol (RFC 8332)</a>
+  <li><a href="http://www.faqs.org/rfcs/rfc8731.html">SSH Key Exchange Method Using Curve25519 and Curve448 (RFC 8731)</a>
 </ul>
 
 <p>
@@ -1123,7 +1128,9 @@ The currently implemented options are:
     <p>
     When this option is used, <code>mod_sftp</code> will ignore insecure
     permissions (<i>i.e.</i> group- or world-readable) on
-    <code>SFTPHostKey</code> files.
+    <code>SFTPHostKey</code> files.  This option should appear <em>before</em>
+    any <code>SFTPHostKey</code> directives in the configuration, as hostkey
+    permissions are checked at configuration parse time.
 
     <p>
     <b>Note</b> that this option first appeared in
@@ -1141,6 +1148,19 @@ The currently implemented options are:
     <p>
     <b>Note</b> that this option first appeared in
     <code>proftpd-1.3.4rc1</code>.
+  </li>
+
+  <p>
+  <li><code>NoExtensionNegotiation</code><br>
+    <p>
+    By default, <code>mod_sftp</code> will offer/support the SSH extension
+    negotiation, defined by
+    <a href="https://tools.ietf.org/html/rfc8308">RFC 8308</a>.  Use this
+    option to disable support for extension negotiations.
+
+    <p>
+    <b>Note</b> that this option first appeared in
+    <code>proftpd-1.3.7rc4</code>.
   </li>
 
   <p>
@@ -2492,6 +2512,18 @@ module, or configure it to preserve the SGID bit (<i>e.g.</i> via the
 <a href="../modules/mod_cap.html#CapabilitiesSet"><code>CAP_FSETID</code></a>
 capability).
 
+<p><a name="SFTPEd25519">
+<font color=red>Question</font>: I see that Ed25519 SSH keys are supported
+as of ProFTPD 1.3.7rc3 (see <a href="http://bugs.proftpd.org/show_bug.cgi?id=4221">Bug #4221</a>), but when I try to use one with <code>mod_sftp</code>, my
+login fails.  The <code>SFTPLog</code> shows this error; why?
+<pre>
+  USER user1 (Login failed): unsupported public key algorithm 'ssh-ed25519' requested
+</pre>
+<font color=blue>Answer</font>: Support for the Ed25519 algorithm requires
+the <a href="https://github.com/jedisct1/libsodium">libsodium</a> library.
+You may need to install this library, and recompile ProFTPD with
+<code>mod_sftp</code> in order for the library to be detected and used.
+
 <p><a name="SFTPWarnings">
 <font color=red>Question</font>: In my SFTP logs, I see these warnings:
 <pre>
@@ -2585,7 +2617,7 @@ deal with this issue, then, you can hopefully upgrade to ProFTPD 1.3.6 or later,
 <p>
 <hr>
 <font size=2><b><i>
-&copy; Copyright 2008-2019 TJ Saunders<br>
+&copy; Copyright 2008-2020 TJ Saunders<br>
  All Rights Reserved<br>
 </i></b></font>
 <hr>
