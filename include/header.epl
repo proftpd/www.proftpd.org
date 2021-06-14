@@ -17,13 +17,13 @@
 
 <div id="menu">
   <h1>Current Versions</h1>
-  Maintenance: <strong>1.3.7a</strong>
+  Maintenance: <strong>1.3.7b</strong>
   <div class="indent">
-    <span class="nowrap">[ <a href="/docs/RELEASE_NOTES-1.3.7a">RELEASE_NOTES</a> ]</span>
+    <span class="nowrap">[ <a href="/docs/RELEASE_NOTES-1.3.7b">RELEASE_NOTES</a> ]</span>
   </div>
   <div class="indent">
-    <span class="nowrap">[ <a href="/docs/NEWS-1.3.7a">NEWS</a> ]</span>
-    <span class="nowrap">[ <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.7a.tar.gz">gz</a> ]</span>
+    <span class="nowrap">[ <a href="/docs/NEWS-1.3.7b">NEWS</a> ]</span>
+    <span class="nowrap">[ <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.7b.tar.gz">gz</a> ]</span>
   </div>
 
   <h1>Downloads</h1>
