@@ -62,7 +62,6 @@ The <code>mod_core</code> module handles most of the core FTP commands.
   <li><a href="#MaxCommandRate">MaxCommandRate</a>
   <li><a href="#MaxConnectionRate">MaxConnectionRate</a>
   <li><a href="#MaxInstances">MaxInstances</a>
-  <li><a href="#MultilineRFC2228">MultilineRFC2228</a>
   <li><a href="#Order">Order</a>
   <li><a href="#PassivePorts">PassivePorts</a>
   <li><a href="#PathAllowFilter">PathAllowFilter</a>
@@ -1429,7 +1428,7 @@ files/directories that are hidden by other directives, such as
 Normally, files marked as "hidden" by <code>HideFiles</code>,
 <code>HideUser</code> or <code>HideGroup</code> <i>can</i> be operated on by
 all FTP commands (assuming Unix file permissions allow access); these files
-simplly do not appear in directory listings.  Additionally, even when normal
+simply do not appear in directory listings.  Additionally, even when normal
 file system permissions <i>deny</i> access, ProFTPD returns a
 "Permission denied" error to the client, indicating that the requested
 file/directory <i>does</i> exist, even if the client cannot use it.  The
@@ -1446,7 +1445,10 @@ Example:
     # Hide files/directories owned by root
     HideUser root
 
-    &lt;Limit DIRS&gt;
+    # Hide Unix dot files
+    HideFiles ^\.
+
+    &lt;Limit DIRS READ&gt;
       # Return "No such file or directory" for hidden files/directories
       IgnoreHidden on
     &lt;/Limit&gt;
@@ -1808,42 +1810,6 @@ repeatedly fork new processes, creating a "fork-bomb").  By default, no limit
 is placed on the number of child processes that may run at one time; it is
 <b>highly recommended</b> that a maximum number, suitable to your sites
 traffic, be configured.
-
-<p>
-<hr>
-<h3><a name="MultilineRFC2228">MultilineRFC2228</a></h3>
-<strong>Syntax:</strong> MultilineRFC2228 <em>on|off</em><br>
-<strong>Default:</strong> MultilineRFC2228 off<br>
-<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
-<strong>Module:</strong> mod_core<br>
-<strong>Compatibility:</strong> 1.2.0pre3 and later
-
-<p>
-By default, ProFTPD sends multi-line responses as per
-<a href="https://tools.ietf.org/html/rfc959">RFC 959</a>, <i>i.e.</i>:
-<pre>
-  200-First line
-   More lines...
-  200 Last line
-</pre>
-
-<p>
-<a href="https://tools.ietf.org/html/rfc2228">RFC 2228</a> specifies that "6xy"
-responses will be sent as follows:
-<pre>
-  600-First line
-  600-More lines...
-  600 Last line
-</pre>
-Note that RFC 2228 <b>only</b> specifies this format for response codes
-starting with '6'.
-
-<p>
-Enabling the <code>MultilineRFC2228</code> directive causes <b>all</b>
-multiline responses to be sent in this format, which <i>may</i> be more
-compatible with certain web browsers and clients.  Using this format
-multiline responses is more likely to be compatible with all clients, although
-it is not strictly RFC compliant, and is thus not enabled by default.
 
 <p>
 <hr>
@@ -2841,7 +2807,7 @@ disconnected from the Internet, <i>etc</i>) will cause a session process to
 never exit, until manually killed.  This session process will thus linger, using
 up one of the <a href="#MaxInstances"><code>MaxInstances</code></a> as well as
 any of the other configured limits.  The maximum allowed <em>seconds</em> value
-is 65535 (108 minutes).
+is 65535 (18 hours).
 
 <p>
 See also: <a href="mod_auth.html#TimeoutLogin"><code>TimeoutLogin</code></a>,
@@ -3347,7 +3313,7 @@ in your <code>proftpd.conf</code> (or simply remove that directive entirely).
 <p>
 <hr>
 <font size=2><b><i>
-&copy; Copyright 2000-2020 The ProFTPD Project<br>
+&copy; Copyright 2000-2021 The ProFTPD Project<br>
  All Rights Reserved<br>
 </i></b></font>
 <hr>
