@@ -5,7 +5,7 @@
 
 <h1><: print "$html_title" :></h1>
 <p>The core documentation is held on GitHub, if you have patches or changes
-please submit them as a diff against those souces where possible. All updates
+please submit them as a diff against those sources where possible. All updates
 should be directed to <a href="mailto:core@proftpd.org">ProFTPD Core</a> and
 they will be dealt with as quickly as possible.</p>
 
