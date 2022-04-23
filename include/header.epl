@@ -17,13 +17,13 @@
 
 <div id="menu">
   <h1>Current Versions</h1>
-  Maintenance: <strong>1.3.7c</strong>
+  Maintenance: <strong>1.3.7d</strong>
   <div class="indent">
-    <span class="nowrap">[ <a href="/docs/RELEASE_NOTES-1.3.7c">RELEASE_NOTES</a> ]</span>
+    <span class="nowrap">[ <a href="/docs/RELEASE_NOTES-1.3.7d">RELEASE_NOTES</a> ]</span>
   </div>
   <div class="indent">
-    <span class="nowrap">[ <a href="/docs/NEWS-1.3.7c">NEWS</a> ]</span>
-    <span class="nowrap">[ <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.7c.tar.gz">gz</a> ]</span>
+    <span class="nowrap">[ <a href="/docs/NEWS-1.3.7d">NEWS</a> ]</span>
+    <span class="nowrap">[ <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.7d.tar.gz">gz</a> ]</span>
   </div>
   Candidate: <strong>1.3.8rc2</strong>
   <div class="indent">
@@ -37,7 +37,7 @@
   <h1>Downloads</h1>
   <ul>
     <li><a href="/pgp.html">PGP public keys</a></li>
-    <li><a href="/md5_pgp.html">MD5 &amp; PGP signatures</a></li>
+    <li><a href="/md5_pgp.html">SHA256 &amp; PGP signatures</a></li>
     <!-- To be renabled once we have better alternate sites figured out -->
     <!--<li><a href="http://proftpd.github.com/">Alternate Download Site</a></li>-->
     <li><a href="/git.html">Git Repository</a></li>
