@@ -20,6 +20,7 @@ distribution.
   <dt>The <a href="ftpasswd.html"><code>ftpasswd</code></a> script
   <dd>Used to easily create and manage <code>AuthUserFile</code>s and
       <code>AuthGroupFile</code>s
+  </dd>
 
   <p> 
   <dt>The <a href="ftpquota.html"><code>ftpquota</code></a> script
@@ -33,7 +34,7 @@ distribution.
   </dd>
 
   <p>
-  <dt>The <a href="mod_auth_otp.html"><code>mod_ban</code></a> module
+  <dt>The <a href="mod_auth_otp.html"><code>mod_auth_otp</code></a> module
   <dd>For supporting HOTP/TOTP One-Time Passwords (OTP) for multi-factor
       authentication, <i>e.g.</i> using Google Authenticator
   </dd>
@@ -52,12 +53,12 @@ distribution.
 
   <p>
   <dt>The <a href="mod_deflate.html"><code>mod_deflate</code></a> module
-  <dd>For suppporting <code>MODE Z</code> compression of data transfers
+  <dd>For supporting <code>MODE Z</code> compression of data transfers
   </dd>
 
   <p>
   <dt>The <a href="mod_digest.html"><code>mod_digest</code></a> module
-  <dd>For suppporting FTP <code>HASH</code> commands for files
+  <dd>For supporting FTP <code>HASH</code> commands for files
   </dd>
 
   <p>
@@ -214,6 +215,12 @@ distribution.
   </dd>
 
   <p>
+  <dt>The <a href="mod_tls_redis.html"><code>mod_tls_redis</code></a> module
+  <dd>Provides SSL session caching, for faster SSL session negotiation, using
+      Redis
+  </dd>
+
+  <p>
   <dt>The <a href="mod_tls_shmcache.html"><code>mod_tls_shmcache</code></a> module
   <dd>Provides SSL session caching, for faster SSL session negotiation, using
       a shared memory cache
@@ -270,7 +277,7 @@ to the docs list, as well as the other ProFTPD mailing lists, are at:
 If you are looking to see if ProFTPD supports a particular feature, the
 first place to look as the complete list of configuration directives:
 <pre>
-  <a href="http://www.proftpd.org/docs/directives/linked/by-name.html">http://www.proftpd.org/docs/directives/linked/by-name.html</a>
+  <a href="http://www.proftpd.org/docs/directives/index.html">http://www.proftpd.org/docs/directives/index.html</a>
 </pre>
 The list may be intimidatingly long, but it is well worth scanning through
 all of the directives to see everything that ProFTPD is capable of supporting.
@@ -278,7 +285,7 @@ all of the directives to see everything that ProFTPD is capable of supporting.
 <p>
 <hr>
 <font size=2><b><i>
-&copy; Copyright 2017 The ProFTPD Project<br>
+&copy; Copyright 2017-2022 The ProFTPD Project<br>
  All Rights Reserved<br>
 </i></b></font>
 <hr>

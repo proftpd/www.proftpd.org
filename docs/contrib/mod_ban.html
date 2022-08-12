@@ -45,6 +45,7 @@ questions, concerns, or suggestions regarding this module.
   <li><a href="#BanLog">BanLog</a>
   <li><a href="#BanMessage">BanMessage</a>
   <li><a href="#BanOnEvent">BanOnEvent</a>
+  <li><a href="#BanOptions">BanOptions</a>
   <li><a href="#BanTable">BanTable</a>
 </ul>
 
@@ -62,6 +63,15 @@ questions, concerns, or suggestions regarding this module.
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
 <strong>Module:</strong> mod_ban<br>
 <strong>Compatibility:</strong> 1.3.4rc2 and later
+
+<p>
+The <code>BanCache</code> directive configures a <em>driver</em> to use for
+caching ban entries.  Depending on the compile-time options, the following
+drivers are supported:
+<ul>
+  <li>memcache
+  <li>redis
+</ul>
 
 <p>
 <hr>
@@ -281,6 +291,11 @@ supported events are:
   </tr>
 
   <tr>
+    <td><code>MaxLoginAttemptsFromUser</code></td>
+    <td>User@Host ban</td>
+  </tr>
+
+  <tr>
     <td><code>RootLogin</code></td>
     <td>Host ban</td>
   </tr>
@@ -366,6 +381,42 @@ See also: <a href="#BanMessage"><code>BanMessage</code></a>
 
 <p>
 <hr>
+<h3><a name="BanOptions">BanOptions</a></h3>
+<strong>Syntax:</strong> BanOptions <em>opt1 ...</em><br>
+<strong>Default:</strong> None<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
+<strong>Module:</strong> mod_ban<br>
+<strong>Compatibility:</strong> 1.3.7rc4 and later
+
+<p>
+The <code>BanOptions</code> directive is used to configure various optional
+behavior of <code>mod_ban</code>.
+
+<p>
+Example:
+<pre>
+  BanOptions MatchAnyServer
+</pre>
+
+<p>
+The currently implemented options are:
+<ul>
+  <li><code>MatchAnyServer</code><br>
+    <p>
+    By default, any ban entries are valid only for the
+    <code>&lt;VirtualHost&gt;</code> handling the banned clients.  This is
+    intentional; the assumption is that there will be different clients,
+    different use cases for the different <code>&lt;VirtualHost&gt;</code>
+    sections.
+
+    <p>
+    However, some sites would like ban entries to be valid across
+    <code>&lt;VirtualHost&gt;</code>, to <em>match</em>, or apply to
+    <b>any server</b>.  Use this option to enable this behavior.
+</ul>
+
+<p>
+<hr>
 <h3><a name="BanTable">BanTable</a></h3>
 <strong>Syntax:</strong> BanTable <em>path</em><br>
 <strong>Default:</strong> None<br>
@@ -391,7 +442,7 @@ once <code>proftpd</code> is shutdown, all current ban data is lost.
 <p>
 <hr>
 <h3><a name="ban"><code>ban</code></a></h3>
-<strong>Syntax:</strong> ftpdctl ban <em>class|host|info|user [-s address#port] name1 [name2 ...]</em><br>
+<strong>Syntax:</strong> ftpdctl ban <em>class|host|info|user|user@host [-s address#port] name1 [name2 ...]</em><br>
 <strong>Purpose:</strong> Add a ban or display ban information<br>
 
 <p>
@@ -464,7 +515,7 @@ See also: <a href="#permit"><code>permit</code></a>
 <p>
 <hr>
 <h3><a name="permit"><code>permit</code></a></h3>
-<strong>Syntax:</strong> ftpdctl permit <em>class|host|user [-s address#port] name1 [name2 ...]</em><br>
+<strong>Syntax:</strong> ftpdctl permit <em>class|host|user|user@host [-s address#port] name1 [name2 ...]</em><br>
 <strong>Purpose:</strong> Permit banned clients to connect<br>
 
 <p>
@@ -668,6 +719,18 @@ addresses, to be excluded from the effects of <code>mod_ban</code>?<br>
 Note that it is <b>important</b> to have <i>both</i>
 <code>&lt;IfClass&gt;</code> sections in your configuration.
 
+<p>
+It is <b>also important</b> that for the above to work, when using shared/DSO
+modules, that <code>mod_ban</code> be loaded in your configuration
+<i>before</i> <code>mod_ifsession</code>:
+<pre>
+  LoadModule mod_ban.c
+  ...
+  LoadModule mod_ifsession.c
+</pre>
+Otherwise, when parsing the configuration, <code>mod_ban</code> might not
+set all of the proper internal state for implementing the whitelists.
+
 <p><a name="BanRootLogins">
 <font color=red>Question</font>: I would like to ban clients which try to
 login as root.  How would I do this?<br>
@@ -683,7 +746,7 @@ login as root.  How would I do this?<br>
 <br><hr>
 
 <font size=2><b><i>
-&copy; Copyright 2004-2017 TJ Saunders<br>
+&copy; Copyright 2004-2021 TJ Saunders<br>
  All Rights Reserved<br>
 </i></b></font>
 
@@ -691,4 +754,3 @@ login as root.  How would I do this?<br>
 
 </body>
 </html>
-

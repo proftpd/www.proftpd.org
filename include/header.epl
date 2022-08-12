@@ -17,27 +17,27 @@
 
 <div id="menu">
   <h1>Current Versions</h1>
-  Maintenance: <strong>1.3.5e</strong>
+  Maintenance: <strong>1.3.7e</strong>
   <div class="indent">
-    <span class="nowrap">[ <a href="/docs/RELEASE_NOTES-1.3.5e">RELEASE_NOTES</a> ]</span>
+    <span class="nowrap">[ <a href="/docs/RELEASE_NOTES-1.3.7e">RELEASE_NOTES</a> ]</span>
   </div>
   <div class="indent">
-    <span class="nowrap">[ <a href="/docs/NEWS-1.3.5e">NEWS</a> ]</span>
-    <span class="nowrap">[ <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.5e.tar.gz">gz</a> ]</span>
+    <span class="nowrap">[ <a href="/docs/NEWS-1.3.7e">NEWS</a> ]</span>
+    <span class="nowrap">[ <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.7e.tar.gz">gz</a> ]</span>
   </div>
-  Stable: <strong>1.3.6</strong>
+  Candidate: <strong>1.3.8rc4</strong>
   <div class="indent">
-    <span class="nowrap">[ <a href="/docs/RELEASE_NOTES-1.3.6">RELEASE_NOTES</a> ]</span>
+    <span class="nowrap">[ <a href="/docs/RELEASE_NOTES-1.3.8rc4">RELEASE_NOTES</a> ]</span>
   </div>
   <div class="indent">
-    <span class="nowrap">[ <a href="/docs/NEWS-1.3.6">NEWS</a> ]</span>
-    <span class="nowrap">[ <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.6.tar.gz">gz</a> ]</span>
+    <span class="nowrap">[ <a href="/docs/NEWS-1.3.8rc4">NEWS</a> ]</span>
+    <span class="nowrap">[ <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.8rc4.tar.gz">gz</a> ]</span>
   </div>
 
   <h1>Downloads</h1>
   <ul>
     <li><a href="/pgp.html">PGP public keys</a></li>
-    <li><a href="/md5_pgp.html">MD5 &amp; PGP signatures</a></li>
+    <li><a href="/md5_pgp.html">SHA256 &amp; PGP signatures</a></li>
     <!-- To be renabled once we have better alternate sites figured out -->
     <!--<li><a href="http://proftpd.github.com/">Alternate Download Site</a></li>-->
     <li><a href="/git.html">Git Repository</a></li>
@@ -86,7 +86,7 @@
     <a href="http://sourceforge.net/projects/proftp">
       <img src="http://sflogo.sourceforge.net/sflogo.php?group_id=17793&type=10" width="80" height="15" border="0" alt="Get ProFTPD Server Software at SourceForge.net. Fast, secure and Free Open Source software downloads" />
     </a>
-    <p>Copyright &copy; 1999 - 2015, The ProFTPD Project.</p>
+    <p>Copyright &copy; 1999 - 2021, The ProFTPD Project.</p>
   </div>
 </div>
 

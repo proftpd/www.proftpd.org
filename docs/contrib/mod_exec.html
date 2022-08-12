@@ -82,8 +82,8 @@ the privileges of the logged-in user.
 
 <p>
 Any number of arbitrary arguments may be configured to pass to the script.
-In addition, the &quot;cookies&quot; supported by the <code>ExecEnviron</code>
-directive may also be used in the script argument list.
+In addition, the variables supported by the <code>ExecEnviron</code> directive
+may also be used in the script argument list.
 
 <p>
 <b>Important</b>: use of <code>DefaultRoot</code> will cause complications
@@ -103,7 +103,7 @@ See Also:
   <a href="#ExecOnError">ExecOnError</a>,
   <a href="#ExecOnExit">ExecOnExit</a>,
   <a href="#ExecOnRestart">ExecOnRestart</a>,
-  <a href="http://www.proftpd.org/docs/directives/linked/config_ref_Limit.html">&lt;Limit&gt;</a>
+  <a href="http://www.proftpd.org/docs/modules/mod_core.html#Limit">&lt;Limit&gt;</a>
 
 <p>
 <hr>
@@ -153,15 +153,16 @@ to follow the convention for environment variable keys.
 
 <p>
 The <i>value</i> parameter may be any arbitrary string which may contain
-any of the following &quot;cookies&quot;, which will be substituted with the
+any of the following variables, which will be substituted with the
 corresponding value before the script is executed:
 <ul>
-  <li><b>%A</b> - Anonymous login password
+  <li><b>%A</b> - anonymous login password
   <li><b>%a</b> - client's IP address
+  <li><b>%b</b> - bytes transferred
   <li><b>%C</b> - current working directory
   <li><b>%c</b> - connection class
-  <li><b>%F</b> - transfered file as seen by client
-  <li><b>%f</b> - full transfered file path
+  <li><b>%F</b> - transferred file as seen by client
+  <li><b>%f</b> - full transferred file path
   <li><b>%g</b> - name of primary group of local user
   <li><b>%h</b> - client's DNS name
   <li><b>%m</b> - FTP command (e.g. RETR, STOR, etc)
@@ -218,8 +219,8 @@ with the privileges of the logged-in user.
 
 <p>
 Any number of arbitrary arguments may be configured to pass to the script.
-In addition, the &quot;cookies&quot; supported by the <code>ExecEnviron</code>
-directive may also be used in the script argument list.
+In addition, the variables supported by the <code>ExecEnviron</code> directive
+may also be used in the script argument list.
 
 <p>
 <b>Important</b>: use of <code>DefaultRoot</code> will cause complications
@@ -239,7 +240,7 @@ See Also:
   <a href="#ExecOnError">ExecOnError</a>,
   <a href="#ExecOnExit">ExecOnExit</a>,
   <A href="#ExecOnRestart">ExecOnRestart</a>,
-  <a href="http://www.proftpd.org/docs/directives/linked/config_ref_Limit.html">&lt;Limit&gt;</a>
+  <a href="http://www.proftpd.org/docs/modules/mod_core.html#Limit">&lt;Limit&gt;</a>
 
 <p>
 <hr>
@@ -258,8 +259,8 @@ set via the <code>User</code>/<code>Group</code> directives.
 
 <p>
 Any number of arbitrary arguments may be configured to pass to the script.
-In addition, the &quot;cookies&quot; supported by the <code>ExecEnviron</code>
-directive may also be used in the script argument list.
+In addition, the variables supported by the <code>ExecEnviron</code> directive
+may also be used in the script argument list.
 
 <p>
 Example:
@@ -295,8 +296,8 @@ the privileges of the logged-in user.
 
 <p>
 Any number of arbitrary arguments may be configured to pass to the script.
-In addition, the &quot;cookies&quot; supported by the <code>ExecEnviron</code>
-directive may also be used in the script argument list.
+In addition, the variables supported by the <code>ExecEnviron</code> directive
+may also be used in the script argument list.
 
 <p>
 <b>Important</b>: use of <code>DefaultRoot</code> will cause complications
@@ -315,7 +316,7 @@ See Also:
   <a href="#ExecOnConnect">ExecOnConnect</a>,
   <a href="#ExecOnExit">ExecOnExit</a>,
   <a href="#ExecOnRestart">ExecOnRestart</a>,
-  <a href="http://www.proftpd.org/docs/directives/linked/config_ref_Limit.html">&lt;Limit&gt;</a>
+  <a href="http://www.proftpd.org/docs/modules/mod_core.html#Limit">&lt;Limit&gt;</a>
 
 <p>
 <hr>
@@ -348,8 +349,8 @@ the program will be executed with the privileges of the logged-in user.
 
 <p>
 Any number of arbitrary arguments may be configured to pass to the script.
-In addition, the &quot;cookies&quot; supported by the <code>ExecEnviron</code>
-directive may also be used in the script argument list.
+In addition, the variables supported by the <code>ExecEnviron</code> directive
+may also be used in the script argument list.
 
 <p>
 Presently only two specific events are supported: <code>MaxConnectionRate</code>
@@ -395,8 +396,8 @@ set via the <code>User</code>/<code>Group</code> directives.
 
 <p>
 Any number of arbitrary arguments may be configured to pass to the script.
-In addition, the &quot;cookies&quot; supported by the <code>ExecEnviron</code>
-directive may also be used in the script argument list.
+In addition, the variables supported by the <code>ExecEnviron</code> directive
+may also be used in the script argument list.
 
 <p>
 Example:
@@ -430,8 +431,8 @@ server, which are set via the <code>User</code>/<code>Group</code> directives.
 
 <p>
 Any number of arbitrary arguments may be configured to pass to the script.
-In addition, the &quot;cookies&quot; supported by the <code>ExecEnviron</code>
-directive may also be used in the script argument list.
+In addition, the variables supported by the <code>ExecEnviron</code> directive
+may also be used in the script argument list.
 
 <p>
 Example:
@@ -627,14 +628,48 @@ By the time the client sends the <code>USER</code> and <code>PASS</code>
 commands, the server will have the necessary user information to populate
 the <code>%U/%u</code> variables.
 
+<font color=red>Question</font>: When I use <code>DefaultRoot</code> to chroot
+my sessions, my exec scripts no longer work; the <code>ExecLog</code> shows
+errors like this:
+<pre>
+preparing to execute '/tmp/ftp-logger.py' with uid 1000 (euid 1000), gid 1000 (egid 1000)
+ + '/tmp/ftp-logger.py': argv[1] = --user
+ + '/tmp/ftp-logger.py': argv[2] = ftp
+ + '/tmp/ftp-logger.py': argv[3] = --file
+ + '/tmp/ftp-logger.py': argv[4] = /home/ftp/test-ftp-demo.py
+ + '/tmp/ftp-logger.py': argv[5] = 172.17.0.1
+error: unable to open /dev/null for stdin: No such file or directory
+'/tmp/ftp-logger.py' terminated normally, with exit status 2
+STOR ExecOnCommand '/tmp/ftp-logger.py' failed: No such file or directory
+</pre>
+Is this a bug?<br>
+<font color=blue>Answer</font>: No, this is not a bug.  It is a consequence
+of how the <code>DefaultRoot</code> directive works.
+
+<p>
+The <code>DefaultRoot</code> directive uses the <code>chroot(2)</code> system
+call, to effectively "jail" your sessions, by changing the root of the
+filesystem for that process.  This affects <i>everything</i>.  Many scripts
+are executed by interpreters; you can see these in the very first line of the
+script, <i>e.g.</i>:
+<pre>
+#!/bin/bash
+</code>
+or:
+<pre>
+#!/usr/bin/env python
+</pre>
+Within a chrooted environment, though, those interpreter paths are no longer
+valid.  Hence the "No such file or directory" error.  This also explains why
+<code>/dev/null</code> cannot be found; it does not exist in the chroot.
+
 <p>
 <hr>
 <font size=2><b><i>
-&copy; Copyright 2000-2014 TJ Saunders<br>
+&copy; Copyright 2000-2022 TJ Saunders<br>
  All Rights Reserved<br>
 </i></b></font>
 <hr>
 
 </body>
 </html>
-

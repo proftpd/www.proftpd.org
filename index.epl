@@ -3,57 +3,137 @@
 
 #include "header.epl"
 
-<h1>1.3.6, 1.3.5e released</h1>
-[<i>09/Apr/2017</i>]
-<p>The ProFTPD Project team has released 1.3.5e to the community.  This
-is a maintenance release, containing backported fixes for the 1.3.5 release.
-The <a href="docs/RELEASE_NOTES-1.3.5e">RELEASE_NOTES</a> and
-<a href="docs/NEWS-1.3.5e">NEWS</a> files contain the full details.</p>
+<h1>1.3.8rc4, 1.3.7e released</h1>
+[<i>23/Jul/2022</i>]
+<p>The ProFTPD Project is pleased to announce the release of 1.3.8rc4 to the
+community.  This is the fourth release candidate of the 1.3.8 development
+cycle, containing fixes and a few new features and fixes.  The
+<a href="docs/RELEASE_NOTES-1.3.8rc4">RELEASE_NOTES</a> and
+<a href="docs/NEWS-1.3.8rc4">NEWS</a> files have the full details, as usual.
+</p>
 
-<p>We are also pleased to announce the stable release of 1.3.6 to the
-community.  The <a href="docs/RELEASE_NOTES-1.3.6">RELEASE_NOTES</a> and
-<a href="docs/NEWS-1.3.6">NEWS</a> files contain the full details.</p>
+<p>We have also released 1.3.7e to the community.  This is a maintenance
+release, containing backported fixes for the 1.3.7 release.  See the
+<a href="docs/RELEASE_NOTES-1.3.7e">RELEASE_NOTES</a> and
+<a href="docs/NEWS-1.3.7e">NEWS</a> files for more information.</p>
 
-<h1>1.3.6rc4, 1.3.5d released</h1>
-[<i>15/Jan/2017</i>]
-<p>The ProFTPD Project team has released 1.3.6rc4 to the community.  This
-fourth release candidate of the 1.3.6 development cycle contains the
-fix for a major regression in the previous RC.  The
-<a href="docs/RELEASE_NOTES-1.3.6rc4">RELEASE_NOTES</a> and
-<a href="docs/NEWS-1.3.6rc4">NEWS</a> files contain more details.</p>
+<h1>1.3.8rc3, 1.3.7d released</h1>
+[<i>23/Apr/2022</i>]
+<p>The ProFTPD Project is happy to announce the release of 1.3.8rc3 to the
+community.  This is the third release candidate of the 1.3.8 development
+cycle, containing several new features and fixes.  The
+<a href="docs/RELEASE_NOTES-1.3.8rc3">RELEASE_NOTES</a> and
+<a href="docs/NEWS-1.3.8rc3">NEWS</a> files have the full details, as usual.
+</p>
 
-<p>Similarly, a new 1.3.5d maintenance release is now available to the
-community.  This release containing a backported fixes for the same regression
-mentioned above.  The
-<a href="docs/RELEASE_NOTES-1.3.5d">RELEASE_NOTES</a> and
-<a href="docs/NEWS-1.3.5d">NEWS</a> files contain the full details.</p>
+<p>The ProFTPD Project team has also released 1.3.7d to the community.  This
+is a maintenance release, containing backported fixes for the 1.3.7 release.
+See the <a href="docs/RELEASE_NOTES-1.3.7d">RELEASE_NOTES</a> and
+<a href="docs/NEWS-1.3.7d">NEWS</a> files for more details.</p>
 
-<h1>1.3.6rc2, 1.3.5b released</h1>
-[<i>10/Mar/2016</i>]
-<p>The ProFTPD Project team is pleased to announce the availability of
-1.3.6rc2 to the community.  This is the second release candidate of the 1.3.6
-development cycle, containing multiple major bugfixes and features.  The
-<a href="docs/RELEASE_NOTES-1.3.6rc2">RELEASE_NOTES</a> and
-<a href="docs/NEWS-1.3.6rc2">NEWS</a> files contain, as always, the full
+<h1>1.3.8rc2, 1.3.7c released</h1>
+[<i>29/Aug/2021</i>]
+<p>The ProFTPD Project is proud to announce the release of 1.3.8rc2 to the
+community.  This is the second release candidate of the 1.3.8 development
+cycle, containing several fixes.  The
+<a href="docs/RELEASE_NOTES-1.3.8rc2">RELEASE_NOTES</a> and
+<a href="docs/NEWS-1.3.8rc2">NEWS</a> files as usual, have the full
 details.</p>
 
-<p>We are also happy to release 1.3.5b to the community.  This is a maintenance
-release, containing backported fixes for bugs found in the 1.3.5 release.  The
-<a href="docs/RELEASE_NOTES-1.3.5b">RELEASE_NOTES</a> and
-<a href="docs/NEWS-1.3.5b">NEWS</a> files contain the full details.</p>
+<p>The ProFTPD Project team has also released 1.3.7c to the community.  This
+is a maintenance release, containing backported fixes for the 1.3.7 release.
+See the <a href="docs/RELEASE_NOTES-1.3.7c">RELEASE_NOTES</a> and
+<a href="docs/NEWS-1.3.7c">NEWS</a> files for more details.</p>
 
-<h1>1.3.6rc1, 1.3.5a released</h1>
-[<i>27/May/2015</i>]
-<p>The ProFTPD Project team is pleased to announce the availability of
-1.3.6rc1 to the community.  This is the first release candidate of the 1.3.6
-development cycle, containing multiple major bugfixes and features.  The
-<a href="docs/RELEASE_NOTES-1.3.6rc1">RELEASE_NOTES</a> and
-<a href="docs/NEWS-1.3.6rc1">NEWS</a> files contain, as always, the full
+<h1>1.3.8rc1, 1.3.7b released</h1>
+[<i>13/Jun/2021</i>]
+<p>The ProFTPD Project is happy to announce the release of 1.3.8rc1 to the
+community.  This is the first release candidate of the 1.3.8 development
+cycle, containing improved TLSv1.3 and SNI support, and other performance
+improvements.  The
+<a href="docs/RELEASE_NOTES-1.3.8rc1">RELEASE_NOTES</a> and
+<a href="docs/NEWS-1.3.8rc1">NEWS</a> files contain, as usual, the full
 details.</p>
-    
-<p>We are also happy to release 1.3.5a to the community.  This is a maintenance
-release, containing backported fixes for bugs found in the 1.3.5 release.  The
-<a href="docs/RELEASE_NOTES-1.3.5a">RELEASE_NOTES</a> and
-<a href="docs/NEWS-1.3.5a">NEWS</a> files contain the full details.</p>
+
+<p>The ProFTPD Project team has released 1.3.7b to the community.  This
+is a maintenance release, containing backported fixes for the 1.3.7 release.
+The <a href="docs/RELEASE_NOTES-1.3.7b">RELEASE_NOTES</a> and
+<a href="docs/NEWS-1.3.7b">NEWS</a> files contain the full details.</p>
+
+<h1>1.3.7a released</h1>
+[<i>21/Jul/2020</i>]
+<p>The ProFTPD Project team has released 1.3.7a to the community.  This
+is a maintenance release, containing backported fixes for the 1.3.7 release.
+The <a href="docs/RELEASE_NOTES-1.3.7a">RELEASE_NOTES</a> and
+<a href="docs/NEWS-1.3.7a">NEWS</a> files contain the full details.</p>
+
+<h1>1.3.7, 1.3.6e released</h1>
+[<i>20/Jul/2020</i>]
+<p>The ProFTPD Project is excited to announce the stable release of 1.3.7 to
+the community.  The <a href="docs/RELEASE_NOTES-1.3.7">RELEASE_NOTES</a> and
+<a href="docs/NEWS-1.3.7">NEWS</a> files contain the full details.</p>
+
+<p>The ProFTPD Project team has also released 1.3.6e to the community.  This
+is a maintenance release, containing backported fixes for the 1.3.6 release.
+The <a href="docs/RELEASE_NOTES-1.3.6e">RELEASE_NOTES</a> and
+<a href="docs/NEWS-1.3.6e">NEWS</a> files contain the full details.</p>
+
+<h1>1.3.7rc4, 1.3.6d released</h1>
+[<i>30/May/2020</i>]
+<p>The ProFTPD Project is proud to announce the release of 1.3.7rc4 to the
+community.  This is the fourth release candidate of the 1.3.7 development
+cycle, containing improved support for TLS SNI and TLSv1.3, LDAP SASL
+mechanisms, and other fixes.  The
+<a href="docs/RELEASE_NOTES-1.3.7rc4">RELEASE_NOTES</a> and
+<a href="docs/NEWS-1.3.7rc4">NEWS</a> files contain, as always, the full
+details.</p>
+
+<p>We are also happy to release 1.3.6d to the community.  This is a
+maintenance release, containing backported fixes from the 1.3.7 release.  The
+<a href="docs/RELEASE_NOTES-1.3.6d">RELEASE_NOTES</a> and
+<a href="docs/NEWS-1.3.6d">NEWS</a> files have more information.</p>
+
+<h1>1.3.7rc3, 1.3.6c released</h1>
+[<i>18/Feb/2020</i>]
+<p>The ProFTPD Project is happy to announce the release of 1.3.7rc3 to the
+community.  This is the third release candidate of the 1.3.7 development
+cycle, containing support for OpenSSH-formatted private keys, and a major
+use-after-free memory issue.  The
+<a href="docs/RELEASE_NOTES-1.3.7rc3">RELEASE_NOTES</a> and
+<a href="docs/NEWS-1.3.7rc3">NEWS</a> files contain, as always, the full
+details.</p>
+
+<p>We are also pleased to release 1.3.6c to the community.  This is a
+maintenance release, containing backported fixes from the 1.3.7 release.  The
+<a href="docs/RELEASE_NOTES-1.3.6c">RELEASE_NOTES</a> and
+<a href="docs/NEWS-1.3.6c">NEWS</a> files have more information.</p>
+
+<h1>1.3.7rc2, 1.3.6b released</h1>
+[<i>19/Oct/2019</i>]
+<p>The ProFTPD Project team is pleased to announce the release of 1.3.7rc2
+to the community.  This is the second release candidate of the 1.3.7
+development cycle, containing a major bugfix.  The
+<a href="docs/RELEASE_NOTES-1.3.7rc2">RELEASE_NOTES</a> and
+<a href="docs/NEWS-1.3.7rc2">NEWS</a> files contain, as always, the full
+details.</p>
+
+<p>We are also happy to release 1.3.6b to the community.  This is a maintenance
+release containing backported fixes for bugs found in the 1.3.7 release.  The
+<a href="docs/RELEASE_NOTES-1.3.6b">RELEASE_NOTES</a> and
+<a href="docs/NEWS-1.3.6b">NEWS</a> files have more information.</p>
+
+<h1>1.3.7rc1, 1.3.6a released</h1>
+[<i>12/Oct/2019</i>]
+<p>The ProFTPD Project team is pleased to announce the availability of
+1.3.7rc1 to the community.  This is the first release candidate of the 1.3.7
+development cycle, containing multiple major bugfixes and features.  The
+<a href="docs/RELEASE_NOTES-1.3.7rc1">RELEASE_NOTES</a> and
+<a href="docs/NEWS-1.3.7rc1">NEWS</a> files contain, as always, the full
+details.</p>
+
+<p>We are also happy to release 1.3.6a to the community.  This is a maintenance
+release, containing backported fixes for bugs found in the 1.3.6 release.  The
+<a href="docs/RELEASE_NOTES-1.3.6a">RELEASE_NOTES</a> and
+<a href="docs/NEWS-1.3.6a">NEWS</a> files contain more details.</p>
 
 #include "footer.epl"
