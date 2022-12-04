@@ -558,7 +558,7 @@ to ensure that the login fails if the PAM check fails.
 <h3><a name="Class">&lt;Class&gt;</a></h3>
 <strong>Syntax:</strong> &lt;Class <em>name</em>&gt;<br>
 <strong>Default:</strong> None<br>
-<strong>Context:</strong> server config<br>
+<strong>Context:</strong> server config, <code>&lt;Global&gt;</code><br>
 <strong>Module:</strong> mod_core<br>
 <strong>Compatibility:</strong> 1.2.10rc1 and later
 
@@ -1122,7 +1122,7 @@ See also: <a href="#DisplayChdir"><code>DisplayChdir</code></a>,
 <hr>
 <h3><a name="FSCachePolicy">FSCachePolicy</a></h3>
 <strong>Syntax:</strong> FSCachePolicy <em>on|off|size count [maxAge secs]</em><br>
-<strong>Default:</strong> None<br>
+<strong>Default:</strong> FSCachePolicy off<br>
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
 <strong>Module:</strong> mod_core<br>
 <strong>Compatibility:</strong> 1.3.6rc1 and later
@@ -1161,8 +1161,11 @@ same directive, <i>e.g.</i>:
 </pre>
 
 <p>
-The default maximum number of entries is 3000, and the default maximum age is
-3 seconds.
+The default maximum number of entries is 3000, and the default maximum age is 3
+seconds.  To enable use of these defaults, enable the cache using:
+<pre>
+  FSCachePolicy on
+</pre>
 
 <hr>
 <h3><a name="FSOptions">FSOptions</a></h3>
@@ -2030,19 +2033,18 @@ the PID of the daemon process.
 <h3><a name="Port">Port</a></h3>
 <strong>Syntax:</strong> Port <em>number</em><br>
 <strong>Default:</strong> Port 21<br>
-<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code><br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
 <strong>Module:</strong> mod_core<br>
 <strong>Compatibility:</strong> 0.99.0 and later
 
 <p>
-The <code>Port</code> directive configures the TCP port to which
-<code>proftpd</code> will listen while running in standalone mode.  This
-directive has <em>no effect</em> when used on a server running in inetd mode;
-see <a href="#ServerType"><code>ServerType</code></a>.  The directive can be
-used in conjunction with
-<a href="#VirtualHost"><code>&lt;VirtualHost&gt;</code></a> in order to run a
-virtual server on the same IP address as the master server, but listening on a
-different port.
+The <code>Port</code> directive configures the TCP port to which ProFTPD will
+listen while running in standalone mode.  This directive has <em>no effect</em>
+when used on a server running in inetd mode; see
+<a href="#ServerType"><code>ServerType</code></a>.  The directive can be used
+in conjunction with <a href="#VirtualHost"><code>&lt;VirtualHost&gt;</code></a>
+in order to run a virtual server on the same IP address as the master server,
+but listening on a different port.
 
 <p>
 For any server, either <code>&lt;VirtualHost&gt;</code> <i>or</i> "server
@@ -2136,7 +2138,7 @@ The currently known/supported protocols include:
 <p>
 <hr>
 <h3><a name="RegexOptions">RegexOptions</a></h3>
-<strong>Syntax:</strong> RegexOptions <em>[MatchLimit limit] [MatchRecursionLimit limit]</em><br>
+<strong>Syntax:</strong> RegexOptions <em>[Engine engine] [MatchLimit limit] [MatchRecursionLimit limit]</em><br>
 <strong>Default:</strong> None<br>
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
 <strong>Module:</strong> mod_core<br>
@@ -2160,6 +2162,22 @@ Note, however, that these limits are only used when
 <a href="http://pcre.org/">PCRE</a> support is enabled (via the
 <code>--enable-pcre</code> build-time option).  If PCRE support is <em>not</em>
 enabled, this directive has no effect.
+
+<p>
+The <em>Engine</em> parameter configures the particular implementation
+&quot;engine&quot; used for regular expressions; the value can be one of the
+following:
+<ul>
+  <li>PCRE
+  <li>PCRE2
+  <li>POSIX
+</ul>
+This is most useful for specifying that ProFTPD should handle all regular
+expressions as POSIX expressions, regardless of any PCRE support, as there may
+be issues with the PCRE implementation.
+
+<p>
+Support for the <em>Engine</em> parameter first appeared in ProFTPD 1.3.8rc2.
 
 <p>
 <hr>
@@ -2518,7 +2536,7 @@ See also: <a href="#DefaultServer"><code>DefaultServer</code></a>
 <p>
 <hr>
 <h3><a name="SocketOptions">SocketOptions</a></h3>
-<strong>Syntax:</strong> SocketOptions <em>[maxseg <i>byte-count</i>] [rcvbuf <i>byte-count</i>] [sndbuf <i>byte-count</i>] [keepalive "on"|"off"|spec]</em><br>
+<strong>Syntax:</strong> SocketOptions <em>[maxseg <i>byte-count</i>] [rcvbuf <i>byte-count</i>] [sndbuf <i>byte-count</i>] [keepalive "on"|"off"|spec] [reuseport "on"|"off"]</em><br>
 <strong>Default:</strong> None<br>
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code><br>
 <strong>Module:</strong> mod_core<br>
@@ -2583,6 +2601,16 @@ then <code>proftpd</code> will assume that the <em>keepalive</em> configuration
 is equivalent to:
 <pre>
   SocketOptions keepalive on
+</pre>
+
+<p>
+In <code>proftpd-1.3.8rc4</code>, the <code>SocketOptions</code> directive
+gained support for the <em>reuseport</em> parameter.  By default,
+<code>proftpd</code> does <b>not</b> enable the TCP "reuse port" value.
+However, this setting can be useful in very specific situations.  To enable
+TCP port reuse for the control socket, use:
+<pre>
+  SocketOptions reuseport on
 </pre>
 
 <p>
@@ -2919,7 +2947,7 @@ See the <a href="../howto/Tracing.html">Tracing</a> howto for more information.
 <h3><a name="TraceLog">TraceLog</a></h3>
 <strong>Syntax:</strong> TraceLog <em>path</em><br>
 <strong>Default:</strong> None<br> 
-<strong>Context:</strong> server config<br>
+<strong>Context:</strong> server config, <code>&lt;Global&gt;</code><br>
 <strong>Module:</strong> mod_core<br>
 <strong>Compatibility:</strong> 1.3.1rc1 and later
 
@@ -3313,7 +3341,7 @@ The solution is to use remove use of the deprecated
 <p>
 <hr>
 <font size=2><b><i>
-&copy; Copyright 2000-2021 The ProFTPD Project<br>
+&copy; Copyright 2000-2022 The ProFTPD Project<br>
  All Rights Reserved<br>
 </i></b></font>
 <hr>
