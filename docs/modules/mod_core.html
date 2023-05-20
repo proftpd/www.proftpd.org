@@ -1530,12 +1530,23 @@ See also: <a href="#Define"><code>Define</code></a>
 <p>
 The <code>&lt;IfModule&gt;</code> and <code>&lt;/IfModule&gt;</code> define
 a <i>conditional</i> configuration section.  The directives appearing within
-that section are processed only if the <em>module-name</em> , used by
+that section are processed only if the <em>module-name</em>, used by
 <code>&lt;IfModule&gt;</code>, is present/loaded.  Otherwise, everything within
 the configuration section is skipped.
 
 <p>
-Example:
+The optional <em>!</em> character prefix to the <em>module-name</em> indicates
+that the section should be included if the named module is <b>not</b>
+present/loaded.
+
+<p>
+An <code>&lt;IfModule&gt;</code> section is <b>not</b> a separate
+configuration context like <code>&lt;VirtualHost&gt;</code> or
+<code>&lt;Directory&gt;</code>.  It is a condition, a way of telling the
+parse to include (or to skip) the enclosed section.
+
+<p>
+Examples:
 <pre>
   &lt;IfModule mod_load.c&gt;
     MaxLoad 10 "Access denied, server too busy"
@@ -2753,14 +2764,14 @@ See also: <a href="#SyslogFacility"><code>SyslogFacility</code></a>,
 <hr>
 <h3><a name="TCPBacklog">TCPBacklog</a></h3>
 <strong>Syntax:</strong> TCPBacklog <em>backlog-size</em><br>
-<strong>Default:</strong> 5<br>
+<strong>Default:</strong> <em>system</em><br>
 <strong>Context:</strong> server config<br>
 <strong>Module:</strong> mod_core<br>
 <strong>Compatibility:</strong> 0.99.0 and later
 
 <p>
-The <code>TCPBacklog</code> directive controls the TCP connection queue
-size for listening sockets; this directive only applies to <code>proftpd</code>
+The <code>TCPBacklog</code> directive controls the TCP connection queue size
+for listening sockets; this directive only applies to <code>proftpd</code>
 when it is configured with "<code>ServerType standalone</code>".  It has
 <b>no effect</b> if "<code>ServerType inetd</code>" is configured.
 
