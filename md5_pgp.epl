@@ -8,20 +8,19 @@
 <h2>SHA256 Digest Hashes</h2>
 
 <pre>
-183ab7c6107de271a2959ff268f55c9b6c76b2cf0029e6584fccc019686601e0 <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.8b.tar.gz">proftpd-1.3.8b.tar.gz</a>
+2a48f2ca338456e750d2373bf671025ed799e04e0baa16c7bb8dbfd67d8734d2 <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.8c.tar.gz">proftpd-1.3.8c.tar.gz</a>
 d6a4273cd684c0662000eb051007663c51db37ab0d6ef329f41c55d1ac890e23 <a href="ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.9rc3.tar.gz">proftpd-1.3.9rc3.tar.gz</a>
 </pre>
 
 <h2>PGP Signatures</h2>
 
 <pre>
-<strong>proftpd-1.3.8b.tar.gz.asc</strong>
+<strong>proftpd-1.3.8c.tar.gz.asc</strong>
 -----BEGIN PGP SIGNATURE-----
-Comment: GPGTools - https://gpgtools.org
 
-iEYEABECAAYFAmWCcGMACgkQt46JP6URl2rOOACgqd6poiniUeOej3gVoE4ZHA1Z
-PKgAoKgsyi9zqoilnOtZJKfzWw4BJ546
-=GIJC
+iF0EABECAB0WIQRpfmhNFmjWloQoQFy3jok/pRGXagUCZ1nafgAKCRC3jok/pRGX
+arsZAKDP6Vk4oWO9BB0TbMnNNe1TRZwjOwCdH+pBD7f0WDsf6cO4D9oF6iqNgvY=
+=YGOJ
 -----END PGP SIGNATURE-----
 </pre>
 
