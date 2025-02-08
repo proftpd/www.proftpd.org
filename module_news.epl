@@ -41,7 +41,7 @@ share, in case someone else can benefit from it too.</p>
 
 <h2>Buffer cache inefficiencies in Linux 2.4</h2>
 <i>Maintainer: TJ Saunders</i>
-<br /><a href="http://www.castaglia.org/proftpd/modules/mod_fsync.html">http://www.castaglia.org/proftpd/modules/mod_fsync.html</a>
+<br /><a href="https://github.com/Castaglia/proftpd-mod_fsync">https://github.com/Castaglia/proftpd-mod_fsync</a>
 
 <p>The buffer cache algorithm in the Linux 2.4 kernel has some issues with
 mixing reads and writes to the disk. <code>mod_fsync</code> was written to
@@ -68,14 +68,14 @@ features of GnuTLS.</p>
 
 <h2>Send messages to connected clients</h2> 
 <i>Maintainer: TJ Saunders</i>
-<br /><a href="http://www.castaglia.org/proftpd/modules/mod_msg.html">http://www.castaglia.org/proftpd/modules/mod_msg.html</a>
+<br /><a href="https://github.com/Castaglia/proftpd-mod_msg">https://github.com/Castaglia/proftpd-mod_msg</a>
 
 <p>Adds ability to send messages to connected FTP clients.</p>
 
 
 <h2>Counter-based read/write file locks</h2> 
 <i>Maintainer: TJ Saunders</i>
-<br /><a href="http://www.castaglia.org/proftpd/modules/mod_counter.html">http://www.castaglia.org/proftpd/modules/mod_counter.html</a>
+<br /><a href="https://github.com/Castaglia/proftpd-mod_counter">https://github.com/Castaglia/proftpd-mod_counter</a>
 
 <p>Support for configuring counter-based read and/or write locks for files
 being uploaded or download.</p>
@@ -83,14 +83,14 @@ being uploaded or download.</p>
 
 <h2>Case-insensitive path checking</h2>
 <i>Maintainer: TJ Saunders</i>
-<br /><a href="http://www.castaglia.org/proftpd/modules/mod_case.html">http://www.castaglia.org/proftpd/modules/mod_case.html</a>
+<br /><a href="https://github.com/Castaglia/proftpd-mod_case">https://github.com/Castaglia/proftpd-mod_case</a>
 
 <p>Support for performing case-insensitive file checks.</p>
 
 
 <h2>SQL-based configuration module</h2>
 <i>Maintainer: TJ Saunders</i>
-<br /><a href="http://www.castaglia.org/proftpd/modules/mod_conf_sql.html">http://www.castaglia.org/proftpd/modules/mod_conf_sql.html</a>
+<br /><a href="https://github.com/Castaglia/proftpd-mod_conf_sql">https://github.com/Castaglia/proftpd-mod_conf_sql</a>
 
 <p>Support for storing <code>proftpd.conf</code> configuration data in SQL
 tables.</p>
