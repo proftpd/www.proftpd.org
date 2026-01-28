@@ -82,7 +82,7 @@ traffic.  One of the easiest to use is the <a href="http://www.openssl.org/docs/
 The following examples assume that <code>proftpd+mod_tls</code> is listening
 on 127.0.0.1, port 21:
 <pre>
-  # openssl s_client -connect 127.0.0.1:21 -starttls ftp
+  # openssl s_client -connect 127.0.0.1:21 -crlf -starttls ftp
   CONNECTED(00000003)
   depth=1 /CN=castaglia3-serverCA/C=US/emailAddress=tj@castaglia.org/O=Castaglia/OU=Castaglia Research and Development/OU=TJ Saunders/ST=Washington
   verify error:num=20:unable to get local issuer certificate
@@ -383,6 +383,13 @@ to your configuration, <i>i.e.</i>:
   TLSOptions NoSessionReuseRequired
 </pre>
 Then restart <code>proftpd</code>, and your data transfers should work.
+
+<p>
+If you happen to be using
+<a href="https://docs.python.org/3/library/ftplib.html#ftp-tls-objects">Python's builtin class <code>ftplib.FTP_TLS</code></a>
+for an FTPS client, this related
+<a href="https://github.com/python/cpython/issues/63699">unfixed Python issue #63699</a>
+may be of interest.
 
 <p><a name="TLSCertificateGeneration">
 <font color=red>Question</font>: How do I generate the certificate files used
@@ -805,7 +812,7 @@ protocol versions.  For example, if you use:
 </pre>
 And then connect with an FTPS client using TLSv1, like so:
 <pre>
-  $ openssl s_client -connect <i>address</i>:<i>port</i> -starttls ftp -tls1
+  $ openssl s_client -connect <i>address</i>:<i>port</i> -crlf -starttls ftp -tls1
 </pre>
 Then you would see the above error.  Note that this same protocol mismatch
 issue can also manifest as the error message "wrong version number".
@@ -1275,7 +1282,7 @@ configured files were not properly matched up.
 <p>
 <hr>
 <font size=2><b><i>
-&copy; Copyright 2017-2025 The ProFTPD Project<br>
+&copy; Copyright 2017-2026 The ProFTPD Project<br>
  All Rights Reserved<br>
 </i></b></font>
 <hr>
