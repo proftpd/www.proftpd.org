@@ -16,8 +16,4 @@ and that basic functions work, but it is usually not thoroughly tested.  For
 production environments, it is recommended that the distribution tarballs or
 packages are used unless you really know what you're doing.</p>
 
-<p>Nightly tarballs of the latest source from GitHub are available from <a
-href="ftp://ftp.proftpd.org/devel/source">the FTP sites</a> in the <code>devel/source</code>
-directory.</p>
-
 #include "footer.epl"
