@@ -2,7 +2,7 @@
 
 #include "header.epl"
 
-<h1>1.3.10rc5</h1>
+<h1>1.3.10rc5, 1.3.9e</h1>
 [<i>26/Oct/2026</i>]
 <p>The ProFTPD Project team is happy to announce the availability of
 1.3.10rc5 to the community.  This is the fifth release candidate of the
@@ -10,6 +10,11 @@
 <a href="docs/RELEASE_NOTES-1.3.10rc5">RELEASE_NOTES</a> and
 <a href="docs/NEWS-1.3.10rc5">NEWS</a> files have the full details as
 usual.</p>
+
+<p>The ProFTPD Project team has also released 1.3.9e to the community.  This
+is a maintenance release, containing backported fixes from the 1.3.10 release.
+The <a href="docs/RELEASE_NOTES-1.3.9e">RELEASE_NOTES</a> and
+<a href="docs/NEWS-1.3.9e">NEWS</a> files contain more details.</p>
 
 <h1>1.3.10rc4, 1.3.9d</h1>
 [<i>14/Aug/2026</i>]
