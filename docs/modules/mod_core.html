@@ -280,7 +280,7 @@ See also: <a href="#DenyFilter"><code>DenyFilter</code></a>, <a href="#PathAllow
 <hr>
 <h3><a name="AllowForeignAddress">AllowForeignAddress</a></h3>
 <strong>Syntax:</strong> AllowForeignAddress <em>on|off|class-name</em><br>
-<strong>Default:</strong> None<br>
+<strong>Default:</strong> off<br>
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code>, <code>&lt;Anonymous&gt;</code><br>
 <strong>Module:</strong> mod_core<br>
 <strong>Compatibility:</strong> 1.1.7 and later
@@ -347,7 +347,7 @@ in order to the explicit allow rule to apply.  To evaluate the
 <em>expression</em> as a Boolean <em>OR</em> list, meaning that <b>any</b> of
 the elements must evaluate to logically true (<i>i.e.</i> "this group <b>or</b>
 this group <b>or</b> that group..."), use the optional <em>OR</em> keyword.
-Similarly, to evalulate the <em>expression</em> as a regular expression, use
+Similarly, to evaluate the <em>expression</em> as a regular expression, use
 the <em>regex</em> keyword.
 
 <p>
@@ -414,7 +414,7 @@ the elements must evaluate to logically true (<i>i.e.</i> "this user <b>and</b>
 this user <b>and</b> that user..."), use the optional <em>AND</em> keyword.
 (Note that a single user <b>cannot</b> be "this user <b>and</b> that user" at
 the same time, thus the value of <em>AND</em> lists for users is debatable.)
-Similarly, to evalulate the <em>expression</em> as a regular expression, use
+Similarly, to evaluate the <em>expression</em> as a regular expression, use
 the <em>regex</em> keyword.
 
 <p>
@@ -894,7 +894,7 @@ in order to the explicit deny rule to apply.  To evaluate the
 <em>expression</em> as a Boolean <em>OR</em> list, meaning that <b>any</b> of
 the elements must evaluate to logically true (<i>i.e.</i> "this group <b>or</b>
 this group <b>or</b> that group..."), use the optional <em>OR</em> keyword.
-Similarly, to evalulate the <em>expression</em> as a regular expression, use
+Similarly, to evaluate the <em>expression</em> as a regular expression, use
 the <em>regex</em> keyword.
 
 <p>
@@ -945,7 +945,7 @@ the elements must evaluate to logically true (<i>i.e.</i> "this user <b>and</b>
 this user <b>and</b> that user..."), use the optional <em>AND</em> keyword.
 (Note that a single user <b>cannot</b> be "this user <b>and</b> that user" at
 the same time, thus the value of <em>AND</em> lists for users is debatable.)
-Similarly, to evalulate the <em>expression</em> as a regular expression, use
+Similarly, to evaluate the <em>expression</em> as a regular expression, use
 the <em>regex</em> keyword.
 
 <p>
@@ -2335,7 +2335,7 @@ Example:
 
 <p>
 The <code>ServerAlias</code> directive is used to configure a <em>hostname</em>
-for the virtual server, such than an FTP client can connect to that virtual
+for the virtual server, such that an FTP client can connect to that virtual
 server using the <code>HOST</code> command.  In effect, you use
 <code>ServerAlias</code> to define the names that you want to support, for
 true name-based virtual hosting.
@@ -2379,7 +2379,7 @@ would work just like:
     ...
   &lt;/VirtualHost&gt;
 </pre>
-(assuming that "example.com" resolved to 1.2.3.4, of course).
+assuming that "example.com" resolved to 1.2.3.4, of course.
 
 <p>
 <hr>
@@ -2435,7 +2435,7 @@ For example:
 <hr>
 <h3><a name="ServerName">ServerName</a></h3>
 <strong>Syntax:</strong> ServerName <em>"standalone"|"inetd"</em><br>
-<strong>Default:</strong> ServerName "ProFTPD"
+<strong>Default:</strong> ServerName "ProFTPD"<br>
 <strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code><br>
 <strong>Module:</strong> mod_core<br>
 <strong>Compatibility:</strong> 0.99.0 and later
@@ -3385,7 +3385,7 @@ The solution is to use remove use of the deprecated
 <p>
 <hr>
 <font size=2><b><i>
-&copy; Copyright 2000-2023 The ProFTPD Project<br>
+&copy; Copyright 2000-2026 The ProFTPD Project<br>
  All Rights Reserved<br>
 </i></b></font>
 <hr>
