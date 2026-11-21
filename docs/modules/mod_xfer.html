@@ -1,3 +1,6 @@
+<!-- Copyright (c) 2026 The ProFTPD Project team -->
+<!-- SPDX-License-Identifier: GPL-2.0-only WITH vsftpd-openssl-exception -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -135,6 +138,27 @@ By default, <code>DeleteAbortedStores</code> is <em>off</em>.
 
 <p>
 See also: <a href="#HiddenStores"><code>HiddenStores</code></a>
+
+<p>
+<hr>
+<h3><a name="DisplayFileTransfer">DisplayFileTransfer</a></h3>
+<strong>Syntax:</strong> DisplayFileTransfer <em>path</em><br>
+<strong>Default:</strong> None<br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code><br>
+<strong>Module:</strong> mod_xfer<br>
+<strong>Compatibility:</strong> 1.3.1rc1
+
+<p>
+The <code>DisplayFileTransfer</code> directive specifies a file <em>path</em>
+which will be displayed to the user when they transfer files, either upload or
+download.  The <em>path</em> can be either relative or absolute.  For relative
+<em>paths</em>, the file is searched for in the current working directory of
+the session.  If the file cannot be found or accessed, no error occurs and
+nothing is displayed to the client.
+
+<p>
+The <a href="../howto/DisplayFiles.html">DisplayFiles</a> howto covers such
+files in greater detail.
 
 <p>
 <hr>
@@ -402,7 +426,7 @@ See also: <a href="#MaxTransfersPerHost"><code>MaxTransfersPerHost</code></a>
 <h3><a name="StoreUniquePrefix">StoreUniquePrefix</a></h3>
 <strong>Syntax:</strong> StoreUniquePrefix <em>prefix</em><br>
 <strong>Default:</strong> None<br>
-<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code>, <code>&lt;Anonymous&gt;</code>, <code>&lt;Directory&gt;</code>, <code>.ftpaccess</code><br>
+<strong>Context:</strong> server config, <code>&lt;VirtualHost&gt;</code>, <code>&lt;Global&gt;</code>, <code>&lt;Anonymous&gt;</code>, <code>&lt;Directory&gt;</code><br>
 <strong>Module:</strong> mod_xfer<br>
 <strong>Compatibility:</strong> 1.2.6rc1 and later
 
@@ -579,7 +603,7 @@ only, and should be removed from any production configuration.
 <p>
 <hr>
 <font size=2><b><i>
-&copy; Copyright 2000-2023 The ProFTPD Project<br>
+&copy; Copyright 2000-2026 The ProFTPD Project<br>
  All Rights Reserved<br>
 </i></b></font>
 <hr>
